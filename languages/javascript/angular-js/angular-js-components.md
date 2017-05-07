@@ -112,6 +112,8 @@ Worse then goto :
 
 ### D - articles
 
+[Front-end Application Libraries and Component Architectures](http://developer.telerik.com/featured/front-end-application-frameworks-component-architectures/)
+
 [Parent component trigger function in child component](https://github.com/toddmotto/angularjs-styleguide/issues/156)
 
 [component communication and triggers](https://github.com/toddmotto/angularjs-styleguide/issues/90)
