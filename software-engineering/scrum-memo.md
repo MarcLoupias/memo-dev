@@ -1,0 +1,1 @@
+- [scrum vs cycle en V] (http://blog.dcube.fr/blog/2014/04/28/scrum-vs-cycle-en-v-2/)

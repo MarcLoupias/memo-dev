@@ -1,0 +1,2 @@
+- [Named function expressions demystified ] (http://kangax.github.io/nfe/) must read.
+- [discussion stackoverflow] (http://stackoverflow.com/questions/336859/var-functionname-function-vs-function-functionname)

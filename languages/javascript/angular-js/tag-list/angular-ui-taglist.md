@@ -1,0 +1,3 @@
+- [angular-taglist] (https://github.com/chrispittman/angular-taglist)
+- [plunkr demo] (http://plnkr.co/edit/0vzZsn70SGQkIKKZoVEP?p=preview)
+- the best one by far : [decipherinc.github.io/angular-tags] (http://decipherinc.github.io/angular-tags/)

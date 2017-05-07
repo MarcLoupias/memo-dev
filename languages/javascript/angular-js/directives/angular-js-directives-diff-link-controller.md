@@ -1,0 +1,2 @@
+- [angular-js-directives-difference-controller-link] (http://jasonmore.net/angular-js-directives-difference-controller-link/)
+- [custom-directives] (http://tutorials.jenkov.com/angularjs/custom-directives.html)

@@ -1,0 +1,1 @@
+- [angularjs-append-html-to-an-element-in-directive] (http://stackoverflow.com/questions/21452706/angularjs-append-html-to-an-element-in-directive-and-make-a-local-function-to) [plunkr demo] (http://plnkr.co/edit/IlTIWrvG5lA0B4JwEPoS?p=info)

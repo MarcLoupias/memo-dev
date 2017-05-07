@@ -1,0 +1,1 @@
+- [why-do-we-need-the-npm-registry : blog.javascripting.com] (http://blog.javascripting.com/2015/06/11/so-remind-me-again-why-do-we-need-the-npm-registry/)

@@ -1,0 +1,3 @@
+- [z-index](http://www.alsacreations.com/astuce/lire/84-comment-fonctionne-la-proprit-css-z-index.html)
+- [flexbox](http://www.flexboxpatterns.com/home)
+- [understanding-flexbox](https://medium.freecodecamp.com/understanding-flexbox-everything-you-need-to-know-b4013d4dc9af#.niafj7118)
