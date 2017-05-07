@@ -1,1 +1,5 @@
-This file serves as an introduction to your Knowledge Base, it is displayed on the homepage of your website. Use it to provide more context to your visitors.
+This gitbook is a personal reminder for work. 
+
+Writing things to learn, and uses this book as a knowledge index.
+
+Any comment is welcome ...
