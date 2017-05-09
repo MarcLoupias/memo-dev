@@ -45,6 +45,24 @@ So TLDR is :
 
 See section *component design* section in *inter-component communication* part for this design flaws.
 
+### B - Components types
+
+[The 3 component categories in Angular](https://blog.wishtack.com/2017/05/05/the-guide-to-building-quality-angular-2-components/)
+
+[Presentational and Container Components : Dan Abramov (ReactJS team, Redux author)](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
+
+- View Components (or Routing components) (or Stateful components for Todd Motto)
+- Container Components (or Smart components) (or Stateful components for Todd Motto)
+- Dumb Components (or Stateless components for Todd Motto)
+
+Responsabilities table
+
+| Responsabilities per component | View Comp. | Container Comp. | Dumb Comp.
+| ------------------------------ | ---------- | --------------- | ----------
+| Read route parameters          | YES        | NO              | NO
+| Uses stores and data services  | NO         | YES             | NO
+| Display and styling            | NO         | NO              | YES
+
 ## III - feedback
 
 ### A - NG 1.5 from the trenches at velesin.io
@@ -121,5 +139,3 @@ Worse then goto :
 [Component Interaction in Angular : kfarst.github.io](http://kfarst.github.io/angular/2017/03/29/component-interaction-in-angular/) 20170329
 
 [Angular components communication : dfsq.info](http://dfsq.info/site/read/angular-components-communication)
-
-[Presentational and Container Components : Dan Abramov (ReactJS team, Redux author)](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
