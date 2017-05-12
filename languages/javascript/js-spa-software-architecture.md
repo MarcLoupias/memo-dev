@@ -12,6 +12,10 @@
 
 [Flux : github.com/facebook](https://github.com/facebook/flux)
 
+## react & redux
+
+[ReactJS App Architecture](https://medium.com/@Xourse/reactjs-app-architecture-7a33d7ae9834)
+
 ## angular
 
 [Introduction to Angular 1.x and ngCourse](https://ngcourse-1.rangle.io/index.html)
