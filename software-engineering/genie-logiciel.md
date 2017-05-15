@@ -41,6 +41,10 @@ Low [coupling](https://en.wikipedia.org/wiki/Coupling_%28computer_programming%29
 
 > “The structure of a problem reflects the structure of the organization that created it.” Bill Corcoran’s version of Conway’s Law
 
+- [Facteur PI](https://cavares.com/2016/12/26/le-facteur-%CF%80/)
+
+> Pour un projet innovant, il faut multiplier l’estimation initiale des coûts par 3,14.
+
 - Loi de Parkinson
 
 > Plus on a de temps pour réaliser une tâche, plus cette tâche prend du temps.
