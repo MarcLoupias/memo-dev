@@ -54,3 +54,8 @@ TLDR : Les enjeux ont changés, différenciation concurrentielle et agilité (r�
 
 [Why The Command-and-Control Mindset Is Killing Your Company : corporate-rebels.com](http://corporate-rebels.com/mindset/) March 26, 2017
 
+## hommes politiques
+
+[JM JANCOVICI - La connaissance des politiques est nulle en matière énergétique](https://www.youtube.com/watch?v=mm7jghN51gU)
+
+Extensible à tout sujet technique.
