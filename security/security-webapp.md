@@ -44,6 +44,14 @@ Mot de passe : `bcrypt`, `PBKDF2`, `scrypt` (hash solo trop faible)
 
 ### 4 - Cross-Site Scripting (XSS)
 
+[Cross-site Scripting (XSS) : owasp.org](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS))
+
+> Cross-site scripting attacks may occur anywhere that possibly malicious users are allowed to post unregulated material to a trusted web site for the consumption of other valid users.
+> 
+> The most common example can be found in bulletin-board web sites which provide web based mailing list-style functionality. 
+
+[XSS (Cross Site Scripting) Prevention Cheat Sheet : owasp.org](https://www.owasp.org/index.php/XSS_%28Cross_Site_Scripting%29_Prevention_Cheat_Sheet)
+
 AngularJS gère en natif ce problème (sanitize).
 
 ### 5 - références directes non sécurisées
@@ -75,6 +83,26 @@ RBAC à impl. Un user lambda ne doit pas accéder à l'administration de l'app.
 - vérifier que la requête est "Same Origin" (headers standards)
 - config & impl CORS
 - utiliser un token spécifique (Double cookie defense via XSRF-TOKEN)
+
+Exemple d'attaque :
+
+- *user* se connecte sur le site de sa banque utilisant un cookie pour gérer la session
+- *user* effectue quelques actions (check des comptes etc ...)
+- *user* **ne se delog pas**
+- *user* clique sur un lien lolcat reçu en mail. La page web chargée effectue un call sur le site
+de la banque de *user* pour effectuer une transaction. Si CORS n'est pas configuré par la banque
+alors le navigateur transmettra le cookie de session toujours valide avec le call du site frauduleux
+ et sa transaction sera acceptée.
+
+CORS configuration is **server-side**.
+
+A server using `"Access-Control-Allow-Origin: *"` allows all domains, it is **very bad**.
+
+[What are the security risks of setting Access-Control-Allow-Origin? : stackoverflow.com](http://stackoverflow.com/questions/12001269/what-are-the-security-risks-of-setting-access-control-allow-origin)
+
+> By responding with `Access-Control-Allow-Origin: *`, the requested resource allows sharing with every origin. This basically means that any site can send an XHR request to your site and access the server’s response which would not be the case if you hadn’t implemented this CORS response.
+
+> So any site can make a request to your site on behalf of their visitors and process its response. If you have something implemented like an authentication or authorization scheme that is based on something that is automatically provided by the browser (cookies, cookie-based sessions, etc.), the requests triggered by the third party sites will use them too.
 
 ### 9 - Utilisation de composants avec des vulnérabilités connues
 
