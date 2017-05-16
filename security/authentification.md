@@ -33,6 +33,7 @@
 - [Using OAuth 2.0 to Access Google APIs](https://developers.google.com/identity/protocols/OAuth2)
 - [Facebook Login pour le web avec le SDK JavaScript](https://developers.facebook.com/docs/facebook-login/web)
 - [Twitter Developer Documentation - POST oauth2/token](https://dev.twitter.com/oauth/reference/post/oauth2/token)
+- [LinkedIn Authenticating with OAuth 2.0](https://developer.linkedin.com/docs/oauth2#)
 
 ## JWT
 
