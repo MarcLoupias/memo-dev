@@ -1,5 +1,5 @@
 
-[from what-is-npm-shrinkwrap-and-when-is-it-needed : javascript.tutorialhorizon.com] (http://javascript.tutorialhorizon.com/2015/03/21/what-is-npm-shrinkwrap-and-when-is-it-needed/)
+[from what-is-npm-shrinkwrap-and-when-is-it-needed : javascript.tutorialhorizon.com](http://javascript.tutorialhorizon.com/2015/03/21/what-is-npm-shrinkwrap-and-when-is-it-needed/)
 
 The `npm shrinkwrap` command lets you lock down the version numbers all the packages and their descendant packages in your `node_modules` directory. Lets examine why and when you should be using this command in your application development.
 
@@ -7,7 +7,7 @@ The npm package manager does a pretty good job at maintaining and installing dep
 
 There are 2 main problems with the way `npm install` works
 
-1. Although npm recommends using [semver] (https://github.com/npm/node-semver) for application versioning, it is completely upto the package author to honor this rule. This can be problematic if the package you depend on does not follow semver and a newer version of the package has breaking changes.
+1. Although npm recommends using [semver](https://github.com/npm/node-semver) for application versioning, it is completely upto the package author to honor this rule. This can be problematic if the package you depend on does not follow semver and a newer version of the package has breaking changes.
 Even if the package author follows semver, there is still a probability that a bug might get introduced in a compatible version.
 2. The other issue arises due to the way `npm install` works. Since running an `npm install` install a hierarchy of packages to be installed, if you wished to manually control the version numbers of the packages that you want to be installed, you could do that by using the exact version numbers in your `package.json`. However that only solves the problem for the direct dependents of your package. It does not give you control over the installed versions of the deeply nested packages that are the dependencies of your dependencies and beyond.
 
@@ -29,16 +29,16 @@ Also note that by default `npm shrinkwrap` does not include your `devDependencie
 
 ----------------------
 
-Procédure de gestion des dépendances de développement via [npm] (https://www.npmjs.com/)
+Procédure de gestion des dépendances de développement via [npm](https://www.npmjs.com/)
 ===============================================================
 
 **N.B.** Part du principe que `npm` ne gère que les dépendances de développement, mais pourrait également s'appliquer à une vâche près si `npm` servait aussi à gérer les dépendances de développement.
 
 **Commandes `npm` impliquées**
-- [npm install] (https://docs.npmjs.com/cli/install)
-- [npm shrinkwrap] (https://docs.npmjs.com/cli/shrinkwrap)
-- [npm outdated] (https://docs.npmjs.com/cli/outdated)
-- [npm update] (https://docs.npmjs.com/cli/update)
+- [npm install](https://docs.npmjs.com/cli/install)
+- [npm shrinkwrap](https://docs.npmjs.com/cli/shrinkwrap)
+- [npm outdated](https://docs.npmjs.com/cli/outdated)
+- [npm update](https://docs.npmjs.com/cli/update)
 
 Objectifs
 ---------
@@ -61,7 +61,7 @@ Workflow
 #### Première installation
 Définir un fichier `package.json` et exécuter `npm install --save` pour installer les dépendances et modifier le `package.json` avec les dernières version disponibles. (`npm install --save-dev` pour les dépendances de développement)
 
-**Attention** à la gestion de [semver] (https://github.com/npm/node-semver) par npm !!
+**Attention** à la gestion de [semver](https://github.com/npm/node-semver) par npm !!
 `"browser-sync": "2.7.13"` entrainera l'installation de la version `2.7.13`.
 `"browser-sync": "^2.7.13"` entrainera l'installation de la dernière version mineure disponible (2.9.10 par exemple) et si l'option `--save-dev` est active cela entrainera également la modification du `package.json` en `"^2.9.10"`.
 
