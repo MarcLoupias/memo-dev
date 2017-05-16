@@ -178,7 +178,11 @@
 * [heroku - helper](tools/heroku/heroku-helper.md)
 * [heroku - sendgrid mailer](tools/heroku/heroku-sendgrid-mailer.md)
 * [IntelliJ](tools/intellij/infos-intellij.md)
+* [Diagrams tools](tools/diagrams.md)
 * [docker](tools/docker.md)
+* [Fiddler](tools/fiddler.md)
+* [JWT tools](tools/json-web-token-tools.md)
+* [UX Tools and links](tools/ux-tools-and-links.md)
 * [vim memo](tools/vim-memo.md)
 
 ## Web
@@ -205,8 +209,6 @@
 * [Polyfills, Shivs, Shims](web/polyfills-shivs-shims.md)
 * [SEO](web/SEO.md)
 * [Shadow DOM](web/shadow-dom.md)
-* [Tools web](web/tools-web.md)
-* [UX Tools and links](web/ux-tools-and-links.md)
 * [Vue.js](web/vue-js.md)
 * [Generic good practices](web/web-generic-good-practices.md)
 * [Selenium](web/web-test-selenium.md)
