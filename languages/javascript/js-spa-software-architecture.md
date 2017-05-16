@@ -21,3 +21,11 @@
 [Introduction to Angular 1.x and ngCourse](https://ngcourse-1.rangle.io/index.html)
 
 [Rangle's Angular Training Book](https://angular-2-training-book.rangle.io/)
+
+## isomorphisme
+
+[Introduction à l’isomorphisme avec React et Node.js](http://blog.soat.fr/2016/04/introduction-a-lisomorphisme-avec-react-et-node-js/)
+
+L'idée c'est de générer les vues côtés front pour :
+- des questions de performances, l'utilisateur aurait une vue utilisable plus rapidement, ce point est tout à fait contestable
+- gérer le SEO de SPA. Ce point est valide mais voué à disparaitre dès que les moteurs de recherches seront capables d'indexer des contenus générés via javascript.
