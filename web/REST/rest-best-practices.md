@@ -6,6 +6,7 @@
 - [5-basic-rest-api-design-guidelines : dzone.com](https://dzone.com/articles/5-basic-rest-api-design-guidelines?edition=220209&utm_source=Spotlight&utm_medium=email&utm_campaign=integration%202016-10-06)
 - [Le design d'API REST, un débat sans fin ? (Guillaume Laforge) : Devoxx 2016](https://www.youtube.com/watch?v=6onHFNqMUwY)
 - [ReST APIs | Best Practices & Security](https://blog.wishtack.com/rest-apis-best-practices-and-security/)
+- [Strategy and Design Guidelines for REST APIs and Platform Building](https://github.com/RestCheatSheet)
 
 ## API documentation
 
