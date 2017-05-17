@@ -174,6 +174,7 @@
 * [GIT - useful commands](tools/git/git-useful-commands.md)
 * [GIT - workflow](tools/git/git-workflow.md)
 * [gitbook - overview](tools/gitbook/gitbook-intro.md)
+* [gitpitch](tools/gitpitch/gitpitch-intro.md)
 * [heroku - deploy AngularJS webapp](tools/heroku/heroku-angularjs.md)
 * [heroku - helper](tools/heroku/heroku-helper.md)
 * [heroku - sendgrid mailer](tools/heroku/heroku-sendgrid-mailer.md)
