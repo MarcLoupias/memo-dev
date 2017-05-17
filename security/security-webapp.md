@@ -54,6 +54,8 @@ Mot de passe : `bcrypt`, `PBKDF2`, `scrypt` (hash solo trop faible)
 
 AngularJS gère en natif ce problème (sanitize).
 
+[Vectors making use of HTML5 features](https://html5sec.org/)
+
 ### 5 - références directes non sécurisées
 
 ```
