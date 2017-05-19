@@ -135,3 +135,23 @@ git log --until="2013-01-30"
 # print a log with a list of modified files
 git log --stat
 ```
+
+```
+# print a log of all commits from all branches (just active branch by default)
+git log --all
+```
+
+```
+# print a condensed log where each commit is one line 
+git log --oneline
+```
+
+```
+# print a graphic log in console 
+git log --graph
+```
+
+```
+# print a graphic log in console from all branches where a commit is only one line
+git log --graph --oneline --all
+```
