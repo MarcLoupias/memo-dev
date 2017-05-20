@@ -17,6 +17,10 @@
 
 ## OAuth2
 
+[OAuth 2.0 website](https://oauth.net/2/)
+
+[Analyse RFC 6749 par Stéphane Bortzmeyer](http://www.bortzmeyer.org/6749.html)
+
 ### RFC
 
 [RFC6749 - The OAuth 2.0 Authorization Framework](https://tools.ietf.org/html/rfc6749)
