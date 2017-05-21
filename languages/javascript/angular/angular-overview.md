@@ -19,7 +19,3 @@
 - [Angular Singleton Service and a Loading Indicator](https://medium.com/@weswhite/angular-singleton-service-and-a-loading-indicator-ca3cc7892722)
 
 > Intéressant car montre qu'en Angular il y a un injecteur par module, pour voir un singleton global à la webapp il faut effectuer des manipulations contrairement à AngularJS où il n'y a qu'un seul injecteur pour tous les modules et où tous les services sont des singletons globaux à la webapp.
-
-- [What is an Observable? [Simply Explained]](https://www.youtube.com/watch?v=XbOuCBuQepI)
-
-> Vidéo très courte expliquant le principe des observables dans angular.
