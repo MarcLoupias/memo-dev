@@ -70,7 +70,18 @@ See article above for security risks.
 > OpenID vise à authentifier un utilisateur humain, OAuth à authentifier la requête d'un programme, agissant 
 > pour le compte d'un humain.
 
+[OAuth 2 Simplified : aaronparecki.com](https://aaronparecki.com/oauth-2-simplified/)
+
+> This post describes OAuth 2.0 in a simplified format to help developers and service providers implement the protocol.
+> 
+> The OAuth 2 spec can be a bit confusing to read, so I've written this post to help describe the terminology in a 
+> simplified format. The core spec leaves many decisions up to the implementer, often based on security tradeoffs of the 
+> implementation. Instead of describing all possible decisions that need to be made to successfully implement OAuth 2, 
+> this post makes decisions that are appropriate for most implementations.
+
 ### RFC
+
+#### Core
 
 [RFC6749 - The OAuth 2.0 Authorization Framework](https://tools.ietf.org/html/rfc6749)
 
@@ -96,6 +107,8 @@ See article above for security risks.
 > This document gives additional security considerations for OAuth,
 > beyond those in the OAuth 2.0 specification, based on a comprehensive
 > threat model for the OAuth 2.0 protocol.
+
+#### Extensions
 
 [RFC 7521 - Assertion Framework for OAuth 2.0 Client Authentication and Authorization Grants](https://tools.ietf.org/html/rfc7521)
 
