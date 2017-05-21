@@ -1,5 +1,37 @@
 # Authentification
 
+## diff oAuth / OpenID / SAML
+
+-  OAuth is about giving access to your stuff without sharing your identity at all
+-  OpenID is all about using a single identity to sign into many sites
+
+- [What's the difference between OpenID and OAuth? : stackoverflow.com](http://stackoverflow.com/questions/1087031/whats-the-difference-between-openid-and-oauth)
+- [Difference Between OAUTH, OpenID and OPENID Connect in very simple term? : security.stackexchange.com](https://security.stackexchange.com/questions/44611/difference-between-oauth-openid-and-openid-connect-in-very-simple-term)
+- [OAuth 2 vs OpenID Connect to secure API : security.stackexchange.com](https://security.stackexchange.com/questions/94995/oauth-2-vs-openid-connect-to-secure-api)
+
+[Authentication and Authorization: OpenID vs OAuth2 vs SAML](https://spin.atomicobject.com/2016/05/30/openid-oauth-saml/)
+
+|                             | OAuth2                  | OpenId                | SAML
+| --------------------------- | ----------------------- | --------------------- | ----------
+| Token (or assertion) format | JSON or SAML2           | JSON                  | XML
+| Authorization?              | Yes                     | No                    | Yes
+| Authentication?             | Pseudo-authentification | Yes                   | Yes
+| Year created                | 2005                    | 2006                  | 2001
+| Current version             | OAuth2                  | OpenID Connect        | SAML 2.0
+| Transport                   | HTTP                    | HTTP GET and POST     | HTTP Redirect, SOAP, ...
+| Best suited for             | API authorization       | SSO for consumer apps | SSO for enterprise (bad on mobile)
+
+See article above for security risks.
+
+[OAuth vs. SAML vs. OpenID Connect](https://www.gluu.org/blog/oauth-vs-saml-vs-openid-connect/)
+
+> So when should you use SAML, and when should you use OpenID Connect?
+> 
+> - If you have a mobile application, use OpenID Connect–no question. See [this blog on the use of AppAuth](http://www.gluu.co/appauth-blog).
+> - If you have an application that already supports SAML–use SAML!
+> - If you are writing a new application, use OpenID Connect–skate to where the puck is going!
+> - If you need to protect API’s, or you need to create an API Gateway… that’s a topic for another blog. Short answer: use OAuth2 or the [User Managed Access ("UMA")](https://www.gluu.org/resources/documents/standards/uma/) protocol!
+
 ## OAuth
 
 - [oauth.net](http://oauth.net/)
@@ -19,7 +51,24 @@
 
 [OAuth 2.0 website](https://oauth.net/2/)
 
+[User Authentication with OAuth 2.0](https://oauth.net/articles/authentication/)
+
+> The OAuth 2.0 specification defines a delegation protocol that is useful for conveying authorization decisions across 
+> a network of web-enabled applications and APIs. OAuth is used in a wide variety of applications, including providing 
+> mechanisms for user authentication. 
+> This has led many developers and API providers to incorrectly conclude that OAuth is itself an authentication protocol 
+> and to mistakenly use it as such. Let's say that again, to be clear:
+> 
+> **OAuth 2.0 is not an authentication protocol.**
+> 
+> Much of the confusion comes from the fact that OAuth is used *inside* of authentication protocols, and developers will 
+> see the OAuth components and interact with the OAuth flow and assume that by simply using OAuth, they can accomplish 
+> user authentication. This turns out to be not only untrue, but also dangerous for service providers, developers, and end users.
+
 [Analyse RFC 6749 par Stéphane Bortzmeyer](http://www.bortzmeyer.org/6749.html)
+
+> OpenID vise à authentifier un utilisateur humain, OAuth à authentifier la requête d'un programme, agissant 
+> pour le compte d'un humain.
 
 ### RFC
 
@@ -183,11 +232,6 @@
 
 - [Easy Angular Authentication with JSON Web Tokens : angularjs.blogspot.fr](http://angularjs.blogspot.fr/2016/11/easy-angular-authentication-with-json.html)
 - [Introduction to JSON Web Tokens : jwt.io](https://jwt.io/introduction/)
-
-## diff oAuth / OpenID
-
--  OAuth is about giving access to your stuff without sharing your identity at all
--  OpenID is all about using a single identity to sign into many sites
 
 ## articles securing SPA
 
