@@ -38,6 +38,10 @@ ES6 **required** for this.
 
 > Vidéo très courte expliquant le principe des observables dans angular.
 
+[RxJS - What and Why?](https://www.youtube.com/watch?v=T9wOu11uU6U)
+
+> Vidéo un peu plus longue expliquant les bénéfices en montrant des uses cases avec code ES5 et code ES6 + observables via RxJS
+
 - [Angular Tutorial - What is an Observable ? Introduction to Streams and RxJs Observables](https://www.youtube.com/watch?v=Sol2uLolmUM)
 
 ### Naming convention
