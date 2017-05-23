@@ -197,9 +197,6 @@
 * [REST - RAML](web/REST/rest-design-tool-RAML.md)
 * [REST - swagger.io](web/REST/rest-design-tool-swagger-io.md)
 * [REST - Open Api Initiative](web/REST/open-api-initiative.md)
-* [AngularJS vs Aurelia](web/angular-vs-aurelia.md)
-* [AngularJS vs EmberJS](web/angular-vs-ember.md)
-* [bootstrap vs fondation](web/boostrap-vs-fondation.md)
 * [CSS : BEM (Block Element Modifier)](web/css-block-element-modifier.md)
 * [CSS : Conventions de nommage](web/css-conventions.nommage.html.css.md)
 * [CSS : Tips](web/css-tips.md)
@@ -207,7 +204,6 @@
 * [gestion monetisation web](web/gestion-monetisation-web.md)
 * [how browsers init web page](web/how-browsers-init-web-page.md)
 * [HTML : Tips](web/html-tips.md)
-* [perf comparison javascript](web/perf-comparison-js-framework.md)
 * [Polyfills, Shivs, Shims](web/polyfills-shivs-shims.md)
 * [SEO](web/SEO.md)
 * [Shadow DOM](web/shadow-dom.md)
@@ -215,6 +211,7 @@
 * [Generic good practices](web/web-generic-good-practices.md)
 * [Selenium](web/web-test-selenium.md)
 * [Tracking](web/web-tracking.md)
+* [Comparatifs frameworks](web/web-comparatifs-frameworks.md)
 
 ## Linux
 
