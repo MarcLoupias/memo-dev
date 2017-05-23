@@ -11,6 +11,7 @@
 
 ## Files formats
 
+* [asciidoc - infos](files-formats/asciidoc-infos.md)
 * [markdown - infos](files-formats/markdown-infos.md)
 * [markdown - from gitlab](files-formats/markdown-from-gitlab.md)
 * [JSON](files-formats/json.md)
