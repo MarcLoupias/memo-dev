@@ -237,6 +237,44 @@ See article above for security risks.
 
 ## JWT
 
+[100% Stateless avec JWT (JSON Web Token) (Hubert SABLONNIÈRE) : Devoxx2016](https://www.youtube.com/watch?v=A2-YImhNVMU)
+
+> **Historique**
+> - historique de la gestion des sessions web via cookie
+> - rappel : diff cookie et JWT fausse, c'est diff entre sessionId et JWT car cookie est un mode de transport. JWT est 
+> transporté via un cookie
+> - diff entre sessionId et token JWT
+>   - sessionId = token par référence (contient la référence à la session, la session étant stockée dans le backend)
+>   - JWT = token par valeur (contient la valeur de la session : `H34D3R.P4YLO4D.S1GN47UR3`)
+>
+> **JWT**
+> Un token JWT est encodé en Base64url (comme Base64 mais safe pour les urls)
+> 3 parties (header, payload et signature) encodées chacune en Base64url, les parties sont séparées par un `.`.
+> Une fois décodé, les parties header et payload du token sont au format json.
+> 
+> Les propriétés de la partie payload sont nommées des `claims` (codifiés par RFC7519).
+>
+> **Avantages**
+> - stocké côté client donc scalable
+> - multilangage
+> - microservices
+> - SSO gratuit 
+>
+> **Usage avec d'autres technos**
+> - OAuth2 : Si le provider OAuth2 fournit des refresh token et access token JWT alors on est complètement stateless
+> - OpenID Connect : le token ID est de base un JWT
+> 
+> **Inconvénients**
+> - Révocation de tokens (blacklist via le claim `jti`, crée un SPOF (Single Point Of Failure))
+> - transporté via cookies donc vulnérables aux attaques XSS et CSRF
+>
+> **Autres usages des JWT**
+> - stockage données session (panier, formulaire multipart, ...)
+> - mail de confirmation en passant le token dans l'url du mail de confirmation (évite le stockage BDD)
+>
+> Comment gérer les permissions via le JWT si celui-ci est HTTPonly (bonne pratique de sécu) ?
+> Nécessite un webservice qui lit le token et renvoie en clair les permissions.
+
 ### RFC
 
 [JSON Web Token (JWT)](https://tools.ietf.org/html/rfc7519)
