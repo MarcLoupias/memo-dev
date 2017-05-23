@@ -33,3 +33,41 @@
 > TodoMVC has helped thousands of developers select an MV* framework for their JavaScript applications. However, the web ecosystem has evolved in the past few years allowing us to build powerful applications using modern browser capabilities.
 > 
 > To provide developers with examples, we collected a list of Hacker News clients built with a number of popular JavaScript frameworks and libraries. Each implementation is a complete Progressive Web App that utilizes different progressive technologies to provide a fast, reliable and engaging experience.
+
+### articles
+
+[**Progressive Web Apps: Escaping Tabs Without Losing Our Soul : Alex Russell**](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/)
+
+> Article fondateur, pose les bases des PWA
+
+[Que sont les Progressive Web Apps ? : frank.taillandier.me](https://frank.taillandier.me/2016/06/28/que-sont-les-progressive-web-apps/)
+
+[L’argumentaire commercial pour les Progressive Web Apps : frank.taillandier.me](https://frank.taillandier.me/2016/08/09/argumentaire-commercial-pour-les-progressive-web-apps/)
+
+### vidéos
+
+[BDX I/O 2016 : Progressive Web Apps - Le futur du Web arrive...  : Hubert Sablonnière](https://www.youtube.com/watch?v=dSKp-76Ur6E)
+
+### PWA - 10 caractéristiques
+
+1. linkable (ne dépend pas d'un store, monde ouvert (web) vs monde fermé (stores))
+2. responsive (content is like water)
+3. safe (https, impossible à savoir sur une app native)
+4. connectivity independant (mode déconnecté) (penser offline first) (service workers)
+5. fresh (toujours up to date)
+6. App-like interactions (ergo app natives) (application shell qui comporte les bases du layout d'un app native)
+7. Notifications (même navigateur fermé)
+8. Discoverable (fichier de manifeste référencé dans le html pour référencement via moteur de recherche)
+9. "Installable" (ajout du lien sur l'écran d'accueil)
+10. Progressive (adapté aux capacités du navigateur)
+
+#### service workers
+
+- proxy côté client codé en javascript, intercepte toutes les requêtes, dispose de son propre cache.
+- ne fonctionne qu'en https
+- commun à une origine (domaine + port)
+- nouvelle API navigateur, est exécuté dans un thread indépendant, n'a pas accès à `window`
+- utilise cache (nouvelle API navigateur), c'est une map qui fait correspondre des req et res (!= cache http)
+- nouvelle API de requête (fetch)
+
+Support des navigateurs actuels presque 100%. Microsoft & Apple à la bourre (en dev). Pas de polyfills possibles.
