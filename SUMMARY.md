@@ -18,10 +18,6 @@
 * [XML](files-formats/xml.md)
 * [YAML](files-formats/yaml.md)
 
-## Languages - bash
-
-* [bash - whiptail](languages/bash/bash-notes-whiptail.md)
-
 ## Languages - java
 
 * [java - jpa - infos](languages/java/JPA/java-jpa-infos.md)
@@ -214,9 +210,16 @@
 * [Tracking](web/web-tracking.md)
 * [Comparatifs frameworks](web/web-comparatifs-frameworks.md)
 
-## Linux
+## Systems
 
-* [Linux - Description du FHS](linux/linux-fhs-description.md)
-* [Linux - Gestion des droits du FHS](linux/linux-fhs-droits.md)
-* [Linux - logs](linux/linux-logs.md)
-* [Linux - Manipuler les fichiers](linux/linux-manipulation-fichiers.md)
+## Systems - Windows
+
+* [Windows - Ubuntu on windows10](systems/windows/windows-ubuntu-on-windows10.md)
+
+## Systems - Linux
+
+* [Linux - Description du FHS](systems/linux/linux-fhs-description.md)
+* [Linux - Gestion des droits du FHS](systems/linux/linux-fhs-droits.md)
+* [Linux - logs](systems/linux/linux-logs.md)
+* [Linux - Manipuler les fichiers](systems/linux/linux-manipulation-fichiers.md)
+* [Bash - Notes Whiptail](systems/linux/bash/bash-notes-whiptail.md)
