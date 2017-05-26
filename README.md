@@ -7,8 +7,3 @@ Sometimes in english, et parfois en français ...
 Writing things to learn, and uses this book as a knowledge index.
 
 Any comments welcome ...
-
-```
-# counting words in all the repo and put the result in a total-words.csv file
-$ find . -name '*.md' | xargs wc -w > total-words.csv
-```

@@ -17,6 +17,3 @@ _book
 
 # jetbrains
 .idea/
-
-# counting repo words
-total-words.csv
