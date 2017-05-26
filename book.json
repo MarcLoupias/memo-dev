@@ -1,3 +1,3 @@
 {
-    "plugins": [ "theme-faq" , "-search", "-lunr" ]
+    "plugins": [ "theme-faq" , "-fontsettings", "-sharing", "-search", "-lunr" ]
 }
