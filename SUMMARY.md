@@ -38,6 +38,7 @@
 ## Languages - javascript
 
 * [javascript - Angular - overview](languages/javascript/angular/angular-overview.md)
+* [javascript - Angular - Migration from AngularJs](languages/javascript/angular/angular-migration-from-angular-js.md)
 
 * [javascript - AngularJs - support](languages/javascript/angular-js/angular-js-1.x-support.md)
 * [javascript - AngularJs - auth](languages/javascript/angular-js/angular-js-auth.md)
