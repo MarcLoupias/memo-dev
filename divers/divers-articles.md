@@ -35,6 +35,23 @@
 
 [4,7 millions de développeurs en Europe, Londres et Paris en tête : blog.jobtic.fr](http://blog.jobtic.fr/47-millions-de-developpeurs-europe-londres-paris-tete/)
 
+[Combien y a-t-il de professionnels dans la population mondiale de développeurs ? : developpez.com](https://www.developpez.com/actu/140439/Combien-y-a-t-il-de-professionnels-dans-la-population-mondiale-de-developpeurs-Et-quelles-sont-les-caracteristiques-des-developpeurs/)
+
+> En 2014, IDC estimait qu’il y avait environ 18,5 millions de développeurs dans le monde et qu’environ 11 millions d’entre eux étaient des professionnels et 7,5 millions des amateurs.
+>
+> La firme Evans Data, pour sa part, révélait dans un rapport de 2016 sur l’étude de la population mondiale des développeurs et sa répartition géographique qu’il y avait 21 millions de développeurs sur la planète.
+>
+> 94 % des développeurs étaient des hommes et seulement 4 % des femmes ;
+> 
+> 34 % des développeurs étaient localisés en Asie, 30 % en Europe, 25 % en Amérique du Nord, 5 % en Amérique du Sud, 4 % en Afrique et 2 % en Océanie.
+> 
+> la majorité des développeurs étaient des professionnels (77 %), mais qu’une partie non négligeable d’entre eux était formée d’amateurs (23 %).
+>
+> (Mobile, IoT, Desktop et Cloud) 7 % travaillent dans les 4 domaines, 23 % dans 3 domaines, 36 % dans 2 domaines et 34 % dans 1 domaine
+> 
+> 17 % de ces développeurs avaient moins d’un an d’expérience, 43 % d’entre eux avaient de 1 à 6 ans d’expérience et 47 % d’entre eux avaient plus de 6 années d’expérience.
+> 
+
 ## compétences dev front, dev back, devops
 
 [A roadmap to becoming a web developer in 2017](https://medium.freecodecamp.com/a-roadmap-to-becoming-a-web-developer-in-2017-b6ac3dddd0cf)
