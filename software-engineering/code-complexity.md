@@ -2,13 +2,13 @@
 
 ## Nombre cyclomatique
 
-cf [définition wikipedia] (https://fr.wikipedia.org/wiki/Nombre_cyclomatique)
+cf [définition wikipedia](https://fr.wikipedia.org/wiki/Nombre_cyclomatique)
 
 > Le nombre cyclomatique, la complexité cyclomatique ou la mesure de McCabe est un outil de métrologie logicielle développé par Thomas McCabe en 1976 pour mesurer la complexité d'un programme informatique. Cette mesure comptabilise le nombre de « chemins » au travers d'un programme représenté sous la forme d'un graphe.
 
 ## NPath complexity
 
-cf [developpez.net] (http://www.developpez.net/forums/d961599/general-developpement/alm/usine-logicielle/qualimetrie/npath-complexity/#post7472939)
+cf [developpez.net](http://www.developpez.net/forums/d961599/general-developpement/alm/usine-logicielle/qualimetrie/npath-complexity/#post7472939)
 
 > La complexité NPath tente de répondre à la question « combien y-a-t-il de possibilités de chemins différents ? », en parcourant le code et en multipliant par le nombre de possibilités à l'entrée de chaque boucle (par exemple *2 pour un if, *7 pour un switch de 6 cas et un cas par défaut).
 
@@ -20,7 +20,7 @@ cf [developpez.net] (http://www.developpez.net/forums/d961599/general-developpem
 
 ## Discussing Cyclomatic Complexity
 
-cf [page sonar] (http://www.sonarqube.org/discussing-cyclomatic-complexity/)
+cf [page sonar](http://www.sonarqube.org/discussing-cyclomatic-complexity/)
 
 Googling on Cyclomatic Complexity (CC), gives some interesting results… Among those results, you’ll find the two following definitions :
 
@@ -49,6 +49,6 @@ At the class level, you can follow the same logic : high CC by class could be th
 
 ## Articles
 
-- [NPath complexity and cyclomatic complexity explained : modess.io] (https://modess.io/npath-complexity-cyclomatic-complexity-explained/)
+- [NPath complexity and cyclomatic complexity explained : modess.io](https://modess.io/npath-complexity-cyclomatic-complexity-explained/)
 
-- [Complexité cyclomatique : www-igm.univ-mlv.fr] (http://www-igm.univ-mlv.fr/~dr/XPOSE2008/Mesure%20de%20la%20qualite%20du%20code%20source%20-%20Algorithmes%20et%20outils/complexite-cyclomatique.html)
+- [Complexité cyclomatique : www-igm.univ-mlv.fr](http://www-igm.univ-mlv.fr/~dr/XPOSE2008/Mesure%20de%20la%20qualite%20du%20code%20source%20-%20Algorithmes%20et%20outils/complexite-cyclomatique.html)
