@@ -6,6 +6,29 @@
 
 [Refactoring Angular Apps to Component Style : teropa.info](https://teropa.info/blog/2015/10/18/refactoring-angular-apps-to-components.html)
 
+[Lifecycle hooks in Angular 1.5 : toddmotto.com](https://toddmotto.com/angular-1-5-lifecycle-hooks)
+
+> Jun 3, 2016
+>
+> - $onInit
+>   - Using $onInit
+>   - $onInit + “require”
+>   - Real world $onInit + “require”
+> - $postLink
+>   - Using $postLink
+>   - Real world $postLink
+>   - What $postLink is not
+> - $onChanges
+>   - What calls $onChanges?
+>   - Using $onChanges
+>   - Cloning “change” hashes for “immutable” bindings
+>   - One-way dataflow + events
+>   - Is two-way binding through “=” syntax dead?
+>   - Using isFirstChange()
+> - $onDestroy
+>   - Using $onDestroy
+>
+
 ## II - best practices
 
 ### A - Todd Motto best practices
