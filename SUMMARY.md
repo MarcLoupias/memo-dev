@@ -215,6 +215,7 @@
 ## Systems - Windows
 
 * [Windows - Ubuntu on windows10](systems/windows/windows-ubuntu-on-windows10.md)
+* [Windows - checksum](systems/windows/windows-checksum.md)
 
 ## Systems - Linux
 
