@@ -219,6 +219,7 @@
 
 ## Systems - Linux
 
+* [Ubuntu - create a bootable USB stick](systems/linux/ubuntu-create-usb-boot.md)
 * [Linux - Description du FHS](systems/linux/linux-fhs-description.md)
 * [Linux - Gestion des droits du FHS](systems/linux/linux-fhs-droits.md)
 * [Linux - logs](systems/linux/linux-logs.md)
