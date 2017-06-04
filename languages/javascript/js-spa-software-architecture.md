@@ -12,9 +12,11 @@
 
 [Flux : github.com/facebook](https://github.com/facebook/flux)
 
-## react & redux
+### Articles
 
-[ReactJS App Architecture](https://medium.com/@Xourse/reactjs-app-architecture-7a33d7ae9834)
+- [Leveling Up With React: React Router : css-tricks.com](https://css-tricks.com/learning-react-router/)
+- [Leveling Up With React: Container Components : css-tricks.com](https://css-tricks.com/learning-react-container-components/)
+- [Leveling Up with React: Redux : css-tricks.com](https://css-tricks.com/learning-react-redux/)
 
 ## angular
 
@@ -29,6 +31,19 @@
 L'idée c'est de générer les vues côtés front pour :
 - des questions de performances, l'utilisateur aurait une vue utilisable plus rapidement, ce point est tout à fait contestable
 - gérer le SEO de SPA. Ce point est valide mais voué à disparaitre dès que les moteurs de recherches seront capables d'indexer des contenus générés via javascript.
+
+## immutability
+
+- [Immutable.js : facebook](https://github.com/facebook/immutable-js/)
+- [Flux architecture : facebook](http://facebook.github.io/flux/docs/in-depth-overview.html#content)
+
+## Redux
+
+[L'architecture Redux en RxJS (Florent Le Gall) : Devoxx2016](https://www.youtube.com/watch?v=hf2PN0jfn20&list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXAO)
+
+[ReactJS App Architecture](https://medium.com/@Xourse/reactjs-app-architecture-7a33d7ae9834)
+
+[Leveling Up with React: Redux : css-tricks.com](https://css-tricks.com/learning-react-redux/)
 
 ## observables
 

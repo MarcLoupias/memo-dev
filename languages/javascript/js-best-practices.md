@@ -21,11 +21,6 @@ Le mode strict apporte quelques changements à la sémantique « normale » de J
 #### online tools
 - [js-variables name validator](https://mothereff.in/js-variables)
 
-#### immutability
-
-- [Immutable.js : facebook](https://github.com/facebook/immutable-js/)
-- [Flux architecture : facebook](http://facebook.github.io/flux/docs/in-depth-overview.html#content)
-
 #### array iteration
 
 [Loop through an array in JavaScript : stackoverflow.com](http://stackoverflow.com/questions/3010840/loop-through-an-array-in-javascript)
