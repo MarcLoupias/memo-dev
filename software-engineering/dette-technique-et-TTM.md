@@ -6,7 +6,15 @@
 - [blog.octo.com : maitriser sa dette technique](http://blog.octo.com/maitriser-sa-dette-technique/)
 - [c2.com : Technical Debt](http://www.c2.com/cgi/wiki?TechnicalDebt)
 - [cetic.be : Dette technique des développements](https://www.cetic.be/Dette-technique-des-developpements)
+
 - [Vos managers ne veulent pas entendre parler de la dette technique, tant mieux ! : Freddy Mallet (@SonarSource) Devoxx2015](https://www.youtube.com/watch?v=hpGxwgVrGDU&list=PLklQqdqnBkPgctKh1xIvF4eFGtmvUvE2b&index=6)
+
+> "Les ruptures technologiques doivent se faire dans la continuité."
+>
+> Idée générale est d'ignorer la dette sur le code legacy qui n'a pas besoin d'évoluer
+> et de se focus uniquement sur le delta entre les versions pour que le nouveau soit nickel.
+> Il faut être très rigoureux sur la qualité du nouveau code (ex : test coverage 80%+)
+> 
 
 #### Time To Market
 
