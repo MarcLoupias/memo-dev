@@ -17,3 +17,7 @@
 > Python. A more modern implementation, named Asciidoctor, is written in Ruby. 
 
 [Asciidoctor : github.com](https://github.com/asciidoctor)
+
+## videos
+
+[Comment Asciidoctor peut vous aider pour votre doc (Jérémie Bresson) : Devoxx2016](https://www.youtube.com/watch?v=Uyx7AVg2dQw&list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXAO&index=139)
