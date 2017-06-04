@@ -107,6 +107,26 @@ Les fichiers modifiés hier ne sont donc pas affichés, seulement ceux modifiés
 
 La commande `find` est très puissante et présente de nombreuses options. Se référer à [la man page correspondante](http://www.linux-france.org/article/man-fr/man1/find-1.html).
 
+## `grep`
+
+Permet de rechercher un mot dans un fichier et d'afficher les lignes dans lesquelles ce mot a été trouvé.
+
+### Recherche de tous les fichiers contenant un mot
+
+```
+
+$ grep -Ril "optimiser"
+security/security-basics.md
+web/web-tracking.md
+
+```
+
+- `i` pour ignorer la casse
+- `R` pour récursif
+- `l` pour obtenir en sortie les noms des fichiers (avec chemin relatif depuis la working directory) et pas leur contenu
+
+On obtient donc la liste de tous les fichiers contenant le mot "optimiser" (sans la casse) depuis la working directory.
+
 ## commande pipe `|`
 
 La commande `|` (pipe) permet de chainer les commandes unix. La 1ère commande donne à la seconde sa sortie en entrée, et etc ...
