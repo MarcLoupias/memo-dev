@@ -6,6 +6,7 @@
 - [blog.octo.com : maitriser sa dette technique](http://blog.octo.com/maitriser-sa-dette-technique/)
 - [c2.com : Technical Debt](http://www.c2.com/cgi/wiki?TechnicalDebt)
 - [cetic.be : Dette technique des développements](https://www.cetic.be/Dette-technique-des-developpements)
+- [Vos managers ne veulent pas entendre parler de la dette technique, tant mieux ! : Freddy Mallet (@SonarSource) Devoxx2015](https://www.youtube.com/watch?v=hpGxwgVrGDU&list=PLklQqdqnBkPgctKh1xIvF4eFGtmvUvE2b&index=6)
 
 #### Time To Market
 
