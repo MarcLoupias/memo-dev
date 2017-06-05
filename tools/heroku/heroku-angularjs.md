@@ -5,7 +5,7 @@
 Running an Angular app as a Node.js app.
 
 #### deploy angular app on heroku
-- [sitepoint.com : deploying-yeomanangular-app-heroku] (http://www.sitepoint.com/deploying-yeomanangular-app-heroku/)
+- [sitepoint.com : deploying-yeomanangular-app-heroku](http://www.sitepoint.com/deploying-yeomanangular-app-heroku/)
 
 steps :
 
@@ -54,11 +54,11 @@ $ git push heroku master
 **l'app est dispo**
 
 #### config question on stackoverflow
-- [stackoverflow.com : how-do-i-deploy-an-angular-js-app] (http://stackoverflow.com/questions/16674202/how-do-i-deploy-an-angular-js-app)
+- [stackoverflow.com : how-do-i-deploy-an-angular-js-app](http://stackoverflow.com/questions/16674202/how-do-i-deploy-an-angular-js-app)
 
 #### Node.js support on Heroku
-- [devcenter.heroku.com : getting-started-with-nodejs#visit-your-application] (https://devcenter.heroku.com/articles/getting-started-with-nodejs#visit-your-application)
+- [devcenter.heroku.com : getting-started-with-nodejs#visit-your-application](https://devcenter.heroku.com/articles/getting-started-with-nodejs#visit-your-application)
 
 #### Example, the generator-angular-fullstack
-- [npmjs.org : generator-angular-fullstack] (https://npmjs.org/package/generator-angular-fullstack)
+- [npmjs.org : generator-angular-fullstack](https://npmjs.org/package/generator-angular-fullstack)
 

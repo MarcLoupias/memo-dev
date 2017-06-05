@@ -1,10 +1,10 @@
 ### Heroku helper
 
-[Tuto play] (https://devcenter.heroku.com/articles/getting-started-with-play#test-locally) but outdated (play 1.x)
+[Tuto play](https://devcenter.heroku.com/articles/getting-started-with-play#test-locally) but outdated (play 1.x)
 
 Play infos ok
-- [devcenter.heroku.com : play-support#play-2-2] (https://devcenter.heroku.com/articles/play-support#play-2-2)
-- [playframework.com : 2.2.x/Production] (http://www.playframework.com/documentation/2.2.x/Production)
+- [devcenter.heroku.com : play-support#play-2-2](https://devcenter.heroku.com/articles/play-support#play-2-2)
+- [playframework.com : 2.2.x/Production](http://www.playframework.com/documentation/2.2.x/Production)
 
 #### app url
 `http://desolate-brook-9012.herokuapp.com/`
@@ -22,7 +22,7 @@ $ heroku config:set PPRB_DB_PWD=<pwd>
 ```
 
 #### mysql tools config
-- [stackoverflow.com : remote-connect-to-cleardb-heroku-database] (http://stackoverflow.com/questions/9822313/remote-connect-to-cleardb-heroku-database) to configure mysql tools to reach prod database
+- [stackoverflow.com : remote-connect-to-cleardb-heroku-database](http://stackoverflow.com/questions/9822313/remote-connect-to-cleardb-heroku-database) to configure mysql tools to reach prod database
 
 #### commands
 
@@ -61,9 +61,9 @@ $ heroku logs > logs/heroku.log
 
 * heroku bash: target/start: No such file or directory
 
-- [stackoverflow.com : crashes-after-deploying] (http://stackoverflow.com/questions/19085213/scala-play-2-2-application-crashes-after-deploying-in-heroku-target-start-no-su)
-- [discussion.heroku.com : no-such-file-or-directory] (https://discussion.heroku.com/t/bash-target-start-no-such-file-or-directory-error-after-upgrading-to-play-2-2/163)
+- [stackoverflow.com : crashes-after-deploying](http://stackoverflow.com/questions/19085213/scala-play-2-2-application-crashes-after-deploying-in-heroku-target-start-no-su)
+- [discussion.heroku.com : no-such-file-or-directory](https://discussion.heroku.com/t/bash-target-start-no-such-file-or-directory-error-after-upgrading-to-play-2-2/163)
 
 * heroku <any_command> returns '! App not found' after renaming an app in dashboard
 
-- [stackoverflow.com : heroku app not found] (http://stackoverflow.com/questions/7615807/renamed-heroku-app-from-website-now-its-not-found) Need to update the remote entry in `project/.git/config` file with the new name !!
+- [stackoverflow.com : heroku app not found](http://stackoverflow.com/questions/7615807/renamed-heroku-app-from-website-now-its-not-found) Need to update the remote entry in `project/.git/config` file with the new name !!
