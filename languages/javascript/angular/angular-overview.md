@@ -19,3 +19,5 @@
 - [Angular Singleton Service and a Loading Indicator](https://medium.com/@weswhite/angular-singleton-service-and-a-loading-indicator-ca3cc7892722)
 
 > Intéressant car montre qu'en Angular il y a un injecteur par module, pour voir un singleton global à la webapp il faut effectuer des manipulations contrairement à AngularJS où il n'y a qu'un seul injecteur pour tous les modules et où tous les services sont des singletons globaux à la webapp.
+
+- [Difference Between Angular vs Angular 2 : blog.learnstartup.net (2017-05-30)](https://blog.learnstartup.net/p/difference-between-angular-vs-angular-2/)
