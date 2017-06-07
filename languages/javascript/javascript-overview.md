@@ -50,3 +50,7 @@ Theses Engines are used in browsers or server side.
 #### TypeScript
 
 [TypeScript](http://www.typescriptlang.org/) include ES6 specs but it enhances it with more features.
+
+### videos
+
+[Comprendre enfin JavaScript, Thierry Chatel : Devoxx2015](https://www.youtube.com/watch?v=PSeU1IJztkI&list=PLklQqdqnBkPgctKh1xIvF4eFGtmvUvE2b&index=128)
