@@ -18,3 +18,6 @@ développé par Microsoft
 
 #### best practices
 - [typescript - best practices] (http://definitelytyped.org/guides/best-practices.html)
+
+#### videos
+- [TypeScript, le JavaScript statiquement typé : Devoxx2015](https://www.youtube.com/watch?v=YjI7mi7AGzA&list=PLklQqdqnBkPgctKh1xIvF4eFGtmvUvE2b&index=109)
