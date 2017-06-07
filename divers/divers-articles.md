@@ -76,3 +76,18 @@ TLDR : Les enjeux ont changés, différenciation concurrentielle et agilité (r�
 [JM JANCOVICI - La connaissance des politiques est nulle en matière énergétique](https://www.youtube.com/watch?v=mm7jghN51gU)
 
 Extensible à tout sujet technique.
+
+## SS2I
+
+[Des SSII aux SS3I ? Sociétés au service des individus de l’ingénierie informatique : Devoxx2014](https://www.youtube.com/watch?v=y6h0jSwkLZA)
+
+> 580K travailleurs dans le numérique (dont 3% d'indépendant (22K))
+>
+> cout réel d'un salarié = salaire brut * 1,8 à 2,2
+>
+> exemple : 
+> ptit jeune à 36KE cout en réalité 65KE
+> nb jours travaillés en syntec : 217j/an
+> seuil de rentabilité : 65K / 217 = 300e de TJM environ
+>
+>
