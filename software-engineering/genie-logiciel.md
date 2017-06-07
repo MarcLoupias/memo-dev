@@ -165,6 +165,7 @@ Exemple Google (janvier 2015) :
 - [Frederick Brooks](https://fr.wikipedia.org/wiki/Frederick_Brooks)
   - [OS/360](https://fr.wikipedia.org/wiki/OS/360)
   - [Mythe du mois / homme](https://fr.wikipedia.org/wiki/Le_Mythe_du_mois-homme)
+  - [No Silver Bullet — Essence and Accidents of Software Engineering](http://www.cs.nott.ac.uk/~pszcah/G51ISS/Documents/NoSilverBullet.html)
 - [Grady Booch](https://en.wikipedia.org/wiki/Grady_Booch)
   - Booch Method
   - UML
