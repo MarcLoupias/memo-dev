@@ -57,4 +57,4 @@ Based on [Martin Fowler quotes](http://martinfowler.com/bliki/FeatureToggle.html
 
 ##### cons
 - feature flipping is mandatory to be able to deliver a clean product
-- history is fucked up
+- more difficult for dev to handle
