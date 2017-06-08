@@ -21,3 +21,14 @@ développé par Microsoft
 
 #### videos
 - [TypeScript, le JavaScript statiquement typé : Devoxx2015](https://www.youtube.com/watch?v=YjI7mi7AGzA&list=PLklQqdqnBkPgctKh1xIvF4eFGtmvUvE2b&index=109)
+> 
+> Migration progressive (passer les `.js` en `.ts` suffit à migrer sur `typescript` et inversement pour rollback)
+> 
+> Facilité apprentissage (juste le fait de typer)
+>
+> Compatible `ES6` (ajoute des polyfills, 90% de babel, donc autant faire `ES5` -> `typescript` plutôt que `ES5` -> `ES6` -> `TS`
+>
+> Refactoring simplifié du fait des types (erreurs à la compilation)
+>
+> Assitance IDE meilleure (Webstorm nickel)
+>
