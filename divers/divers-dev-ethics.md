@@ -6,6 +6,10 @@ don't know right know how to classify all theses subjects ...
 
 [Software development, responsibility and ethics: the coming crisis (Richard Fontana) : Devoxx France 2016](https://www.youtube.com/watch?v=___k3hCQHEU&index=10&list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXAO)
 
+## videos
+
+[La problématique du contrôle des Technologies de l’information : Eric Filiol, Devoxx2015](https://www.youtube.com/watch?v=Vfb_bgGWptg&index=8&list=PLklQqdqnBkPgctKh1xIvF4eFGtmvUvE2b)
+
 ## Attitude
 
 ### Crocker's Rules
