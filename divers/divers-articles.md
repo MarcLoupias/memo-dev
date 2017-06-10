@@ -91,3 +91,27 @@ Extensible à tout sujet technique.
 > seuil de rentabilité : 65K / 217 = 300e de TJM environ
 >
 >
+
+## stacks utilisées
+
+[Étude sur l’évolution des technologies backend par année de création des entreprises : hired.com](https://hired.com/blog/france/technologies-backend-les-plus-en-vogue/)
+
+> 2017
+> - .net et PHP tombent en désuétude
+> - nodejs et ruby sont les plus dynamiques parmi les nouvelles entreprises
+> - java et python sont stables
+
+[Étude sur le salaire moyen des développeurs Front-end par stack et par année d’expérience : hired.com](https://hired.com/blog/france/salaire-des-developpeurs-front-end/)
+
+> 2017
+> 40% Angular, 40% React, 20% backbone
+
+[Étude sur le nombre moyen de demandes d’entretien reçues par type de profil et par marché : hired.com](https://hired.com/blog/france/entretiens/)
+
+> 2017
+> L’échantillon concerne uniquement les postes de Software Engineer :
+> - Développeur Fullstack 
+> - Développeur Frontend
+> - Développeur Backend
+> - Développeur Mobile
+> - Ingénieur DevOps
