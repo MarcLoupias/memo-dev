@@ -8,9 +8,45 @@
 
 [Hacker Way: Rethinking Web App Development at Facebook : facebook](https://www.youtube.com/watch?v=nYkdrAPrdcw&t=0s)
 
-[Flux In Depth Overview : facebook](http://facebook.github.io/flux/docs/in-depth-overview.html#content)
+### Flux
 
 [Flux : github.com/facebook](https://github.com/facebook/flux)
+
+[Flux In Depth Overview : facebook.github.io](http://facebook.github.io/flux/docs/in-depth-overview.html#content)
+
+[Flux In Depth Diagram : facebook.github.io](https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.png)
+
+[Flux, l'architecture de Facebook : Devoxx2015](https://www.youtube.com/watch?v=l9RC1M_pVGw&list=PLklQqdqnBkPgctKh1xIvF4eFGtmvUvE2b&index=135) 
+([Florent Duveau](https://github.com/FlorentD))
+
+> - Balayage des architectures web :
+>   - Java Spring MVC
+>   - js backbone MVC ? MVP ? MV???
+>   - js AngularJS MVC ? MVVM ? MVW???
+>   - js React (pas vraiment d'archi, juste une lib de composants)
+>   - A la demande de la communauté, ils ont sorti [Flux](https://github.com/facebook/flux)
+> 
+> - Histoire de Flux
+>   - 2011 à Palo Alto (équipe dev du chat)
+>   - Problème : Comment sync la toolbar au top qui notifie du nb de msg non-lus avec le composant de chat
+>   - Un seul composant (le handler) gérait la logique et les états de tout
+>   - Changement archi en séparant la logique dans chaque composant qui soit son état à lui
+>   - Une action envoie au store qui envoie à la vue
+>   - Ajout du dispatcher qui sert de goulot d'étranglement des actions (toutes les actions remontent à lui, il renvoie 
+>   tout au store)
+>   - Avantages : Flow unidirectionnel, séparation entre data et state de la vue, debug et tests + faciles
+>   - Exemple sur un code de projet
+> 
+> - Pourquoi s'y intéresser
+>   - Réponse concrète aux problèmes d'archi front
+>   - Créé suite à un use case concret (chat de facebook)
+>   - Archi orientée events, générique et customisable
+>   
+> - Libs basées sur cette archi
+>   - RefluxJS
+>   - TUXX
+>   - Fluxy
+>   - delorean
 
 ### Articles
 
