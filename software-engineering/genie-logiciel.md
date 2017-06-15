@@ -2,6 +2,34 @@
 
 - [Définition wikipédia](https://fr.wikipedia.org/wiki/G%C3%A9nie_logiciel)
 
+## paradigmes
+
+### structured programming
+
+[Structured programming](https://en.wikipedia.org/wiki/Structured_programming)
+
+> don't use unrestrained GOTO (Robert C. Martin)
+
+> aimed at improving the clarity, quality, and development time of a computer program by making extensive use of subroutines, block structures, for and while loops—in contrast to using simple tests and jumps such as the go to statement which could lead to "spaghetti code" causing difficulty to both follow and maintain.
+
+### functional programming
+
+[Functional programming](https://en.wikipedia.org/wiki/Functional_programming)
+
+> don't use assignment (Robert C. Martin)
+
+> a style of building the structure and elements of computer programs—that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data. It is a declarative programming paradigm, which means programming is done with expressions or declarations instead of statements.
+
+[Anjana Vakil: Learning Functional Programming with JavaScript - JSUnconf 2016](https://www.youtube.com/watch?v=e-5obm1G_FY)
+
+### object-oriented programming
+
+[Object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming)
+
+> don't use pointers to functions (Robert C. Martin) (He is talking about pointers in C++)
+
+> based on the concept of "objects", which may contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods. A feature of objects is that an object's procedures can access and often modify the data fields of the object with which they are associated (objects have a notion of "this" or "self"). In OOP, computer programs are designed by making them out of objects that interact with one another.
+
 ## principes
 - [Separation of Concerns](http://effectivesoftwaredesign.com/2012/02/05/separation-of-concerns/)
 
