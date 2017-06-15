@@ -6,6 +6,8 @@ don't know right know how to classify all theses subjects ...
 
 [Software development, responsibility and ethics: the coming crisis (Richard Fontana) : Devoxx France 2016](https://www.youtube.com/watch?v=___k3hCQHEU&index=10&list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXAO)
 
+[Tesla's autopilot probed by government after crash kills driver](http://money.cnn.com/2016/06/30/technology/tesla-autopilot-death/index.html?iid=EL)
+
 ## videos
 
 [La problématique du contrôle des Technologies de l’information : Eric Filiol, Devoxx2015](https://www.youtube.com/watch?v=Vfb_bgGWptg&index=8&list=PLklQqdqnBkPgctKh1xIvF4eFGtmvUvE2b)
