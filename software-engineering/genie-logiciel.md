@@ -20,7 +20,7 @@
 
 > a style of building the structure and elements of computer programs—that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data. It is a declarative programming paradigm, which means programming is done with expressions or declarations instead of statements.
 
-[Learning Functional Programming with JavaScript - JSUnconf 2016 : Anjana Vakil](https://www.youtube.com/watch?v=e-5obm1G_FY)
+[Learning Functional Programming with JavaScript - JSUnconf 2016 : Anjana Vakil](https://www.youtube.com/watch?v=e-5obm1G_FY) - [slides](https://slidr.io/vakila/learning-functional-programming-with-javascript#1)
 
 [Immutable data structures for functional JS : Anjana Vakil](https://2017.jsconf.eu/speakers/anjana-vakil-immutable-data-structures-for-functional-js.html)
 
