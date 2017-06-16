@@ -323,3 +323,7 @@ Vérifie également l'intégrité par ricochet.
 
 - [Introduction à la Cryptographie : ram-0000.developpez.com](http://ram-0000.developpez.com/tutoriels/cryptographie/)
 - [L'identification et l'authentification : ssi.ac-strasbourg.fr](https://ssi.ac-strasbourg.fr/bonnes-pratiques/recommandations/lidentification-et-lauthentification/)
+
+## actualite / debats
+
+- [Telegram : les services de renseignement US ont tenté de soudoyer ses développeurs pour affaiblir leur chiffrement](https://www.developpez.net/forums/d1712341/systemes/securite/telegram-renseignement-us-tente-soudoyer-developpeurs-affaiblir-chiffrement/#post9376211)
