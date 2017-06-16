@@ -4,6 +4,22 @@
 
 ## paradigmes
 
+### imperative programming
+
+[Imperative programming](https://en.wikipedia.org/wiki/Imperative_programming)
+
+> In computer science, imperative programming is a programming paradigm that uses statements that change a program's state.
+
+> Imperative programming focuses on describing how a program operates.
+
+### declarative programming
+
+[Declarative programming](https://en.wikipedia.org/wiki/Declarative_programming)
+
+> is a programming paradigm [...] that expresses the logic of a computation without describing its control flow.
+
+> Many languages that apply this style attempt to minimize or eliminate side effects by describing what the program must accomplish in terms of the problem domain, rather than describe how to accomplish it as a sequence of the programming language primitives (the how being left up to the language's implementation). This is in contrast with imperative programming, which implements algorithms in explicit steps.
+
 ### structured programming
 
 [Structured programming](https://en.wikipedia.org/wiki/Structured_programming)
