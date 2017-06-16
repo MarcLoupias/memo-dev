@@ -259,3 +259,5 @@ Fin des années 70, les ordinateurs sont montés en puissance, donc permettent l
 
 [odyssée du Continuous Delivery Diego Lemos David Caramelo (Nicolas Bourgeois)](https://www.youtube.com/watch?v=P9G7jBBwLjc&index=80&list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXAO)
 Présentation Devoxx2016 sur le passage du code legacy au continuous delivery à la Société Générale. Juste génial.
+
+[SOAT Agile Day - Keynote de Romain Niccoli - Etre agile dans un contexte de forte croissance](https://www.youtube.com/watch?v=vUTYKLEneuI)
