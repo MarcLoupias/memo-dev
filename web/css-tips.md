@@ -7,7 +7,7 @@
 ## flexbox
 
 - [flexbox](http://www.flexboxpatterns.com/home)
-- [understanding-flexbox](https://medium.freecodecamp.com/understanding-flexbox-everything-you-need-to-know-b4013d4dc9af#.niafj7118)
+- [understanding-flexbox](https://medium.freecodecamp.com/understanding-flexbox-everything-you-need-to-know-b4013d4dc9af)
 
 ## CSS methdologies 
 
