@@ -8,6 +8,8 @@ don't know right know how to classify all theses subjects ...
 
 [Tesla's autopilot probed by government after crash kills driver](http://money.cnn.com/2016/06/30/technology/tesla-autopilot-death/index.html?iid=EL)
 
+[Les États-Unis ont connu la plus grosse fuite de données des électeurs jamais observée](https://www.developpez.net/forums/d1714076/club-professionnels-informatique/actualites/politique/etats-unis-ont-connu-plus-grosse-fuite-donnees-electeurs-jamais-observee/#post9386396)
+
 ## videos
 
 [La problématique du contrôle des Technologies de l’information : Eric Filiol, Devoxx2015](https://www.youtube.com/watch?v=Vfb_bgGWptg&index=8&list=PLklQqdqnBkPgctKh1xIvF4eFGtmvUvE2b)
