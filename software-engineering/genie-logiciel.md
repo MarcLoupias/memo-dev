@@ -44,6 +44,24 @@
 
 [Robert C Martin - Functional Programming; What? Why? When?](https://www.youtube.com/watch?v=7Zlp9rKHGD4)
 
+- [4:07](https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=247s) "Functional Programming: What? When? Why?" or "The Failure of State" 
+- [5:10](https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=310s) Rich Hickey is the author of Clojure. Listen to his talks. 
+- [5:40](https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=340s) What is state? Variables. 
+- [11:15](https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=675s) Structure and Interpretation of Computer Programs. This is a fascinating book. For the first 250 pages, the book uses no assignment statements. 
+- [14:15](https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=855s) Here's how SICP's model of computing worked before they introduced an assignment statement. Simply replace a function call with its implementation. 
+- [15:58](https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=958s) Once you introduce assignment. You can no longer replace a function call with its implementation. Why? Because the state of the system may have changed. An assignment statement introduces the concept of time. 
+- [18:04](https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=1084s) Side effect: an assignment statement. If there's no assignment, there's no side effect. 
+- [20:22](https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=1222s) What "hack" have we done to protect us from memory leaks? Garbage collection. 
+- [31:46](https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=1906s) Functional programming was invented in 1957 before OO and structured. But memory was too expensive to make it practical. But memory is cheap now. 
+- [32:53](https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=1973s) Should we change how we program? We should because: 
+  1) Functional programs are simpler - which makes them easier to write and maintain 
+  2) There's no temporal coupling - no worrying if some function was called before another function. 
+  3) Fewer concurrency issues. In a purely functional program, there's no concurrency because there is no state. 
+  4) No asking, "What's the state?" 
+- [38:38](https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=2318s) We're using multicore CPU's now because we can't increase clock rate anymore. And hardware makers are doing bizarre tradeoffs. They're making individual processors slower but putting more processors in. So individual cores slow down but the chip throughput goes up if you can take advantage of all the cores. 
+- [42:00](https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=2520s) How are you going to work with an abundance of cores? Maybe we need to walk away from the assignment statement. 
+- [49:49](https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=2989s) OO = procedure + state. OO is exposed procedure but hidden state (encapsulation). It's possible to write functional programs using an OO style. All of the objects become immutable.
+
 ### object-oriented programming
 
 [Object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming)
