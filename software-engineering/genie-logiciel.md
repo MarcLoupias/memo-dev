@@ -42,6 +42,8 @@
 
 [An introduction to functional programming : Mary Rose Cook](https://codewords.recurse.com/issues/one/an-introduction-to-functional-programming)
 
+[Robert C Martin - Functional Programming; What? Why? When?](https://www.youtube.com/watch?v=7Zlp9rKHGD4)
+
 ### object-oriented programming
 
 [Object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming)
