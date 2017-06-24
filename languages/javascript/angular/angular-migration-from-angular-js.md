@@ -50,4 +50,15 @@
 [Quelques grands principes pour aller vers Angular 2.x en venant d’Angular 1.4 ? : blogtech.soprasteria.com](http://blogtech.soprasteria.com/2017/05/24/quelques-grands-principes-pour-aller-vers-angular-2-x-en-venant-dangular-1-4/)
 
 > Très détaillé avec contextualisation + plein de bons liens en fin d'article
- 
+
+[Gillespie59/angular2-migration-sample : github.com](https://github.com/Gillespie59/angular2-migration-sample)
+
+> a short example
+
+[ngmigrate/ngmigrate.github.io : github.com](https://github.com/ngmigrate/ngmigrate.github.io)
+
+> source code of the Todd Motto migration guide [ng-migrate](http://developer.telerik.com/angular-2-migration-guide/)
+
+[ngParty/ng1-migration-workshop : github.com](https://github.com/ngParty/ng1-migration-workshop)
+
+> migration example app from angular 1.x ES5 to Typescript and ngMetadata 
