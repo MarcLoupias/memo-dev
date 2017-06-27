@@ -156,6 +156,7 @@
 * [scrum memo](software-engineering/scrum-memo.md)
 * [semver](software-engineering/semver.md)
 * [testing](software-engineering/testing.md)
+* [*no silver bullet* F.Brooks - notes](software-engineering/brooks-no-silver-bullet-notes.md)
 
 ## Tools
 
