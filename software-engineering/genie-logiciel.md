@@ -143,9 +143,11 @@ La notion fondamentale est qu'un objet devrait faire aussi peu d'hypothèses que
 
 - [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control)
 
-- Ron Jeffries
+- YAGNI (You aren't gonna need it)
 
-> Always implement things when you actually need them, never when you just foresee that you need them.
+> Always implement things when you actually need them, never when you just foresee that you need them. (Ron Jeffries)
+
+[You aren't gonna need it : en.wikipedia.org](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
 
 ## normes
 - [ISO/CEI 29110 : ingénierie de systèmes et l'Ingénierie du logiciel - les processus de cycle de vie pour les très petits organismes](https://fr.wikipedia.org/wiki/ISO/CEI_29110)
