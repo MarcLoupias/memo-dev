@@ -27,6 +27,16 @@ A TDD cycle is composed of three, iterative phases.
 
 [The Pragmatics of TDD : 8thlight.com (2013/03)](https://8thlight.com/blog/uncle-bob/2013/03/06/ThePragmaticsOfTDD.html)
 
+[Getting early feedback applying Test-Driven Development](https://wakeupcode.wordpress.com/2017/02/06/getting-early-feedback-applying-test-driven-development/)
+
+> from a Pivotal Labs developer (Jasmine)
+> he links searches papers by [IBM](http://proceedings.informingscience.org/InSITE2012/InSITE12p165-187Bulajic0052.pdf)
+> and [Microsoft](https://zeroturnaround.com/wp-content/uploads/2016/04/10.1.1.104.6319.pdf)
+> They concludes :
+> Reduced defect density at IBM 40% and Microsoft 60% – 90% 
+> Increase of time taken to code feature (15% – 35%) 
+> **TDD saves time & money**
+
 ### Test Last Development (TLD)
 
 Unit tests are written only after some production code (e.g., the code necessary for a feature of the task) was present.
