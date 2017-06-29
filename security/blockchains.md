@@ -41,6 +41,10 @@ Question déterminante, en tant que user de la blockchain je veux :
 
 [IKP: Turning a PKI Around with Blockchains, Stephanos Matsumoto & Raphael M. Reischuk](https://eprint.iacr.org/2016/1018.pdf) to appear at [38th IEEE Symposium on Security and Privacy (S&P), San Jose, CA, May 2017](http://www.ieee-security.org/TC/SP2017/program-papers.html)
 
+### articles
+
+[How Will Blockchain Impact PKI? : blog.css-security.com](https://blog.css-security.com/blog/how-will-blockchain-impact-pki)
+
 ### influence & inspirations
 
 [Web of trust](https://en.wikipedia.org/wiki/Web_of_trust)
