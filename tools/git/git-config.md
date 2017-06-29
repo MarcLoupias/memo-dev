@@ -92,3 +92,11 @@ For line endings management, check [text](https://git-scm.com/docs/gitattributes
 #### example
 
 `git config --global user.name "Robert Duchmoul"`
+
+## excluding files
+
+[Three ways of excluding files](http://365git.tumblr.com/post/519016351/three-ways-of-excluding-files)
+
+- Per Project: .gitignore file in the repository
+- Per Repository: in .git/info/excludes
+- Per Computer: through settings in ~/.gitconfig
