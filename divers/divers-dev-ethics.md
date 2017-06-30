@@ -14,6 +14,8 @@ don't know right know how to classify all theses subjects ...
 
 [La problématique du contrôle des Technologies de l’information : Eric Filiol, Devoxx2015](https://www.youtube.com/watch?v=Vfb_bgGWptg&index=8&list=PLklQqdqnBkPgctKh1xIvF4eFGtmvUvE2b)
 
+[Expecting Professionalism, Uncle Bob ; about ethics and auto-regulation](https://youtu.be/BSaAMQVq01E?t=1220)
+
 ## Attitude
 
 ### Crocker's Rules
