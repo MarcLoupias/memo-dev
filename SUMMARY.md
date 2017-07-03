@@ -105,6 +105,7 @@
 * [javascript - testing - js TDD](languages/javascript/testing/js-TDD.md)
 * [javascript - testing - karma](languages/javascript/testing/karma.md)
 * [javascript - testing - qunit](languages/javascript/testing/qunit.md)
+* [javascript - testing - cypress](languages/javascript/testing/cypress.md)
 
 * [javascript - ES6 overview](languages/javascript/ES6-overview.md)
 * [javascript - ES6 proxies](languages/javascript/ES6-proxies.md)
