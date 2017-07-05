@@ -15,6 +15,27 @@ git clone <url> <dir_name>
 # list local branch
 git branch -l
 
+# list all branches (remote and local, tracked and untracked) : git remote show [remote]
+git remote show origin
+
+* remote origin
+  Fetch URL: https://github.com/OneBusAway/onebusaway-android
+  Push  URL: https://github.com/OneBusAway/onebusaway-android
+  HEAD branch: master
+  Remote branches:
+    amazon-rc2                   new (next fetch will store in remotes/origin)
+    amazon-rc3                   new (next fetch will store in remotes/origin)
+    arrivalStyleBDefault         new (next fetch will store in remotes/origin)
+    develop                      tracked
+    master                       tracked
+    refs/remotes/origin/branding stale (use 'git remote prune' to remove)
+  Local branches configured for 'git pull':
+    develop merges with remote develop
+    master  merges with remote master
+  Local refs configured for 'git push':
+    develop pushes to develop (local out of date)
+    master  pushes to master  (up to date)
+
 # delete local branch
 git branch -d <branch_name>
 
