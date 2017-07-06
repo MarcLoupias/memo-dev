@@ -62,3 +62,5 @@
 [ngParty/ng1-migration-workshop : github.com](https://github.com/ngParty/ng1-migration-workshop)
 
 > migration example app from angular 1.x ES5 to Typescript and ngMetadata 
+
+[Upgrading Your Application to Angular 2 with ng-upgrade : blog.rangle.io](http://blog.rangle.io/upgrade-your-application-to-angular-2-with-ng-upgrade/)
