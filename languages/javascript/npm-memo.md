@@ -1,12 +1,14 @@
 
-### links
+# npm memo
+
+## links
 
 - [npm basic commands](http://dreamerslab.com/blog/en/npm-basic-commands/)
 - [10 Cool Things You Probably Didn’t Realize npm Could Do](http://blog.izs.me/post/1675072029/10-cool-things-you-probably-didnt-realize-npm)
 - [One-line node modules](https://github.com/sindresorhus/ama/issues/10)
 > with a big answer by sindresorhus
 
-### semver
+## semver
 
 [semver to manage scopes in package.json](https://docs.npmjs.com/misc/semver)
 - [semver](https://github.com/mojombo/semver/blob/master/semver.md) : `<major>.<minor>.<patch>`
@@ -18,8 +20,7 @@ semver interpretation for breaking changes can be slightly different from a pack
 But libs like angularjs (or protractor) introduce breaking changes in minor update.
 Consequences : ^ (caret) in package.json should allow automatic feature update without breaking changes but in fact it depends a lot on the package owner management.
 
-
-### command list
+## command list
 
 ```
 # list globally installed package by name
@@ -41,7 +42,7 @@ npm view <package_name> version
 npm config list -ls
 ```
 
-### npm folders
+## npm folders
 [check this](https://docs.npmjs.com/files/folders)
 
 TLDR :
@@ -52,7 +53,36 @@ TLDR :
 - Install it globally if you're going to run it on the command line.
 - If you need both, then install it in both places, or use `npm link`.
 
-### managing dependencies
+## managing dependencies
+
+### built-in commands
+
+[`npm ls`](https://docs.npmjs.com/cli/ls)
+
+```
+# list all the installed dependencies in stdout in a tree format
+npm ls
+
+# list all the installed dependencies in stdout in a tree format limited to the first level
+# it must matches deps listed in package.json
+npm ls --depth=0
+
+# same as above but with the deps of deps in the tree
+npm ls --depth=1
+
+# print extended informations
+npm ll
+npm la
+```
+
+[`npm outdated`](https://docs.npmjs.com/cli/outdated)
+
+```
+# check the registry to see if any (or, specific) installed packages are currently outdated
+npm outdated
+```
+
+### others packages
 
 - [npm-check](https://www.npmjs.com/package/npm-check)
 > Check for outdated, incorrect, and unused dependencies.
