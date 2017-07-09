@@ -83,6 +83,68 @@ L'idée c'est de générer les vues côtés front pour :
 
 [Le mois du JS - React/Redux : la stack tendance, efficace et performante : xebia](https://www.youtube.com/watch?v=rgzrByrqRTY)
 
+> comparatif des différents design fronts (MVC, MVP, MVVM, ... MVW)
+> 
+> exemple avec Angular (scope+watchers) : Mutation du modèle (Valable aussi avec Aurelia et Ember)
+> 
+> Mutation pas bien, préférer immutable.
+> 
+> Donc préférer React (lib de composants) :
+> 
+> - pas un framework
+> - lib UI
+> - vue déclarative
+> - binding unidirectionnel
+> - DOM Virtuel
+> 
+> Exemples de composants (normal & dumb)
+> 
+> JSX (Javascript Syntax eXtension)
+> 
+> A la compilation le JSX disparait pour laisser du js vanilla
+> 
+> Explication binding unidirectionnel
+> 
+> setState ou setProps : React redessine tout le composant
+> 
+> son state interne est mutable mais le dev ne doit pas y accéder ni le toucher
+> 
+> DOM Virtuel (react fait un diff du nouveau DOM et du DOM actuellement affiché sans accéder au DOM réel
+> donc c'est très rapide)
+> 
+> Flux :Architecture utilisée par facebook sur ses webapps
+> 
+> Quelques impls : Redux, Flux, Alt, Reflux, Relay
+> 
+> Pourquoi Redux :
+> 
+> - le plus simple
+> - store unique et immutable
+> - reducers à la place des stores
+> - bcp d'outils dispo
+> 
+> Principe de base : `(previousState, action) => newState`
+> 
+> Action (objet respectant une convention) :
+> 
+> ```javascript
+> const action = {
+>     type: 'ADD_SLOT',
+>     slot: {
+>         group: 'Les 4 fantastiques',
+>         name: 'React / Redux'
+>     }
+> }
+> ```
+> 
+> Action creator : Fonction qui retourne une action
+> 
+> Reducer : prends en arg le précédent state + l'action à exec et retourne le nouveau state
+> 
+> Store : (peu de fonctions : subscribe() (pour être notifié des modifs du store), dispatch(), getState())
+> 
+> Composant Provider va définir le store pour toute la webapp
+
 ## observables
 
 ES6 **required** for this.
