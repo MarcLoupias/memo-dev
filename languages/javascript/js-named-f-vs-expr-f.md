@@ -12,6 +12,8 @@
 
 > variable and function declarations are put into memory during the compile phase
 
+Hoisting is not available with expression function where the declaration order impact function usage.
+
 ```javascript
 function catName(name) {
   console.log("My cat's name is " + name);
