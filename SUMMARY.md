@@ -5,6 +5,7 @@
 * [Freebox - videos](divers/freebox/freebox-videos.md)
 * [Licences - articles opensource](divers/licences/licences-articles-opensource.md)
 * [Licences - WTFPL](divers/licences/licences-WTFPL.md)
+* [Licences - Choose a licence](divers/licences/licences-choose-a-licence.md)
 * [Articles divers](divers/divers-articles.md)
 * [Dev ethics](divers/divers-dev-ethics.md)
 * [Outils veille techno](divers/divers-outil-veille-techno.md)
