@@ -1,5 +1,11 @@
 # SPA software architecture
 
+## generics articles
+
+[Learn App Architecture by Building Apps : Eric Elliott 20160718](https://medium.com/javascript-scene/the-best-way-to-learn-to-code-is-to-code-learn-app-architecture-by-building-apps-7ec029db6e00)
+
+> SPA Architecture review : AngularJS 2w bindings then React unidirectionnal then Redux 
+
 ## component
 
 [Front-end Application Libraries and Component Architectures](http://developer.telerik.com/featured/front-end-application-frameworks-component-architectures/)
