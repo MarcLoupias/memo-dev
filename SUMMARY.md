@@ -117,7 +117,7 @@
 * [javascript - browser geoloc](languages/javascript/js-browser-geolocalisation.md)
 * [javascript - doc](languages/javascript/js-doc.md)
 * [javascript - double negation](languages/javascript/js-double-negation.md)
-* [javascript - fonctions anonymes](languages/javascript/js-fonctions-anonymes.md)
+* [javascript - fonctions anonymes](languages/javascript/js-fonctions-anonymes-IIFE.md)
 * [javascript - named function vs expression function](languages/javascript/js-named-f-vs-expr-f.md)
 * [javascript - parsing xml and angular](languages/javascript/js-parsing-xml-and-angular.md)
 * [javascript - prototype](languages/javascript/js-prototype.md)
