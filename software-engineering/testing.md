@@ -83,3 +83,27 @@ Unit tests are written only after some production code (e.g., the code necessary
 - Class would be challenging for new team members to read and quickly “get it”
 - Class has fields that are only used in some methods
 - Class has static methods that only operate on parameters
+
+## articles
+
+[5 Questions Every Unit Test Must Answer : Eric Elliott 20150829](https://medium.com/javascript-scene/what-every-unit-test-needs-f6cd34d9836d)
+
+> - What are you testing?
+> - What should it do?
+> - What is the actual output?
+> - What is the expected output?
+> - How can the test be reproduced?
+
+[5 Common Misconceptions About TDD & Unit Tests : Eric Elliott 20160526](https://medium.com/javascript-scene/5-common-misconceptions-about-tdd-unit-tests-863d5beb3ce9)
+
+> - TDD is too Time Consuming. The Business Team Would Never Approve
+> - You Can’t Write Tests Until You Know the Design, & You Can’t Know the Design Until You Implement the Code
+> - You Have to Write All Tests Before You Start the Code
+> - Red, Green, and ALWAYS Refactor?
+> - Everything Needs Unit Tests
+
+[JavaScript Testing: Unit vs Functional vs Integration Tests : Eric Elliott 20160425](https://www.sitepoint.com/javascript-testing-unit-functional-integration/)
+
+> - **Unit tests** ensure that individual components of the app work as expected. Assertions test the component API.
+> - **Integration tests** ensure that component collaborations work as expected. Assertions may test component API, UI, or side-effects (such as database I/O, logging, etc…)
+> - **Functional tests** ensure that the app works as expected from the user’s perspective. Assertions primarily test the user interface.
