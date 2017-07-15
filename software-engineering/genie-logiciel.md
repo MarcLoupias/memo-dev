@@ -252,6 +252,9 @@ Exemple Google (janvier 2015) :
   - [Clean Code](http://alm.developpez.com/livres/index/?page=Les-livres-en-francais#L2744023272)
 - [Sandro Mancuso : Software Craftmanship](http://codurance.com/blog/author/sandro-mancuso/)
 - [Martin Fowler : Agile Manifesto, CI](https://fr.wikipedia.org/wiki/Martin_Fowler) [Refactoring](https://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672/ref=asap_bc?ie=UTF8)
+- [Eric Elliott : "Programming JavaScript Applications" (O’Reilly)](https://leanpub.com/u/ericelliott)
+  - [github profile](https://github.com/ericelliott)
+  - massive article writer on [medium.com](https://medium.com/@_ericelliott)
 
 - [Top 10 Programming Books Every Software Developer Should Read](https://www.youtube.com/watch?v=UX4YijQ3zhc)
 
