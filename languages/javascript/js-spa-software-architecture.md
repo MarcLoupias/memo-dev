@@ -68,6 +68,41 @@ L'idée c'est de générer les vues côtés front pour :
 - des questions de performances, l'utilisateur aurait une vue utilisable plus rapidement, ce point est tout à fait contestable
 - gérer le SEO de SPA. Ce point est valide mais voué à disparaitre dès que les moteurs de recherches seront capables d'indexer des contenus générés via javascript.
 
+[Why You’ll Always Need Isomorphic JavaScript](https://medium.com/@asyncmax/why-youll-always-need-isomorphic-javascript-bd310596d203)
+
+> Key Benefits of Isomorphism :
+> - Better user experience
+> - Faster overall loading time
+> - More predictable SEO and Site Indexing
+
+## universal
+
+[Isomorphism vs Universal JavaScript](https://medium.com/@ghengeveld/isomorphism-vs-universal-javascript-4b47fb481beb)
+
+> TLDR : 
+> 
+> - **Isomorphism** is the functional aspect of seamlessly switching between client- and server-side rendering without losing state. 
+> - **Universal** is a term used to emphasize the fact that a particular piece of JavaScript code is able to run in multiple environments.
+>
+ 
+[Universal React: You’re doing it wrong 20160316](http://jamesknelson.com/universal-react-youre-doing-it-wrong/)
+
+[Universal JavaScript and the future of the Single Page Apps 20161029](https://codepicnic.com/posts/universal-javascript-and-the-future-of-the-single-page-apps-084b6fbb10729ed4da8c3d3f5a3ae7c9)
+
+[Am I the only one that thinks isomorphic/universal rendering with React is a nightmare? : quora.com 201604xx](https://www.quora.com/Am-I-the-only-one-that-thinks-isomorphic-universal-rendering-with-React-is-a-nightmare)
+
+[Angular Universal](https://universal.angular.io/)
+
+> Server-side Rendering for Angular 2 apps
+> 
+> Better Perceived Performance
+> Optimized for Search Engines
+> 
+
+[isomorphic-react-example : github.com/DavidWells](https://github.com/DavidWells/isomorphic-react-example)
+
+[react-starter-kit : github.com/kriasoft](https://github.com/kriasoft/react-starter-kit)
+
 ## immutability
 
 - [Immutable.js : facebook](https://github.com/facebook/immutable-js/)
