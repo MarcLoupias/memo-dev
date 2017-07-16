@@ -193,6 +193,8 @@ Exemple Google (janvier 2015) :
 
 [Pourquoi votre entreprise devrait stocker l'ensemble de son code dans un seul repo (Thierry Abaléa) Devoxx2017](https://www.youtube.com/watch?v=7Dfes-qJQ54)
 
+[Why Google Stores Billions of Lines of Code in a Single Repository : Rachel Potvin@Google 20150914](https://www.youtube.com/watch?v=W71BTkUbdqE)
+
 ### continuous integration
 
 [wikipedia](https://en.wikipedia.org/wiki/Continuous_integration)
