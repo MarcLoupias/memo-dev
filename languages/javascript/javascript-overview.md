@@ -54,3 +54,11 @@ Theses Engines are used in browsers or server side.
 ### videos
 
 [Comprendre enfin JavaScript, Thierry Chatel : Devoxx2015](https://www.youtube.com/watch?v=PSeU1IJztkI&list=PLklQqdqnBkPgctKh1xIvF4eFGtmvUvE2b&index=128)
+
+## Learn
+
+[Top JavaScript Frameworks & Topics to Learn in 2017 : Eric Elliot 20161210](https://medium.com/javascript-scene/top-javascript-frameworks-topics-to-learn-in-2017-700a397b711)
+
+[Learn JavaScript Essentials (for all skill levels) : Eric Elliot 20140803](https://medium.com/javascript-scene/learn-javascript-b631a4af11f2)
+
+[10 Priceless Resources for JavaScript Learners : Eric Elliot 20160421](https://medium.com/javascript-scene/10-priceless-resources-for-javascript-learners-bbf2f7d7f84e)
