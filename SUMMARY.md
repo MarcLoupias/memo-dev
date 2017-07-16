@@ -94,6 +94,7 @@
 * [javascript - nodejs - links](languages/javascript/node.js/nodejs-links.md)
 * [javascript - nodejs - mock via express](languages/javascript/node.js/nodejs-mock-via-express.md)
 * [javascript - nodejs - REST API frameworks](languages/javascript/node.js/nodejs-rest-api-frameworks.md)
+* [javascript - nodejs - hello world](languages/javascript/node.js/nodejs-hello-world.md)
 
 * [javascript - tools - bower](languages/javascript/tools/tools-bower.md)
 * [javascript - tools - grunt](languages/javascript/tools/tools-grunt.md)
