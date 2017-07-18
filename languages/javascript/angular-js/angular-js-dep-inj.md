@@ -2,9 +2,10 @@
 
 ## article
 
-- [services-and-dependency-injection-in-angularjs] (http://henriquat.re/basics-of-angular/services-dependency-injection/services-and-dependency-injection-in-angularjs.html)
-- [Understanding Dependency Injection - Wiki AngularJS officiel] (https://github.com/angular/angular.js/wiki/Understanding-Dependency-Injection)
-- [source de l'article précédent sur stackoverflow] (http://stackoverflow.com/questions/16828287/what-things-can-be-injected-into-others-in-angular-js/16829270#16829270)
+- [services-and-dependency-injection-in-angularjs](http://henriquat.re/basics-of-angular/services-dependency-injection/services-and-dependency-injection-in-angularjs.html)
+- [Understanding Dependency Injection - Wiki AngularJS officiel](https://github.com/angular/angular.js/wiki/Understanding-Dependency-Injection)
+- [source de l'article précédent sur stackoverflow](http://stackoverflow.com/questions/16828287/what-things-can-be-injected-into-others-in-angular-js/16829270#16829270)
+- [AngularJS Dependency Injection - Demystified 20140908](http://anandmanisankar.com/posts/angularjs-dependency-injection-demystified/)
 
 ## scope and namespace with the angular injector
 
