@@ -62,6 +62,16 @@
 - [42:00](https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=2520s) How are you going to work with an abundance of cores? Maybe we need to walk away from the assignment statement. 
 - [49:49](https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=2989s) OO = procedure + state. OO is exposed procedure but hidden state (encapsulation). It's possible to write functional programs using an OO style. All of the objects become immutable.
 
+#### functionnal programming and DI
+
+[Functional approaches to dependency injection 20161205](https://fsharpforfunandprofit.com/posts/dependency-injection-1/)
+
+[Is Functional Programming a viable alternative to dependency injection patterns? : stackexchange.com 20150310](https://softwareengineering.stackexchange.com/questions/275891/is-functional-programming-a-viable-alternative-to-dependency-injection-patterns)
+
+[Functional Dependency Injection == Currying 201003xx](http://mikehadlow.blogspot.fr/2010/03/functional-dependency-injection.html)
+
+[How to Trick OO Programmers into Loving Functional Programming 20130603](https://medium.com/easy-pieces-for-programmers/how-to-trick-oo-programmers-into-loving-functional-programming-7019e1bf9bba)
+
 ### object-oriented programming
 
 [Object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming)
