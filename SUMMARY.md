@@ -161,6 +161,7 @@
 * [semver](software-engineering/semver.md)
 * [testing](software-engineering/testing.md)
 * [*no silver bullet* F.Brooks - notes](software-engineering/brooks-no-silver-bullet-notes.md)
+* [stamps](software-engineering/stamps.md)
 
 ## Tools
 
