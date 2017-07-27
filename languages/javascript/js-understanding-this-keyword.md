@@ -27,7 +27,7 @@ function Person() {
 }
 
 var p = new Person();
-p.printAge();
+p.printAge(); // 0
 ```
 
 In **ECMAScript 3/5**, the `this` issue was fixable by assigning the value in `this` to a variable that could be closed over.
@@ -49,7 +49,7 @@ function Person() {
 }
 
 var p = new Person();
-p.printAge();
+p.printAge(); // 0 then ++ each second
 ```
 
 In **ECMAScript 6**, an arrow function does not create its own `this`, the `this` value of the enclosing execution context is used.
@@ -67,5 +67,5 @@ function Person(){
 }
 
 var p = new Person();
-p.sayAge();
+p.sayAge(); // 0 then ++ each second
 ```
