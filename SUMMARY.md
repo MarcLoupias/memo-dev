@@ -121,6 +121,7 @@
 * [javascript - double negation](languages/javascript/js-double-negation.md)
 * [javascript - fonctions anonymes](languages/javascript/js-fonctions-anonymes-IIFE.md)
 * [javascript - named function vs expression function](languages/javascript/js-named-f-vs-expr-f.md)
+* [javascript - function invocation patterns](languages/javascript/js-function-invocation-patterns.md)
 * [javascript - parsing xml and angular](languages/javascript/js-parsing-xml-and-angular.md)
 * [javascript - prototype](languages/javascript/js-prototype.md)
 * [javascript - simple logger](languages/javascript/js-simple-logger.md)

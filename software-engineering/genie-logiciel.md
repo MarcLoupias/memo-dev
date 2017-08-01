@@ -32,9 +32,15 @@
 
 [Functional programming](https://en.wikipedia.org/wiki/Functional_programming)
 
+Very quick **TLDR** : **avoids shared state & mutable data**, **functions always returns a value** & a function with given args will always returns the same value.
+
 > don't use assignment (Robert C. Martin)
 
+No assignment means var are immutables.
+
 > a style of building the structure and elements of computer programs—that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data. It is a declarative programming paradigm, which means programming is done with expressions or declarations instead of statements.
+
+N.B. : An **expression** is not a **statement** but a valid unit of code that *resolves to a value*. Not all **statements** resolve to a value. 
 
 [Learning Functional Programming with JavaScript - JSUnconf 2016 : Anjana Vakil](https://www.youtube.com/watch?v=e-5obm1G_FY) - [slides](https://slidr.io/vakila/learning-functional-programming-with-javascript#1)
 
