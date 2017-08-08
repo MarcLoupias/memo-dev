@@ -119,6 +119,7 @@
 * [javascript - browser geoloc](languages/javascript/js-browser-geolocalisation.md)
 * [javascript - doc](languages/javascript/js-doc.md)
 * [javascript - double negation](languages/javascript/js-double-negation.md)
+* [javascript - fetch API](languages/javascript/js-fetch-api.md)
 * [javascript - fonctions anonymes](languages/javascript/js-fonctions-anonymes-IIFE.md)
 * [javascript - named function vs expression function](languages/javascript/js-named-f-vs-expr-f.md)
 * [javascript - function invocation patterns](languages/javascript/js-function-invocation-patterns.md)
