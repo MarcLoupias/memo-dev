@@ -18,10 +18,27 @@ A linter performs static analysis of source code to find :
 
 ## javascript linters
 
-### jslint
+[A Comparison of JavaScript Linting Tools : www.sitepoint.com 20150305](https://www.sitepoint.com/comparison-javascript-linting-tools/)
 
-### jshint
+- a set of rules which they use to analyze and report problems in JavaScript files
+- installed via npm
+- available as plugins for tools like Grunt or Gulp (also throught EDI)
+- support using comments for configuration
 
-### jscs (deprecated)
+### JSLint
 
-### eslint
+The older one. Created by Douglas Crockford in 2002. Have strongly inspired his books, ["Javascript: The Good Parts (2008)"](https://www.amazon.fr/Javascript-Good-Parts-D-Crockford/dp/0596517742).
+
+Still maintained : [douglascrockford/JSLint](https://github.com/douglascrockford/JSLint).
+
+Not configurable or extensible.
+
+### JSHint
+
+### JSCS
+
+Merged with eslint in 2016. See [this](https://medium.com/@markelog/jscs-end-of-the-line-bc9bf0b3fdb2).
+
+### ESLint
+
+
