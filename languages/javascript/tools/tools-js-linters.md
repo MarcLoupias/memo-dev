@@ -35,6 +35,22 @@ Not configurable or extensible.
 
 ### JSHint
 
+[JSHint](http://jshint.com)
+
+> JSHint is a program that flags suspicious usage in programs written in JavaScript.
+
+JSHint is a fork of JSLint.
+
+Still maintained : [jshint/jshint](https://github.com/jshint/jshint/).
+
+Configurable but no custom rule support.
+
+#### links
+
+[JSHint Options](http://jshint.com/docs/options/)
+
+[JSHint CLI](http://jshint.com/docs/cli/)
+
 ### JSCS
 
 Merged with eslint in 2016. See [this](https://medium.com/@markelog/jscs-end-of-the-line-bc9bf0b3fdb2).
