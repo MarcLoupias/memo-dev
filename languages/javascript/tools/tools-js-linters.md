@@ -53,7 +53,7 @@ Configurable but no custom rule support.
 
 ### JSCS
 
-Merged with eslint in 2016. See [this](https://medium.com/@markelog/jscs-end-of-the-line-bc9bf0b3fdb2).
+Unmaintained and merged with eslint in 2016. See [this](https://medium.com/@markelog/jscs-end-of-the-line-bc9bf0b3fdb2).
 
 ### ESLint
 
