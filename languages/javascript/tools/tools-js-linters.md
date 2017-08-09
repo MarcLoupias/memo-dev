@@ -61,4 +61,16 @@ Style checker only.
 
 ### ESLint
 
+[ESLint](http://eslint.org/)
 
+Created in 2013.
+
+Still maintained : [eslint/eslint](https://github.com/eslint/eslint)
+
+TLDR : It is JSHint + plugin system.
+
+Usually 2-3x slower then JSHint on a single file [(src)](https://github.com/eslint/eslint#how-does-eslint-performance-compare-to-jshint).
+
+Support JSX (React) and ES6.
+
+Lots of pluggins ( [babel-eslint](https://github.com/babel/babel-eslint), [eslint-plugin-angular](https://github.com/Gillespie59/eslint-plugin-angular) )
