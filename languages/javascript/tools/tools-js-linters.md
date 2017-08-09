@@ -13,10 +13,12 @@
 
 A linter performs static analysis of source code to find :
 
-- undected errors on interpreted languages (they have no compiling phase)
-- styleguide issues
+- undected errors on interpreted languages (they have no compiling phase) (ex : accessing an undefined var)
+- styleguide issues (tab length, naming, etc ...)
 
 ## javascript linters
+
+[Linting JavaScript in 2015 : tech.lauritz.me](http://tech.lauritz.me/linting-javascript-in-2015/)
 
 [A Comparison of JavaScript Linting Tools : www.sitepoint.com 20150305](https://www.sitepoint.com/comparison-javascript-linting-tools/)
 
@@ -54,6 +56,8 @@ Configurable but no custom rule support.
 ### JSCS
 
 Unmaintained and merged with eslint in 2016. See [this](https://medium.com/@markelog/jscs-end-of-the-line-bc9bf0b3fdb2).
+
+Style checker only.
 
 ### ESLint
 
