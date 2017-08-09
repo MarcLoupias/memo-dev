@@ -39,7 +39,7 @@ Not configurable or extensible.
 
 > JSHint is a program that flags suspicious usage in programs written in JavaScript.
 
-JSHint is a fork of JSLint.
+JSHint is a 2010 fork of JSLint.
 
 Still maintained : [jshint/jshint](https://github.com/jshint/jshint/).
 
