@@ -99,7 +99,7 @@
 * [javascript - tools - bower](languages/javascript/tools/tools-bower.md)
 * [javascript - tools - grunt](languages/javascript/tools/tools-grunt.md)
 * [javascript - tools - gulp](languages/javascript/tools/tools-gulp.md)
-* [javascript - tools - jshint](languages/javascript/tools/tools-jshint.md)
+* [javascript - tools - linters](languages/javascript/tools/tools-js-linters.md)
 * [javascript - tools - yeoman](languages/javascript/tools/tools-yeoman.md)
 
 * [javascript - testing - debug in webstorm](languages/javascript/testing/debug-js-in-webstorm.md)
