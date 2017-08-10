@@ -10,6 +10,8 @@
 
 [Angular2 vs React – War of Facts | An Infographic : algoworks.com](http://www.algoworks.com/infographics/angularjs-vs-react-facts-figures/)
 
+[Angular vs. React: Which Is Better for Web Development? : codeburst.io 20170808](https://codeburst.io/angular-vs-react-which-is-better-for-web-development-e0dd1fefab5b)
+
 ### angular vs react vs vue
 
 [Angular vs React.js vs Vue.js - My Thoughts!](https://www.youtube.com/watch?v=KMX1mFEmM3E)
