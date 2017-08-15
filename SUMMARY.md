@@ -90,6 +90,7 @@
 * [javascript - AngularJs - ng grid](languages/javascript/angular-js/ng-grid/angular-js-ng-grid.md)
 * [javascript - AngularJs - tag list](languages/javascript/angular-js/tag-list/angular-ui-taglist.md)
 
+* [javascript - nodejs - modules](languages/javascript/node.js/nodejs-modules.md)
 * [javascript - nodejs - express project structure](languages/javascript/node.js/nodejs-express-project-structure.md)
 * [javascript - nodejs - links](languages/javascript/node.js/nodejs-links.md)
 * [javascript - nodejs - mock via express](languages/javascript/node.js/nodejs-mock-via-express.md)
