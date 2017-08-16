@@ -161,6 +161,7 @@
 * [code reviews](software-engineering/code-reviews.md)
 * [dette technique et TTM](software-engineering/dette-technique-et-TTM.md)
 * [genie logiciel](software-engineering/genie-logiciel.md)
+* [paradigms](software-engineering/paradigms.md)
 * [scrum memo](software-engineering/scrum-memo.md)
 * [semver](software-engineering/semver.md)
 * [testing](software-engineering/testing.md)
