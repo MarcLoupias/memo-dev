@@ -1,4 +1,4 @@
-### AngularJs Modules
+# AngularJs - modules
 
 ref [angular.module](https://docs.angularjs.org/api/ng/function/angular.module)
 
@@ -7,7 +7,7 @@ recommandations :
 
 [module dep naming clash](http://stackoverflow.com/questions/30374934/angularjs-module-dependencies-naming-clash/30376123#30376123)
 
-#### angular.module === namespace ?
+## angular.module === namespace ?
 
 ***NO***
 
@@ -16,12 +16,13 @@ recommandations :
 (encapsulate the service u want with another service who call a new injector set to the right module only)
 - [angular repo issue discussion](https://github.com/angular/angular.js/issues/10805)
 
-#### so how it works ?
+## so how it works ?
 
 - modules are ref to components for the injector.
 - the injector index is flat, it means that any component from any module registered in the injector is available to injection in everyone.
 - modules cannot avoid name collision. So components names **must** be uniques.
 - there is no error risen when 2 components with the same name are registered to the injector. The last one is kept.
 
-#### Others reading
+## Others reading
+
 - [differents modules managements, very good reading](https://scott.mn/2014/03/03/javascript_modules/)

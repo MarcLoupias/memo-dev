@@ -1,7 +1,7 @@
-
-# Angular Unit Tests
+# AngularJS testing
 
 ## tools
+
 - [karma runner](http://karma-runner.github.io/0.13/index.html)
 - [jasmine](http://jasmine.github.io/)
 - [PhantomJS](http://phantomjs.org/)
@@ -10,32 +10,38 @@
 - [karma & jenkins](http://karma-runner.github.io/0.12/plus/jenkins.html)
 - [mockaroo : online mock file generator](https://www.mockaroo.com/)
 
-## best articles 
+## unit testing
+
+### best articles
+ 
 - [angular-tips.com : unit-test](http://angular-tips.com/blog/categories/unit-test/)
 - [introduction-aux-tests-unitaires-en-javascript](http://blog.xebia.fr/2013/03/21/introduction-aux-tests-unitaires-en-javascript/)
 - [Les 10 commandements des tests unitaires](http://blog.xebia.fr/2008/04/11/les-10-commandements-des-tests-unitaires/)
 - [rater-ses-tests-unitaires-en-toutes-circonstances](http://blog.soat.fr/2013/11/10-trucs-infaillibles-pour-rater-ses-tests-unitaires-en-toutes-circonstances-22/)
 
-## best lib (ng-describe)
+### best lib (ng-describe)
+
 - [ng-describe](https://github.com/kensho/ng-describe)
 - Avec ng-describe, quand on mock une constante utilisée pour stocker une lib externe ( cf [Y240] (https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y240) ), mocker la constante ne suffit pas, il faut mocker chaque fonction utilisée en lui réattribuant la fonction initiale.
 On injecte par IIFE la vrai lib donc on réattribue au mock les fonctions utilisées. Ou pas.
 
 Articles de l'auteur de la lib :
+
 - [Unit testing AngularJS code in record time using ng-describe : glebbahmutov.com/](https://glebbahmutov.com/blog/1-2-3-tested/)
 - [Slides AngularJS NYC meetup in August 2015](http://slides.com/bahmutov/ng-describe#/)
 - [testing-angularjs-under-node : glebbahmutov.com/](https://glebbahmutov.com/blog/testing-angularjs-under-node/)
 - [testing-angular-async-stuff: glebbahmutov.com](https://glebbahmutov.com/blog/testing-angular-async-stuff/)
 
-## intégration jasmine dans webstorm
+### intégration jasmine dans webstorm
 
 http://stackoverflow.com/questions/8108461/how-can-i-get-webstorm-to-recognize-jasmine-methods
 
 Selection jasmine definitly typed : http://stackoverflow.com/a/36864225
 
-## examples
+### examples
 
-### repos examples
+#### repos examples
+
 - [Puigcerber/angular-unit-testing : github.com](https://github.com/Puigcerber/angular-unit-testing)
 > Guidelines and patterns for unit testing AngularJS apps.
 
@@ -45,22 +51,26 @@ Selection jasmine definitly typed : http://stackoverflow.com/a/36864225
 - [Unit Testing in AngularJS: Services, Controllers & Providers : sitepoint.com](https://www.sitepoint.com/unit-testing-angularjs-services-controllers-providers/)
 > [github repository](https://github.com/sitepoint-editors/angular-js-unit-testing-services-controllers-providers)
 
-### tests avec $http
+#### tests avec $http
+
 - [les-tests-angularjs-le-guide-de-a-a-z](http://blog.occitech.fr/2013/10/les-tests-angularjs-le-guide-de-a-a-z-partie-1-les-tests-unitaires/)
 
-### tests de services
+#### tests de services
+
 - [how-do-i-test-an-angularjs-service-with-jasmine](http://stackoverflow.com/questions/13013772/how-do-i-test-an-angularjs-service-with-jasmine)
 
-### tests de directives 
+#### tests de directives
+ 
 - [angular-testing-tips-testing-directives](https://www.sitepoint.com/angular-testing-tips-testing-directives/)
 
-### Dependencies mocking
+#### Dependencies mocking
+
 - [mocking-angular-module-dependencies](http://stackoverflow.com/questions/17554727/mocking-angular-module-dependencies-in-jasmine-unit-tests)
 - [injecting-a-mock-into-an-angularjs-service](http://stackoverflow.com/questions/14773269/injecting-a-mock-into-an-angularjs-service/18756347#18756347)
 - [divers](http://www.sitepoint.com/mocking-dependencies-angularjs-tests/)
 - [Dummy, Fake, Stub, Mock et Spy, les tests unitaires avec l'aide de Moq](http://blog.softit.fr/post/dummy-fake-stub-mock-et-spy-les-tests-unitaires-avec-l-aide-de-moq)
 
-### Testing a throw exception :
+#### Testing a throw exception :
 
 ```javascript
 it('throws exception when args are undefined or null', inject(function (HistoryLRindexService) {
@@ -79,7 +89,7 @@ if(!key) {
 }
 ```
 
-### Testing a directive : 
+#### Testing a directive : 
 
 ```javascript
 (function () {
@@ -198,3 +208,122 @@ if(!key) {
 }());
 ```
 
+## e2e testing
+
+- [angularjs-e2e-testing-using-ngmocke2e] (http://blog.xebia.com/2014/03/08/angularjs-e2e-testing-using-ngmocke2e/)
+- [locators protractors] (http://www.protractortest.org/#/locators)
+- [page objects] (https://docs.google.com/presentation/d/1B6manhG0zEXkC-H-tPo2vwU06JhL8w9-XCF9oehXzAQ/edit?pli=1#slide=id.g2bc490733_00)
+- [protractor-styleguide] (https://github.com/CarmenPopoviciu/protractor-styleguide)
+- [phantomjs not good for e2e](https://www.exratione.com/2015/02/phantomjs-has-many-uses-but-function-testing-isnt-one-of-them/)
+
+### installation des drivers pour webdrivers
+
+ATTENTION CHROME & FIREFOX, need dl update de webdriver.
+
+Derrière un proxy il faut config envvar `HTTP_PROXY` & `HTTPS_PROXY` sur fiddler (`http://localhost:8888`)
+et set `ignore_ssl` à true si le magasin de certificat du réseau est fucké. Pour le moment on sait le faire que en dur dans le source de webdriver-manager ( `.\node_modules\gulp-protractor\node_modules\protractor\bin\webdriver-manager` )
+ligne 93 (`default('ignore_ssl', false)`.)
+
+- `ignore_ssl` for protractor [issue 1847] (https://github.com/angular/protractor/issues/1847#issuecomment-76023932).
+- proxy config + ignore_ssl for webdriver-manager, [issue 1477] (https://github.com/angular/protractor/issues/1477).
+
+ATTENTION IE :
+pour exécution sur IE [need drivers spécifiques] (http://selenium-release.storage.googleapis.com/index.html).
+(dépendent de la plateforme, sur win x64 : `IEDriverServer_x64_2.47.0.zip`)
+Config à faire ensuite dans `protractor.conf.js` pour lancer sur ce server (géré au niveau du generator)
+
+### lancer la suite de test sur chaque browser
+
+```javascript
+multiCapabilities: [{
+    'browserName': 'firefox'
+  }, {
+    'browserName': 'chrome'
+  }, {
+    'browserName': 'ie'
+  }],
+  
+```
+
+### tests pour ie fail
+
+```
+UnknownError: The path to the driver executable must be set by the webdriver.ie.driver system property; for more information, see http://code.google.com/p/selenium/wiki/InternetExplorerDriver. The latest version can be downloaded from http://selenium-release.storage.googleapis.com/index.html
+```
+  
+IE nécessite un driver spécifique et une config spécifique.
+Dans `gulp-protractor` les drivers webdriver de IE ne sont pas DL, cf [issue 38] (https://github.com/mllrsohn/gulp-protractor/issues/38)
+Télécharger les drivers IE manuellement [ici] (http://selenium-release.storage.googleapis.com/index.html).
+Doc du driver [ici] (https://code.google.com/p/selenium/wiki/InternetExplorerDriver).
+
+Installer l'exe dans la partie exécutable du disque dur.
+
+Ajouter de la config à protractor.conf.js :
+
+```javascript
+ seleniumArgs: [
+    '-Dwebdriver.ie.driver=C:\\Produits\\dev\\ws-js\\webdriver-ie\\IEDriverServer.exe'
+  ],
+```
+
+Ajouter la capability à la config de `protractor.conf.js` :
+
+```javascript
+ multiCapabilities: [{
+    'browserName': 'firefox'
+  }, {
+    'browserName': 'chrome'
+  }, {
+    'browserName': 'internet explorer',
+    'platform': 'ANY',
+    'version': '11'
+  }],
+```
+
+### exporter les résultats
+
+```javascript
+resultJsonOutputFile: 'e2e.results.json',
+```
+
+Nécessite que jasmineNodeOpts.isVerbose soit à true.
+
+### reporter
+- [Jasmine reporter] (https://github.com/larrymyers/jasmine-reporters#protractor)
+- Discussion dans les [issues de protractor] (https://github.com/angular/protractor/issues/60)
+
+installation : 
+```
+npm install jasmine-reporters@^2.0.7 --save-dev
+```
+
+Dans `protractor.conf.js`, ajouter :
+
+```javascript
+var jasmineReporters = require('jasmine-reporters');
+exports.config = {
+	// ...
+	framework: 'jasmine2',
+	// ...
+	onPrepare: function () {
+    jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
+      savePath: paths.e2e + '/reports/',
+      consolidateAll: true,
+      filePrefix: 'e2e.chrome.results.' + _currentTimestampToString()
+    }));
+	// ...
+	// Options to be passed to Jasmine-node.
+  jasmineNodeOpts: {
+    showColors: true,
+    defaultTimeoutInterval: 60000,
+    print: function() {}
+  }
+  },
+};
+```
+
+Va créer le rapport dans `../e2e/reports/`
+
+Le rapport est un fichier au format xml qui nécessite une mise en forme.
+[Cette xslt] (https://github.com/niedbalski/nosetest-xunit-xslt/blob/master/nosetests.xslt) peut être utilisée pour
+mettre en forme le xml d'output mais manque un moyen pour linker automatiquement le xml de sortie avec la xsl. (pas prévu par le module)

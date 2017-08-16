@@ -1,5 +1,8 @@
 
-#### Erreurs d'exécution (contexte Angular)
+# AngularJS - errors and exceptions
+
+## Erreurs d'exécution (contexte Angular)
+
 L'[`$exceptionHandler`] (https://code.angularjs.org/1.4.9/docs/api/ng/service/$exceptionHandler) catch la plupart des exceptions. 
 En tout cas toutes celles attrapées par le contexte angular.
 Le comportement par défaut du handler est de log via `$log.error()`.
@@ -38,7 +41,8 @@ function extendExceptionHandler($delegate, toastr) {
 }
 ```
 
-#### Erreurs liées aux requêtes http
+## Erreurs liées aux requêtes http
+
 L'usage d'un [interceptor http] (https://code.angularjs.org/1.4.9/docs/api/ng/service/$http#interceptors) permet de catcher à coup sur tous les problèmes sur toutes les requêtes exécutées à partir de $http.
 
 ```javascript
@@ -98,7 +102,7 @@ $httpProvider.interceptors.push(function($q, dependency1, dependency2) {
 
 **Restangular** propose un système built-in via [setErrorInterceptor] (https://github.com/mgonto/restangular#seterrorinterceptor)
 
-#### Erreurs liées au routage
+## Erreurs liées au routage
 
 - routeur standard
 cf [Y112] (https://github.com/johnpapa/angular-styleguide#style-y112) de John Papa.
@@ -140,6 +144,7 @@ function handleRoutingErrors() {
 ```
 
 - `ui-router`
+
 Cf [wiki ui-router] (https://github.com/angular-ui/ui-router/wiki#state-change-events).
 
 **$stateNotFound**

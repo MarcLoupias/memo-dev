@@ -1,7 +1,7 @@
 
-### Angular app init 
+# AngularJS - app init 
 
-#### Bootstrap d'une app web
+## Bootstrap d'une app web
 
 1. Le browser lève l'event [DOMContentLoaded] (https://developer.mozilla.org/en-US/docs/Web/Reference/Events/DOMContentLoaded ) durant ce step.
 Le moment exact est aléatoire, il n'attend pas le chargement des ressources liées à la page (css et images), le html et les js associés sont chargés cependant, on passe direct au point 3, le point 2 se joue en parallèle.
@@ -36,7 +36,7 @@ Si une directive `ng-controller` est rencontrée, l'injecteur est appelé pour i
   5. La webapp est rendue, elle attend une interaction de l'utilisateur.
 
 
-##### Exemple ordre d'exécution des modules au bootstrap
+### Exemple ordre d'exécution des modules au bootstrap
 
 Ex, on a la hiérarchie suivante :
 
@@ -74,7 +74,7 @@ app.moduleB
 app
 ```
 
-##### Documentation à check :
+### Documentation à check :
 - [ng dev guide - module] (https://docs.angularjs.org/guide/module)
 - [ng dev guide - bootstrap] (https://docs.angularjs.org/guide/bootstrap)
 - [ng dev guide - dependency injection] (https://docs.angularjs.org/guide/di)
@@ -86,11 +86,11 @@ app
 - [$provide] (https://docs.angularjs.org/api/auto/service/$provide)
 - [$location] (https://docs.angularjs.org/api/ng/service/$location)
 
-#### knowing when the a view has finished loading
+## knowing when the a view has finished loading
 
 [not possible because of MVVM pattern] (http://stackoverflow.com/questions/14368097/execute-function-after-page-has-finished-downloading-and-bootstrapping)
 
-#### others topics
+## others topics
 - [Misko Hevery comment on an angular github issue] (https://github.com/angular/angular.js/issues/1306#issuecomment-8200414)
 - [is there a post render callback for angular directive] (http://stackoverflow.com/questions/11125078/is-there-a-post-render-callback-for-angular-js-directive)
 - [how to invoke a function in an angular directive after the child nodes have been processed] (http://stackoverflow.com/questions/15932771/how-to-invoke-a-function-in-an-angular-directive-after-the-child-nodes-have-been/15946913#15946913)

@@ -1,4 +1,4 @@
-# angular lazy downloading
+# AngularJS - lazy downloading
 
 ## webpack
 
