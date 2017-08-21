@@ -155,6 +155,12 @@ Exemple Google (janvier 2015) :
 
 [feature flags explained : featureflags.io](http://featureflags.io/feature-flags/) (very good link, with lots of use case, eg : early access)
 
+**drawback**
+
+[Settings are evil - MPJ's Musings - FunFunFunction #62](https://www.youtube.com/watch?v=glZ1C-Yu5tw)
+
+> TLDR : Feature toggle generate combinatorial explosion of test cases -> lower quality
+
 ## méthodes
 
 ### waterfall
