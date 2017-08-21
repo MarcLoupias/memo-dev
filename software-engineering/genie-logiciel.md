@@ -161,6 +161,22 @@ Exemple Google (janvier 2015) :
 
 > TLDR : Feature toggle generate combinatorial explosion of test cases -> lower quality
 
+Martin Fowler deal with this question in [his feature toggle article](https://martinfowler.com/bliki/FeatureToggle.html) :
+
+> A common question we hear about feature toggles concerns testing - **does using feature toggles mean a combinatorial 
+> explosion of tests**? In general there's **no need to test all combinations of features**. 
+> For release toggles it's usually sufficient to run two combinations :
+> 
+> - all the toggles on that are expected to be on in the next release
+> - all toggles on
+> 
+> This is pretty much the same as what you need to do with feature branches if you want to find any integration bugs.
+> 
+> **It's very important to retire release toggles once the pending features have bedded down in production**. 
+> This involves removing the definitions on the configuration file and all the code that uses them. 
+> **Otherwise you will get a pile of toggles that nobody can remember how to use**. In one memorable example I heard of, 
+> it required making a special recompilation of the linux kernel to handle enough command line switches.
+
 ## méthodes
 
 ### waterfall
