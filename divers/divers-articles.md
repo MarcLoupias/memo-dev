@@ -117,3 +117,8 @@ Extensible à tout sujet technique.
 > - Développeur Backend
 > - Développeur Mobile
 > - Ingénieur DevOps
+
+## Apple Store
+
+[Le jour où Simon a perdu 40 millions : www.frenchweb.fr](http://www.frenchweb.fr/le-jour-ou-simon-a-perdu-40-millions-2/298269)
+
