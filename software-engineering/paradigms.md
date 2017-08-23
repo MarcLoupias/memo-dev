@@ -26,7 +26,13 @@
 
 ## functional programming
 
-[Functional programming](https://en.wikipedia.org/wiki/Functional_programming)
+[Functional programming : en.wikipedia.org](https://en.wikipedia.org/wiki/Functional_programming)
+
+[Functional programming : wiki.haskell.org](https://wiki.haskell.org/Functional_programming)
+
+> Functional programming is a style of programming which models computations as the evaluation of expressions. 
+> This article is meant to describe it briefly; 
+> however, the best way to understand functional programming is to learn the basics of one of the functional programming languages
 
 Very quick **TLDR** : **avoids shared state & mutable data**, **functions always returns a value** & a function with given args will always returns the same value.
 
