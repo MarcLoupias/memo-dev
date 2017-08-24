@@ -19,6 +19,8 @@
 
 [One programmer almost broke the internet by deleting 11 lines of code](http://www.businessinsider.fr/us/npm-left-pad-controversy-explained-2016-3/)
 
+[11 lignes de codes qui disparaissent et ce sont des centaines de projets open source qui sont mis à mal : korben.info](https://korben.info/11-lignes-de-codes-disparaissent-centaines-de-projets-open-source-mis-a-mal.html)
+
 ## evergreen browsers
 
 [evergreen-browsers](http://tomdale.net/2013/05/evergreen-browsers/)
