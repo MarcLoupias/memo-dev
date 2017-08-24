@@ -122,3 +122,13 @@ Extensible à tout sujet technique.
 
 [Le jour où Simon a perdu 40 millions : www.frenchweb.fr](http://www.frenchweb.fr/le-jour-ou-simon-a-perdu-40-millions-2/298269)
 
+## femmes dans l'info (sciences en général)
+
+[post sur dev.com donnant des stats intéressantes](https://www.developpez.net/forums/d1737512-2/club-professionnels-informatique/actualites/blizzard-envisage-recruter-plus-femmes-issues-groupes-minoritaires-sous-representes/#post9532917)
+
+- les femmes dans le secteur de la recherche est de 52% aux Philippines
+- D'autres pays sont proches de la parité, comme la Malaisie et le Vietnam, alors que l'Indonésie et Singapour se situent encore autour de 30%.
+- En Malaisie, l'informatique est un métier de filles, et on trouve 70% de dames dans les facultés de programmation([cf lien](https://ticetsociete.revues.org/955)).
+- Selon le rapport de l’UNESCO, "dans plusieurs pays arabes, les femmes représentent plus de quatre chercheurs sur dix travaillant dans le domaine des sciences exactes et naturelles (Koweït, Égypte et Irak) et des sciences médicales et de la santé (Koweït, Égypte, Iraq, Jordanie et Maroc)".
+- "Les données récentes disponibles pour dix pays (arabes) révèlent que les femmes représentent entre 34% et 56,8% des diplômés du supérieur dans les sciences, l'ingénierie et l'agriculture, un ratio relativement élevé"
+- "Environ 37 % des chercheurs dans le monde arabe sont des femmes, soit plus que dans l’Union européenne (33 %)", affirme encore l’étude.
