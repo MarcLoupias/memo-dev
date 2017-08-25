@@ -4,6 +4,12 @@
 
 [Understanding Node.js Event-Driven Architecture](https://medium.freecodecamp.com/understanding-node-js-event-driven-architecture-223292fcbc2d)
 
+## fork
+
+[Node.js forké à nouveau pour donner naissance à Ayo : www.developpez.net 20170825](https://www.developpez.net/forums/d1742355/webmasters-developpement-web/javascript-ajax-typescript-dart/javascript/javascript-cote-serveur/node-js-forke-nouveau-donner-naissance-ayo/#post9562073)
+
+[ayojs/ayo : github.com](https://github.com/ayojs/ayo)
+
 ## install
 
 ### debian
