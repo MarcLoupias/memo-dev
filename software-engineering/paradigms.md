@@ -87,3 +87,36 @@ N.B. : An **expression** is not a **statement** but a valid unit of code that *r
 > don't use pointers to functions (Robert C. Martin) (He is talking about pointers in C++)
 
 > based on the concept of "objects", which may contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods. A feature of objects is that an object's procedures can access and often modify the data fields of the object with which they are associated (objects have a notion of "this" or "self"). In OOP, computer programs are designed by making them out of objects that interact with one another.
+
+## imperative programming versus functionnal programming
+
+[Functional Programming vs. OOP [closed] : softwareengineering.stackexchange.com 20101005](https://softwareengineering.stackexchange.com/a/9769)
+
+> TLDR : **imperative** versus **functional** === **control flow** versus **data flow**
+> 
+> For example, in imperative programming variables and loops are common when handling state, while in functional 
+> programming the state is handled via parameter passing, which avoids side-effects and assignments.
+
+## object oriented programming versus functionnal programming
+
+[Functional programming vs Object Oriented programming [closed] : stackoverflow.com 20100116](https://stackoverflow.com/a/2079678)
+
+- When do you choose functional programming over object oriented?
+
+TDLR : If logic evolves more then the model : choose FP and if model evolves more then the logic : choose OOP
+
+OOP is good when you have a fixed set of *operations* on *things*.
+Your code evolves, you primarily add new *things*. Adding new classes which implement existing methods (*operations*).
+
+FP is good when you have a fixed set of *things*
+Your code evolves, you primarily add new *operations* (functions) on existing *things* (data types). 
+
+When evolution goes the wrong way, you have problems ([The Expression Problem : Philip Wadler 19981112](http://www.daimi.au.dk/~madst/tool/papers/expression.txt)):
+
+Adding a new operation to an OOP program may require editing many class definitions to add a new method.
+
+Adding a new kind of thing to a FP program may require editing many function definitions to add a new case.
+
+- What are the typical problem definitions where functional programming is a better choice?
+
+Functional languages excel at manipulating symbolic data in tree form.
