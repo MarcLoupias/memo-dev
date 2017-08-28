@@ -52,3 +52,11 @@ wrapper module for [csso](https://www.npmjs.com/package/csso)
 - [gulp-angular-templatecache](https://github.com/miickel/gulp-angular-templatecache)
 
 > Concatenates and registers AngularJS templates in the `$templateCache`.
+
+- [gulp-size](https://www.npmjs.com/package/gulp-size)
+
+> Logs out the total size of files in the stream and optionally the individual file-sizes.
+
+- [gulp-rev](https://www.npmjs.com/package/gulp-rev)
+
+> Static asset revisioning by appending content hash to filenames: `unicorn.css` → `unicorn-d41d8cd98f.css` 
