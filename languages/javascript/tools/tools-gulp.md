@@ -60,3 +60,11 @@ wrapper module for [csso](https://www.npmjs.com/package/csso)
 - [gulp-rev](https://www.npmjs.com/package/gulp-rev)
 
 > Static asset revisioning by appending content hash to filenames: `unicorn.css` → `unicorn-d41d8cd98f.css` 
+
+- [gulp-filter](https://www.npmjs.com/package/gulp-filter)
+
+> Enables you to work on a subset of the original files by filtering them using glob patterns. When you're done and want all the original files back you just use the `restore` stream.
+
+- [run-sequence](https://www.npmjs.com/package/run-sequence)
+
+> Runs a sequence of gulp tasks in the specified order. This function is designed to solve the situation where you have defined run-order, but choose not to or cannot use dependencies.
