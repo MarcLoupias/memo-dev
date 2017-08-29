@@ -10,6 +10,44 @@ don't know right know how to classify all theses subjects ...
 
 [Les États-Unis ont connu la plus grosse fuite de données des électeurs jamais observée](https://www.developpez.net/forums/d1714076/club-professionnels-informatique/actualites/politique/etats-unis-ont-connu-plus-grosse-fuite-donnees-electeurs-jamais-observee/#post9386396)
 
+[Toyota Unintended Acceleration and the Big Bowl of “Spaghetti” Code 20131107](http://www.safetyresearch.net/blog/articles/toyota-unintended-acceleration-and-big-bowl-%E2%80%9Cspaghetti%E2%80%9D-code)
+
+> After reviewing Toyota’s software engineering process and the source code for the 2005 Toyota Camry, both concluded 
+> that the system was defective and dangerous, riddled with bugs and gaps in its failsafes that led to the root cause of 
+> the crash.
+
+> ...
+
+> Jean Bookout and her friend and passenger Barbara Schwarz were exiting Interstate Highway 69 in Oklahoma, when she 
+> lost throttle control of her 2005 Camry.
+
+> ...
+
+> Schwarz died of her injuries; Bookout spent five months recovering from head and back injuries.
+
+> ...
+
+> Michael Barr, a well-respected embedded software specialist, spent more than 20 months reviewing Toyota’s source code 
+> at one of five cubicles in a hotel-sized room, supervised by security guards, who ensured that entrants brought no 
+> paper in or out, and wore no belts or watches.
+
+> ...
+
+> Barr testified:
+
+> There are a large number of functions that are overly complex. By the standard industry metrics some of them are 
+> untestable
+
+> ...
+
+> Some of them are even so complex that they are what is called unmaintainable, which means that if you go in to fix 
+> a bug or to make a change, you're likely to create a new bug in the process.
+
+> ...
+
+> The failsafes that they have contain defects or gaps. But on the whole, the safety architecture is a house of cards. 
+> It is possible for a large percentage of the failsafes to be disabled at the same time that the throttle control is lost.
+
 ## videos
 
 [La problématique du contrôle des Technologies de l’information : Eric Filiol, Devoxx2015](https://www.youtube.com/watch?v=Vfb_bgGWptg&index=8&list=PLklQqdqnBkPgctKh1xIvF4eFGtmvUvE2b)
