@@ -1,5 +1,19 @@
 # Javascript Global View
 
+## organizations
+
+[The JS Foundation](https://js.foundation/)
+
+> The JS Foundation supports some of the most important projects in the JavaScript ecosystem.
+
+> Non exhaustive list of supported projects :
+> - ESLint
+> - jQuery
+> - grunt
+> - mocha
+> - QUnit
+> - ...
+
 ## ECMAScript Norms
 
 [Wikipedia](https://fr.wikipedia.org/wiki/ECMAScript), [Sources](https://developer.mozilla.org/fr/docs/Web/JavaScript/Language_Resources)
