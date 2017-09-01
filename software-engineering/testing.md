@@ -107,3 +107,13 @@ Unit tests are written only after some production code (e.g., the code necessary
 > - **Unit tests** ensure that individual components of the app work as expected. Assertions test the component API.
 > - **Integration tests** ensure that component collaborations work as expected. Assertions may test component API, UI, or side-effects (such as database I/O, logging, etc…)
 > - **Functional tests** ensure that the app works as expected from the user’s perspective. Assertions primarily test the user interface.
+
+[The different types of software testing : www.atlassian.com](https://www.atlassian.com/continuous-delivery/different-types-of-software-testing)
+
+> - Unit tests
+> - Integration tests
+> - Functional tests
+> - End-to-end tests
+> - Acceptance testing
+> - Performance testing
+> - Smoke testing
