@@ -81,6 +81,10 @@ use git log to find the hash of the desired commit
 then git reset --hard 1234abcd where 1234abcd is the hash of the desired commit.
 ```
 
+## commit message management
+
+[How to commit a change with both "message" and "description" from the command line? : stackoverflow.com](https://stackoverflow.com/questions/16122234/how-to-commit-a-change-with-both-message-and-description-from-the-command-li/22909204#22909204)
+
 ## diff
 
 ```
