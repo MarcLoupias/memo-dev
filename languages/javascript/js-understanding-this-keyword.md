@@ -6,6 +6,10 @@
 
 [developer.mozilla.org](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/L_op%C3%A9rateur_this)
 
+[Tests, closures and arrow functions : glebbahmutov.com](https://glebbahmutov.com/blog/test-closures/#more)
+
+> `this` keyword in JavaScript will burn you one day. Then it will burn you again and again and again. If Dante Alighieri were alive today, he would put writing object-oriented JavaScript among one of the first levels of Hell for sure.
+
 ## code demo
 
 Every new `function` defined its own `this` value :
