@@ -75,6 +75,11 @@
 * [javascript - tools - gulp](languages/javascript/tools/tools-gulp.md)
 * [javascript - tools - linters](languages/javascript/tools/tools-js-linters.md)
 * [javascript - tools - yeoman](languages/javascript/tools/tools-yeoman.md)
+* [javascript - tools - npm - memo](languages/javascript/tools/npm/npm-memo.md)
+* [javascript - tools - npm - on windows](languages/javascript/tools/npm/npm-on-windows.md)
+* [javascript - tools - npm - packages](languages/javascript/tools/npm/npm-packages.md)
+* [javascript - tools - npm - registry](languages/javascript/tools/npm/npm-registry.md)
+* [javascript - tools - npm - shrinkwrap](languages/javascript/tools/npm/npm-shrinkwrap.md)
 
 * [javascript - testing - debug in webstorm](languages/javascript/testing/debug-js-in-webstorm.md)
 * [javascript - testing - jasmine](languages/javascript/testing/jasmine.md)
@@ -104,11 +109,6 @@
 * [javascript - understanding `this` keyword](languages/javascript/js-understanding-this-keyword.md)
 * [javascript - web storage](languages/javascript/js-web-storage.md)
 * [javascript - link javascript framework and lib search engine](languages/javascript/link-javascript-lib-framework-search.md)
-* [javascript - npm - memo](languages/javascript/npm-memo.md)
-* [javascript - npm - on windows](languages/javascript/npm-on-windows.md)
-* [javascript - npm - packages](languages/javascript/npm-packages.md)
-* [javascript - npm - registry](languages/javascript/npm-registry.md)
-* [javascript - npm - shrinkwrap](languages/javascript/npm-shrinkwrap.md)
 * [javascript - typescript - overview](languages/javascript/ts-typescript-overview.md)
 
 ## Languages - SQL
