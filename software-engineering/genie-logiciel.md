@@ -211,6 +211,8 @@ Martin Fowler deal with this question in [his feature toggle article](https://ma
 - [Eric Elliott : "Programming JavaScript Applications" (O’Reilly)](https://leanpub.com/u/ericelliott)
   - [github profile](https://github.com/ericelliott)
   - massive article writer on [medium.com](https://medium.com/@_ericelliott)
+- David Heinemeier Hansson (Creator of Ruby on Rails)
+  - [The Majestic Monolith : medium.com 20160229](https://m.signalvnoise.com/the-majestic-monolith-29166d022228)
 
 - [Top 10 Programming Books Every Software Developer Should Read](https://www.youtube.com/watch?v=UX4YijQ3zhc)
 
