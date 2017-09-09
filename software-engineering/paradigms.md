@@ -44,6 +44,8 @@ No assignment means var are immutables.
 
 N.B. : An **expression** is not a **statement** but a valid unit of code that *resolves to a value*. Not all **statements** resolve to a value. 
 
+[Mostly adequate guide to FP (in javascript)](https://github.com/MostlyAdequate/mostly-adequate-guide) [gitbook](https://drboolean.gitbooks.io/mostly-adequate-guide/content/)
+
 [Learning Functional Programming with JavaScript - JSUnconf 2016 : Anjana Vakil](https://www.youtube.com/watch?v=e-5obm1G_FY) - [slides](https://slidr.io/vakila/learning-functional-programming-with-javascript#1)
 
 [Immutable data structures for functional JS : Anjana Vakil](https://2017.jsconf.eu/speakers/anjana-vakil-immutable-data-structures-for-functional-js.html)
