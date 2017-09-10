@@ -171,6 +171,7 @@
 * [UX Tools and links](tools/ux-tools-and-links.md)
 * [Markdown online editor](tools/tools-markdown-editor.md)
 * [vim memo](tools/vim-memo.md)
+* [nano memo](tools/nano-memo.md)
 * [Mastodon](tools/social/social-mastodon.md)
 
 ## Web
