@@ -133,6 +133,37 @@ $ git log endel/master
 $ git cherry-pick 97fedac
 ```
 
+## patch
+
+[creer-et-appliquer-un-patch-avec-git : renaudmathieu.fr : 201300820](http://renaudmathieu.fr/creer-et-appliquer-un-patch-avec-git/)
+
+```
+# listing the 10 alst commit, stdout only the complete sha1 then the commit title
+git log --pretty=oneline -10
+
+# -1 indicates there is only one commit contained in the patch ; this will create a .patch file containing the commit
+git format-patch -1 <sha1> --stdout > <name>.patch
+
+# check the diff
+git apply --stat <name>.patch
+
+# check if the patch is appliable
+git apply --check <name>.patch
+
+# signoff is to keep the original author in the commit metadata. -k is to keep flags in the commit message
+git am --signoff -k < <name>.patch
+```
+
+[cherry-picking-range-of-git-commits : feeding.cloud.geek.nz : 20100720https://feeding.cloud.geek.nz/posts/cherry-picking-range-of-git-commits/)
+
+```
+# creating multiples patches from a range of commits
+$ git format-patch 7f545188^..a7785c10  
+0001-Add-third-file.patch  
+0002-Add-lines-to-3rd-file.patch  
+$ git am *.patch
+```
+
 ## files tracking
 
 ```
