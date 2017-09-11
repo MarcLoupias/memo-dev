@@ -112,6 +112,27 @@ git checkout master
 git cherry-pick 1234abcd
 ```
 
+### cherry-pick from another repo
+
+[source : git-cherry-pick-from-another-repository : 20160913](https://coderwall.com/p/sgpksw/git-cherry-pick-from-another-repository)
+
+```
+# Cloning our fork
+$ git clone git@github.com:ifad/rest-client.git
+
+# Adding (as "endel") the repo from we want to cherry-pick
+$ git remote add endel git://github.com/endel/rest-client.git
+
+# Fetch their branches
+$ git fetch endel
+
+# List their commits
+$ git log endel/master
+
+# Cherry-pick the commit we need
+$ git cherry-pick 97fedac
+```
+
 ## files tracking
 
 ```
