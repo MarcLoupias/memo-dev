@@ -154,7 +154,7 @@ git apply --check <name>.patch
 git am --signoff -k < <name>.patch
 ```
 
-[cherry-picking-range-of-git-commits : feeding.cloud.geek.nz : 20100720https://feeding.cloud.geek.nz/posts/cherry-picking-range-of-git-commits/)
+[cherry-picking-range-of-git-commits : feeding.cloud.geek.nz : 20100720](https://feeding.cloud.geek.nz/posts/cherry-picking-range-of-git-commits/)
 
 ```
 # creating multiples patches from a range of commits
