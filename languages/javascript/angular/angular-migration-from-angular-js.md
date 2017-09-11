@@ -64,3 +64,10 @@
 > migration example app from angular 1.x ES5 to Typescript and ngMetadata 
 
 [Upgrading Your Application to Angular 2 with ng-upgrade : blog.rangle.io](http://blog.rangle.io/upgrade-your-application-to-angular-2-with-ng-upgrade/)
+
+## migration des `$watch`
+
+- soit on a un ng-model auquel cas il suffit d'ajouter un ng-change
+- soit on a besoin de AngularJS 1.5 et d'utiliser le life cycle event `$onChanges` des composants
+
+L'idée avec les life cycles event c'est de remplacer le dirty checking d'origine placé sur tout l'arbre des scopes par un cycle de vie centré composant par composant.
