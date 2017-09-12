@@ -29,6 +29,21 @@
 >   - Using $onDestroy
 >
 
+[One-way data-binding in Angular 1.5 : toddmotto.com](https://toddmotto.com/one-way-data-binding-in-angular-1-5/)
+
+> With a parent / child relation ship between component where the parent pass data to the child, it is the practice of binding uni-directionnal instead of bi-directionnal.
+> 
+> bi-directionnal (two way) is `bindings: { obj: '=' }`
+> uni-directionnal (one way) is `bindings: { obj: '<' }`
+> 
+> Using one way binding break the link with the parent scope. So the child cannot mutate the parent state.
+> 
+> `/!\` If an object reference is bound to the child from the parent, if the child mutate a property it will work like two way binding.
+> 
+> Another way to exprime difference between two-way and one-way bindings is : 
+> - One way binding is binding the data from the model to the view.
+> - Two way binding is binding the data from the model to the view and the view to the model. (Also called **MVVM**)
+
 ## II - best practices
 
 ### A - Todd Motto best practices
