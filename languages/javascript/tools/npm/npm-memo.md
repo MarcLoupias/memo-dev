@@ -25,6 +25,12 @@ Consequences : ^ (caret) in package.json should allow automatic feature update w
 ```
 # list globally installed package by name
 npm -list -g <package_name>
+
+# or for all packages
+npm list -g -depth=0
+
+# to get tree deps
+npm list -g -depth=1
 ```
 
 ```
