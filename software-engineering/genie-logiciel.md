@@ -73,13 +73,18 @@ La notion fondamentale est qu'un objet devrait faire aussi peu d'hypothèses que
 
 [Exemple concret](http://misko.hevery.com/2008/07/18/breaking-the-law-of-demeter-is-like-looking-for-a-needle-in-the-haystack/) par Misko Hevery
 
-- [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control)
-
 - YAGNI (You aren't gonna need it)
 
 > Always implement things when you actually need them, never when you just foresee that you need them. (Ron Jeffries)
 
 [You aren't gonna need it : en.wikipedia.org](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
+
+## Inversion of Control
+
+- [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control)
+- [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection)
+- [Dependency Inversion Principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle)
+- [Service Locator Pattern](https://en.wikipedia.org/wiki/Service_locator_pattern)
 
 ## normes
 - [ISO/CEI 29110 : ingénierie de systèmes et l'Ingénierie du logiciel - les processus de cycle de vie pour les très petits organismes](https://fr.wikipedia.org/wiki/ISO/CEI_29110)
