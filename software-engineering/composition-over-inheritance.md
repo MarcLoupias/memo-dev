@@ -124,3 +124,15 @@ Lots of devs just favors composition over inheritance and some never use inherit
 [Composition over inheritance : en.wikipedia.org](https://en.wikipedia.org/wiki/Composition_over_inheritance)
 
 [Composition vs. Inheritance: How to Choose? 20150512](https://www.thoughtworks.com/insights/blog/composition-vs-inheritance-how-choose)
+
+## articles
+
+[The Open Minded Explorer’s Guide to Object Composition : Eric Elliott 20151015](https://medium.com/javascript-scene/the-open-minded-explorer-s-guide-to-object-composition-88fe68961bed)
+
+[Composition over Inheritance, the importance of context : Damien Lebreuilly 20160131](https://medium.com/@FennNaten/composition-over-inheritance-the-importance-of-context-d8916f041a7e)
+
+> In the rest of this article, I’ll explain what are those inheritance pitfalls that composition (in GoF sense) tries 
+> to avoid, and I’ll show that concatenative inheritance still carries them.
+
+> he is taking the @mpj `murderRobotDog` example adding more complexity to output this conclusion : 
+> **Object composition is not object merging.**
