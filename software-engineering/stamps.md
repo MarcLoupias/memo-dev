@@ -21,4 +21,23 @@
 
 [stampit-org](https://github.com/stampit-org)
 
+> **Create objects from reusable, composable behaviors**
+>
+> Stamps are standardised composable factory functions.
+
+[rtype](https://github.com/ericelliott/rtype#rtype)
+
+> Intuitive structural type notation for JavaScript. 
+
+*Used to describe the API function signatures in specs* 
+
 [stamp-specification : github.com](https://github.com/stampit-org/stamp-specification)
+
+> define stamps format
+
+[stampit impl](https://github.com/stampit-org/stampit)
+
+> the current stampit-org impl (@3.2.1 the 20170916)
+
+[stampit API doc](https://github.com/stampit-org/stampit/blob/master/docs/API.md)
+
