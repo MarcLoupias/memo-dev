@@ -13,6 +13,12 @@ Node.js module system is based on the [CommonJS spec](http://wiki.commonjs.org/w
 > - A note about Babel
 > - Why ES6 modules are good and how to get the best of both worlds
 
+## articles
+
+[NodeJS require('..')? : stackoverflow.com](https://stackoverflow.com/questions/42401079/nodejs-require)
+
+[Requiring modules in Node.js: Everything you need to know : medium.freecodecamp.org : 20170319](https://medium.freecodecamp.org/requiring-modules-in-node-js-everything-you-need-to-know-e7fbd119be8)
+
 ## tips & rules
 
 ### module wrapper
