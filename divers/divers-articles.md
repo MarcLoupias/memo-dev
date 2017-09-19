@@ -134,3 +134,8 @@ Extensible à tout sujet technique.
 - Selon le rapport de l’UNESCO, "dans plusieurs pays arabes, les femmes représentent plus de quatre chercheurs sur dix travaillant dans le domaine des sciences exactes et naturelles (Koweït, Égypte et Irak) et des sciences médicales et de la santé (Koweït, Égypte, Iraq, Jordanie et Maroc)".
 - "Les données récentes disponibles pour dix pays (arabes) révèlent que les femmes représentent entre 34% et 56,8% des diplômés du supérieur dans les sciences, l'ingénierie et l'agriculture, un ratio relativement élevé"
 - "Environ 37 % des chercheurs dans le monde arabe sont des femmes, soit plus que dans l’Union européenne (33 %)", affirme encore l’étude.
+
+## meme
+
+[quand-on-avance-la-deadline-dun-projet](http://lesjoiesducode.fr/post/165074053165/quand-on-avance-la-deadline-dun-projet)
+
