@@ -30,7 +30,7 @@ En terme d'achi, le controller n'est plus vraiment un controlleur mais prend sa 
 
 ### `$digest` already in progress issue
 
-- [Anti-Patterns] (https://github.com/angular/angular.js/wiki/Anti-Patterns)
+- [Anti-Patterns](https://github.com/angular/angular.js/wiki/Anti-Patterns)
 - [why-is-using-ifscope-phase-scope-apply-an-anti-pattern](http://stackoverflow.com/questions/22346990/why-is-using-ifscope-phase-scope-apply-an-anti-pattern)
 
 ### `EvalAsync()` or `setTimeOut()`
