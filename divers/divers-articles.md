@@ -71,6 +71,8 @@ TLDR : Les enjeux ont changés, différenciation concurrentielle et agilité (r�
 
 [contrat-agile.org](http://www.contrat-agile.org/index.html)
 
+[exemple échec projet soidisant agile au forfait](https://www.linkedin.com/pulse/saffranchir-du-cycle-en-v-agile-canada-dry-ou-comment-maxime-blanc/?trackingId=eyA9bFyVj%2BGOj5CFrusMUw%3D%3D)
+
 ## management
 
 [Why The Command-and-Control Mindset Is Killing Your Company : corporate-rebels.com](http://corporate-rebels.com/mindset/) March 26, 2017
