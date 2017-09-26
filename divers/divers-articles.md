@@ -141,3 +141,6 @@ Extensible à tout sujet technique.
 
 [quand-on-avance-la-deadline-dun-projet](http://lesjoiesducode.fr/post/165074053165/quand-on-avance-la-deadline-dun-projet)
 
+## startups
+
+[Comment nous avons lancé notre startup sans développeur : business.lesechos.fr 20170917](https://business.lesechos.fr/entrepreneurs/communaute/start-9464-comment-nous-avons-lance-notre-startup-sans-developpeur-313198.php#xtor=CS1-36)
