@@ -1,4 +1,3 @@
-
 # veille techno outils
 
 ## liens outils online
@@ -10,6 +9,34 @@
 [web-tambouille.fr](http://web-tambouille.fr/)
 
 [See what the GitHub community is most excited about today.](https://github.com/trending)
+
+## javascript
+
+[Fun Fun Function](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q)
+
+[JavaScript scene on medium.com](https://medium.com/javascript-scene)
+
+[Dan Abramov on medium.com](https://medium.com/@dan_abramov)
+
+[/r/javascript/](https://www.reddit.com/r/javascript/)
+
+## online books
+
+[2016 frontend handbook](https://www.frontendhandbook.com/)
+
+[2017 frontend handbook](https://frontendmasters.com/books/front-end-handbook/2017/)
+
+[frontend guide](https://github.com/grab/front-end-guide)
+
+## skills and technos lists
+
+[sindresorhus awesome lists](https://github.com/sindresorhus/awesome)
+
+[Front-end-Developer-Interview-Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
+
+[a-roadmap-to-becoming-a-web-developer-in-2017](https://medium.freecodecamp.org/a-roadmap-to-becoming-a-web-developer-in-2017-b6ac3dddd0cf)
+
+[google dev fundamentals](https://developers.google.com/web/fundamentals/)
 
 ## articles
 
@@ -39,7 +66,5 @@
 >   again: JS has won
 
 ## forums
-
-[reddit javascript](https://www.reddit.com/r/javascript/)
 
 [Stackoverflow hottest questions](https://stackoverflow.com/?tab=week)
