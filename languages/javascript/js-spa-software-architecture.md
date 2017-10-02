@@ -122,6 +122,8 @@ L'idée c'est de générer les vues côtés front pour :
 
 [Leveling Up with React: Redux : css-tricks.com](https://css-tricks.com/learning-react-redux/)
 
+[React & Redux : Les concepts : baptiste-donaux.fr : 20170412](https://www.baptiste-donaux.fr/react-redux-concept/)
+
 [Le mois du JS - React/Redux : la stack tendance, efficace et performante : xebia](https://www.youtube.com/watch?v=rgzrByrqRTY)
 
 > comparatif des différents design fronts (MVC, MVP, MVVM, ... MVW)
