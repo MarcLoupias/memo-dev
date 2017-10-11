@@ -186,6 +186,7 @@
 * [REST - swagger.io](web/REST/rest-design-tool-swagger-io.md)
 * [REST - Open Api Initiative](web/REST/open-api-initiative.md)
 * [CSS : Overview](web/css-overview.md)
+* [CSS : Selectors](web/css-selectors.md)
 * [CSS : BEM (Block Element Modifier)](web/css-block-element-modifier.md)
 * [CSS : Conventions de nommage](web/css-conventions.nommage.html.css.md)
 * [CSS : Tips](web/css-tips.md)
