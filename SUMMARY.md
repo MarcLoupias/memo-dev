@@ -193,6 +193,7 @@
 * [gestion monetisation web](web/gestion-monetisation-web.md)
 * [how browsers init web page](web/how-browsers-init-web-page.md)
 * [http cache](web/http-cache.md)
+* [cookies](web/cookies.md)
 * [HTML : Tips](web/html-tips.md)
 * [Polyfills, Shivs, Shims](web/polyfills-shivs-shims.md)
 * [SEO](web/SEO.md)
