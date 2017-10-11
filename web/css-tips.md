@@ -14,3 +14,9 @@
 - [SMACSS](https://smacss.com/) defines "modules"
 - [BEM](https://en.bem.info/) defines "blocks"
 - [SUIT CSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md) defines "components".
+
+## responsive design vs adaptive design?
+
+- Responsive: There is one basic layout, and it changes responsively to
+  screen changes
+- Adaptive: For each possible screen size, there is a distinct layout.
