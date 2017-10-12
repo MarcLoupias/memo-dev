@@ -77,6 +77,17 @@ TLDR : Les enjeux ont changés, différenciation concurrentielle et agilité (r�
 
 [Why The Command-and-Control Mindset Is Killing Your Company : corporate-rebels.com](http://corporate-rebels.com/mindset/) March 26, 2017
 
+[L'Étrange Défaite : Marc Bloch : 1940](https://fr.wikipedia.org/wiki/L%27%C3%89trange_D%C3%A9faite)
+
+> L'Étrange Défaite. Témoignage écrit en 1940 est un témoignage sur la bataille de France écrit en 1940 par Marc Bloch, officier et historien, qui a participé aux deux guerres mondiales. Dans ce livre, il ne raconte pas ses souvenirs personnels, mais il s'efforce, en témoin objectif, de comprendre les raisons de la défaite française lors de la bataille de France pendant la Seconde Guerre mondiale. Rédigé sur le moment, L'Étrange Défaite a marqué les esprits dès sa parution par la pertinence des constats qui y sont faits.
+
+> L'analyse et les critiques formulées dans ce livre sont parfaitement appliquables dans nombre d'entreprises :
+> - organisation ultra pyramidale (nécessité de validation de validation de validation des solutions)
+> - rétention d'information (entre personnels ou services)
+> - guerre de chefs (effective pour de mauvaises raisons ou bien crainte de faire la guerre quand elle est nécessaire)
+> - ignorance du terrain (ignorance des réalités, prises de décisions sans rapport avec les capacités réelles du terrain, etc ...)
+> - ...
+
 ## hommes politiques
 
 [JM JANCOVICI - La connaissance des politiques est nulle en matière énergétique](https://www.youtube.com/watch?v=mm7jghN51gU)
