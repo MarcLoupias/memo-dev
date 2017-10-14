@@ -154,6 +154,13 @@ Exemple Google (janvier 2015) :
 
 [Semantic Versioning with Continuous Deployment by Mark Seemann : blog.ploeh.dk](http://blog.ploeh.dk/2013/12/10/semantic-versioning-with-continuous-deployment/)
 
+### links
+
+- [post linkedin : Développeur tu mets  combien de temps pour pousser ton code en prod ? : Denis Barthélemy R&D director @ One2Team](https://www.linkedin.com/feed/update/urn:li:activity:6324113425068814336)
+
+> - LesFurets.com @Dimitri Baeli : J+1 (h+1 hotfix) (500K LoC, codebase age 10 ans, 25 devs)
+> - BlaBlaCar @Nicolas Tricot : 45 mins entre git push et deploy prod
+
 ### feature flipping
 
 [feature-flipping : blog.octo.com](http://blog.octo.com/feature-flipping/)
