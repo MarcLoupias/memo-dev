@@ -22,7 +22,7 @@
 - [github flow](http://www.nicoespeon.com/fr/2013/08/quel-git-workflow-pour-mon-projet/#le-github-flow) (Continuous Delivery oriented) (best one, simple : A single branch, always deployable. Every dev is branched from this branch)
 - [Shared repository workflow (same as github flow)](https://gist.github.com/seshness/3943237) (Continuous Delivery oriented)
 - [Simple git flow](http://blogs.atlassian.com/2014/01/simple-git-workflow-simple/) (Continuous Delivery oriented)
-
+- [Trunk based development](https://trunkbaseddevelopment.com/)
 
 ## merging strategy
 In a **CI strategy** you can merge in master at the start of the day to prevent painful merges at a later time.

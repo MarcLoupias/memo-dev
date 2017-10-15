@@ -116,7 +116,7 @@ inconvénients du monorep :
 
 impact git :
 - généralement on fait du feature branching (rend difficile la collaboration)
-- monorepo impose le trunk based development (commit quotidiens sur le trunk + feature toggle)
+- monorepo impose le [trunk based development](https://trunkbaseddevelopment.com/) (commit quotidiens sur le trunk + feature toggle)
 
 Le monorepo est la pratique actuelle des géants comme Google et Facebook.
 
