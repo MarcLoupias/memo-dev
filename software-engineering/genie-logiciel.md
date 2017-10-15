@@ -189,6 +189,30 @@ Martin Fowler deal with this question in [his feature toggle article](https://ma
 > **Otherwise you will get a pile of toggles that nobody can remember how to use**. In one memorable example I heard of, 
 > it required making a special recompilation of the linux kernel to handle enough command line switches.
 
+[Feature branches vs. feature toggles : fournines.wordpress.com : 20111120](https://fournines.wordpress.com/2011/11/20/feature-branches-vs-feature-toggles/)
+
+> The biggest mistake you can make when deciding on how to use branches is trying to define "one branching strategy to rule them all".
+
+> Feature toggle should not be systematicly used. It should be only if the team experience pain merges.
+
+> Features branches cons :
+> - the feature branch is not merged in the mainline, so there is no CI on it
+> - concurrent feature branch works can lead to big conflicts when merging. The last team to merge will have to handle 
+> all the issues.
+
+> Conflicts could symptomatic of underlying problems :
+> - poor design
+> - no cohesive view of the domain (no or bad modelization)
+> - or multiple logical views of the domain
+> - refactor-rage (a dev doing lot's of cow boy refactoring)
+
+> Feature toggle can be impl at build time or at runtime. Build time means you need several CI pipeline, run time increase
+> increase code complexity.
+
+> Feature toggles are certainly an interesting concept, and seem to mesh well with the principle of building composable 
+> applications. However, they are not without their pitfalls, so if you are thinking about trying them out, make sure 
+> that they are the most appropriate solution to the actual problem that you’re trying to solve.
+
 ## méthodes
 
 ### waterfall
