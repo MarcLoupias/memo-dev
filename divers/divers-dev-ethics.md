@@ -10,6 +10,20 @@ don't know right know how to classify all theses subjects ...
 
 [Les États-Unis ont connu la plus grosse fuite de données des électeurs jamais observée](https://www.developpez.net/forums/d1714076/club-professionnels-informatique/actualites/politique/etats-unis-ont-connu-plus-grosse-fuite-donnees-electeurs-jamais-observee/#post9386396)
 
+[Les dossiers médicaux de 150 000 patients américains en accès libre sur le cloud d’Amazon : 20171012](http://www.dsih.fr/article/2672/les-dossiers-medicaux-de-150-000-patients-americains-en-acces-libre-sur-le-cloud-d-amazon.html)
+
+> la société PHM (Patient Home Monitoring) [...] Amazon S3 en accès libre.
+
+> 47,5Go de données ont été exposés publiquement. 316 363 fichiers PDF
+
+> contenant les données personnelles des patients, nom, prénom, date de naissance, adresse, numéro de téléphone, les résultats de tests sanguins hebdomadaires, le nom du praticien...
+
+> Pour rappel, en France, il n’est pas légalement possible d’héberger des données de santé chez Amazon. Seuls les hébergeurs agréés (et prochainement certifiés) peuvent héberger des données de santé pour le compte d’un tiers. 
+
+> En Europe, [...] jusqu’à 20 millions d’euros ou 4 % du chiffre d’affaire mondial
+
+> un tel incident survenant dans un établissement de soins Français, doit faire l’objet d’une déclaration sur le portail https://signalement.social-sante.gouv.fr/
+
 [Toyota Unintended Acceleration and the Big Bowl of “Spaghetti” Code 20131107](http://www.safetyresearch.net/blog/articles/toyota-unintended-acceleration-and-big-bowl-%E2%80%9Cspaghetti%E2%80%9D-code)
 
 > After reviewing Toyota’s software engineering process and the source code for the 2005 Toyota Camry, both concluded 
