@@ -155,3 +155,7 @@ Extensible à tout sujet technique.
 ## startups
 
 [Comment nous avons lancé notre startup sans développeur : business.lesechos.fr 20170917](https://business.lesechos.fr/entrepreneurs/communaute/start-9464-comment-nous-avons-lance-notre-startup-sans-developpeur-313198.php#xtor=CS1-36)
+
+## teaching
+
+[Separating Programming Sheep from Non-Programming Goats : 20060714](https://blog.codinghorror.com/separating-programming-sheep-from-non-programming-goats/)
