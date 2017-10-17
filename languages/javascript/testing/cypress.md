@@ -4,6 +4,7 @@
 - alternative to phantomJs, Karma, Selenium, ...
 - in private beta (still in 2017)
 - not already opensource [but coming](https://www.cypress.io/blog/2017/05/04/cypress-is-going-open-source/)
+- [**it's done :-)**](https://www.cypress.io/blog/2017/10/10/cypress-is-now-public-beta/)
 
 [cypress.io](https://www.cypress.io/)
 
@@ -12,6 +13,14 @@
 - **fast** (running as fast as unit testing)
 - **reliable** (no inconsistent errors like in Selenium)
 - **rewindable** (you can see what the test was doing step by step)
+
+## environment and browser support
+
+[Proposal: Support for Cross Browser Testing](https://github.com/cypress-io/cypress/issues/310)
+
+> we only support Chrome variants such as `Chrome`, `Chromium`, and `Canary`.
+
+> We will be adding cross browser support likely by EOY. (20171017) Firefox, Safari then Edge.
 
 ## articles
 
