@@ -6,6 +6,10 @@
 
 > checklits qualité, référencement, accessibilité, performances, ergonomie, ...
 
+## accessibility
+
+[Hugo Giraudel](https://hugogiraudel.com/) [github account](https://github.com/HugoGiraudel)
+
 ## Progressives webapps
 
 [Progressive Web Apps : developers.google.com](https://developers.google.com/web/progressive-web-apps/)
