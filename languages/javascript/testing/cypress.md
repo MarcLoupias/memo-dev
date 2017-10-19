@@ -36,7 +36,7 @@ Each command takes a snapshot of the current DOM.
 
 Numerous commands contains their own embedded assertions.
 
-See [core concepts documentation](https://docs.cypress.io/guides/core-concepts/introduction-to-cypress.html).
+See [core concepts documentation > Chains of Commands > Commands Are Asynchronous](https://docs.cypress.io/guides/core-concepts/introduction-to-cypress.html#Commands-Are-Asynchronous).
 
 ## articles
 
