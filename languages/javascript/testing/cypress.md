@@ -22,6 +22,22 @@
 
 > We will be adding cross browser support likely by EOY. (20171017) Firefox, Safari then Edge.
 
+## how a test works
+
+### selenium
+
+Between each action we wait a defined amount of time to be sure the browsers have rendered the DOM needed for the test.
+
+### cypress
+
+The test suite execute the script and queue all the commands. Then cypress run everything in the same order. Cypress execute the first command and retry until success or fail (defined timeout). This modus operandi is way faster then selenium.
+
+Each command takes a snapshot of the current DOM.
+
+Numerous commands contains their own embedded assertions.
+
+See [core concepts documentation](https://docs.cypress.io/guides/core-concepts/introduction-to-cypress.html).
+
 ## articles
 
 [Web testing nirvana with Cypress](https://glebbahmutov.com/blog/web-testing-nirvana-with-cypress/)
