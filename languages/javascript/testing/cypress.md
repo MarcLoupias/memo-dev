@@ -1,12 +1,11 @@
-
 # cypress e2e solution
+
+[cypress.io](https://www.cypress.io/)
 
 - alternative to phantomJs, Karma, Selenium, ...
 - in private beta (still in 2017)
 - not already opensource [but coming](https://www.cypress.io/blog/2017/05/04/cypress-is-going-open-source/)
 - [**it's done :-)**](https://www.cypress.io/blog/2017/10/10/cypress-is-now-public-beta/)
-
-[cypress.io](https://www.cypress.io/)
 
 ## features & objectives
 
@@ -21,6 +20,11 @@
 > we only support Chrome variants such as `Chrome`, `Chromium`, and `Canary`.
 
 > We will be adding cross browser support likely by EOY. (20171017) Firefox, Safari then Edge.
+
+## installing with npm behind a proxy
+
+- [npm install not working behind corporate firewall](https://github.com/cypress-io/cypress/issues/733)
+- [Document CYPRESS_BINARY_VERSION environment variable](https://github.com/cypress-io/cypress-documentation/issues/121)
 
 ## how a test works
 
