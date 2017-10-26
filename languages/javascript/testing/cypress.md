@@ -26,6 +26,16 @@
 - [npm install not working behind corporate firewall](https://github.com/cypress-io/cypress/issues/733)
 - [Document CYPRESS_BINARY_VERSION environment variable](https://github.com/cypress-io/cypress-documentation/issues/121)
 
+## usage and recommandations
+
+[Cypress slows down drastically over long runs - restart renderer between spec files?](https://github.com/cypress-io/cypress/issues/431#issuecomment-339710315)
+
+> You cannot run all of your tests. The GUI is a mode built specifically to run one or a small number of tests at a time.
+
+> you can tell Cypress to cleanup snapshots by setting the `{ numTestsKeptInMemory: 0 }` in `cypress.json`. This will purge snapshots aggressively but then you will lose the ability to debug any of your tests.
+
+> If you want to run all your tests you need to do it from the command line using `cypress run`. In that mode it makes specific performance optimizations (like not taking snapshots) because it knows you're not iterating on a test or working with the results.
+
 ## how a test works
 
 ### selenium
