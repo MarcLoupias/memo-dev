@@ -36,6 +36,14 @@
 
 > If you want to run all your tests you need to do it from the command line using `cypress run`. In that mode it makes specific performance optimizations (like not taking snapshots) because it knows you're not iterating on a test or working with the results.
 
+## login
+
+[Best Practices - Visiting External Sites](https://docs.cypress.io/guides/references/best-practices.html#Visiting-External-Sites)
+
+[Web Security - External Navigation](https://docs.cypress.io/guides/guides/web-security.html#External-Navigation)
+
+[Web Security - Form Submission Redirects](https://docs.cypress.io/guides/guides/web-security.html#Form-Submission-Redirects)
+
 ## how a test works
 
 ### selenium
