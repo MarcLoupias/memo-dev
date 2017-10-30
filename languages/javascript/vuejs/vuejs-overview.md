@@ -58,3 +58,11 @@ Current available templates include:
 ## linting
 
 [vuejs/eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue)
+
+## http management
+
+[Retiring vue-resource](https://medium.com/the-vue-point/retiring-vue-resource-871a82880af4)
+
+> As Vue users, many of you may have used [vue-resource](https://github.com/pagekit/vue-resource) for handling ajax requests in your Vue applications.
+> 
+> However, over time we have come to the conclusion that an "official ajax library" is not really necessary for Vue.
