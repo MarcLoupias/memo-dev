@@ -39,6 +39,14 @@ Current available templates include:
 
 > a [material design](https://material.io/guidelines/) impl for vuejs
 
+[material icons](https://material.io/icons/)
+
+linked as : 
+
+```html
+<link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+```
+
 ## state management
 
 ### official guide indications
