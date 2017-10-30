@@ -20,3 +20,7 @@
 - Responsive: There is one basic layout, and it changes responsively to
   screen changes
 - Adaptive: For each possible screen size, there is a distinct layout.
+
+## icons
+
+[icons8.com](https://icons8.com/)
