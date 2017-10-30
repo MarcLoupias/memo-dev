@@ -66,3 +66,11 @@ Current available templates include:
 > As Vue users, many of you may have used [vue-resource](https://github.com/pagekit/vue-resource) for handling ajax requests in your Vue applications.
 > 
 > However, over time we have come to the conclusion that an "official ajax library" is not really necessary for Vue.
+
+### solutions
+
+- [pagekit/vue-resource](https://github.com/pagekit/vue-resource)
+
+- [axios/axios](https://github.com/axios/axios)
+
+> axios is heavily inspired by the `$http` service provided in [AngularJS](https://angularjs.org/). Ultimately axios is an effort to provide a standalone `$http`-like service for use outside of AngularJS.
