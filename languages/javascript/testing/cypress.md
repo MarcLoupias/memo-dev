@@ -44,6 +44,8 @@
 
 [Web Security - Form Submission Redirects](https://docs.cypress.io/guides/guides/web-security.html#Form-Submission-Redirects)
 
+[Cypress.io Keycloak Integration : 20171028](https://vrockai.github.io/blog/2017/10/28/cypress-keycloak-intregration/)
+
 ## how a test works
 
 ### selenium
