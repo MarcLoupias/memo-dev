@@ -203,7 +203,6 @@
 * [Polyfills, Shivs, Shims](web/polyfills-shivs-shims.md)
 * [SEO](web/SEO.md)
 * [Shadow DOM](web/shadow-dom.md)
-* [Vue.js](web/vue-js.md)
 * [Generic good practices](web/web-generic-good-practices.md)
 * [Selenium](web/web-test-selenium.md)
 * [Tracking](web/web-tracking.md)
