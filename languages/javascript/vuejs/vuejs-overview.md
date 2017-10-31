@@ -27,6 +27,37 @@ Current available templates include:
 - [pwa](https://github.com/vuejs-templates/pwa) - PWA template for vue-cli based on the webpack template.
 - [simple](https://github.com/vuejs-templates/simple) - The simplest possible Vue setup in a single HTML file.
 
+### single file components
+
+[Single File Components : vuejs.org](https://vuejs.org/v2/guide/single-file-components.html)
+
+A single file containing `html`, `js` and `css` : 
+
+```html
+<template>
+    <p>{{ greeting }} World !</p>
+</template>
+
+<script>
+module.exports = {
+    data: function() {
+        return {
+            greeting: 'Hello'
+        }
+    }
+}
+</script>
+
+<style scoped>
+p {
+    font-size: 2em;
+    text-align: center;
+}
+</style>
+```
+
+Build tools like Webpack or Browserify are mandatory to transform theses `.vue` files in something readable by the browser.
+
 ## routing
 
 [vuejs v2 - router](https://router.vuejs.org/en/)
