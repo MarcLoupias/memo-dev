@@ -14,6 +14,10 @@
 
 > a style-guide to avoid pitfall
 
+### community
+
+[forum.vuejs.org](https://forum.vuejs.org/)
+
 ## project scaffolding
 
 [vuejs/vue-cli](https://github.com/vuejs/vue-cli)
