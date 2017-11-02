@@ -24,6 +24,26 @@
 - [Simple git flow](http://blogs.atlassian.com/2014/01/simple-git-workflow-simple/) (Continuous Delivery oriented)
 - [Trunk based development](https://trunkbaseddevelopment.com/)
 
+## opensource contrib on github
+
+[How to Contribute to an Open Source Project on GitHub](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
+
+> - Introduction to GitHub 0:47
+> - Exploring GitHub 1:47
+> - Exploring a Repository 4:07
+> - How to install Git SCM 2:15
+> - How to authenticate with GitHub using SSH 3:34
+> - Identifying How to Contribute to an Open Source Project on GitHub 2:15
+> - How to Fork and Clone a GitHub Repository 2:41
+> - Setting up the project locally 1:18
+> - How to create a Pull Request on GitHub 6:19
+> - How to Collaborate on a Pull Request on GitHub 2:21
+> - How to update a Pull Request on GitHub 2:57
+> - How to rebase a git Pull Request branch 3:39
+> - How to squash multiple git commits 2:53
+> - Getting a Pull Request Merged and Wrapping up 1:13
+
+
 ## merging strategy
 In a **CI strategy** you can merge in master at the start of the day to prevent painful merges at a later time.
 In a **synchronization point strategy** you only merge in from well defined points in time, for example a tagged release.
