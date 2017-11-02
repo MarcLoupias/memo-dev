@@ -21,6 +21,12 @@
 
 > We will be adding cross browser support likely by EOY. (20171017) Firefox, Safari then Edge.
 
+### native browsers events support
+ 
+[Support for Native Browser Events](https://github.com/cypress-io/cypress/issues/311)
+
+> From there we'll add new commands for file uploads, etc.
+
 ## installing with npm behind a proxy
 
 - [npm install not working behind corporate firewall](https://github.com/cypress-io/cypress/issues/733)
