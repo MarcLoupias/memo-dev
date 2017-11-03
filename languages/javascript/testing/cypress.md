@@ -13,6 +13,10 @@
 - **reliable** (no inconsistent errors like in Selenium)
 - **rewindable** (you can see what the test was doing step by step)
 
+### trade offs
+
+[Cypress Trade Offs](https://github.com/cypress-io/cypress-documentation/issues/162)
+
 ## environment and browser support
 
 [Proposal: Support for Cross Browser Testing](https://github.com/cypress-io/cypress/issues/310)
