@@ -92,6 +92,11 @@ then git reset --hard 1234abcd where 1234abcd is the hash of the desired commit.
 git diff main-branch..alt-branch > file.name.diff
 ```
 
+```
+# checking difference in a single file between 2 tags
+git diff 0.11.0..0.12.0 src/config.js
+```
+
 ## merge management
 
 ```
@@ -231,6 +236,11 @@ git log --graph
 ```
 # print a graphic log in console from all branches where a commit is only one line
 git log --graph --oneline --all
+```
+
+```
+# print the commit list changelog between 2 tags
+git log 0.11.0..0.12.0 --oneline
 ```
 
 ## blame
