@@ -97,6 +97,11 @@ git diff main-branch..alt-branch > file.name.diff
 git diff 0.11.0..0.12.0 src/config.js
 ```
 
+```
+# same as above but without the context line (output just the changes)
+git diff --unified=0 0.11.0..0.12.0 src/config.js
+```
+
 ## merge management
 
 ```
