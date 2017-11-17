@@ -160,6 +160,10 @@ Extensible à tout sujet technique.
 
 [Separating Programming Sheep from Non-Programming Goats : 20060714](https://blog.codinghorror.com/separating-programming-sheep-from-non-programming-goats/)
 
+[Which Programming Language Should I Learn First?](http://carlcheo.com/startcoding#resources)
+
+[which-programming-language-should-i-learn-first-infographic.png](http://carlcheo.com/wp-content/uploads/2014/12/which-programming-language-should-i-learn-first-infographic.png)
+
 ## open source company contrib
 
 [Who contributed the most to open source in 2017? : medium.freecodecamp.org](https://medium.freecodecamp.org/the-top-contributors-to-github-2017-be98ab854e87)
