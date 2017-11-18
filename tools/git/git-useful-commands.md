@@ -270,6 +270,11 @@ git log --graph --oneline --all
 git log 0.11.0..0.12.0 --oneline
 ```
 
+```bash
+# print the commit list changelog with changed files between 2 tags
+git log 0.11.0..0.12.0 --oneline --stat
+```
+
 ## blame
 
 ```bash
