@@ -6,19 +6,19 @@
 
 ```bash
 # cloning a repository in a specific folder
-git clone <url> <dir_name>
+$ git clone <url> <dir_name>
 ```
 
 ## branch
 
 ```bash
 # list local branch
-git branch -l
+$ git branch -l
 ```
 
 ```bash
 # list all branches (remote and local, tracked and untracked) : git remote show [remote]
-git remote show origin
+$ git remote show origin
 
 * remote origin
   Fetch URL: https://github.com/OneBusAway/onebusaway-android
@@ -41,64 +41,64 @@ git remote show origin
 
 ```bash
 # delete local branch
-git branch -d <branch_name>
+$ git branch -d <branch_name>
 ```
 
 ```bash
 # delete a local branch with diff from other branch
-git branch -D <branch_name>
+$ git branch -D <branch_name>
 ```
 
 ## working directory
 
 ```bash
 # change working directory with HEAD of branch_name
-git checkout <branch_name>
+$ git checkout <branch_name>
 ```
 
 ```bash
 # change working directory with last branch 
-git checkout -
+$ git checkout -
 ```
 
 ```bash
 # create and pull a remote branch from a remote
-git checkout -b <new_branch> origin/<new_branch>
+$ git checkout -b <new_branch> origin/<new_branch>
 ```
 
 ```bash
 # create a local branch, do stuff, then push that new branch to the remote repo
-git checkout -b mynewfeature
+$ git checkout -b mynewfeature
 ... edit files, add and commit ...
-git push -u origin mynewfeature
+$ git push -u origin mynewfeature
 ```
 
 ## commit management
 
 ```bash
 # delete last commit (will not delete modifications, just the commit)
-git reset HEAD^
+$ git reset HEAD^
 ```
 
 ```bash
 # delete the 3 last commits (will not delete modifications, just the commits)
-git reset --soft HEAD~3
+$ git reset --soft HEAD~3
 ```
 
 ```bash
 # delete the 3 last commits (including last modifications)
-git reset --hard HEAD~3
+$ git reset --hard HEAD~3
 ```
 
 ```bash
 # rename last commit msg
-git commit --amend -m "New commit message"
+$ git commit --amend -m "New commit message"
 ```
 
 ```bash
 # rollback local repo after a git pull
-use git log to find the hash of the desired commit
-then git reset --hard 1234abcd where 1234abcd is the hash of the desired commit.
+# use git log to find the hash of the desired commit then 
+$ git reset --hard 1234abcd where 1234abcd is the hash of the desired commit.
 ```
 
 ## commit message management
@@ -109,29 +109,29 @@ then git reset --hard 1234abcd where 1234abcd is the hash of the desired commit.
 
 ```bash
 # checking difference between 2 branches and put that log into a file
-git diff main-branch..alt-branch > file.name.diff
+$ git diff main-branch..alt-branch > file.name.diff
 ```
 
 ```bash
 # checking difference in a single file between 2 tags
-git diff 0.11.0..0.12.0 src/config.js
+$ git diff 0.11.0..0.12.0 src/config.js
 ```
 
 ```bash
 # same as above but without the context line (output just the changes)
-git diff --unified=0 0.11.0..0.12.0 src/config.js
+$ git diff --unified=0 0.11.0..0.12.0 src/config.js
 ```
 
 ## merge management
 
 ```bash
 # cancel a merge (git version >= 1.7.4)
-git merge --abort
+$ git merge --abort
 ```
 
 ```bash
 # merge conflict in favor of "their" changes (origin changes)
-git merge --strategy-option theirs
+$ git merge --strategy-option theirs
 ```
 
 ## cherry-pick
@@ -140,8 +140,8 @@ git merge --strategy-option theirs
 # cherry-pick a specific commit from one branch to another 
 # (https://ariejan.net/2010/06/10/cherry-picking-specific-commits-from-another-branch/)
 # here master is the targeted branch (ie : where the commit will go)
-git checkout master
-git cherry-pick 1234abcd
+$ git checkout master
+$ git cherry-pick 1234abcd
 ```
 
 ### cherry-pick from another repo
@@ -171,19 +171,19 @@ $ git cherry-pick 97fedac
 
 ```bash
 # listing the 10 alst commit, stdout only the complete sha1 then the commit title
-git log --pretty=oneline -10
+$ git log --pretty=oneline -10
 
 # -1 indicates there is only one commit contained in the patch ; this will create a .patch file containing the commit
-git format-patch -1 <sha1> --stdout > <name>.patch
+$ git format-patch -1 <sha1> --stdout > <name>.patch
 
 # check the diff
-git apply --stat <name>.patch
+$ git apply --stat <name>.patch
 
 # check if the patch is appliable
-git apply --check <name>.patch
+$ git apply --check <name>.patch
 
 # signoff is to keep the original author in the commit metadata. -k is to keep flags in the commit message
-git am --signoff -k < <name>.patch
+$ git am --signoff -k < <name>.patch
 ```
 
 [cherry-picking-range-of-git-commits : feeding.cloud.geek.nz : 20100720](https://feeding.cloud.geek.nz/posts/cherry-picking-range-of-git-commits/)
@@ -202,77 +202,77 @@ $ git am *.patch
 # removing a directory from git tracking without deleting it locally
 # first, add the folder to the .gitignore file
 # then
-git rm -r --cached path_to_your_folder/
+$ git rm -r --cached path_to_your_folder/
 ```
 
 ```bash
 # ignore changes on tracked files
-git update-index --assume-unchanged README.md
+$ git update-index --assume-unchanged README.md
 
 # list ignored files
-git ls-files -v | grep '^h'
+$ git ls-files -v | grep '^h'
 
 # rollback
-git update-index --no-assume-unchanged README.d
+$ git update-index --no-assume-unchanged README.d
 ```
 
 ## log
 
 ```bash
 # print a log filtered on commit message with regex
-git log --grep 'regex'
+$ git log --grep 'regex'
 ```
 
 ```bash
 # print a log filtered on commit content (+ lines & -lines) with regex
-git log -G 'regex'
+$ git log -G 'regex'
 ```
 
 ```bash
 # print a log filtered on author name
-git log --author="automatix"
+$ git log --author="automatix"
 ```
 
 ```bash
 # print a log filtered since commit date
-git log --since="2013-01-30"
+$ git log --since="2013-01-30"
 # print a log filtered until commit date
-git log --until="2013-01-30"
+$ git log --until="2013-01-30"
 ```
 
 ```bash
 # print a log with a list of modified files
-git log --stat
+$ git log --stat
 ```
 
 ```bash
 # print a log of all commits from all branches (just active branch by default)
-git log --all
+$ git log --all
 ```
 
 ```bash
 # print a condensed log where each commit is one line 
-git log --oneline
+$ git log --oneline
 ```
 
 ```bash
 # print a graphic log in console 
-git log --graph
+$ git log --graph
 ```
 
 ```bash
 # print a graphic log in console from all branches where a commit is only one line
-git log --graph --oneline --all
+$ git log --graph --oneline --all
 ```
 
 ```bash
 # print the commit list changelog between 2 tags
-git log 0.11.0..0.12.0 --oneline
+$ git log 0.11.0..0.12.0 --oneline
 ```
 
 ```bash
 # print the commit list changelog with changed files between 2 tags
-git log 0.11.0..0.12.0 --oneline --stat
+$ git log 0.11.0..0.12.0 --oneline --stat
 ```
 
 ## blame
@@ -296,7 +296,7 @@ f35a6d3b (Linus Torvalds  2007-04-09 21:20:29 -0700   16) #include "refs.h"
 
 ```bash
 # can be filtered to specific line range
-$>git blame -L 160,+10 sha1_file.c 
+$ git blame -L 160,+10 sha1_file.c 
 ace1534d (Junio C Hamano 2005-05-07 00:38:04 -0700       160)}
 ace1534d (Junio C Hamano 2005-05-07 00:38:04 -0700       161)
 0fcfd160 (Linus Torvalds 2005-04-18 13:04:43 -0700       162)/*
