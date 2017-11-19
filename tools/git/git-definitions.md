@@ -103,4 +103,98 @@ Obviously, write access is mandatory on the remote
 `git push <remote-name> <branch-name>` write the local branch commits on the remote branch.
 The history must be clean enough to allow a fast forward or git will reject the push.
 
+### range operators
 
+Used mostly with `git log` and `git diff` commands. Provide a tool to compare branches and tags.
+
+Difference depends on the command context. Log work with commits where diff work with commit content.
+
+[What are the differences between double-dot “..” and triple-dot “…” in Git commit ranges? : stackoverflow.com](https://stackoverflow.com/questions/462974/what-are-the-differences-between-double-dot-and-triple-dot-in-git-com)
+
+[What are the differences between double-dot “..” and triple-dot “…” in Git diff commit ranges? : stackoverflow.com](https://stackoverflow.com/questions/7251477/what-are-the-differences-between-double-dot-and-triple-dot-in-git-dif)
+
+#### `..` (dot dot)
+
+```bash
+$ git log A..B
+# output all of the commits that B has that A doesn't have
+```
+
+```bash
+$ git diff A..B
+# exactly the same as 
+$ git diff A B
+# output all the difference between A and B, if A got diff that B doesn't have and B has diff that A doesn't have, it will output BOTH. 
+```
+
+#### `...` (dot dot dot)
+
+```bash
+$ git log A...B
+# filter out all of the commits that both A and B share, thus only showing the commits that they don't both share
+```
+
+```bash
+$ git diff A...B
+# output only the commits in B that A doesn't have (compare from the root of the 2 branches)
+```
+
+### ancestry references
+
+Used in a lot of commands stuck with `HEAD` ref to points to ancestors commits.
+
+[What's the difference between HEAD^ and HEAD~ in Git? : stackoverflow.com](https://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git)
+
+- `~` specifies ancestors
+- `^` specifies parents
+
+Ancestors are related to the current branch.
+
+A commit can have more then one parent, caret is used to select the parent.
+
+Let's say we have this tree :
+
+```
+-- A1 - A2 - - - A3
+    \            /
+     B1 - B2 - B3
+```
+
+where `HEAD` is `A3`.
+
+#### `^` (caret)
+
+```
+HEAD^ is a shortand for HEAD^1
+HEAD^=A2
+```
+
+```
+HEAD^^ = HEAD^1^1 = A1
+```
+
+```
+HEAD^2 = B3
+```
+
+```
+HEAD^2^1 = B2
+```
+
+```
+HEAD^2^2 = nothing as B3 has only one parent (B2)
+```
+
+#### `~` (tilde)
+
+```
+HEAD~ is a shortand for HEAD~1
+```
+
+```
+HEAD~2 = A1
+```
+
+```
+HEAD^2~2 = B1
+```
