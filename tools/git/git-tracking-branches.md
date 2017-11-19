@@ -1,6 +1,6 @@
 # Understanding Tracking Branches in Git
-- [source] (http://www.lornajane.net/posts/2014/understanding-tracking-branches-in-git)
-- [git-scm.com - Git-Branching-Remote-Branches **must read**] (https://git-scm.com/book/it/v2/Git-Branching-Remote-Branches)
+- [source](http://www.lornajane.net/posts/2014/understanding-tracking-branches-in-git)
+- [git-scm.com - Git-Branching-Remote-Branches **must read**](https://git-scm.com/book/it/v2/Git-Branching-Remote-Branches)
 
 ## What is a tracking branch?
 
@@ -9,7 +9,7 @@ This is a branch which knows which remote branch it is related to, and making th
 - You can `git push` or `git pull` without specifying remote or branch and it will use its tracking sister branch by default
 - The `git status` command will include information about how far behind your tracking branch you are - useful to remind you that you haven't pushed your changes yet! It looks like this:
 
-```
+```bash
 $ git status
 # On branch branch1
 # Your branch is ahead of 'origin/branch1' by 1 commit.
@@ -22,7 +22,7 @@ nothing to commit, working directory clean
 
 Let's start with getting a handle on what branches are currently tracking other branches, using `git branch -vv`
 
-```
+```bash
 $ git branch -vv
   branch1    c98bacf [origin/branch1] A random change of 24459 to ideas2.txt
   experiment 09a0eb9 A random change of 16603 to list2.txt
@@ -33,12 +33,14 @@ This shows three branches, two of them are tracking branches on another remote. 
 
 ## Remove a current tracking relationship
 
-`git branch --unset-upstream`
+```bash
+git branch --unset-upstream
+```
 
 ## Link a branch to an upstream branch
 
 If you're pushing a branch (even if it exists in both places) to a remote location and you want to create the link:
-```
+```bash
 $ git push -u origin feature
 Counting objects: 9, done.
 Delta compression using up to 4 threads.
@@ -50,7 +52,7 @@ To /home/lorna/.../scripts/origin.git
 Branch feature set up to track remote branch feature from origin.
 ```
 If you're creating a local version of an existing remote branch:
-```
+```bash
 $ git fetch origin
 remote: Counting objects: 9, done.
 remote: Compressing objects: 100% (5/5), done.
@@ -60,18 +62,18 @@ From /home/lorna/.../scripts/origin
  * [new branch]      feature    -> origin/feature
 ```
 Then:
-```
+```bash
 $ git checkout feature
 Branch feature set up to track remote branch feature from origin.
 Switched to a new branch 'feature'
 ```
 Addenda : If you have already an existing remote branch (`upstream` is the remote alias):
-```
+```bash
 git checkout foo
 git branch -u upstream/foo
 ```
 or 
-```
+```bash
 git branch -u upstream/foo foo
 ```
 
