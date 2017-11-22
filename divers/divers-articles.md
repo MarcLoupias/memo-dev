@@ -60,6 +60,8 @@
 
 [Les développeurs en France en 2017 : profil, salaire, technologies, langages, emploi ...](http://www.blogdumoderateur.com/etude-stackoverflow-2017/)
 
+[Parole d’expert : Le rôle de Tech lead selon Damien Beaufils : blog.openclassrooms.com :20171121](http://blog.openclassrooms.com/blog/2017/11/21/parole-dexpert-role-de-tech-lead-selon-damien-beaufils/)
+
 ## internaliser les devs ou externaliser
 
 [Faut-il internaliser ou externaliser ses développements web ?](https://blog.capsens.eu/faut-il-internaliser-ou-externaliser-ses-d%C3%A9veloppements-web-d3d17c6b3246) (20170208) TLDR : Il vaut mieux internaliser. Contre-exemple : Slack, Skype
