@@ -39,9 +39,9 @@ Egalement nommé Time To Deliver (TTD)
 [Greenkeeper.io](https://greenkeeper.io/)
 
 > Greenkeeper sits between npm and GitHub, observing all of the modules you depend on. When they get updated, your project gets a new branch with that update. Your CI tests kick in, and we watch them to see whether they pass.
-
+> 
 > Based on the test results and your current version definitions we will open up clear, actionable issues for you. If there’s nothing for you to do, we won’t nag you.
-
+> 
 > Let the friendly Greenkeeper bot take all the dull work of keeping your dependencies up to date off your shoulders and, optimally, boil it all down to a few clicks. This is as close to fully automatic as we could possibly make it.
 
 #### SQALE : Software Quality Assessment based on Lifecycle Expectations
