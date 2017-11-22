@@ -216,6 +216,8 @@ this.nameFilter$ = new Rx.BehaviorSubject(this.nameFilter);
 
 ### RxJS
 
+[RxJS pour les humains : technologies-ebusiness.com : 20161011](https://www.technologies-ebusiness.com/enjeux-et-tendances/rxjs-pour-les-humains)
+
 **The Need to go Reactive**
 
 > Applications, especially on the web have changed over the years from being a simple static page, to DHTML with 
