@@ -78,6 +78,8 @@ See [core concepts documentation > Chains of Commands > Commands Are Asynchronou
 
 [Installing and Running](https://docs.cypress.io/docs/installing-and-running)
 
+[Control an AngularJS Application From E2E Tests : 20171115](https://www.cypress.io/blog/2017/11/15/Control-Angular-Application-From-E2E-Tests/#Element-scope)
+
 ## videos
 
 [Brian Mann, Testing the way it should be : ReactiveConf 2016](https://www.youtube.com/watch?v=lK_ihqnQQEM)
