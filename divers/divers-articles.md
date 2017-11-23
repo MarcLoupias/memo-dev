@@ -166,6 +166,8 @@ Extensible à tout sujet technique.
 
 [which-programming-language-should-i-learn-first-infographic.png](http://carlcheo.com/wp-content/uploads/2014/12/which-programming-language-should-i-learn-first-infographic.png)
 
+[The most essential list of resources for Front-End beginners : 2017](https://github.com/thedaviddias/Resources-Front-End-Beginner)
+
 ## open source company contrib
 
 [Who contributed the most to open source in 2017? : medium.freecodecamp.org](https://medium.freecodecamp.org/the-top-contributors-to-github-2017-be98ab854e87)
