@@ -6,6 +6,14 @@
 
 > SPA Architecture review : AngularJS 2w bindings then React unidirectionnal then Redux 
 
+[change detection strategy : Echyzen Website : 20171116](https://www.youtube.com/watch?time_continue=1&v=hXI78pk2kqc)
+
+> based on [Change And Its Detection In JavaScript Frameworks : 20150302](https://teropa.info/blog/2015/03/02/change-and-its-detection-in-javascript-frameworks.html)
+
+[Comprendre le data binding dans Angular, React et Vue : Sylvain Pollet-Villard : 20160322](http://sylvainpv.developpez.com/publications/data-binding/)
+
+> same as above but Angular, React and Vue centric and more detailled
+
 ## component
 
 [Front-end Application Libraries and Component Architectures](http://developer.telerik.com/featured/front-end-application-frameworks-component-architectures/)
