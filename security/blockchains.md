@@ -14,6 +14,14 @@
 
 [c-est-quoi-la-blockchain : blockchainfrance.net](https://blockchainfrance.net/decouvrir-la-blockchain/c-est-quoi-la-blockchain/)
 
+[État des lieux de la blockchain en France : acteurs, régulation, formation… : blogdumoderateur.com : 20171127](https://www.blogdumoderateur.com/etat-des-lieux-blockchain-france/)
+
+> La Chaintech comprend entre 20 et 30 start-ups, dont 5 à 10 vraiment installées qui génèrent des revenus et bénéficient d’une vraie visibilité.
+
+> Nous sommes un des seuls pays qui a commencé à adapter son droit commun à la technologie blockchain, à créer un droit spécifique aux blockchains, et ce il y a déjà plus d’un an avec l’ordonnance Macron sur les minibons.
+
+> De par la nature de la communauté, on apprend encore beaucoup sur le tas, en s’informant en ligne.
+
 ## questions
 
 A priori les certificats utilisés dans une blockchain sont autosignés, comment gérer la révocation des certificats ?
