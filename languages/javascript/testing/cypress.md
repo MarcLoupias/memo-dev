@@ -46,6 +46,19 @@
 
 > If you want to run all your tests you need to do it from the command line using `cypress run`. In that mode it makes specific performance optimizations (like not taking snapshots) because it knows you're not iterating on a test or working with the results.
 
+[Tests slows down to a crawl and eventually times out/crashes](https://github.com/cypress-io/cypress/issues/990)
+
+> The reason Cypress is crashing and chrome headless isn't is because of the additional features Cypress provides that no other testing tool does. In this case it's the time travel functionality.
+
+> Cypress has two basic modes of operation: GUI mode & CLI mode
+
+> GUI mode is optimized for **debugging** and CLI mode is optimized for **running**.
+
+> The reason Cypress is slowing down and crashing is because in GUI mode it takes snapshots for **very single command**.
+
+> `window` and `document` are being preserved in memory for every single page transition. This is where it chews up memory and you'll experience those slow downs and crashes.
+
+
 ## login
 
 [Best Practices - Visiting External Sites](https://docs.cypress.io/guides/references/best-practices.html#Visiting-External-Sites)
