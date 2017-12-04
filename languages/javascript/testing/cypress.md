@@ -7,7 +7,7 @@
 - not already opensource [but coming](https://www.cypress.io/blog/2017/05/04/cypress-is-going-open-source/)
 - [**it's done :-)**](https://www.cypress.io/blog/2017/10/10/cypress-is-now-public-beta/)
 
-## features & objectives
+## features and objectives
 
 - **fast** (running as fast as unit testing)
 - **reliable** (no inconsistent errors like in Selenium)
@@ -76,6 +76,8 @@
 Between each action we wait a defined amount of time to be sure the browsers have rendered the DOM needed for the test.
 
 ### cypress
+
+Cypress runs [inside the browser](https://docs.cypress.io/guides/references/trade-offs.html#Inside-the-browser).
 
 The test suite execute the script and queue all the commands. Then cypress run everything in the same order. Cypress execute the first command and retry until success or fail (defined timeout). This modus operandi is way faster then selenium.
 
