@@ -58,6 +58,11 @@
 
 > `window` and `document` are being preserved in memory for every single page transition. This is where it chews up memory and you'll experience those slow downs and crashes.
 
+[My test passes `cypress open` but fails with `cypress run`](https://github.com/cypress-io/cypress/issues/1011)
+
+> One is running in Chrome, the other is running in Chromium (Electron). There are differences in these browsers.
+
+> Cf [documentation - Launching Browsers : Electron Browser](https://docs.cypress.io/guides/guides/launching-browsers.html#Electron-Browser)
 
 ## login
 
