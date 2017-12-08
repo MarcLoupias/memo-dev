@@ -6,6 +6,8 @@
 
 [fineinfo.net](http://fineinfo.net/)
 
+[Software advice from Dr. Gleb Bahmutov PhD](https://glebbahmutov.com/blog/)
+
 [web-tambouille.fr](http://web-tambouille.fr/)
 
 [See what the GitHub community is most excited about today.](https://github.com/trending)
@@ -41,6 +43,8 @@
 ## articles
 
 [How I stay up-to-date as a Developer : hackernoon.com](https://hackernoon.com/how-do-i-stay-up-to-date-as-a-developer-5ec773e30a82)
+
+[How to become a better hacker : glebbahmutov.com : 20160127](https://glebbahmutov.com/blog/better-hacker/)
 
 [Web Development in 2017](https://medium.com/@Hisako1337/web-development-in-2017-e106ec18662)
 
