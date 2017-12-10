@@ -16,13 +16,22 @@
 
 ## articles divers
 
-- [Angular Singleton Service and a Loading Indicator](https://medium.com/@weswhite/angular-singleton-service-and-a-loading-indicator-ca3cc7892722)
-
-> Intéressant car montre qu'en Angular il y a un injecteur par module, pour voir un singleton global à la webapp il faut effectuer des manipulations contrairement à AngularJS où il n'y a qu'un seul injecteur pour tous les modules et où tous les services sont des singletons globaux à la webapp.
-
 - [Difference Between Angular vs Angular 2 : blog.learnstartup.net (2017-05-30)](https://blog.learnstartup.net/p/difference-between-angular-vs-angular-2/)
 
 - [How I stopped loving Angular : 20170920](https://codeburst.io/how-i-stopped-loving-angular-c2935f7378c4)
 
 > opiniated but well argumented article. Comments are also valuables.
- 
+
+### angular DI
+
+- [Angular Singleton Service and a Loading Indicator](https://medium.com/@weswhite/angular-singleton-service-and-a-loading-indicator-ca3cc7892722)
+
+> Intéressant car montre qu'en Angular il y a un injecteur par module, pour voir un singleton global à la webapp il faut effectuer des manipulations contrairement à AngularJS où il n'y a qu'un seul injecteur pour tous les modules et où tous les services sont des singletons globaux à la webapp.
+
+- [Dependency Injection in Angular, Pascal Precht : 20150518 (update 20170808)](https://blog.thoughtram.io/angular/2015/05/18/dependency-injection-in-angular-2.html)
+
+> full overview of Angular DI system with updates when the framework is updated
+
+- [Angular deprecates ReflectiveInjector and introduces StaticInjector. Should you care? : 20170808](https://blog.angularindepth.com/angular-introduces-staticinjector-should-you-care-4e059eca030c)
+
+> focus on the DI breaking change introduced by Angular5 ([see CHANGELOG](https://github.com/angular/angular/blob/master/CHANGELOG.md#breaking-changes))
