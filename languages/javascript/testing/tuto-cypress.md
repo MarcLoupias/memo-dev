@@ -57,6 +57,16 @@ sujet du tuto, prendre protractor qui est un grand classique d'utilisation de se
 
 et le comparer à cypress pour voir la plus-value de cypress
 
+### théorie
+
+#### archi de selenium
+
+explications de l'archi
+
+#### archi de cypress
+
+explications de l'archi
+
 ### exemple basique
 
 #### TodoMVC
