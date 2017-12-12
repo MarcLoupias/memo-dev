@@ -2,6 +2,8 @@
 
 ## Etat de l'art fin 2017
 
+rappel déf + expliquer les principaux courants et tendances qui ont fait évoluer le dev web ces dernières années
+
 ### rappel définitions
 
 #### test unitaire
