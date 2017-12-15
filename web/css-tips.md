@@ -24,3 +24,9 @@
 ## icons
 
 [icons8.com](https://icons8.com/)
+
+## persons
+
+[Daniel Glazman](https://fr.wikipedia.org/wiki/Daniel_Glazman) ([blog](http://glazman.org/weblog/))
+
+> Former co-chairman of the W3C CSS Working Group, entrepreneur, software engineer
