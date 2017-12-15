@@ -249,6 +249,14 @@ Martin Fowler deal with this question in [his feature toggle article](https://ma
   - massive article writer on [medium.com](https://medium.com/@_ericelliott)
 - David Heinemeier Hansson (Creator of Ruby on Rails)
   - [The Majestic Monolith : medium.com 20160229](https://m.signalvnoise.com/the-majestic-monolith-29166d022228)
+- [Gérard Berry](https://fr.wikipedia.org/wiki/G%C3%A9rard_Berry)
+  - le lambda calcul et la programmation fonctionnelle ;
+  - la programmation parallèle et temps réel ;
+  - la conception assistée par ordinateur de circuits intégrés synchrones ;
+  - la vérification formelle de programmes et circuits ;
+  - la modélisation du calcul en général.
+  - [Dominer l’informatique avec Gérard Berry : 20171030](https://www.franceculture.fr/emissions/la-grande-table-2eme-partie/dominer-linformatique-avec-gerard-berry)
+
 
 - [Top 10 Programming Books Every Software Developer Should Read](https://www.youtube.com/watch?v=UX4YijQ3zhc)
 
