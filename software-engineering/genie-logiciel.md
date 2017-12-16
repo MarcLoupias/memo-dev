@@ -255,8 +255,10 @@ Martin Fowler deal with this question in [his feature toggle article](https://ma
   - la conception assistée par ordinateur de circuits intégrés synchrones ;
   - la vérification formelle de programmes et circuits ;
   - la modélisation du calcul en général.
-  - [Dominer l’informatique avec Gérard Berry : 20171030](https://www.franceculture.fr/emissions/la-grande-table-2eme-partie/dominer-linformatique-avec-gerard-berry)
+  - [Dominer l’informatique avec Gérard Berry - France Culture - 20171030](https://www.franceculture.fr/emissions/la-grande-table-2eme-partie/dominer-linformatique-avec-gerard-berry)
   - [Pourquoi et comment le monde devient numérique - Collèges de France - 20080117](https://www.college-de-france.fr/site/gerard-berry/inaugural-lecture-2008-01-17-18h00.htm)
+- [Daniel Glazman](http://glazman.org/weblog/) Former co-chairman of the W3C CSS Working Group
+  - [Sommes-nous à la merci de nos systèmes informatiques ? - France Culture -  20171205](https://www.franceculture.fr/emissions/linvite-des-matins-2eme-partie/sommes-nous-a-la-merci-de-nos-systemes-informatiques)
 
 - [Top 10 Programming Books Every Software Developer Should Read](https://www.youtube.com/watch?v=UX4YijQ3zhc)
 
