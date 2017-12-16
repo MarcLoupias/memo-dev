@@ -25,6 +25,126 @@
 
 [evergreen-browsers](http://tomdale.net/2013/05/evergreen-browsers/)
 
+## guerre des navigateurs 
+
+[The third browser war is over and it's a bloodshed - Daniel Glazman - WEB2DAY 2016](https://www.youtube.com/watch?v=ceMLuRBn--M)
+
+> A été chairman au CSS working group, (sepcs HTML2, 4, CSS2 et 3). Connait bien le processus de standardisation de l'intérieur
+> 
+> A bossé chez Netscape
+> 
+> Au tout début (années 90), rien n'était standardisé (non cross device, non cross platform, non cross device)
+> 
+> **Contexte**
+> 
+> - HTML+, nov 1993
+> - HTML4, dec 1997 (1er vrai standard)
+> - CSS1, dec 1996 (idée de décoreller la présentation du contenu)
+> - CSS2, may 1998
+> - IE avait jscript et pas javascript
+> 
+> **1994**
+> 
+> W3C consortium industriel (fondé 19941001 par MIT), chaque membre représente les intérêts industriels de son employeur
+> 
+> **1995**
+> 
+> beaucoup de conflits
+> 
+> *processus de standardisation*
+> 
+> - prime au premier arrivant, au premier standardisant, et surtout au premier shipant (le 1er à déployer)
+> - la pratique de Microsoft est de proposer un standard au moment où ils déploient pour forcer la direction
+> 
+> **1997**
+> 
+> la situation se calme quand la personne chargée de mener la politique de MS est changé de poste
+> 
+> **2003**
+> 
+> AOL qui possède Netscape licencie tout le monde.
+> 
+> IE reste tout seul, et du coup sans concurrence ne fait plus rien. (MS se concentre également sur Longhorn / Vista pendant 8 ans)
+> 
+> Rien de 2003 à 2008 sauf pour l'internationalisation.
+> 
+> Mozilla démarre gentiment et surtout tout petit (5 personnes)
+> 
+> Le W3C se focus sur le web sémantique et XHTML.
+> 
+> Apple annonce webkit (fork de KHTML)
+> 
+> Opéra a Presto
+> 
+> Google bosse sur webkit
+> 
+> **2010**
+> 
+> *processus de standardisation*
+> 
+> - la pratique des débuts (soumettre et déployer le même jour) est terminée
+> - on soumet et on discute pour avoir une solution la plus avantageuse possible
+> - on implémente en parallèle en espérant que ça dévie pas trop pour conserver le first mover advantage
+> - le web standard project pousse pour l'adoption des standards qui devient un argument commercial
+> - la standardisation devient un prérequis dans la loi fédérale pour les produits liés à l'état fédéral
+> 
+> **2013**
+> 
+> Blink est forké depuis Webkit par Google et Opera
+> 
+> **2016**
+> 
+> Chrome est un semi-monopole
+> 
+> Deux nouveaux entrants :
+> - LG (groupe coréen) pour des montres avec un screen circulaires (veulent y adapter les CSS)
+> - [Brave](https://www.brave.com/), un navigateur basé sur Blink écrit par [Brandon Eich](https://fr.wikipedia.org/wiki/Brendan_Eich) (inventeur de JavaScript)
+> 
+> *moteurs de rendus*
+> 
+> | - | modern | standards | cross platform | speed | 
+> | - | ------ | --------- | -------------- | ----- |
+> | Gecko | OK | OK | OK | OK |
+> | WebKit | OK | OK | OK | OK |
+> | Blink | OK | OK | OK | OK |
+> | Edge | OK | OK | KO | OK |
+> | Servo | OK | OK | OK | OK |
+> 
+> Servo écrit en Rust est le petit nouveau. MultiThreadé et layout parallèle. Ultra performant. Va probablement beaucoup changer la donne sur mobile.
+> Meilleure vitesse mais surtout meilleure conso. (d'où la collaboration Mozilla / Samsung).
+> 
+> Opera a abandonné Presto et est passé sur Blink
+> 
+> Un process par tab, chaque process multithreadé + layout parallèle = gains x30 à x50.
+> 
+> *part de marché des navigateurs*
+> 
+> Tout device :
+> 
+> - Chrome 58.7%
+> - Safari 12.7%
+> - IE + Edge 10.3%
+> - Firefox 10.0%
+> - Opera 3.2%
+> 
+> La cause c'est les centaines de millions de portables low cost utilisés en Asie et en Afrique (tous Android)
+> 
+> Crée un énorme avantage pour le process de standardisation pour Google.
+> 
+> *processus de standardisation*
+> 
+> - Les coréens de LG jouent le jeu
+> - MS est devenu l'élève modèle
+> - Google se met à se comporter comme MS en 95. Ils shipent et démerdez-vous. Tant que c'est "good enough" pour eux c'est ok.
+> - ex avec Web Components (Google en a besoin pour GMail qui est ultra complexe) qui est fait pour eux uniquement. 
+> Ils se foutent de la standardisation. Fait très vite, très mal.
+> 
+> *web OS*
+> 
+> ne croit pas à leur réussite :
+> - le principe de sandbox est vital pour des raisons de sécurité
+> - le lien direct des browsers aux drivers sans réelle couche OS marche très mal
+
 ## evol web impact desktop
 
 [gif dematerialisation](https://buffer-pictures.s3.amazonaws.com/ecf704408c7078fe1b822fee1c7b99f6.9801e31a3103c06fb006e4a8faf3263a.gif)
