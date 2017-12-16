@@ -111,6 +111,8 @@ Extensible à tout sujet technique.
 >
 >
 
+[Etat des lieux métier de l'info en France 2016 - Web2day - Daniel Glazman](https://www.youtube.com/watch?v=GU7DbfmBjxE)
+
 ## stacks utilisées
 
 [Étude sur l’évolution des technologies backend par année de création des entreprises : hired.com](https://hired.com/blog/france/technologies-backend-les-plus-en-vogue/)
