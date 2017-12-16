@@ -113,6 +113,27 @@ Extensible à tout sujet technique.
 
 [Etat des lieux métier de l'info en France 2016 - Web2day - Daniel Glazman](https://www.youtube.com/watch?v=GU7DbfmBjxE)
 
+> syntec convention collective inadaptée car branche tech capée trop vite, il faut passer manager pour évoluer. 
+> Dans les autres pays on a 2 branches (manager et tech), les managers évoluent vers CEO les techs vers CTO, c'est logique
+
+> 80% des devs sont en SS2I, or les SS2I ne développent rien, elles ne sont donc pas des boites de High Tech
+> les boites comme "le bon coin" ou "Tinder" ne le sont pas non plus
+ 
+> absence d'écosystème High Tech fait que les talents s'exilent (commutation de paquets et carte à puce sont des exemples
+> d'innovations par des français réalisées à l'étranger)
+
+> axiome "nul n'est irremplaçable" est faux. Pour avoir de l'innovation il faut les meilleurs donc des gens irremplaçables.
+
+> le cout pour démarrer une boite est très faible, un PC, une chaise, un bureau et un cerveau
+
+> 50K étudiants dans le logiciel par an (1/3 de Bengalore en Inde)
+> On est tout petit, on est excellent dans l'imagerie depuis des décennies. Tous les diplômes s'expatrient par manque de débouchés.
+> Au point que certaines boites aux USA dans l'imagerie sont staffées à 40% de frenchies
+
+> ... passage sur ce que l'etat pourrait faire pour aider à sortir des boites
+
+> explique qu'il a créé le 2ème logiciel de messagerie à la fin des années 80
+
 ## stacks utilisées
 
 [Étude sur l’évolution des technologies backend par année de création des entreprises : hired.com](https://hired.com/blog/france/technologies-backend-les-plus-en-vogue/)
