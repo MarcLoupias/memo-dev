@@ -174,6 +174,13 @@
 > 17 % de ces développeurs avaient moins d’un an d’expérience, 43 % d’entre eux avaient de 1 à 6 ans d’expérience et 47 % d’entre eux avaient plus de 6 années d’expérience.
 > 
 
+[Évaluation du nombre annuel de jeunes diplômés en STIC - munci.org - 2012](https://munci.org/La-France-forme-suffisamment-d-etudiants-aux-metiers-de-l-informatique)
+
+> - AU MINIMUM 4000 bac+2 + 2000 bac+3 + 4800 masters + 7400 ingénieurs, SOIT AU MINIMUM 18 000 JEUNES DIPLÔMES en STIC
+> - selon le Syntec Numérique, le système éducatif produit autour de "16 000 ingénieurs informaticiens par an"
+> - selon l’association Pasc@line : "on compte 15.000 ingénieurs formés par an en France dans le secteur du numérique"
+> Commentaire : il semble que le Syntec Numérique et l’association Pasc@line voient des ingénieurs de partout… en réalité, les chiffres qu’ils annoncent ci-dessus ne correspondent pas uniquement aux "ingénieurs" mais à tous les diplômés en informatique…
+
 ## compétences dev front, dev back, devops
 
 [A roadmap to becoming a web developer in 2017](https://medium.freecodecamp.com/a-roadmap-to-becoming-a-web-developer-in-2017-b6ac3dddd0cf)
