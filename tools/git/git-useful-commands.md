@@ -275,6 +275,17 @@ $ git log 0.11.0..0.12.0 --oneline
 $ git log 0.11.0..0.12.0 --oneline --stat
 ```
 
+```bash
+# print a condensed log for a given file name, following files names rewrites
+$ git log --oneline --follow "project/dir/subdir/file.ext"
+```
+
+```bash
+# print a condensed log for a given file name, including merge commits
+$ git log --oneline --full-history "project/dir/subdir/file.ext"
+```
+
+
 ## blame
 
 ```bash
