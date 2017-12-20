@@ -259,6 +259,7 @@ Martin Fowler deal with this question in [his feature toggle article](https://ma
   - [Pourquoi et comment le monde devient numérique - Collèges de France - 20080117](https://www.college-de-france.fr/site/gerard-berry/inaugural-lecture-2008-01-17-18h00.htm)
 - [Daniel Glazman](http://glazman.org/weblog/) Former co-chairman of the W3C CSS Working Group
   - [Sommes-nous à la merci de nos systèmes informatiques ? - France Culture -  20171205](https://www.franceculture.fr/emissions/linvite-des-matins-2eme-partie/sommes-nous-a-la-merci-de-nos-systemes-informatiques)
+- Rich Hickey [Clojure](https://clojure.org/) author, [The problems of programming](https://pbs.twimg.com/media/DL-3OUcUMAAaXID.jpg)
 
 - [Top 10 Programming Books Every Software Developer Should Read](https://www.youtube.com/watch?v=UX4YijQ3zhc)
 
