@@ -35,3 +35,7 @@ https://support.google.com/webmasters/answer/35769?hl=fr
 [10 Free Yet Overlooked Google Tools For SEO Professionals : neilpatel.com](http://neilpatel.com/2016/11/05/10-free-yet-overlooked-google-tools-for-seo-professionals/)
 
 [guide sur les balises meta](http://www.webrankinfo.com/dossiers/techniques/guide-balises-meta)
+
+[backlink](https://www.definitions-marketing.com/definition/backlink/)
+
+> Un backlink est un lien externe pointant vers un site web ou plus exactement une page web. Le bénéfice lié aux backlinks est double. D’une part, ils peuvent être une source de trafic lorsqu’ils sont utilisés par les visiteurs des sites référents sur lesquels ils se trouvent et d’autre part, ils favorisent le SEO et le classement dans les résultats de Google.
