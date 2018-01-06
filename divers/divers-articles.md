@@ -327,3 +327,13 @@ Extensible à tout sujet technique.
 ## IA
 
 [vocabulaire : www.frenchweb.fr](https://www.frenchweb.fr/vocabulaire-de-lintelligence-artificielle-12-termes-a-connaitre/307870)
+
+## Economie
+
+Le graphique de l'éléphant (Branko Milanovic)
+
+> Les revenus augmentent partout sauf pour les classes populaires et moyennes des pays industrialisés où il stagne voire baisse.On constate également un accroissement massif des inégalités partout.
+
+[Découvrez le "graphique éléphant" qui résume TOUT : www.nouvelobs.com - 20160711](https://www.nouvelobs.com/economie/20160710.OBS4373/decouvrez-le-graphique-elephant-qui-resume-tout.html)
+
+[Graphique de l'Eléphant, le retour : www.atlantico.fr - 20160715](http://www.atlantico.fr/decryptage/graphique-elephant-retour-quand-matraquage-classes-moyennes-occidentales-concurrence-chine-saute-aux-yeux-jean-marc-siroen-2764315.html)
