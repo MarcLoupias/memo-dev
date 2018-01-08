@@ -330,10 +330,14 @@ Extensible à tout sujet technique.
 
 ## Economie
 
-Le graphique de l'éléphant (Branko Milanovic)
+**Le graphique de l'éléphant (Branko Milanovic)**
 
 > Les revenus augmentent partout sauf pour les classes populaires et moyennes des pays industrialisés où il stagne voire baisse.On constate également un accroissement massif des inégalités partout.
 
 [Découvrez le "graphique éléphant" qui résume TOUT : www.nouvelobs.com - 20160711](https://www.nouvelobs.com/economie/20160710.OBS4373/decouvrez-le-graphique-elephant-qui-resume-tout.html)
 
 [Graphique de l'Eléphant, le retour : www.atlantico.fr - 20160715](http://www.atlantico.fr/decryptage/graphique-elephant-retour-quand-matraquage-classes-moyennes-occidentales-concurrence-chine-saute-aux-yeux-jean-marc-siroen-2764315.html)
+
+**cout des bugs**
+
+A l'échelle mondiale chiffré à 100 milliards de dollars (chiffre 2008 ?) par le département du commerce US (cf [Gérard Berry : Pourquoi et comment le monde devient numérique : www.franceculture.fr redif du cours de 2008](https://www.franceculture.fr/emissions/les-cours-du-college-de-france/gerard-berry-pourquoi-et-comment-le-monde-devient-numerique))
