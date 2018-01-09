@@ -73,5 +73,5 @@ Proper semantics means :
 - The sections defined by the `<nav></nav>`, and the `<aside></aside>` tags don’t belong to the main outline of the HTML document, they are usually not rendered initially by assistive technologies.
 - Each section (`body`, `section`, `article`, `aside`, `nav`) can have their own `<header></header>` and `<footer></footer>` tags, that defines the `header` (such as logo, author’s name, dates, meta info, etc.) and the `footer` (copyright, notes, links, etc.) of that section.
 
-![document-outline-example.jpg][http://media02.hongkiat.com/html-5-semantics/document-outline-example.jpg]
+![document-outline-example.jpg](http://media02.hongkiat.com/html-5-semantics/document-outline-example.jpg)
 
