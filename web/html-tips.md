@@ -10,11 +10,11 @@
 
 ## donner une baseref à l'ensemble d'un site via une balise :
 
-[tag_base : www.w3schools.com] (http://www.w3schools.com/tags/tag_base.asp)
+[tag_base : www.w3schools.com](http://www.w3schools.com/tags/tag_base.asp)
 
 ## plusieurs h1 dans une page
 
-[les-balises-h1-multiples-autorisees-en-html5 : blog.lesieur.name] (http://blog.lesieur.name/les-balises-h1-multiples-autorisees-en-html5/)
+[les-balises-h1-multiples-autorisees-en-html5 : blog.lesieur.name](http://blog.lesieur.name/les-balises-h1-multiples-autorisees-en-html5/)
 
 ## HTML and CSS components every 2016 modern page should have
 
