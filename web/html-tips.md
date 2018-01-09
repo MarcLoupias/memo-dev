@@ -22,8 +22,9 @@
 
 ## Semantic html
 
-[A Look Into Proper HTML5 Semantics : www.hongkiat.com](http://www.hongkiat.com/blog/html-5-semantics/)
-[HTML Living Standard — Last Updated 17 December 2016](https://html.spec.whatwg.org/multipage/semantics.html)
+- [A Look Into Proper HTML5 Semantics : www.hongkiat.com](http://www.hongkiat.com/blog/html-5-semantics/)
+- [HTML Living Standard — Last Updated 17 December 2016](https://html.spec.whatwg.org/multipage/semantics.html)
+- [101 balises HTML5 + exemples : buzut.fr](https://buzut.fr/101-balises-html5-exemples/)
 
 Proper semantics means :
 - a more searchable content that leads to a better search engine ranking. 
