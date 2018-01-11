@@ -2,6 +2,8 @@
 
 ## javascript
 
+[The Top JavaScript Trends to Watch in 2018](https://hackernoon.com/the-top-javascript-trends-to-watch-in-2018-a8437dd94425)
+
 ### aurelia vs angular vs react 
 
 [rob-eisenberg interview](https://medium.com/hashnode-insights/rob-eisenberg-on-aurelia-and-how-it-stacks-up-against-angular-2-and-react-82721d714449#.wqkh2r5em)
