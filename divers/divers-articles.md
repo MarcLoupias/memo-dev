@@ -341,3 +341,7 @@ Extensible à tout sujet technique.
 **cout des bugs**
 
 A l'échelle mondiale chiffré à 100 milliards de dollars (chiffre 2008 ?) par le département du commerce US (cf [Gérard Berry : Pourquoi et comment le monde devient numérique : www.franceculture.fr redif du cours de 2008](https://www.franceculture.fr/emissions/les-cours-du-college-de-france/gerard-berry-pourquoi-et-comment-le-monde-devient-numerique))
+
+## FAI
+
+[Forfait Fist First - Made in Groland](https://www.youtube.com/watch?v=y4fCg0tfVfU)
