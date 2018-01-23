@@ -285,6 +285,17 @@ $ git log --oneline --follow "project/dir/subdir/file.ext"
 $ git log --oneline --full-history "project/dir/subdir/file.ext"
 ```
 
+```bash
+# print the committer name and email (can be different with the author name and email)
+$ git log --pretty=format"%cn <%ce> committed %h on %cd"
+# where %cn = committer name, %ce = commiter email, %h = abbreviated commit hash, %cd = committer date
+```
+
+```bash
+# print the author name and email 
+$ git log --pretty=format"%an <%ae> committed %h on %cd"
+# where %an = author name, %ae = author email, %h = abbreviated commit hash, %cd = committer date
+```
 
 ## blame
 
