@@ -320,6 +320,21 @@ Extensible à tout sujet technique.
 
 [nodeschool.io](https://nodeschool.io/fr-fr/)
 
+[Programme d’informatique dès l’école primaire ? : framablog.org : 20140115](https://framablog.org/2014/01/15/informatique-ecole-primaire/?print=print)
+
+> **Proposition d’orientations générales pour un programme d’informatique à l’école primaire**
+> - Des logiciels aux concepts
+> - Des langages simples
+> - Des langages moins simples
+> - La notion d’information
+> - La notion d’algorithme
+> - La notion de machine
+> - Un enseignement adapté à l’élève et à son rapport au monde
+> 
+> Auteurs : Serge Abiteboul, Jean-Pierre Archambault, Gérard Berry, Colin de la Higuera, Gilles Dowek, Maurice Nivat
+>
+> Ce document a été envoyé au Conseil Supérieur des Programmes (CSP), le samedi 7 décembre 2013
+
 ## open source company contrib
 
 [Who contributed the most to open source in 2017? : medium.freecodecamp.org](https://medium.freecodecamp.org/the-top-contributors-to-github-2017-be98ab854e87)
