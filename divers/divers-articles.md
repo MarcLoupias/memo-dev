@@ -181,6 +181,8 @@
 > - selon l’association Pasc@line : "on compte 15.000 ingénieurs formés par an en France dans le secteur du numérique"
 > Commentaire : il semble que le Syntec Numérique et l’association Pasc@line voient des ingénieurs de partout… en réalité, les chiffres qu’ils annoncent ci-dessus ne correspondent pas uniquement aux "ingénieurs" mais à tous les diplômés en informatique…
 
+[Les développeurs nés dans les années 70 auraient commencé à écrire leurs premières lignes de code plus tôt](https://www.developpez.net/forums/d1806349/club-professionnels-informatique/actualites/developpeurs-nes-annees-70-auraient-commence-ecrire-leurs-premieres-lignes-code-plus-tot/#post9951654)
+
 ## compétences dev front, dev back, devops
 
 [A roadmap to becoming a web developer in 2017](https://medium.freecodecamp.com/a-roadmap-to-becoming-a-web-developer-in-2017-b6ac3dddd0cf)
