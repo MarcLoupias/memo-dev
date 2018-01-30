@@ -10,7 +10,7 @@
 ## features and objectives
 
 - **fast** (running as fast as unit testing)
-- **reliable** (no inconsistent errors like in Selenium) (inconsistent erros examples in [Fixing the flake on CI : http://samsaccone.com](http://samsaccone.com/posts/fixing-the-flake.html)
+- **reliable** (no inconsistent errors like in Selenium) (inconsistent erros examples in [Fixing the flake on CI : http://samsaccone.com](http://samsaccone.com/posts/fixing-the-flake.html))
 - **rewindable** (you can see what the test was doing step by step)
 
 ### trade offs
