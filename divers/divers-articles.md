@@ -363,6 +363,10 @@ A l'échelle mondiale chiffré à 100 milliards de dollars (chiffre 2008 ?) par 
 
 [Forfait Fist First - Made in Groland](https://www.youtube.com/watch?v=y4fCg0tfVfU)
 
+## Médias
+
+[Comment les médias ont raté le virage du numérique : Nicolas Kayser-Bril : 20180125](https://m.usbeketrica.com/article/comment-medias-rate-virage-numerique)
+
 ## Transhumanisme
 
 [Transhumanisme : le Grolandais augmenté, c’est pour 2030 - Groland - Le Zapoï du 16/09](https://www.youtube.com/watch?v=yTzIE3iXYNQ)
