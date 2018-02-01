@@ -8,6 +8,8 @@
 
 [Software advice from Dr. Gleb Bahmutov PhD](https://glebbahmutov.com/blog/)
 
+[The Clean Code Blog by Robert C. Martin (Uncle Bob)](http://blog.cleancoder.com/)
+
 [web-tambouille.fr](http://web-tambouille.fr/)
 
 [See what the GitHub community is most excited about today.](https://github.com/trending)
