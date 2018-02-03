@@ -260,6 +260,8 @@ Martin Fowler deal with this question in [his feature toggle article](https://ma
 - [Daniel Glazman](http://glazman.org/weblog/) Former co-chairman of the W3C CSS Working Group
   - [Sommes-nous à la merci de nos systèmes informatiques ? - France Culture -  20171205](https://www.franceculture.fr/emissions/linvite-des-matins-2eme-partie/sommes-nous-a-la-merci-de-nos-systemes-informatiques)
 - Rich Hickey [Clojure](https://clojure.org/) author, [The problems of programming](https://pbs.twimg.com/media/DL-3OUcUMAAaXID.jpg)
+- [TJ Holowaychuk](https://github.com/tj)
+  - founder of Express, Koa, Commander, ...
 
 - [Top 10 Programming Books Every Software Developer Should Read](https://www.youtube.com/watch?v=UX4YijQ3zhc)
 
