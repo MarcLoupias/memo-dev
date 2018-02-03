@@ -198,6 +198,10 @@
 [Vers une ré-internalisation de l'informatique ? ](http://cestpasmonidee.blogspot.fr/2016/06/vers-une-re-internalisation-de.html) (20160612)
 TLDR : Les enjeux ont changés, différenciation concurrentielle et agilité (réduction TTM) permettent d'avoir un edge sur la concurrence, ces enjeux nécessitent une internalisation des devs.
 
+[SAIP, l’appli d’alerte attentat qui n’a jamais fonctionné : www.franceculture.fr : 20171222](https://www.franceculture.fr/numerique/saip-lappli-dalerte-attentat-qui-na-jamais-fonctionne)
+
+> Daniel Glazman : l'état se repose trop sur des partenaires extérieurs, il doit internaliser les compétences, les fidéliser, prendre des contractuels pour se redoter d'une compétence très sérieuse.
+
 ## contrats agile
 
 [contrat-agile.org](http://www.contrat-agile.org/index.html)
