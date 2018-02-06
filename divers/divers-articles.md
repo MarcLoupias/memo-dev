@@ -208,6 +208,24 @@ TLDR : Les enjeux ont changés, différenciation concurrentielle et agilité (r�
 
 [exemple échec projet soidisant agile au forfait](https://www.linkedin.com/pulse/saffranchir-du-cycle-en-v-agile-canada-dry-ou-comment-maxime-blanc/?trackingId=eyA9bFyVj%2BGOj5CFrusMUw%3D%3D)
 
+## propriété intellectuelle
+
+En tant que salarié, tout ce qui est réalisé dans le cadre de ton travail, pour l'employeur et avec les moyens de l'employeur appartient a l'entreprise. Aucune clause n'est nécessaire pour le preciser.
+
+Il y a une clause spécifique aux logiciels dans le code de la propriété intellectuelle (L113-9) et [une jurisprudence associée](http://www.itlaw.fr/index.php/articles/153-developpeurs-de-logiciels-et-droit-dauteur).
+
+Donc bien que [L111-1](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000006278868&cidTexte=LEGITEXT000006069414) indique que :
+
+> L'auteur d'une œuvre de l'esprit jouit sur cette œuvre, du seul fait de sa création, d'un droit de propriété incorporelle exclusif et opposable à tous.
+
+L'article [L113-9](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000006278890&cidTexte=LEGITEXT000006069414) fait une exception pour le logiciel :
+
+> Sauf dispositions statutaires ou stipulations contraires, les droits patrimoniaux sur les logiciels et leur documentation créés par un ou plusieurs employés dans l'exercice de leurs fonctions ou d'après les instructions de leur employeur sont dévolus à l'employeur qui est seul habilité à les exercer.
+>
+> Toute contestation sur l'application du présent article est soumise au tribunal de grande instance du siège social de l'employeur.
+>
+> Les dispositions du premier alinéa du présent article sont également applicables aux agents de l'Etat, des collectivités publiques et des établissements publics à caractère administratif.
+
 ## management
 
 [Why The Command-and-Control Mindset Is Killing Your Company : corporate-rebels.com](http://corporate-rebels.com/mindset/) March 26, 2017
