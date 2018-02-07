@@ -184,3 +184,7 @@ Unit tests are written only after some production code (e.g., the code necessary
 
 > This post discusses the talk ["Integrated Tests Are A Scam"](http://vimeo.com/80533536) by J.B. Rainsberger, which was given in November 2013.
 > 
+
+[Mocking is a Code Smell - Eric Elliott - 20171020](https://medium.com/javascript-scene/mocking-is-a-code-smell-944a70c90a6a)
+
+[About "Mocking is a code smell." - Vasyl Boroviak - Comment from post above with great value](https://medium.com/@koresar/about-mocking-is-a-code-smell-a8c0720e04b3)
