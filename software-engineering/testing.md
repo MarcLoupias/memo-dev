@@ -2,7 +2,7 @@
 
 ## glossary
 
-[TestDouble : martinfowler.com] (http://martinfowler.com/bliki/TestDouble.html) :
+[TestDouble : martinfowler.com](http://martinfowler.com/bliki/TestDouble.html) :
 
 **Test Double** is a generic term for any case where you replace a production object for testing purposes. There are various kinds of double that Gerard lists:
 
@@ -14,7 +14,7 @@
 
 ### mock vs spy
 
-[mocking vs spying] (http://stackoverflow.com/questions/12827580/mocking-vs-spying-in-mocking-frameworks)
+[mocking vs spying](http://stackoverflow.com/questions/12827580/mocking-vs-spying-in-mocking-frameworks)
 
 ### Test Driven Development (TDD)
 
