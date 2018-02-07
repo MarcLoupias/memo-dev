@@ -117,3 +117,65 @@ Unit tests are written only after some production code (e.g., the code necessary
 > - Acceptance testing
 > - Performance testing
 > - Smoke testing
+
+[Review of: Ian Cooper – TDD, where did it all go wrong - 20150126 - Robert Daniel Moore](http://robdmoore.id.au/blog/2015/01/26/review-of-ian-cooper-tdd-where-did-it-all-go-wrong)
+
+> This post discusses the talk ["TDD, where did it all go wrong"](https://vimeo.com/68375232) by Ian Cooper, which was given in June 2013.
+>
+> **Overview**
+> 
+> - you should write unit tests for every method and class that you introduce in an application
+> - but this will necessarily result in you baking implementation details into your tests
+> - causing them to be fragile when refactoring, contain a lot of mocking, 
+> - result in a high proportion of test code to implementation code 
+> - and ultimately slowing your TTM
+> 
+> **Testing behaviours rather than implementations**
+> 
+> Ian suggests that the trigger for adding a new test to the system should be [adding a new behaviour rather than adding a method or class](http://codebetter.com/iancooper/2011/10/06/avoid-testing-implementation-details-test-behaviours/).
+> 
+> your tests can focus on expressing and verifying behaviours that users care about rather than implementation details
+> 
+> **TDD and refactoring**
+> 
+> Ian suggests that the original TDD Flow outlined by Kent Beck has been lost in translation by most people.
+> 
+> Red. Green. Refactor.
+> 
+> Red. You write a test that represents the behaviour that is needed from the system.
+>
+> Green. You write minimal code to make the test green.
+> 
+> Refactor. This is the only time you should add design.
+> 
+> When you do this right, you end up with several classes that are all tested by a single test-class. This is how things should be. *The tests document the requirements of the system with minimal knowledge of the implementation. The implementation could be One Massive Function or it could be a bunch of classes*.
+> 
+> Ian points out that you cannot refactor if you have implementation details in your tests because by definition, refactoring is where you change implementation details and not the public interface or the tests.
+> 
+> **Ports and adapters**
+> 
+> Ian suggests that one way to test behaviours rather than implementation details is to use a [ports and adapters architecture](http://alistair.cockburn.us/Hexagonal+architecture) and test via the ports.
+> 
+> There is another video where he provides some [more concrete examples of what he means](https://skillsmatter.com/skillscasts/5744-decoupling-from-asp-net-hexagonal-architectures-in-net).
+> 
+> **Mocking**
+> 
+> One side effect of having unit tests for every method/class is that you are then trying to mock out every collaborator of every object and that necessarily means that you are trying to mock implementation details.
+> 
+> Using mocks of implementation details significantly increases the fragility of tests reducing their effectiveness.
+> 
+> Mocks still have their place (systems I/O)
+> 
+> **Problems with higher level unit tests**
+> 
+> - Complex implementation
+> One of the questions that was raised and answered in Ian’s presentation was about what to do when the code you are implementing to make a high-level unit test test pass is really complex and you find yourself needing more guidance.
+> - Combinatorial explosion
+> I’ve covered this comprehensively in the [previous article](http://robdmoore.id.au/blog/2015/01/26/review-of-j-b-rainsberger-integrated-tests-are-a-scam/). This can be a serious problem, but as per the previous section in those instances just write the lower-level tests.
+> - Complex tests
+> The other point that Ian raised is that you are interacting with more objects this might mean there is more you need to set up in your tests, which then make the arrange section of the tests harder to understand and maintain and reducing the advantage of writing the tests in the first place. 
+> - Multiple test failures
+> It’s definitely possible that you can cause multiple tests to fail by changing one thing.
+> - Shared code gets tested twice
+> that’s fine because that shared code is an implementation detail 
+> 
