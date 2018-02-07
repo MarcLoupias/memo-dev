@@ -179,3 +179,8 @@ Unit tests are written only after some production code (e.g., the code necessary
 > - Shared code gets tested twice
 > that’s fine because that shared code is an implementation detail 
 > 
+
+[Review of: J.B. Rainsberger – Integrated Tests Are A Scam - 20150126 - Robert Daniel Moore](http://robdmoore.id.au/blog/2015/01/26/review-of-j-b-rainsberger-integrated-tests-are-a-scam/)
+
+> This post discusses the talk ["Integrated Tests Are A Scam"](http://vimeo.com/80533536) by J.B. Rainsberger, which was given in November 2013.
+> 
