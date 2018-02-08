@@ -1,5 +1,11 @@
 # browsers overview
 
+## browsers bug trackers
+
+[dev.chromium.org](http://dev.chromium.org/for-testers/bug-reporting-guidelines)
+
+[bugzilla.mozilla.org](https://bugzilla.mozilla.org/)
+
 ## The browser's main functionality
 The main function of a browser is to present the web resource you choose, by requesting it from the server and displaying it in the browser window. The resource is usually an HTML document, but may also be a PDF, image, or some other type of content. The location of the resource is specified by the user using a URI (Uniform Resource Identifier).
 
