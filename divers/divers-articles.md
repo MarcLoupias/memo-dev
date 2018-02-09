@@ -285,6 +285,16 @@ Extensible à tout sujet technique.
 
 > explique qu'il a créé le 2ème logiciel de messagerie à la fin des années 80
 
+## salaires
+
+[À coût de la vie égal, le salaire d'un professionnel de l'IT à San Francisco est 67 % plus élevé que celui d'un Parisien](https://www.developpez.net/forums/d1812737/emploi-etudes-informatique/emploi/salaires/cout-vie-egal-salaire-d-professionnel-l-it-san-francisco-67-plus-eleve-celui-d/#post9990292)
+
+> étude Hired sur 2017 : 420 000 demandes d'entretien et offres d'emploi, 10 000 entreprises et 69 000 candidats
+> 
+> Le salaire moyen global est de 135 000 dollars US
+> 
+> Paris est la ville où le salaire est le plus faible avec 56 000 USD (48 000 euros)
+
 ## stacks utilisées
 
 [Étude sur l’évolution des technologies backend par année de création des entreprises : hired.com](https://hired.com/blog/france/technologies-backend-les-plus-en-vogue/)
