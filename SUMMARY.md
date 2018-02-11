@@ -156,7 +156,7 @@
 * [GIT - rebase](tools/git/git-rebase.md)
 * [GIT - reflog](tools/git/git-reflog.md)
 * [GIT - remotes](tools/git/git-remotes.md)
-* [GIT - shell custom](tools/git/git-shell-custom.md)
+* [GIT - tools](tools/git/git-tools.md)
 * [GIT - tags management](tools/git/git-tags-management.md)
 * [GIT - tracking branches](tools/git/git-tracking-branches.md)
 * [GIT - useful commands](tools/git/git-useful-commands.md)
