@@ -3,6 +3,18 @@
 
 [débat chiffrement & légalité](https://www.developpez.net/forums/d1678850-3/club-professionnels-informatique/actualites/politique/chiffrement-l-equipe-marche-marche-arriere-declarations-d-emmanuel-macron/)
 
+## Terminologie
+
+On dit chiffrer et pas crypter.
+
+Cf [RGS 2.0 page 32 section A.1.1](https://www.ssi.gouv.fr/uploads/2014/11/RGS_v-2-0_B1.pdf)
+
+## ANSSI
+
+[Référentiel Général de Sécurité 2.0 (2014)](https://www.ssi.gouv.fr/uploads/2014/11/RGS_v-2-0_B1.pdf)
+
+Equivalent du NIS américain.
+
 ## Directive NIS
 
 Adoptée le 6 juillet 2016.
