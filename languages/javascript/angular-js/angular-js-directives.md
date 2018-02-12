@@ -42,6 +42,20 @@ Les différentes solutions pour gérer les paramètres d'une directive [sur ce g
 - [angular-js-directives-difference-controller-link](http://jasonmore.net/angular-js-directives-difference-controller-link/)
 - [custom-directives](http://tutorials.jenkov.com/angularjs/custom-directives.html)
 
+**intercept user click**
+
+```javascript
+return {
+    restrict: 'A',
+    scope: true,
+    link: function (scope, elem) {
+        elem.bind('click', function () {
+            // impl ...
+        });
+    }
+};
+```
+
 ## onDestroy and watchers
 
 - [Directive onDestroy](http://stackoverflow.com/questions/17203005/angularjs-directive-destroy)
