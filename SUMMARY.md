@@ -106,7 +106,7 @@
 * [javascript - iframe](languages/javascript/js-iframe.md)
 * [javascript - named function vs expression function](languages/javascript/js-named-f-vs-expr-f.md)
 * [javascript - function invocation patterns](languages/javascript/js-function-invocation-patterns.md)
-* [javascript - parsing xml and angular](languages/javascript/js-parsing-xml-and-angular.md)
+* [javascript - js samples and miscs](languages/javascript/js-samples-and-miscs.md)
 * [javascript - prototype](languages/javascript/js-prototype.md)
 * [javascript - simple logger](languages/javascript/js-simple-logger.md)
 * [javascript - understanding `this` keyword](languages/javascript/js-understanding-this-keyword.md)
