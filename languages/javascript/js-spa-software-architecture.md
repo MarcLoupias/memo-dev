@@ -196,6 +196,10 @@ L'idée c'est de générer les vues côtés front pour :
 > 
 > Composant Provider va définir le store pour toute la webapp
 
+[Hyperapp for Redux refugees](https://medium.com/hyperapp/hyperapp-for-redux-refugees-2507c9dd1ddc)
+
+> comparison between React + Redux and Hyperapp + Redux
+
 ## observables
 
 ES6 **required** for this.
