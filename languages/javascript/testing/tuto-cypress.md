@@ -8,6 +8,8 @@ rappel déf + expliquer les principaux courants et tendances qui ont fait évolu
 
 #### test unitaire
 
+diff entre tests unitaires et tests de collaboration (impact sur le Behavior Driven Dev, article mocking is a code smell)
+
 #### test intégration
 
 #### test e2e
@@ -144,5 +146,8 @@ les TI peuvent être écrits via cypress
 
 données récupérées pour les tests e2e stubbés
 
+### nouveau champ de test
 
+- tester facilement le comportement du front en fonction des retours http (200, 4xx, 5xx, ...)
+- assertions sur les payload de sortie du front (POST, PUT)
 
