@@ -38,3 +38,15 @@ karma: {
 `karma.conf.js` should be generated with the karma command line tool.
 
 Install launcher, `karma-chrome-launcher` to use Chrome, or `karma-phantomjs-launcher` for a silent execution.
+
+## karma & phantomjs
+
+A big number of tests can cause phantomjs to crash, it is worse with a coverage preprocessor.
+
+There is nothing to do instead of using something else or split the tests suites into several pieces, but coverage tools needs the tests to be ran to work ...
+
+[https://github.com/karma-runner/karma-phantomjs-launcher/issues/55](https://github.com/karma-runner/karma-phantomjs-launcher/issues/55)
+
+[https://www.quora.com/What-behavior-have-you-seen-from-PhantomJS-that-differs-from-that-of-a-mainstream-non-headless-browser](https://www.quora.com/What-behavior-have-you-seen-from-PhantomJS-that-differs-from-that-of-a-mainstream-non-headless-browser)
+
+[https://stackoverflow.com/questions/24436460/phantomjs-dies-by-high-memory-consumption](https://stackoverflow.com/questions/24436460/phantomjs-dies-by-high-memory-consumption)
