@@ -10,14 +10,15 @@
 * [Dev ethics](divers/divers-dev-ethics.md)
 * [Outils veille techno](divers/divers-outil-veille-techno.md)
 
-## Files formats
+## Data
 
-* [asciidoc - infos](files-formats/asciidoc-infos.md)
-* [markdown - infos](files-formats/markdown-infos.md)
-* [markdown - from gitlab](files-formats/markdown-from-gitlab.md)
-* [JSON](files-formats/json.md)
-* [XML](files-formats/xml.md)
-* [YAML](files-formats/yaml.md)
+* [data - basics](data/data-basics.md)
+* [data - files formats - asciidoc - infos](data/files-formats/asciidoc-infos.md)
+* [data - files formats - markdown - infos](data/files-formats/markdown-infos.md)
+* [data - files formats - markdown - from gitlab](data/files-formats/markdown-from-gitlab.md)
+* [data - files formats - JSON](data/files-formats/json.md)
+* [data - files formats - XML](data/files-formats/xml.md)
+* [data - files formats - YAML](data/files-formats/yaml.md)
 
 ## Languages - java
 
