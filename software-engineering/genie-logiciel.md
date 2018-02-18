@@ -85,6 +85,7 @@ La notion fondamentale est qu'un objet devrait faire aussi peu d'hypothèses que
 - [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection)
 - [Dependency Inversion Principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle)
 - [Service Locator Pattern](https://en.wikipedia.org/wiki/Service_locator_pattern)
+- [Dead-Simple Dependency Injection - Scala - Rúnar Óli Bjarnason - 2012](https://www.youtube.com/watch?v=ZasXwtTRkio)
 
 ## normes
 - [ISO/CEI 29110 : ingénierie de systèmes et l'Ingénierie du logiciel - les processus de cycle de vie pour les très petits organismes](https://fr.wikipedia.org/wiki/ISO/CEI_29110)
