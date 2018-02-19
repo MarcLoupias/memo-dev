@@ -6,6 +6,8 @@
 
 > checklits qualité, référencement, accessibilité, performances, ergonomie, ...
 
+[PageSpeed Insights : developers.google.com](https://developers.google.com/speed/pagespeed/insights/)
+
 ## accessibility
 
 [Hugo Giraudel](https://hugogiraudel.com/) [github account](https://github.com/HugoGiraudel)
