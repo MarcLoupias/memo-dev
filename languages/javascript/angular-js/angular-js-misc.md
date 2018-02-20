@@ -2,11 +2,15 @@
 
 ## framework Google support duration
 
-[angularjs-1-x-support-lifecycle : stackoverflow.com] (http://stackoverflow.com/questions/37037251/angularjs-1-x-support-lifecycle)
+[Stable AngularJS and Long Term Support : 20180126](https://blog.angular.io/stable-angularjs-and-long-term-support-7e077635ee9c)
+
+> AngularJS is planning one more significant release, version 1.7, and on July 1, 2018 it will enter a 3 year Long Term Support period.
+
+[angularjs-1-x-support-lifecycle : stackoverflow.com](http://stackoverflow.com/questions/37037251/angularjs-1-x-support-lifecycle)
 
 ## AngularJS origins
 
-Un super texte sur [les origines d'angular] (http://java.dzone.com/articles/java-origins-angular-js)
+Un super texte sur [les origines d'angular](http://java.dzone.com/articles/java-origins-angular-js)
 
 ## browser console
 
@@ -22,7 +26,7 @@ At this point you have access to the singleton service instance.
 
 **Utiliser des webservices retournant du xml avec AngularJS**
 
-Utiliser jQuery : [jquery.parsexml] (http://api.jquery.com/jquery.parsexml/)
+Utiliser jQuery : [jquery.parsexml](http://api.jquery.com/jquery.parsexml/)
 
 Côté angular faire un call de webservice via `$http`.
 Le xml retourné est dans `res.data`.
