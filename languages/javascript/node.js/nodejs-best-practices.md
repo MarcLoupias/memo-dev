@@ -18,3 +18,11 @@
 - Test your code
 
 [Node.js Best Practices - How to Become a Better Developer in 2017 : blog.risingstack.com](https://blog.risingstack.com/node-js-best-practices-2017/)
+
+## switching node version between projects
+
+[NVM Automatic Switching : gist](https://gist.github.com/calendee/bb55962fd720a6dbeed6bf356976656c)
+
+[using a node package inside package.json](https://www.npmjs.com/package/node)
+
+> cf [tweet](https://twitter.com/maybekatz/status/958157474397171712)
