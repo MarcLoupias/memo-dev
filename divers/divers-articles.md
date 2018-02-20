@@ -402,3 +402,9 @@ A l'échelle mondiale chiffré à 100 milliards de dollars (chiffre 2008 ?) par 
 ## Transhumanisme
 
 [Transhumanisme : le Grolandais augmenté, c’est pour 2030 - Groland - Le Zapoï du 16/09](https://www.youtube.com/watch?v=yTzIE3iXYNQ)
+
+## ATAWAD
+
+AnyTime, AnyWhere, AnyDevice
+
+[Mobiquité : fr.wikipedia.org](https://fr.wikipedia.org/wiki/Mobiquit%C3%A9)
