@@ -98,6 +98,7 @@
 * [javascript - best practices](languages/javascript/js-best-practices.md)
 * [javascript - closures](languages/javascript/js-closures.md)
 * [javascript - date](languages/javascript/js-date.md)
+* [javascript - math](languages/javascript/js-math.md)
 * [javascript - SPA architecture](languages/javascript/js-spa-software-architecture.md)
 * [javascript - browser geoloc](languages/javascript/js-browser-geolocalisation.md)
 * [javascript - doc](languages/javascript/js-doc.md)
