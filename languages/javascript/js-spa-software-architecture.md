@@ -124,6 +124,8 @@ L'idée c'est de générer les vues côtés front pour :
 
 ## Redux
 
+[React, Redux and JavaScript Architecture - James Sinclair - 20180108](https://jrsinclair.com/articles/2018/react-redux-javascript-architecture/)
+
 [L'architecture Redux en RxJS (Florent Le Gall) : Devoxx2016](https://www.youtube.com/watch?v=hf2PN0jfn20&list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXAO)
 
 [ReactJS App Architecture](https://medium.com/@Xourse/reactjs-app-architecture-7a33d7ae9834)
