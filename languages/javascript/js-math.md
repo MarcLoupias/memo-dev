@@ -1,4 +1,4 @@
-# JavaScipt Math
+# JavaScript Math
 
 ## float and money
 
@@ -28,7 +28,9 @@ JavaScript Numbers are IEEE 754 64-bit floating point. The result is that we can
 
 #### toFixed()
 
-[using `Number.prototype.toFixed()` - stackoverflow.com](https://stackoverflow.com/a/12511102) [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed)
+[using `Number.prototype.toFixed()` - stackoverflow.com](https://stackoverflow.com/a/12511102) /  [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed)
+
+Warning `toFixed` returns a string. This to prepare display in UI not to do maths.
 
 #### do calculation on cents
 
