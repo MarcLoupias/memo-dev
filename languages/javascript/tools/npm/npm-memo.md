@@ -88,6 +88,18 @@ npm la
 npm outdated
 ```
 
+### fixing deps
+
+Since npm v5, the lockfile standard is no more shrinkwrap, it is now the `package-lock.json` file.
+
+The big difference is that this file is generated automatically by npm when running the `install` command.
+
+There is also big behavior differences regarding to the registry publication for packages.
+
+`npm-shrinkwrap.json` is backwards-compatible with npm versions 2, 3, and 4, whereas `package-lock.json` is only recognized by npm 5+
+
+[What is the difference between npm-shrinkwrap.json and package-lock.json? - stackoverflow.com - 20170530](https://stackoverflow.com/questions/44258235/what-is-the-difference-between-npm-shrinkwrap-json-and-package-lock-json)
+
 ### others packages
 
 - [npm-check](https://www.npmjs.com/package/npm-check)
