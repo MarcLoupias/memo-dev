@@ -6,6 +6,7 @@
 ## articles
 - [javascript_best_practises : qooxdoo.org](http://qooxdoo.org/docs/general/javascript_best_practises)
 - [javascript : Douglas Crockford](http://www.crockford.com/javascript/)
+- [Onze idées fausses sur l'héritage en JavaScript : sylvainpv.developpez.com - 20150523](http://sylvainpv.developpez.com/traductions/javascript/idees-fausses-heritage/) (trad article Eric Elliott)
 
 ## undefined & null check
 - [checking-for-undefined-null-and-empty-variables-in-javascript : davidbcalhoun.com](davidbcalhoun.com/2011/checking-for-undefined-null-and-empty-variables-in-javascript/)
