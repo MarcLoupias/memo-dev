@@ -65,7 +65,7 @@ lots of npx fixes
 
 [blog.npmjs.org](http://blog.npmjs.org/post/171139955345/v570)
 
-- `npm install` will automatically resolve `git merge` conflicts in `package-lock.json` and `npm-shrinwrap.json` files.
+- `npm install` will automatically resolve `git merge` conflicts in `package-lock.json` and `npm-shrinwrap.json` files. cf [doc](https://github.com/npm/npm/commit/e27674c221dc17473f23bffa50123e49a021ae34)
 - new `npm ci` command. Install from lock file only and so report errors when a dep is not fixed. `node_modules` are always rewritten to achieve that.
 
 ## semver
