@@ -26,6 +26,48 @@ Features list
 
 [npm@5 — Yarn killer? - medium.com - 20170615](https://medium.com/netscape/npm-5-yarn-killer-ba69737b24d0)
 
+### npm 5.1
+
+- [`npm ls` shows all deps even missing ones](https://twitter.com/maybekatz/status/880446509547794437)
+- `npm-package.lock` syncs when running `npm install <package-name>`
+
+### npm 5.2
+
+[blog.npmjs.org](http://blog.npmjs.org/post/162844303435/v520-2017-07-05)
+
+- [npx added](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b), used to replace `npm run-script` command. Associated with the new [`node` package](https://www.npmjs.com/package/node), you can run a package against a specific node version.
+
+### npm 5.3
+
+[blog.npmjs.org](http://blog.npmjs.org/post/162986246605/v530-2017-07-13)
+
+lots of npx fixes
+
+### npm 5.4
+
+[blog.npmjs.org](http://blog.npmjs.org/post/164504728630/v540-2017-08-22)
+
+- new "did you mean" feature on CLI when making spelling mistakes on the commands
+- `npx` fixes for Windows platform
+
+### npm 5.5
+
+- new security features for the registry (2 factors auth, tokens, ...)
+
+### npm 5.6
+
+[blog.npmjs.org](http://blog.npmjs.org/post/167963735925/v560-2017-11-27)
+
+- ability to generate `package-lock.json` without running `npm install`
+- fix npm and node9
+
+### npm 5.7
+
+[blog.npmjs.org](http://blog.npmjs.org/post/171139955345/v570)
+
+- `npm install` will automatically resolve `git merge` conflicts in `package-lock.json` and `npm-shrinwrap.json` files.
+- new `npm ci` command. Install from lock file only and so report errors when a dep is not fixed. `node_modules` are always rewritten to achieve that.
+
 ## semver
 
 [semver to manage scopes in package.json](https://docs.npmjs.com/misc/semver)
