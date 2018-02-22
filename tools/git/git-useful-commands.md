@@ -336,7 +336,8 @@ d19938ab (Junio C Hamano 2005-05-09 17:57:56 -0700       169) * DB_ENVIRONMENT e
 
 We want to know :
 - the commit list
-- the changed files list
+- the changed files list by commit
+- the full changed files list
 - the full changed content
 
 ```bash
