@@ -37,6 +37,10 @@ A TDD cycle is composed of three, iterative phases.
 > Increase of time taken to code feature (15% – 35%) 
 > **TDD saves time & money**
 
+[Paper from North Carolina State University created by Boby George and Laurie Williams in 2003](https://collaboration.csc.ncsu.edu/laurie/Papers/TDDpaperv8.pdf)
+
+> This document demonstrates that the studied group of TDD practitioners spent only 16% more time on the overall development process
+
 ### Test Last Development (TLD)
 
 Unit tests are written only after some production code (e.g., the code necessary for a feature of the task) was present.
