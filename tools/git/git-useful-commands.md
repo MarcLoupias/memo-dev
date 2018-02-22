@@ -330,3 +330,31 @@ ace1534d (Junio C Hamano 2005-05-07 00:38:04 -0700       167) * Also note that t
 ace1534d (Junio C Hamano 2005-05-07 00:38:04 -0700       168) * SHA1 file can happen from any alternate 
 d19938ab (Junio C Hamano 2005-05-09 17:57:56 -0700       169) * DB_ENVIRONMENT environment variable if i
 ```
+
+
+## checking changes between 2 tags
+
+We want to know :
+- the commit list
+- the changed files list
+- the full changed content
+
+```bash
+# print the commit list that <tag2> have and <tag1> does not have (just sha1 and log msg)
+$ git log --oneline <tag1>..<tag2>
+```
+
+```bash
+# print the commit list that <tag2> have and <tag1> does not have (just sha1 and log msg) with the changed files, commit by commit
+$ git log --oneline --stat <tag1>..<tag2>
+```
+
+```bash
+# print the changed files list in <tag2> files that <tag1> files does not have
+$ git diff --stat <tag1>...<tag2>
+```
+
+```bash
+# print the content changed in <tag2> files that <tag1> files does not have
+$ git diff <tag1>...<tag2>
+```
