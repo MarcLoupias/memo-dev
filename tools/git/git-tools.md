@@ -72,3 +72,7 @@ tools for generating changelog from git data
 [releaser.richardhagen.no](https://releaser.richardhagen.no/) ([Richard87/releaser](https://github.com/Richard87/releaser))
 
 [winabeer.com](https://winabeer.com/) ([vfeskov/WinABeer](https://github.com/vfeskov/WinABeer))
+
+### watching from package manager releases
+
+[libraries.io](https://libraries.io/)
