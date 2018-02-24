@@ -1,5 +1,101 @@
 # node.js links
 
+## node.js 2017
+
+[Node.js partout - Cristophe Porteneuve - WEB2DAY 2017](https://www.youtube.com/watch?v=IwpBluLjynI)
+
+> seule stack présente dans l'intégralité des uses cases connus (du serveur web à l'IoT)
+> 
+> rétro :
+> - 200911 : annonce officielle à JsConf de Berlin
+> - 201309 : 1ère formations en France
+> - 201310 : formation Node.js au catalogue DI
+> - 201410 : Node.js démystifié (Paris Web)
+> - 201502 : NodeSchool Paris 1 (1050+ membres), session n°14 201706
+> 
+> **croissance de l'écosystème**
+> 
+> Plateforme opensource à plus forte croissance mondiale. (cf [modulecounts.com](http://www.modulecounts.com/))
+> 
+> 500 nouveaux modules par jour (500K au total). (Maven 120/j, 190K)
+> 
+> npm est le référentiel de facto pour Node, jQuery, CSS, outils CLI (phonegap, cordova), ...
+> 
+> 371 millions modules téléchargés par jour (201802 : [570 millions par jour !!](https://twitter.com/seldo/status/961415623694729216))
+> 
+> accélération permanente
+> 
+> npm devient un canal universel d'installation
+> 
+> **croissance de l'adoption**
+> 
+> 22 millions de téléchargements de Node.js par mois (la France représente 1%)
+> 
+> 7 millions d'utilisateurs (mai 2017)
+> 
+> croissance annuelle de 100% (stable sur 6 ans)
+> 
+> 2ème techno la plus demandée (après Android) (source stackoverflow)
+> 
+> La Fondation Node comprend les plus gros (IBM, Intel, MS, Google, Paypal, RedHat, Yahoo, SAP, Joyent, ...)
+> 
+> Investissements massifs des gros acteurs
+> 
+> la quasi totalité du Fortune 500 a migré vers Node.js (depuis Java EE) avec succès
+> 
+> Netflix : (qui stream 8TB/s) bootup -98% (le système mettait 1H20 pour boot, aujourd'hui moins de 3mins), instances EC2 -75%, latence réduite. Economie mensuelle de presque 100 millions de dollars
+> 
+> Paypal : RPS x2 (Requetes Par Secondes), temps de réponse -35%, conso AWS divisée par 7. On démarré la migration Node.js sur le paiement en ligne (8,4 milliards de dollars de transaction par jour).
+> 
+> Groupon : temps chargement pages -50%
+> 
+> Uber, LinkedIn, Walmart, NASA, SpaceX, Tesla, Yahoo, eBay, Medium, Trello, Storify, SitePen, JSBin, Yammer, Zendesk
+> 
+> **frontend**
+> 
+> Incontournable en frontend (Babel, ESLint, React, Angular, Vue, Grunt, Gulp, Webpack, ...)
+> 
+> **mobile**
+> 
+> Cordova (50% du top 10 des AppStores), SDK natifs, mobile backend, ...
+> 
+> **desktop**
+> 
+> Electron (Visual Studio Code, Slack, Github Desktop, Atom, ...)
+> 
+> Permet de faire du multi plateforme (bien mieux que Java)
+> 
+> **cloud**
+> 
+> Tous les fournisseurs de cloud supportent Node.js
+> 
+> **API & Microservices**
+> 
+> avec renaissances des clients riches les APIs explosent
+> 
+> Twitter 15 milliards d'appels API par jour (Facebook 7B+, Google 10B+)
+> 
+> Le SPAM email commence à passer sous les calls d'API sur l'ensemble d'internet
+> 
+> Plus de 15K APIs publiques
+> 
+> Emergence du B2D (Business to Developer), Auth0 / Stormpath, Parse / Backendless, Cloudinary, Firebase, Heroku, GitHub, ...
+> 
+> Hébergement de fonctions stateless (contient ton code spécifique, le reste est fourni par la plateforme / service)
+> 
+> **IoT**
+> 
+> Internet of Things
+> 
+> Tous les microcontrollers ont un support node intégré (basé V8 ou Shakra core)
+> 
+> **France**
+> 
+> On a tout le temps 5 ans de retard. Hype Cycle : US puis Europe du Nord, puis GB puis nous puis Europe du Sud
+> 
+> Conservatisme très fort. Pas encore présent sur le radar technique des gros groupes.
+
+
 ## architecture
 
 [Understanding Node.js Event-Driven Architecture](https://medium.freecodecamp.com/understanding-node-js-event-driven-architecture-223292fcbc2d)
