@@ -27,3 +27,24 @@ released in 2017
 >   
 > The GitHub App and this website are hosted by Key Location, a company owned by Rhys Arkins, incorporated in Singapore since April 2014.
 >
+
+## dependencies.io
+
+[dependencies.io](https://www.dependencies.io/)
+
+By [dropseed.io](https://www.dropseed.io/)
+
+>
+> Automated pull requests for all dependencies
+>
+> A single service for managing all of your dependencies.
+>
+> - Any language, any framework
+> - Built on open-source
+> - Version content discovery
+> - Docker containers
+> - A platform for developers
+> - One unified system
+>
+
+[Lowering prices for Dependencies.io - medium.com - 20171116](https://medium.com/dropseedlabs/lowering-prices-for-dependencies-io-a98ed919822c)
