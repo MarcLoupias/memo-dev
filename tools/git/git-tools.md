@@ -62,3 +62,13 @@ tools for generating changelog from git data
 [tipsy/github-profile-summary](https://github.com/tipsy/github-profile-summary)
 
 > Tool for visualizing GitHub profiles [https://github-profile-summary.com/](https://github-profile-summary.com/)
+
+### watching github repo releases
+
+[coderelease.io](https://coderelease.io/) (can't find who is behind the service)
+
+[about.sibbell.com](https://about.sibbell.com/) ([dropseed](https://github.com/dropseed))
+
+[releaser.richardhagen.no](https://releaser.richardhagen.no/) ([Richard87/releaser](https://github.com/Richard87/releaser))
+
+[winabeer.com](https://winabeer.com/) ([vfeskov/WinABeer](https://github.com/vfeskov/WinABeer))
