@@ -73,6 +73,10 @@ tools for generating changelog from git data
 
 [winabeer.com](https://winabeer.com/) ([vfeskov/WinABeer](https://github.com/vfeskov/WinABeer))
 
+Theses tools watch for github release or tags. [They can miss somes releases](https://github.com/sibbell/support/issues/77).
+
+Watching releases from packages manager should be more effectives.
+
 ### watching from package manager releases
 
 [libraries.io](https://libraries.io/)
