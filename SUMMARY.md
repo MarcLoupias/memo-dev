@@ -78,6 +78,7 @@
 * [javascript - tools - grunt](languages/javascript/tools/tools-grunt.md)
 * [javascript - tools - gulp](languages/javascript/tools/tools-gulp.md)
 * [javascript - tools - webpack](languages/javascript/tools/tools-webpack.md)
+* [javascript - tools - auto deps update](languages/javascript/tools/tools-auto-deps-update.md)
 * [javascript - tools - linters](languages/javascript/tools/tools-js-linters.md)
 * [javascript - tools - yeoman](languages/javascript/tools/tools-yeoman.md)
 * [javascript - tools - npm - memo](languages/javascript/tools/npm/npm-memo.md)
