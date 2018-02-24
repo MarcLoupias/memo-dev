@@ -26,3 +26,18 @@
 [using a node package inside package.json](https://www.npmjs.com/package/node)
 
 > cf [tweet](https://twitter.com/maybekatz/status/958157474397171712)
+
+[STRUCTURER MA PREMIÈRE APPLICATION NODEJS - RemixJobs - François-Guillaume Ribreau et Julien Breux - 20160726](https://www.youtube.com/watch?time_continue=1&v=Q9rS9e1KInc)
+
+> 
+> - DRY sur le config projet (eslint, code quality, etc ...)
+> - automatisation des conventions
+> - 12 factors
+> - logging
+> - swagger
+> - unit / functionnal testing
+> - CI (circle & jenkins)
+> - deploy
+> - health checking
+> - métriques métiers
+> 
