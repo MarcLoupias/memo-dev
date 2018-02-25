@@ -12,6 +12,8 @@
 
 [Webpack 4 Tutorial: from 0 Conf to Production Mode - 20180119](https://www.valentinog.com/blog/webpack-4-tutorial/)
 
+[Débuter avec Webpack 20180108](https://www.alsacreations.com/tuto/lire/1754-debuter-avec-webpack.html)
+
 ## alternatives
 
 [fuse-box.org](https://fuse-box.org/)
