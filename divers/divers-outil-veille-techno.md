@@ -1,5 +1,21 @@
 # veille techno outils
 
+## veille en push sur les projets
+
+### sibbel (projets github)
+
+[sibbell.com](https://sibbell.com/github/releases/)
+
+se base sur les stars et les watchs du compte github associé.
+
+Peut [rater des updates](https://github.com/sibbell/support/issues/77) si les maintainers utilisent le système de release puis l'abandonnent. 
+
+### libraries.io (packages registries)
+
+[libraries.io](https://libraries.io/)
+
+Surveille les registry pour check les packages déposés.
+
 ## liens outils online
 
 [www.thoughtworks.com/radar](https://www.thoughtworks.com/radar) : site proposant un radar des technos pour la veille techno (maj annuelle)
