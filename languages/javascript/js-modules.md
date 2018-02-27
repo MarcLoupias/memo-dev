@@ -14,6 +14,10 @@
 
 [JavaScript Modules: A Beginner’s Guide - Preethi Kasireddy - 20160122](https://medium.freecodecamp.org/javascript-modules-a-beginner-s-guide-783f7d7a5fcc)
 
+[JavaScript Module Pattern: In-Depth - 20100312](http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html)
+
+[The Module Pattern - Learning JavaScript Design Patterns - Addy Osmani 2017](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript)
+
 ## why
 
 - linking dependencies together (in JavaScript world it is just files and it does this with global var by default)
