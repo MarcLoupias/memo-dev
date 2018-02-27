@@ -18,6 +18,10 @@
 
 [The Module Pattern - Learning JavaScript Design Patterns - Addy Osmani 2017](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript)
 
+[ES6+ maintenant ! (Christophe Porteneuve) - Devoxx2016](https://youtu.be/KJzlllc7Jq8?t=1806)
+
+[État de l'art de ES2015+ dans Node.js et le navigateur (Christophe Porteneuve) - Blend Web Mix 2016](https://youtu.be/k0_gi7BoBgw?t=475)
+
 ## why
 
 - linking dependencies together (in JavaScript world it is just files and it does this with global var by default)
