@@ -2,6 +2,14 @@
 
 ## organizations
 
+### TC39
+
+[Ecma TC39 on GitHub](https://github.com/tc39)
+
+> Technical Committee 39. Caretaker for many standards: ECMAScript (ECMA-262), Intl (ECMA-402), JSON (ECMA-404), etc.
+
+### The JS Foundation
+
 [The JS Foundation](https://js.foundation/)
 
 > The JS Foundation supports some of the most important projects in the JavaScript ecosystem.
@@ -16,7 +24,13 @@
 
 ## ECMAScript Norms
 
+> Written by **TC39**.
+
+> ECMA is an international standards body (much like ISO, IETF, W3C or WHATWG, for instance).
+
 [Wikipedia](https://fr.wikipedia.org/wiki/ECMAScript), [Sources](https://developer.mozilla.org/fr/docs/Web/JavaScript/Language_Resources)
+
+### ECMA-262 publications
 
 | Nom | Edition | Publication date | Liens | 
 | --- | ------- | ---------------- | ----- |
@@ -29,6 +43,18 @@
 | ES6 | ECMA-262 2015 | 2015 | [PDF](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf), [HTML](http://www.ecma-international.org/ecma-262/6.0/index.html), [ES6 features list](https://github.com/lukehoban/es6features), [ES6 Features list over ES5](http://es6-features.org) |
 | ES7 | ECMA-262 2016 | 2016 | [HTML](https://www.ecma-international.org/ecma-262/7.0/) |
 | ES8 | ECMA-262 2017 | 201**?** | [Draft](http://tc39.github.io/ecma262/) |
+
+### The TC39 Process
+
+[The TC39 Process](https://tc39.github.io/process-document/)
+
+| Stage | Description |
+| ----- | ----------- |
+| **0 Strawman** | "It’d be dandy if we had a unicorn operator (🦄) to…" | 
+| **1 Proposal** | A TC39 member “champions” the proposal. General API look and feel hammered down, and many/most cross-cutting concerns addressed. |
+| **2 Draft** | Initial spec text, covers all critical aspects and technical semantics. |
+| **3 Candidate** | Spec complete, verified by appropriate reviewers and greenlighted. API finalized, no stone left unturned. |
+| **4 Finished** | Full Test262 coverage, 2+ shipping implementations (e.g. V8 + SpiderMonkey), significant real-world usage feedback, Spec Editor imprimatur. Usually goes into the next feature freeze (January or March). |
 
 ## Impl
 
@@ -74,6 +100,10 @@ Theses Engines are used in browsers or server side.
 ### videos
 
 [Comprendre enfin JavaScript, Thierry Chatel : Devoxx2015](https://www.youtube.com/watch?v=PSeU1IJztkI&list=PLklQqdqnBkPgctKh1xIvF4eFGtmvUvE2b&index=128)
+
+### presentations
+
+[So, what’s new in ES2020? : Christophe Porteneuve - Confoo Montréal 2018](https://github.com/tdd/confoo2018-es2020)
 
 ## Learn
 
