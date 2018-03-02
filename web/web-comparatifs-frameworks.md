@@ -1,5 +1,16 @@
 # Web - Comparatifs frameworks
 
+[React Is A Terrible Idea - Dan Yoder - 20150311](https://www.pandastrike.com/posts/20150311-react-bad-idea)
+
+>
+> **Every Innovation Does Not Need Its Own Framework**
+> **The Real Purpose of React** : Because Facebook is battling Google [for engineers](https://www.theatlantic.com/technology/archive/2014/07/inside-the-ugly-recruitment-battle-between-facebook-and-google/374386/).
+> How are you going to win this fight? One way is to have the hippest Web framework.
+> Basically, both Google and Facebook are desperate to find a baseball cap that they can put on backwards. Angular is Google's baseball cap. React is Facebook's.
+> **The Open Web Is More Important Than You Think**
+> Seriously, why not just introduce JSX and virtual DOM as separate libraries?
+>
+
 ## javascript
 
 [The Top JavaScript Trends to Watch in 2018](https://hackernoon.com/the-top-javascript-trends-to-watch-in-2018-a8437dd94425)
