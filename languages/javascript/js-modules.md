@@ -59,7 +59,7 @@ myModule.add(1, 2); // 3
 
 ## AMD
 
-AMD is for Asynchronous Module Definition.
+AMD is for Asynchronous Module Definition. There is [a specification](https://github.com/amdjs/amdjs-api/blob/master/AMD.md).
 
 Main advantage over CommonJS : Async support.
 
