@@ -24,6 +24,10 @@
 
 [Browserify and the Universal Module Definition - 20130614](https://dontkry.com/posts/code/browserify-and-the-universal-module-definition.html)
 
+[BazaarJS: Module loaders e package managers - 20150628](https://www.leanpanda.com/blog/2015/06/28/amd-requirejs-commonjs-browserify/)
+
+> nice UMD ex
+
 ## why
 
 - linking dependencies together (in JavaScript world it is just files and it does this with global var by default)
