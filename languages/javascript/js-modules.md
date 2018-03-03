@@ -22,6 +22,7 @@
 
 [État de l'art de ES2015+ dans Node.js et le navigateur (Christophe Porteneuve) - Blend Web Mix 2016](https://youtu.be/k0_gi7BoBgw?t=475)
 
+[Browserify and the Universal Module Definition - 20130614](https://dontkry.com/posts/code/browserify-and-the-universal-module-definition.html)
 
 ## why
 
