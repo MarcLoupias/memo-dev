@@ -95,10 +95,13 @@
 > 
 > Conservatisme très fort. Pas encore présent sur le radar technique des gros groupes.
 
-
 ## architecture
 
 [Understanding Node.js Event-Driven Architecture](https://medium.freecodecamp.com/understanding-node-js-event-driven-architecture-223292fcbc2d)
+
+## ECMAScript support
+
+[kangax's compat-table applied only to Node.js](http://node.green/)
 
 ## fork
 
