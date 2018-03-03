@@ -28,6 +28,10 @@
 
 > nice UMD ex
 
+[State of Modules in JavaScript - 20171026](https://www.sitepen.com/blog/2017/10/26/state-of-modules-in-javascript/)
+
+> focus on ES6 modules
+
 ## why
 
 - linking dependencies together (in JavaScript world it is just files and it does this with global var by default)
