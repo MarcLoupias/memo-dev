@@ -99,6 +99,8 @@
 
 [Understanding Node.js Event-Driven Architecture](https://medium.freecodecamp.com/understanding-node-js-event-driven-architecture-223292fcbc2d)
 
+[What you should know to really understand the Node.js Event Loop - 20170720](https://medium.com/the-node-js-collection/what-you-should-know-to-really-understand-the-node-js-event-loop-and-its-metrics-c4907b19da4c)
+
 ## ECMAScript support
 
 [kangax's compat-table applied only to Node.js](http://node.green/)
