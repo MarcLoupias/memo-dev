@@ -122,6 +122,11 @@ $ git diff 0.11.0..0.12.0 src/config.js
 $ git diff --unified=0 0.11.0..0.12.0 src/config.js
 ```
 
+```bash
+# modified files list between 2 tags
+$ git diff --stat <tag1>...<tag2>
+```
+
 ## merge management
 
 ```bash
