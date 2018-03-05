@@ -101,6 +101,10 @@
 
 [What you should know to really understand the Node.js Event Loop - 20170720](https://medium.com/the-node-js-collection/what-you-should-know-to-really-understand-the-node-js-event-loop-and-its-metrics-c4907b19da4c)
 
+[Java EE threads v/s Node.js - which is better for concurrent data processing operations - 20130609](http://bijoor.me/2013/06/09/java-ee-threads-vs-node-js-which-is-better-for-concurrent-data-processing-operations/)
+
+> The most important differences between NodeJS and Java are the concurrency and I/O models. Java uses multi­threaded synchronous I/O while NodeJS uses single threaded asynchronous I/O.
+
 ## ECMAScript support
 
 [kangax's compat-table applied only to Node.js](http://node.green/)
