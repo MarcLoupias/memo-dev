@@ -372,7 +372,6 @@ $ git diff <tag1>...<tag2>
 $ git reflog
 
 # or (show is the default one)
-
 $ git reflog show
 ```
 
