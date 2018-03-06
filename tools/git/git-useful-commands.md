@@ -336,7 +336,6 @@ ace1534d (Junio C Hamano 2005-05-07 00:38:04 -0700       168) * SHA1 file can ha
 d19938ab (Junio C Hamano 2005-05-09 17:57:56 -0700       169) * DB_ENVIRONMENT environment variable if i
 ```
 
-
 ## checking changes between 2 tags
 
 We want to know :
@@ -363,4 +362,21 @@ $ git diff --stat <tag1>...<tag2>
 ```bash
 # print the content changed in <tag2> files that <tag1> files does not have
 $ git diff <tag1>...<tag2>
+```
+
+
+## reflog
+
+```bash
+# print the history of the tip of the branch (you can see how the HEAD have evolved)
+$ git reflog
+
+# or (show is the default one)
+
+$ git reflog show
+```
+
+```bash
+# git reflog show accepts the same commands as git log, here you can print the modified files
+$ git reflog show --stat
 ```
