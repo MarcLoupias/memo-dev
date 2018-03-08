@@ -1,6 +1,6 @@
 # javascript double negation `!!`
 
-[double-negation-in-javascript-what-is-the-purpose : stackoverflow.com] (http://stackoverflow.com/questions/10467475/double-negation-in-javascript-what-is-the-purpose)
+[double-negation-in-javascript-what-is-the-purpose : stackoverflow.com](http://stackoverflow.com/questions/10467475/double-negation-in-javascript-what-is-the-purpose)
 
 It casts to boolean. The first `!` negates it once, converting values like so:
 
