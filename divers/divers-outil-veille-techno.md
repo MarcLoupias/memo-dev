@@ -30,6 +30,8 @@ Surveille les registry pour check les packages déposés.
 
 [See what the GitHub community is most excited about today.](https://github.com/trending)
 
+[blog.github.com](https://blog.github.com/)
+
 ## javascript
 
 [Fun Fun Function](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q)
