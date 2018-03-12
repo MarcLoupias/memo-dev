@@ -2,7 +2,7 @@
 # CORS (Cross-Origin Resource Sharing)
 
 ## Why ?
-- Because of [Same Origin Policy] (http://en.wikipedia.org/wiki/Same_origin_policy)
+- Because of [Same Origin Policy](http://en.wikipedia.org/wiki/Same_origin_policy)
 
 > The policy permits scripts running on pages originating from the same site – a combination of scheme, hostname, and port number – to access each other's DOM with no specific restrictions, but prevents access to DOM on different sites. 
 Same-origin policy also applies to `XMLHttpRequest` and to `robots.txt`.
@@ -17,16 +17,16 @@ A server using `"Access-Control-Allow-Origin: *"` allows all domains, it is **ve
 
 > So any site can make a request to your site on behalf of their visitors and process its response. If you have something implemented like an authentication or authorization scheme that is based on something that is automatically provided by the browser (cookies, cookie-based sessions, etc.), the requests triggered by the third party sites will use them too.
 
-- [Cross Origin Ressource Sharing] (http://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
+- [Cross Origin Ressource Sharing](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
 
 ## Infos
-- [dev.com : requête: Cross-site HTTP requests] (http://www.developpez.net/forums/d755910/applications/sig-systeme-d-information-geographique/ign-api-geoportail/requete-cross-site-http-requests/)
-- [developer.mozilla.org : CORS] (https://developer.mozilla.org/en-US/docs/HTTP/Access_control_CORS?redirectlocale=en-US&redirectslug=HTTP_access_control)
-- [developer.mozilla.org : Server-Side Access Control] (https://developer.mozilla.org/en-US/docs/Server-Side_Access_Control)
-- [github.com/angular : issue 5009] (https://github.com/angular/angular.js/issues/5009)
-- [enable-cors.org] (http://enable-cors.org/) **Very usefull**
-- [cors-why-and-how] (http://haanto.com/cors-why-and-how/)
-- [CORS & proxy in javascript front project] (http://blog.javascripting.com/2015/01/17/dont-hassle-with-cors/)
+- [dev.com : requête: Cross-site HTTP requests](http://www.developpez.net/forums/d755910/applications/sig-systeme-d-information-geographique/ign-api-geoportail/requete-cross-site-http-requests/)
+- [developer.mozilla.org : CORS](https://developer.mozilla.org/en-US/docs/HTTP/Access_control_CORS?redirectlocale=en-US&redirectslug=HTTP_access_control)
+- [developer.mozilla.org : Server-Side Access Control](https://developer.mozilla.org/en-US/docs/Server-Side_Access_Control)
+- [github.com/angular : issue 5009](https://github.com/angular/angular.js/issues/5009)
+- [enable-cors.org](http://enable-cors.org/) **Very usefull**
+- [cors-why-and-how](http://haanto.com/cors-why-and-how/)
+- [CORS & proxy in javascript front project](http://blog.javascripting.com/2015/01/17/dont-hassle-with-cors/)
 
 > When accessing a ressource from a website with a different domain/port, recent browsers refuse to interpret response because of CORS mechanism.
 > The server needs to put some headers to allow browsers to interpret responses.
@@ -44,14 +44,14 @@ Server MUST return `Access-Control-Expose-Headers` containing the exposed header
 Without that header, the javascript client CANNOT read them.
 
 ## Tuto
-- [html5rocks.com : CORS] (http://www.html5rocks.com/en/tutorials/cors/)
+- [html5rocks.com : CORS](http://www.html5rocks.com/en/tutorials/cors/)
 
 ## Specs
-- [w3c : CORS] (http://www.w3.org/TR/cors/)
+- [w3c : CORS](http://www.w3.org/TR/cors/)
 
 ## Play! Impl
-- [play-2-0-1-and-setting-access-control-allow-origin] (http://stackoverflow.com/questions/14430119/play-2-0-1-and-setting-access-control-allow-origin)
-- [configuring-play-framework-for-cross-domain-http-requests] (http://www.entreotrascosas.net/configuring-play-framework-for-cross-domain-http-requests/)
+- [play-2-0-1-and-setting-access-control-allow-origin](http://stackoverflow.com/questions/14430119/play-2-0-1-and-setting-access-control-allow-origin)
+- [configuring-play-framework-for-cross-domain-http-requests](http://www.entreotrascosas.net/configuring-play-framework-for-cross-domain-http-requests/)
 
 Need to add a route for `OPTIONS` http method and a suited controller.
 route ex : 
@@ -60,4 +60,4 @@ OPTIONS       /*path                 controllers.CorsCtrl.checkPreFlight(path)
 ```
 
 ## Angular perform OPTIONS action instead of POST
-- [angularjs-performs-an-options] (http://stackoverflow.com/questions/12111936/angularjs-performs-an-options-http-request-for-a-cross-origin-resource)
+- [angularjs-performs-an-options](http://stackoverflow.com/questions/12111936/angularjs-performs-an-options-http-request-for-a-cross-origin-resource)
