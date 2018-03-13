@@ -1,6 +1,6 @@
 
 #### doc
-[offical doc] (http://git-scm.com/book/ch3-6.html#The-Perils-of-Rebasing)
+[offical doc](http://git-scm.com/book/ch3-6.html#The-Perils-of-Rebasing)
 
 #### usefull commands rebase
 
@@ -10,7 +10,7 @@ git rebase --abort
 ```
 
 #### Article rebase
-[squashing commits with rebase] (http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html)
+[squashing commits with rebase](http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html)
 
 The rebase command has some awesome options available in its `--interactive` (or `-i`) mode, and one of 
 the most widely used is the ability to squash commits. What this does is take smaller commits and 
@@ -112,13 +112,13 @@ they’re usually quite easy to resolve and Git leads you through as much as pos
 The basics of this is fix the conflict in question, git add the file, and then `git rebase --continue` 
 will resume the process. Of course, doing a `git rebase --abort` will bring you back to your previous state 
 if you want. If for some reason you’ve lost a commit in the rebase, you can use the reflog to get it back.
-[reflog tutorial] (http://gitready.com/intermediate/2009/02/09/reflog-your-safety-net.html)
+[reflog tutorial](http://gitready.com/intermediate/2009/02/09/reflog-your-safety-net.html)
 
 There’s plenty of other uses for `git rebase -i` that haven’t been covered yet. 
 If you have one you’d like to share, please do so! GitCasts also has a fantastic video on this process 
 as a whole that also covers some more complex examples of the command.
-[gitcasts] (http://gitcasts.com/)
-[videos] (http://gitcasts.com/posts/rebasing)
+[gitcasts](http://gitcasts.com/)
+[videos](http://gitcasts.com/posts/rebasing)
 
 ---
 
