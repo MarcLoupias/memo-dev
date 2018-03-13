@@ -4,7 +4,12 @@
 [vim commands list](http://www.catswhocode.com/blog/100-vim-commands-every-programmer-should-know)
 [vim cheat sheet](http://www.fprintf.net/vimCheatSheet.html)
 
-#### How to Exit
+## copy and paste
+
+- `dd`  cut the line where the cursor is
+- `p`  paste the text after the line where the cursor is
+
+## How to Exit
 
 - `:q[uit]` 	Quit Vim. This fails when changes have been made.
 - `:q[uit]!` 	Quit without writing.
@@ -17,7 +22,7 @@
 - `ZZ` 	Write current file, if modified, and exit.
 - `ZQ` 	Quit current file and exit (same as ":q!").
 
-#### Editing a File
+## Editing a File
 
 - `:e[dit]` 	Edit the current file. This is useful to re-edit the current file, when it has been changed outside of Vim.
 - `:e[dit]!` 	Edit the current file always. Discard any changes to the current buffer. This is useful if you want to start all over again.
@@ -25,7 +30,7 @@
 - `:e[dit]! {file}` 	Edit {file} always. Discard any changes to the current buffer.
 - `gf` 	Edit the file whose name is under or after the cursor. Mnemonic: "goto file".
 
-#### Inserting Text
+## Inserting Text
 
 - `a` 	Append text after the cursor [count] times.
 - `A` 	Append text at the end of the line [count] times.
@@ -35,12 +40,12 @@
 - `o` 	Begin a new line below the cursor and insert text, repeat [count] times.
 - `O` 	Begin a new line above the cursor and insert text, repeat [count] times.
 
-#### Inserting a file
+## Inserting a file
 
 - `:r[ead] [name]` 	Insert the file [name] below the cursor.
 - `:r[ead] !{cmd}` 	Execute {cmd} and insert its standard output below the cursor.
 
-#### Deleting Text
+## Deleting Text
 
 - `<Del>` or
 `x` 	Delete [count] characters under and after the cursor
