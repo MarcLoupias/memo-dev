@@ -117,7 +117,7 @@ Responsabilities table
 
 ### A - angular 2 parent & child communication via service
 
-[Parent and children communicate via a service : angular.io](https://angular.io/docs/ts/latest/cookbook/component-communication.html#!#bidirectional-service)
+[Parent and children communicate via a service : angular.io](https://angular.io/guide/component-interaction#parent-and-children-communicate-via-a-service)
 
 ### B - practices overview
 
