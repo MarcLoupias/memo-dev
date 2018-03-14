@@ -204,6 +204,7 @@
 * [gestion monetisation web](web/gestion-monetisation-web.md)
 * [browsers : overview](web/browsers-overview.md)
 * [browsers : how they init web page](web/browsers-how-they-init-web-page.md)
+* [browsers : perfs](web/browsers-perfs.md)
 * [http cache](web/http-cache.md)
 * [cookies](web/cookies.md)
 * [HTML : Tips](web/html-tips.md)
