@@ -1,9 +1,13 @@
-# angular 2
+# angular
 
 ## prez
 
 - [ng-europe & beyond](http://angularjs.blogspot.fr/2014/10/ng-europe-angular-13-and-beyond.html)
 - [AngularJS-vs-Angular-2-Should-I-Stay-or-Should-I-Go : blog.wishtack.com](http://www.blog.wishtack.com/single-post/2016/05/18/AngularJS-vs-Angular-2-Should-I-Stay-or-Should-I-Go)
+
+## angular news
+
+[What’s new in Angular: Version 6 release is imminent - 20180314](https://www.infoworld.com/article/3213244/javascript/whats-new-in-angular-5-easier-progressive-web-apps.html)
 
 ## ngEurope (articles de Christophe Galant)
 - [ngEurope part 1](http://blog.ebiznext.com/2014/11/04/angular-europe-ngeurope-2014-14/)
