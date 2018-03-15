@@ -7,6 +7,8 @@ Correspond à [la doc de l'équipe Angular](https://github.com/MarcLoupias/githu
 
 [Entrer dans les entrailles de Git, ou comment faire un commit sans faire du Git (Alexandre Garnier) : Devoxx fr 2016](https://www.youtube.com/watch?v=Hd_UpJPDlik&index=88&list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXAO)
 
+[[France HTML5] - GIT pro tips : Christophe Porteneuve - 20141226](https://www.youtube.com/watch?v=OMg7LfSuSUU)
+
 ## bien utiliser git merge & rebase
 
 [Bien utiliser git merge et rebase](http://www.git-attitude.fr/2014/05/04/bien-utiliser-git-merge-et-rebase/)
