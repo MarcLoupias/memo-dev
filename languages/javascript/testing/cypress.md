@@ -64,6 +64,10 @@
 
 > Cf [documentation - Launching Browsers : Electron Browser](https://docs.cypress.io/guides/guides/launching-browsers.html#Electron-Browser)
 
+[doc off best practices - selectors (need cypress 2.1+)](https://docs.cypress.io/guides/references/best-practices.html#Selecting-Elements)
+
+> Use `data-*` attributes to provide context to your selectors and insulate them from CSS or JS changes.
+
 ## login
 
 [Best Practices - Visiting External Sites](https://docs.cypress.io/guides/references/best-practices.html#Visiting-External-Sites)
