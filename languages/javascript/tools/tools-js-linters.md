@@ -74,3 +74,51 @@ Usually 2-3x slower then JSHint on a single file [(src)](https://github.com/esli
 Support JSX (React) and ES6.
 
 Lots of pluggins ( [babel-eslint](https://github.com/babel/babel-eslint), [eslint-plugin-angular](https://github.com/Gillespie59/eslint-plugin-angular) )
+
+## linters style guide superset
+
+[5 JavaScript Style Guides — Including AirBnB, GitHub, & Google - 20171105](https://codeburst.io/5-javascript-style-guides-including-airbnb-github-google-88cbc6b2b7aa)
+
+The idea is to build a preconfired linter with no config available regarding to code style to avoid wasting time on useless debate like spaces or tabs.
+
+[github collections/clean-code-linters](https://github.com/collections/clean-code-linters)
+
+### airbnb
+
+[airbnb/javascript](https://github.com/airbnb/javascript)
+
+Provide npm packages for easy ESLint config :
+
+```bash
+npx install-peerdeps --dev eslint-config-airbnb-base
+```
+
+```bash
+npx install-peerdeps --dev eslint-config-airbnb
+```
+
+### stantardjs
+
+[standardjs.com](https://standardjs.com/)
+
+[standardjs.com/changelog](https://standardjs.com/changelog.html)
+
+[standard/standard](https://github.com/standard/standard)
+
+Provide his own package to encapsulate and hide ESLint.
+
+Used by thousands of companies including big ones like NPM, GitHub, mongoDB, ZenDesk, ...
+
+[Package list using standardjs](https://raw.githubusercontent.com/standard/standard-packages/master/all.json)
+
+### Google
+
+[Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
+
+[google/eslint-config-google](https://github.com/google/eslint-config-google)
+
+### jQuery
+
+[jQuery foundation JavaScript Style Guide](https://contribute.jquery.org/style-guide/js/)
+
+[jquery/eslint-config-jquery](https://github.com/jquery/eslint-config-jquery)
