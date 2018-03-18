@@ -34,6 +34,10 @@ Surveille les registry pour check les packages déposés.
 
 ## javascript
 
+[bestof.js.org](https://bestof.js.org/about)
+
+> grad data from github repos
+
 [Fun Fun Function](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q)
 
 [JavaScript scene on medium.com](https://medium.com/javascript-scene)
