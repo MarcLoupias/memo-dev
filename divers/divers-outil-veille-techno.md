@@ -52,6 +52,8 @@ Surveille les registry pour check les packages déposés.
 
 [2017 frontend handbook](https://frontendmasters.com/books/front-end-handbook/2017/)
 
+[2018 frontend handbook](https://frontendmasters.com/books/front-end-handbook/2018/)
+
 [frontend guide](https://github.com/grab/front-end-guide)
 
 ## skills and technos lists
@@ -96,3 +98,6 @@ Surveille les registry pour check les packages déposés.
 ## forums
 
 [Stackoverflow hottest questions](https://stackoverflow.com/?tab=week)
+
+[Stackoverflow survey 2018](https://insights.stackoverflow.com/survey/2018/?)
+
