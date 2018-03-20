@@ -12,6 +12,8 @@
 
 [Markdown : fr.wikipedia.org](http://fr.wikipedia.org/wiki/Markdown)
 
+[Markdown on GitHub](https://help.github.com/categories/writing-on-github/)
+
 ## AngularJS
 
 https://github.com/btford/angular-markdown-directive
