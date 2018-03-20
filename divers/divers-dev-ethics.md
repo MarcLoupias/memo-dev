@@ -10,6 +10,12 @@ don't know right know how to classify all theses subjects ...
 
 [Accident mortel d'un Uber autonome : cauchemar des constructeurs et interrogations en série](http://www.europe1.fr/technologies/accident-mortel-dun-uber-autonome-cauchemar-des-constructeurs-et-interrogations-en-serie-3603995)
 
+> D'après les premiers éléments communiqués par la police locale, la voiture autonome roulait à 40 mp/h (65 km/h) et n'a pas freiné avant de percuter la piétonne de 49 ans, qui traversait en dehors du passage piéton.
+> 
+> un opérateur était également présent dans le véhicule et pouvait reprendre la main sur la conduite
+> 
+> La question de la responsabilité de ce conducteur de secours sera donc posée dans les jours à venir. Les conducteurs sont en effet censés garder le contrôle de leur véhicule en permanence. 
+
 [Les États-Unis ont connu la plus grosse fuite de données des électeurs jamais observée](https://www.developpez.net/forums/d1714076/club-professionnels-informatique/actualites/politique/etats-unis-ont-connu-plus-grosse-fuite-donnees-electeurs-jamais-observee/#post9386396)
 
 [Les dossiers médicaux de 150 000 patients américains en accès libre sur le cloud d’Amazon : 20171012](http://www.dsih.fr/article/2672/les-dossiers-medicaux-de-150-000-patients-americains-en-acces-libre-sur-le-cloud-d-amazon.html)
