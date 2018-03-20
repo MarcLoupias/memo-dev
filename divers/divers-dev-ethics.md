@@ -8,6 +8,8 @@ don't know right know how to classify all theses subjects ...
 
 [Tesla's autopilot probed by government after crash kills driver](http://money.cnn.com/2016/06/30/technology/tesla-autopilot-death/index.html?iid=EL)
 
+[Accident mortel d'un Uber autonome : cauchemar des constructeurs et interrogations en série](http://www.europe1.fr/technologies/accident-mortel-dun-uber-autonome-cauchemar-des-constructeurs-et-interrogations-en-serie-3603995)
+
 [Les États-Unis ont connu la plus grosse fuite de données des électeurs jamais observée](https://www.developpez.net/forums/d1714076/club-professionnels-informatique/actualites/politique/etats-unis-ont-connu-plus-grosse-fuite-donnees-electeurs-jamais-observee/#post9386396)
 
 [Les dossiers médicaux de 150 000 patients américains en accès libre sur le cloud d’Amazon : 20171012](http://www.dsih.fr/article/2672/les-dossiers-medicaux-de-150-000-patients-americains-en-acces-libre-sur-le-cloud-d-amazon.html)
