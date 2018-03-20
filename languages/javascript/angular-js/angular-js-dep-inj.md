@@ -6,6 +6,7 @@
 - [Understanding Dependency Injection - Wiki AngularJS officiel](https://github.com/angular/angular.js/wiki/Understanding-Dependency-Injection)
 - [source de l'article précédent sur stackoverflow](http://stackoverflow.com/questions/16828287/what-things-can-be-injected-into-others-in-angular-js/16829270#16829270)
 - [AngularJS Dependency Injection - Demystified 20140908](http://anandmanisankar.com/posts/angularjs-dependency-injection-demystified/)
+- [Injection réfléchie de dépendances - www.developpez.net - 20140804 - SylvainPV](https://www.developpez.net/forums/d1461652/webmasters-developpement-web/javascript-ajax-typescript-dart/javascript/injection-reflechie-dependances/)
 
 ## scope and namespace with the angular injector
 
