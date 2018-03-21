@@ -96,6 +96,7 @@
 
 * [javascript - ES6 overview](languages/javascript/ES6-overview.md)
 * [javascript - ES6 proxies](languages/javascript/ES6-proxies.md)
+* [javascript - ES6 promises](languages/javascript/ES6-promises.md)
 * [javascript - javascript global view](languages/javascript/javascript-overview.md)
 * [javascript - best practices](languages/javascript/js-best-practices.md)
 * [javascript - closures](languages/javascript/js-closures.md)
