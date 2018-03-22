@@ -15,3 +15,5 @@
 ## questions
 
 [Do never resolved promises cause memory leak? - stackoverflow.com - 20160129](https://stackoverflow.com/questions/20068467/do-never-resolved-promises-cause-memory-leak?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
+
+[JavaScript's Promise Leaks Memory - alexn.org - 20171011](https://alexn.org/blog/2017/10/11/javascript-promise-leaks-memory.html)
