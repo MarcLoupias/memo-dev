@@ -1,8 +1,26 @@
 # ES6 - Promises
 
-## documentation
+## spec
+
+[Promises/A+ - promisesaplus.com](https://promisesaplus.com/)
+
+Releases [on github repo](https://github.com/promises-aplus/promises-spec/releases) : 
+
+- 20121207 : `1.0.0`
+- 20130929 : `1.1.0`
+- 20140506 : `1.2.0`
+
+## impl
 
 [Promise on MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Promise)
+
+[bluebird](https://github.com/petkaantonov/bluebird)
+
+[AngularJS `$q` service](https://docs.angularjs.org/api/ng/service/$q)
+
+[implementation list on the promisesaplus.com website](https://promisesaplus.com/implementations)
+
+## articles
 
 [es6 features](http://es6-features.org/#PromiseUsage)
 
