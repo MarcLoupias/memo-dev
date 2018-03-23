@@ -6,6 +6,10 @@ don't know right know how to classify all theses subjects ...
 
 [Software development, responsibility and ethics: the coming crisis (Richard Fontana) : Devoxx France 2016](https://www.youtube.com/watch?v=___k3hCQHEU&index=10&list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXAO)
 
+[De l’importance de savoir dire non - 20170831](https://blog.zenika.com/2017/08/31/de-limportance-de-savoir-dire-non/)
+
+> La sentence est tombée. James Liang, un développeur impliqué dans le scandale Volkswagen, a été condamné à 40 mois de prison et 200 000 dollars d’amende.
+
 [Tesla's autopilot probed by government after crash kills driver](http://money.cnn.com/2016/06/30/technology/tesla-autopilot-death/index.html?iid=EL)
 
 [Accident mortel d'un Uber autonome : cauchemar des constructeurs et interrogations en série](http://www.europe1.fr/technologies/accident-mortel-dun-uber-autonome-cauchemar-des-constructeurs-et-interrogations-en-serie-3603995)
