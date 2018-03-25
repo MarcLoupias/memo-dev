@@ -105,6 +105,75 @@
 
 > The most important differences between NodeJS and Java are the concurrency and I/O models. Java uses multi­threaded synchronous I/O while NodeJS uses single threaded asynchronous I/O.
 
+### Pramod Chandrayan articles
+
+[Getting Started With Node.js : A Beginners Guide - Pramod Chandrayan - 20171105](https://codeburst.io/getting-started-with-node-js-a-beginners-guide-b03e25bca71b)
+
+> - Introduction to Node.js
+> - Setting up Node.js
+> - npm : Node Package Manager
+> - An Example To conclude
+
+[All About Node.Js You Wanted To Know ? - Pramod Chandrayan - 20171029](https://codeburst.io/all-about-node-js-you-wanted-to-know-25f3374e0be7)
+
+> panorama
+
+[How Node.Js Single Thread mechanism Work ? Understanding Event Loop in NodeJs - Pramod Chandrayan - 20171125](https://codeburst.io/how-node-js-single-thread-mechanism-work-understanding-event-loop-in-nodejs-230f7440b0ea)
+
+> detailled event loop explanation
+
+### V8 Engine : Run time Environment
+
+It’s an open sourceJIT(Just In Time) compiler written in C++.
+
+V8 compiles Javascript directly into assembly level code.
+
+- **Compiler** : dissects the JS code
+- **Optimizer** : Optimizer called crankshaft create abstract syntax tree(AST) which further converts to SSA : static single assignment and gets optimized
+- **Garbage Collector** : V8 divides the memory into 2 spaces Old spaces and new spaces both belongs to heap memory and keeps track of JS objects, any new objects is stored in new space. When new space is fully occupied V8’s garbage collector removes dead objects from new space and puts into old space. Gabage collector play vial role in keeping NodeJs lightweight.
+
+### the event loop
+
+[The Node.js Event Loop, Timers, and `process.nextTick()`](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/)
+
+```
+   ┌───────────────────────┐
+┌─>│        timers         │
+│  └──────────┬────────────┘
+│  ┌──────────┴────────────┐
+│  │     I/O callbacks     │
+│  └──────────┬────────────┘
+│  ┌──────────┴────────────┐
+│  │     idle, prepare     │
+│  └──────────┬────────────┘      ┌───────────────┐
+│  ┌──────────┴────────────┐      │   incoming:   │
+│  │         poll          │<─────┤  connections, │
+│  └──────────┬────────────┘      │   data, etc.  │
+│  ┌──────────┴────────────┐      └───────────────┘
+│  │        check          │
+│  └──────────┬────────────┘
+│  ┌──────────┴────────────┐
+└──┤    close callbacks    │
+   └───────────────────────┘
+```
+
+Phases Overview
+
+- **timers**: this phase executes callbacks scheduled by `setTimeout()` and `setInterval()`.
+- **I/O callbacks**: executes almost all callbacks with the exception of close callbacks, the ones scheduled by timers, and `setImmediate()`.
+- **idle, prepare**: only used internally.
+- **poll**: retrieve new I/O events; node will block here when appropriate.
+- **check**: `setImmediate()` callbacks are invoked here.
+- **close callbacks**: e.g. `socket.on('close', ...)`.
+
+Between each run of the event loop, Node.js checks if it is waiting for any asynchronous I/O or timers and shuts down cleanly if there are not any.
+
+
+Powered by [libuv/libuv](http://libuv.org/)
+
+> Cross-platform asynchronous I/O http://libuv.org/
+
+
 ## ECMAScript support
 
 [kangax's compat-table applied only to Node.js](http://node.green/)
