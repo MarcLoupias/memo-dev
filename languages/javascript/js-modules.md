@@ -35,6 +35,8 @@
 > - We are committed to having the Node.js and Web platform as first class runtimes for modules. Modules installed via npm should be able to run after installation without requiring a build step.
 > - We are committed to supporting our current users and offering migration paths as necessary. This can be through interoperability or APIs to improve the developer experience of working between module systems.
 
+[can i use modules in browsers](https://caniuse.com/#feat=es6-module)
+
 [State of Modules in JavaScript - 20171026](https://www.sitepen.com/blog/2017/10/26/state-of-modules-in-javascript/)
 
 > focus on ES6 modules
