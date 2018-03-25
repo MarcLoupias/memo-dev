@@ -287,6 +287,8 @@ Extensible à tout sujet technique.
 
 ## salaires
 
+### france vs USA
+
 [À coût de la vie égal, le salaire d'un professionnel de l'IT à San Francisco est 67 % plus élevé que celui d'un Parisien](https://www.developpez.net/forums/d1812737/emploi-etudes-informatique/emploi/salaires/cout-vie-egal-salaire-d-professionnel-l-it-san-francisco-67-plus-eleve-celui-d/#post9990292)
 
 > étude Hired sur 2017 : 420 000 demandes d'entretien et offres d'emploi, 10 000 entreprises et 69 000 candidats
@@ -294,6 +296,18 @@ Extensible à tout sujet technique.
 > Le salaire moyen global est de 135 000 dollars US
 > 
 > Paris est la ville où le salaire est le plus faible avec 56 000 USD (48 000 euros)
+
+### international
+
+[What is the average Node.js salary? - www.quora.com - 2015](https://www.quora.com/What-is-the-average-Node-js-salary)
+
+> - USA between 130K$ and 160K$
+> - average USA 90K$, UK 48.5K$, India around 10K$
+> - Ukrainian JS dev between 8K$ and 60K$ depending on experience (junior to senior)
+
+[Node.js vs Ruby on Rails (Infographic)](https://vizteck.com/blog/node-js-vs-ruby-on-rails-infographic/)
+
+> Outsourcing javascript in Pakistan, India or Philippine : between 24K$ to 90K$ depending on experience
 
 ## stacks utilisées
 
