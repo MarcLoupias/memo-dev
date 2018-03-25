@@ -122,3 +122,13 @@ Used by thousands of companies including big ones like NPM, GitHub, mongoDB, Zen
 [jQuery foundation JavaScript Style Guide](https://contribute.jquery.org/style-guide/js/)
 
 [jquery/eslint-config-jquery](https://github.com/jquery/eslint-config-jquery)
+
+## prettiers
+
+They limit to the formatting rules and don't deal with code quality.
+
+[Comparison to ESLint/TSLint/stylelint](https://prettier.io/docs/en/comparison.html)
+
+### prettier
+
+[prettier.io](https://github.com/prettier/prettier)
