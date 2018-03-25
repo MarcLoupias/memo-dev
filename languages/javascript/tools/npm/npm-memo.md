@@ -70,6 +70,17 @@ lots of npx fixes
 - `npm install` will automatically resolve `git merge` conflicts in `package-lock.json` and `npm-shrinwrap.json` files. cf [doc](https://github.com/npm/npm/commit/e27674c221dc17473f23bffa50123e49a021ae34)
 - new `npm ci` command. Install from lock file only and so report errors when a dep is not fixed. `node_modules` are always rewritten to achieve that.
 
+### npm 5.8
+
+[blog.npmjs.org](http://blog.npmjs.org/post/171813275740/v580-next0)
+
+- detect-newline (no more `LF` by default)
+- [`NO_COLOR`](http://no-color.org/) standard support through var env
+- `NO_PROXY` support through CLI with `--no-proxy`
+- better env var support for `.npmrc` ([cf PR](https://github.com/npm/npm/pull/18426))
+- better error msg for `JSON parse error` and `EPERM/EACCES`
+- `npm ci` fix and perf work
+
 ## semver
 
 [semver to manage scopes in package.json](https://docs.npmjs.com/misc/semver)
