@@ -28,6 +28,13 @@
 
 > nice UMD ex
 
+[The Current State of Implementation and Planning for ESModules - Node.js Foundation - 20171212](https://medium.com/the-node-js-collection/the-current-state-of-implementation-and-planning-for-esmodules-a4ecb2aac07a)
+
+> - We are committed to shipping ESM
+> - We are committed to ESM being first class in Node.js
+> - We are committed to having the Node.js and Web platform as first class runtimes for modules. Modules installed via npm should be able to run after installation without requiring a build step.
+> - We are committed to supporting our current users and offering migration paths as necessary. This can be through interoperability or APIs to improve the developer experience of working between module systems.
+
 [State of Modules in JavaScript - 20171026](https://www.sitepen.com/blog/2017/10/26/state-of-modules-in-javascript/)
 
 > focus on ES6 modules
