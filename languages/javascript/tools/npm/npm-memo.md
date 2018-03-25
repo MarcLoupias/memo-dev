@@ -110,7 +110,12 @@ npm view <package_name> version
 npm config list -ls
 ```
 
+### npm link
+
+[The magic behind npm link](https://medium.com/trisfera/the-magic-behind-npm-link-d94dcb3a81af)
+
 ## npm folders
+
 [check this](https://docs.npmjs.com/files/folders)
 
 TLDR :
