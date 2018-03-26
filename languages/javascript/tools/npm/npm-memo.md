@@ -178,6 +178,40 @@ There is also big behavior differences regarding to the registry publication for
 
 [What is the difference between npm-shrinkwrap.json and package-lock.json? - stackoverflow.com - 20170530](https://stackoverflow.com/questions/44258235/what-is-the-difference-between-npm-shrinkwrap-json-and-package-lock-json)
 
+### understanding peer dependencies
+
+[docs.npmjs.com - package.json - peerdependencies](https://docs.npmjs.com/files/package.json#peerdependencies)
+
+> you want to express the compatibility of your package with a host tool or library, while not necessarily doing a `require` of this host
+
+```
+{
+  "name": "tea-latte",
+  "version": "1.3.5",
+  "peerDependencies": {
+    "tea": "2.x"
+  }
+}
+```
+
+> This ensures your package tea-latte can be installed *along* with the second major version of the host package tea only.
+
+> This leads to
+
+```
+├── tea-latte@1.3.5
+└── tea@2.2.0
+```
+
+> instead of 
+
+```
+├── tea-latte@1.3.5
+   └── tea@2.2.0
+```
+
+> since npm@3, npm is not installing automatically peerDeps. You need to add it explicitly in your package.json.
+
 ### others packages
 
 - [npm-check](https://www.npmjs.com/package/npm-check)
