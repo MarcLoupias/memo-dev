@@ -9,6 +9,7 @@
 - [Why I Left Gulp and Grunt for npm Scripts - Cory House - 20160117](https://medium.freecodecamp.org/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8)
 - [One-line node modules](https://github.com/sindresorhus/ama/issues/10)
 > with a big answer by sindresorhus
+- [Understanding the npm dependency model - 20160824](https://lexi-lambda.github.io/blog/2016/08/24/understanding-the-npm-dependency-model/)
 
 ## npm 5
 
@@ -211,6 +212,10 @@ There is also big behavior differences regarding to the registry publication for
 ```
 
 > since npm@3, npm is not installing automatically peerDeps. You need to add it explicitly in your package.json.
+
+**peerDeps usage**
+
+Mostly for a package to be used as a deps for another. No usage for an end project (like a frontend or a backend).
 
 ### others packages
 
