@@ -300,6 +300,24 @@ Exemple : [MetaPKI en version 9.2.5 : www.ssi.gouv.fr](https://www.ssi.gouv.fr/e
 
 #### SSL/TLS
 
+##### TLS 1.3
+
+[Le protocole TLS 1.3 approuvé par l'IETF](https://www.developpez.net/forums/d1834127/webmasters-developpement-web/general-conception-web/securite/protocole-tls-1-3-approuve-l-ietf/)
+
+[RSA key exchange is deprecated in TLS 1.3](http://ldapwiki.com/wiki/RSA%20key-exchange).
+
+[Diffie-Hellman or RSA](http://ldapwiki.com/wiki/Diffie-Hellman%20or%20RSA)
+
+We want [Perfect Forward Secrecy](http://ldapwiki.com/wiki/Perfect%20Forward%20Secrecy) :
+
+In 2018, the private key is used for authentifcation AND for encryption of the session key. If authentication only matters while the communication is established, encryption should last for years. If someone capture lot's of trafic from a target, it could used them to find the private key and then weak the encryption.
+
+Perfect Forward Secrecy assumes each exchanged key, the Authentication and Encryption keys, are independent and therefore a compromised key cannot be used to compromise another one.
+
+They generate ephemeral keys at each communication session.
+
+Diffie Hellman is a lot faster and reliable then RSA to generate epheral keys so DH is preferred.
+
 #### Signature Electroniques
 
 Une fonction de hashage est appliquée sur le document à signer. Elle permet d'obtenir son empreinte numérique (unique pour ce document).
