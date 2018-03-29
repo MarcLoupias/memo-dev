@@ -4,13 +4,15 @@
 
 cf [The third browser war is over and it's a bloodshed - Daniel Glazman - WEB2DAY 2016](https://www.youtube.com/watch?v=ceMLuRBn--M)
 
-| - | modern | standards | cross platform | speed | 
-| - | ------ | --------- | -------------- | ----- |
-| Gecko | OK | OK | OK | OK |
-| WebKit | OK | OK | OK | OK |
-| Blink | OK | OK | OK | OK |
-| Edge | OK | OK | KO | OK |
-| Servo | OK | OK | OK | OK |
+| - | modern | standards | cross platform | speed | author
+| - | ------ | --------- | -------------- | ----- | ----- |
+| Gecko | OK | OK | OK | OK | [Mozilla Foundation](https://www.mozilla.org/fr/foundation/) |
+| WebKit | OK | OK | OK | OK | [Apple](https://webkit.org/) |
+| Blink | OK | OK | OK | OK | [chromium (Google)](http://www.chromium.org/blink) | 
+| Edge | OK | OK | KO | OK | [EdgeHTML (Microsoft)](https://en.wikipedia.org/wiki/EdgeHTML) | 
+| Servo | OK | OK | OK | OK | [servo.org (Mozilla Foundation)](https://servo.org/) | 
+
+[Trident moteur de IE4 à IE11](https://fr.wikipedia.org/wiki/Trident_(moteur_de_rendu)) : stoppé.
 
 [servo/servo - github.com](https://github.com/servo/servo)
 
