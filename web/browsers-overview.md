@@ -1,7 +1,9 @@
 # browsers overview
 
 ## moteurs de rendus
- 
+
+cf [The third browser war is over and it's a bloodshed - Daniel Glazman - WEB2DAY 2016](https://www.youtube.com/watch?v=ceMLuRBn--M)
+
 | - | modern | standards | cross platform | speed | 
 | - | ------ | --------- | -------------- | ----- |
 | Gecko | OK | OK | OK | OK |
