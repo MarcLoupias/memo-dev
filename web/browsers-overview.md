@@ -1,5 +1,24 @@
 # browsers overview
 
+## moteurs de rendus
+ 
+| - | modern | standards | cross platform | speed | 
+| - | ------ | --------- | -------------- | ----- |
+| Gecko | OK | OK | OK | OK |
+| WebKit | OK | OK | OK | OK |
+| Blink | OK | OK | OK | OK |
+| Edge | OK | OK | KO | OK |
+| Servo | OK | OK | OK | OK |
+
+[servo/servo - github.com](https://github.com/servo/servo)
+
+Servo écrit en Rust est le petit nouveau. MultiThreadé et layout parallèle. Ultra performant. Va probablement beaucoup changer la donne sur mobile.
+Meilleure vitesse mais surtout meilleure conso. (d'où la collaboration Mozilla / Samsung).
+ 
+Opera a abandonné Presto et est passé sur Blink
+ 
+Un process par tab, chaque process multithreadé + layout parallèle = gains x30 à x50.
+
 ## browsers bug trackers
 
 [dev.chromium.org](http://dev.chromium.org/for-testers/bug-reporting-guidelines)
