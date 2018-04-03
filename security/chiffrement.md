@@ -3,6 +3,8 @@
 
 [débat chiffrement & légalité](https://www.developpez.net/forums/d1678850-3/club-professionnels-informatique/actualites/politique/chiffrement-l-equipe-marche-marche-arriere-declarations-d-emmanuel-macron/)
 
+[Le Conseil constitutionnel valide l'article qui pénalise le refus de remettre à la justice la clé de déchiffrement, Dans le cadre d'une enquête - www.developpez.com - 20180330](https://www.developpez.com/actu/195879/Le-Conseil-constitutionnel-valide-l-article-qui-penalise-le-refus-de-remettre-a-la-justice-la-cle-de-dechiffrement-dans-le-cadre-d-une-enquete/)
+
 ## Terminologie
 
 On dit chiffrer et pas crypter.
