@@ -12,6 +12,12 @@
 
 [Hugo Giraudel](https://hugogiraudel.com/) [github account](https://github.com/HugoGiraudel)
 
+[Accessible Rich Internet Applications (WAI-ARIA) 1.1 - www.w3.org - 20171214](https://www.w3.org/TR/wai-aria/)
+
+[landmarks example - www.w3.org - 20171214](https://www.w3.org/TR/2017/NOTE-wai-aria-practices-1.1-20171214/examples/landmarks/region.html)
+
+[How to Use ARIA Effectively with HTML5 - www.sitepoint.com - 20160211](https://www.sitepoint.com/how-to-use-aria-effectively-with-html5/)
+
 ## Progressives webapps
 
 [Progressive Web Apps : developers.google.com](https://developers.google.com/web/progressive-web-apps/)
