@@ -391,6 +391,8 @@ Extensible à tout sujet technique.
 
 [vocabulaire : www.frenchweb.fr](https://www.frenchweb.fr/vocabulaire-de-lintelligence-artificielle-12-termes-a-connaitre/307870)
 
+[Aux origines de l'intelligence artificielle - www.franceculture.fr - 20180331](https://www.franceculture.fr/numerique/aux-origines-de-lintelligence-artificielle)
+
 ## Economie
 
 **Le graphique de l'éléphant (Branko Milanovic)**
