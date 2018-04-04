@@ -8,7 +8,11 @@
 
 [PageSpeed Insights : developers.google.com](https://developers.google.com/speed/pagespeed/insights/)
 
-## accessibility
+## accessibility (a11y)
+
+[What is Accessibility (a11y) - www.techopedia.com](https://www.techopedia.com/definition/10165/accessibility-a11y)
+
+> The word accessibility is abbreviated to "**a11y**," with the number eleven in the middle referring to the number of letters that the word contains between the first and last letter. It follows an Information and Communications Technology (ICT)-oriented convention, just like internationalization (**i18n**) and localization (**l10n**), which are used mostly in the software community. 
 
 [Hugo Giraudel](https://hugogiraudel.com/) [github account](https://github.com/HugoGiraudel)
 
