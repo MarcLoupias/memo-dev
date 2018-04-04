@@ -22,6 +22,8 @@
 
 [How to Use ARIA Effectively with HTML5 - www.sitepoint.com - 20160211](https://www.sitepoint.com/how-to-use-aria-effectively-with-html5/)
 
+[The A11Y Project](https://a11yproject.com/) A community-driven effort to make web accessibility easier.
+
 ## Progressives webapps
 
 [Progressive Web Apps : developers.google.com](https://developers.google.com/web/progressive-web-apps/)
