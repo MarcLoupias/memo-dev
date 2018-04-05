@@ -50,3 +50,23 @@ There is nothing to do instead of using something else or split the tests suites
 [https://www.quora.com/What-behavior-have-you-seen-from-PhantomJS-that-differs-from-that-of-a-mainstream-non-headless-browser](https://www.quora.com/What-behavior-have-you-seen-from-PhantomJS-that-differs-from-that-of-a-mainstream-non-headless-browser)
 
 [https://stackoverflow.com/questions/24436460/phantomjs-dies-by-high-memory-consumption](https://stackoverflow.com/questions/24436460/phantomjs-dies-by-high-memory-consumption)
+
+### phantomjs
+
+phantomjs could be considered dead :
+
+phantomjs repo issues
+
+- [Archiving the project: suspending the development](https://github.com/ariya/phantomjs/issues/15344)
+- [Is phantomjs dead?](https://github.com/ariya/phantomjs/issues/15361)
+- [What exactly is the status of PhantomJS?](https://github.com/ariya/phantomjs/issues/15275)
+- [Please add notice that PhantomJS is abandoned](https://github.com/ariya/phantomjs/issues/15105)
+
+mailing list
+
+- [[Announcement] Stepping down as maintainer](https://groups.google.com/forum/#!topic/phantomjs/9aI5d-LDuNE)
+
+headless chrome alternative
+
+- [Chrome 59 has cross-platform headless support (chromestatus.com) - news.ycombinator.com - 2017](https://news.ycombinator.com/item?id=14101233)
+- [Headless mode - www.chromestatus.com](https://www.chromestatus.com/features/5678767817097216)
