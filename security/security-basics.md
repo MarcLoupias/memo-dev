@@ -318,6 +318,19 @@ They generate ephemeral keys at each communication session.
 
 Diffie Hellman is a lot faster and reliable then RSA to generate epheral keys so DH is preferred.
 
+##### Corporate Proxy Man In The Middle
+
+[Is it possible for corporation to intercept and decrypt SSL/TLS traffic?](https://security.stackexchange.com/a/101726)
+
+[Can my company see what HTTPS sites I went to?](https://security.stackexchange.com/questions/2914/can-my-company-see-what-https-sites-i-went-to)
+
+The idea is simple, the company : 
+
+- generate a self signed root certificate
+- install it on each browser employee
+- deploy a proxy between internet and LAN
+- the proxy intercept all https traffic, when a client request a certificate, it give the one signed by the company self signed and then open the regular connexion with the legacy website
+
 #### Signature Electroniques
 
 Une fonction de hashage est appliquée sur le document à signer. Elle permet d'obtenir son empreinte numérique (unique pour ce document).
