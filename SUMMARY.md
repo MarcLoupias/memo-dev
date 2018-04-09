@@ -214,6 +214,7 @@
 * [SEO](web/SEO.md)
 * [Shadow DOM](web/shadow-dom.md)
 * [Generic good practices](web/web-generic-good-practices.md)
+* [Web scraping](web/web-scraping.md)
 * [Selenium](web/web-test-selenium.md)
 * [Tracking](web/web-tracking.md)
 * [Comparatifs frameworks](web/web-comparatifs-frameworks.md)
