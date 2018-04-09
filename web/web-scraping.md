@@ -15,3 +15,11 @@
 [Microsoft ordered to let third parties scrape LinkedIn data - 20170815](https://www.theverge.com/2017/8/15/16148250/microsoft-linkedin-third-party-data-access-judge-ruling)
 
 Google don't like scraping but is doing it with Google News
+
+## tools
+
+old one : PhantomJS
+
+new one : Headless browsers (ex : Chrome)
+
+[Web Scraping in 2017: Advanced Headless Chrome Tips & Tricks](https://blog.phantombuster.com/web-scraping-in-2017-headless-chrome-tips-tricks-4d6521d695e8)
