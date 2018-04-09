@@ -1,4 +1,4 @@
-# wrb scrapping
+# web scraping
 
 ## what is it ?
 
@@ -14,4 +14,4 @@
 
 [Microsoft ordered to let third parties scrape LinkedIn data - 20170815](https://www.theverge.com/2017/8/15/16148250/microsoft-linkedin-third-party-data-access-judge-ruling)
 
-Google don't like scrapping but is doing it with Google News
+Google don't like scraping but is doing it with Google News
