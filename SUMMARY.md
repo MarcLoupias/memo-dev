@@ -238,4 +238,5 @@
 * [Linux - Gestion des droits du FHS](systems/linux/linux-fhs-droits.md)
 * [Linux - logs](systems/linux/linux-logs.md)
 * [Linux - Manipuler les fichiers](systems/linux/linux-manipulation-fichiers.md)
+* [Linux - Manipuler les processus](systems/linux/linux-manipulation-process.md)
 * [Bash - Notes Whiptail](systems/linux/bash/bash-notes-whiptail.md)
