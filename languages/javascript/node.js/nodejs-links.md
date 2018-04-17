@@ -1,5 +1,20 @@
 # node.js links
 
+## node.js 2018
+
+[Node.js roadmap: What’s next for the JavaScript runtime - 20180226](https://www.infoworld.com/article/3257673/node-js/nodejs-roadmap-whats-next-for-the-javascript-runtime.html)
+
+> Although Node.js 10 will debut in April 2018, more features are under consideration for 2018 and 2019
+> 
+> - N-API and HTTP/2
+> - Better diagnostic capabilities
+> - A faster release schedule for V8
+> - Better support of ECMAScript (ES) 6 modules
+> - progress on security triage for third-party NPM modules
+> - Functional testing for third-party modules
+> - Use of JavaScript promises in the Node.js core
+> - Support for more build/automation infrastructure
+
 ## node.js 2017
 
 [Node.js partout - Cristophe Porteneuve - WEB2DAY 2017](https://www.youtube.com/watch?v=IwpBluLjynI)
