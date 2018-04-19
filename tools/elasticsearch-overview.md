@@ -4,7 +4,11 @@
 
 ## ELK
 
-Elasticsearch Logstash Kibana
+Elasticsearch Store, Search, and Analyze
+
+Logstash: Collect, Enrich, and Transport 
+
+Kibana: Explore, Visualize, and Share
 
 ### Concepts
 
