@@ -6,6 +6,27 @@
 
 Elasticsearch Logstash Kibana
 
+### Concepts
+
+[What is an index in Elasticsearch](https://stackoverflow.com/questions/15025876/what-is-an-index-in-elasticsearch)
+
+>
+> Comparing with relationnal database : 
+> 
+> - MySQL => Databases => Tables => Columns/Rows
+> - ElasticSearch => Indices => Types => Documents with Properties
+> 
+> An ElasticSearch cluster can contain multiple `Indices` (databases), which in turn contain multiple `Types` (tables). These types hold multiple `Documents` (rows), and each document has `Properties` (columns).
+> 
+> Searching and querying takes the format of: `http://localhost:9200/[index]/[type]/[operation]`
+> 
+
+#### basic concepts
+
+[Basic Concepts - www.elastic.co - v5.6](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/_basic_concepts.html)
+
+> Near Real Time, Cluster, Node, Index, Type, Document, Shards & Replicas
+
 ## JavaScript
 
 [elastic/elasticsearch-js - github.com](https://github.com/elastic/elasticsearch-js)
