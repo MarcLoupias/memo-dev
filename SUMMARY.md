@@ -184,6 +184,7 @@
 * [Markdown online editor](tools/tools-markdown-editor.md)
 * [vim memo](tools/vim-memo.md)
 * [nano memo](tools/nano-memo.md)
+* [Elasticsearch - Overview](tools/elasticsearch-overview.md)
 * [Mastodon](tools/social/social-mastodon.md)
 
 ## Web
