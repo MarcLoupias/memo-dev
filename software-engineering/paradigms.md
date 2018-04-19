@@ -44,6 +44,8 @@ No assignment means var are immutables.
 
 N.B. : An **expression** is not a **statement** but a valid unit of code that *resolves to a value*. Not all **statements** resolve to a value. 
 
+N.B.2. : *An expression is a chunk of code that evaluates to a single value*. cf [Nested Ternaries are Great - Eric Elliott - 20180126](https://medium.com/javascript-scene/nested-ternaries-are-great-361bddd0f340)
+
 [Mostly adequate guide to FP (in javascript)](https://github.com/MostlyAdequate/mostly-adequate-guide) [gitbook](https://drboolean.gitbooks.io/mostly-adequate-guide/content/)
 
 [Learning Functional Programming with JavaScript - JSUnconf 2016 : Anjana Vakil](https://www.youtube.com/watch?v=e-5obm1G_FY) - [slides](https://slidr.io/vakila/learning-functional-programming-with-javascript#1)
