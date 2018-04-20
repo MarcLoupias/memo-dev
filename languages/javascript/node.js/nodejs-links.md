@@ -120,6 +120,18 @@
 
 > The most important differences between NodeJS and Java are the concurrency and I/O models. Java uses multi­threaded synchronous I/O while NodeJS uses single threaded asynchronous I/O.
 
+[Node.js — How is it different? - Siddhartha Chowdhury - 20180206](https://medium.com/@siddharthac6/node-js-how-is-it-different-94f97480a4bb)
+
+> **When does Node.js fails ?**
+> 
+> Node’s underlying architecture implementation fails when some CPU intensive work is involved.
+> 
+> By CPU intensive I mean works like Image processing, audio encoding, media conversions, etc.
+> 
+> All these jobs involves huge CPU computations and almost no I/O. Hence when the event (which involves as such work) handler is fired, it keeps the the event loop busy until the time the CPU processing is finished, **it halts all other events in the process**. 
+> 
+> This case is where C++, Java, Python and all other excels coz their underlying architecture makes use of multiple threads to handle concurrency at their core.
+
 ### Pramod Chandrayan articles
 
 [Getting Started With Node.js : A Beginners Guide - Pramod Chandrayan - 20171105](https://codeburst.io/getting-started-with-node-js-a-beginners-guide-b03e25bca71b)
