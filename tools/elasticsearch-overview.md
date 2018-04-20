@@ -25,7 +25,7 @@ Kibana: Explore, Visualize, and Share
 > Searching and querying takes the format of: `http://localhost:9200/[index]/[type]/[operation]`
 >
 
-**!!!** Breaking change in Elasticsearch 6+
+**!!! Breaking change in Elasticsearch 6+ !!!**
 
 The type becomes deprecated, in v7 it will be removed.
 
