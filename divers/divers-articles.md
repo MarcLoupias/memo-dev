@@ -226,6 +226,19 @@ L'article [L113-9](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle
 >
 > Les dispositions du premier alinéa du présent article sont également applicables aux agents de l'Etat, des collectivités publiques et des établissements publics à caractère administratif.
 
+## lois données
+
+[RGPD : comment la CNIL vous accompagne dans cette période transitoire ? - www.cnil.fr - 20180219](https://www.cnil.fr/fr/rgpd-comment-la-cnil-vous-accompagne-dans-cette-periode-transitoire)
+
+[RGPD : se préparer en 6 étapes](https://www.cnil.fr/fr/principes-cles/rgpd-se-preparer-en-6-etapes)
+
+> - Etape 1 Désigner un pilote
+> - Etape 2 Cartographier
+> - Etape 3 Prioriser
+> - Etape 4 Gérer les risques
+> - Etape 5 Organiser
+> - Etape 6 Documenter
+
 ## management
 
 [Why The Command-and-Control Mindset Is Killing Your Company : corporate-rebels.com](http://corporate-rebels.com/mindset/) March 26, 2017
