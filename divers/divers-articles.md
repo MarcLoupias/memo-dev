@@ -310,6 +310,12 @@ Extensible à tout sujet technique.
 > 
 > Paris est la ville où le salaire est le plus faible avec 56 000 USD (48 000 euros)
 
+[commentaire yento sur developpez](https://www.developpez.net/forums/d1812737-7/emploi-etudes-informatique/emploi/salaires/cout-vie-egal-salaire-d-professionnel-l-it-san-francisco-67-plus-eleve/#post10178605)
+
+> 300k c'est la norme pour les big 4 en web ou les big 4 en finance
+> 
+> Une fois enlevée 40% de taxe, ca fait que 15k par mois
+
 ### international
 
 [What is the average Node.js salary? - www.quora.com - 2015](https://www.quora.com/What-is-the-average-Node-js-salary)
