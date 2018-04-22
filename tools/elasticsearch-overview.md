@@ -10,6 +10,14 @@ Logstash: Collect, Enrich, and Transport
 
 Kibana: Explore, Visualize, and Share
 
+### install
+
+#### elastic
+
+[Installing Elasticsearch - all packages formats](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
+
+[Installing Elasticsearch - with apt](https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html)
+
 ### Concepts
 
 [What is an index in Elasticsearch](https://stackoverflow.com/questions/15025876/what-is-an-index-in-elasticsearch)
@@ -38,6 +46,8 @@ In other words, using the example above, the `user_name` field in the `user` typ
 This can lead to frustration when, for example, you want `deleted` to be a `date` field in one type and a `boolean` field in another type in the same index.
 
 #### basic concepts
+
+[Getting Started @latest](https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html)
 
 [Basic Concepts - www.elastic.co - v5.6](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/_basic_concepts.html)
 
