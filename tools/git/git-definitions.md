@@ -25,6 +25,21 @@ Github, gitlab, etc ..., create a bare repository on their side.
 
 [What is a bare git repository : www.saintsjd.com](http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/)
 
+### working directory
+
+[difference between working copy and working directory - groups.google.com - git-users](https://groups.google.com/forum/#!topic/git-users/PVDjjQ5bE10)
+
+Litterally it is the directory where the user is working ;)
+
+A `git status` on a working directory without any changes tracked by git output this :
+
+```bash
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+```
+
 ### remote
 A remote is a distant repository (a repo on another computer).
 
