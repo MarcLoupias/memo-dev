@@ -29,6 +29,8 @@ Correspond à [la doc de l'équipe Angular](https://github.com/MarcLoupias/githu
 
 [Reading git objects](https://matthew-brett.github.io/curious-git/reading_git_objects.html)
 
+**lire les fichiers objects**
+
 La commande `git cat-file <object-hash> -p` permet d'afficher le contenu d'un fichier object.
 
 Ex commit : 
@@ -68,3 +70,11 @@ tree
 $ git cat-file 274c0052dd5408f8ae2bc8440029ff67d79bc5c3 -t
 blob
 ```
+
+**lire le fichier index**
+
+```bash
+$ git ls-files --stage
+100644 274c0052dd5408f8ae2bc8440029ff67d79bc5c3 0       number.txt
+```
+
