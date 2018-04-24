@@ -78,3 +78,4 @@ $ git ls-files --stage
 100644 274c0052dd5408f8ae2bc8440029ff67d79bc5c3 0       number.txt
 ```
 
+[What does the git index contain EXACTLY?](https://stackoverflow.com/questions/4084921/what-does-the-git-index-contain-exactly?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
