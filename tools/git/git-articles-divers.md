@@ -24,3 +24,5 @@ Correspond à [la doc de l'équipe Angular](https://github.com/MarcLoupias/githu
 ## commit
 
 [The anatomy of a Git commit : Christoph Burgdorf - 20141118](https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html)
+
+[Reading git objects](https://matthew-brett.github.io/curious-git/reading_git_objects.html)
