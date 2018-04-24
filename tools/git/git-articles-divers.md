@@ -26,3 +26,43 @@ Correspond à [la doc de l'équipe Angular](https://github.com/MarcLoupias/githu
 [The anatomy of a Git commit : Christoph Burgdorf - 20141118](https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html)
 
 [Reading git objects](https://matthew-brett.github.io/curious-git/reading_git_objects.html)
+
+La commande `git cat-file <object-hash> -p` permet d'afficher le contenu d'un fichier object.
+
+Ex commit : 
+
+```bash
+$ git cat-file 87a68b76ea470d7ad0f6ecbc5b46eda45e628e43 -p
+tree 3852c9e63207a9ca2ccf00a5ba5233661ee6ff00
+author Robert DUCHMOUL <robert.duchmoul@domain.tld> 1524570143 +0200
+committer Robert DUCHMOUL <robert.duchmoul@domain.tld> 1524570143 +0200
+
+test
+```
+
+Ex tree :
+
+```bash
+$ git cat-file 3852c9e63207a9ca2ccf00a5ba5233661ee6ff00 -p
+100644 blob 274c0052dd5408f8ae2bc8440029ff67d79bc5c3    number.txt
+```
+
+Ex blob :
+
+```bash
+$ git cat-file 274c0052dd5408f8ae2bc8440029ff67d79bc5c3 -p
+1234
+```
+
+La même commande en remplaçant `-p` par `-t` pour avoir le type de l'object.
+
+```bash
+$ git cat-file 87a68b76ea470d7ad0f6ecbc5b46eda45e628e43 -t
+commit
+
+$ git cat-file 3852c9e63207a9ca2ccf00a5ba5233661ee6ff00 -t
+tree
+
+$ git cat-file 274c0052dd5408f8ae2bc8440029ff67d79bc5c3 -t
+blob
+```
