@@ -10,6 +10,8 @@
 - [One-line node modules](https://github.com/sindresorhus/ama/issues/10)
 > with a big answer by sindresorhus
 - [Understanding the npm dependency model - 20160824](https://lexi-lambda.github.io/blog/2016/08/24/understanding-the-npm-dependency-model/)
+- [How to use NPM to package a deployment? - stackoverflow.com - 20150221](https://stackoverflow.com/questions/28640795/how-to-use-npm-to-package-a-deployment)
+> For your question "Shouldn't I output the production files as part of the build process, and publish these as a versioned artifact with NPM": you could, but this is not what most people do. As long as your build process is repeatable, there is no reason to package and publish the built version of your app. I am assuming here that your are building an application and not a reusable library in which case it would be a different story.
 
 ## npm 5
 
