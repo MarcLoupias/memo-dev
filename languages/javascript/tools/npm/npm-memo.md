@@ -124,6 +124,8 @@ npm view <package_name> version
 npm config list -ls
 ```
 
+[11 Simple npm Tricks That Will Knock Your Wombat Socks Off - 20160826](https://nodesource.com/blog/eleven-npm-tricks-that-will-knock-your-wombat-socks-off/)
+
 ### npm link
 
 [The magic behind npm link](https://medium.com/trisfera/the-magic-behind-npm-link-d94dcb3a81af)
