@@ -85,6 +85,7 @@
 * [javascript - tools - npm - on windows](languages/javascript/tools/npm/npm-on-windows.md)
 * [javascript - tools - npm - packages](languages/javascript/tools/npm/npm-packages.md)
 * [javascript - tools - npm - registry](languages/javascript/tools/npm/npm-registry.md)
+* [javascript - tools - npm - security](languages/javascript/tools/npm/npm-security.md)
 * [javascript - tools - npm - shrinkwrap](languages/javascript/tools/npm/npm-shrinkwrap.md)
 
 * [javascript - testing - debug in webstorm](languages/javascript/testing/debug-js-in-webstorm.md)
