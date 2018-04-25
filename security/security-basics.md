@@ -168,6 +168,8 @@ CHECKSUM, CRC, MD5
 
 Famille SHA1
 
+[Attention SHA1 a été cassé](https://shattered.io/).
+
 Famille SHA2
 
 Famille SHA3
