@@ -66,7 +66,7 @@ Theses Engines are used in browsers or server side.
 
 | Engine | Browser/Server |
 | ------ | -------- |
-| V8 [blog officiel](https://v8project.blogspot.fr/) | Chrome, NodeJS |
+| V8 [(blog officiel)](https://v8project.blogspot.fr/) | Chrome, NodeJS |
 | SpiderMonkey | Gecko (Firefox) |
 | JavascriptCore | Webkit (Safari) |
 | Chakra | MS Edge |
