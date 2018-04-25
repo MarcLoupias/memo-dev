@@ -1,5 +1,11 @@
 # npm security
 
+## two factor auth
+
+[Protect your npm account with two-factor authentication and read-only tokens - 20171004](https://blog.npmjs.org/post/166039777883/protect-your-npm-account-with-two-factor)
+
+> npm@5.5.1 or sup 
+
 ## Node Security Platform
 
 [Node Security Platform](https://nodesecurity.io/)
