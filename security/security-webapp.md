@@ -120,6 +120,15 @@ http://www.example.com/redirect.jsp?url=evil.com
 
 Par exemple si on permet aux users la saisie de liens (forum par ex), difficile de valider le lien de redirection.
 
+## autres attaques
+
+### ReDoS
+
+[Regular expression Denial of Service - ReDoS](https://www.owasp.org/index.php/Regular_expression_Denial_of_Service_-_ReDoS)
+
+En fonction du pattern de la regex et de l'input donnée par l'utilisateur, il est possible de générer un cout CPU disproportionné. S'il y a plusieurs serveurs qui se passent la data et qu'ils checkent tous la data avec une regex, l'attaque peut toucher plusieurs machines. Contrairement à une DDoS classique dont le but est de noyer le serveur sous les requêtes, il s'agit ici de noyer le(s) serveur(s) sous le cout de calcul CPU.
+
+Exemple de ReDoS [sur moment.js](https://github.com/moment/moment/issues/4163).
 
 ## ressources
 
