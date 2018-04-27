@@ -37,6 +37,8 @@ Kibana: Explore, Visualize, and Share
 
 The type becomes deprecated, in v7 it will be removed.
 
+[Remove support for types? - the github issue in elastic/elasticsearch repo](https://github.com/elastic/elasticsearch/issues/15613)
+
 [Here is why : Removal of mapping types - www.elastic.co/guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/removal-of-types.html)
 
 In an Elasticsearch index, fields that have the same name in different mapping types are backed by the same Lucene field internally.
