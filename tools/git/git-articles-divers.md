@@ -11,6 +11,12 @@ Correspond à [la doc de l'équipe Angular](https://github.com/MarcLoupias/githu
 
 [[France HTML5] - GIT pro tips : Christophe Porteneuve - 20141226](https://www.youtube.com/watch?v=OMg7LfSuSUU)
 
+## git and sha1 vulnerability
+
+[sha1 broken in 2017](https://shattered.io/)
+
+[Linus Torvalds blog reaction](https://plus.google.com/+LinusTorvalds/posts/7tp2gYWQugL) about the collision attack PoC
+
 ## bien utiliser git merge & rebase
 
 [Bien utiliser git merge et rebase](http://www.git-attitude.fr/2014/05/04/bien-utiliser-git-merge-et-rebase/)
