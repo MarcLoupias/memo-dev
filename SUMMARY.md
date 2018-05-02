@@ -221,6 +221,7 @@
 * [Tracking](web/web-tracking.md)
 * [Comparatifs frameworks](web/web-comparatifs-frameworks.md)
 * [Web Components](web/web-components.md)
+* [Semantic web](web/web-semantic-web.md)
 * [WebAssembly](web/webassembly.md)
 
 ## Network
