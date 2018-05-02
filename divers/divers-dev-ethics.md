@@ -10,6 +10,8 @@ don't know right know how to classify all theses subjects ...
 
 > La sentence est tombée. James Liang, un développeur impliqué dans le scandale Volkswagen, a été condamné à 40 mois de prison et 200 000 dollars d’amende.
 
+[GB: une erreur dans le dépistage du cancer du sein aurait écourté 270 vies - www.sciencesetavenir.fr - 20180502](https://www.sciencesetavenir.fr/sante/gb-une-erreur-dans-le-depistage-du-cancer-du-sein-aurait-ecourte-270-vies_123615)
+
 [Tesla's autopilot probed by government after crash kills driver](http://money.cnn.com/2016/06/30/technology/tesla-autopilot-death/index.html?iid=EL)
 
 [Accident mortel d'un Uber autonome : cauchemar des constructeurs et interrogations en série](http://www.europe1.fr/technologies/accident-mortel-dun-uber-autonome-cauchemar-des-constructeurs-et-interrogations-en-serie-3603995)
