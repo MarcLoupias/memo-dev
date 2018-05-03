@@ -4,6 +4,10 @@
 
 [Quand le chiffrement des données est mis à mal par des mathématiciens : nextinpact.com](https://www.nextinpact.com/news/87466-quand-chiffrement-donnees-est-mis-a-mal-par-mathematiciens.htm)
 
+[blog Bruce Schneier - Chief Technology Officer d’IBM Resilient](https://www.schneier.com/)
+
+[Two NSA Algorithms Rejected by the ISO - www.schneier.com - 20180425](https://www.schneier.com/blog/archives/2018/04/two_nsa_algorit.html)
+
 ## Législation
 
 [débat chiffrement & légalité](https://www.developpez.net/forums/d1678850-3/club-professionnels-informatique/actualites/politique/chiffrement-l-equipe-marche-marche-arriere-declarations-d-emmanuel-macron/)
