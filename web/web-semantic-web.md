@@ -53,3 +53,11 @@
 [github.com/solid/node-solid-server](https://github.com/solid/node-solid-server)
 
 > Solid server on top of the file-system in NodeJS
+
+## articles
+
+[Introduction à RDF - xmlfr.org - 20041015](http://xmlfr.org/documentations/tutoriels/041015-0001)
+
+[Introduction au RDF et à l'API RDF de Jena - web-semantique.developpez.com - 20110425 - maj 20151223](https://web-semantique.developpez.com/tutoriels/jena/introduction-rdf/)
+
+[Introduction to RDF - w3schools.sinsixx.com](http://w3schools.sinsixx.com/rdf/rdf_intro.asp.htm)
