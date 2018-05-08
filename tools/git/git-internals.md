@@ -37,6 +37,14 @@ $ find .git/objects -type f
 - blob (content files state)
 - annotated tag
 
+**warning objects files creation**
+
+Theses files are created once the `git add` command is executed. It means you could have a lot of orphans objects (not linked with a `ref`)
+if you have added to the `index` a lot of files or directories without putting them into a `commit`.
+
+The command `git prune -n` (or `git fsck --unreachable`) display the list of orphans objects.
+
+The command `git prune -v` delete the orphans objects then print the deleted list.
 
 ### lire les fichiers objects
 
