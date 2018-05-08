@@ -46,6 +46,11 @@ The command `git prune -n` (or `git fsck --unreachable`) display the list of orp
 
 The command `git prune -v` delete the orphans objects then print the deleted list.
 
+**immutability**
+
+git `objects` files are **immutable**, once created, git reads them, and that's all. There is no modification ever on it.
+They are only deleted when the user execute the `prune` command if they are unreachable from any `refs`.
+
 ### lire les fichiers objects
 
 La commande `git cat-file <object-hash> -p` permet d'afficher le contenu d'un fichier object.
