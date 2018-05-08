@@ -25,6 +25,11 @@ Github, gitlab, etc ..., create a bare repository on their side.
 
 [What is a bare git repository : www.saintsjd.com](http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/)
 
+Notice that you can add to your remote list a `non-bare` repository but you will not be able to push in it if the branch where
+you want to push is checked out in it, git will deny the push (cause possible inconsistency).
+
+It can be bypassed by setting the `receive.denyCurrentBranch` config variable in the receiver repo to `'ignore'` or `'warn'` but it is not recommended.
+
 ### working directory
 
 [difference between working copy and working directory - groups.google.com - git-users](https://groups.google.com/forum/#!topic/git-users/PVDjjQ5bE10)
