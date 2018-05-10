@@ -1,5 +1,9 @@
 # Authentification
 
+## Cookies vs Tokens
+
+[Cookies vs Tokens: The Definitive Guide - auth0.com - 20160531](https://auth0.com/blog/cookies-vs-tokens-definitive-guide/)
+
 ## diff oAuth / OpenID / SAML
 
 -  OAuth is about giving access to your stuff without sharing your identity at all
