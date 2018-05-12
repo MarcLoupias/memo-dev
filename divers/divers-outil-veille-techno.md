@@ -1,5 +1,9 @@
 # veille techno outils
 
+## twitter
+
+[twitter.com/Marco46Veille](https://twitter.com/Marco46Veille)
+
 ## veille en push sur les projets
 
 ### sibbel (projets github)
