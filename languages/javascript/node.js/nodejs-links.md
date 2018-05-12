@@ -15,6 +15,8 @@
 > - Use of JavaScript promises in the Node.js core
 > - Support for more build/automation infrastructure
 
+[Node.js core contributor James M Snell presentation about node in 2018](https://www.youtube.com/watch?v=_H_HskEf-0U)
+
 ## node.js 2017
 
 [Node.js partout - Cristophe Porteneuve - WEB2DAY 2017](https://www.youtube.com/watch?v=IwpBluLjynI)
