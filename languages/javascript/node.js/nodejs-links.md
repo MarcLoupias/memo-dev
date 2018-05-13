@@ -202,6 +202,9 @@ Powered by [libuv/libuv](http://libuv.org/)
 
 > Cross-platform asynchronous I/O http://libuv.org/
 
+[Don't Block the Event Loop (or the Worker Pool) - nodejs.org](https://nodejs.org/en/docs/guides/dont-block-the-event-loop/)
+
+[why is it so hard to add threads to nodejs? or web workers? - github.com/nodejs](https://github.com/nodejs/worker/issues/4)
 
 ## ECMAScript support
 
