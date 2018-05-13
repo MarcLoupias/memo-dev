@@ -202,9 +202,21 @@ Powered by [libuv/libuv](http://libuv.org/)
 
 > Cross-platform asynchronous I/O http://libuv.org/
 
+#### workers
+
 [Don't Block the Event Loop (or the Worker Pool) - nodejs.org](https://nodejs.org/en/docs/guides/dont-block-the-event-loop/)
 
 [why is it so hard to add threads to nodejs? or web workers? - github.com/nodejs](https://github.com/nodejs/worker/issues/4)
+
+[Understanding the NodeJS cluster module - www.acuriousanimal.com - 20170812](http://www.acuriousanimal.com/2017/08/12/understanding-the-nodejs-cluster-module.html)
+
+[Using cluster module with HTTP servers -  www.acuriousanimal.com - 20170818](http://www.acuriousanimal.com/2017/08/18/using-cluster-module-with-http-servers.html)
+
+> demo http cluster, how the master manage load balancing with the same port
+
+[Clusteriser votre application Node.js - blog.xebia.fr - 20150113](https://blog.xebia.fr/2015/01/13/clusteriser-votre-application-node-js/)
+
+[Node JS workers - any need for them? - stackoverflow.com - 2013](https://stackoverflow.com/questions/14981154/node-js-workers-any-need-for-them)
 
 ## ECMAScript support
 
