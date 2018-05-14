@@ -18,6 +18,10 @@
 
 [forum.vuejs.org](https://forum.vuejs.org/)
 
+## articles
+
+[Demystifying Vue.js internals - medium.com/js-imaginea - 20180426](https://medium.com/js-imaginea/the-vue-js-internals-7b76f76813e3)
+
 ## project scaffolding
 
 [vuejs/vue-cli](https://github.com/vuejs/vue-cli)
