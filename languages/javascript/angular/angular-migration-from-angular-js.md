@@ -65,6 +65,10 @@
 
 [Upgrading Your Application to Angular 2 with ng-upgrade : blog.rangle.io](http://blog.rangle.io/upgrade-your-application-to-angular-2-with-ng-upgrade/)
 
+[Upgrading Angular apps using ngUpgrade - Pascal Precht - 20161218](https://blog.thoughtram.io/angular/2015/10/24/upgrading-apps-to-angular-2-using-ngupgrade.html)
+
+[NgUpgrade in Depth - Victor Savkin - 20170512](https://blog.nrwl.io/ngupgrade-in-depth-436a52298a00)
+
 ## migration des `$watch`
 
 - soit on a un ng-model auquel cas il suffit d'ajouter un ng-change
