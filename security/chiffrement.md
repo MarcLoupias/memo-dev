@@ -8,6 +8,8 @@
 
 [Two NSA Algorithms Rejected by the ISO - www.schneier.com - 20180425](https://www.schneier.com/blog/archives/2018/04/two_nsa_algorit.html)
 
+[Internet des objets : l'ISO rejette les algorithmes de chiffrement de la NSA - www.developpez.com - 20180518](https://www.developpez.com/actu/204053/Internet-des-objets-l-ISO-rejette-les-algorithmes-de-chiffrement-de-la-NSA-par-crainte-qu-ils-contiennent-des-portes-derobees/)
+
 ## Législation
 
 [débat chiffrement & légalité](https://www.developpez.net/forums/d1678850-3/club-professionnels-informatique/actualites/politique/chiffrement-l-equipe-marche-marche-arriere-declarations-d-emmanuel-macron/)
