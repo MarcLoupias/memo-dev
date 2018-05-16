@@ -91,3 +91,13 @@
 - soit on a besoin de AngularJS 1.5 et d'utiliser le life cycle event `$onChanges` des composants
 
 L'idée avec les life cycles event c'est de remplacer le dirty checking d'origine placé sur tout l'arbre des scopes par un cycle de vie centré composant par composant.
+
+## migration ui-router
+
+To upgrade ui-router 0.4.x to 1.0.x, we need to use a bundler and modules.
+
+Check full example at [sample-app-angularjs - github.com/ui-router](https://github.com/ui-router/sample-app-angularjs)
+
+If you don't want to migrate from IIFE to ES6 modules and a bundlers (you want to upgrade ui-router first before the bundlers and ES6 modules), you can import a mono-bundle backward compatible, cf [
+Uirouter For Angularjs Umd Bundles
+](https://ui-router.github.io/blog/uirouter-for-angularjs-umd-bundles/) post.
