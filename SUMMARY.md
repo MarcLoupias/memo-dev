@@ -176,6 +176,7 @@
 * [heroku - helper](tools/heroku/heroku-helper.md)
 * [heroku - sendgrid mailer](tools/heroku/heroku-sendgrid-mailer.md)
 * [IntelliJ](tools/intellij/infos-intellij.md)
+* [Visual Studio Code](tools/visual-studio-code.md)
 * [Diagrams tools](tools/diagrams.md)
 * [docker](tools/docker.md)
 * [Fiddler](tools/fiddler.md)
