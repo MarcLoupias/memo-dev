@@ -47,6 +47,22 @@
 > dans Angular 1
 >
 
+[Preparing your Angular 1 codebase to upgrade to React or Angular 2 - www.inrhythm.com - 20170424](https://www.inrhythm.com/upgrading-angular-1-to-react-angular-2/)
+
+> 
+> - Step 1: Integrate Webpack into your build process
+>   - use index.js files in each dir/subdir to build a tree of files (all files : js, css and html)
+>   - drop gulp in favor of Webpack
+> 
+> - Step 2: Embrace ES6 modules, upgrade Angular services and controllers to ES6 classes
+>   - replace global objects through IIFE with ES6 imports
+>   - refactor old functions definitions for components and services with classes
+> 
+> - Step 3: Abstract away the Angular module system and decouple your source code from the framework
+>   - replace angular builtin helpers functions with lodash functions
+>   - use the ui-router pattern (a single ngModule for all the app, and use the regular ES6 modules)
+> 
+
 [Quelques grands principes pour aller vers Angular 2.x en venant d’Angular 1.4 ? : blogtech.soprasteria.com](http://blogtech.soprasteria.com/2017/05/24/quelques-grands-principes-pour-aller-vers-angular-2-x-en-venant-dangular-1-4/)
 
 > Très détaillé avec contextualisation + plein de bons liens en fin d'article
