@@ -101,3 +101,7 @@ Check full example at [sample-app-angularjs - github.com/ui-router](https://gith
 If you don't want to migrate from IIFE to ES6 modules and a bundlers (you want to upgrade ui-router first before the bundlers and ES6 modules), you can import a mono-bundle backward compatible, cf [
 Uirouter For Angularjs Umd Bundles
 ](https://ui-router.github.io/blog/uirouter-for-angularjs-umd-bundles/) post.
+
+Using `<script src="../node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>` works well in an ES5 / AngularJS 1.6+ code base with `@uirouter/angularjs@1.0.17`.
+
+The main breaking change is the removal of `$rootScope` events replaced by `$transitions` services hooks.
