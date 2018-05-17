@@ -105,3 +105,7 @@ Uirouter For Angularjs Umd Bundles
 Using `<script src="../node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>` works well in an ES5 / AngularJS 1.6+ code base with `@uirouter/angularjs@1.0.17`.
 
 The main breaking change is the removal of `$rootScope` events replaced by `$transitions` services hooks.
+
+The `$stateParams` service becomes **deprecated**. The best way to deal with it [is explained here](https://github.com/angular-ui/ui-router/issues/3110#issuecomment-315855728) :
+
+Inject `$uiRouterGlobals` and use its attribute `params [Object]` like this: `$uiRouterGlobals.params.myParam`
