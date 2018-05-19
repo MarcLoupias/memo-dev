@@ -72,6 +72,30 @@ Theses Engines are used in browsers or server side.
 | Chakra | MS Edge |
 | Carakan | Opera still 2013 |
 
+### JIT
+
+Just In Time. An engine like V8 compile JavaScript code into machine code on the fly instead of interpreting it like old engines.
+
+[How the V8 engine works? - thibaultlaurens.github.io - 20130429](http://thibaultlaurens.github.io/javascript/2013/04/29/how-the-v8-engine-works/)
+
+[Chrome V8 - en.wikipedia.org](https://en.wikipedia.org/wiki/Chrome_V8)
+
+[A crash course in just-in-time (JIT) compilers - hacks.mozilla.org - Lin Clark - 20170228](https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/)
+
+>
+> explain diff between interpretation vs compilation and how JIT plugs into this.
+>
+> interpreter better startup but slower runtime (compile stupidly every LoC on the fly)
+> 
+> compiler slower startup but there is lots of room for optimizations
+>
+> JIT tries do be between them getting the best of the 2 worlds
+>
+
+[Un petit cours accéléré de compilation à la volée (JIT) - tech.mozfr.org - 20170308](https://tech.mozfr.org/post/2017/03/08/Un-petit-cours-accelere-de-compilation-a-la-volee-%28JIT%29)
+
+> trad fr du précédent
+
 ### Comparators
 
 - [kangax.github.io](http://kangax.github.io/compat-table)
