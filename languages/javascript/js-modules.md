@@ -41,6 +41,12 @@
 
 > focus on ES6 modules
 
+[ES modules: A cartoon deep-dive - hacks.mozilla.org - 20180328](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
+
+[Une plongée illustrée dans les modules ECMAScript - tech.mozfr.org - 20180406 - trad fr de l'article précédent](https://tech.mozfr.org/post/2018/04/06/Une-plongee-illustree-dans-les-modules-ECMAScript)
+
+> deep description of ES6 modules
+
 ## why
 
 - linking dependencies together (in JavaScript world it is just files and it does this with global var by default)
