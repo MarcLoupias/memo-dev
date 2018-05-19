@@ -202,6 +202,8 @@ L'idée c'est de générer les vues côtés front pour :
 
 > comparison between React + Redux and Hyperapp + Redux
 
+[Testing Strategies for React and Redux - hacks.mozilla.org - 20180424](https://hacks.mozilla.org/2018/04/testing-strategies-for-react-and-redux/)
+
 ## observables
 
 ES6 **required** for this.
