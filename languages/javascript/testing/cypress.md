@@ -104,6 +104,12 @@ See [core concepts documentation > Chains of Commands > Commands Are Asynchronou
 
 [Control an AngularJS Application From E2E Tests : 20171115](https://www.cypress.io/blog/2017/11/15/Control-Angular-Application-From-E2E-Tests/#Element-scope)
 
+## slides
+
+[Testing Vue Apps with Cypress.io (STLJS Meetup April 2018) - Christian Catalan - 20180419](https://speakerdeck.com/christiancatalan/testing-vue-apps-with-cypress-dot-io-stljs-meetup-april-2018)
+
+> awesome context, excellent slides
+
 ## videos
 
 [Brian Mann, Testing the way it should be : ReactiveConf 2016](https://www.youtube.com/watch?v=lK_ihqnQQEM)
