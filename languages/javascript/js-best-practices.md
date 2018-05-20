@@ -30,3 +30,7 @@ Le mode strict apporte quelques changements à la sémantique « normale » de J
 ## async
 
 [Coder l’asynchrone en Javascript (Par Matthieu Lux)](https://www.youtube.com/watch?v=FZ51IVn6tVM)
+
+## design patterns
+
+[The Comprehensive Guide to JavaScript Design Patterns - www.toptal.com - Marko Mišura - 201803xx](https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns)
