@@ -4,6 +4,10 @@
 
 > A public issue repo for the npm registry team.
 
+[https://registry.npmjs.org/node/ - explore online](https://registry.npmjs.org/node/)
+
+> need the package name in the path : `https://registry.npmjs.org/<package-name>/`
+
 ## articles
 
 - [why-do-we-need-the-npm-registry : blog.javascripting.com](http://blog.javascripting.com/2015/06/11/so-remind-me-again-why-do-we-need-the-npm-registry/)
