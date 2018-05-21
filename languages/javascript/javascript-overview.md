@@ -96,10 +96,12 @@ Just In Time. An engine like V8 compile JavaScript code into machine code on the
 
 > trad fr du précédent
 
-### Comparators
+### Features Comparators / Lists
 
 - [kangax.github.io](http://kangax.github.io/compat-table)
 - [ES6 Features list over ES5](http://es6-features.org)
+
+### tooling lists - states of js
 
 - [The state of js](https://stateofjs.com/)
 
@@ -109,11 +111,13 @@ Just In Time. An engine like V8 compile JavaScript code into machine code on the
 
 - [The Front-End Tooling Survey 2018 - ashleynolan.co.uk/blog](https://ashleynolan.co.uk/blog/frontend-tooling-survey-2018-results)
 
+- [frontendtools.com](http://frontendtools.com/tools)
+
 ### Transpilers
 
 #### Babel
 
-[Babel](https://babeljs.io/) allows you to write your code in ES6, it will generate ES5 compliant code.
+[Babel](https://babeljs.io/) allows you to write your code in ES6/7/8/x, it will generate ES5 compliant code.
 
 ### Javascript superset
 
