@@ -128,9 +128,11 @@ npm config list -ls
 
 [Introducing hooks: get notifications of npm registry and package changes as they happen - 20160601](https://blog.npmjs.org/post/145260155635/introducing-hooks-get-notifications-of-npm)
 
-### npm link
+### testing packages locally
 
 [The magic behind npm link](https://medium.com/trisfera/the-magic-behind-npm-link-d94dcb3a81af)
+
+[Node.js — How to test your new NPM module without publishing it every 5 minutes - updated 201804](https://medium.com/@the1mills/how-to-test-your-npm-module-without-publishing-it-every-5-minutes-1c4cb4b369be)
 
 ## npm folders
 
