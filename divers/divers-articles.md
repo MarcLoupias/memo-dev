@@ -443,3 +443,7 @@ A l'échelle mondiale chiffré à 100 milliards de dollars (chiffre 2008 ?) par 
 AnyTime, AnyWhere, AnyDevice
 
 [Mobiquité : fr.wikipedia.org](https://fr.wikipedia.org/wiki/Mobiquit%C3%A9)
+
+## LOL
+
+[Il demande à un freelance de développer le "Facebook des propriétaires canins" pour 500€ - 20180430](https://www.naddymess.fr/freelance-developper-facebook-proprietaires-canins-pas-cher/)
