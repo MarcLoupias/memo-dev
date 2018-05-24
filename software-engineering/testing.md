@@ -205,3 +205,5 @@ Unit tests are written only after some production code (e.g., the code necessary
 [Mocking is a Code Smell - Eric Elliott - 20171020](https://medium.com/javascript-scene/mocking-is-a-code-smell-944a70c90a6a)
 
 [About "Mocking is a code smell." - Vasyl Boroviak - Comment from post above with great value](https://medium.com/@koresar/about-mocking-is-a-code-smell-a8c0720e04b3)
+
+[How much could software errors be costing your company? - raygun.com/blog - 20170322](https://raygun.com/blog/cost-of-software-errors/)
