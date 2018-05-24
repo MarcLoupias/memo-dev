@@ -298,3 +298,8 @@ Fin des années 70, les ordinateurs sont montés en puissance, donc permettent l
 Présentation Devoxx2016 sur le passage du code legacy au continuous delivery à la Société Générale. Juste génial.
 
 [SOAT Agile Day - Keynote de Romain Niccoli - Etre agile dans un contexte de forte croissance](https://www.youtube.com/watch?v=vUTYKLEneuI)
+
+## architecture
+
+[La Clean Architecture : catalyseur de productivité - medium.com/@mickalwegerich - 20180507](https://medium.com/@mickalwegerich/la-clean-architecture-catalyseur-de-productivit%C3%A9-68ff61aa38ff)
+
