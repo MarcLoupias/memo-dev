@@ -245,6 +245,8 @@ L'article [L113-9](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle
 
 > « En raison du #GDPR, USA Today a décidé de lancer une version séparée de son site web pour les utilisateurs de l'UE, qui a supprimé tous les scripts de pistage et les publicités. Le site semblait très rapide, j'ai donc fait une vérification de performance. Qu’est-ce qu’internet peut être rapide sans toute la camelote ! 5.2 Mo → 500 Ko »
 
+[RGPD : les achats programmatiques de publicité en Europe chutent de 25 à 40 % dans certains cas  - https://www.developpez.net - 20180526](https://www.developpez.net/forums/d1857121/webmasters-developpement-web/general-conception-web/webmarketing/rgpd-achats-programmatiques-publicite-europe-chutent-25-40-certains-cas/#post10262653)
+
 ## management
 
 [Why The Command-and-Control Mindset Is Killing Your Company : corporate-rebels.com](http://corporate-rebels.com/mindset/) March 26, 2017
