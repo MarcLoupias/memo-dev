@@ -239,6 +239,12 @@ L'article [L113-9](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle
 > - Etape 5 Organiser
 > - Etape 6 Documenter
 
+### articles
+
+[RGPD : la version européenne de USA Today pèse 500 Ko contre 5,2 Mo pour la version originale, D'après les mesures d'un webmaster - www.developpez.com - 20180523](https://www.developpez.com/actu/206032/RGPD-la-version-europeenne-de-USA-Today-pese-500-Ko-contre-5-2-Mo-pour-la-version-originale-d-apres-les-mesures-d-un-webmaster/)
+
+> « En raison du #GDPR, USA Today a décidé de lancer une version séparée de son site web pour les utilisateurs de l'UE, qui a supprimé tous les scripts de pistage et les publicités. Le site semblait très rapide, j'ai donc fait une vérification de performance. Qu’est-ce qu’internet peut être rapide sans toute la camelote ! 5.2 Mo → 500 Ko »
+
 ## management
 
 [Why The Command-and-Control Mindset Is Killing Your Company : corporate-rebels.com](http://corporate-rebels.com/mindset/) March 26, 2017
