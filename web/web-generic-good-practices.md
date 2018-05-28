@@ -10,7 +10,14 @@
 
 ## websites payload size
 
-[Page bloat: The average web page size is more than 2MB - www.soasta.com/blog - 20150611](https://www.soasta.com/blog/page-bloat-average-web-page-2-mb/)
+[The average web page is 3MB. How much should we care? - Tammy Everts - speedcurve.com/blog - 20170809](https://speedcurve.com/blog/web-performance-page-bloat/)
+
+> - 2011 : 900 kb
+> - 2017 : 3 mo
+
+> Images are more then 50% of the payload size. Text assets that can compress well represent around 10% of the payload size.
+
+[Page bloat: The average web page size is more than 2MB - Tammy Everts - www.soasta.com/blog - 20150611](https://www.soasta.com/blog/page-bloat-average-web-page-2-mb/)
 
 >
 > - 1995 : 14 kb
