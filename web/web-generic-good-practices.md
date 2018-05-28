@@ -8,6 +8,35 @@
 
 [PageSpeed Insights : developers.google.com](https://developers.google.com/speed/pagespeed/insights/)
 
+## websites payload size
+
+[Page bloat: The average web page size is more than 2MB - www.soasta.com/blog - 20150611](https://www.soasta.com/blog/page-bloat-average-web-page-2-mb/)
+
+>
+> - 1995 : 14 kb
+>
+> - nov 2011 : 0.9 mo
+> - may 2012 : 1.1 mo
+> - nov 2012 : 1.2 mo
+> - may 2013 : 1.45 mo
+> - nov 2013 : 1.6 mo
+> - may 2014 : 1.7 mo
+> - nov 2014 : 1.8 mo
+> - may 2015 : 2 mo
+>
+
+[What is the recommended JS kb limit for a web app? - stackoverflow.com - 2011](https://stackoverflow.com/questions/5939161/what-is-the-recommended-js-kb-limit-for-a-web-app?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
+
+> 500 kb (in 2011 ...)
+
+[Sizes of JS frameworks, just minified + minified and gzipped](https://gist.github.com/Restuta/cda69e50a853aa64912d)
+
+### dealing with assets
+
+[Recommended size of javascript assets on a web page - stackoverflow.com - 20150504](https://stackoverflow.com/questions/30027673/recommended-size-of-javascript-assets-on-a-web-page?noredirect=1&lq=1)
+
+[Two Quick Ways To Reduce React App’s Size In Production - medium.com/@rajaraodv - 20161130](https://medium.com/@rajaraodv/two-quick-ways-to-reduce-react-apps-size-in-production-82226605771a)
+
 ## accessibility (a11y)
 
 [What is Accessibility (a11y) - www.techopedia.com](https://www.techopedia.com/definition/10165/accessibility-a11y)
