@@ -44,6 +44,16 @@
 
 [Two Quick Ways To Reduce React App’s Size In Production - medium.com/@rajaraodv - 20161130](https://medium.com/@rajaraodv/two-quick-ways-to-reduce-react-apps-size-in-production-82226605771a)
 
+### compression
+
+N.B. : Google Chrome Tools shows compressed values in network panel.
+
+[Enable gzip compression - varvy.com - 2016](https://varvy.com/pagespeed/enable-compression.html)
+
+[varvy.com/tools/gzip](https://varvy.com/tools/gzip/)
+
+[varvy.com/pagespeed](https://varvy.com/pagespeed/)
+
 ## accessibility (a11y)
 
 [What is Accessibility (a11y) - www.techopedia.com](https://www.techopedia.com/definition/10165/accessibility-a11y)
