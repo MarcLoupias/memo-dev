@@ -218,6 +218,10 @@ Powered by [libuv/libuv](http://libuv.org/)
 
 [Node JS workers - any need for them? - stackoverflow.com - 2013](https://stackoverflow.com/questions/14981154/node-js-workers-any-need-for-them)
 
+### https in node
+
+[How to Use SSL/TLS with Node.js - www.sitepoint.com - 20180125](https://www.sitepoint.com/how-to-use-ssltls-with-node-js/)
+
 ## ECMAScript support
 
 [kangax's compat-table applied only to Node.js](http://node.green/)
