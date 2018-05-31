@@ -7,6 +7,7 @@
 - [Le design d'API REST, un débat sans fin ? (Guillaume Laforge) : Devoxx 2016](https://www.youtube.com/watch?v=6onHFNqMUwY)
 - [ReST APIs | Best Practices & Security](https://blog.wishtack.com/rest-apis-best-practices-and-security/)
 - [Strategy and Design Guidelines for REST APIs and Platform Building](https://github.com/RestCheatSheet)
+- [GraphQL: Everything You Need to Know - medium.com/@weblab_tech - 20180306](https://medium.com/@weblab_tech/graphql-everything-you-need-to-know-58756ff253d8)
 
 ## API documentation
 
