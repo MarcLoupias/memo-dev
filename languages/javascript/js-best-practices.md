@@ -27,6 +27,8 @@ Le mode strict apporte quelques changements à la sémantique « normale » de J
 
 [For-each over an array in JavaScript? : stackoverflow.com](http://stackoverflow.com/questions/9329446/for-each-over-an-array-in-javascript)
 
+[Array.forEach n’est pas toujours la meilleure solution ! - blog.overnetcity.com - 20140829](https://blog.overnetcity.com/2014/08/29/array-foreach-nest-pas-toujours-meilleure-solution/)
+
 ## async
 
 [Coder l’asynchrone en Javascript (Par Matthieu Lux)](https://www.youtube.com/watch?v=FZ51IVn6tVM)
