@@ -13,6 +13,18 @@
 - [How to use NPM to package a deployment? - stackoverflow.com - 20150221](https://stackoverflow.com/questions/28640795/how-to-use-npm-to-package-a-deployment)
 > For your question "Shouldn't I output the production files as part of the build process, and publish these as a versioned artifact with NPM": you could, but this is not what most people do. As long as your build process is repeatable, there is no reason to package and publish the built version of your app. I am assuming here that your are building an application and not a reusable library in which case it would be a different story.
 
+- [How well do you know your npm trivia? - 20180528](https://jaxenter.com/npm-trivia-144846.html)
+
+> - What’s npm’s mascot? a wombat
+> 
+> - What does “npm” stand for? Nothing! The original ‘npm’ software was used for Node.js package management
+> 
+> - How many people does npm employ? npm, Inc. employs 34 people, distributed worldwide
+> 
+> - What is the largest number of packages that have been downloaded from npm’s Registry in one week? From May 10th to May 17th of 2018, npm users downloaded 5.2 billion packages from the npm Registry, setting a new record.
+> 
+> - How big is the npm Registry? The registry is approximately 8TB in size, with 25M total package-versions.
+
 ## npm 5
 
 Features list
