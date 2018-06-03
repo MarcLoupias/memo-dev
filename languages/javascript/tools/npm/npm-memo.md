@@ -147,6 +147,77 @@ npm config list -ls
 
 [Node.js — How to test your new NPM module without publishing it every 5 minutes - updated 201804](https://medium.com/@the1mills/how-to-test-your-npm-module-without-publishing-it-every-5-minutes-1c4cb4b369be)
 
+[Testing NPM alpha / beta / rc packages - 20180508](https://medium.com/@the1mills/testing-npm-alpha-beta-rc-packages-108b65eb03d2)
+
+3 options to require a your package in your hosting project :
+
+- `npm link`
+
+It will symlink your project in the global `node_modules` directory. 
+
+So it pollutes the global npm namespace.
+
+No `preinstall`/`postinstall` hooks will be triggered so if you need to tests them it's not a good choice.
+
+`npm link <dep-name>` will not alter the `package.json` file of the hosting project.
+
+In your dependency directory :
+
+```bash
+$ npm link # create a global symlink to the local "dependency-name" project
+```
+
+In your hosting project :
+
+```bash
+$ npm link dependency-name # create a symlink locally to global dependency-name
+```
+
+- `npm install /absolute/local/path`
+
+It works as if your package was is the npm registry. But it will write the absolute directory path to reach the dependency
+in the `package.json` of your hosting project :
+
+```bash
+$ npm install /absolute/path/to/dependency-name
+```
+
+yields this in our `package.json` :
+
+```bash
+"dependencies": {
+  "dependency-name": "file:../../projects/dependency-name",
+},
+```
+
+```bash
+"dependencies": {
+  "viking": "file:../../oresoftware/viking",
+},
+```
+
+- `npm pack`
+
+The `npm pack` command create the tarball that will be pushed in the registry.
+
+So we can build the payload and test against it before pushing it to the registry.
+
+Theses kind of tests are named smoke-tests ([cf discussion on stackoverflow](https://stackoverflow.com/questions/50206729/how-to-test-an-npm-publish-result-without-actually-publishing-to-npm)).
+
+Don't forget to use a `.npmignore` file ([cf npm doc](https://docs.npmjs.com/misc/developers#keeping-files-out-of-your-package)) to avoid putting editor config files (.idea/ for ex) in the tarball.
+Notice that `npm publish` run `npm pack` so ignore `.tgz` files to avoid adding it to the uploaded package. 
+
+In your dependency directory :
+
+```bash
+$ npm pack # create the tarball in the root dep project directory
+```
+
+In your hosting project you can now install it like a regular package, there is no difference instead that :
+ 
+- it will not be downloaded from the network but from your local filesystem
+- there will be also an absolute path in your host project `package.json` file
+
 ## npm folders
 
 [check this](https://docs.npmjs.com/files/folders)
@@ -248,3 +319,4 @@ Mostly for a package to be used as a deps for another. No usage for an end proje
 
 - [npm-remote-ls](https://www.npmjs.com/package/npm-remote-ls)
 > Examine a package's dependency graph before you install it
+
