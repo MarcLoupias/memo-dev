@@ -121,3 +121,7 @@ linked as :
 - [axios/axios](https://github.com/axios/axios)
 
 > axios is heavily inspired by the `$http` service provided in [AngularJS](https://angularjs.org/). Ultimately axios is an effort to provide a standalone `$http`-like service for use outside of AngularJS.
+
+## examples
+
+[GitLab CE uses vue.js](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/package.json#L90)
