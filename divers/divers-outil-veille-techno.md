@@ -105,3 +105,4 @@ Surveille les registry pour check les packages déposés.
 
 [Stackoverflow survey 2018](https://insights.stackoverflow.com/survey/2018/?)
 
+[Hacker news](https://news.ycombinator.com/news)
