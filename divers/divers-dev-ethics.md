@@ -4,6 +4,8 @@ don't know right know how to classify all theses subjects ...
 
 ## Dev ethics
 
+[Microsoft - casier judiciaire - sebsauvage.net](http://sebsauvage.net/wiki/doku.php?id=microsoft)
+
 [Software development, responsibility and ethics: the coming crisis (Richard Fontana) : Devoxx France 2016](https://www.youtube.com/watch?v=___k3hCQHEU&index=10&list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXAO)
 
 [De l’importance de savoir dire non - 20170831](https://blog.zenika.com/2017/08/31/de-limportance-de-savoir-dire-non/)
