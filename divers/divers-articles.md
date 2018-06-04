@@ -438,6 +438,16 @@ A l'échelle mondiale chiffré à 100 milliards de dollars (chiffre 2008 ?) par 
 
 [Forfait Fist First - Made in Groland](https://www.youtube.com/watch?v=y4fCg0tfVfU)
 
+## GAFAM
+
+### Microsoft
+
+[notes about MS - sebsauvage.net](http://sebsauvage.net/wiki/doku.php?id=microsoft)
+
+[Microsoft to acquire GitHub for $7.5 billion - news.microsoft.com - 20180604](https://news.microsoft.com/2018/06/04/microsoft-to-acquire-github-for-7-5-billion/)
+
+[A bright future for GitHub - blog.github.com - 20180604](https://blog.github.com/2018-06-04-github-microsoft/)
+
 ## Médias
 
 [Comment les médias ont raté le virage du numérique : Nicolas Kayser-Bril : 20180125](https://m.usbeketrica.com/article/comment-medias-rate-virage-numerique)
