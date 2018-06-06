@@ -207,3 +207,13 @@ Unit tests are written only after some production code (e.g., the code necessary
 [About "Mocking is a code smell." - Vasyl Boroviak - Comment from post above with great value](https://medium.com/@koresar/about-mocking-is-a-code-smell-a8c0720e04b3)
 
 [How much could software errors be costing your company? - raygun.com/blog - 20170322](https://raygun.com/blog/cost-of-software-errors/)
+
+[The difference between TDD and Test First Development - www.stefanhendriks.com - 20120331](http://www.stefanhendriks.com/2012/03/31/the-difference-between-tdd-and-test-first-development/)
+
+[Don't mock what you don't own, Only mock types that you own - Juan Flores - no date](https://tech.findmypast.com/dont-mock-what-you-dont-own/)
+
+[TDD n’est pas ce que tu crois. - medium.com/@michaelazerhad](https://medium.com/@michaelazerhad/tdd-nest-pas-ce-que-tu-crois-6b8390cb40c9)
+
+## videos
+
+[cleancoders.com/videos](https://cleancoders.com/videos/clean-code/advanced-tdd) payantes
