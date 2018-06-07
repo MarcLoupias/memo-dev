@@ -6,6 +6,58 @@
 
 [BarCamp "La Blockchain pour les développeurs" : PaloIT](https://www.youtube.com/watch?v=6hmQT8H-JJk) (bof bof)
 
+[Why Blockchain is Hard - medium.com/@jimmysong - 20180514](https://medium.com/@jimmysong/why-blockchain-is-hard-60416ea4c5c)
+
+**What is a blockchain?**
+
+> Many companies use the word “blockchain” to mean some sort of magical device by which all their data will never be wrong.
+> 
+> So what is a blockchain? Technically speaking, a blockchain is a linked list of blocks and a block is a group of ordered transactions.
+> 
+> The main thing distinguishing a blockchain from a normal database is that there are specific rules about how to put data into the database. That is, it cannot conflict with some other data that’s already in the database (consistent), it’s append-only (immutable), and the data itself is locked to an owner (ownable), it’s replicable and available. Finally, everyone agrees on what the state of the things in the database are (canonical) without a central party (decentralized).
+> 
+> Decentralization implies there is no single point of failure. Immutable audit trail. 
+> 
+> This benefit come at a great cost.
+
+**The Cost of Blockchains**
+
+> *Development is stricter and slower*
+> 
+> A small bug could corrupt the entire database or cause some databases to be different than other ones. Of course, a corrupted or split database no longer has any consistency guarantees.
+> 
+> You need consensus, or the agreement of all players in the system, in order to change the database.
+> 
+> *Incentive structures are difficult to design*
+> 
+> *Maintenance is very costly*
+> 
+> The costs of maintaining a blockchain are orders of magnitude higher and the cost needs to be justified by utility. 
+> 
+> *Users are sovereign*
+> 
+> If the user is “misbehaving”. There’s no way to kick out the user that’s spamming your blockchain with frivolous data or has figured out a way to profit in some fashion that causes other users lots of inconvenience.
+> 
+> *All upgrades are voluntary*
+> 
+> *Scaling is really hard*
+
+**Centralization is a lot easier**
+
+> First, a lot of these industries that are being sold on blockchain are really overdue for IT infrastructure upgrades
+> 
+> Second, blockchain is a way to look like you’re on the leading edge of technology.
+> 
+> Third, people really don’t like government control of certain industries and want a different adjudication mechanism than the legal framework
+> 
+> The result is a lot of people that are hyped up on the promises without actually understanding the abilities or costs.
+
+**So what is blockchain good for?**
+
+> We’ve already established that a blockchain is very expensive relative to centralized databases. So the only reason you should be using a blockchain is to decentralize. That is, remove the single point of failure or control.
+
+> The one exception we’ve found is money. Unlike most industrial use cases, money is better if it doesn’t change. Immutability and difficulty in changing the rules is a positive for money and not a detriment. This is why blockchain is the right tool for the job when it comes to Bitcoin.
+
 [Public key infrastructure (PKI) will soon run on blockchain technology : nexusgroup.com 20170322](https://www.nexusgroup.com/blog/public-key-infrastructure-pki-will-soon-run-blockchain-technology/)
 
 [Cécile Monteil - La Blockchain : un jeu d'enfant, Finance-Fiction , Popfinance](https://www.youtube.com/watch?v=cL1PWRaZq4g) (bof bof)
