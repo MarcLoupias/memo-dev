@@ -16,6 +16,12 @@ He is not happy with some design choices he mades on node.
 
 He wants to fix the node issues especially the securities issues.
 
+**"philosophical" source**
+
+The idea of rewritting all node could be explained by his text : [I hate almost all software. - tinyclouds.org - Ryan Dahl "blog" - 2011](http://tinyclouds.org/rant.html)
+
+> There will come a point where the accumulated complexity of our existing systems is greater than the complexity of creating a new one. When that happens all of this shit will be trashed.
+
 ## the 10 things he regrets about Node.js
 
 - Not sticking with Promises
