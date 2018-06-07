@@ -74,6 +74,8 @@
 
 > De par la nature de la communauté, on apprend encore beaucoup sur le tas, en s’informant en ligne.
 
+[La blockchain : une révolution technologique selon le Président chinois Xi Jinping, Pékin veut utiliser la technologie comme moteur de développement - www.developpez.com - 20180606](https://www.developpez.com/actu/207814/La-blockchain-une-revolution-technologique-selon-le-President-chinois-Xi-Jinping-Pekin-veut-utiliser-la-technologie-comme-moteur-de-developpement/)
+
 ## questions
 
 A priori les certificats utilisés dans une blockchain sont autosignés, comment gérer la révocation des certificats ?
