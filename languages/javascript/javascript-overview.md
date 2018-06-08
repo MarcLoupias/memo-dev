@@ -135,6 +135,8 @@ Just In Time. An engine like V8 compile JavaScript code into machine code on the
 
 [So, what’s new in ES2020? : Christophe Porteneuve - Confoo Montréal 2018](https://github.com/tdd/confoo2018-es2020)
 
+[Paris Web 2017 - Alors, qu'y a-t-il dans ES2020 ? - Christophe Porteneuve](https://youtu.be/iN7b312ZDU4?t=4134)
+
 ## Learn
 
 [Top JavaScript Frameworks & Topics to Learn in 2017 : Eric Elliot 20161210](https://medium.com/javascript-scene/top-javascript-frameworks-topics-to-learn-in-2017-700a397b711)
