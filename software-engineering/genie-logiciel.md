@@ -308,3 +308,9 @@ Présentation Devoxx2016 sur le passage du code legacy au continuous delivery à
 [Pérennisez votre métier avec l’architecture hexagonale ! - blog.xebia.fr - 20160316](http://blog.xebia.fr/2016/03/16/perennisez-votre-metier-avec-larchitecture-hexagonale/)
 
 [Robert C Martin - Clean Architecture and Design - www.youtube.com - 2013](https://www.youtube.com/watch?v=Nsjsiz2A9mg)
+
+## divers
+
+[The worst mistake of computer science - www.lucidchart.com/techblog - 20150831](https://www.lucidchart.com/techblog/2015/08/31/the-worst-mistake-of-computer-science/)
+
+> In commemoration of the 50th anniversary of Sir Hoare’s null, this article explains what null is, why it is so terrible, and how to avoid it.
