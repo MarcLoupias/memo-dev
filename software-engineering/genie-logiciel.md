@@ -265,6 +265,7 @@ Martin Fowler deal with this question in [his feature toggle article](https://ma
   - founder of Express, Koa, Commander, ...
 - [http://tinyclouds.org/](Ryan Dahl)
   - founder of Node.js, denom, ...
+  - [Interview with Ryan Dahl, Creator of Node.js - www.mappingthejourney.com - 20170831](https://www.mappingthejourney.com/single-post/2017/08/31/episode-8-interview-with-ryan-dahl-creator-of-nodejs/)
 
 - [Top 10 Programming Books Every Software Developer Should Read](https://www.youtube.com/watch?v=UX4YijQ3zhc)
 
