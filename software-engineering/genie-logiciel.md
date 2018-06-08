@@ -263,6 +263,8 @@ Martin Fowler deal with this question in [his feature toggle article](https://ma
 - Rich Hickey [Clojure](https://clojure.org/) author, [The problems of programming](https://pbs.twimg.com/media/DL-3OUcUMAAaXID.jpg)
 - [TJ Holowaychuk](https://github.com/tj)
   - founder of Express, Koa, Commander, ...
+- [http://tinyclouds.org/](Ryan Dahl)
+  - founder of Node.js, denom, ...
 
 - [Top 10 Programming Books Every Software Developer Should Read](https://www.youtube.com/watch?v=UX4YijQ3zhc)
 
