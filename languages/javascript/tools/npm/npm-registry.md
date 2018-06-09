@@ -8,6 +8,12 @@
 
 > need the package name in the path : `https://registry.npmjs.org/<package-name>/`
 
+## cdn
+
+[unpkg](https://unpkg.com/#/) ([unpkg - github.com](https://github.com/unpkg))
+
+> The CDN for everything on npm
+
 ## articles
 
 - [why-do-we-need-the-npm-registry : blog.javascripting.com](http://blog.javascripting.com/2015/06/11/so-remind-me-again-why-do-we-need-the-npm-registry/)
