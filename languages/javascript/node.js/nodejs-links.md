@@ -19,6 +19,11 @@
 
 [NodeJS 5 bonnes raisons pour lesquelles vous devriez y jeter un oeil (A. Victoor, T. Abaléa) - Devoxx 2018](https://www.youtube.com/watch?v=nFs_opDO7jM&list=PLTbQvx84FrARa9pUtZYK7t_UfyGMCPOBn&index=83)
 
+> - explication sympa sur les workers le module `child_process` et le module `cluster`
+> - explication usage `cluster` pour éviter les interruptions de service lors des déploiements
+> - chrome dev tools sur `chrome://inspect/#devices`
+> - leurs 5 bonnes raisons : simplicité, légèreté, JS moderne, écosystème, pourquoi pas
+
 [Node.js partout - Cristophe Porteneuve - WEB2DAY 2017](https://www.youtube.com/watch?v=IwpBluLjynI)
 
 > seule stack présente dans l'intégralité des uses cases connus (du serveur web à l'IoT)
