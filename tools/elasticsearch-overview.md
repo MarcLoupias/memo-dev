@@ -10,6 +10,14 @@ Logstash: Collect, Enrich, and Transport
 
 Kibana: Explore, Visualize, and Share
 
+## exemple
+
+[Mise en place d'une plateforme centralisée de gestion des logs avec elastic (D. Pilato, E. Demey)](https://www.youtube.com/watch?v=0J5Xt5CCQhQ&index=53&list=PLTbQvx84FrARa9pUtZYK7t_UfyGMCPOBn)
+
+> Le code est sur [Gillespie59/devoxx-universite-elastic](https://github.com/Gillespie59/devoxx-universite-elastic) sur github.
+> 
+> Stack front angular + back node.js, le tout dockérisé. Comment avoir des logs et des stats avec une stack ELK.
+
 ## install
 
 ### elastic
