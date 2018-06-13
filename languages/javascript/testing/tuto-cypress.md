@@ -54,6 +54,8 @@ mettre en évidence ces problèmes par l'exemple (sujet du tutu) plutôt que l'a
 
 - décliner les solutions basées sur selenium / webdriver
     - protractor, cuncumber, nightwatch
+    
+check [`browser.wait`](https://www.blackpepper.co.uk/what-we-think/blog/if-youre-using-browser-sleep-in-your-cucumber-protractor-selenium-tests-youre-doing-it-wrong).
 
 ## protractor vs cypress
 
