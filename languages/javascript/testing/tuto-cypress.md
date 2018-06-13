@@ -55,7 +55,7 @@ mettre en évidence ces problèmes par l'exemple (sujet du tutu) plutôt que l'a
 - décliner les solutions basées sur selenium / webdriver
     - protractor, cuncumber, nightwatch
     
-check [`browser.wait`](https://www.blackpepper.co.uk/what-we-think/blog/if-youre-using-browser-sleep-in-your-cucumber-protractor-selenium-tests-youre-doing-it-wrong).
+check [`browser.wait`](https://www.blackpepper.co.uk/what-we-think/blog/if-youre-using-browser-sleep-in-your-cucumber-protractor-selenium-tests-youre-doing-it-wrong). Permet de faire à peu près ce que fait cypress out of the box mais [en devant coder tout](https://stackoverflow.com/questions/30205235/protractor-waiting-for-element-to-be-in-dom?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa).
 
 ## protractor vs cypress
 
