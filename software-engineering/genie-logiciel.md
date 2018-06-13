@@ -310,6 +310,8 @@ Présentation Devoxx2016 sur le passage du code legacy au continuous delivery à
 
 [Robert C Martin - Clean Architecture and Design - www.youtube.com - 2013](https://www.youtube.com/watch?v=Nsjsiz2A9mg)
 
+[Ports-And-Adapters / Hexagonal Architecture - www.dossier-andreas.net](http://www.dossier-andreas.net/software_architecture/ports_and_adapters.html)
+
 ## divers
 
 [The worst mistake of computer science - www.lucidchart.com/techblog - 20150831](https://www.lucidchart.com/techblog/2015/08/31/the-worst-mistake-of-computer-science/)
