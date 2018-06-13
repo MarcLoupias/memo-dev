@@ -304,6 +304,32 @@ Présentation Devoxx2016 sur le passage du code legacy au continuous delivery à
 
 ## architecture
 
+[Architectural patterns - www.dossier-andreas.net](http://www.dossier-andreas.net/software_architecture/)
+
+> - Model-View-Controller
+> - Presentation-Abstraction-Control
+> - Pipe-And-Filter
+> - Layered Systems
+> - Microkernel
+> - Client-Server and N-Tier Systems
+> - Repository
+> - Blackboard
+> - Finite State Machine
+> - Process Control
+> - Multi Agent System
+> - Broker a.k.a. Service Oriented Architecture
+> - Master-Slave
+> - Interpreter a.k.a. Virtual Machine
+> - Hub-And-Spoke
+> - Message Bus a.k.a. Event Bus
+> - Structural Model
+> - Ports-And-Adapters a.k.a. Hexagonal Architecture
+> - Peer-to-peer
+> - Event sourcing
+> - CQRS 
+
+### clean architecture
+
 [La Clean Architecture : catalyseur de productivité - medium.com/@mickalwegerich - 20180507](https://medium.com/@mickalwegerich/la-clean-architecture-catalyseur-de-productivit%C3%A9-68ff61aa38ff)
 
 [Pérennisez votre métier avec l’architecture hexagonale ! - blog.xebia.fr - 20160316](http://blog.xebia.fr/2016/03/16/perennisez-votre-metier-avec-larchitecture-hexagonale/)
