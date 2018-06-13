@@ -10,6 +10,8 @@
 
 > `this` keyword in JavaScript will burn you one day. Then it will burn you again and again and again. If Dante Alighieri were alive today, he would put writing object-oriented JavaScript among one of the first levels of Hell for sure.
 
+['this' in TypeScript - TypeScript/wiki](https://github.com/Microsoft/TypeScript/wiki/%27this%27-in-TypeScript)
+
 ## code demo
 
 Every new `function` defined its own `this` value :
