@@ -409,6 +409,23 @@ Extensible à tout sujet technique.
 
 [Comment nous avons lancé notre startup sans développeur : business.lesechos.fr 20170917](https://business.lesechos.fr/entrepreneurs/communaute/start-9464-comment-nous-avons-lance-notre-startup-sans-developpeur-313198.php#xtor=CS1-36)
 
+[100 outils pour lancer sa startup sans développeur ni graphiste (et presque sans argent) - www.maddyness.com - 20180404](https://www.maddyness.com/2018/04/04/100-outils-pour-lancer-sa-startup-sans-developpeur-ni-graphiste-et-presque-sans-argent/)
+
+> référentiel de liens sur :
+> - Le graphisme (design, photos, vidéos...)
+> - Le prototypage
+> - Le site de présentation et la landing page
+> - Un site e-commerce
+> - Les outils social media (contenus, reach, automatisation...)
+> - L'emailing
+> - La gestion de projet (communiquer, brainstormer, organiser)
+> - La vente
+> - Les applications mobiles
+> - L'administratif, le financier, le réglementaire
+> - L'analytique et le marketing comportemental
+> - Le growth hacking (automatisation, scrapping)
+> - Les RP et les médias
+
 ## teaching
 
 [Separating Programming Sheep from Non-Programming Goats : 20060714](https://blog.codinghorror.com/separating-programming-sheep-from-non-programming-goats/)
