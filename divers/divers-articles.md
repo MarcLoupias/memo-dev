@@ -262,6 +262,32 @@ L'article [L113-9](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle
 > - ignorance du terrain (ignorance des réalités, prises de décisions sans rapport avec les capacités réelles du terrain, etc ...)
 > - ...
 
+### aristotle project (google)
+
+[Teams. The Most Successful Ones Shared These 5 Traits - www.inc.com/michael-schneider - 20170719](https://www.inc.com/michael-schneider/google-thought-they-knew-how-to-create-the-perfect.html)
+
+> Google made the ancient Greek philosopher Aristotle proud by proving, **"The whole can be greater than the sum of its parts."**
+
+[Google Project Aristotle - 5 Keys to Team Success - searchitoperations.techtarget.com/blog - 20160914](https://searchitoperations.techtarget.com/blog/Modern-Operations-Apps-Stacks/Google-Project-Aristotle-5-Keys-to-Team-Success)
+
+> - Data was gathered and assessed from 180 Google teams.
+> - Two-year long effort started in 2012.
+> - No patterns detected to correlate why some succeeded and others didn’t.
+> - Teams with similar makeup or even some of the same members demonstrated varying results.
+> - Metrics like personal friendships, strong management, team structure, personal interests, gender, longevity provided no clear insight.
+> - Group norms were found to be key to teams’ success. Group norms are unwritten and often unspoken rules guiding the behavior of the teams.
+> - Final determination was that a group of superior individuals was less important than the collective ability of the team.
+> 
+> **Five Keys to Success**
+> 
+> - Psychological safety
+> - Dependability : Dependability means that they can count on each other to do their job.
+> - Structure and clarity : Clear direction and goals is vital.
+> - Meaning of work : the job they were performing was also a key element in the success of the team
+> - Impact of work : Team members want to feel that they are not simply wasting their time when doing things.
+
+[Scrum Life #33 - Quand personne ne parle en Rétro - La sûreté psychologique - JP Lambert](https://www.youtube.com/watch?v=tgkauosoMvE&feature=youtu.be)
+
 ## hommes politiques
 
 [JM JANCOVICI - La connaissance des politiques est nulle en matière énergétique](https://www.youtube.com/watch?v=mm7jghN51gU)
