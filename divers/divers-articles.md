@@ -362,6 +362,22 @@ Extensible à tout sujet technique.
 
 > Outsourcing javascript in Pakistan, India or Philippine : between 24K$ to 90K$ depending on experience
 
+[How Much Do Freelance Developers Cost Around the World? (2017) - 20170707](https://www.codementor.io/blog/how-much-do-freelance-developers-cost-around-the-world-2626eu0rzy)
+
+> We surveyed 5,302 freelance developers from around the world
+> 
+> The least expensive regions showed average rates about 30% - 40% less than the most expensive regions. 
+> 
+> USA is 70$/h, north africa is 41$/h while western european is 63$/h
+>
+> The 10 least expensive countries have, on average 28% lower hourly rates than the 10 most expensive.
+>
+> Pakistan is 43$/h, Australia is 74$/h while France is 67$/h
+>
+> The ten least expensive cities have, on average 54% lower hourly rates than the ten most expensive.
+>
+> Lahore is 29$/h while Munich is 91$/h
+
 ## stacks utilisées
 
 [Étude sur l’évolution des technologies backend par année de création des entreprises : hired.com](https://hired.com/blog/france/technologies-backend-les-plus-en-vogue/)
