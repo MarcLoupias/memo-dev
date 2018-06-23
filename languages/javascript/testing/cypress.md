@@ -110,6 +110,10 @@ See [core concepts documentation > Chains of Commands > Commands Are Asynchronou
 
 > awesome context, excellent slides
 
+[Automated Testing for the Modern Web - Jennifer Jeshane - 20180509](https://speakerdeck.com/jennifershehane/automated-testing-for-the-modern-web)
+
+> good e2e history prez
+
 ## videos
 
 [Brian Mann, Testing the way it should be : ReactiveConf 2016](https://www.youtube.com/watch?v=lK_ihqnQQEM)
