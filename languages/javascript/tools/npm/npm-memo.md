@@ -141,6 +141,30 @@ npm config list -ls
 
 [Introducing hooks: get notifications of npm registry and package changes as they happen - 20160601](https://blog.npmjs.org/post/145260155635/introducing-hooks-get-notifications-of-npm)
 
+### `npx`
+
+[npx on www.npmjs.com/package](https://www.npmjs.com/package/npx)
+
+> Executes `<command>` either from a local `node_modules/.bin`, or from a central cache, installing any packages needed in order for `<command>` to run.
+> 
+> By default, npx will check whether <command> exists in $PATH, or in the local project binaries, and execute that. If <command> is not found, it will be installed prior to execution.
+> 
+> Unless a `--package` option is specified, `npx` will try to guess the name of the binary to invoke depending on the specifier provided. All package specifiers understood by `npm` may be used with `npx`, including git specifiers, remote tarballs, local directories, or scoped packages.
+> 
+> If a full specifier is included, or if `--package` is used, npx will always use a freshly-installed, temporary version of the package. This can also be forced with the `--ignore-existing` flag.
+
+[npx added](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b), used to replace `npm run-script` command.
+
+[yarn equivalent of npx ? - yarnpkg/yarn on github - 20170715](https://github.com/yarnpkg/yarn/issues/3937#issuecomment-315842189)
+
+> zkat (npx maintainer) comment 
+>
+> I'm working on library-ifying npx. It's not a huge task to grab the existing npx code and just replace the npm-related guts with the yarn-equivalent commands.
+> 
+> I won't add that directly to npx itself, since it's *meant* to be agnostic: npx performs no operations which clash with people using other package managers. It doesn't even require npm to be on the system, so you can `npm rm -g npm` and npx will work just fine. So you could say npx *is* `ypx`, unless you feel really strongly about cache-sharing, which is a pretty thing.
+> 
+> (in re inspiration: npx is primarily inspired by this long-standing feature request: [npm/npm#6053](https://github.com/npm/npm/issues/6053). Most of its functionality centers around fulfilling *this* need. The auto-install feature *was* added post-yarn-create, and is definitely intended to be an actual generalized solution to that particular thing -- but it does *way more* than that)
+
 ### testing packages locally
 
 [The magic behind npm link](https://medium.com/trisfera/the-magic-behind-npm-link-d94dcb3a81af)
