@@ -10,6 +10,10 @@
 
 [Internet des objets : l'ISO rejette les algorithmes de chiffrement de la NSA - www.developpez.com - 20180518](https://www.developpez.com/actu/204053/Internet-des-objets-l-ISO-rejette-les-algorithmes-de-chiffrement-de-la-NSA-par-crainte-qu-ils-contiennent-des-portes-derobees/)
 
+[CryptOLN - Colloque Chiffrement - Zythom (informaticien, expert judiciare) - 2016](https://www.youtube.com/watch?v=KdfQcpIbCZY)
+
+> n'est pas arrivé à décrypter des données qu'une seule fois. Pense qu'il n'y a nul besoin de portes dérobées pour obtenir les données via un moyen détourné
+
 ## Législation
 
 [débat chiffrement & légalité](https://www.developpez.net/forums/d1678850-3/club-professionnels-informatique/actualites/politique/chiffrement-l-equipe-marche-marche-arriere-declarations-d-emmanuel-macron/)
