@@ -479,6 +479,14 @@ Extensible à tout sujet technique.
 
 [Aux origines de l'intelligence artificielle - www.franceculture.fr - 20180331](https://www.franceculture.fr/numerique/aux-origines-de-lintelligence-artificielle)
 
+[Machine Learning: The High Interest Credit Card of Technical Debt - 2014](https://ai.google/research/pubs/pub43146)
+
+> Machine learning offers a fantastically powerful toolkit for building complex systems quickly. This paper argues that it is dangerous to think of these quick wins as coming for free. Using the framework of technical debt, we note that it is remarkably easy to incur massive ongoing maintenance costs at the system level when applying machine learning. The goal of this paper is highlight several machine learning specific risk factors and design patterns to be avoided or refactored where possible. These include boundary erosion, entanglement, hidden feedback loops, undeclared consumers, data dependencies, changes in the external world, and a variety of system-level anti-patterns.
+
+Took from [Machine learning and tech debt: A publication from Google on www.funfunforum.com](https://www.funfunforum.com/t/machine-learning-and-tech-debt-a-publication-from-google/5221) :
+
+> Another worry for real-world systems lies in hidden feedback loops. Systems that learn from world behavior are clearly intended to be part of a feedback loop. For example, a system for predicting the click through rate (CTR) of news headlines on a website likely relies on user clicks as training labels, which in turn depend on previous predictions from the model. This leads to issues in analyzing system performance, but these are the obvious kinds of statistical challenges that machine learning researchers may find natural to investigate [2].
+
 ## Economie
 
 **Le graphique de l'éléphant (Branko Milanovic)**
