@@ -157,6 +157,13 @@ Exemple Google (janvier 2015) :
 
 ### docker, kubernetes
 
+[The Advantages of Using Kubernetes and Docker Together - 20180507](https://cmelendeztech.com/posts/2018/05/kubernetes-docker-deployments.html)
+
+> - Everything Starts With Your Local Environment
+> - Use Docker to Pack and Ship Your App
+> - Use Kubernetes to Deploy and Scale Your App
+> - You’ll Deliver Quickly, Consistently, and Predictably
+
 [Docker, Kubernetes et Istio, c'est utile pour mon monolithe? (D. Gageot) - DevoxxFR 2018](https://www.youtube.com/watch?v=Z_sNyT0hcVw)
 
 > Pour développer et mettre en production une architecture à base de micro-services, Docker, Kubernetes et Istio s'imposent. Docker nous donne l'isolation des services, Kubernetes permet de les distribuer sur un cluster et Istio apporte de l'intelligence au réseau.
