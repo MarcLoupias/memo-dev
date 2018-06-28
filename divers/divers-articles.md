@@ -241,6 +241,12 @@ L'article [L113-9](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle
 > - Etape 5 Organiser
 > - Etape 6 Documenter
 
+## intrusion
+
+[Affaire Bluetouff - thinkerview 20180627](https://youtu.be/d4MiF4AWtsw?t=1537)
+
+> télécharger des documents depuis un site non-sécurisé mais qui devrait l'être, jurisprudence
+
 ### articles
 
 [RGPD : la version européenne de USA Today pèse 500 Ko contre 5,2 Mo pour la version originale, D'après les mesures d'un webmaster - www.developpez.com - 20180523](https://www.developpez.com/actu/206032/RGPD-la-version-europeenne-de-USA-Today-pese-500-Ko-contre-5-2-Mo-pour-la-version-originale-d-apres-les-mesures-d-un-webmaster/)
