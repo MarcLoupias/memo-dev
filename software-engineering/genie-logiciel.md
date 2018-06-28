@@ -155,6 +155,16 @@ Exemple Google (janvier 2015) :
 
 [Semantic Versioning with Continuous Deployment by Mark Seemann : blog.ploeh.dk](http://blog.ploeh.dk/2013/12/10/semantic-versioning-with-continuous-deployment/)
 
+## containers and containers orchestrators
+
+[Characterizing and Contrasting Container Orchestrators - devops.com - 20170920](https://devops.com/characterizing-and-contrasting-container-orchestrators/)
+
+> super quick evaluation of :
+> - Nomad
+> - Docker Swarm
+> - Kubernetes
+> - Mesos-Marathon
+
 ### docker, kubernetes
 
 [The Advantages of Using Kubernetes and Docker Together - 20180507](https://cmelendeztech.com/posts/2018/05/kubernetes-docker-deployments.html)
