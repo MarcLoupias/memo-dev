@@ -106,6 +106,14 @@ Unit tests are written only after some production code (e.g., the code necessary
 > - Red, Green, and ALWAYS Refactor?
 > - Everything Needs Unit Tests
 
+[The Outrageous Cost of Skipping TDD & Code Reviews : Eric Elliott 20161214](https://medium.com/javascript-scene/the-outrageous-cost-of-skipping-tdd-code-reviews-57887064c412)
+
+> - It’s common for initial project build-outs to take up to 30% longer with TDD ([src](https://www.computer.org/csdl/mags/so/2007/03/s3024.pdf))
+> - TDD reduces production bug density 40% — 80% ([src](https://www.computer.org/csdl/mags/so/2007/03/s3024.pdf))
+> - fixing a production bug costs 100x more than fixing a bug at design time, and over 15x more than fixing a bug at implementation time ([src](https://www.researchgate.net/publication/255965523_Integrating_Software_Assurance_into_the_Software_Development_Life_Cycle_SDLC))
+> - Code reviews have similar effects. According to a 1988 study, each hour spent in code review saves 33 hours in maintenance ([src](http://www.ifsq.org/finding-ia-2.html)).
+> - the cost of fixing bugs that get released in production isn’t just about the cost of fixing the production bug. Interruptions increase the cost of current development work, and introduce more bugs that will eventually need fixing, too
+
 [JavaScript Testing: Unit vs Functional vs Integration Tests : Eric Elliott 20160425](https://www.sitepoint.com/javascript-testing-unit-functional-integration/)
 
 > - **Unit tests** ensure that individual components of the app work as expected. Assertions test the component API.
