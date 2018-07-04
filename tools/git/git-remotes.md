@@ -10,6 +10,7 @@ git remote -v # Liste les dépôts distants et les chemins associés
 git remote add <alias> <chemin/url> # Ajoute un nouveau dépôt distant
 git remote rm <alias> # Supprimé un dépôt distant
 git remote rename <old> <new>
+git remote set-url <alias> <url> # change les fetch et push url du remote
 ```
 
 ## Showing Your Remotes
