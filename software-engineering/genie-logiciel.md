@@ -290,7 +290,7 @@ Martin Fowler deal with this question in [his feature toggle article](https://ma
 - Rich Hickey [Clojure](https://clojure.org/) author, [The problems of programming](https://pbs.twimg.com/media/DL-3OUcUMAAaXID.jpg)
 - [TJ Holowaychuk](https://github.com/tj)
   - founder of Express, Koa, Commander, ...
-- [http://tinyclouds.org/](Ryan Dahl)
+- [http://tinyclouds.org](Ryan Dahl)
   - founder of Node.js, denom, ...
   - [Interview with Ryan Dahl, Creator of Node.js - www.mappingthejourney.com - 20170831](https://www.mappingthejourney.com/single-post/2017/08/31/episode-8-interview-with-ryan-dahl-creator-of-nodejs/)
 
@@ -300,6 +300,13 @@ Martin Fowler deal with this question in [his feature toggle article](https://ma
 - [Software crisis](https://en.wikipedia.org/wiki/Software_crisis)
 Fin des années 70, les ordinateurs sont montés en puissance, donc permettent le développement de programmes plus puissants et plus complexe. Dégradation massive de la qualité du à la complexité. C'est le début des recherches en génie logiciel pour définir les bonnes pratiques du développement logiciel (gestion qualité, méthodes, invention programmation procédurale puis objet).
 - [bulle internet](https://en.wikipedia.org/wiki/Dot-com_bubble) Fin 90 début 2000 le crash boursier entraine de nombreux licenciements de développeurs suite aux réductions du couts et aux sociétés déposants le bilan. Les développeurs ont alors tendance à se transformer en oui:oui pour éviter de perdre leur emploi, entrainant une dégradation massive de la qualité des productions. Ce phénomène associé à l'arrivée de nombreux jeunes développeurs sur le marché du travail quelques années après sont les deux phénomènes responsables de l'immaturité de l'industrie du développement logiciel dénoncée par Robert C. Martin (cf Martin pour une explication plus détaillée dans [The Future of Programming](https://www.youtube.com/watch?v=ecIWPzGEbFc))
+- [Jeff Bezos API Mandate explained by Google employee](https://plus.google.com/+RipRowan/posts/eVeouesvaVX)
+> 1) All teams will henceforth expose their data and functionality through service interfaces.
+> 2) Teams must communicate with each other through these interfaces.
+> 3) There will be no other form of interprocess communication allowed:  no direct linking, no direct reads of another team's data store, no shared-memory model, no back-doors whatsoever.  The only communication allowed is via service interface calls over the network.
+> 4) It doesn't matter what technology they use.  HTTP, Corba, Pubsub, custom protocols -- doesn't matter.  Bezos doesn't care.
+> 5) All service interfaces, without exception, must be designed from the ground up to be externalizable.  That is to say, the team must plan and design to be able to expose the interface to developers in the outside world.  No exceptions.
+> 6) Anyone who doesn't do this will be fired.
 
 ## courants
 
