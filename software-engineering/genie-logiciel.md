@@ -155,40 +155,6 @@ Exemple Google (janvier 2015) :
 
 [Semantic Versioning with Continuous Deployment by Mark Seemann : blog.ploeh.dk](http://blog.ploeh.dk/2013/12/10/semantic-versioning-with-continuous-deployment/)
 
-## containers and containers orchestrators
-
-[Characterizing and Contrasting Container Orchestrators - devops.com - 20170920](https://devops.com/characterizing-and-contrasting-container-orchestrators/)
-
-> super quick evaluation of :
-> - Nomad
-> - Docker Swarm
-> - Kubernetes
-> - Mesos-Marathon
-
-### docker, kubernetes
-
-[The Advantages of Using Kubernetes and Docker Together - 20180507](https://cmelendeztech.com/posts/2018/05/kubernetes-docker-deployments.html)
-
-> - Everything Starts With Your Local Environment
-> - Use Docker to Pack and Ship Your App
-> - Use Kubernetes to Deploy and Scale Your App
-> - You’ll Deliver Quickly, Consistently, and Predictably
-
-[Docker, Kubernetes et Istio, c'est utile pour mon monolithe? (D. Gageot) - DevoxxFR 2018](https://www.youtube.com/watch?v=Z_sNyT0hcVw)
-
-> Pour développer et mettre en production une architecture à base de micro-services, Docker, Kubernetes et Istio s'imposent. Docker nous donne l'isolation des services, Kubernetes permet de les distribuer sur un cluster et Istio apporte de l'intelligence au réseau.
->
-> Mais voilà, comme 80% des développeurs, c'est une application monolithique et paléolithique que je dois moderniser. Comment puis-je tirer tous les bénéfices de ces outils ? Puis-je le faire sans toucher une ligne de code de mon application ?
->
-> Simplification des montées de version, Déploiement sur le Cloud, Sécurisation des flux, Terminaison SSL, Blue/Green deployments, A/B Testing, Monitoring des Apis... Autant de cas concrets que l'on mettra en oeuvre sans toucher au monolithe !!
-
-### links
-
-- [post linkedin : Développeur tu mets  combien de temps pour pousser ton code en prod ? : Denis Barthélemy R&D director @ One2Team](https://www.linkedin.com/feed/update/urn:li:activity:6324113425068814336)
-
-> - LesFurets.com @Dimitri Baeli : J+1 (h+1 hotfix) (500K LoC, codebase age 10 ans, 25 devs)
-> - BlaBlaCar @Nicolas Tricot : 45 mins entre git push et deploy prod
-
 ### feature flipping
 
 [feature-flipping : blog.octo.com](http://blog.octo.com/feature-flipping/)

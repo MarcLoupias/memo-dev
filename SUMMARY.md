@@ -20,6 +20,14 @@
 * [data - files formats - XML](data/files-formats/xml.md)
 * [data - files formats - YAML](data/files-formats/yaml.md)
 
+## DevOps
+
+* [devops - overview](devops/devops-overview.md)
+* [devops - docker](devops/docker.md)
+* [devops - PaaS - heroku - deploy AngularJS webapp](devops/paas/heroku/heroku-angularjs.md)
+* [devops - PaaS - heroku - helper](devops/paas/heroku/heroku-helper.md)
+* [devops - PaaS - heroku - sendgrid mailer](devops/paas/heroku/heroku-sendgrid-mailer.md)
+
 ## Languages - java
 
 * [java - jpa - infos](languages/java/JPA/java-jpa-infos.md)
@@ -174,13 +182,9 @@
 * [GIT - workflow](tools/git/git-workflow.md)
 * [gitbook - overview](tools/gitbook/gitbook-intro.md)
 * [gitpitch](tools/gitpitch/gitpitch-intro.md)
-* [heroku - deploy AngularJS webapp](tools/heroku/heroku-angularjs.md)
-* [heroku - helper](tools/heroku/heroku-helper.md)
-* [heroku - sendgrid mailer](tools/heroku/heroku-sendgrid-mailer.md)
 * [IntelliJ](tools/intellij/infos-intellij.md)
 * [Visual Studio Code](tools/visual-studio-code.md)
 * [Diagrams tools](tools/diagrams.md)
-* [docker](tools/docker.md)
 * [Fiddler](tools/fiddler.md)
 * [JWT tools](tools/json-web-token-tools.md)
 * [regex online tools](tools/regex-online-tools.md)
