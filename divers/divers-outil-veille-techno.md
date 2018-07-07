@@ -107,4 +107,22 @@ Surveille les registry pour check les packages déposés.
 
 [Hacker news](https://news.ycombinator.com/news)
 
+## devops
+
 [devops.com](https://devops.com/)
+
+[Accelerate - Nicole Forsgren, Jez Humble and Gene Kim - 20180327](https://itrevolution.com/book/accelerate/)
+
+> Scientific study giving results and methodology about the puppet.com states of Devops from 2014 to 2017 (the books authors contributed to theses studies)
+> 
+> Martin Fowler preface
+
+[The state of devops 2017 - puppet.com](https://puppet.com/blog/2017-state-devops-report-here)
+
+[The state of devops 2016 - puppet.com](https://puppet.com/resources/whitepaper/2016-state-of-devops-report)
+
+[The state of devops 2015 - puppet.com](https://puppet.com/resources/whitepaper/2015-state-devops-report)
+
+[The state of devops 2014 - puppet.com](https://puppet.com/resources/whitepaper/2014-state-devops-report)
+
+[The state of devops 2013 - puppet.com](https://puppet.com/resources/whitepaper/2013-state-devops-report)
