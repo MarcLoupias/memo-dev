@@ -80,6 +80,14 @@ don't know right know how to classify all theses subjects ...
 > The failsafes that they have contain defects or gaps. But on the whole, the safety architecture is a house of cards. 
 > It is possible for a large percentage of the failsafes to be disabled at the same time that the throttle control is lost.
 
+[Alerte pour 37 millions d'infidèles - www.generation-nt.com - 20150720](https://www.generation-nt.com/piratage-hack-site-rencontre-extraconjugale-ashley-madison-the-impact-team-actualite-1917363.html)
+
+> Site de recontre extra conjugale, toute la BDD copiée et publiée sur internet. Le site proposait une feature full delete à 19$ mais en fait l'entreprise n'effaçait rien et se contentait de désactiver le compte.
+
+[Ashley Madison : les femmes étaient des bots - 20160706](https://www.generation-nt.com/ashley-madison-site-rencontre-extraconjugale-bot-piratage-actualite-1930784.html)
+
+> Le site fait peau neuve. L'article rappelle que le piratage a conduit à un suicide, des démissions et des chantages exercés sur des clients du service. L'article explique que le piratage a permis de découvrir que des bots féminins avaient été mis au point pour discuter avec les clients du site xD
+
 ## videos
 
 [La problématique du contrôle des Technologies de l’information : Eric Filiol, Devoxx2015](https://www.youtube.com/watch?v=Vfb_bgGWptg&index=8&list=PLklQqdqnBkPgctKh1xIvF4eFGtmvUvE2b)
