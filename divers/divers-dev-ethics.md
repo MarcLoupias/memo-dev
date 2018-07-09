@@ -88,6 +88,18 @@ don't know right know how to classify all theses subjects ...
 
 > Le site fait peau neuve. L'article rappelle que le piratage a conduit à un suicide, des démissions et des chantages exercés sur des clients du service. L'article explique que le piratage a permis de découvrir que des bots féminins avaient été mis au point pour discuter avec les clients du site xD
 
+### applications sportives
+
+[DGSE, MI6, NSA : une application fitness trahit l’identité de militaires et d’espions - www.frandroid.com - 20180709](http://www.frandroid.com/android/applications/securite-applications/515849_dgse-mi6-nsa-une-application-fitness-trahit-lidentite-de-militaires-et-despions)
+
+> Des journalistes ont pu identifier pas moins de 6 460 utilisateurs de Polar Flow, une application de fitness, alors qu’ils n’avaient pas activé l’option de partage des sessions sportives. Ces 6 460 personnes travaillent à la NSA, à la DGSE, à la Maison Blanche, au MI6, au GRU, au Camp de Guantánamo… Polar a présenté ses excuses et suspend la carte d’activité concernée.
+>
+> [...] révéler les positions mais aussi les identités des personnes travaillant dans des bases militaires, mais aussi dans certains bâtiments des services secrets
+>
+> [...] **il est possible d’accéder à l’historique complet des activités d’un utilisateur simplement en modifiant une URL.**
+
+[Géolocalisation : après l’affaire Strava, l’app de fitness Polar joue les espions - www.numerama.com - 20180709](https://www.numerama.com/tech/393511-geolocalisation-apres-laffaire-strava-lapp-de-fitness-polar-joue-les-espions.html)
+
 ## videos
 
 [La problématique du contrôle des Technologies de l’information : Eric Filiol, Devoxx2015](https://www.youtube.com/watch?v=Vfb_bgGWptg&index=8&list=PLklQqdqnBkPgctKh1xIvF4eFGtmvUvE2b)
