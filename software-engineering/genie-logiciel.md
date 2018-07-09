@@ -338,6 +338,22 @@ Présentation Devoxx2016 sur le passage du code legacy au continuous delivery à
 
 [Ports-And-Adapters / Hexagonal Architecture - www.dossier-andreas.net](http://www.dossier-andreas.net/software_architecture/ports_and_adapters.html)
 
+[Architecture hexagonale pour les nuls (Y. Chéné) - DevoxxFrance 2018](https://www.youtube.com/watch?v=Hi5aDfRe-aE)
+ 
+> a substituer à l'architecture en couche connue de tous
+> 
+> tackling complexity in the heart of software (Eric Evans 2003)
+> 
+> "ports and adapters architecture" ou "Object Structural" ou "Hexagonal Architecture" (cf Alistair Cockburn)
+> 
+> Archi similaires : Clean Architecture, Onion Architecture
+> 
+> Règle 1 : Pas de framework ou de dépendances sur le domaine, on écrit tout en vanilla (on peut avoir éventuellement des dépendances sur des libs générales, par ex en js ça serait lodash)
+> 
+> Règle 2 : Le domaine est le central, c'est l'extérieur qui appelle le domaine. Le domaine n'appelle jamais l'extérieur. Il ne doit donc jamais y avoir de code d'infra dans le domaine, en d'autres termes toutes les I/O sont à l'extérieur.
+> 
+> le reste de la prez il commente un exemple avec Spring Boot
+
 ## divers
 
 [The worst mistake of computer science - www.lucidchart.com/techblog - 20150831](https://www.lucidchart.com/techblog/2015/08/31/the-worst-mistake-of-computer-science/)
