@@ -84,7 +84,7 @@ don't know right know how to classify all theses subjects ...
 
 > Site de recontre extra conjugale, toute la BDD copiée et publiée sur internet. Le site proposait une feature full delete à 19$ mais en fait l'entreprise n'effaçait rien et se contentait de désactiver le compte.
 
-[Ashley Madison : les femmes étaient des bots - 20160706](https://www.generation-nt.com/ashley-madison-site-rencontre-extraconjugale-bot-piratage-actualite-1930784.html)
+[Ashley Madison : les femmes étaient des bots - www.generation-nt.com - 20160706](https://www.generation-nt.com/ashley-madison-site-rencontre-extraconjugale-bot-piratage-actualite-1930784.html)
 
 > Le site fait peau neuve. L'article rappelle que le piratage a conduit à un suicide, des démissions et des chantages exercés sur des clients du service. L'article explique que le piratage a permis de découvrir que des bots féminins avaient été mis au point pour discuter avec les clients du site xD
 
