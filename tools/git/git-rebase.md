@@ -137,3 +137,31 @@ The rebase will stop at each commit. You will be able to use :
 then the classical
 
 `git rebase --continue`
+
+---
+
+#### rebase to split a commit into several commits
+
+from [Emmanuel Bernard blog - Split a commit in two with Git - 20140414](https://emmanuelbernard.com/blog/2014/04/14/split-a-commit-in-two-with-git/)
+
+L'idée est donc de créer un ou plusieurs commits pendant l'édition du commit à split lors du rebase intéractif. En bout de ligne cela donne le commit initial dont on sort les éléments que l'on veut mettre dans un nouveau commit. Le commit initial est recréé en premier et le résultat du split est créé ensuite.
+
+`git rebase -i <oldsha1>` ou `git rebase -i HEAD~3` pour agir sur un ou plusieurs des 3 derniers commits.
+
+Lors du rebase intéractif, marquer le commit à split à `edit`.
+
+`git reset HEAD^` a pour effet de sortir toutes les modifications du commit de l'index.
+
+On peut aussi utiliser `git reset --soft HEAD^`, les modifications restent alors indexées, et il est alors possible de ne sortir de l'index que les fichiers voulus via `git reset HEAD <file>`
+
+Reste ensuite à créer les nouveaux commits.
+
+```bash
+git add ...
+git commit -m "First part"
+git add ...
+git commit -m "Second part"
+git rebase --continue
+```
+
+
