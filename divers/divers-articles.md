@@ -270,6 +270,8 @@ L'article [L113-9](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle
 > - ignorance du terrain (ignorance des réalités, prises de décisions sans rapport avec les capacités réelles du terrain, etc ...)
 > - ...
 
+[Why can't big companies figure out that recruiting 3 really great senior developers often leads to better results than 10 average junior developers? - www.quora.com - 201702xx](https://www.quora.com/Why-cant-big-companies-figure-out-that-recruiting-3-really-great-senior-developers-often-leads-to-better-results-than-10-average-junior-developers)
+
 ### aristotle project (google)
 
 [Teams. The Most Successful Ones Shared These 5 Traits - www.inc.com/michael-schneider - 20170719](https://www.inc.com/michael-schneider/google-thought-they-knew-how-to-create-the-perfect.html)
