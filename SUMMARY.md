@@ -219,6 +219,7 @@
 * [http cache](web/http-cache.md)
 * [cookies](web/cookies.md)
 * [HTML : Tips](web/html-tips.md)
+* [Regex](web/regex.md)
 * [Polyfills, Shivs, Shims](web/polyfills-shivs-shims.md)
 * [SEO](web/SEO.md)
 * [Shadow DOM](web/shadow-dom.md)
