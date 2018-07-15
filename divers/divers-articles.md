@@ -272,6 +272,54 @@ L'article [L113-9](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle
 
 [Why can't big companies figure out that recruiting 3 really great senior developers often leads to better results than 10 average junior developers? - www.quora.com - 201702xx](https://www.quora.com/Why-cant-big-companies-figure-out-that-recruiting-3-really-great-senior-developers-often-leads-to-better-results-than-10-average-junior-developers)
 
+### Ron Westrum - organizational culture models
+
+> [Ron Westrum](https://en.wikipedia.org/wiki/Ron_Westrum)
+>  
+> [What is your organizational culture: Pathological, Bureaucratic or Generative? - langerman.co.za](https://langerman.co.za/cultural-types/)
+> 
+> Based on [Westrum, R., 2004. A typology of organisational cultures. Quality of Safe Health Care, Volume 13, pp. 22-27](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1765804/pdf/v013p0ii22.pdf).
+> 
+> Define organizational cultures as "... *an organizational* culture is the organization’s pattern of response to the problems and opportunities it encounters".
+> 
+> Each culture is driven by multiple factors including the priorities of the organizations leaders, which causes a response from the organizations workforce.
+> 
+> Note that the culture created within an organization dictates how that organization will respond to any problems it may encounter.
+> 
+> Negatively impacting cultures, such as pathological or bureaucratic cultures, hinder the flow and processing of information across the various areas of the organization.
+> 
+> 3 models :
+> 
+> - Pathological: negative, and power-oriented.
+>   - cooperation low
+>   - messengers shot
+>   - responsibilities avoided
+>   - bridging discouraged
+>   - failure leads to scapegoating (bouc-émissaire)
+>   - novelty crushed
+> - Bureaucratic: negative, and rule-oriented.
+>   - cooperation modest
+>   - messengers neglected
+>   - responsibilities narrow (étroites)
+>   - bridging tolerated
+>   - failure leads to justice
+>   - novelty leads to problems
+> - Generative: positive, and performance-oriented.
+>   - cooperation high
+>   - messengers trained
+>   - shared risks
+>   - bridging encouraged
+>   - failure leads to inquiry
+>   - novelty enacted
+> 
+> Factors that can facilitate this change in culture have been identified and are :
+> 
+> - Splitting work into smaller batches to be processed and completed by teams.
+> - Ensuring that these teams have a good understanding of the flow of the information/work from the organisation to the customers and allowing them visibility to this flow.
+> - Organisations must actively and frequently request customer feedback with regards to their products and product design.
+> 
+> Organizational culture is imperative for the success of an organization and the effective and efficient functioning of the teams within it. This shift in cultural types will improve the organization culture and, in the long-term, improve the functionality of the organization by optimizing information processing and efficiency.
+
 ### aristotle project (google)
 
 [Teams. The Most Successful Ones Shared These 5 Traits - www.inc.com/michael-schneider - 20170719](https://www.inc.com/michael-schneider/google-thought-they-knew-how-to-create-the-perfect.html)
