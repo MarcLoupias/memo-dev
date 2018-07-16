@@ -242,6 +242,12 @@ In your hosting project you can now install it like a regular package, there is 
 - it will not be downloaded from the network but from your local filesystem
 - there will be also an absolute path in your host project `package.json` file
 
+### `npmc` testing `@next` npm version
+
+`npm` versions tagued `@next` can be tested without upgrading your current npm version with the [`npmc` package](https://www.npmjs.com/package/npmc).
+
+`c` is for canary.
+
 ## npm folders
 
 [check this](https://docs.npmjs.com/files/folders)
