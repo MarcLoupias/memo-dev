@@ -49,6 +49,14 @@ $ git branch -d <branch_name>
 $ git branch -D <branch_name>
 ```
 
+```bash
+# list local branch filtered with local branches merged in the currently checkouted branch
+$ git branch --merged
+iss53
+* master
+# we are on the master branch, and the iss53 branch have been merged in.
+```
+
 ## working directory
 
 ```bash
