@@ -108,6 +108,18 @@ $ git reset --hard 1234abcd where 1234abcd is the hash of the desired commit.
 ## diff
 
 ```bash
+# checking difference between the current branch and the non-staged changes
+$ git diff 
+```
+
+```bash
+# checking difference between the current branch and the staged changes
+$ git diff --staged
+# or 
+$ git diff --cached
+```
+
+```bash
 # checking difference between 2 branches and put that log into a file
 $ git diff main-branch..alt-branch > file.name.diff
 ```
