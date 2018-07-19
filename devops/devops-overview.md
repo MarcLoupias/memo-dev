@@ -37,6 +37,16 @@
 
 [Containers + Kubernetes + OpenStack : la plateforme du futur ? - Rafaël Portolano, Dynatrace - 20171128](https://www.informatiquenews.fr/containers-kubernetes-openstack-plateforme-futur-rafael-portolano-dynatrace-54732)
 
+### devops and outsourcing
+
+[Will DevOps Kill IT Outsourcing?: Part 1 - devops.com - 20150803](https://devops.com/will-devops-kill-it-outsourcing-part-1/)
+
+> According to [a report out earlier this spring by outsourcing research firm Information Services Group (ISG)](http://www.cio.com/article/2917376/outsourcing/it-outsourcing-deal-values-hit-10-year-low.html), average outsourcing contract values saw their worst first quarter in a decade, dropping by 27 percent year-over-year. Big deals over $30 million were particularly hit hard, declining by 25 percent in both number and value.
+> 
+> "I hear many more negative experiences organizations have had with outsourcing arrangements than I do positive ones," he says. "Poor quality. Higher-than-expected management overhead required. Inflexibility. Process challenges. All are reasons cited for why the arrangements didn’t live up to expectations."
+> 
+> The anecdotal stories are also piling up of big name enterprises pulling more of their IT resources back in house after years of outsourcing.
+
 ## cloud
 
 ### IaaS
