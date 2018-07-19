@@ -46,6 +46,10 @@
 > "I hear many more negative experiences organizations have had with outsourcing arrangements than I do positive ones," he says. "Poor quality. Higher-than-expected management overhead required. Inflexibility. Process challenges. All are reasons cited for why the arrangements didn’t live up to expectations."
 > 
 > The anecdotal stories are also piling up of big name enterprises pulling more of their IT resources back in house after years of outsourcing.
+> 
+> "Outsourcing in an enterprise setting is often implemented in a way that advances outdated waterfall-like practices and processes that are antithetical to continuous delivery," Braunhut says.
+> 
+> "To be most effective, enterprises need to own the transformation, and it has to be a truly collaborative effort across disciplines–business leadership, engineering, system administration, security & compliance,"says Thomas Enochs, vice president of customer success at Chef. "ollaboration and transformation are difficult to achieve with outside third parties or vendors. They need to own and drive the change themselves, and not be dependent on others."
 
 ## cloud
 
