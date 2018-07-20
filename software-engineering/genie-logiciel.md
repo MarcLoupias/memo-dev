@@ -336,6 +336,8 @@ Présentation Devoxx2016 sur le passage du code legacy au continuous delivery à
 
 [Robert C Martin - Clean Architecture and Design - www.youtube.com - 2013](https://www.youtube.com/watch?v=Nsjsiz2A9mg)
 
+[Robert C Martin - A Little Architecture - blog.cleancoder.com - 20160104](http://blog.cleancoder.com/uncle-bob/2016/01/04/ALittleArchitecture.html)
+
 [Ports-And-Adapters / Hexagonal Architecture - www.dossier-andreas.net](http://www.dossier-andreas.net/software_architecture/ports_and_adapters.html)
 
 [Architecture hexagonale pour les nuls (Y. Chéné) - DevoxxFrance 2018](https://www.youtube.com/watch?v=Hi5aDfRe-aE)
