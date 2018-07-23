@@ -370,6 +370,20 @@ Extensible à tout sujet technique.
 > 
 > Enfin, la gouvernance de ce projet est restée à l'image de la conception embryonnaire et de la complexité du métier, à savoir difficilement efficace. Concrètement, trop de comités, mais surtout trop d'acteurs participent de près ou de loin à ce logiciel, sans qu'aucune véritable autorité ne les coordonne, ni ne formule de réelles orientations.
 
+[SIRHEN, ou savoir quand arrêter un projet - www.zdnet.fr - 20180722](https://www.zdnet.fr/blogs/green-si/sirhen-ou-savoir-quand-arreter-un-projet-39871527.htm)
+
+> SIRHEN, le projet de paye unifiée des 1,2 millions d'employés de l'Éducation Nationale, enseignants et non enseignants, est stoppé
+> 
+> 321 millions d'euros d'investissements
+> 
+> En 2007 les multiples systèmes RH, développés en spécifique, sont complexes, mal urbanisés puisqu'ils intègrent la gestion des agents avec le processus de gestion de la préparation de rentrée et des processus amont. Ils sont orientés gestion et non pilotage.
+> 
+> SIRHEN c'est donc l'idée de n'avoir qu'une seule base de données pour gérer toutes les ressources humaines de l'Éducation Nationale et des applications mieux urbanisées autour.
+> 
+> Estimé à 60 millions d'euros au départ, la mise en place de cet ERP, toujours développé en spécifique, est vite devenue un gouffre financier. De 250 millions d'euros fin 2016 quand un premier signal d'alarme a été tiré on est passé à 320 millions d'euros quand le Ministre Jean Michel Blanquer l'a stoppé cette semaine, donc sans valider son budget prévisionnel qui devait monter à près de 500 millions d'euros. 
+> 
+> La Cours des comptes à remis fin 2016 un rapport sur la dérive de ce projet avec une note de synthèse qui met en avant une complexité sous-estimée au départ qui s'est traduite par une dérive budgétaire et un pilotage gravement défaillant, que ce soit du projet ou de la très nombreuse sous-traitance.
+
 [L'Éducation nationale décide de débrancher SIRHEN, son logiciel visant à gérer son personnel - www.developpez.net - 20180723](https://www.developpez.net/forums/d1876546/club-professionnels-informatique/actualites/l-education-nationale-decide-debrancher-sirhen-logiciel-visant-gerer-personnel/)
 
 > Évalué initialement à 80 millions d’euros, son coût a été plusieurs fois réévalué pour atteindre 323,3 millions d’euros en 2017.
