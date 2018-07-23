@@ -352,6 +352,44 @@ L'article [L113-9](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle
 
 Extensible à tout sujet technique.
 
+### projets publics
+
+[Logiciel unique à vocation interarmées de la solde - fr.wikipedia.org](https://fr.wikipedia.org/wiki/Logiciel_unique_%C3%A0_vocation_interarm%C3%A9es_de_la_solde)
+ 
+> Le coût direct du projet (sous-traitance, ressources humaines et fonctionnement des structures de conduite de projet) est estimé à 80 millions d'euros par la Cour des comptes. 
+> 
+> Le lancement du logiciel a été émaillé de nombreux problèmes : moins-perçus, trop perçus, militaires non payés automatiquement. La Cour des comptes estime à 465 millions d'euros les erreurs de calculs de Louvois pour la seule année 2012. 
+> 
+> Le Figaro rapporte que la note actuelle est de 470 millions d’euros, entre le prix d’achat et le coût des dysfonctionnements de Louvois ; cette somme ne tenant pas compte de son remplacement ni du dédommagement de Steria et de ses sous-traitants. 
+>
+> La catastrophe industrielle vient des 174 primes et indemnités - qui changent parfois chaque mois pour chaque militaire - que le logiciel doit gérer
+> 
+> Outre ces explications liées au fonctionnement du domaine métier de la solde, il apparaît également que la conception fonctionnelle de ce système d'information ait été insuffisante à modéliser une telle complexité.
+> 
+> En effet, les spécifications fonctionnelles générales n'étaient même pas rédigées avec suffisamment d'acuité alors même que la réalisation du logiciel était entamée.
+> 
+> Enfin, la gouvernance de ce projet est restée à l'image de la conception embryonnaire et de la complexité du métier, à savoir difficilement efficace. Concrètement, trop de comités, mais surtout trop d'acteurs participent de près ou de loin à ce logiciel, sans qu'aucune véritable autorité ne les coordonne, ni ne formule de réelles orientations.
+
+[L'Éducation nationale décide de débrancher SIRHEN, son logiciel visant à gérer son personnel - www.developpez.net - 20180723](https://www.developpez.net/forums/d1876546/club-professionnels-informatique/actualites/l-education-nationale-decide-debrancher-sirhen-logiciel-visant-gerer-personnel/)
+
+> Évalué initialement à 80 millions d’euros, son coût a été plusieurs fois réévalué pour atteindre 323,3 millions d’euros en 2017.
+> 
+> le ministère avait [...] restreint son utilisation aux seuls 18 000 fonctionnaires de direction, soit 2 % des effectifs
+> 
+> En clair, SIRHEN assure la gestion administrative de 18 000 fonctionnaires.
+
+[Bug des cartes grises : l'Etat condamné à indemniser des automobilistes - www.ledauphine.com - 20180507](https://www.ledauphine.com/france-monde/2018/05/07/bug-des-cartes-grises-l-etat-condamne-a-indemniser-les-automobilistes)
+
+> Dans le cadre de la modernisation du service public, depuis le 1er novembre 2017, les 101 préfectures et 233 sous-préfectures ne sont plus à même de délivrer des cartes grises.
+> 
+> Les Français doivent obligatoirement effectuer trois démarches en ligne : le changement du titulaire du certificat, la déclaration de la vente d’un véhicule et la modification de l’adresse sur le certificat
+> 
+> Mais là où le bât blesse, c'est que l'outil mis à disposition par le ministère de l'Intérieur, le site internet de l’Agence nationale des titres sécurisés (ANTS), n'en finit pas de connaître des bugs informatiques.
+> 
+> Résultat : moins d'un mois après sa mise en service, 187 000 dossiers étaient déjà bloqués. Et les retards n'ont eu de cesse de s'accumuler. A la mi-mars, près de 300 000 dossiers étaient en souffrance. Fin mars, les médias évoquaient même le chiffre de 400 000 à 450 000 demandes non satisfaites !
+> 
+> Une situation qui a conduit automobilistes furieux et concessionnaires à se retourner contre l'Etat.
+
 ## SS2I
 
 [Des SSII aux SS3I ? Sociétés au service des individus de l’ingénierie informatique : Devoxx2014](https://www.youtube.com/watch?v=y6h0jSwkLZA)
