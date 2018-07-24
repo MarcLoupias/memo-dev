@@ -119,6 +119,7 @@
 * [javascript - browser geoloc](languages/javascript/js-browser-geolocalisation.md)
 * [javascript - doc](languages/javascript/js-doc.md)
 * [javascript - double negation](languages/javascript/js-double-negation.md)
+* [javascript - download files](languages/javascript/js-download-files.md)
 * [javascript - duck typing](languages/javascript/js-duck-typing.md)
 * [javascript - fetch API](languages/javascript/js-fetch-api.md)
 * [javascript - fonctions anonymes](languages/javascript/js-fonctions-anonymes-IIFE.md)
