@@ -384,6 +384,8 @@ Extensible à tout sujet technique.
 > 
 > La Cours des comptes à remis fin 2016 un rapport sur la dérive de ce projet avec une note de synthèse qui met en avant une complexité sous-estimée au départ qui s'est traduite par une dérive budgétaire et un pilotage gravement défaillant, que ce soit du projet ou de la très nombreuse sous-traitance.
 
+[Rapport Cour des Comptes - 20161219](https://www.ccomptes.fr/fr/documents/34332)
+
 [L'Éducation nationale décide de débrancher SIRHEN, son logiciel visant à gérer son personnel - www.developpez.net - 20180723](https://www.developpez.net/forums/d1876546/club-professionnels-informatique/actualites/l-education-nationale-decide-debrancher-sirhen-logiciel-visant-gerer-personnel/)
 
 > Évalué initialement à 80 millions d’euros, son coût a été plusieurs fois réévalué pour atteindre 323,3 millions d’euros en 2017.
