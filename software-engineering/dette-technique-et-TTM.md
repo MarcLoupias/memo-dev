@@ -1,5 +1,6 @@
+# Dette technique et TTM
 
-#### Dette technique (Technical Debt)
+## Dette technique (Technical Debt)
 
 - [Martin Fowler : Technical Debt](http://martinfowler.com/bliki/TechnicalDebt.html)
 - [Wikipedia : Dette technique](https://fr.wikipedia.org/wiki/Dette_technique)
@@ -16,25 +17,35 @@
 > Il faut être très rigoureux sur la qualité du nouveau code (ex : test coverage 80%+)
 > 
 
-#### Time To Market
+## Time To Market
 
 - [Wikipedia : Time To Market](https://en.wikipedia.org/wiki/Time_to_market)
 
 Egalement nommé Time To Deliver (TTD)
 
-#### Relation TD & TTM
+## Relation TD & TTM
 
 - [refacto & techno debt is not a choice but a responsability](http://www.velocitypartners.net/blog/2014/04/03/refactoring-and-technical-debt-its-not-a-choice-its-a-responsibility-part-2/)
 - [Technical deb vs ROI](http://www.ontechnicaldebt.com/blog/technical-debt-vs-roi-your-code-may-be-elegant/)
 
-#### speed vs quality
+## speed vs quality
 - [software-development-speed-vs-quality : from coderlifestyle.com](http://coderlifestyle.com/software-development-speed-vs-quality-a-tech-shop-conundrum/)
 - [discussion reddit](https://www.reddit.com/r/programming/comments/3eep2m/software_development_speed_vs_quality_a_tech_shop/)
 
-#### triangle qualité / cout / délai
+## risques et difficultés projets
+
+Cf projet SIRHEN ([www.zdnet.fr](https://www.zdnet.fr/blogs/green-si/sirhen-ou-savoir-quand-arreter-un-projet-39871527.htm), [dev.com](https://www.developpez.com/actu/216005/L-Education-nationale-decide-de-debrancher-SIRHEN-son-logiciel-visant-a-gerer-son-personnel-qui-a-deja-englouti-320-millions-d-euros/))
+
+- techno choisie évolue très vite (typiquement tout ce qui est web based) : risque que la dette s'accumule plus vite que la capacité à la résorber jusqu'à aboutir en quelques années à une obsolescence totale conduisant à un nouveau risque : Difficulté à trouver des techniciens sur la techno obsolète.
+- confier la rédaction des EDB et specs à du personnel connaissant le métier mais n'ayant aucune compétence de rédaction de specs.
+- domaine métier qui évolue tout le temps avec des méthodos de gestion de projet provoquant des effets tunnels
+- implémentation du métier dans une techno propriétaire non standard
+- implémentation du métier mélangée aux considérations techniques (I/O, BDD, fichiers, etc ...), cf Clean Architecture
+
+## triangle qualité / cout / délai
 - [le-triangle-qualite-cout-delai : geek-directeur-technique.com](http://www.geek-directeur-technique.com/2009/07/10/le-triangle-qualite-cout-delai)
 
-#### services
+## services
 
 [Greenkeeper.io](https://greenkeeper.io/)
 
