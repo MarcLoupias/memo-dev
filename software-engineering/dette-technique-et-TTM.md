@@ -36,9 +36,10 @@ Egalement nommé Time To Deliver (TTD)
 
 Cf projet SIRHEN ([www.zdnet.fr](https://www.zdnet.fr/blogs/green-si/sirhen-ou-savoir-quand-arreter-un-projet-39871527.htm), [dev.com](https://www.developpez.com/actu/216005/L-Education-nationale-decide-de-debrancher-SIRHEN-son-logiciel-visant-a-gerer-son-personnel-qui-a-deja-englouti-320-millions-d-euros/))
 
-- techno choisie évolue très vite (typiquement tout ce qui est web based) : risque que la dette s'accumule plus vite que la capacité à la résorber jusqu'à aboutir en quelques années à une obsolescence totale conduisant à un nouveau risque : Difficulté à trouver des techniciens sur la techno obsolète.
+- quand la techno choisie évolue très vite (typiquement tout ce qui est web based) : risque que la dette s'accumule plus vite que la capacité à la résorber jusqu'à aboutir en quelques années à une obsolescence totale conduisant à un nouveau risque : Difficulté à trouver des techniciens sur la techno obsolète.
 - confier la rédaction des EDB et specs à du personnel connaissant le métier mais n'ayant aucune compétence de rédaction de specs.
-- domaine métier qui évolue tout le temps avec des méthodos de gestion de projet provoquant des effets tunnels
+- quand le domaine métier évolue tout le temps avec des méthodos de gestion de projet provoquant des effets tunnels
+- sur un domaine métier déjà informatisé qui évolue peu pendant une longue période, le personnel se repose sur le SI existant et oublie peu à peu le métier (du fait de l'habitude et du fait du turnover), lorsqu'il faut refondre l'appli plus personne ne connait complètement le métier
 - implémentation du métier dans une techno propriétaire non standard
 - implémentation du métier mélangée aux considérations techniques (I/O, BDD, fichiers, etc ...), cf Clean Architecture
 
