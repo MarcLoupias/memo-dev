@@ -42,6 +42,21 @@ Cf projet SIRHEN ([www.zdnet.fr](https://www.zdnet.fr/blogs/green-si/sirhen-ou-s
 - implémentation du métier dans une techno propriétaire non standard
 - implémentation du métier mélangée aux considérations techniques (I/O, BDD, fichiers, etc ...), cf Clean Architecture
 
+[Chaos Report - www.standishgroup.com - 1994](https://www.standishgroup.com/sample_research_files/chaos_report_1994.pdf)
+
+For 1994, USA spend 250b$ per year on IT application dev on around 175K projects.
+
+Average cost per project :
+- large company is 2.322m$
+- medium company is 1.331m$
+- small company is 0.434m$
+
+Sample result : T1 = 16.2%, T2 = 52.7%, T3 = 31.1%
+
+- project resolution type 1 (project success) : The project is completed on-time, on-budget, with all features and functions as initially specied
+- project resolution type 2 (project challenged) : The project is completed and operationnal but over-budget, over the time estimate, and offers fewer features and functions than originally specified
+- project resolution type 3 (project impaired) : The project is canceled at some point during the development cycle
+
 ## triangle qualité / cout / délai
 - [le-triangle-qualite-cout-delai : geek-directeur-technique.com](http://www.geek-directeur-technique.com/2009/07/10/le-triangle-qualite-cout-delai)
 
