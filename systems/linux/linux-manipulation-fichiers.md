@@ -48,7 +48,7 @@ Permet d'afficher les différences entre 2 fichiers.
 
 Permet de compter le nombre de caractères, de mots et de lignes d'un fichier.
 
-```
+```bash
 
 $ wc book.json
  3  9 56 book.json
@@ -61,7 +61,7 @@ Le fichier `book.json` comporte 3 lignes, 9 mots, et 56 caractères.
 
 Permet de connaitre le type d'un fichier.
 
-```
+```bash
 
 $ file book.json
 book.json: ASCII text
@@ -78,7 +78,7 @@ Permet de faire une recherche sur le système de fichier et d'afficher le résul
 
 ### Recherche sur **le nom de fichier**
 
-```
+```bash
 
 $ find . -name "*.json" -print
 ./book.json
@@ -91,7 +91,7 @@ On a recherché tous les fichiers ayant l'extension `.json` dans leur nom de fic
 
 ### Recherche sur **la date du fichier**
 
-```
+```bash
 
 $ find . -mtime 2 -print
 ./divers/divers-articles.md
@@ -113,7 +113,7 @@ Permet de rechercher un mot dans un fichier et d'afficher les lignes dans lesque
 
 ### Recherche de tous les fichiers contenant un mot
 
-```
+```bash
 
 $ grep -Ril "optimiser"
 security/security-basics.md
@@ -133,7 +133,7 @@ La commande `|` (pipe) permet de chainer les commandes unix. La 1ère commande d
 
 Par exemple pour concaténer 2 fichiers et numéroter les lignes du résultat final :
 
-```
+```bash
 
 $ cat book.json .gitignore | nl
      1  {
@@ -163,7 +163,7 @@ $ cat book.json .gitignore | nl
 
 Ajoutons à cette chaine la commande head qui va limiter à 10 lignes l'affichage :
 
-```
+```bash
 
 $ cat book.json .gitignore | nl | head
      1  {
@@ -182,3 +182,21 @@ $ cat book.json .gitignore | nl | head
 On remarquera que la commande `nl` ne numérote pas les lignes vides mais que la commande `head` en tient compte pour limiter son affichage.
 
 Tout est question de paramétrage des commandes pour obtenir le résultat souhaité.
+
+## `du`
+
+Lister la size des fichiers du répertoire courant :
+
+```bash
+$ du -sh * | sort -n
+```
+
+## `df`
+
+Afficher l'espace disque dispo pour le volume logique :
+
+```bash
+$ df -h /home/robert/appli/
+Filesystem        Size  Used Avail Use% Mounted on
+/dev/boubou/bibi  100G   22G   79G  22% /home/robert/appli
+```
