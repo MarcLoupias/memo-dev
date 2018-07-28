@@ -42,7 +42,9 @@
 | ES5.1 | ECMA-262 | 2011 | [PDF](http://www.ecma-international.org/ecma-262/5.1/Ecma-262.pdf), [HTML](https://www.ecma-international.org/ecma-262/5.1/), [Annotated HTML](https://es5.github.io/) |
 | ES6 | ECMA-262 2015 | 2015 | [PDF](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf), [HTML](http://www.ecma-international.org/ecma-262/6.0/index.html), [ES6 features list](https://github.com/lukehoban/es6features), [ES6 Features list over ES5](http://es6-features.org) |
 | ES7 | ECMA-262 2016 | 2016 | [HTML](https://www.ecma-international.org/ecma-262/7.0/) |
-| ES8 | ECMA-262 2017 | 201**?** | [Draft](http://tc39.github.io/ecma262/) |
+| ES8 | ECMA-262 2017 | 2017 | [HTML](https://www.ecma-international.org/ecma-262/8.0/) |
+| ES9 | ECMA-262 2018 | 2018 | [HTML](https://www.ecma-international.org/ecma-262/9.0/) |
+| ES.Next | ECMA-262 2019 | 2019 ? | [Draft](https://tc39.github.io/ecma262/) [Feature watch: ECMAScript 2019](http://2ality.com/2018/02/ecmascript-2019.html) |
 
 ### The TC39 Process
 
