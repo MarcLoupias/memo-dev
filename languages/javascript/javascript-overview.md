@@ -4,6 +4,8 @@
 
 ### TC39
 
+[TC39 webpage on www.ecma-international.org](http://www.ecma-international.org/memento/tc39.htm)
+
 [Ecma TC39 on GitHub](https://github.com/tc39)
 
 > Technical Committee 39. Caretaker for many standards: ECMAScript (ECMA-262), Intl (ECMA-402), JSON (ECMA-404), etc.
@@ -32,6 +34,8 @@
 
 ### ECMA-262 publications
 
+Listed [on the ECMA internatinal website](https://www.ecma-international.org/publications/standards/Ecma-262-arch.htm).
+
 | Nom | Edition | Publication date | Liens | 
 | --- | ------- | ---------------- | ----- |
 | ES1 | ECMA-262 | 1997 | [PDF](https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%201st%20edition,%20June%201997.pdf) |
@@ -44,7 +48,13 @@
 | ES7 | ECMA-262 2016 | 2016 | [HTML](https://www.ecma-international.org/ecma-262/7.0/) |
 | ES8 | ECMA-262 2017 | 2017 | [HTML](https://www.ecma-international.org/ecma-262/8.0/) |
 | ES9 | ECMA-262 2018 | 2018 | [HTML](https://www.ecma-international.org/ecma-262/9.0/) |
-| ES.Next | ECMA-262 2019 | 2019 ? | [Draft](https://tc39.github.io/ecma262/) [Feature watch: ECMAScript 2019](http://2ality.com/2018/02/ecmascript-2019.html) |
+| ES.Next | ECMA-262 2019 | 2019 ? | [Draft](https://tc39.github.io/ecma262/), [Feature watch: ECMAScript 2019](http://2ality.com/2018/02/ecmascript-2019.html) |
+
+[Publication announced in the ECMA news page](https://www.ecma-international.org/news/index.html). 
+
+Occurs following a general assembly meeting. The last to date was the 115th General Assembly held in Geneva, June 27, 2018.
+
+They approved the [ECMA-262 9th edition](https://www.ecma-international.org/ecma-262/9.0/) - ECMAScript® 2018 Language Specification.
 
 ### The TC39 Process
 
@@ -57,6 +67,10 @@
 | **2 Draft** | Initial spec text, covers all critical aspects and technical semantics. |
 | **3 Candidate** | Spec complete, verified by appropriate reviewers and greenlighted. API finalized, no stone left unturned. |
 | **4 Finished** | Full Test262 coverage, 2+ shipping implementations (e.g. V8 + SpiderMonkey), significant real-world usage feedback, Spec Editor imprimatur. Usually goes into the next feature freeze (January or March). |
+
+ECMAScript proposals are tracked [in a dedicated repository on github](https://github.com/tc39/proposals).
+
+The [`finished-proposals.md`](https://github.com/tc39/proposals/blob/master/finished-proposals.md) file can be seen as a changelog between specs yearly versions.
 
 ## Impl
 
