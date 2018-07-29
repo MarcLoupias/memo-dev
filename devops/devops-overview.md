@@ -61,6 +61,8 @@ Amazon EC2, Windows Azure, RackSpace, CloudWatt, ...
 
 [openstack](https://www.redhat.com/fr/topics/openstack)
 
+[Dropbox saved almost $75 million over two years by building its own tech infrastructure - www.geekwire.com - 20180223](https://www.geekwire.com/2018/dropbox-saved-almost-75-million-two-years-building-tech-infrastructure/)
+
 ### PaaS
 
 **Platform As A Service**
