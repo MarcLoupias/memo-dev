@@ -134,6 +134,10 @@
 * [javascript - link javascript framework and lib search engine](languages/javascript/link-javascript-lib-framework-search.md)
 * [javascript - typescript - overview](languages/javascript/ts-typescript-overview.md)
 
+## Languages - Rust
+
+* [rust - overview](languages/rust/rust-overview.md)
+
 ## Languages - SQL
 
 * [SQL - ACID](languages/SQL/ACID.md)
