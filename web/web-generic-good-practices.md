@@ -8,6 +8,10 @@
 
 [PageSpeed Insights : developers.google.com](https://developers.google.com/speed/pagespeed/insights/)
 
+[The Cost Of JavaScript - Addy Osmani medium blog - 20171115](https://medium.com/dev-channel/the-cost-of-javascript-84009f51e99e)
+
+> tl;dr: less code = less parse/compile + less transfer + less to decompress
+
 ## websites payload size
 
 [The average web page is 3MB. How much should we care? - Tammy Everts - speedcurve.com/blog - 20170809](https://speedcurve.com/blog/web-performance-page-bloat/)
