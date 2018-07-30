@@ -53,6 +53,36 @@
 
 ## cloud
 
+### VMs vs Containers
+
+[Containers and VMs - A Practical Comparison](https://www.youtube.com/watch?v=L1ie8negCjc)
+
+>       **VM**                                                   **Containers**
+> 
+> +-----------------+                                         +-----------------+ <-+ 
+> |       App       |                                         |       App       |   | All
+> |                 |                                         |                 |   | this part
+> +-----------------+                                         +-----------------+   | is a
+>          |                                                  | OS Dependencies |   | container
+>          |                                                  +-----------------+ <-+
+>          V
+> +-----------------+                                         +--------+--------+
+> |   Dependencies  |  <-- config                             |        | Docker |
+> +-----------------+                                         |        +--------+
+> |       OS        |                                         |                 |
+> |                 |                                         |      OS         |
+> +-----------------+                                         +-----------------+
+> 
+>      < VM >   NIC, Storage, Size                                  < VM >
+>      < VSphere, HV, NSX, VSAN > NIC, Storage,                     < HV >
+>                                 Agents, Kernel
+> 
+> +-----------------+                                         +-----------------+
+> |                 |                                         |                 |
+> |    Physical     |                                         |    Physical     |
+> |                 |                                         |                 |
+> +-----------------+                                         +-----------------+
+
 ### IaaS
 
 **Infrastructure As A Service**
