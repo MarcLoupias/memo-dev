@@ -83,6 +83,51 @@ Just host a simple function, give it data and get a result.
 
 ## containers and containers orchestrators
 
+[What is a Container? - VMware Cloud-Native](https://www.youtube.com/watch?v=EnJ7qX9fkcU)
+
+- Simplist form of what a container is : a sandbox for a process (goal is to running a process in isolation)
+
+Most fundamentals notions of the runtime definition of a container :
+
+**process namespace** (only that process shown by `ps` command)
+
+**Cgroups** allows to restrict what containerized process are allowed to do (capabilities, ressources, ...)
+
+Container life cycle and associated process are bounds.
+
+- An image is a tree of images (image of OS, images of binaries (ssh, perl, ...), image of your app)
+
+Each image can be seen as a binary snapshot (ssh in version x.y.z for ex).
+
+It means you can compose your image with several others images instead of creating a monolitic full stack image.
+
+- Docker
+
+a docker file is a starting point for an image.
+
+A container is packaged with all of his dependencies.
+
+With a classical install for your app, your are limited by deps installed on your system.
+
+With a container, it is expected that all the deps above the kernel are packaged inside the container.
+So when you run your container inside an OS, it don't install anything. It sits above the OS in its own world.
+If you delete your image, you the OS state is unchanged.
+
+- Docker host
+
+A docker host tight the runtime container, the images and the docker file together.
+
+A docker host have a cache of the docker registry. The registry contains the images of binaries (each available versions).
+
+You can pull and push from the registry. There is a diff with the cache to pull/push only what is needed.
+
+The docker client talk (pull, create, run, commit, ...) to the daemon in docker host. Not only container life cycle management
+but also network and storage config.
+
+A docker host can contains also a Volume from a docker image. A Volume is the saved state (storage) of the container.
+Deleting a container is also deleting his state, the Volume.
+
+
 [Characterizing and Contrasting Container Orchestrators - devops.com - 20170920](https://devops.com/characterizing-and-contrasting-container-orchestrators/)
 
 > super quick evaluation of :
