@@ -10,6 +10,8 @@ The conference video : [10 Things I Regret About Node.js - Ryan Dahl - JSConf EU
 
 ## genesis
 
+[JSConf Berlin 2018 - Ryan Dahl liste 10 erreurs de conception sur Node.js et dévoile son prototype deno - nodejs.developpez.com - 20180611](https://nodejs.developpez.com/actu/208633/JSConf-Berlin-2018-moins-Ryan-Dahl-liste-10-erreurs-de-conception-sur-Node-js-et-devoile-son-prototype-deno/)
+
 Ryan Dahl have left node in 2012 thinking the project was done. 
 
 He is not happy with some design choices he mades on node.
@@ -103,9 +105,24 @@ TypeScript is builtin.
 
 No npm nor package.json nor node_modules support.
 
-See [the roadmap](https://github.com/ry/deno/blob/master/TODO.txt), at that time, we cannot use network stuff, only read/write files on the fs.
-
 By default, a deno process has readonly access on the file system and no network access at all. It needs configuration (flags) to enable access and write.
 
+### roadmap
 
+See [the roadmap](https://github.com/ry/deno/blob/master/Roadmap.md), at that time, we cannot use network stuff, only read/write files on the fs.
 
+> Actual at 20180730 :
+> 
+> - Milestone 1: Rust rewrite / V8 snapshot (ETA: July 2018)
+> - libdeno C API
+> - TypeScript API
+> 
+> There are three layers of API to consider:
+> 
+> - L1: the low-level message passing API exported by libdeno (L1),
+> - L2: the protobuf messages used internally (L2),
+> - L3: the final "deno" namespace exported to users (L3).
+
+### milestones
+
+[v0.1 (first binary release)](https://github.com/ry/deno/milestone/1)
