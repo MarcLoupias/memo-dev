@@ -138,6 +138,7 @@
 ## Languages - Rust
 
 * [rust - overview](languages/rust/rust-overview.md)
+* [rust - install](languages/rust/rust-install.md)
 
 ## Languages - SQL
 
