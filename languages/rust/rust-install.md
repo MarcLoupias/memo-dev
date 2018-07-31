@@ -2,6 +2,8 @@
 
 [Install Rust - www.rust-lang.org](https://www.rust-lang.org/en-US/install.html)
 
+[Installation - doc.rust-lang.org/book/second-edition](https://doc.rust-lang.org/book/second-edition/ch01-01-installation.html)
+
 Linux : `curl https://sh.rustup.rs -sSf | sh`
 
 ```bash
