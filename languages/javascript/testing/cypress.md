@@ -36,6 +36,14 @@
 - [npm install not working behind corporate firewall](https://github.com/cypress-io/cypress/issues/733)
 - [Document CYPRESS_BINARY_VERSION environment variable](https://github.com/cypress-io/cypress-documentation/issues/121)
 
+## comparison Cypress vs TestCafe
+
+[Evaluating Cypress and TestCafe for end to end testing - medium.com/yld-engineering-blog - 20180329](https://medium.com/yld-engineering-blog/evaluating-cypress-and-testcafe-for-end-to-end-testing-fcd0303d2103)
+
+[Compare to Cypress.io - testcafe-discuss.devexpress.com - 20171010](https://testcafe-discuss.devexpress.com/t/compare-to-cypress-io/490/2)
+
+> with post by TestCafe dev
+
 ## usage and recommandations
 
 [Cypress slows down drastically over long runs - restart renderer between spec files?](https://github.com/cypress-io/cypress/issues/431#issuecomment-339710315)
