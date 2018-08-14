@@ -187,6 +187,7 @@
 * [GIT - tracking branches](tools/git/git-tracking-branches.md)
 * [GIT - useful commands](tools/git/git-useful-commands.md)
 * [GIT - workflow](tools/git/git-workflow.md)
+* [cheat sheets](tools/cheat-sheets.md)
 * [gitbook - overview](tools/gitbook/gitbook-intro.md)
 * [gitpitch](tools/gitpitch/gitpitch-intro.md)
 * [IntelliJ](tools/intellij/infos-intellij.md)
