@@ -88,20 +88,33 @@ Story scenarios
 So how do we know when we have delivered this story? There are several scenarios to consider
 
 > +Scenario 1: Account is in credit+
+>
 > Given the account is in credit
+>
 > And the card is valid
+>
 > And the dispenser contains cash
+>
 > When the customer requests cash
+>
 > Then ensure the account is debited
+>
 > And ensure cash is dispensed
+>
 > And ensure the card is returned
 
 > +Scenario 2: Account is overdrawn past the overdraft limit+
+>
 > Given the account is overdrawn
+>
 > And the card is valid
+>
 > When the customer requests cash
+>
 > Then ensure a rejection message is displayed
+>
 > And ensure cash is not dispensed
+>
 > And ensure the card is returned
 
 - Acceptance criteria should be executable
