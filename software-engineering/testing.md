@@ -79,9 +79,12 @@ Acceptance criteria in terms of scenarios :
 The story card
 
 > +Title: Customer withdraws cash+
-> As a customer,
-> I want to withdraw cash from an ATM,
-> so that I don’t have to wait in line at the bank.
+>
+> **As a** customer,
+>
+> **I want** to withdraw cash from an ATM,
+>
+> **so that** I don’t have to wait in line at the bank.
 
 Story scenarios
 
@@ -89,15 +92,15 @@ So how do we know when we have delivered this story? There are several scenarios
 
 > +Scenario 1: Account is in credit+
 >
-> Given the account is in credit
+> **Given** the account is in credit
 >
 > And the card is valid
 >
 > And the dispenser contains cash
 >
-> When the customer requests cash
+> **When** the customer requests cash
 >
-> Then ensure the account is debited
+> **Then** ensure the account is debited
 >
 > And ensure cash is dispensed
 >
@@ -105,13 +108,13 @@ So how do we know when we have delivered this story? There are several scenarios
 
 > +Scenario 2: Account is overdrawn past the overdraft limit+
 >
-> Given the account is overdrawn
+> **Given** the account is overdrawn
 >
 > And the card is valid
 >
-> When the customer requests cash
+> **When** the customer requests cash
 >
-> Then ensure a rejection message is displayed
+> **Then** ensure a rejection message is displayed
 >
 > And ensure cash is not dispensed
 >
