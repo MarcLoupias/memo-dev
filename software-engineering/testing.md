@@ -45,6 +45,67 @@ A TDD cycle is composed of three, iterative phases.
 
 Unit tests are written only after some production code (e.g., the code necessary for a feature of the task) was present.
 
+### Behavior Driven Development (BDD)
+
+> Le behavior-driven development (ou BDD) est une méthode agile qui encourage la collaboration entre les développeurs, les responsables qualités, les intervenants non-techniques et les entreprises participant à un projet de logiciel. Il a été conçu en 2003 par Dan North comme une réponse au Test Driven Development.
+
+[Introducing BDD - 200603xx - dannorth.net](https://dannorth.net/introducing-bdd/)
+
+- Test method names should be sentences
+- A simple sentence template keeps test methods focused
+- An expressive test name is helpful when a test fails
+- "Behaviour" is a more useful word than "test"
+- JBehave emphasizes behaviour over testing (his own testing tool to replace JUnit with proper vocabulary regarding BDD)
+- Determine the next most important behaviour (**What’s the next most important thing the system doesn’t do?**)
+- Requirements are behaviour,too
+- BDD provides a "ubiquitous language" for analysis
+
+A template to capture a story’s acceptance criteria :
+
+**As a** [X] where Y is some feature
+
+**I want** [Y] where Z is the benefit or value of the feature
+
+**so that** [Z] where X is the person (or role) who will benefit
+
+Acceptance criteria in terms of scenarios :
+
+**Given** some initial context (the givens),
+
+**When** an event occurs,
+
+**then** ensure some outcomes.
+
+The story card
+
+> +Title: Customer withdraws cash+
+> As a customer,
+> I want to withdraw cash from an ATM,
+> so that I don’t have to wait in line at the bank.
+
+Story scenarios
+
+So how do we know when we have delivered this story? There are several scenarios to consider
+
+> +Scenario 1: Account is in credit+
+> Given the account is in credit
+> And the card is valid
+> And the dispenser contains cash
+> When the customer requests cash
+> Then ensure the account is debited
+> And ensure cash is dispensed
+> And ensure the card is returned
+
+> +Scenario 2: Account is overdrawn past the overdraft limit+
+> Given the account is overdrawn
+> And the card is valid
+> When the customer requests cash
+> Then ensure a rejection message is displayed
+> And ensure cash is not dispensed
+> And ensure the card is returned
+
+- Acceptance criteria should be executable
+
 ## Writing Testable Code
 
 [Guide: Writing Testable Code : misko.hevery.com](misko.hevery.com/code-reviewers-guide/)
