@@ -21,7 +21,7 @@
 A TDD cycle is composed of three, iterative phases.
 - Red: Write a unit test; the unit test fails.
 - Green: Write production code; the unit test passes.
-- Blue: Refactor the code [11]; the unit test passes.
+- Refactor: Refactor the code [11]; the unit test passes.
 
 [The Cycles of TDD : blog.cleancoder.com (2014/12)](http://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html)
 
@@ -40,6 +40,44 @@ A TDD cycle is composed of three, iterative phases.
 [Paper from North Carolina State University created by Boby George and Laurie Williams in 2003](https://collaboration.csc.ncsu.edu/laurie/Papers/TDDpaperv8.pdf)
 
 > This document demonstrates that the studied group of TDD practitioners spent only 16% more time on the overall development process
+
+[My unit testing epiphany - www.stevefenton.co.uk - Steve Fenton - 20130501](https://www.stevefenton.co.uk/2013/05/my-unit-testing-epiphany/)
+
+> Following Ian Cooper famous talk "TDD: Where did it all go wrong?".
+> 
+> Writing a test class for an impl class implies :
+> - over-isolation (mocking everything)
+> - testing impl instead of behaviour
+> 
+> The *red-green-refactor* cycle have to be precised :
+> 
+> - Red: Write a unit test; the unit test fails.
+> - Green: Write production code; the unit test passes. *Returning a hardcoded value is too simplistic. Just write code without design, patters nor structure.*
+> - Refactor: Refactor the code [11]; the unit test passes. *This is where to add design.*
+> 
+> When you do this right, you end up with several classes that are all tested by a single test-class. This is how things should be.
+> 
+> The big mistake comes when you get carried away with isolation. If you were to undertake too much design up-front, you could end up with one test-class per class in your program.
+> 
+> The term "isolation" means that you don’t cross a port. This means not relying on network, database, file system, service or anything else that you might add an adaptor for in a Hexagonal Architecture.
+
+[My unit testing epiphany continued - www.stevefenton.co.uk - Steve Fenton - 20130513](https://www.stevefenton.co.uk/2013/05/My-Unit-Testing-Epiphany-Continued/)
+
+> Integration testing is what you’re doing if your tests cross a port.
+> 
+> My view on what constituted a "unit" was pretty much a "class file" before I realised that this makes tests too reliant on the implementation.
+> 
+> This is the cause of over-isolation.
+> 
+> The recommendation here is that you use these low-level tests for discovery if you need them – but you don’t check them in to source control. Ian described these as "driving in first gear", which you sometimes need to do – but you want to be going faster than this.
+> 
+> New glossary :
+> 
+> | Term | Before | After |
+> | ---- | ------ | ----- |
+> | Unit | A class file | A collection of classes, but nothing that crosses a port |
+> | Integration | A test that relies on something else being there | A test that crosses over a port |
+> | Isolation | Replacing every dependency a class has with a test-double | Replacing dependencies at the port |
 
 ### Test Last Development (TLD)
 
