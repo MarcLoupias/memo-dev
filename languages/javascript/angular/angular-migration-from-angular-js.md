@@ -1,6 +1,6 @@
 # Angular - Migration from AngularJS
 
-[Upgrade guide ng2 doc](https://angular.io/docs/ts/latest/guide/upgrade.html)
+[Upgrade guide ng2 doc](https://angular.io/guide/upgrade)
 
 [AngularJS 2.0 Migration Guide : codeproject.com](https://www.codeproject.com/Articles/1121384/AngularJS-Migration-Guide)
 
