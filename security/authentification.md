@@ -1,5 +1,24 @@
 # Authentification
 
+## articles divers
+
+[L’authentification sans mot de passe sur le Web, c'est pour bientôt - www.01net.com - 20180826](https://www.01net.com/actualites/l-authentification-sans-mot-de-passe-sur-le-web-c-est-pour-bientot-1475642.html)
+
+> **L'API WebAuthn pourrait rapidement s'imposer**
+> 
+> - Cf FIDO2 et [Yubico](https://www.yubico.com/2018/04/new-security-key-fido2/).
+> - Supporté par W3C
+> - Démo : https://webauthn.org/
+> 
+> **Le courrier électronique comme moyen d'authentification ?**
+> 
+> - Authentification par mail en se basant sur les headers DKIM (Domain Keys Identified Mail).
+> - Cf [Swoop](https://swoopnow.com/).
+> 
+> **Utiliser les technologies des cryptomonnaies**
+> 
+> Utiliser les applis qui gèrent les comptes de cryptomonnaies pour authentifier les utilisateurs.
+
 ## Cookies vs Tokens
 
 [Cookies vs Tokens: The Definitive Guide - auth0.com - 20160531](https://auth0.com/blog/cookies-vs-tokens-definitive-guide/)
