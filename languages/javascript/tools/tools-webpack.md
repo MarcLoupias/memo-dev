@@ -14,6 +14,14 @@
 
 [Débuter avec Webpack 20180108](https://www.alsacreations.com/tuto/lire/1754-debuter-avec-webpack.html)
 
+## webpack tools
+
+Theses tools uses the [webpack stats API](https://webpack.js.org/api/stats/), usage is `$ webpack --profile --json > compilation-stats.json`
+
+[webpack-visualizer - chrisbateman.github.io](https://chrisbateman.github.io/webpack-visualizer/)
+
+[zillow/webpack-stats-duplicates](https://github.com/zillow/webpack-stats-duplicates)
+
 ## alternatives
 
 [fuse-box.org](https://fuse-box.org/)
