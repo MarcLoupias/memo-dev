@@ -129,6 +129,22 @@ Just In Time. An engine like V8 compile JavaScript code into machine code on the
 
 - [frontendtools.com](http://frontendtools.com/tools)
 
+### JavaScript parsers
+
+#### AST (Abstract Syntax Tree)
+
+AST is for Abstract Syntax Tree. The concept is transverse to all programming languages. [Cf wikipedia def](https://en.wikipedia.org/wiki/Abstract_syntax_tree) for example.
+
+[astexplorer](https://astexplorer.net/)
+
+An online tool to visualize the AST of the pasted code.
+
+Bundlers (webpack, ...) and Linters (ESLint, ...) make heavy use of AST parsers tools to do their job.
+
+Babel is also using this at the point it integrates a parser in his project. This parser was called [Babylon](https://github.com/babel/babylon) before it was [merged in Babel](https://babeljs.io/docs/en/next/babel-parser.html).
+
+ESLint is using [eslint/espree](https://github.com/eslint/espree).
+
 ### Transpilers
 
 #### Babel
