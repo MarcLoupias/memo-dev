@@ -39,3 +39,16 @@
 - [Angular deprecates ReflectiveInjector and introduces StaticInjector. Should you care? : 20170808](https://blog.angularindepth.com/angular-introduces-staticinjector-should-you-care-4e059eca030c)
 
 > focus on the DI breaking change introduced by Angular5 ([see CHANGELOG](https://github.com/angular/angular/blob/master/CHANGELOG.md#breaking-changes))
+
+## angular CLI
+
+[Angular CLI v1.x](https://github.com/angular/angular-cli/wiki/1-x-home)
+
+[Angular CLI v6+](https://github.com/angular/angular-cli/wiki)
+
+[Understanding the Angular CLI Workspace File](https://nitayneeman.com/posts/understanding-the-angular-cli-workspace-file/)
+
+Schema file for Angular CLI's configuration :
+
+- CLI v1.x : `.angular-cli.json`
+- CLI v6+ : `angular.json`
