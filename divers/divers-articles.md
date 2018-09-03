@@ -406,6 +406,8 @@ Extensible à tout sujet technique.
 > 
 > Une situation qui a conduit automobilistes furieux et concessionnaires à se retourner contre l'Etat.
 
+[Prélèvement de l'impôt à la source : "les bogues sont légion et pour certains pas de possibilité de s’en prémunir", d'après une note technique - www.developpez.net - 20180903](https://www.developpez.net/forums/d1889859/club-professionnels-informatique/actualites/prelevement-l-impot-source-bogues-legion-d-apres-note-technique/#post10450699)
+
 ## SS2I
 
 [Des SSII aux SS3I ? Sociétés au service des individus de l’ingénierie informatique : Devoxx2014](https://www.youtube.com/watch?v=y6h0jSwkLZA)
