@@ -613,6 +613,14 @@ Took from [Machine learning and tech debt: A publication from Google on www.funf
 
 A l'échelle mondiale chiffré à 100 milliards de dollars (chiffre 2008 ?) par le département du commerce US (cf [Gérard Berry : Pourquoi et comment le monde devient numérique : www.franceculture.fr redif du cours de 2008](https://www.franceculture.fr/emissions/les-cours-du-college-de-france/gerard-berry-pourquoi-et-comment-le-monde-devient-numerique))
 
+### soutenabilité du numérique
+
+[Devoxx2017 - Le monde devient numérique a t il les moyens de le rester (Alexandre Monnin)](https://www.youtube.com/watch?v=bl6Ivdy777A)
+
+[Jancovici Conférence Ajaccio (part 1/2)](https://www.youtube.com/watch?v=kjq88rO57-U) et [Jancovici Conférence Ajaccio (Part 2/2)](https://www.youtube.com/watch?v=jCNI9eniN8U)
+
+> probablement le meilleur condensé d'infos de Jancovici sur la non soutenabilité du modèle économique actuel et donc de la société numérisée en l'état
+
 ## FAI
 
 [Forfait Fist First - Made in Groland](https://www.youtube.com/watch?v=y4fCg0tfVfU)
