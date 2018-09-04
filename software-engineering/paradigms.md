@@ -55,6 +55,10 @@ cf [Nested Ternaries are Great - Eric Elliott - 20180126](https://medium.com/jav
 
 [Immutable data structures for functional JS : Anjana Vakil](https://2017.jsconf.eu/speakers/anjana-vakil-immutable-data-structures-for-functional-js.html)
 
+[Why Curry Helps - hughfdjackson.com (2015 ?)](https://hughfdjackson.com/javascript/why-curry-helps/)
+
+[Favoring Curry - Scott Sauyet - 20140618](https://fr.umio.us/favoring-curry/)
+
 [An introduction to functional programming : Mary Rose Cook](https://codewords.recurse.com/issues/one/an-introduction-to-functional-programming)
 
 [Robert C Martin - Functional Programming; What? Why? When?](https://www.youtube.com/watch?v=7Zlp9rKHGD4)
