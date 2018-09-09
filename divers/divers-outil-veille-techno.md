@@ -42,6 +42,10 @@ Surveille les registry pour check les packages déposés.
 
 > grad data from github repos
 
+[bestof.js.org weekly newsletter](https://weekly.bestofjs.org/)
+
+> Get the latest JS rankings in your inbox every week
+
 [Fun Fun Function](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q)
 
 [JavaScript scene on medium.com](https://medium.com/javascript-scene)
