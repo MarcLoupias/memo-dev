@@ -18,6 +18,8 @@
 
 [forum.vuejs.org](https://forum.vuejs.org/)
 
+[State Of Vue 2018 - 20180327](https://www.vuemastery.com/conferences/vueconf-2018/opening-keynote-evan-you/)
+
 ## articles
 
 [Demystifying Vue.js internals - medium.com/js-imaginea - 20180426](https://medium.com/js-imaginea/the-vue-js-internals-7b76f76813e3)
