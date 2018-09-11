@@ -63,6 +63,34 @@
 >   - use the ui-router pattern (a single ngModule for all the app, and use the regular ES6 modules)
 > 
 
+**RETEX Step 1**
+
+Fonctionne très bien mais pas facile :
+
+- attention à l'ordre des `import` dans les fichiers `index.js`, placer les déclarations de modules en premier dans chaque fichier
+- si usage de Bootstrap, il suppose la présence de l'objet `jQuery` sur l'objet `window`, il convient donc de l'ajouter :
+
+```javascript
+    // webpack conf
+    
+    plugins: [
+    
+        // ...
+        
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+        })
+    ]
+```
+- il est possible que certaines dépendances soient chargées plusieurs fois selon comment elles sont organisées. Par exemple d'avoir ce message de AngularJS `WARNING: Tried to load angular more than once.`. Ca augmente la taille du bundle mais comme c'est temporaire on peut passer outre le temps de tout passer en modules ES6.
+- problème avec les variables globales (par ex fichier de config). Dans un premier temps, coller ces variables dans l'objet global `window` (cf https://stackoverflow.com/questions/37656592/define-global-variable-with-webpack). Attention à l'ordre des imports comme pour les modules AngularJS.
+- problème avec les dépendances importées via l'IIFE en tant que variables globales. Passer directement par un import classique depuis le source concerné en plus de l'IIFE. Par ex : `import Fuse from '../../../../node_modules/fuse.js/dist/fuse.min';` à ajouter en tête de fichier devant l'IIFE qui n'est pas touchée.
+- problème avec les templates des composants : https://stackoverflow.com/questions/33300289/how-to-use-webpack-with-angular-templatecache. La solution la plus simple est de ne pas importer les html via les `index.js` mais direct via les composants en faisant un `require` du fichier html sur la props `template` plutôt que via `templateUrl`.
+- problème avec les css. Attention depuis le browser les urls des css sont résolvées avec le chemin relatif serveur de la css. Par exemple, si sur le serveur web j'ai `/assets/css/app.css` et que dans cette css j'ai une instruction `url()` qui pointe sur `/assets/fonts/toto.woff` par exemple, lorsque le call sera effectué dans le browser ça ira chercher sur `/assets/css/assets/fonts/toto.woff`. Il convient donc de placer les css à la racine du serveur web pour éviter ce problème.
+- problème dans certains templates : Il faut être très strict sur la présentation de caractères spéciaux dans les templates, il ne faut par exemple aucun opérateur logique webpack aime pas !
+
 [Quelques grands principes pour aller vers Angular 2.x en venant d’Angular 1.4 ? : blogtech.soprasteria.com](http://blogtech.soprasteria.com/2017/05/24/quelques-grands-principes-pour-aller-vers-angular-2-x-en-venant-dangular-1-4/)
 
 > Très détaillé avec contextualisation + plein de bons liens en fin d'article
