@@ -408,6 +408,10 @@ Extensible à tout sujet technique.
 
 [Prélèvement de l'impôt à la source : "les bogues sont légion et pour certains pas de possibilité de s’en prémunir", d'après une note technique - www.developpez.net - 20180903](https://www.developpez.net/forums/d1889859/club-professionnels-informatique/actualites/prelevement-l-impot-source-bogues-legion-d-apres-note-technique/#post10450699)
 
+[dsn.flandre-info.fr](http://dsn.flandre-info.fr/)
+
+> blog d'un petit éditeur de logiciel de paie à propos du prélèvement à la source
+
 ## SS2I
 
 [Des SSII aux SS3I ? Sociétés au service des individus de l’ingénierie informatique : Devoxx2014](https://www.youtube.com/watch?v=y6h0jSwkLZA)
