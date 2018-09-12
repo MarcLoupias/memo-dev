@@ -6,6 +6,16 @@
 
 > Apparu vers 2010, le mouvement Devops se caractérise principalement par la promotion de l'automation et du suivi (monitoring) de toutes les étapes de la création d'un logiciel, depuis le développement, l'intégration, les tests, la livraison jusqu'au déploiement, l'exploitation et la maintenance des infrastructures. Les principes Devops soutiennent des cycles de développement plus courts, une augmentation de la fréquence des déploiements et des livraisons continues, pour une meilleure atteinte des objectifs économiques de l'entreprise.
 
+[Patrick Debois - fr.wikipedia.org](https://fr.wikipedia.org/wiki/Patrick_Debois)
+
+> Inventeur du mot devops qui désigne une approche fédérée des développements informatiques (build) et des opérations (run). 
+
+[Patrick Debois - site perso - www.jedi.be](http://www.jedi.be/presentations/)
+
+[Patrick Debois - twitter.com](https://twitter.com/patrickdebois)
+
+[Il était une fois … l’histoire du DevOps - www.oxalide.com - 20140627](https://www.oxalide.com/il-etait-fois-lhistoire-du-mouvement-devops/)
+
 ### resources
 
 [devops.com](https://devops.com/)
