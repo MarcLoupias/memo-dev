@@ -16,6 +16,8 @@
 
 [Il était une fois … l’histoire du DevOps - www.oxalide.com - 20140627](https://www.oxalide.com/il-etait-fois-lhistoire-du-mouvement-devops/)
 
+[DevOps Culture (Part 1) - itrevolution.com - 20120501](https://itrevolution.com/devops-culture-part-1/)
+
 ### resources
 
 [devops.com](https://devops.com/)
@@ -27,6 +29,8 @@
 > Scientific study giving results and methodology about the puppet.com states of Devops from 2014 to 2017 (the books authors contributed to theses studies)
 > 
 > Martin Fowler preface
+
+[The state of devops 2018 - puppet.com](https://puppet.com/resources/whitepaper/state-of-devops-report)
 
 [The state of devops 2017 - puppet.com](https://puppet.com/blog/2017-state-devops-report-here)
 
