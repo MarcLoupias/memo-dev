@@ -95,6 +95,10 @@ Fonctionne très bien mais pas facile :
 
 > Très détaillé avec contextualisation + plein de bons liens en fin d'article
 
+[Webpack, ES6 (ES2015) & Babel 6 pour modulariser son application AngularJS - blog.xebia.fr - 20160301](https://blog.xebia.fr/2016/03/01/webpack-es6-es2015-babel-6-pour-modulariser-son-application-angularjs/)
+
+> montre un exemple possible d'état intermédiaire (ES2015 + Babel + Webpack) lors de la migration quand on part d'un AngularJS legacy (par ex ng1.4 + ES5 + grunt/gulp).
+
 [Gillespie59/angular2-migration-sample : github.com](https://github.com/Gillespie59/angular2-migration-sample)
 
 > a short example
