@@ -452,6 +452,8 @@ Extensible à tout sujet technique.
 
 ## salaires
 
+[Developer Open Salaries (spreadsheet opened by unknown](https://docs.google.com/spreadsheets/d/1pY64JMN8UnwEy4mIP4_gr4BhOAa6Il6o3CqA_j0wRdI/edit#gid=1922656675)
+
 ### france vs USA
 
 [À coût de la vie égal, le salaire d'un professionnel de l'IT à San Francisco est 67 % plus élevé que celui d'un Parisien](https://www.developpez.net/forums/d1812737/emploi-etudes-informatique/emploi/salaires/cout-vie-egal-salaire-d-professionnel-l-it-san-francisco-67-plus-eleve-celui-d/#post9990292)
