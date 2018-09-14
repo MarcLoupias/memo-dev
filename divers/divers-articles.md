@@ -157,6 +157,11 @@
 
 [4,7 millions de développeurs en Europe, Londres et Paris en tête : blog.jobtic.fr](http://blog.jobtic.fr/47-millions-de-developpeurs-europe-londres-paris-tete/)
 
+[La moitié du temps des développeurs perdue sur du mauvais code - www.zdnet.fr - 20180914](https://www.zdnet.fr/amp/actualites/la-moitie-du-temps-des-developpeurs-perdue-sur-du-mauvais-code-39873625.htm)
+
+> La société estime à 18 millions le nombre de développeurs dans le monde
+> chacun contribuant au PIB à hauteur de 51.000 dollars chaque année, pour un total de 918 milliards de dollars au niveau mondial
+
 [Combien y a-t-il de professionnels dans la population mondiale de développeurs ? : developpez.com](https://www.developpez.com/actu/140439/Combien-y-a-t-il-de-professionnels-dans-la-population-mondiale-de-developpeurs-Et-quelles-sont-les-caracteristiques-des-developpeurs/)
 
 > En 2014, IDC estimait qu’il y avait environ 18,5 millions de développeurs dans le monde et qu’environ 11 millions d’entre eux étaient des professionnels et 7,5 millions des amateurs.
