@@ -262,6 +262,8 @@ L'article [L113-9](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle
 
 ## management
 
+[L'expert en réunion (Ou comment se passe une réunion avec Zaebos)](https://www.youtube.com/watch?v=R-jpehaofiw)
+
 [Why The Command-and-Control Mindset Is Killing Your Company : corporate-rebels.com](http://corporate-rebels.com/mindset/) March 26, 2017
 
 [L'Étrange Défaite : Marc Bloch : 1940](https://fr.wikipedia.org/wiki/L%27%C3%89trange_D%C3%A9faite)
