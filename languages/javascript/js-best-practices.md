@@ -8,6 +8,16 @@
 - [javascript : Douglas Crockford](http://www.crockford.com/javascript/)
 - [Onze idées fausses sur l'héritage en JavaScript : sylvainpv.developpez.com - 20150523](http://sylvainpv.developpez.com/traductions/javascript/idees-fausses-heritage/) (trad article Eric Elliott)
 
+## perfs
+
+[Intensive JavaScript - developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Tools/Performance/Scenarios/Intensive_JavaScript)
+
+> By default the browser uses a single thread to run all the JavaScript in your page as well as to perform layout, reflows, and garbage collection. This means that long-running JavaScript functions can block the thread, leading to an unresponsive page and a bad user experience.
+> 
+> You can use the [Frame rate](https://developer.mozilla.org/en-US/docs/Tools/Performance/Frame_rate) and [Waterfall tools](https://developer.mozilla.org/en-US/docs/Tools/Performance/Waterfall) to see when JavaScript is causing performance problems, and to single out the particular functions that need attention.
+> 
+> In this article we'll take an example site whose long-running JavaScript causes responsiveness problems, and apply two different approaches to fixing them. The first is to split long-running functions into pieces and use [`requestAnimationFrame`](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame) to schedule each piece, and the second is to run the whole function in a separate thread using a [web worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers).
+
 ## undefined & null check
 - [checking-for-undefined-null-and-empty-variables-in-javascript : davidbcalhoun.com](davidbcalhoun.com/2011/checking-for-undefined-null-and-empty-variables-in-javascript/)
 
