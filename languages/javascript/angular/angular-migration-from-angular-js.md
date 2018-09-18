@@ -91,6 +91,176 @@ Fonctionne très bien mais pas facile :
 - problème avec les css. Attention depuis le browser les urls des css sont résolvées avec le chemin relatif serveur de la css. Par exemple, si sur le serveur web j'ai `/assets/css/app.css` et que dans cette css j'ai une instruction `url()` qui pointe sur `/assets/fonts/toto.woff` par exemple, lorsque le call sera effectué dans le browser ça ira chercher sur `/assets/css/assets/fonts/toto.woff`. Il convient donc de placer les css à la racine du serveur web pour éviter ce problème.
 - problème dans certains templates : Il faut être très strict sur la présentation de caractères spéciaux dans les templates, il ne faut par exemple aucun opérateur logique webpack aime pas !
 
+**RETEX Step 2**
+
+Dans les grandes lignes :
+
+- utiliser les `import`/`export` ES6
+- supprimer toutes les IIFE
+- passer du style-guide de John Papa qui est calibré sur AngularJS avec ES5 à [celui de Todd Motto](https://github.com/toddmotto/angularjs-styleguide) qui est calibré pour ES2015.
+
+concrètement :
+
+- supprimer les IIFE, exporter l'objet/fonction de description du component/filter/service/directive
+- renommer la fonction de déclaration de `blablaService` en `blabla`, exporter en nommant le type de composant (Component, Filter, Service, Directive).
+
+Par exemple pour un composant référencé `'headerView'` dans l'injecteur ayant un contrôleur `HeaderViewController` :
+
+Avant on a 
+```javascript
+// header-view.component.js
+    angular
+        .module('app.header')
+        .component('headerView', {
+            template: require('./header-view.html'),
+            controller: HeaderViewController
+        });
+```
+
+Après on a :
+
+```javascript
+// header-view.component.js
+export const HeaderViewComponent = {
+    template: require('./header-view.html'),
+    controller: HeaderViewController
+};
+
+// puis la déclaration des injections de HeaderViewController
+HeaderViewController.$inject = [/* ... */];
+
+// puis l'implémentation du ctrl
+function HeaderViewController(/* ... */) {
+    var ctrl = this;
+    // ...
+```
+
+- importer dans la déclaration du module afférant
+
+Dans le fichier `*.module.js` correspondant c'est là qu'on va désormais déclarer les composants à l'injecteur.
+
+```javascript
+// header.module.js
+import angular from 'angular';
+// ...
+import {HeaderViewComponent} from './header-view.component';
+
+const header = angular.module('app.header', []);
+// ...
+header.component('headerView', HeaderViewComponent);
+
+// on exporte le module pour l'importer à son tour dans le module de niveau supérieur
+export const HeaderModule = header;
+
+// Attention le module qui importe ce module doit set le nom en dépendant et pas le module lui même :
+
+// app.module.js
+import angular from 'angular';
+import {HeaderModule} from './layout/header/header.module';
+//...
+const app = angular.module('app', [HeaderModule.name]);
+```
+
+- supprimer les fichiers `index.js` dont les `import` font doublons
+- garder les `index.js` pour les dépendances et le point d'entrée de l'appli
+- reconfigurer ESLint pour prendre en charge ES2015 et les modules :
+```javascript
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    }
+```
+- après cette migration, **Karma n'est plus capable d'exécuter les TU out-of-the-box**. Les remettre d'aplomb n'est pas utile puisqu'il n'y aura aucun dev et que Cypress permet de tester la non-régression (suppose d'avoir des tests d'UI suffisamment fiables, Cypress est parfait pour ça !).
+- refacto les composants / services / controller / etc ... en classes.
+
+composants :
+
+La fonction déclarant le controller devient une classe.
+On ajoute un constructeur à cette classe pour réaliser les injections de dépendances :
+
+```javascript
+    constructor(logger, headerMenuConfigObjectService, headerService) {
+        this.logger = logger;
+        this.headerMenuConfigObjectService = headerMenuConfigObjectService;
+        this.headerService = headerService;
+    }
+```
+
+On binde les services à l'instance. Le `var ctrl = this;` disparait.
+
+Les fonctions implémentants les events hooks :
+
+```javascript
+    ctrl.$onInit = function init() {
+        logger.info('app.header.HeaderViewController.$onInit()', 'start');
+        ctrl.grandMenu = headerMenuConfigObjectService.getMenu();
+        ctrl.stats = headerService.data;
+        ctrl.clickRefreshData = headerService.clickRefreshData;
+        logger.info('app.header.HeaderViewController.$onInit() ctrl.grandMenu = ', ctrl.grandMenu);
+    };
+```
+
+deviennent des fonctions de la classe :
+
+```javascript
+    $onInit() {
+        this.logger.info('app.header.HeaderView.$onInit()', 'start');
+        //this.grandMenu = this.headerMenuConfigObjectService.getMenu(); // inutile puisque headerMenuConfigObjectService est bind au moment de son injection
+        this.stats = this.headerService.data;
+        //this.clickRefreshData = this.headerService.clickRefreshData; // inutile puisque headerService est bind au moment de son injection
+        this.logger.info('app.header.HeaderView.$onInit() ctrl.grandMenu = ', this.grandMenu);
+    }
+```
+
+en l'absence de ngAnnotate, la déclaration des dépendances à injecter doit être conservée :
+
+```javascript
+HeaderView.$inject = [
+    'logger', 'headerMenuConfigObjectService', 'headerService'
+];
+```
+
+On se retrouve avec 3 blocs : 
+- l'export de la déclaration du composant (un litteral) qui deviendra un decorator en Angular.
+- la classe implémentant le comportement du composant (l'ancien controller)
+- la déclaration explicite des dépendances à injecter
+
+Attention la classe doit être impérativement déclarée en premier. Il faut donc déplacer les blocs pour avoir la classe en premier, ensuite les injections et enfin l'export.
+
+Attention il faut transformer les fonctions anonymes des résolutions de promesses dans les composants par des arrows functions (à cause du `this`)
+
+Attention avec les services, lorsqu'on a défini l'implémentation de higher order function (`reduce`, `map`, `filter`) dans une fonction du service/directive et qu'on la passait telle quelle (la définition de la fonction sans l'exécuter), maintenant que ces fonctions sont des méthodes de fonctions il est nécessaire d'avoir une exécution.
+
+On ne peut plus faire :
+
+```javascript
+selectedTagList.map(this.mapTagListToTagListName);
+```
+
+où `mapTagListToTagListName` serait une méthode de la même classe telle que :
+
+```javascript
+    mapTagListToTagListName(item) {
+        return item.text;
+    }
+```
+
+on doit exécuter la méthode :
+
+```javascript
+selectedTagList.map(this.mapTagListToTagListName())
+```
+
+et donc retourner la fonction implémentant la `map`
+
+```javascript
+    mapTagListToTagListName() {
+        return (item) => {
+            return item.text;
+        }
+    }
+```
+
 [Quelques grands principes pour aller vers Angular 2.x en venant d’Angular 1.4 ? : blogtech.soprasteria.com](http://blogtech.soprasteria.com/2017/05/24/quelques-grands-principes-pour-aller-vers-angular-2-x-en-venant-dangular-1-4/)
 
 > Très détaillé avec contextualisation + plein de bons liens en fin d'article
