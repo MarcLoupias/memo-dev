@@ -16,6 +16,12 @@ développé par Microsoft
 #### documentation
 - [angular typescript quickstart](https://angular.io/docs/js/latest/quickstart.html)
 
+##### `tsconfig.json`
+
+[`tsconfig.json` official doc - www.typescriptlang.org](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
+
+[`tsconfig.json` schema on json.schemastore.org](http://json.schemastore.org/tsconfig)
+
 #### best practices
 - [typescript - best practices](http://definitelytyped.org/guides/best-practices.html)
 
