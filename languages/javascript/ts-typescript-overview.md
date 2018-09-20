@@ -38,3 +38,39 @@ développé par Microsoft
 >
 > Assitance IDE meilleure (Webstorm nickel)
 >
+
+#### Erreurs courantes après migration ES5/ES6 vers TS
+
+`TS2339: Property 'xxx' does not exist on type 'Yyyy'.`
+
+Cf issue 6373 : [Getting error TS2339: Property does not exist on type for a valid ES6 class](https://github.com/Microsoft/TypeScript/issues/6373)
+
+Cf issue 2606 : [ES6 should be valid TypeScript](https://github.com/Microsoft/TypeScript/issues/2606)
+
+```javascript
+class Car {
+    constructor(weight) {
+        this.weight = weight;
+    }
+}
+```
+
+is invalid ts code, it will output `Error:(3, 14) TS2339: Property 'weight' does not exist on type 'Car'.`
+
+```javascript
+class Car {
+    weight: number;
+
+    constructor(weight: number) {
+        this.weight = weight;
+    }
+}
+```
+
+is required by TS.
+
+Anyway it is a non-blocker to generate the target javascript bundle.
+
+If the input code is syntactically correct (prior to type checking) then it can generate ES output, and it is "valid" TS. At this first level, TS is a superset of ES, in that the set of valid TS programs is larger than the set of valid ES programs (because it includes all the valid ES programs plus those with type annotations).
+
+The second level is type-correctness, which is what your error is complaining about. At this level, TS can act as a subset of ES: some valid ES programs, such as your example, are not type-correct TS programs.
