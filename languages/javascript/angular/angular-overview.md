@@ -52,3 +52,13 @@ Schema file for Angular CLI's configuration :
 
 - CLI v1.x : `.angular-cli.json`
 - CLI v6+ : `angular.json`
+
+## template syntax
+
+[Template Syntax - angular.io](https://angular.io/guide/template-syntax)
+
+A webapp is a tree of component. A component is a template and a JavaScript file.
+
+[Binding syntax: An overview - angular.io](https://angular.io/guide/template-syntax#binding-syntax-an-overview)
+
+
