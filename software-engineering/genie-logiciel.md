@@ -265,6 +265,7 @@ Martin Fowler deal with this question in [his feature toggle article](https://ma
     - problème de sémantique avec l'informatique, on mélange tout (algo, numérique, IoT, ...). Nous sommes absents de l'industrie (1 seule société dans les 100 premières mondiales) alors que nous sommes très en pointe en recherche.
     - pourtant l'informatique est partout autour de nous
     - absence de formation pour les gens qui utilisent sans rien comprendre
+    - cite [Jean-Marie Hullot](https://fr.wikipedia.org/wiki/Jean-Marie_Hullot) créateur de [l'IPhone pour Steve Jobs](http://www.graphmobile.com/dossier/2-iphone-histoire.htm).
     - histoire informatique, au début tout était dur. Bootstraping, on commence par faire des petites choses dures, qui permettent de faire plus facilement des choses plus dures, etc ... 
   
 - [Daniel Glazman](http://glazman.org/weblog/) Former co-chairman of the W3C CSS Working Group
