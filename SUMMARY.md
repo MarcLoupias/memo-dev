@@ -23,6 +23,7 @@
 ## DevOps
 
 * [devops - overview](devops/devops-overview.md)
+* [devops - metrics](devops/devops-metrics.md)
 * [devops - kubernetes](devops/kubernetes.md)
 * [devops - docker](devops/docker.md)
 * [devops - PaaS - heroku - deploy AngularJS webapp](devops/paas/heroku/heroku-angularjs.md)
