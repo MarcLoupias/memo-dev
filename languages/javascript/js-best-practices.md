@@ -43,6 +43,14 @@ Le mode strict apporte quelques changements à la sémantique « normale » de J
 
 [Coder l’asynchrone en Javascript (Par Matthieu Lux)](https://www.youtube.com/watch?v=FZ51IVn6tVM)
 
+[Tasks, microtasks, queues and schedules - jakearchibald.com - 20150817](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
+> In summary:
+> 
+> - Tasks execute in order, and the browser may render between them
+> - Microtasks execute in order, and are executed:
+>   - after every callback, as long as no other JavaScript is mid-execution
+>   - at the end of each task
+
 ## design patterns
 
 [The Comprehensive Guide to JavaScript Design Patterns - www.toptal.com - Marko Mišura - 201803xx](https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns)
