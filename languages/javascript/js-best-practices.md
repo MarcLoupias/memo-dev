@@ -50,6 +50,11 @@ Le mode strict apporte quelques changements à la sémantique « normale » de J
 > - Microtasks execute in order, and are executed:
 >   - after every callback, as long as no other JavaScript is mid-execution
 >   - at the end of each task
+>
+> [Commentaire SylvainPV sur dev.com (fil privé)](https://www.developpez.net/forums/d1890469-2/forums-beneficiaires-d-hebergement/priv-redaction/priv-articles/2018-09-05-javascript-recursivite-parcours-d-arbres-l-objet-promise/#post10497961) :
+> 
+> Ce qu'il faut retenir, c'est qu'un `Promise.resolve` n'entraîne pas de "vrai asynchronisme", c'est-à-dire qu'il n'attend pas la prochaine boucle d'événements. On a besoin d'attendre la boucle d'événements pour laisser le navigateur faire le rendu et ne pas avoir de freeze.
+
 
 ## design patterns
 
