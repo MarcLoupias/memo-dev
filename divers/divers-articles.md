@@ -614,6 +614,10 @@ Took from [Machine learning and tech debt: A publication from Google on www.funf
 
 > Another worry for real-world systems lies in hidden feedback loops. Systems that learn from world behavior are clearly intended to be part of a feedback loop. For example, a system for predicting the click through rate (CTR) of news headlines on a website likely relies on user clicks as training labels, which in turn depend on previous predictions from the model. This leads to issues in analyzing system performance, but these are the obvious kinds of statistical challenges that machine learning researchers may find natural to investigate [2].
 
+[Exponential growth of supercomputing power, 1995-2060 (logarithmic scale)](https://www.futuretimeline.net/21stcentury/images/future-timeline-technology-singularity.jpg)
+
+[Human-level artificial intelligence could be achieved "within five to ten years", say experts - www.futuretimeline.net - 20180925](https://www.futuretimeline.net/blog/2018/09/25.htm)
+
 ## Economie
 
 **Le graphique de l'éléphant (Branko Milanovic)**
