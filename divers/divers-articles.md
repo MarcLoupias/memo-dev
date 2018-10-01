@@ -618,6 +618,10 @@ Took from [Machine learning and tech debt: A publication from Google on www.funf
 
 [Human-level artificial intelligence could be achieved "within five to ten years", say experts - www.futuretimeline.net - 20180925](https://www.futuretimeline.net/blog/2018/09/25.htm)
 
+[Santé : nos données personnelles peuvent-elles sauver des vies ?](https://www.franceculture.fr/emissions/dimanche-et-apres/sante-nos-donnees-personnelles-peuvent-elles-sauver-des-vies)
+
+> 38:20 Les dossiers patients se vendent entre 100 et 150 euros l'unité sur le darkweb (pour feed les IA du domaine médical)
+
 ## Economie
 
 **Le graphique de l'éléphant (Branko Milanovic)**
