@@ -55,6 +55,7 @@ Le mode strict apporte quelques changements à la sémantique « normale » de J
 > 
 > Ce qu'il faut retenir, c'est qu'un `Promise.resolve` n'entraîne pas de "vrai asynchronisme", c'est-à-dire qu'il n'attend pas la prochaine boucle d'événements. On a besoin d'attendre la boucle d'événements pour laisser le navigateur faire le rendu et ne pas avoir de freeze.
 
+[JavaScript async/await: The Good Part, Pitfalls and How to Use - hackernoon.com - Charlee Li - 20180607](https://hackernoon.com/javascript-async-await-the-good-part-pitfalls-and-how-to-use-9b759ca21cda)
 
 ## design patterns
 
