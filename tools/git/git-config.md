@@ -100,3 +100,54 @@ For line endings management, check [text](https://git-scm.com/docs/gitattributes
 - Per Project: .gitignore file in the repository
 - Per Repository: in .git/info/excludes
 - Per Computer: through settings in ~/.gitconfig
+
+### global `.gitignore`
+
+Configure a global `.gitignore` file applying to every project on the computer :
+
+Create a gitignore file in your home dir, for ex `~/.gitignore_global`.
+
+A possible content :
+
+```
+# Logs #
+########
+*.log
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files #
+#############
+nbproject
+.~lock.*
+.buildpath
+.idea
+.project
+.settings
+composer.lock
+```
+
+Others examples [here](https://gist.github.com/octocat/9257657) and [here](https://gist.github.com/zpetr/e783d537f8a40bb6ec16).
+
+Then add this file to the current config :
+
+- inside `~/.gitconfig` :
+
+```
+[core]
+	excludesfile = /home/user/.gitignore_global
+```
+
+- or with CLI :
+
+```bash
+$ git config --global core.excludesfile ~/.gitignore_global
+```
