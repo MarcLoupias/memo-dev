@@ -49,6 +49,9 @@ The main important one, which is "devops compatible" : [Understanding the GitHub
 
 
 ## merging strategy
+
+[Dilemne avec worklow git et intégration continue - www.developpez.net/forums - 2016](https://www.developpez.net/forums/d1599839/general-developpement/alm/usine-logicielle/dilemne-worklow-git-integration-continue/)
+
 In a **CI strategy** you can merge in master at the start of the day to prevent painful merges at a later time.
 In a **synchronization point strategy** you only merge in from well defined points in time, for example a tagged release.
 
