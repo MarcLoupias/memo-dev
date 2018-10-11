@@ -382,6 +382,8 @@ Présentation Devoxx2016 sur le passage du code legacy au continuous delivery à
 
 [Podcast Les vices de l'agilité - Choisir les technos avant de commencer à coder - Mickael Azerhad - 20180725](https://soundcloud.com/michael-az-948266686/les-vices-de-lagilite-choisir-les-technos-avant-de-commencer-a-coder)
 
+[Software Architecture & Design Tutorial - www.tutorialspoint.com](https://www.tutorialspoint.com/software_architecture_design/index.htm)
+
 ## divers
 
 [The worst mistake of computer science - www.lucidchart.com/techblog - 20150831](https://www.lucidchart.com/techblog/2015/08/31/the-worst-mistake-of-computer-science/)
