@@ -271,7 +271,19 @@ Martin Fowler deal with this question in [his feature toggle article](https://ma
     - 3 formes de communications possible : *asynchrone* (internet par ex, on envoie un message on ne sait pas si il va arriver ni quand), *synchrone* (on envoie un message et on fait comme si il arrivait en temps zéro), *vibratoire* (envoie message qui arrive à une vitesse connue, par le GPS), c'est en étudiant comment programmer sur ces 3 paradigmes et en les faisant communiquer qu'ils ont développé Esterel.
     - question de Manuel Serrano (chercheur INRIA dev de [Hop.js](http://hop.inria.fr/home/index.html)) : Années 90 mise en réseau des ordis nous entraine dans l'ère de la prog distribuée. Web a spécificité, grosse diff entre machines serveurs qui font beaucoup de traitements et clients qui sont plus nombreux mais en font moins. On a eu la prog multi-tiers début 2000, question de savoir comment on peut parler de la prog asynchrone et de la temporalité des programmes. Ont pris le langage Esterel et ils l'ont adapté au web pour donner [hip-hop](https://github.com/manuel-serrano/hiphop). Quelles seront les grandes étapes à franchir pour améliorer la sureté et la sécurité notamment pour l'internet des objets où la communication est encore plus fréquente que sur le web ?
     - réponse de G. Berry : algo distribués très différents des algos séquentiels. Peuvent être horriblement simple à écrire et horriblement compliqués à comprendre. Un des plus connus et utilisé est TCP (Transfert Control Protocol). Algo très délicats, souvent mon gros. En synchrone tout le monde partage le temps. En asynchrone non. En IoT, on a des interfaces asynchrones, tout va se mélanger. Bcp de questions, énorme source d'erreurs. Ex en asynchrone chacun veut 2 objets, chacun en possède un, et aucun ne veut lacher le sien, ça s'appele un dead lock qui entrain un blocage du système. On a pas les théories mathématiques qui faut. Pour la prog classique on a [le lambda calculus de Church](https://fr.wikipedia.org/wiki/Lambda-calcul). On a pas l'équivalent en distribué. En synchrone on peut faire de la vérification formelle. Pas en asynchrone. La dominence du web fait que les gens sont incroyablement tolérants à la mauvaise qualité.
-  
+
+- [Jacques Printz](https://www.eyrolles.com/Accueil/Auteur/jacques-printz-15337)
+> a été titulaire de la chaire de génie logiciel du Cnam. A dirigé les développements logiciels des ordinateurs Bull DPS7. Consultant en systèmes d’information auprès de grandes entreprises et administrations. Auteur de nombreux ouvrages sur le génie logiciel. 
+
+- [Louis Pouzin](https://fr.wikipedia.org/wiki/Louis_Pouzin)
+> inventeur du datagramme et concepteur du premier réseau à commutation de paquets, à la base de ce qui deviendra Internet. Lauréat du Queen Elizabeth Prize for Engineering en 2013. Militant du multilinguisme dans l’espace numérique et d’une nouvelle gouvernance d’Internet
+
+- [François Anceau](https://www.lip6.fr/actualite/personnes-fiche.php?ident=P242)
+> a été titulaire de la chaire des techniques fondamentales de l'informatique du Cnam, responsable de recherche à l'Imag, Bull et l'Ecole Polytechnique. Pionnier en France des architectures de circuits intégrés, en particulier sur leur preuve formelle et leur synchronisation interne.
+
+- [Najah Naffah](https://fr.wikipedia.org/wiki/Najah_Naffah)
+> Précurseur à l’INRIA de la notion de routeur de réseau, puis du poste de travail intelligent, en dirigeant le projet Kayak. Il a ensuite exercé des responsabilités de direction dans l’Industrie (Bull, EDS, Sabre, Prologue), et maintenant de conseil en management.
+
 - [Daniel Glazman](http://glazman.org/weblog/) Former co-chairman of the W3C CSS Working Group
   - [Sommes-nous à la merci de nos systèmes informatiques ? - France Culture -  20171205](https://www.franceculture.fr/emissions/linvite-des-matins-2eme-partie/sommes-nous-a-la-merci-de-nos-systemes-informatiques)
   
