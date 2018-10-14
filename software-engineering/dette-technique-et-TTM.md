@@ -72,8 +72,27 @@ Sample result for 1994 : T1 = 16.2%, T2 = 52.7%, T3 = 31.1%
 
 Conclusions contested by [The rise and fall of the chaos report figures - IEEE Software - 2010](https://www.cs.vu.nl/~x/the_rise_and_fall_of_the_chaos_report_figures.pdf).
 
-## triangle qualité / cout / délai
+## Triangle
+
 - [le-triangle-qualite-cout-delai : geek-directeur-technique.com](http://www.geek-directeur-technique.com/2009/07/10/le-triangle-qualite-cout-delai)
+
+- [Project management triangle](https://en.wikipedia.org/wiki/Project_management_triangle)
+
+```
+           SCOPE
+             ^
+            / \
+           /   \
+          /     \
+         /       \
+        / QUALITY \
+       /           \
+SCOPE /_____________\ TIME
+
+1. The quality of work is constrained by the project's budget, deadlines and scope (features).
+2. The project manager can trade between constraints.
+3. Changes in one constraint necessitate changes in others to compensate or quality will suffer.
+```
 
 ## services
 
