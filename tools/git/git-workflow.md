@@ -27,6 +27,7 @@ The main important one, which is "devops compatible" : [Understanding the GitHub
 - [Shared repository workflow (same as github flow)](https://gist.github.com/seshness/3943237) (Continuous Delivery oriented)
 - [Simple git flow](http://blogs.atlassian.com/2014/01/simple-git-workflow-simple/) (Continuous Delivery oriented)
 - [Trunk based development](https://trunkbaseddevelopment.com/)
+- [Trunk-based Development vs. Git Flow - www.toptal.com - 201705xx](https://www.toptal.com/software/trunk-based-development-git-flow)
 
 ## opensource contrib on github
 
