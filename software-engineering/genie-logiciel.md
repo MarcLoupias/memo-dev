@@ -245,6 +245,10 @@ Martin Fowler deal with this question in [his feature toggle article](https://ma
 
 - [Martin Fowler : Agile Manifesto, CI](https://fr.wikipedia.org/wiki/Martin_Fowler) [Refactoring](https://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672/ref=asap_bc?ie=UTF8)
 
+- [Allen Holub](https://en.wikipedia.org/wiki/Allen_Holub)
+  - [The death of Agile](https://www.youtube.com/watch?v=vSnCeJEka_s)
+  - [#NoEstimates](https://www.youtube.com/watch?v=QVBlnCTu9Ms)
+
 - [Eric Elliott : "Programming JavaScript Applications" (O’Reilly)](https://leanpub.com/u/ericelliott)
   - [github profile](https://github.com/ericelliott)
   - massive article writer on [medium.com](https://medium.com/@_ericelliott)
@@ -337,8 +341,6 @@ Fin des années 70, les ordinateurs sont montés en puissance, donc permettent l
 Présentation Devoxx2016 sur le passage du code legacy au continuous delivery à la Société Générale. Juste génial.
 
 [SOAT Agile Day - Keynote de Romain Niccoli - Etre agile dans un contexte de forte croissance](https://www.youtube.com/watch?v=vUTYKLEneuI)
-
-[The death of Agile - Allen Holub](https://www.youtube.com/watch?v=vSnCeJEka_s)
 
 ## architecture
 
