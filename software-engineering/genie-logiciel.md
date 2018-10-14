@@ -338,6 +338,8 @@ Présentation Devoxx2016 sur le passage du code legacy au continuous delivery à
 
 [SOAT Agile Day - Keynote de Romain Niccoli - Etre agile dans un contexte de forte croissance](https://www.youtube.com/watch?v=vUTYKLEneuI)
 
+[The death of Agile - Allen Holub](https://www.youtube.com/watch?v=vSnCeJEka_s)
+
 ## architecture
 
 [Architectural patterns - www.dossier-andreas.net](http://www.dossier-andreas.net/software_architecture/)
