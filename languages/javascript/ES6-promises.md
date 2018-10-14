@@ -30,6 +30,10 @@ Releases [on github repo](https://github.com/promises-aplus/promises-spec/releas
 
 [Promise error handling in-depth - 20170924](https://codeburst.io/promise-error-handling-in-depth-90b0965149c0)
 
+## online tools
+
+[Promise visualization playground for the adventurous](https://bevacqua.github.io/promisees/#)
+
 ## questions
 
 [Do never resolved promises cause memory leak? - stackoverflow.com - 20160129](https://stackoverflow.com/questions/20068467/do-never-resolved-promises-cause-memory-leak?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
