@@ -43,6 +43,10 @@ tools for generating changelog from git data
 
 > what to do when things go wrong
 
+## online tools
+
+[learngitbranching.js.org](https://learngitbranching.js.org/)
+
 ## utils
 
 [tj/git-extras](https://github.com/tj/git-extras)
