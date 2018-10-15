@@ -30,6 +30,10 @@ http://jsfiddle.net/davidchase03/u54Kh/
 
 > A Node.js style checker and lint tool for Markdown/CommonMark files. 
 
+[remarkjs/remark - github.com](https://github.com/remarkjs/remark) ([remarkjs/remark-lint - github.com](https://github.com/remarkjs/remark-lint))
+
+> Markdown processor powered by plugins based on @unifiedjs (and @vfile, @syntax-tree)
+
 ## tools
 
 [GitbookIO/markup-it - github.com](https://github.com/GitbookIO/markup-it)
