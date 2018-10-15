@@ -29,3 +29,9 @@ http://jsfiddle.net/davidchase03/u54Kh/
 [igorshubovych/markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) with [DavidAnson/markdownlint](https://github.com/DavidAnson/markdownlint) ([online parser demo](https://dlaa.me/markdownlint/))
 
 > A Node.js style checker and lint tool for Markdown/CommonMark files. 
+
+## tools
+
+[GitbookIO/markup-it - github.com](https://github.com/GitbookIO/markup-it)
+
+> JavaScript library to parse and serialize markup content (Markdown and HTML) 
