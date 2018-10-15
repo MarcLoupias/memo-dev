@@ -26,6 +26,6 @@ http://jsfiddle.net/davidchase03/u54Kh/
 
 > The pluggable natural language linter for text and markdown.
 
-[igorshubovych/markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) with [DavidAnson/markdownlint](https://github.com/DavidAnson/markdownlint)
+[igorshubovych/markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) with [DavidAnson/markdownlint](https://github.com/DavidAnson/markdownlint) ([online parser demo](https://dlaa.me/markdownlint/))
 
 > A Node.js style checker and lint tool for Markdown/CommonMark files. 
