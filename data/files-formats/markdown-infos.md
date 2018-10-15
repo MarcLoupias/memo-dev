@@ -16,13 +16,21 @@
 
 ## linters
 
+### textlint
+
 [textlint - textlint.github.io](https://textlint.github.io/) ([textlint/textlint - github.com](https://github.com/textlint/textlint))
 
 > The pluggable natural language linter for text and markdown.
 
+### markdownlint
+
 [igorshubovych/markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) with [DavidAnson/markdownlint](https://github.com/DavidAnson/markdownlint) ([online parser demo](https://dlaa.me/markdownlint/))
 
 > A Node.js style checker and lint tool for Markdown/CommonMark files. 
+
+[No auto fix in markdownlint explanation issue](https://github.com/DavidAnson/markdownlint/issues/80).
+
+### remarkjs
 
 [remarkjs/remark - github.com](https://github.com/remarkjs/remark) ([remarkjs/remark-lint - github.com](https://github.com/remarkjs/remark-lint))
 
