@@ -14,12 +14,6 @@
 
 [Markdown on GitHub](https://help.github.com/categories/writing-on-github/)
 
-## AngularJS
-
-https://github.com/btford/angular-markdown-directive
-
-http://jsfiddle.net/davidchase03/u54Kh/
-
 ## linters
 
 [textlint - textlint.github.io](https://textlint.github.io/) ([textlint/textlint - github.com](https://github.com/textlint/textlint))
@@ -34,6 +28,12 @@ http://jsfiddle.net/davidchase03/u54Kh/
 
 > Markdown processor powered by plugins based on @unifiedjs (and @vfile, @syntax-tree)
 
+## style-guide
+
+[Markdown Style Guide](http://www.cirosantilli.com/markdown-style-guide/) ([cirosantilli/markdown-style-guide - github.com](https://github.com/cirosantilli/markdown-style-guide/))
+
+> Readable and portable Markdown style guide. 
+
 ## tools
 
 [GitbookIO/markup-it - github.com](https://github.com/GitbookIO/markup-it)
@@ -43,3 +43,7 @@ http://jsfiddle.net/davidchase03/u54Kh/
 [markdown-it/markdown-it - github.com](https://github.com/markdown-it/markdown-it)
 
 > Markdown parser, done right. 100% CommonMark support, extensions, syntax plugins & high speed
+
+## JavaScript lib
+
+[btford/angular-markdown-directive - github.com](https://github.com/btford/angular-markdown-directive)
