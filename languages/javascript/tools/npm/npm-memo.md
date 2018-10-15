@@ -339,6 +339,12 @@ There is also big behavior differences regarding to the registry publication for
 
 Mostly for a package to be used as a deps for another. No usage for an end project (like a frontend or a backend).
 
+**peerDeps tools**
+
+[nathanhleung/install-peerdeps - github.com](https://github.com/nathanhleung/install-peerdeps)
+
+> A command-line interface to install an NPM package and its peer dependencies automatically. 
+
 ### others packages
 
 - [npm-check](https://www.npmjs.com/package/npm-check)
