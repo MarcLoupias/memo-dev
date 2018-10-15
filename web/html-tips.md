@@ -1,6 +1,16 @@
 
 # html tips
 
+## balises `<meta>`
+
+### `<meta> viewport`
+
+[Comprendre le Viewport dans le Web mobile - www.alsacreations.com - 20121015](https://www.alsacreations.com/article/lire/1490-Comprendre-le-Viewport-dans-le-Web-mobile.html)
+
+> Afin de forcer le bon niveau de zoom aux navigateurs mobiles, mais aussi pour leur imposer une largeur de viewport qui n'est pas égale à 980px (ou autres valeurs selon le navigateur), il vous sera nécessaire d'inclure une balise `<meta>` `"viewport"` au sein du `<head>` de votre document HTML.
+> 
+> `<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">`
+
 ## stocker une image directement dans le html
 
 ```html
