@@ -49,3 +49,41 @@
 ## microservices
 
 [The Best Node.js & Microservices Articles we Ever Wrote - blog.risingstack.com - 20180516](https://blog.risingstack.com/top-nodejs-microservices-articles-risingstack/)
+
+## files I/0
+
+[fs.readFile vs streams to read text files in node.js - medium.com - Duncan Grant - 20170822](https://medium.com/@dalaidunc/fs-readfile-vs-streams-to-read-text-files-in-node-js-5dd0710c80ea)
+
+[Read a file in Node.js - stackoverflow.com](https://stackoverflow.com/questions/18386361/read-a-file-in-node-js)
+
+```javascript
+var fs = require('fs'),
+    path = require('path'),    
+    filePath = path.join(__dirname, 'start.html');
+
+fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
+    if (!err) {
+        console.log('received data: ' + data);
+        response.writeHead(200, {'Content-Type': 'text/html'});
+        response.write(data);
+        response.end();
+    } else {
+        console.log(err);
+    }
+});
+```
+
+[Node.js - File System - www.tutorialspoint.com](https://www.tutorialspoint.com/nodejs/nodejs_file_system.htm)
+
+> - Synchronous vs Asynchronous
+> - Open a File
+> - Flags
+> - Get File Information
+> - Writing a File
+> - Reading a File
+> - Closing a File
+> - Truncate a File
+> - Delete a File
+> - Create a Directory
+> - Read a Directory
+> - Remove a Directory
