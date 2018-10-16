@@ -46,6 +46,10 @@
 
 ### parsers
 
+[Markdown parsers comparator - www.npmtrends.com](https://www.npmtrends.com/markdown-vs-markdown-it-vs-marked-vs-weather-js)
+
+[Choosing the Right Markdown Parser - css-tricks.com - 20160201](https://css-tricks.com/choosing-right-markdown-parser/)
+
 [GitbookIO/markup-it - github.com](https://github.com/GitbookIO/markup-it)
 
 > JavaScript library to parse and serialize markup content (Markdown and HTML) 
