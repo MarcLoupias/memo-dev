@@ -58,6 +58,8 @@
 
 > A markdown parser and compiler. Built for speed.
 
+It can be used to [build export in another format](https://marked.js.org/#/USING_PRO.md), [Holi0317/md2bbc example](https://github.com/Holi0317/md2bbc.js).
+
 ## JavaScript lib
 
 [btford/angular-markdown-directive - github.com](https://github.com/btford/angular-markdown-directive)
