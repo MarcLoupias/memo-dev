@@ -44,6 +44,8 @@
 
 ## tools
 
+### parsers
+
 [GitbookIO/markup-it - github.com](https://github.com/GitbookIO/markup-it)
 
 > JavaScript library to parse and serialize markup content (Markdown and HTML) 
@@ -51,6 +53,10 @@
 [markdown-it/markdown-it - github.com](https://github.com/markdown-it/markdown-it)
 
 > Markdown parser, done right. 100% CommonMark support, extensions, syntax plugins & high speed
+
+[markedjs/marked - github.com](https://github.com/markedjs/marked/) [online demo](https://marked.js.org/demo)
+
+> A markdown parser and compiler. Built for speed.
 
 ## JavaScript lib
 
