@@ -26,6 +26,8 @@
 
 ## project scaffolding
 
+### vue-cli
+
 [vuejs/vue-cli](https://github.com/vuejs/vue-cli)
 
 Current available templates include:
@@ -36,6 +38,14 @@ Current available templates include:
 - [browserify-simple](https://github.com/vuejs-templates/browserify-simple) - A simple Browserify + vueify setup for quick prototyping.
 - [pwa](https://github.com/vuejs-templates/pwa) - PWA template for vue-cli based on the webpack template.
 - [simple](https://github.com/vuejs-templates/simple) - The simplest possible Vue setup in a single HTML file.
+
+### nuxt.js
+
+[nuxt/nuxt.js - github.com](https://github.com/nuxt/nuxt.js)
+
+> The Vue.js Developers Framework
+
+> Vue.js Meta Framework to create complex, fast & universal web applications quickly.
 
 ### single file components
 
