@@ -14,7 +14,7 @@
 > 
 > If you’re logging app activity (for example, tracking traffic or API calls), instead of using `console.log()`, use a logging library like [Winston](https://www.npmjs.com/package/winston) or [Bunyan](https://www.npmjs.com/package/bunyan). For a detailed comparison of these two libraries, see the StrongLoop blog post [Comparing Winston and Bunyan Node.js Logging](https://strongloop.com/strongblog/compare-node-js-logging-winston-bunyan/).
 
-## specs
+## specs & articles
 
 [RFC5424 - The Syslog Protocol - tools.ietf.org](https://tools.ietf.org/html/rfc5424)
 
@@ -26,6 +26,14 @@
 > protocols for transmission of syslog messages.  It also provides a
 > message format that allows vendor-specific extensions to be provided
 > in a structured way.
+
+[OWASP Logging Cheat Sheet - www.owasp.org](https://www.owasp.org/index.php/Logging_Cheat_Sheet)
+
+> This cheat sheet is focused on providing developers with concentrated guidance on building application logging mechanisms, especially related to security logging.
+> (...)
+> Application logging should be consistent within the application, consistent across an organization's application portfolio and use industry standards where relevant, so the logged event data can be consumed, correlated, analyzed and managed by a wide variety of systems.
+
+[Getting Started Quickly With Node.js Logging - blog.scalyr.com - 20180410](https://blog.scalyr.com/2018/04/getting-started-quickly-node-js-logging/)
 
 ## For debugging
 
