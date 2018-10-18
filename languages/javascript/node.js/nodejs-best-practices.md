@@ -87,3 +87,7 @@ fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
 > - Create a Directory
 > - Read a Directory
 > - Remove a Directory
+
+## error handling
+
+[Checklist: Best Practices of Node.JS Error Handling (2018)](https://goldbergyoni.com/checklist-best-practices-of-node-js-error-handling/)
