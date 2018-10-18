@@ -35,6 +35,8 @@
 
 [Getting Started Quickly With Node.js Logging - blog.scalyr.com - 20180410](https://blog.scalyr.com/2018/04/getting-started-quickly-node-js-logging/)
 
+[How to Get Node.js Logging Right - blog.risingstack.com - 20160531](https://blog.risingstack.com/node-js-logging-tutorial/)
+
 ## For debugging
 
 [awesome-nodejs - debugging--profiling](https://github.com/sindresorhus/awesome-nodejs#debugging--profiling)
