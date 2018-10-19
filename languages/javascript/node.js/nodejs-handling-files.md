@@ -25,6 +25,8 @@ fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
 
 [fs.readFile vs streams to read text files in node.js - medium.com - Duncan Grant - 20170822](https://medium.com/@dalaidunc/fs-readfile-vs-streams-to-read-text-files-in-node-js-5dd0710c80ea)
 
+> TLDR: my suggestion is once you are planning on dealing with text files of greater size than around 10MB, it’s best to ditch readFile and start using streams instead.
+
 ## with promises
 
 [From callbacks to fs/promises to handle the file system in Node.js - dev.to/mrm8488 - 20180529](https://dev.to/mrm8488/from-callbacks-to-fspromises-to-handle-the-file-system-in-nodejs-56p2)
