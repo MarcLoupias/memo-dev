@@ -1,5 +1,13 @@
 # nodejs best practices
 
+## misc links
+
+[sindresorhus/awesome-nodejs - github.com](https://github.com/sindresorhus/awesome-nodejs)
+
+[ryanmcdermott/clean-code-javascript - github.com](https://github.com/ryanmcdermott/clean-code-javascript)
+
+[i0natan/nodebestpractices - github.com](https://github.com/i0natan/nodebestpractices)
+
 [Node.js Best Practices : Matt Goldspink 20160829](https://www.codementor.io/mattgoldspink/nodejs-best-practices-du1086jja)
 
 - Start all projects with `npm init`
