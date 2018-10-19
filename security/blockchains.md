@@ -76,6 +76,15 @@
 
 [La blockchain : une révolution technologique selon le Président chinois Xi Jinping, Pékin veut utiliser la technologie comme moteur de développement - www.developpez.com - 20180606](https://www.developpez.com/actu/207814/La-blockchain-une-revolution-technologique-selon-le-President-chinois-Xi-Jinping-Pekin-veut-utiliser-la-technologie-comme-moteur-de-developpement/)
 
+[Déconstruire les mythes de la Blockchain - www.latribune.fr - 20181017](https://www.latribune.fr/opinions/tribunes/deconstruire-les-mythes-de-la-blockchain-794001.html)
+
+> Réalité 1 : la Blockchain ne supprime pas les intermédiaires
+> Réalité 2 : la Blockchain ne supprime pas le besoin de confiance
+> Réalité 3 : le monde physique détruit les propriétés de la Blockchain
+> Réalité 4 : la Blockchain ne permet pas de réduire les coûts
+> Réalité 5 : les contrats intelligents portent très mal leur nom
+> Réalité 6 : la blockchain d'entreprise ou pseudo-blockchain est une innovation incrémentale, pas une révolution
+
 ## questions
 
 A priori les certificats utilisés dans une blockchain sont autosignés, comment gérer la révocation des certificats ?
