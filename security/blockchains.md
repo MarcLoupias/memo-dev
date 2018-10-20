@@ -85,6 +85,10 @@
 > Réalité 5 : les contrats intelligents portent très mal leur nom
 > Réalité 6 : la blockchain d'entreprise ou pseudo-blockchain est une innovation incrémentale, pas une révolution
 
+[Ten years in, nobody has come up with a use for blockchain - hackernoon.com - Kai Stinchcombe - 20171223](https://hackernoon.com/ten-years-in-nobody-has-come-up-with-a-use-case-for-blockchain-ee98c180100)
+
+[Blockchain is not only crappy technology but a bad vision for the future - medium.com/@kaistinchcombe - 20180405](https://medium.com/@kaistinchcombe/decentralized-and-trustless-crypto-paradise-is-actually-a-medieval-hellhole-c1ca122efdec)
+
 ## questions
 
 A priori les certificats utilisés dans une blockchain sont autosignés, comment gérer la révocation des certificats ?
