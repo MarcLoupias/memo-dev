@@ -337,6 +337,43 @@ So how do we know when we have delivered this story? There are several scenarios
 
 [TDD n’est pas ce que tu crois. - medium.com/@michaelazerhad](https://medium.com/@michaelazerhad/tdd-nest-pas-ce-que-tu-crois-6b8390cb40c9)
 
+[Unit testing, you’re doing it wrong - medium.com/@Cyrdup - 20181019](https://medium.com/@Cyrdup/unit-testing-youre-doing-it-wrong-407a07692989?_branch_match_id=381942042700383268)
+
+> **Some fallacies about unit testing**
+> 
+> 1. TDD is all about unit tests
+> 2. Automated testing is all about unit tests
+> 3. 100% code coverage requires extensive unit testing
+> 4. You have to make private methods public to reach 100% coverage
+> 5. Some code does not need be tested
+> 6. You need to use a mocking framework
+> 7. Tests are expensive to write
+> 8. The ‘testing pyramid’ is the ultimate testing strategy
+> 
+> **What about some truths ?**
+> 
+> 1. Unit tests are not about testing a method in isolation
+> 2. 100% coverage does not mean your code is bug free
+> 3. There is a tooling problem
+> 4. It is difficult
+> 5. Tests require maintenance
+> 6. Having too many tests is a problem
+> 7. Throwing away tests is a hygienic move
+> 8. Automated tests are useful
+
+[What are the London and Chicago schools of TDD? - softwareengineering.stackexchange.com - 20111206](https://softwareengineering.stackexchange.com/questions/123627/what-are-the-london-and-chicago-schools-of-tdd)
+
+> Suppose you have class called `ledger` a method called `calculate` that uses a `Calculator` to do different types of calculations depending on the arguments passed to `calculate`, for example `multiply(x, y)` or `subtract(x, y)`.
+> 
+> Now, suppose you want to test what happens when you call `ledger.calculate("5 * 7")`.
+> 
+> The **London/Interaction** school would have you assert whether `Calculator.multiply(5,7)` got called. The various mocking frameworks are useful for this, and it can be very useful if, for example, you don't have ownership of the `Calculator` object (suppose it is an external component or service that you cannot test directly, but you do know you have to call in a particular way).
+> 
+> The **Chicago/State** school would have you assert whether the result is 35. The jUnit/nUnit frameworks are generally geared towards doing this.
+> 
+> Both are valid and important tests.
+
+
 ## videos
 
 [cleancoders.com/videos](https://cleancoders.com/videos/clean-code/advanced-tdd) payantes
