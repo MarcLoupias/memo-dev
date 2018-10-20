@@ -79,6 +79,7 @@
 * [javascript - nodejs - modules](languages/javascript/node.js/nodejs-modules.md)
 * [javascript - nodejs - express project structure](languages/javascript/node.js/nodejs-express-project-structure.md)
 * [javascript - nodejs - best practices](languages/javascript/node.js/nodejs-best-practices.md)
+* [javascript - nodejs - handling errors](languages/javascript/node.js/nodejs-handling-errors.md)
 * [javascript - nodejs - handling files](languages/javascript/node.js/nodejs-handling-files.md)
 * [javascript - nodejs - logging](languages/javascript/node.js/nodejs-logging.md)
 * [javascript - nodejs - links](languages/javascript/node.js/nodejs-links.md)

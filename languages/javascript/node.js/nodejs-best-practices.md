@@ -72,7 +72,3 @@
 > - Create a Directory
 > - Read a Directory
 > - Remove a Directory
-
-## error handling
-
-[Checklist: Best Practices of Node.JS Error Handling (2018)](https://goldbergyoni.com/checklist-best-practices-of-node-js-error-handling/)
