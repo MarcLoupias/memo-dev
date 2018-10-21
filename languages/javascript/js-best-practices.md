@@ -39,7 +39,7 @@ Le mode strict apporte quelques changements à la sémantique « normale » de J
 
 [Array.forEach n’est pas toujours la meilleure solution ! - blog.overnetcity.com - 20140829](https://blog.overnetcity.com/2014/08/29/array-foreach-nest-pas-toujours-meilleure-solution/)
 
-## async
+## `async` / `await`
 
 [Coder l’asynchrone en Javascript (Par Matthieu Lux)](https://www.youtube.com/watch?v=FZ51IVn6tVM)
 
@@ -55,7 +55,31 @@ Le mode strict apporte quelques changements à la sémantique « normale » de J
 > 
 > Ce qu'il faut retenir, c'est qu'un `Promise.resolve` n'entraîne pas de "vrai asynchronisme", c'est-à-dire qu'il n'attend pas la prochaine boucle d'événements. On a besoin d'attendre la boucle d'événements pour laisser le navigateur faire le rendu et ne pas avoir de freeze.
 
-[JavaScript async/await: The Good Part, Pitfalls and How to Use - hackernoon.com - Charlee Li - 20180607](https://hackernoon.com/javascript-async-await-the-good-part-pitfalls-and-how-to-use-9b759ca21cda)
+[JavaScript `async`/`await`: The Good Part, Pitfalls and How to Use - hackernoon.com - Charlee Li - 20180607](https://hackernoon.com/javascript-async-await-the-good-part-pitfalls-and-how-to-use-9b759ca21cda)
+
+[`async`/`await` - javascript.info](https://javascript.info/async-await)
+
+> **TLDR :**
+> 
+> The `async` keyword before a function has two effects:
+> 
+> 1. Makes it always return a promise.
+> 2. Allows to use `await` in it.
+> 
+> The `await` keyword before a promise makes JavaScript wait until that promise settles, and then:
+> 
+> 1. If it’s an error, the exception is generated, same as if `throw error` were called at that very place.
+> 2. Otherwise, it returns the result, so we can assign it to a value.
+> 
+> Together they provide a great framework to write asynchronous code that is easy both to read and write.
+> 
+> With `async/await` we rarely need to write `promise.then/catch`, but we still shouldn’t forget that they are based on promises, because sometimes (e.g. in the outermost scope) we have to use these methods. Also `Promise.all` is a nice thing to wait for many tasks simultaneously.
+
+### drawbacks
+
+[How to escape async/await hell](https://medium.freecodecamp.org/avoiding-the-async-await-hell-c77a0fb71c4c)
+
+> **TLDR :** use successives `await` when not needed, the program control flow should continue. Use `Promise.all` when needed. 
 
 ## design patterns
 
