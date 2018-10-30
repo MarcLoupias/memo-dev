@@ -65,6 +65,43 @@
 
 > Node.js version management: no subshells, no profile setup, no convoluted API, just simple.
 
+#### usage
+
+Super easy but system wide.
+
+List installed version 
+
+```bash
+n
+```
+
+Output :
+
+```bash
+  0.8.14
+ο 0.8.17
+  0.9.6
+```
+
+Change the active version by selecting the line and hit space bar.
+
+Install desired node version with `n <version>` ex `n 10.2.1`.
+
+#### issues
+
+Possible issue with `npm`, any `npm` command will output this :
+
+```text
+npm WARN lifecycle npm is using /home/<HOME_DIR>/n/bin/node but there is no node binary in the current PATH. Use the `--scripts-prepend-node-path` option to include the path for the node binary npm was executed with.
+```
+
+Fixed by adding a .npmrc file in the project root dir containing :
+
+```text
+scripts-prepend-node-path=true
+```
+
+
 ### `node` package with `npx`
 
 [using a node package inside package.json](https://www.npmjs.com/package/node)
