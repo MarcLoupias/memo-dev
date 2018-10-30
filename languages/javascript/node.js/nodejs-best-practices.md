@@ -29,7 +29,19 @@
 
 ## switching node version between projects
 
+### `nvm`
+
+[creationix/nvm - github.com](https://github.com/creationix/nvm)
+
 [NVM Automatic Switching : gist](https://gist.github.com/calendee/bb55962fd720a6dbeed6bf356976656c)
+
+### `n`
+
+[tj/n - github.com](https://github.com/tj/n)
+
+> Node.js version management: no subshells, no profile setup, no convoluted API, just simple.
+
+### `node` package with `npx`
 
 [using a node package inside package.json](https://www.npmjs.com/package/node)
 
