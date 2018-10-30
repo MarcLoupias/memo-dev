@@ -29,6 +29,14 @@
 
 ## switching node version between projects
 
+### articles
+
+[nvm vs n! - .gitignore - 20170522](https://medium.com/gitignore/nvm-vs-n-f34ebca314ea)
+
+[How I manage multiple Node.js versions - steelbrain.me - 20160719](https://steelbrain.me/2016/07/19/how-i-manage-multiple-node-js-versions.html)
+
+[The Best Way to Install Node.js - yoember.com - 20180929](https://yoember.com/nodejs/the-best-way-to-install-node-js/)
+
 ### `nvm`
 
 [creationix/nvm - github.com](https://github.com/creationix/nvm)
