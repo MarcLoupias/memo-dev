@@ -259,6 +259,7 @@
 
 ## Systems - Linux
 
+* [APT - cheatsheet](systems/linux/apt-cheatsheet.md)
 * [Ubuntu - cheatsheet](systems/linux/ubuntu-cheatsheet.md)
 * [Ubuntu - create a bootable USB stick](systems/linux/ubuntu-create-usb-boot.md)
 * [Linux - Description du FHS](systems/linux/linux-fhs-description.md)
