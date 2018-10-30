@@ -37,6 +37,22 @@
 
 [The Best Way to Install Node.js - yoember.com - 20180929](https://yoember.com/nodejs/the-best-way-to-install-node-js/)
 
+### tooling comparison
+
+[Taken from stackoverflow answer from `nvm` maintainer](https://stackoverflow.com/a/29545541)
+
+> The most-used version managers for node are without a doubt http://nvm.sh, https://www.npmjs.com/package/nave, and https://www.npmjs.com/package/n.
+> 
+> `nvm` is for modifying individual shell sessions to use the version you want. `nave` is for launching subshells with the version you want loaded. n is for switching a single system-wide version of node.
+> 
+> `nvm` uses a `.nvmrc` file, which like `.ruby-version`, contains the version-ish string X you'd normally couple with `nvm use X` or `nvm install X`. `nvm use` or `nvm install` by itself will locate the `.nvmrc` file, as will simply sourcing `nvm` upon opening a new shell.
+> 
+> It appears `nave` supports a `.naverc` file, but I'm not too familiar with its usage.
+> 
+> `n` doesn't appear to support any such config, but as it's system-wide, it doesn't really make as much sense to do so.
+> 
+> `avn` supports `.node-version` and attempts to provide automatic version switching by hooking into `cd`, after `nvm` decided that was too invasive a behavior to include.
+
 ### `nvm`
 
 [creationix/nvm - github.com](https://github.com/creationix/nvm)
