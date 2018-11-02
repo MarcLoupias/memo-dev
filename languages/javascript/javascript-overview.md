@@ -116,6 +116,7 @@ Just In Time. An engine like V8 compile JavaScript code into machine code on the
 
 - [kangax.github.io](http://kangax.github.io/compat-table)
 - [ES6 Features list over ES5](http://es6-features.org)
+- [The Complete JavaScript Handbook - medium.freecodecamp.org - 20181030](https://medium.freecodecamp.org/the-complete-javascript-handbook-f26b2c71719c)
 
 ### tooling lists - states of js
 

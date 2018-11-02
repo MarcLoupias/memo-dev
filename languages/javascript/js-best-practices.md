@@ -4,9 +4,50 @@
 - [coding style from airbnb](https://github.com/airbnb/javascript)
 
 ## articles
+
 - [javascript_best_practises : qooxdoo.org](http://qooxdoo.org/docs/general/javascript_best_practises)
 - [javascript : Douglas Crockford](http://www.crockford.com/javascript/)
 - [Onze idées fausses sur l'héritage en JavaScript : sylvainpv.developpez.com - 20150523](http://sylvainpv.developpez.com/traductions/javascript/idees-fausses-heritage/) (trad article Eric Elliott)
+- [The Complete JavaScript Handbook - medium.freecodecamp.org - 20181030](https://medium.freecodecamp.org/the-complete-javascript-handbook-f26b2c71719c)
+
+> Table of Contents
+> 
+> - ECMAscript
+> - ES6
+> - ES2016
+> - ES2017
+> - ES2018
+> - Coding Style
+> - Lexical Structure
+> - Variables
+> - Types
+> - Expressions
+> - Prototypal Inheritance
+> - Classes
+> - Exceptions
+> - Semicolons
+> - Quotes
+> - Template Literals
+> - Functions
+> - Arrow Functions
+> - Closures
+> - Arrays
+> - Loops
+> - Events
+> - The Event Loop
+> - Asynchronous Programming and Callbacks
+> - Promises
+> - Async and Await
+> - Loops and Scope
+> - Timers
+> - This
+> - Strict Mode
+> - Immediately-Invoked Function Expressions (IFFE’s)
+> - Math Operators
+> - The Math Object
+> - ES modules
+> - CommonJS
+> - Glossary
 
 ## perfs
 
