@@ -3,6 +3,7 @@
 ## Divers
 
 * [Freebox - videos](divers/freebox/freebox-videos.md)
+* [Raspberry - overview](divers/raspberry/raspberry-overview.md)
 * [Licences - articles opensource](divers/licences/licences-articles-opensource.md)
 * [Licences - WTFPL](divers/licences/licences-WTFPL.md)
 * [Licences - Choose a licence](divers/licences/licences-choose-a-licence.md)
