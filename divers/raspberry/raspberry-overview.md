@@ -36,3 +36,5 @@
 > Welcome in your new digital home. 
 
 [Installer Cozy sur Raspberry Pi 3 - forum.cozy.io](https://forum.cozy.io/t/installer-cozy-sur-raspberry-pi-3/3825/14)
+
+[Install Cozy on a Debian server](https://docs.cozy.io/en/tutorials/selfhost-debian/)
