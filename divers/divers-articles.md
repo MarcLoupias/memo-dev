@@ -622,6 +622,10 @@ Took from [Machine learning and tech debt: A publication from Google on www.funf
 
 > 38:20 Les dossiers patients se vendent entre 100 et 150 euros l'unité sur le darkweb (pour feed les IA du domaine médical)
 
+[Éric Sadin : l'asservissement par l'Intelligence Artificielle ? - Thinkerview - 20181108](https://www.youtube.com/watch?v=VzeOnBRzDik)
+
+> objectif du dev de l'IA par les GAFA est de supprimer le libre arbitre par l'analyse des états successifs de l'individu pour lui proposer des choix
+
 ## Economie
 
 **Le graphique de l'éléphant (Branko Milanovic)**
