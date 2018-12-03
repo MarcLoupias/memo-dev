@@ -152,6 +152,12 @@ Note : Since [lodash@4](https://github.com/lodash/lodash/wiki/Changelog#v400) `_
 
 [Functional approaches to dependency injection 20161205](https://fsharpforfunandprofit.com/posts/dependency-injection-1/)
 
+> TLDR : Build functions with partial application at the root level of your app ([here is a concrete example](https://github.com/mpj/ffforumautomator/tree/f9c5aa658103532bfb9c5e4f64ab0391e50d06a8))
+
+[Dependency Injection without classes - Fun Fun Function - www.youtube.com - 20170904](https://www.youtube.com/watch?v=sD94szvFqGw&feature=youtu.be)
+
+[Advanced Dependency Injection without classes - Fun Fun Function - www.youtube.com - 20170911](https://www.youtube.com/watch?v=6YBV1cKRqzU&feature=youtu.be)
+
 [Is Functional Programming a viable alternative to dependency injection patterns? : stackexchange.com 20150310](https://softwareengineering.stackexchange.com/questions/275891/is-functional-programming-a-viable-alternative-to-dependency-injection-patterns)
 
 [Functional Dependency Injection == Currying 201003xx](http://mikehadlow.blogspot.fr/2010/03/functional-dependency-injection.html)
