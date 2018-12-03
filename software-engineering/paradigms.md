@@ -61,6 +61,31 @@ cf [Nested Ternaries are Great - Eric Elliott - 20180126](https://medium.com/jav
 
 [An introduction to functional programming : Mary Rose Cook](https://codewords.recurse.com/issues/one/an-introduction-to-functional-programming)
 
+[Michael Feathers tweet - 20101103](https://twitter.com/mfeathers/status/29581296216?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E29581296216&ref_url=https%3A%2F%2Fmedium.com%2Fmedia%2F95da9b980e9c6f99b6613f490c4f636a%3FpostId%3D7325853ff9ad)
+
+> OO makes code understandable by encapsulating moving parts. 
+> FP makes code understandable by minimizing moving parts.
+
+[A Birds Eye View of Functional Programming TL;DR - medium.com - Brooklyn Zelenka - 20151030](https://medium.com/making-internets/a-bird-s-eye-view-of-functional-programming-7325853ff9ad)
+
+> Functional programming (FP) helps you write robust, powerful, and maintainable programs well suited to multicore and cloud computing by focusing on controlling state and effects.
+> 
+> **Functional Programming Principles**
+>
+> *Own Your Context with Explicit State*
+> Some people call it “stateless”, but I prefer “explicit state”. Instead of having data implicitly “somewhere over there” and reading that (implicit & shared) data while in the body of a function, simply pass all data that the function needs explicitly as arguments.
+> 
+> *Limit Side Effects*
+> This is the output side of explicit state. As much as possible, avoid talking to the world outside of the function, except for the final return of the function. 
+> 
+> *Referential Transparency*
+> When you limit yourself to simple input/output for every function (with no changes to the world outside it), you can swap out a function for its return value.
+> 
+> *Composition*
+> With (top-down) inheritance, you specialize a general class into more specific subsets. For example, a general Car class can be used to make more specific SportsCar and Minivan classes. This works well for a certain problems, but fails when you want to mix and match functionality. You can quickly end up with an endless regress of more and more general classes, and huge messaging interfaces between different parts of your application.
+> With (bottom-up) function composition, we take small, single responsibility functions, and combine them with other functions to build up larger, more complex behaviours. We do this either by passing the result of one function as the argument of another, or by calling them in sequence (if we’re side-effecting).
+> 
+
 [Robert C Martin - Functional Programming; What? Why? When?](https://www.youtube.com/watch?v=7Zlp9rKHGD4)
 
 - [4:07](https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=247s) "Functional Programming: What? When? Why?" or "The Failure of State" 
