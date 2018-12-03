@@ -81,6 +81,48 @@ cf [Nested Ternaries are Great - Eric Elliott - 20180126](https://medium.com/jav
 - [42:00](https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=2520s) How are you going to work with an abundance of cores? Maybe we need to walk away from the assignment statement. 
 - [49:49](https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=2989s) OO = procedure + state. OO is exposed procedure but hidden state (encapsulation). It's possible to write functional programs using an OO style. All of the objects become immutable.
 
+### functionnal programming concepts
+
+[Why using `_.chain` is a mistake. - medium.com - Izaak Schroeder - 20160217](https://medium.com/making-internets/why-using-chain-is-a-mistake-9bc1f80d51ba)
+
+**partial application**
+
+> Partial application means taking a function with n arguments and returning a new function with n-i arguments (given i<n), where the i arguments are bound to the new function.
+
+```javascript
+const add = (a, b) => a + b;
+const add5 = _.partial(add, 5); // now `a` is bound (locked-in) to 5
+const add5 = (b) => 5 + b; // this is what it looks like inside
+
+add5(3); // equivalent to invoking add(5, 3);
+```
+
+**currying**
+
+> Function currying is the process of successive partial applications, until the last argument is given at which point the result of the function is returned.
+
+```javascript
+const add = (a) => (b) => a + b;
+
+add(1)(2); // Repeated partial application.
+```
+
+**Composition**
+
+A composed version of:
+
+```javascript
+const add8 = (x) => add5(add3(x));
+```
+
+Could be written with more visual clarity using composition:
+
+```javascript
+const add8 = compose(add5, add3);
+```
+
+Note : Since [lodash@4](https://github.com/lodash/lodash/wiki/Changelog#v400) `_.compose` has been removed in flavor of [`_.flowRight`](https://lodash.com/docs/4.17.10#flowRight).
+
 ### functionnal programming and DI
 
 [Functional approaches to dependency injection 20161205](https://fsharpforfunandprofit.com/posts/dependency-injection-1/)
