@@ -166,6 +166,7 @@
 * [architecture micro-services](software-engineering/archi-micro-services.md)
 * [code complexity](software-engineering/code-complexity.md)
 * [code reviews](software-engineering/code-reviews.md)
+* [compilateur](software-engineering/compilateur.md)
 * [composition over inheritance](software-engineering/composition-over-inheritance.md)
 * [dette technique et TTM](software-engineering/dette-technique-et-TTM.md)
 * [genie logiciel](software-engineering/genie-logiciel.md)
