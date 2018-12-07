@@ -23,6 +23,14 @@ Opera a abandonné Presto et est passé sur Blink
  
 Un process par tab, chaque process multithreadé + layout parallèle = gains x30 à x50.
 
+[C'est officiel, Microsoft Edge sera désormais basé sur Chromium](https://www.developpez.com/actu/236606/C-est-officiel-Microsoft-Edge-sera-desormais-base-sur-Chromium-et-enfin-disponible-sur-Windows-7-Windows-8-et-d-autres-plateformes-comme-macOS/) ([src](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/#86hdHmPeOj1Xq32Q.97))
+
+> Cela signifie que Microsoft va remplacer son moteur de rendu EdgeHTML et son moteur JavaScript Chackra par Blink et V8 de Chromium.
+> 
+> Microsoft prévoit encore de publier le nouveau Microsoft Edge sur toutes les versions prises en charge de Windows (c'est-à-dire Windows 7 et Windows 8), mais sans se limiter à son OS. 
+> 
+> Le passage à Chromium prendra environ un an, selon Microsoft, et une préversion sera prête début 2019.
+
 ## browsers bug trackers
 
 [dev.chromium.org](http://dev.chromium.org/for-testers/bug-reporting-guidelines)
