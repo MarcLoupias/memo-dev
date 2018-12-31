@@ -27,6 +27,16 @@ Les étapes de la compilation incluent :
 - la **génération de code** avec l'allocation de registres et la traduction du code intermédiaire en code objet, avec éventuellement l'insertion de données de débogage et d'analyse de l'exécution ;
 - l'**édition des liens**.
 
+## Lever vs Parser
+
+[An Overview of Lexing and Parsing - savage.net.au](http://savage.net.au/Ron/html/graphviz2.marpa/Lexing.and.Parsing.Overview.html)
+
+Same at [An Overview of Lexing and Parsing - www.perl.com](https://www.perl.com/pub/2012/10/an-overview-of-lexing-and-parsing.html/)
+
+[lexers vs parsers - stackoverflow.com](https://stackoverflow.com/questions/2842809/lexers-vs-parsers)
+
+Lexer synonyms : tokenizer, scanner, ...
+
 ## Compiler vs Transpiler
 
 [What is the main difference between Compiler and Transpiler - stackoverflow.com](https://stackoverflow.com/questions/40605642/what-is-the-main-difference-between-compiler-and-transpiler)
