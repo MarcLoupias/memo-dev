@@ -1,6 +1,6 @@
 # YAML
 
-Yet Another Markup Language
+## descriptions
 
 Est un format de représentation de données par sérialisation Unicode
 
@@ -48,3 +48,25 @@ specialDelivery:  >
 ...
 
 ```
+
+## specs
+
+[specs at yaml.org](https://yaml.org/) :
+
+- [YAML 1.2](https://yaml.org/spec/1.2/spec.html)
+- [YAML 1.1](https://yaml.org/spec/1.1/)
+- [YAML 1.0](https://yaml.org/spec/1.0/)
+
+[The YAML Project - github.com](https://github.com/yaml)
+
+> repository list with [yaml/yaml - github.com](https://github.com/yaml/yaml) to discuss issues
+
+## tools
+
+### js-yaml (yaml to js litteral)
+
+[js-yaml - github.com/nodeca](https://github.com/nodeca/js-yaml)
+
+[js-yaml - online webtool](http://nodeca.github.io/js-yaml/)
+
+> to test yaml to js conversion
