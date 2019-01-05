@@ -34,6 +34,10 @@
 
 [gitbook-plugin-mermaid](https://github.com/JozoVilcek/gitbook-plugin-mermaid)
 
+## ascii art diagrams
+
+[asciiflow.com](http://asciiflow.com/) ([lewish/asciiflow2 - github.com](https://github.com/lewish/asciiflow2))
+
 ## questions
 
 [How to integrate UML diagrams into GitLab or GitHub : stackoverflow.com](https://stackoverflow.com/questions/32203610/how-to-integrate-uml-diagrams-into-gitlab-or-github)
