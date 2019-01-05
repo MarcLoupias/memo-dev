@@ -13,6 +13,7 @@ The main important one, which is "devops compatible" : [Understanding the GitHub
 - [merge fast-forward vs no-ff](http://stackoverflow.com/a/2850413)
 - [Pull Request Merge Strategies: The Great Debate](https://developer.atlassian.com/blog/2014/12/pull-request-merge-strategies-the-great-debate/)
 - [Pull request versus Merge request](http://stackoverflow.com/questions/22199432/pull-request-vs-merge-request)
+- [A guide to the Kernel Development Process](https://www.kernel.org/doc/html/v4.16/process/development-process.html)
 
 ## git workflow list
 
