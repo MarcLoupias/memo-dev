@@ -353,6 +353,31 @@ L'article [L113-9](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle
 
 [Scrum Life #33 - Quand personne ne parle en Rétro - La sûreté psychologique - JP Lambert](https://www.youtube.com/watch?v=tgkauosoMvE&feature=youtu.be)
 
+### The Wetware Crisis: the Thermocline of Truth
+
+[What is wetware ? - searchdatacenter.techtarget.com](https://searchdatacenter.techtarget.com/definition/Wetware)
+
+> Wetware is slang (fr : argot) used describe the human element of an information technology (IT) architecture.
+
+[The Wetware Crisis: the Thermocline of Truth - brucefwebster.com - Bruce F. Webster - 20080415](http://brucefwebster.com/2008/04/15/the-wetware-crisis-the-themocline-of-truth/)
+
+> A thermocline is a distinct temperature barrier between a surface layer of warmer water and the colder, deeper water underneath.
+>
+> A thermocline can prevent dissolved oxygen from getting to the lower layer and vital nutrients from getting to the upper layer.
+> 
+> In many large or even medium-sized IT projects, there exists a thermocline of truth, a line drawn across the organizational chart that represents a barrier to accurate information regarding the project’s progress.
+> 
+> Several major (and mutually reinforcing) factors tend to create this thermocline :
+> - the IT software development profession largely lacks automated, objective and repeatable metrics that can measure progress and predict project completion
+> - IT engineers by nature tend to be optimists, as reflected in the common acronym SMOP: "simple matter of programming."
+> - managers (including IT managers) like to look good and usually don’t like to give bad news, because their continued promotion depends upon things going well under their management
+> - upper management tends to reward good news and punish bad news, regardless of the actual truth content
+> 
+> As the project delivery deadline draws near, the thermocline of truth starts moving up the levels of management because it is becoming harder and harder to deny or hide just where the project stands.
+> 
+> Sometimes, even then management may not be willing to hear or acknowledge where things really are but instead insist on a "quick fix" to get things done.
+>
+
 ## hommes politiques
 
 [JM JANCOVICI - La connaissance des politiques est nulle en matière énergétique](https://www.youtube.com/watch?v=mm7jghN51gU)
