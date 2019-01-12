@@ -22,6 +22,8 @@ développé par Microsoft
 
 [`tsconfig.json` schema on json.schemastore.org](http://json.schemastore.org/tsconfig)
 
+[TypeScript Configuration - angular.io/guide](https://angular.io/guide/typescript-configuration)
+
 #### best practices
 - [typescript - best practices](http://definitelytyped.org/guides/best-practices.html)
 
