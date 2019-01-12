@@ -8,10 +8,16 @@ développé par Microsoft
 
 
 #### articles
+
 - [blog développeurs sur msdn.org](https://blogs.msdn.microsoft.com/typescript/2015/03/05/angular-2-built-on-typescript/)
 - [dev.com angular basé sur typescript](http://typescript.developpez.com/actu/82182/Angular-2-sera-base-sur-TypeScript-convergence-de-AtScript-et-TypeScript-1-5-c-est-une-collaboration-entre-Google-et-Microsoft/)
 - [angular-et-typescript-un-mariage-heureux : blog.xebia.fr](http://blog.xebia.fr/2014/03/12/angular-et-typescript-un-mariage-heureux/)
 - [definitive guide to typescript](https://www.sitepen.com/blog/2013/12/31/definitive-guide-to-typescript/)
+- [Top 10 Things to Know about TypeScript - www.developer.com - 20130227](https://www.developer.com/lang/top-10-things-to-know-about-typescript.html)
+
+[TypeScript lead dev Ryan Cavanaugh about TypeScript and OOP](https://twitter.com/searyanc/status/826218552910700544) :
+
+> "I'm using TypeScript so I have to write OOP code with classes" :: "I got a paintbrush from Home Depot so I have to paint my house orange"
 
 #### documentation
 - [angular typescript quickstart](https://angular.io/docs/js/latest/quickstart.html)
@@ -43,7 +49,7 @@ développé par Microsoft
 
 #### Erreurs courantes après migration ES5/ES6 vers TS
 
-`TS2339: Property 'xxx' does not exist on type 'Yyyy'.`
+- `TS2339: Property 'xxx' does not exist on type 'Yyyy'.`
 
 Cf issue 6373 : [Getting error TS2339: Property does not exist on type for a valid ES6 class](https://github.com/Microsoft/TypeScript/issues/6373)
 
@@ -76,3 +82,96 @@ Anyway it is a non-blocker to generate the target javascript bundle.
 If the input code is syntactically correct (prior to type checking) then it can generate ES output, and it is "valid" TS. At this first level, TS is a superset of ES, in that the set of valid TS programs is larger than the set of valid ES programs (because it includes all the valid ES programs plus those with type annotations).
 
 The second level is type-correctness, which is what your error is complaining about. At this level, TS can act as a subset of ES: some valid ES programs, such as your example, are not type-correct TS programs.
+
+- `error TS2380: 'get' and 'set' accessor must have the same type.`
+
+See [TypeScript/issues/4087](https://github.com/Microsoft/TypeScript/issues/4087) and [TypeScript/issues/2521](https://github.com/Microsoft/TypeScript/issues/2521)
+
+A classical pattern in JS with class to define a model is :
+
+```javascript
+class MyClass {
+    constructor(value) {
+        this._myDate = value;
+    }
+    
+    get myDate() {
+        return this._myDate;
+    }
+
+    set myDate(value) {
+        this._myDate = moment(value);
+    }
+}
+```
+
+The accessors are used to refine / format the data set to the instance.
+
+But in TypeScript accessors must have the same type, and when converted to TS the compiler raise an error :
+
+```javascript
+class MyClass {
+
+    private _myDate: moment.Moment;
+
+    get myDate(): moment.Moment {
+        return this._myDate;
+    }
+
+    set myDate(value: Date | moment.Moment) {
+        this._myDate = moment(value);
+    }
+}
+
+```
+
+The workaround is to create a dedicated function but we loose the `instance.myDate = new Date();` usage.
+
+```javascript
+class MyClass {
+
+    private _myDate: moment.Moment;
+
+    get myDate(): moment.Moment {
+        return this._myDate;
+    }
+
+    set myDate(value: moment.Moment) {
+        assert.fail('Setter for myDate is not available. Please use: setMyDate() instead');
+    }
+
+    setMyDate(value: Date | moment.Moment) {
+        this._myDate = moment(value);
+    }
+}
+```
+
+Another workaround would be to type `_myDate` with `Date | moment.Moment` but we loose a lot of type checking here. 
+
+See cons `TS2380` rule arguments : 
+
+[juanpablodelatorre](https://github.com/Microsoft/TypeScript/issues/2521#issuecomment-322525116)
+
+> When TypeScript limits JavaScript, it becomes more of a nuisance than an advantage. Isn't TypeScript meant to help developers communicate with each other?
+>
+> Also, setters are called Mutators for a reason. If I wouldn't need any kind of conversion, I wouldn't use a setter, I would set the variable by myself.
+
+[gmurray81](https://github.com/Microsoft/TypeScript/issues/2521#issuecomment-384420945)
+
+impact with Angular and components inputs from templates.
+
+See pros `TS2380` rule arguments : 
+
+[kitsonk (TypeScript contributor)](https://github.com/Microsoft/TypeScript/issues/2521#issuecomment-319915282)
+
+> IMO, ever since JavaScript allowed accessors, people have potentially created confusing APIs with them. I personally find it confusing that something on assignment magically changes to something else. Implicit anything, especially type conversion, is the bane of JavaScript IMO. It is exactly the flexibility that causes problems.
+
+[mhegazy (TypeScript contributor)](https://github.com/Microsoft/TypeScript/issues/2521#issuecomment-248049350)
+
+> After thinking about this some more. i think the issue here is really the complexity of the implementation.
+
+He flagged issue as "Too Complex" and "Design Limitation" labels after that post then closed the issue 2521.
+
+[kitsonk (TypeScript contributor)](https://github.com/Microsoft/TypeScript/issues/2521#issuecomment-319407536)
+
+> The labels on the issue indicate it is a design limitation and the implementation would be considered too complex, which essentially means that if someone has a super compelling reason why this should be the case, it is not going anywhere.
