@@ -1,13 +1,31 @@
-## TypeScript
-développé par Microsoft
+# TypeScript
+
+Développé par Microsoft
 
 >  C'est un sur-ensemble de JavaScript (c'est-à-dire que tout code JavaScript correct peut être utilisé avec TypeScript). Le code TypeScript est transcompilé en JavaScript, pouvant ainsi être interprété par n'importe quel navigateur web ou moteur JavaScript.
 
 - [site officiel : typescriptlang.org](http://www.typescriptlang.org/)
 - [TypeScript : fr.wikipedia.org](https://fr.wikipedia.org/wiki/TypeScript)
 
+## auteurs / contributeurs
 
-#### articles
+[Anders Hejlsberg](https://en.wikipedia.org/wiki/Anders_Hejlsberg) ([fr](https://fr.wikipedia.org/wiki/Anders_Hejlsberg)) [(github profile)](https://github.com/ahejlsberg)
+
+> Author of Turbo Pascal, chief architect of Delphi, lead architect of C#, conceptor of .NET framework and core developper and conceptor of TypeScript.
+
+[Daniel Rosenwasser](https://github.com/DanielRosenwasser)
+
+> Program Manager of TypeScript
+
+[Ryan Cavanaugh](https://github.com/RyanCavanaugh)
+
+> TypeScript lead dev
+
+[Mohamed Hegazy](https://github.com/mhegazy)
+
+> TypeScript dev (retired)
+
+## articles
 
 - [blog développeurs sur msdn.org](https://blogs.msdn.microsoft.com/typescript/2015/03/05/angular-2-built-on-typescript/)
 - [dev.com angular basé sur typescript](http://typescript.developpez.com/actu/82182/Angular-2-sera-base-sur-TypeScript-convergence-de-AtScript-et-TypeScript-1-5-c-est-une-collaboration-entre-Google-et-Microsoft/)
@@ -19,10 +37,14 @@ développé par Microsoft
 
 > "I'm using TypeScript so I have to write OOP code with classes" :: "I got a paintbrush from Home Depot so I have to paint my house orange"
 
-#### documentation
+## documentation
+
+- [Documentation - www.typescriptlang.org](http://www.typescriptlang.org/docs/home.html)
+- [TypeScript/wiki - github.com/Microsoft](https://github.com/Microsoft/TypeScript/wiki)
+- [TypeScript/wiki/FAQ - github.com/Microsoft](https://github.com/Microsoft/TypeScript/wiki/FAQ)
 - [angular typescript quickstart](https://angular.io/docs/js/latest/quickstart.html)
 
-##### `tsconfig.json`
+## `tsconfig.json`
 
 [`tsconfig.json` official doc - www.typescriptlang.org](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
 
@@ -30,10 +52,12 @@ développé par Microsoft
 
 [TypeScript Configuration - angular.io/guide](https://angular.io/guide/typescript-configuration)
 
-#### best practices
+## best practices
+
 - [typescript - best practices](http://definitelytyped.org/guides/best-practices.html)
 
-#### videos
+## videos
+
 - [TypeScript, le JavaScript statiquement typé : Devoxx2015](https://www.youtube.com/watch?v=YjI7mi7AGzA&list=PLklQqdqnBkPgctKh1xIvF4eFGtmvUvE2b&index=109)
 > 
 > Migration progressive (passer les `.js` en `.ts` suffit à migrer sur `typescript` et inversement pour rollback)
@@ -47,7 +71,21 @@ développé par Microsoft
 > Assitance IDE meilleure (Webstorm nickel)
 >
 
-#### Erreurs courantes après migration ES5/ES6 vers TS
+## erreurs tscompiler
+
+[errors codes classification](https://github.com/Microsoft/TypeScript/wiki/Coding-guidelines#diagnostic-message-codes) :
+
+> Diagnostics are categorized into general ranges. If adding a new diagnostic message, use the first integral number greater than the last used number in the appropriate range.
+> 
+> 1000 range for syntactic messages
+> 2000 for semantic messages
+> 4000 for declaration emit messages
+> 5000 for compiler options messages
+> 6000 for command line compiler messages
+> 7000 for noImplicitAny messages
+
+
+## Erreurs courantes après migration ES5/ES6 vers TS
 
 - `TS2339: Property 'xxx' does not exist on type 'Yyyy'.`
 
