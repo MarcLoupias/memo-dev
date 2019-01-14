@@ -56,6 +56,14 @@ Développé par Microsoft
 
 - [typescript - best practices](http://definitelytyped.org/guides/best-practices.html)
 
+## TSLint
+
+[tslint - palantir.github.io](https://palantir.github.io/tslint/)
+
+[TSLint command-line interface](https://palantir.github.io/tslint/usage/cli/)
+
+[TSLint rules list](https://palantir.github.io/tslint/rules/)
+
 ## videos
 
 - [TypeScript, le JavaScript statiquement typé : Devoxx2015](https://www.youtube.com/watch?v=YjI7mi7AGzA&list=PLklQqdqnBkPgctKh1xIvF4eFGtmvUvE2b&index=109)
