@@ -80,6 +80,130 @@ Le mode strict apporte quelques changements à la sémantique « normale » de J
 
 [Array.forEach n’est pas toujours la meilleure solution ! - blog.overnetcity.com - 20140829](https://blog.overnetcity.com/2014/08/29/array-foreach-nest-pas-toujours-meilleure-solution/)
 
+## `array` / `object` / `Map` / `Set`
+
+### definitions
+
+#### `array`
+
+[Array in MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+```javascript
+const fruits = ['Apple', 'Banana'];
+
+console.log(fruits.length);
+// 2
+```
+
+It's an indexed list.
+
+Never use the new constructor (`const list = new Array();`), always use directly the literal (`const list = [];`).
+The constructor is slower and there is a common mistake with it, when an array is instantiated with only one arg you define the array length, and not an array of one element :
+`const list = new Array(2); // the array contains in fact [undefined, undefined], but const list = new Array(1, 2) leads to [1, 2]`.
+
+Resize automatically. Order preserved ('cause indexed). Any types in it. Values can be duplicated (`const list = [1, 2, 2, 2, 'toto'];`)
+
+See MDN for details.
+
+#### `object`
+
+[Object in MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
+```javascript
+const fruit = { name: 'Apple' };
+```
+
+See [Object initializer in MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer) for details with `new` keyword or `Object.create()` function.
+
+The `const object = new Object();` is rarely used.
+
+The `const object = Object.create(proto);` is used to create an object based on a `proto` prototype. `const object = Object.create(null);` allows object creation without any prototype.
+
+An object is a key/value dictionnary.
+
+A key must be unique and a string (or a [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)). Keys are unordered, use Map instead if you need to keep an order.
+
+Values can be of any types.
+
+Can't get the size (numbers of K/V) easily.
+
+#### `Map`
+
+[Map in MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+
+```javascript
+var myMap = new Map();
+
+var keyString = 'a string',
+    keyObj = {},
+    keyFunc = function() {};
+
+// setting the values
+myMap.set(keyString, "value associated with 'a string'");
+myMap.set(keyObj, 'value associated with keyObj');
+myMap.set(keyFunc, 'value associated with keyFunc');
+
+myMap.size; // 3
+
+// getting the values
+myMap.get(keyString);    // "value associated with 'a string'"
+myMap.get(keyObj);       // "value associated with keyObj"
+myMap.get(keyFunc);      // "value associated with keyFunc"
+
+myMap.get('a string');   // "value associated with 'a string'"
+                         // because keyString === 'a string'
+myMap.get({});           // undefined, because keyObj !== {}
+myMap.get(function() {}) // undefined, because keyFunc !== function () {}
+```
+
+[Objects and maps compared](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#Objects_and_maps_compared)
+
+A key must be unique and from any type (including function).
+
+Keys are ordered.
+
+There is a `size()` function to get the K/V number.
+
+Map is iterable.
+
+A Map may perform better in scenarios involving frequent addition and removal of key pairs.
+
+#### `Set`
+
+[Set in MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
+
+```javascript
+const set1 = new Set([1, 2, 3, 4, 5]);
+
+console.log(set1.has(1));
+// expected output: true
+
+// ...
+
+// iterate a Set
+for (let item of mySet) console.log(item);
+```
+
+`Set` objects are collections of values. You can iterate through the elements of a set in insertion order. A value in the `Set` **may only occur once**; it is unique in the `Set`'s collection.
+
+`Set`, more familiar as a Math concept, is an abstract data type which contains only distinct elements/objects without the need of being allocated orderly by index.
+
+A `Set` is fundamentally different with an `Array`, a `Set` is a keyed collection where an `Array` is an indexed collection.
+
+Indexed collections are collections of data which are ordered by an index value
+
+Keyed collections are collections which use keys; these contain elements which are iterable in the order of insertion.
+
+### articles
+
+[Array in Indexed collections article - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections)
+
+[Maps and Sets in Key collections article - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections)
+
+[Map vs Object — What and when? - Maya Shavin - medium.com - 20180201](https://medium.com/front-end-weekly/es6-map-vs-object-what-and-when-b80621932373)
+
+[Set vs Array — What and when? - Maya Shavin - medium.com - 20180124](https://medium.com/front-end-weekly/es6-set-vs-array-what-and-when-efc055655e1a)
+
 ## `async` / `await`
 
 [Coder l’asynchrone en Javascript (Par Matthieu Lux)](https://www.youtube.com/watch?v=FZ51IVn6tVM)
