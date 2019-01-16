@@ -42,6 +42,7 @@ Développé par Microsoft
 - [Documentation - www.typescriptlang.org](http://www.typescriptlang.org/docs/home.html)
 - [TypeScript/wiki - github.com/Microsoft](https://github.com/Microsoft/TypeScript/wiki)
 - [TypeScript/wiki/FAQ - github.com/Microsoft](https://github.com/Microsoft/TypeScript/wiki/FAQ)
+- [TypeScript specifications](https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md)
 - [angular typescript quickstart](https://angular.io/docs/js/latest/quickstart.html)
 
 ## `tsconfig.json`
