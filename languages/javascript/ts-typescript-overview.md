@@ -53,6 +53,91 @@ Développé par Microsoft
 
 [TypeScript Configuration - angular.io/guide](https://angular.io/guide/typescript-configuration)
 
+### compiler options
+
+#### `--noImplicitAny`
+
+[See noImplicitAny in TypeScript Deep Dive from basarat.gitbooks.io](https://basarat.gitbooks.io/typescript/docs/options/noImplicitAny.html)
+
+By default this option is set to `false`.
+
+When a type is not defined by the programmer and when it is impossible to infer it, TypeScript infers an `any` type, example :
+
+```typescript
+
+function log(someArg) {
+  sendDataToServer(someArg);
+}
+
+// What arg is valid and what isn't?
+log(123);
+log('hello world');
+
+```
+
+When set to `true`, the compiler raises an error in that case.
+
+It forces the programmer to explicitly set the type and at least the `any` type which in fact remove type checking (it allows anything).
+
+#### `--strictNullChecks`
+
+[See Nullable Types section in Advanced Types from TS official handbook](http://www.typescriptlang.org/docs/handbook/advanced-types.html)
+
+[See Should I use the `strictNullChecks` TypeScript compiler flag - yes or no? - www.tsmean.com/articles](https://www.tsmean.com/articles/learn-typescript/strict-null-checks-best-practice/)
+
+Introduced in TS 2.0.
+
+By default this option is set to `false` for retro compat purposes.
+
+In JavaScript and without this option in TypeScript, `undefined` and `null` are assignable to anything. We can do this :
+
+```javascript
+
+let toto = 'toto';
+toto = null;
+
+```
+
+Or in TypeScript :
+
+```typescript
+
+let toto: string = 'toto';
+toto = null;
+
+```
+
+With this is option set to `true`, it is not possible anymore.
+
+The intent is to avoid null pointers exceptions.
+
+If the option is set, the programmer needs to explicitly declare when a value can be `undefined` or `null` like this :
+
+```typescript
+
+let toto: string | null = 'toto';
+toto = null;
+
+toto = undefined; // Still raise error, should have declare toto as 'let toto: string | null | undefined;'
+
+```
+
+**optional parameters**
+
+If the option is set and an optional parameter is used, the type is implicitly considered to be an union with `undefined` :
+
+```typescript
+
+function f(x: number, y?: number) {
+    return x + (y || 0);
+}
+f(1, 2); // OK
+f(1); // OK
+f(1, undefined); // OK
+f(1, null); // error, 'null' is not assignable to 'number | undefined'
+
+```
+
 ## best practices
 
 - [typescript - best practices](http://definitelytyped.org/guides/best-practices.html)
