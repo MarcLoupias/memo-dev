@@ -178,7 +178,6 @@ f(1, null); // error, 'null' is not assignable to 'number | undefined'
 > 6000 for command line compiler messages
 > 7000 for noImplicitAny messages
 
-
 ## Erreurs courantes après migration ES5/ES6 vers TS
 
 - `TS2339: Property 'xxx' does not exist on type 'Yyyy'.`
@@ -307,3 +306,19 @@ He flagged issue as "Too Complex" and "Design Limitation" labels after that post
 [kitsonk (TypeScript contributor)](https://github.com/Microsoft/TypeScript/issues/2521#issuecomment-319407536)
 
 > The labels on the issue indicate it is a design limitation and the implementation would be considered too complex, which essentially means that if someone has a super compelling reason why this should be the case, it is not going anywhere.
+
+## features
+
+### conditional types
+
+Added in TypeScript 2.8 [see release notes](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-8.html).
+
+- [See Conditional Types section in Advanced Types from TS official handbook](http://www.typescriptlang.org/docs/handbook/advanced-types.html)
+
+- [How are you using conditional types? - www.reddit.com/r/typescript - 20181010](https://www.reddit.com/r/typescript/comments/9n189u/how_are_you_using_conditional_types/)
+
+> Super nice [answer here](https://www.reddit.com/r/typescript/comments/9n189u/how_are_you_using_conditional_types/e7iwd64)
+
+- [Conditional types in TypeScript - artsy.github.io/blog - 20181121](http://artsy.github.io/blog/2018/11/21/conditional-types-in-typescript/) (Super nice article with practical examples)
+
+> Conditional types probably aren't something you'll write every day, but you might end up using them indirectly all the time. That's because they're great for 'plumbing' or 'framework' code, for dealing with API boundaries and other behind-the-scenes kinda stuff.
