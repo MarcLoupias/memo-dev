@@ -138,6 +138,30 @@ f(1, null); // error, 'null' is not assignable to 'number | undefined'
 
 ```
 
+## declaration files
+
+[Introduction - www.typescriptlang.org/docs/handbook](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)
+
+[Consumption of `*.d.ts` files - www.typescriptlang.org/docs/handbook](https://www.typescriptlang.org/docs/handbook/declaration-files/consumption.html)
+
+> install a `@types/<lib>` package or if the lib itself include a `"types"` prop in its `package.json` it's already there.
+>
+> See [DefinitelyTyped @ github.com](https://github.com/DefinitelyTyped/DefinitelyTyped) for `@types` consumption and [TS publishing doc](https://www.typescriptlang.org/docs/handbook/declaration-files/publishing.html) for `"types"` prop.
+>
+> Ex : Node.js typings [are there](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/node/index.d.ts).
+
+[Ambient Declarations - basarat.gitbooks.io/typescript](https://basarat.gitbooks.io/typescript/docs/types/ambient/intro.html)
+
+[How do you produce a .d.ts “typings” definition file from an existing JavaScript library? - stackoverflow.com - 20121019](https://stackoverflow.com/questions/12687779/how-do-you-produce-a-d-ts-typings-definition-file-from-an-existing-javascript)
+
+[Getting started with TypeScript type definitions - medium.com/@jonjam - 20171113](https://medium.com/@jonjam/getting-started-with-typescript-type-definitions-1cda7094b8d2)
+
+[How to create your own TypeScript type definition files (.d.ts) and contribute to DefinitelyTyped on GitHub - blog.wolksoftware.com - 20161015](http://blog.wolksoftware.com/contributing-to-definitelytyped)
+
+### tools
+
+[dts-gen - github.com/Microsoft](https://github.com/Microsoft/dts-gen)
+
 ## best practices
 
 - [typescript - best practices](http://definitelytyped.org/guides/best-practices.html)
