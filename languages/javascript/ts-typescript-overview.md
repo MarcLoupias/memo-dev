@@ -331,7 +331,7 @@ He flagged issue as "Too Complex" and "Design Limitation" labels after that post
 
 > The labels on the issue indicate it is a design limitation and the implementation would be considered too complex, which essentially means that if someone has a super compelling reason why this should be the case, it is not going anywhere.
 
-## features
+## features
 
 ### conditional types
 
@@ -346,3 +346,39 @@ Added in TypeScript 2.8 [see release notes](https://www.typescriptlang.org/docs/
 - [Conditional types in TypeScript - artsy.github.io/blog - 20181121](http://artsy.github.io/blog/2018/11/21/conditional-types-in-typescript/) (Super nice article with practical examples)
 
 > Conditional types probably aren't something you'll write every day, but you might end up using them indirectly all the time. That's because they're great for 'plumbing' or 'framework' code, for dealing with API boundaries and other behind-the-scenes kinda stuff.
+
+### type assertion
+
+[See Type assertions @ Basic Types - www.typescriptlang.org](https://www.typescriptlang.org/docs/handbook/basic-types.html)
+
+> Sometimes you’ll end up in a situation where you’ll know more about a value than TypeScript does.
+>
+> Type assertions are a way to tell the compiler "trust me, I know what I’m doing."
+>
+> A type assertion is like a type cast in other languages, but performs no special checking or restructuring of data. It has no runtime impact, and is used purely by the compiler.
+
+The "angle-bracket" syntax :
+
+```typescript
+let someValue: any = "this is a string";
+
+let strLength: number = (<string>someValue).length;
+```
+
+The `as` syntax :
+
+```typescript
+let someValue: any = "this is a string";
+
+let strLength: number = (someValue as string).length;
+```
+
+The first is the legacy one and the second has been added to be compatible with JSX (TSX with TypeScript).
+
+The first one clashed with JSX syntax.
+
+The second is now considered to be the syntax to use.
+
+[type-assertion - basarat.gitbooks.io/typescript](https://basarat.gitbooks.io/typescript/docs/types/type-assertion.html)
+
+[What are the difference between these type assertion or casting methods in TypeScript - stackoverflow.com - 20180413](https://stackoverflow.com/questions/49818305/what-are-the-difference-between-these-type-assertion-or-casting-methods-in-types)
