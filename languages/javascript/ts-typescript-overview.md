@@ -45,6 +45,14 @@ Développé par Microsoft
 - [TypeScript specifications](https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md)
 - [angular typescript quickstart](https://angular.io/docs/js/latest/quickstart.html)
 
+## starters projects
+
+[samples - www.typescriptlang.org](https://www.typescriptlang.org/samples/index.html)
+
+[TypeScript Node Starter - github.com/Microsoft](https://github.com/Microsoft/TypeScript-Node-Starter#typescript-node-starter)
+
+> See in particular their [Type Definition (`.d.ts`) Files](https://github.com/Microsoft/TypeScript-Node-Starter#type-definition-dts-files) management which give a lot of infos.
+
 ## `tsconfig.json`
 
 [`tsconfig.json` official doc - www.typescriptlang.org](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
