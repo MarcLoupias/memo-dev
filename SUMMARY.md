@@ -199,7 +199,7 @@
 * [gitbook - overview](tools/gitbook/gitbook-intro.md)
 * [slides - slides](tools/slides/slides.md)
 * [slides - gitpitch](tools/slides/gitpitch/gitpitch-intro.md)
-* [IntelliJ](tools/intellij/infos-intellij.md)
+* [JetBrains (WebStorm / IntelliJ](tools/jetbrains/jetbrains-overview.md)
 * [Visual Studio Code](tools/visual-studio-code.md)
 * [Diagrams tools](tools/diagrams.md)
 * [Fiddler](tools/fiddler.md)
