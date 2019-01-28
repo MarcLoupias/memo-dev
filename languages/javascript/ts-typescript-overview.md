@@ -390,3 +390,20 @@ The second is now considered to be the syntax to use.
 [type-assertion - basarat.gitbooks.io/typescript](https://basarat.gitbooks.io/typescript/docs/types/type-assertion.html)
 
 [What are the difference between these type assertion or casting methods in TypeScript - stackoverflow.com - 20180413](https://stackoverflow.com/questions/49818305/what-are-the-difference-between-these-type-assertion-or-casting-methods-in-types)
+
+### type aliases
+
+[See Type aliases @ Types Aliases - www.typescriptlang.org](http://www.typescriptlang.org/docs/handbook/advanced-types.html#type-aliases)
+
+[TSLint `callable-types`](https://palantir.github.io/tslint/rules/callable-types/)
+
+> An interface or literal type with just a call signature can be written as a function type.
+
+[Interface vs Type alias in TypeScript - Martin Hochel - 20180312](https://medium.com/@martin_hotell/interface-vs-type-alias-in-typescript-2-7-2a8f1777af4c)
+
+> what’s the difference between using `type` and `interface` for defining compile time types within TypeScript
+>
+> official documentation is obsolete since TS@2.1 :
+> - errors messages display type alias name correctly
+> - types aliases can be extended (extended by an `interface` or implemented by a `class`)
+> - types aliases can be used for type alias extension via intersection operator `&`
