@@ -32,6 +32,7 @@ Développé par Microsoft
 - [angular-et-typescript-un-mariage-heureux : blog.xebia.fr](http://blog.xebia.fr/2014/03/12/angular-et-typescript-un-mariage-heureux/)
 - [definitive guide to typescript](https://www.sitepen.com/blog/2013/12/31/definitive-guide-to-typescript/)
 - [Top 10 Things to Know about TypeScript - www.developer.com - 20130227](https://www.developer.com/lang/top-10-things-to-know-about-typescript.html)
+- [The TypeScript Tax, A Cost vs Benefit Analysis - Eric Elliott - 20190123](https://medium.com/javascript-scene/the-typescript-tax-132ff4cb175b)
 
 [TypeScript lead dev Ryan Cavanaugh about TypeScript and OOP](https://twitter.com/searyanc/status/826218552910700544) :
 
