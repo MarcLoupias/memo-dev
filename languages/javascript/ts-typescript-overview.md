@@ -446,7 +446,7 @@ doSomething('toto');
 
 ```
 
-In TypeScript it is tempting to use `interface` but you should not [because TypeScript use structural typing](https://github.com/Microsoft/TypeScript/issues/3060#issuecomment-110095960).
+In TypeScript it is tempting to use `interface` for DI but you should not [because TypeScript use structural typing](https://github.com/Microsoft/TypeScript/issues/3060#issuecomment-110095960).
 
 Use Type Aliases instead :
 
