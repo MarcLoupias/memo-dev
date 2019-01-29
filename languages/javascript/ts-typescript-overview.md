@@ -408,3 +408,147 @@ The second is now considered to be the syntax to use.
 > - errors messages display type alias name correctly
 > - types aliases can be extended (extended by an `interface` or implemented by a `class`)
 > - types aliases can be used for type alias extension via intersection operator `&`
+
+## Dependency Injection with TypeScript
+
+### Using the classical functional style
+
+Using type aliases to define function types.
+
+In vanilla JavaScript it is dead simple :
+
+```javascript
+
+// dependency function without deps
+
+const doSomethingElse = (arg) => {
+    // impl
+}
+
+export default doSomethingElse;
+
+// function with dependency
+
+const makeDoSomething = ({ doSomethingElse }) => (arg) => {
+    // impl
+}
+
+export default makeDoSomething;
+
+// caller
+
+import doSomethingElse from './do-something-else'
+import makeDoSomething from './make-do-something'
+
+const doSomething = makeDoSomething({ doSomethingElse });
+
+doSomething('toto');
+
+```
+
+In TypeScript it is tempting to use `interface` but you should not [because TypeScript use structural typing](https://github.com/Microsoft/TypeScript/issues/3060#issuecomment-110095960).
+
+Use Type Aliases instead :
+
+```typescript
+
+// dependency function without deps
+
+export type DoSomethingElseFnType = (arg: number) => number;
+
+export function doSomethingElse(arg: number): number {
+    // impl ...
+}
+
+// function with dependency
+
+import { DoSomethingElseFnType } from './do-something-else';
+
+export type = DoSomethingFnType = (arg: string) => string;
+
+export function makeDoSomething(deps: { doSomethingElse: DoSomethingElseFnType}): DoSomethingFnType {
+    return (arg: string): string => {
+        // impl ...
+
+        // you reach your dependency through deps destructuring and benefit from typing :
+        const value = deps.doSomethingElse(111);
+
+        // impl ...
+    }
+}
+
+// caller
+
+import { doSomethingElse } from './do-something-else';
+import { DoSomethingFnType, makeDoSomething } from './make-do-something';
+
+const doSomething: DoSomethingFnType = makeDoSomething({ doSomethingElse });
+
+doSomething('toto');
+
+```
+
+### Using POO style by hand
+
+You don't need any typing here, because obviously a `class` is a type.
+
+```typescript
+
+// dependency class without deps
+
+export class SomethingElse {
+    public static makeSomethingElse(): SomethingElse {
+        return new SomethingElse();
+    }
+
+    private constructor() {
+
+    }
+
+    public doSomethingElse(arg: number): number {
+        // impl ...
+    }
+}
+
+// class with dependency
+
+import { SomethingElse } from './something-else';
+
+export class Something {
+    public static makeSomething(deps: {somethingElse: SomethingElse}): Something {
+        return new Something(deps);
+    }
+
+    private somethingElse: SomethingElse;
+
+    private constructor(deps: {somethingElse: SomethingElse}) {
+        this.somethingElse = deps.somethingElse;
+    }
+
+    public doSomething(arg: string): string {
+        const value = this.somethingElse.doSomethingElse(111);
+
+        // impl ...
+    }
+}
+
+// caller
+
+import { SomethingElse } from './something-else';
+import { Something } from './do-something';
+
+const somethingElse: SomethingElse = SomethingElse.makeSomethingElse();
+const something: Something = Something.makeSomething({ somethingElse });
+
+something.doSomething('toto');
+```
+
+### Using POO style with decorators
+
+See [decorators from www.typescriptlang.org/docs/handbook](http://www.typescriptlang.org/docs/handbook/decorators.html).
+
+[Dependency Injection in TypeScript - 20180205](https://nehalist.io/dependency-injection-in-typescript/)
+
+[InversifyJS - github.com/inversify](https://github.com/inversify/InversifyJS)
+
+> A powerful and lightweight inversion of control container for JavaScript & Node.js apps powered by TypeScript.
