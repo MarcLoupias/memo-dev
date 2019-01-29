@@ -297,3 +297,30 @@ Table of Content
 > - JavaScript Namespacing Patterns
 > - Conclusions
 > - References
+>
+
+## `class`
+
+[How to Use Classes and Sleep at Night - Dan Abramov - 20151015](https://medium.com/@dan_abramov/how-to-use-classes-and-sleep-at-night-9af8de78ccb4)
+
+Problem :
+
+- Classes obscure the prototypal inheritance at the core of JS.
+- Classes encourage inheritance but you should prefer composition.
+- Classes tend to lock you into the first bad design you came up with.
+
+How to use classes and sleep at night :
+
+- Resist making classes your public API.
+- Don’t inherit more than once.
+- Don’t make `super` calls from methods.
+- Don’t expect people to use your classes.
+- Learn functional programming
+
+Applied to React :
+
+- You can use `class` in your JS if you don’t inherit twice and don’t use `super`.
+- Prefer to write React components as pure functions when possible.
+- Use ES6 classes for components if you need the state or lifecycle hooks.
+- In this case, you may only extend `React.Component` directly.
+- Give your feedback to the React team on the functional state proposals.
