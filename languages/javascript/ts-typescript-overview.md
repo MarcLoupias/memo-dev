@@ -415,14 +415,14 @@ The second is now considered to be the syntax to use.
 
 Using type aliases to define function types.
 
-In vanilla JavaScript it is dead simple :
+In vanilla JavaScript it is dead simple, we use curried function and partial application :
 
 ```javascript
 
 // dependency function without deps
 
 const doSomethingElse = (arg) => {
-    // impl
+    // impl ...
 }
 
 export default doSomethingElse;
@@ -430,7 +430,11 @@ export default doSomethingElse;
 // function with dependency
 
 const makeDoSomething = ({ doSomethingElse }) => (arg) => {
-    // impl
+    // impl ...
+
+    const value = doSomethingElse(111);
+
+    // impl ...
 }
 
 export default makeDoSomething;
@@ -446,7 +450,11 @@ doSomething('toto');
 
 ```
 
-In TypeScript use Type Aliases instead of interfaces because of [TSLint `callable-types`](https://palantir.github.io/tslint/rules/callable-types/) rule :
+In TypeScript we can use the same pattern, and we can type dependencies using Type Aliases.
+
+We could prefer type aliases instead of interfaces because of [TSLint `callable-types`](https://palantir.github.io/tslint/rules/callable-types/) rule.
+
+The same example as above in TypeScript becomes :
 
 ```typescript
 
