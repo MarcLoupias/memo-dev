@@ -175,6 +175,17 @@ f(1, null); // error, 'null' is not assignable to 'number | undefined'
 
 - [typescript - best practices](http://definitelytyped.org/guides/best-practices.html)
 
+### managing `export` / `import`
+
+[`export default` considered harmful](https://basarat.gitbooks.io/typescript/docs/tips/defaultIsBad.html)
+
+[Barrel](https://basarat.gitbooks.io/typescript/docs/tips/barrel.html)
+
+>
+> practice of creating an `index.ts` file inside a directory to re-export files (imply to avoid `export default`)
+> allows destructured import : `import { Foo, Bar, Baz } from '../demo'; // demo/index.ts is implied`
+>
+
 ## TSLint
 
 [tslint - palantir.github.io](https://palantir.github.io/tslint/)
