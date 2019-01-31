@@ -34,6 +34,10 @@ Développé par Microsoft
 - [Top 10 Things to Know about TypeScript - www.developer.com - 20130227](https://www.developer.com/lang/top-10-things-to-know-about-typescript.html)
 - [The TypeScript Tax, A Cost vs Benefit Analysis - Eric Elliott - 20190123](https://medium.com/javascript-scene/the-typescript-tax-132ff4cb175b)
 
+[TypeScript Evolution - Marius Schulz](https://mariusschulz.com/blog/series/typescript-evolution)
+
+> 34 articles about TS features from TS@2.0 to TS@2.8
+
 [TypeScript lead dev Ryan Cavanaugh about TypeScript and OOP](https://twitter.com/searyanc/status/826218552910700544) :
 
 > "I'm using TypeScript so I have to write OOP code with classes" :: "I got a paintbrush from Home Depot so I have to paint my house orange"
@@ -45,6 +49,12 @@ Développé par Microsoft
 - [TypeScript/wiki/FAQ - github.com/Microsoft](https://github.com/Microsoft/TypeScript/wiki/FAQ)
 - [TypeScript specifications](https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md)
 - [angular typescript quickstart](https://angular.io/docs/js/latest/quickstart.html)
+
+### Difference between script as a file and script at runtime
+
+[Taken from this article from Charly Poly](https://medium.com/@wittydeveloper/typescript-make-types-real-the-type-guard-functions-814364e8dbe3)
+
+![](ts-typescript-overview-compiletime-vs-runtime.png)
 
 ## starters projects
 
@@ -353,6 +363,14 @@ He flagged issue as "Too Complex" and "Design Limitation" labels after that post
 
 ## features
 
+### Control Flow Based Type Analysis
+
+[See what's new in TS@2.0 - www.typescriptlang.org](http://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#control-flow-based-type-analysis)
+
+[TypeScript 2.0: Control Flow Based Type Analysis - mariusschulz.com/blog - 20160930](https://mariusschulz.com/blog/typescript-2-0-control-flow-based-type-analysis)
+
+> With TypeScript 2.0, the type checker analyses all possible flows of control in statements and expressions to produce the most specific type possible (the narrowed type) at any given location for a local variable or parameter that is declared to have a union type.
+
 ### conditional types
 
 Added in TypeScript 2.8 [see release notes](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-8.html).
@@ -419,6 +437,52 @@ The second is now considered to be the syntax to use.
 > - errors messages display type alias name correctly
 > - types aliases can be extended (extended by an `interface` or implemented by a `class`)
 > - types aliases can be used for type alias extension via intersection operator `&`
+
+### type guards
+
+[See Type Guards and Differentiating Types - www.typescriptlang.org](http://www.typescriptlang.org/docs/handbook/advanced-types.html#type-guards-and-differentiating-types)
+
+> A type guard is some expression that performs a runtime check that guarantees the type in some scope.
+
+[Checking the type of an object in Typescript: the type guards - medium.com/ovrsea - 20181122](https://medium.com/ovrsea/checking-the-type-of-an-object-in-typescript-the-type-guards-24d98d9119b0)
+
+[What does the `is` keyword do in typescript? - stackoverflow.com - 20161017](https://stackoverflow.com/questions/40081332/what-does-the-is-keyword-do-in-typescript)
+
+```typescript
+function isString(test: any): test is string{
+    return typeof test === 'string';
+}
+
+function example(foo: any){
+    if(isString(foo)){
+        console.log('it is a string' + foo);
+        console.log(foo.length); // string function
+    }
+}
+example('hello world');
+```
+
+Inside a type guard function, we can check :
+- that a property exist with the `in` keyword (`'propname' in foo` where `foo` is the object passed to the type guard function to check onto)
+- that a property is from the `typeof` `number`, `string`, `boolean`, or `symbol` and nothing more.
+
+It is impossible to check if a property is from the `typeof` a custom type because there is not the required meta data available at runtime.
+
+### `unknown` type
+
+The purpose of the `unknown` type is to force the developper to check the structure with type guards or assert the type with type assertion.
+
+[See what's new in TS@3.0 - www.typescriptlang.org](http://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#new-unknown-top-type)
+
+> `unknown` is the type-safe counterpart of `any`.
+> Anything is assignable to `unknown`, but `unknown` isn’t assignable to anything but itself and `any` without a type assertion or a control flow based narrowing.
+> Likewise, no operations are permitted on an `unknown` without first asserting or narrowing to a more specific type.
+
+[TypeScript 3.0: Exploring Tuples and the Unknown Type - auth0.com/blog - 20180821](https://auth0.com/blog/typescript-3-exploring-tuples-the-unknown-type/)
+
+> We can use an `unknown` type if and only if we perform some form of checking on its structure.
+> We can either check the structure of the element we want to use
+> or we can use type assertion to tell TypeScript that we are confident about the type of the value
 
 ## Dependency Injection with TypeScript
 
