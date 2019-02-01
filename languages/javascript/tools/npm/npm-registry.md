@@ -14,6 +14,34 @@
 
 > The CDN for everything on npm
 
+## registry impl
+
+### artifactory
+
+[JFrog Artifactory Enterprise Universal Repository Manager](https://jfrog.com/artifactory/)
+
+> Support a lot more then just npm registry, but include a npm registry impl
+
+### verdaccio
+
+[verdaccio](https://verdaccio.org/)
+
+> A lightweight private npm proxy registry
+
+> Verdaccio is a simple, **zero-config-required local private npm registry**. No need for an entire database just to get started! Verdaccio comes out of the box with **its own tiny database**, and the ability to proxy other registries (eg. npmjs.org), caching the downloaded modules along the way.
+
+[verdaccio](https://github.com/verdaccio)
+
+[verdaccio - github.com/verdaccio](https://github.com/verdaccio/verdaccio)
+
+#### npm packages smoke test with verdaccio
+
+Can be used to [smoke test](https://en.wikipedia.org/wiki/Smoke_testing_(software)) `npm publish` command.
+
+See example with [facebook/create-react-app](https://github.com/facebook/create-react-app/pull/3744).
+
+See also [How to test an `npm publish` result, without actually publishing to NPM? - stackoverflow.com](https://stackoverflow.com/questions/50206729/how-to-test-an-npm-publish-result-without-actually-publishing-to-npm)
+
 ## articles
 
 - [why-do-we-need-the-npm-registry : blog.javascripting.com](http://blog.javascripting.com/2015/06/11/so-remind-me-again-why-do-we-need-the-npm-registry/)
