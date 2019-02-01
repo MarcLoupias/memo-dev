@@ -15,7 +15,12 @@
 > Idée générale est d'ignorer la dette sur le code legacy qui n'a pas besoin d'évoluer
 > et de se focus uniquement sur le delta entre les versions pour que le nouveau soit nickel.
 > Il faut être très rigoureux sur la qualité du nouveau code (ex : test coverage 80%+)
-> 
+
+### image du tapis roulant
+
+La dette technique appliquée au développement logiciel, en particulier en web, c'est à peu près comme avancer sur un tapis roulant en sens inverse.
+Au début ce tapis roulant fonctionne très lentement. Il faut affecter une partie de son énergie pour s'assurer que le tapis continue de tourner lentement en effaçant la dette.
+Si on ne le fait pas, on va peut être avancer plus vite au début, mais plus le tapis ira vite plus on ralentira, et on finira par faire du sur-place puis par tomber.
 
 ## Time To Market
 
