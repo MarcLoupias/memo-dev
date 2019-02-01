@@ -212,6 +212,7 @@
 * [security tools online](tools/security-tools-online.md)
 * [Elasticsearch - Overview](tools/elasticsearch-overview.md)
 * [Mastodon](tools/social/social-mastodon.md)
+* [envinfo](tools/envinfo.md)
 
 ## Web
 
