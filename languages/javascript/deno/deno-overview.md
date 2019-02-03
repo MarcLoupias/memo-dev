@@ -8,6 +8,8 @@ The conference video : [10 Things I Regret About Node.js - Ryan Dahl - JSConf EU
 
 [hackernews about the conf](https://news.ycombinator.com/item?id=17247135)
 
+[Deno, A New Server-Side Runtime By Ryan Dahl - JSDC 2018 - 201811](https://www.youtube.com/watch?v=FlTG0UXRAkE)
+
 ## genesis
 
 [JSConf Berlin 2018 - Ryan Dahl liste 10 erreurs de conception sur Node.js et dévoile son prototype deno - nodejs.developpez.com - 20180611](https://nodejs.developpez.com/actu/208633/JSConf-Berlin-2018-moins-Ryan-Dahl-liste-10-erreurs-de-conception-sur-Node-js-et-devoile-son-prototype-deno/)
