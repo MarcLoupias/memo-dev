@@ -76,7 +76,77 @@ The following npm CLI commands are especially involved :
 
 Commands like `npm build`, `npm test`, `npm ci` are obviously also involved, but they are already involved in the development process.
 
+### articles
+
+[These 6 essential tools will release, version, and maintain your NPM modules for you - hackernoon.com - 20180425](https://hackernoon.com/these-6-essential-tools-will-maintain-your-npm-modules-for-you-4cbbee88e0cb)
+
+> - Automate your releases and semantic versioning with `semantic-release`
+> - Use `commitizen` with `cz-convential-changelog` to capture additional details about each commit
+> - Run Automated Tests that generate Code Coverage reports
+> - Maintain coverage standards with `Codecov`
+> - Ensure consistent code formatting, and avoid simple mistakes by Linting your code
+> - Keep your dependencies up to date with `GreenKeeper`
+
+[Semantic Release with Lerna and Conventional Commits - michaljanaszek.com/blog - 20180616](https://michaljanaszek.com/blog/lerna-conventional-commits)
+
+> In this tutorial, I will show you how to configure Lerna with Conventional Commits to achieve automatic Semantic Release based only on the history of commits.
+>
+> Conventional Commits + Conventional Changelog + Semantic Release + Commitlint
+
 ## tools overview
+
+### monorepo management
+
+[lerna/lerna - github.com](https://github.com/lerna/lerna) / [lernajs.io](https://lernajs.io/)
+
+> A tool for managing JavaScript projects with multiple packages
+
+Lerna config belongs to `lerna.json` file.
+
+Logs goes into `lerna-debug.log` file.
+
+**Features**
+
+- Version / tag management in 2 modes :
+    - Fixed/Locked mode (every package got the same version number / tag)
+    - Independent mode (each package got his own version number / tag)
+- Common `devDependencies` (hoisting of common dependencies, most of the `devDependencies` are commons)
+
+### dependencies automatic management
+
+[greenkeeper.io](https://greenkeeper.io/) [greenkeeperio - github.com](https://github.com/greenkeeperio)
+
+> Get safety & consistency with real-time monitoring and automatic updates for npm dependencies
+
+### commit message management
+
+[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.3/)
+
+> A specification for adding human and machine readable meaning to commit messages
+
+Commit message structure :
+
+```text
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer]
+```
+
+[conventional-changelog/commitlint - github.com](https://github.com/conventional-changelog/commitlint)
+
+> Lint commit messages
+
+[commitizen/cz-cli - github.com](https://github.com/commitizen/cz-cli)
+
+> The commitizen command line utility.
+
+[commitizen/cz-conventional-changelog - github.com](https://github.com/commitizen/cz-conventional-changelog)
+
+> A commitizen adapter for the angular preset of [conventional-changelog](https://github.com/conventional-changelog).
+
+### `CHANGELOG.md` management
 
 [npmtrends.com comparison](https://www.npmtrends.com/standard-version-vs-semantic-release-vs-conventional-changelog-vs-generate-changelog-vs-@semantic-release/github-vs-@semantic-release/release-notes-generator-vs-@semantic-release/npm)
 
@@ -86,7 +156,7 @@ Commands like `npm build`, `npm test`, `npm ci` are obviously also involved, but
 - **conventional-changelog** is the older and the most used but adoption seems stable.
 - **semantic-release** is growing quite fast since mid-2018, close to **conventional-changelog** adoption and still growing.
 
-### lob/generate-changelog
+#### lob/generate-changelog
 
 [lob/generate-changelog - github.com](https://github.com/lob/generate-changelog)
 
@@ -96,7 +166,7 @@ Limited to the `CHANGELOG.md` file generation.
 
 Recommendations available for the tag and push tasks.
 
-### conventional-changelog
+#### conventional-changelog
 
 **Executed on the developer computer manually by the developer.**
 
@@ -117,7 +187,7 @@ Recommendations available for the tag and push tasks.
 
 > Create a GitHub/GitLab/etc. release using a project's commit messages and metadata.
 
-### semantic-release
+#### semantic-release
 
 **Executed by a CI job.**
 
@@ -129,11 +199,7 @@ Recommendations available for the tag and push tasks.
 >
 > This removes the immediate connection between human emotions and version numbers, strictly following the [Semantic Versioning](http://semver.org) specification.
 
-#### articles
-
-[These 6 essential tools will release, version, and maintain your NPM modules for you - hackernoon.com - 20180425](https://hackernoon.com/these-6-essential-tools-will-maintain-your-npm-modules-for-you-4cbbee88e0cb)
-
-### conventional-changelog versus semantic-release
+#### conventional-changelog versus semantic-release
 
 [explain the relationship to semantic-release - github.com/conventional-changelog](https://github.com/conventional-changelog/standard-version/issues/3)
 
