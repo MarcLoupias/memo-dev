@@ -93,6 +93,10 @@ Commands like `npm build`, `npm test`, `npm ci` are obviously also involved, but
 >
 > Conventional Commits + Conventional Changelog + Semantic Release + Commitlint
 
+[Lerna Independent Mode with Semver - samhogy.co.uk - 20180816](https://samhogy.co.uk/2018/08/lerna-independent-mode-with-semver.html)
+
+> focus on lerna independent mode with semantic versioning.
+
 ## tools overview
 
 ### monorepo management
