@@ -98,6 +98,7 @@
 * [javascript - tools - linters](languages/javascript/tools/tools-js-linters.md)
 * [javascript - tools - yeoman](languages/javascript/tools/tools-yeoman.md)
 * [javascript - tools - release-workflow](languages/javascript/tools/tools-release-workflow.md)
+* [javascript - tools - semantic-release](languages/javascript/tools/tools-semantic-release.md)
 * [javascript - tools - npm - memo](languages/javascript/tools/npm/npm-memo.md)
 * [javascript - tools - npm - on windows](languages/javascript/tools/npm/npm-on-windows.md)
 * [javascript - tools - npm - packages](languages/javascript/tools/npm/npm-packages.md)
