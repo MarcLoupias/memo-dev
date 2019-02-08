@@ -216,3 +216,237 @@ Recommendations available for the tag and push tasks.
 > `standard-version` is different because it handles the versioning, changelog generation, and git tagging for you **without** automatic pushing (to GitHub) or publishing (to an npm registry). Use of `standard-version` only affects your local git repo - it doesn't affect remote resources at all. After you run `standard-version`, you still have to ability to review things and correct mistakes if you want to.
 >
 > They are both based on the same foundation of structured commit messages (using [Angular format](https://github.com/bcoe/conventional-changelog-standard/blob/master/convention.md)), but `standard-version` is a good choice for folks who are not yet comfortable letting publishes go out automatically. In this way, you can view `standard-version` as an incremental step to adopting `semantic-release`.
+
+## a working continuous delivery workflow
+
+### overview
+
+Setup a continuous delivery workflow with as much automation as possible from commit to deployment.
+
+The CI service used is [TravisCI](https://travis-ci.org/).
+
+GitHooks are managed by [Husky](https://github.com/typicode/husky).
+
+Commit message convention used is [www.conventionalcommits.org](https://www.conventionalcommits.org/en/v1.0.0-beta.3/).
+
+Commit messages are linted by [commitlint](https://conventional-changelog.github.io/commitlint/#/).
+
+Commit can be produced with the help of the [commitizen CLI](http://commitizen.github.io/cz-cli/) with the [cz-conventional-changelog](https://github.com/commitizen/cz-conventional-changelog) config.
+
+Automation is provided by [semantic-release](https://github.com/semantic-release/semantic-release).
+
+### git workflow
+
+Two branches, `master` and `develop`, both must be protected.
+
+`develop` is the target for every PR. Set it as default branch instead of `master` branch.
+
+PR are done with classic features branches based on `develop`, never based on `master`.
+
+`master` is the distribution channel to deploy.
+
+Every branch push trigger a CI job.
+
+A CI job is composed of 3 stages :
+
+- `commitlint` stage to reject malformed commit message
+- `test` stage to reject invalid commit content (test should execute at least lint + tests)
+- `deploy` stage triggered only by the `master` branch to build the package and deploy it to the npm registry.
+It also determine the version number, compute the release CHANGELOG, tag the tip of the branch and push it with release CHANGELOG to origin.
+
+To deploy, the git owner must merge locally `develop` into `master`. It should be always a fast-forward, `develop` and `master` are mirrors.
+
+Never use a PR to merge `develop` into `master`, semantic-release will not trigger the deploy stage for a PR.
+
+### installation
+
+Before any steps, be sure to have a valid `package.json` file, and especially a fulfilled `"repository"` section in it.
+
+You should also already have a `.npmignore` file with a content like this :
+
+```text
+node_modules/
+public/
+dist/
+npm-debug.log
+.DS_Store
+.idea/
+*.tgz
+test-utils/
+tests/
+.editorconfig
+.eslintignore
+.eslintrc.json
+.npmrc
+tsconfig.json
+tsconfig-dev.json
+tslint.json
+.travis.yml
+```
+
+**install semantic-release in your project**
+
+```bash
+npm i -D semantic-release
+```
+
+**install semantic-release-cli**
+
+```bash
+npm i -g semantic-release-cli
+```
+
+**configure semantic-release**
+
+```bash
+semantic-release-cli setup
+```
+
+Answer the questions, you will need to provide your logins / passwords for npm registry and github account.
+semantic-release will generate tokens with them and will push them to TravisCI to allows the CI job to push into them.
+
+GitHub webhook will be automatically configured.
+TravisCI job will be automatically created and configured during the first deploy attempt (push on the `master` branch).
+
+The version number in your `package.json` will be set to `0.0.0-development` and will never move.
+semantic-release modify only the `package.json` put into the npm package sent to the registry.
+
+**install commitizen**
+
+```bash
+npm i -D commitizen cz-conventional-changelog
+```
+
+commitizen provide a CLI wizard to help creating valid commit messages
+
+cz-conventional-changelog describe the desired commit format (for this example it is [the conventional changelog spec](https://www.conventionalcommits.org/en/v1.0.0-beta.3/))
+
+**configure commitizen**
+
+In your `package.json`, add this section to configure commitizen :
+
+```json
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+```
+
+And under the `script` section add this command :
+
+```json
+"cz-commit": "git-cz"
+```
+
+To avoid conflict with husky, prefix the script with `cz-` (defaut in the documentation is just `commit`).
+
+**commitizen usage**
+
+Stages the files you want to commit, then use the CLI tool with `npm run cz-commit` then answer the questions.
+
+**install commitlint**
+
+```bash
+npm i -D @commitlint/cli @commitlint/config-conventional @commitlint/travis-cli
+```
+
+Same as commitizen, the commitlint CLI is configured with the @commitlint/config-conventional package to define the commit message convention used.
+
+The @commitlint/travis-cli will be used in the TravisCI job to lint server side en enforce the convention.
+
+**configure commitlint**
+
+Add this section to your `package.json` to configure commitlint :
+
+```json
+    "commitlint": {
+        "extends": [
+            "@commitlint/config-conventional"
+        ]
+    },
+```
+
+Add a hook to the husky configuration in your `package.json` :
+
+```json
+    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+```
+
+Each local commit attempt will trigger commitlint.
+
+Your husky configuraton in your `package.json` should look like this :
+
+```json
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+            "pre-commit": "npm test",
+            "pre-push": "npm test"
+        }
+    },
+```
+
+**create and fill your `.travis.yml` file**
+
+This content should do the job :
+
+```yaml
+language: node_js
+
+node_js:
+    - 10
+
+cache: npm
+
+install:
+    - npm install
+
+script:
+    - npm run test
+
+branches:
+    except:
+        - '/^v\d+\.\d+\.\d+$/'
+
+jobs:
+    include:
+        - stage: commitlint
+          script:
+              - commitlint-travis
+        - stage: test
+          script:
+              - npm run test
+        - stage: deploy
+          if: branch == master && !fork
+          node_js: '10'
+          script:
+              - npm install -g semantic-release@^15
+              - semantic-release
+```
+
+semantic-release is tested only with the last LTS node version. So your app should do the same.
+
+### initialize the workflow
+
+You should have already an initial commit. The message commit convention for this commit is not important.
+
+The next commit should contain all this configuration and should be able to generate something to package and deliver to the npm registry.
+
+Be careful to choose a *feat* or *fix* type for the commit message. Others type will not trigger a release.
+
+The `develop` branch should not exist yet.
+
+When the commit is written, push it directly into `master` to trigger the first CI job and the first deploy.
+
+This deploy is mandatory because TravisCI needs the `.travis.yml` files present into each branches in order to run.
+
+So you need first to deploy a dummy app version, then the contribution branch which will be the destination for PR will be created based on `master`.
+
+Check the CI result. Check also the npm registry.
+
+At this point, if everything is ok you have the CI up and runnning and a first package version in the npm registry.
+
+Now you can create the `develop` branch in your remote repository. Don't forget to protect it and to set it to the default branch.
+
+You're done.
