@@ -22,7 +22,7 @@
 
 `npm i -g semantic-release-cli`
 
-Execute the CLI and answer the questions.
+Execute the CLI with `semantic-release-cli setup` and answer the questions.
 
 ## configuration
 
