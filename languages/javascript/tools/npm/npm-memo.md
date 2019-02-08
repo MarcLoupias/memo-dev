@@ -177,6 +177,8 @@ npm config list -ls
 
 See ['feat: add npm init <create-pkg-name> command' PR](https://github.com/npm/npm/pull/20303) by John Dalton.
 
+See also [`npm init` official documentation](https://github.com/npm/cli/blob/latest/doc/cli/npm-init.md).
+
 ### `npx`
 
 [npx on www.npmjs.com/package](https://www.npmjs.com/package/npx)
