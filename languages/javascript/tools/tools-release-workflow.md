@@ -116,6 +116,8 @@ Logs goes into `lerna-debug.log` file.
     - Independent mode (each package got his own version number / tag)
 - Common `devDependencies` (hoisting of common dependencies, most of the `devDependencies` are commons)
 
+WARNING : lerna used with semantic-release is not mature at all. See [issue on semantic-release repo](https://github.com/semantic-release/semantic-release/issues/193).
+
 ### dependencies automatic management
 
 [greenkeeper.io](https://greenkeeper.io/) [greenkeeperio - github.com](https://github.com/greenkeeperio)
