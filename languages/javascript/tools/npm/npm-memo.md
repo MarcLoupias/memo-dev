@@ -168,6 +168,15 @@ npm config list -ls
 
 [Introducing hooks: get notifications of npm registry and package changes as they happen - 20160601](https://blog.npmjs.org/post/145260155635/introducing-hooks-get-notifications-of-npm)
 
+### `npm init` + `create-*` packages
+
+[Introduced in npm@6](https://blog.npmjs.org/post/173148872290/v600-next2)
+
+> `npm init` can now be used to invoke custom scaffolding tools.
+> You can now do things like `npm init react-app` or `npm init esm` to scaffold an npm package by running [`create-react-app`](https://github.com/facebook/create-react-app) and [`create-esm`](https://github.com/standard-things/create-esm), respectively.
+
+See ['feat: add npm init <create-pkg-name> command' PR](https://github.com/npm/npm/pull/20303) by John Dalton.
+
 ### `npx`
 
 [npx on www.npmjs.com/package](https://www.npmjs.com/package/npx)
