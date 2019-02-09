@@ -402,9 +402,6 @@ cache: npm
 install:
     - npm install
 
-script:
-    - npm run test
-
 branches:
     except:
         - '/^v\d+\.\d+\.\d+$/'
@@ -448,5 +445,10 @@ Check the CI result. Check also the npm registry.
 At this point, if everything is ok you have the CI up and runnning and a first package version in the npm registry.
 
 Now you can create the `develop` branch in your remote repository. Don't forget to protect it and to set it to the default branch.
+
+The master branch needs also to be protected.
+
+You can add rules to the protected branches to force some checks when a PR occurs.
+After the first CI completed job you are able to force a CI status check to validate a PR.
 
 You're done.
