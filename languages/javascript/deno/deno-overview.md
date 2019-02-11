@@ -125,6 +125,14 @@ See [the roadmap](https://github.com/ry/deno/blob/master/Roadmap.md), at that ti
 > - L2: the protobuf messages used internally (L2),
 > - L3: the final "deno" namespace exported to users (L3).
 
-### milestones
+### resources
 
-[v0.1 (first binary release)](https://github.com/ry/deno/milestone/1)
+[deno.land - official website](https://deno.land)
+
+[deno.land/manual](https://deno.land/manual.html)
+
+[deno TypeScript API](https://deno.land/typedoc/)
+
+[deno/milestones](https://github.com/denoland/deno/milestones)
+
+[newsletter - deno.news](https://deno.news/)
