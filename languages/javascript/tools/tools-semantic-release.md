@@ -45,7 +45,7 @@ node_js:
 cache: npm
 
 install:
-    - npm install
+    - npm ci
 
 script:
     - npm run test
@@ -66,15 +66,11 @@ jobs:
               - npm install -g semantic-release@^15
               - semantic-release
 
-after_failure: "cat /home/travis/build/MarcLoupias/md-file-converter/npm-debug.log"
-
 ```
 
 This config will run against `node@10`, install deps and run tests.
 
 If the destination branch is `master` and is not a fork, semantic-release will be also triggered.
-
-If a failure occurs, the npm log will be displayed in the Travis terminal.
 
 ### continuous delivery workflow
 
