@@ -1,4 +1,4 @@
-### Heroku helper
+# heroku - helper
 
 [Tuto play](https://devcenter.heroku.com/articles/getting-started-with-play#test-locally) but outdated (play 1.x)
 
@@ -6,10 +6,12 @@ Play infos ok
 - [devcenter.heroku.com : play-support#play-2-2](https://devcenter.heroku.com/articles/play-support#play-2-2)
 - [playframework.com : 2.2.x/Production](http://www.playframework.com/documentation/2.2.x/Production)
 
-#### app url
+## app url
+
 `http://desolate-brook-9012.herokuapp.com/`
 
-#### database config
+## database config
+
 ```
 mysql://<username>:<pwd>@us-cdbr-east-04.cleardb.com/heroku_blablabla
 ```
@@ -21,17 +23,20 @@ $ heroku config:set PPRB_DB_USER=<username>
 $ heroku config:set PPRB_DB_PWD=<pwd>
 ```
 
-#### mysql tools config
+## mysql tools config
+
 - [stackoverflow.com : remote-connect-to-cleardb-heroku-database](http://stackoverflow.com/questions/9822313/remote-connect-to-cleardb-heroku-database) to configure mysql tools to reach prod database
 
-#### commands
+## commands
 
 - créer une nouvelle app
+
 ```
 $ heroku create
 ```
 
 - lister les dyno installées et donner leur statut :
+
 ```
 $ heroku ps
 ```
@@ -43,21 +48,24 @@ web.1: crashed 2014/01/10 13:57:53 (~ 8m ago)
 ```
 
 - déployer le code de la branche courante sur heroku. Heroku build l'app sur cette base.
+
 ```
 $ git push heroku master
 ```
 
 - setter une seule dyno (gratuit)
+
 ```
 $ heroku ps:scale web=1
 ```
 
 - from the project root dir to get logs from heroku in your play logs dir
+
 ```
 $ heroku logs > logs/heroku.log
 ```
 
-#### common errors
+## common errors
 
 * heroku bash: target/start: No such file or directory
 

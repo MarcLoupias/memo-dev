@@ -1,4 +1,3 @@
-
 # `fetch` API
 
 ## specs & doc

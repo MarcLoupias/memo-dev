@@ -1,4 +1,4 @@
-# GIT Definitions
+# git - definitions
 
 ## what is git
 - a distributed version control system

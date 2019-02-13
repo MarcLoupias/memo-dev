@@ -1,4 +1,4 @@
-#### Services in AngularJS
+# AngularJS - services
 
 - [value & constant](http://lostechies.com/gabrielschenker/2014/01/14/angularjspart-9-values-and-constants/)
 - [service, factory & provider](https://groups.google.com/forum/#!topic/angular/hVrkvaHGOfc)

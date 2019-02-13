@@ -36,15 +36,10 @@
 * [java - jpa - infos](languages/java/JPA/java-jpa-infos.md)
 * [java - jackson - cyclic relationship](languages/java/jackson/java-jackson-cyclic-relationship.md)
 * [java - Play! framework - async](languages/java/play-framework/java-play-async.md)
-* [java - Play! framework - blog Guillaume Bort why no servlet](languages/java/play-framework/java-play-blog-guillaume-bort-why-there-is-no-servlets-in-play.md)
-* [java - Play! framework - changer server port](languages/java/play-framework/java-play-changer-port-server.md)
 * [java - Play! framework - config idea](languages/java/play-framework/java-play-config-idea.md)
-* [java - Play! framework - entreprises utilisant play](languages/java/play-framework/java-play-entreprises-utilisant-play.md)
 * [java - Play! framework - gestion fichier config](languages/java/play-framework/java-play-gestion-fichier-config-dev-prod.md)
 * [java - Play! framework - OAuth](languages/java/play-framework/java-play-OAuth.md)
 * [java - Play! framework - pojo validation](languages/java/play-framework/java-play-pojo-validation.md)
-* [java - Play! framework - tuto play from SOAT](languages/java/play-framework/java-play-tuto-play-from-soat.md)
-* [java - Play! framework - url mailing list](languages/java/play-framework/java-play-url-mailing-list.md)
 * [java - security - links](languages/java/security/java-security-links.md)
 * [java - ant - tips](languages/java/java-ant-tips.md)
 
@@ -139,7 +134,6 @@
 * [javascript - simple logger](languages/javascript/js-simple-logger.md)
 * [javascript - understanding `this` keyword](languages/javascript/js-understanding-this-keyword.md)
 * [javascript - web storage](languages/javascript/js-web-storage.md)
-* [javascript - link javascript framework and lib search engine](languages/javascript/link-javascript-lib-framework-search.md)
 * [javascript - typescript - overview](languages/javascript/ts-typescript-overview.md)
 
 ## Languages - Rust

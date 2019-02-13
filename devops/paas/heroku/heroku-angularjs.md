@@ -1,15 +1,16 @@
+# heroku - angularjs
 
-### Deploy AngularJs app on Heroku
-
-#### Goal
+## Goal
 Running an Angular app as a Node.js app.
 
-#### deploy angular app on heroku
-- [sitepoint.com : deploying-yeomanangular-app-heroku](http://www.sitepoint.com/deploying-yeomanangular-app-heroku/)
+## deploy angular app on heroku
+
+[sitepoint.com : deploying-yeomanangular-app-heroku](http://www.sitepoint.com/deploying-yeomanangular-app-heroku/)
 
 steps :
 
-rajouter en dépendance du package.json du projet 
+rajouter en dépendance du package.json du projet
+
 ```javascript
 "dependencies": {
       "gzippo": "~0.2.0",
@@ -18,6 +19,7 @@ rajouter en dépendance du package.json du projet
 ```
 
 un Procfile contenant :
+
 ```
 web: node web.js
 ```
@@ -53,12 +55,16 @@ $ git push heroku master
 
 **l'app est dispo**
 
-#### config question on stackoverflow
+## divers
+
+### config question on stackoverflow
+
 - [stackoverflow.com : how-do-i-deploy-an-angular-js-app](http://stackoverflow.com/questions/16674202/how-do-i-deploy-an-angular-js-app)
 
-#### Node.js support on Heroku
+### Node.js support on Heroku
+
 - [devcenter.heroku.com : getting-started-with-nodejs#visit-your-application](https://devcenter.heroku.com/articles/getting-started-with-nodejs#visit-your-application)
 
-#### Example, the generator-angular-fullstack
-- [npmjs.org : generator-angular-fullstack](https://npmjs.org/package/generator-angular-fullstack)
+### Example, the generator-angular-fullstack
 
+- [npmjs.org : generator-angular-fullstack](https://npmjs.org/package/generator-angular-fullstack)

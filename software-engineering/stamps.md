@@ -1,4 +1,3 @@
-
 # stamps
 
 [Fun with Stamps. Episode 1. Stamp basics](https://medium.com/@koresar/fun-with-stamps-episode-1-stamp-basics-e0627d81efe0)
@@ -40,4 +39,3 @@
 > the current stampit-org impl (@3.2.1 the 20170916)
 
 [stampit API doc](https://github.com/stampit-org/stampit/blob/master/docs/API.md)
-

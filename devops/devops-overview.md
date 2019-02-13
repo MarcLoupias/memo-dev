@@ -1,6 +1,6 @@
 # devops - overview
 
-## what is devops
+## what is devops
 
 [Devops - wikipedia.fr](https://fr.wikipedia.org/wiki/Devops)
 

@@ -1,4 +1,4 @@
-EcmaScript6
+# js - ES6 - overview
 
 [ES6 - New features overview & comparison](http://es6-features.org/#DefaultWildcard)
 

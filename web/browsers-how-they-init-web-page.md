@@ -1,4 +1,3 @@
-
 # how browsers init a web page
 
 ## Here's what happens when a browser loads a website

@@ -1,5 +1,4 @@
-
-#### http code returned by API REST
+# http code returned by API REST
 
 - **200 OK** - Response to a successful GET, PUT, PATCH or DELETE. Can also be used for a POST that doesn't result in a creation.
 - **201 Created** - Response to a POST that results in a creation. Should be combined with a Location header pointing to the location of the new resource
@@ -18,4 +17,5 @@
 - [choosing-an-http-status-code](http://racksburg.com/choosing-an-http-status-code/)
 
 #### Complete http status code list
+
 - [http-status-codes : www.iana.org](http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml)

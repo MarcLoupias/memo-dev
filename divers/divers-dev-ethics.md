@@ -1,4 +1,4 @@
-# unknow subject
+# divers - dev-ethics
 
 don't know right know how to classify all theses subjects ...
 

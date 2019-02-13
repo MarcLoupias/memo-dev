@@ -1,3 +1,4 @@
+# npm shrinkwrap
 
 [from what-is-npm-shrinkwrap-and-when-is-it-needed : javascript.tutorialhorizon.com](http://javascript.tutorialhorizon.com/2015/03/21/what-is-npm-shrinkwrap-and-when-is-it-needed/)
 
@@ -27,59 +28,55 @@ Also note that by default `npm shrinkwrap` does not include your `devDependencie
 
 `npm shrinkwrap --dev`
 
-----------------------
-
-Procédure de gestion des dépendances de développement via [npm](https://www.npmjs.com/)
-===============================================================
+## Procédure de gestion des dépendances de développement via [npm](https://www.npmjs.com/)
 
 **N.B.** Part du principe que `npm` ne gère que les dépendances de développement, mais pourrait également s'appliquer à une vâche près si `npm` servait aussi à gérer les dépendances de développement.
 
 **Commandes `npm` impliquées**
+
 - [npm install](https://docs.npmjs.com/cli/install)
 - [npm shrinkwrap](https://docs.npmjs.com/cli/shrinkwrap)
 - [npm outdated](https://docs.npmjs.com/cli/outdated)
 - [npm update](https://docs.npmjs.com/cli/update)
 
-Objectifs
----------
+### Objectifs
 
 - Figer les dépendances de développement sur une version donnée de la webapp.
 - S'assurer que tous les intervenants travaillent avec les mêmes dépendances (occurences et versions) de développement.
 - S'assurer que Jenkins soit en mesure de build une application avec le bon contexte en fonction des versions désirées de la webapp.
 
-Attention à la dette technique
-------------------------------
+### Attention à la dette technique
+
 Figer les versions c'est contracter de la dette technique. 
 Ces environnements évoluent très très vite (plusieurs versions par mois, voire par semaine pour certains paquets).
 Plus on attend pour payer sa dette plus elle coute cher.
 
-Workflow
---------
+### Workflow
 
-### 1/ Initialisation
+#### 1/ Initialisation
 
-#### Première installation
+##### Première installation
 Définir un fichier `package.json` et exécuter `npm install --save` pour installer les dépendances et modifier le `package.json` avec les dernières version disponibles. (`npm install --save-dev` pour les dépendances de développement)
 
 **Attention** à la gestion de [semver](https://github.com/npm/node-semver) par npm !!
 `"browser-sync": "2.7.13"` entrainera l'installation de la version `2.7.13`.
 `"browser-sync": "^2.7.13"` entrainera l'installation de la dernière version mineure disponible (2.9.10 par exemple) et si l'option `--save-dev` est active cela entrainera également la modification du `package.json` en `"^2.9.10"`.
 
-#### Figer la première installation
+##### Figer la première installation
 Exécuter `npm shrinkwrap --dev` (génère le fichier `npm-shrinkwrap.json`, `--dev` permet d'inclure les `devDependencies`)
 
 **Important** : 
 - le contenu du `package.json` doit matcher parfaitement avec les modules réellements installés dans `../node_modules/` sinon la commande `npm shrinkwrap` échoue.
 - si `npm install` est rejoué, il prendra le contenu de `npm-shrinkwrap.json` et ne tiendra pas compte des nouvelles versions. Les versions sont donc **figées**.
 
-### 2/ monitorer la dette technique
+#### 2/ monitorer la dette technique
 Exécuter `npm outdated` produit une liste des packages avec 3 colonnes : `Current` (les versions installées), `Wanted` (les versions définies dans le package.json), `Latest` (les versions les + récentes disponibles sur le `registry`).
 
 `npm outdated --depth=10`
 affiche la liste des packages mais en tenant compte de la profondeur (sur 10 niveaux) et va donc également donner les sub-sub-n-packages sur 10 niveaux.
 La colonne `Location` indiquera quel package ou sub-package est concerné.
 
-### 3/ updater un package
+#### 3/ updater un package
 Pour updater les `devDependencies` et modifier le `package.json` (afin de pouvoir derrière exécuter un `npm shrinkwrap`) **supprimer d'abord le `npm-shrinkwrap.json`** puis exécuter `npm update --dev --save`
 
 `--dev` permet de prendre en compte les `devDependencies`
@@ -90,4 +87,3 @@ Il convient ensuite de refixer les versions en passant par la case `npm shrinkwr
 
 **Solution alternative**
 Peut être moins risquée (à voir à l'usage), supprimer manuellement tout le contenu de `../node_modules/` et réexécuter l'installation.
-

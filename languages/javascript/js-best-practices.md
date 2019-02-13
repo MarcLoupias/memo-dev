@@ -1,6 +1,7 @@
 # javascript best practices
 
 ## coding style
+
 - [coding style from airbnb](https://github.com/airbnb/javascript)
 
 ## articles

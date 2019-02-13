@@ -1,6 +1,6 @@
 # webapp build
 
-## strategy
+## strategy
 
 [État de l'art de ES2015+ dans Node.js et le navigateur - Blend Web Mix - Christophe Porteneuve - 20161121](https://youtu.be/k0_gi7BoBgw?t=2251)
 
@@ -15,7 +15,7 @@
 > Intellectuellement on fait "ah ouai machin" mais, commence par minimiser la jpeg de 900ko dans ta home, implémente http2, 
 > fais des choses qui servent pour de vrai, mettre des vrais entêtes de caches, etc ...
 
-## bundlers
+## bundlers
 
 ### bundler projects
 

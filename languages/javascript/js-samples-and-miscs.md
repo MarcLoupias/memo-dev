@@ -1,4 +1,3 @@
-
 # js - samples and miscs
 
 ## utiliser des webservices retournant du xml avec AngularJS (ES5)

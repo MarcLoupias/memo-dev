@@ -1,4 +1,4 @@
-# javascript double negation `!!`
+# js - double negation `!!`
 
 [double-negation-in-javascript-what-is-the-purpose : stackoverflow.com](http://stackoverflow.com/questions/10467475/double-negation-in-javascript-what-is-the-purpose)
 

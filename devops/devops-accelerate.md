@@ -1,4 +1,4 @@
-# devops accelerate
+# devops - accelerate
 
 [Accelerate - Nicole Forsgren, Jez Humble and Gene Kim - 20180327](https://itrevolution.com/book/accelerate/)
 

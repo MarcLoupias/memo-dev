@@ -1,4 +1,4 @@
-# AngularJS SEO
+# AngularJS - SEO
 
 This is DEPRECATED ...
 http://lawsonry.com/2014/05/diy-angularjs-seo-with-phantomjs-the-easy-way/?utm_source=ng-newsletter&utm_campaign=b7e0ffb362-AngularJS_Newsletter_5_6_145_5_2014&utm_medium=email&utm_term=0_fa61364f13-b7e0ffb362-96524929

@@ -1,5 +1,4 @@
-
-# AngularJS - app init 
+# AngularJS - app init
 
 ## Bootstrap d'une app web
 

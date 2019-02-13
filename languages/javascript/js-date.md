@@ -1,4 +1,4 @@
-# Dates in javascript
+# dates in javascript
 
 ## specs
 

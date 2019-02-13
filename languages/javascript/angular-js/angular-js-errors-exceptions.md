@@ -1,4 +1,3 @@
-
 # AngularJS - errors and exceptions
 
 ## Erreurs d'exécution (contexte Angular)

@@ -1,7 +1,7 @@
-
 # CORS (Cross-Origin Resource Sharing)
 
 ## Why ?
+
 - Because of [Same Origin Policy](http://en.wikipedia.org/wiki/Same_origin_policy)
 
 > The policy permits scripts running on pages originating from the same site – a combination of scheme, hostname, and port number – to access each other's DOM with no specific restrictions, but prevents access to DOM on different sites. 
@@ -20,6 +20,7 @@ A server using `"Access-Control-Allow-Origin: *"` allows all domains, it is **ve
 - [Cross Origin Ressource Sharing](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
 
 ## Infos
+
 - [dev.com : requête: Cross-site HTTP requests](http://www.developpez.net/forums/d755910/applications/sig-systeme-d-information-geographique/ign-api-geoportail/requete-cross-site-http-requests/)
 - [developer.mozilla.org : CORS](https://developer.mozilla.org/en-US/docs/HTTP/Access_control_CORS?redirectlocale=en-US&redirectslug=HTTP_access_control)
 - [developer.mozilla.org : Server-Side Access Control](https://developer.mozilla.org/en-US/docs/Server-Side_Access_Control)
@@ -40,24 +41,30 @@ For example if u have a system to configure the allowed origin list in your back
 - `"Access-Control-Allow-Credentials: true"` to also send the cookies
 
 ### Accessing custom headers in response
+
 Server MUST return `Access-Control-Expose-Headers` containing the exposed headers.
 Without that header, the javascript client CANNOT read them.
 
 ## Tuto
+
 - [html5rocks.com : CORS](http://www.html5rocks.com/en/tutorials/cors/)
 
 ## Specs
+
 - [w3c : CORS](http://www.w3.org/TR/cors/)
 
 ## Play! Impl
+
 - [play-2-0-1-and-setting-access-control-allow-origin](http://stackoverflow.com/questions/14430119/play-2-0-1-and-setting-access-control-allow-origin)
 - [configuring-play-framework-for-cross-domain-http-requests](http://www.entreotrascosas.net/configuring-play-framework-for-cross-domain-http-requests/)
 
 Need to add a route for `OPTIONS` http method and a suited controller.
-route ex : 
+route ex :
+
 ```
 OPTIONS       /*path                 controllers.CorsCtrl.checkPreFlight(path)
 ```
 
 ## Angular perform OPTIONS action instead of POST
+
 - [angularjs-performs-an-options](http://stackoverflow.com/questions/12111936/angularjs-performs-an-options-http-request-for-a-cross-origin-resource)

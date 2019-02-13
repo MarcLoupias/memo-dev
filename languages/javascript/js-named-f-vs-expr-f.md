@@ -1,4 +1,3 @@
-
 # named function vs expression function
 
 ## articles

@@ -1,3 +1,5 @@
+# nano - memo
+
 `^` = `Ctrl` key
 `M` = `Alt` key
 

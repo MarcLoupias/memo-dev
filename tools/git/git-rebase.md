@@ -1,15 +1,18 @@
+# git - rebase
 
-#### doc
+## doc
+
 [offical doc](http://git-scm.com/book/ch3-6.html#The-Perils-of-Rebasing)
 
-#### usefull commands rebase
+## usefull commands rebase
 
 ```
 # cancel a rebase
 git rebase --abort
 ```
 
-#### Article rebase
+## Article rebase
+
 [squashing commits with rebase](http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html)
 
 The rebase command has some awesome options available in its `--interactive` (or `-i`) mode, and one of 
@@ -120,9 +123,7 @@ as a whole that also covers some more complex examples of the command.
 [gitcasts](http://gitcasts.com/)
 [videos](http://gitcasts.com/posts/rebasing)
 
----
-
-#### rebase for renaming
+## rebase for renaming
 
 Exemple, rebasing 2 lasts commits to rename commit message. Theses commits contains a `#` for github/gitlab issue linking.
 
@@ -138,9 +139,7 @@ then the classical
 
 `git rebase --continue`
 
----
-
-#### rebase to split a commit into several commits
+## rebase to split a commit into several commits
 
 from [Emmanuel Bernard blog - Split a commit in two with Git - 20140414](https://emmanuelbernard.com/blog/2014/04/14/split-a-commit-in-two-with-git/)
 
@@ -163,5 +162,3 @@ git add ...
 git commit -m "Second part"
 git rebase --continue
 ```
-
-

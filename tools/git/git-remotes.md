@@ -1,8 +1,9 @@
-# Working with Remotes
+# git - remotes
+
 - [git-scm.com - working with remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
 - [www.grafikart.fr](https://www.grafikart.fr/formations/git/remote-push-pull)
 
-## Mémo
+## memo
 
 ```
 git remote # Liste les dépôts distants
@@ -144,4 +145,3 @@ $ git remote rm paul
 $ git remote
 origin
 ```
-

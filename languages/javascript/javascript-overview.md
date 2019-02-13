@@ -1,4 +1,4 @@
-# Javascript Global View
+# JavaScript - overview
 
 ## organizations
 

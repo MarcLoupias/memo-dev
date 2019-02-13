@@ -1,4 +1,4 @@
-# AngularJS testing
+# AngularJS - testing
 
 ## tools
 

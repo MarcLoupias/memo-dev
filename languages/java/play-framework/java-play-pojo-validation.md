@@ -1,3 +1,5 @@
+# java - play - pojo validation
+
 http://www.playframework.com/documentation/2.2.x/JavaForms
 
 http://docs.spring.io/spring/docs/3.0.x/reference/validation.html
@@ -6,9 +8,9 @@ checker JSR-303 (Bean Validation)
 
 http://blog.octo.com/jsr-303-bean-validation-etat-des-lieux/
 
-
-
 check des raw types :
+
+```java
 @NotNull
 @Constraints.Required
 @Constraints.MinLength(value = 5)
@@ -27,17 +29,20 @@ private Integer numberInteger;
 @Constraints.Min(value = 10)
 @Constraints.Max(value = 20)
 private Long numberLong;
-
+```
 
 SQL version :
+
+```sql
 `date` datetime DEFAULT NULL,
 `name` varchar(255) DEFAULT NULL,
 `numberInteger` int(11) DEFAULT NULL,
 `numberLong` bigint(20) DEFAULT NULL,
-
+```
 
 unit test :
 
+```java
 package models;
 
 
@@ -231,6 +236,4 @@ public class ProductValidationTest {
         Assert.assertEquals("error.max", fieldError.message());
     }
 }
-
-
-
+```

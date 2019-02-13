@@ -1,3 +1,5 @@
+# npm - packages
+
 - middleware proxy à exec avec browser-sync :
 [http-proxy-middleware] (https://github.com/chimurai/http-proxy-middleware) & [browsersync - option-server] (http://www.browsersync.io/docs/options/#option-server)
 

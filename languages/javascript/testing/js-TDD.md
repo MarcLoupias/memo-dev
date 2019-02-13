@@ -1,14 +1,12 @@
+# js - TDD
 
-Test Driven Dev in js
-=====================
+## Using Karma
 
-Using Karma
------------
 It is a test runner for js tests.
 Can't test by himself, need a test framework.
 
-Testing Frameworks
-------------------
+## Testing Frameworks
+
 Jasmine
 QUnit
 

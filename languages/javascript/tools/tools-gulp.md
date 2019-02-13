@@ -5,8 +5,8 @@ built upon [vinyl](https://github.com/gulpjs/vinyl) and [vinyl-fs](https://githu
 
 - [gulp API](https://github.com/gulpjs/gulp/blob/master/docs/API.md)
 
-
 ## quick ref (the bricks)
+
 - [gulp task](https://github.com/gulpjs/gulp/blob/master/docs/API.md#gulptaskname-deps-fn) to define a task
 - [gulp src](https://github.com/gulpjs/gulp/blob/master/docs/API.md#gulpsrcglobs-options) to define files reading
 - [gulp dest](https://github.com/gulpjs/gulp/blob/master/docs/API.md#gulpdestpath-options) to define files writing
@@ -17,6 +17,7 @@ built upon [vinyl](https://github.com/gulpjs/vinyl) and [vinyl-fs](https://githu
 - [vinyl](https://github.com/gulpjs/vinyl) Virtual file format
 
 ## gulp node modules
+
 - [gulp-protractor](https://github.com/mllrsohn/gulp-protractor)
 
 wrapper module for [protractor](https://github.com/angular/protractor)

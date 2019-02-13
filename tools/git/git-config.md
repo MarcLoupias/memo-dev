@@ -1,4 +1,4 @@
-# git config
+# git - config
 
 [git-config : git-scm.com](https://git-scm.com/docs/git-config)
 

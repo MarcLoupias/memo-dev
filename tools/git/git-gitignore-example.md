@@ -1,4 +1,4 @@
-#### Exemple de fichier .gitignore :
+# git - `.gitignore`
 
 ```
 ######################

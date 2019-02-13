@@ -1,4 +1,7 @@
-# Understanding Tracking Branches in Git
+# git - branch tracking
+
+## Understanding Tracking Branches in Git
+
 - [source](http://www.lornajane.net/posts/2014/understanding-tracking-branches-in-git)
 - [git-scm.com - Git-Branching-Remote-Branches **must read**](https://git-scm.com/book/it/v2/Git-Branching-Remote-Branches)
 
@@ -40,6 +43,7 @@ git branch --unset-upstream
 ## Link a branch to an upstream branch
 
 If you're pushing a branch (even if it exists in both places) to a remote location and you want to create the link:
+
 ```bash
 $ git push -u origin feature
 Counting objects: 9, done.
@@ -51,7 +55,9 @@ To /home/lorna/.../scripts/origin.git
  * [new branch]      feature -> feature
 Branch feature set up to track remote branch feature from origin.
 ```
+
 If you're creating a local version of an existing remote branch:
+
 ```bash
 $ git fetch origin
 remote: Counting objects: 9, done.
@@ -61,18 +67,24 @@ Unpacking objects: 100% (9/9), done.
 From /home/lorna/.../scripts/origin
  * [new branch]      feature    -> origin/feature
 ```
+
 Then:
+
 ```bash
 $ git checkout feature
 Branch feature set up to track remote branch feature from origin.
 Switched to a new branch 'feature'
 ```
+
 Addenda : If you have already an existing remote branch (`upstream` is the remote alias):
+
 ```bash
 git checkout foo
 git branch -u upstream/foo
 ```
-or 
+
+or
+
 ```bash
 git branch -u upstream/foo foo
 ```

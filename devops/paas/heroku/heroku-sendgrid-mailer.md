@@ -1,3 +1,4 @@
+# heroku - sendgrid mailer
 
 to allow app to send mails
 

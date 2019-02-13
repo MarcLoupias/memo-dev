@@ -1,5 +1,4 @@
-
-# WTFPL (do What The Fuck you want to Public Licence)
+# licences - WTFPL (do What The Fuck you want to Public Licence)
 
 http://www.wtfpl.net/
 

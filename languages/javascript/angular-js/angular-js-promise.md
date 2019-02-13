@@ -1,4 +1,4 @@
-# angular promise
+# AngularJS - promise
 
 ## basic tuto
 

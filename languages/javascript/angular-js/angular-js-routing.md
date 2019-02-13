@@ -1,4 +1,4 @@
-# Angular ui routing
+# AngularJS - ui routing
 
 ## ui-router
 - [ui-router](https://github.com/angular-ui/ui-router)
@@ -15,11 +15,13 @@
 ## url management
 
 - [add args in url](http://stackoverflow.com/questions/14174394/how-can-i-change-params-in-url-with-angularjs)
+
 ```javascript
 $location.search('year', $scope.year);
 ```
 
 - get specific arg
+
 ```javascript
 $location.search().year;
 ```
@@ -27,15 +29,16 @@ $location.search().year;
 - [clear args in url](http://stackoverflow.com/questions/17376416/angularjs-how-to-clear-query-parameters-in-the-url)
 
 - remove all args
+
 ```javascript
 $location.url($location.path());
 ```
 
 - remove a specific args
+
 ```javascript
 $location.search('coords', null);
 ```
-
 
 ## issues
 

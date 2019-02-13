@@ -1,3 +1,4 @@
+# java - play - config idea
 
 utiliser le plugin sbt suivant :
 https://github.com/mpeltonen/sbt-idea

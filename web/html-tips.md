@@ -1,4 +1,3 @@
-
 # html tips
 
 ## balises `<meta>`

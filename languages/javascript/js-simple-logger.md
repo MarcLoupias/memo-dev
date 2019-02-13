@@ -1,4 +1,4 @@
-# js-simple-logger
+# js - simple-logger
 
 ```javascript
 window.simpleLogger = {

@@ -22,7 +22,6 @@ Good practices :
 
 Check this : http://docs.oracle.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html#MessageDigest
 
-
 ## JRE config on deployment
 
 Don't forget that key length usage is restricted by default on EVERY JDK by default
@@ -32,5 +31,3 @@ http://www.bouncycastle.org/wiki/display/JA1/Frequently+Asked+Questions
 http://stackoverflow.com/questions/18142745/how-do-i-generate-a-salt-in-java-for-salted-hash
 
 NIST recommendations : http://csrc.nist.gov/publications/nistpubs/800-132/nist-sp800-132.pdf
-
-

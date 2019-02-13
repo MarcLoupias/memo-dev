@@ -1,5 +1,4 @@
-
-# choose a licence
+# licences - choose a licence
 
 [choosealicense.com](https://choosealicense.com/)
 

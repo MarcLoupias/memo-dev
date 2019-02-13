@@ -1,5 +1,4 @@
-
-# tags management
+# git - tags management
 
 ## add a tag
 

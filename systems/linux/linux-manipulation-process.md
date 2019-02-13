@@ -16,4 +16,3 @@ filtrer la liste précédente avec des mots clefs
 # filtrer la liste avec le mot clef "jboss"
 $ ps -ef | grep jboss
 ```
-

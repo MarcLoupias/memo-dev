@@ -1,4 +1,3 @@
-
 # js - closures
 
 ## definition

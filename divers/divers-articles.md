@@ -1,5 +1,4 @@
-
-# articles divers
+# divers - articles
 
 ## comparatif des frameworks / lib dispo pour Js
 

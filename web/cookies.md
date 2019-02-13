@@ -1,4 +1,4 @@
-# cookies
+# cookies
 
 Cookies are mainly used for these three purposes:
 - Session management (user logins, shopping carts)

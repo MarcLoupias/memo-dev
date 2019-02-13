@@ -1,4 +1,4 @@
-# JavaScript duck typing
+# js - duck typing
 
 [Duck Typing in Javascript](https://stackoverflow.com/questions/3379529/duck-typing-in-javascript)
 

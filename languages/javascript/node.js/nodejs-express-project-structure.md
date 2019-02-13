@@ -1,10 +1,10 @@
-# nodejs express project structure
+# nodejs - express project structure
 
 ## express internals
 
 [How express.js works - Understanding the internals of the express library - www.sohamkamani.com/blog - 20180530](https://www.sohamkamani.com/blog/2018/05/30/understanding-how-expressjs-works/)
 
-## project POV
+## project POV
 
 [How to structure a Node.js Express project : Sean McGary 20160327](https://seanmcgary.com/posts/how-to-structure-a-nodejs-express-project)
 

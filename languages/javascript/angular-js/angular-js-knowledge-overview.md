@@ -1,4 +1,3 @@
-
 # AngularJS - knowledge overview
 
 [Le programme] (http://www.methotic.com/formation-angularjs)

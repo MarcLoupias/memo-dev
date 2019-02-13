@@ -1,4 +1,4 @@
-# Diagrams tools
+# diagrams tools
 
 ## sequences diagrams
 

@@ -1,4 +1,4 @@
-# angular components
+# AngularJS - components
 
 ## I - guides
 

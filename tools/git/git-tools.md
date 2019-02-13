@@ -1,5 +1,4 @@
-
-# git tools
+# git - tools
 
 Tools for or around git
 
