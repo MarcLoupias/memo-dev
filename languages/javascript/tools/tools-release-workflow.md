@@ -400,7 +400,7 @@ node_js:
 cache: npm
 
 install:
-    - npm install
+    - npm ci
 
 branches:
     except:
