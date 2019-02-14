@@ -10,6 +10,7 @@
 * [Articles divers](divers/divers-articles.md)
 * [Dev ethics](divers/divers-dev-ethics.md)
 * [Outils veille techno](divers/divers-outil-veille-techno.md)
+* [pdf](divers/divers-pdf.md)
 
 ## Data
 
