@@ -1,0 +1,151 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-angularjs---testing">AngularJS - testing</h1> <h2 id="title-tools">tools</h2> <ul> <li><a href="http://karma-runner.github.io/0.13/index.hthtml">karma runner</a></li> <li><a href="http://jasmine.github.ihtml">jasmine</a></li> <li><a href="http://phantomjs.orhtml">PhantomJS</a></li> <li><a href="https://github.com/matthias-schuetz/karma-htmlfile-reporthtml">karma-htmlfile-reporter</a></li> <li><a href="https://github.com/karma-runner/karma-junit-reporthtml">karma-junit-reporter</a></li> <li><a href="http://karma-runner.github.io/0.12/plus/jenkins.hthtml">karma &amp; jenkins</a></li> <li><a href="https://www.mockaroo.cohtml">mockaroo : online mock file generator</a></li> </ul> <h2 id="title-unit-testing">unit testing</h2> <h3 id="title-best-articles">best articles</h3> <ul> <li><a href="http://angular-tips.com/blog/categories/unit-teshtml">angular-tips.com : unit-test</a></li> <li><a href="http://blog.xebia.fr/2013/03/21/introduction-aux-tests-unitaires-en-javascriphtml">introduction-aux-tests-unitaires-en-javascript</a></li> <li><a href="http://blog.xebia.fr/2008/04/11/les-10-commandements-des-tests-unitairehtml">Les 10 commandements des tests unitaires</a></li> <li><a href="http://blog.soat.fr/2013/11/10-trucs-infaillibles-pour-rater-ses-tests-unitaires-en-toutes-circonstances-2html">rater-ses-tests-unitaires-en-toutes-circonstances</a></li> </ul> <h3 id="title-best-lib-ng-describe">best lib (ng-describe)</h3> <ul> <li><a href="https://github.com/kensho/ng-descrihtml">ng-describe</a></li> <li>Avec ng-describe, quand on mock une constante utilisée pour stocker une lib externe ( cf [Y240] (<a href="https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y2html">https://github.com/johnpapa/angular-styleguide/tree/master/a1#style-y240</a>) ), mocker la constante ne suffit pas, il faut mocker chaque fonction utilisée en lui réattribuant la fonction initiale.<br>On injecte par IIFE la vrai lib donc on réattribue au mock les fonctions utilisées. Ou pas.</li> </ul> <p>Articles de l’auteur de la lib :</p> <ul> <li><a href="https://glebbahmutov.com/blog/1-2-3-testehtml">Unit testing AngularJS code in record time using ng-describe : glebbahmutov.com/</a></li> <li><a href="http://slides.com/bahmutov/ng-describehtml">Slides AngularJS NYC meetup in August 2015</a></li> <li><a href="https://glebbahmutov.com/blog/testing-angularjs-under-nodhtml">testing-angularjs-under-node : glebbahmutov.com/</a></li> <li><a href="https://glebbahmutov.com/blog/testing-angular-async-stufhtml">testing-angular-async-stuff: glebbahmutov.com</a></li> </ul> <h3 id="title-intégration-jasmine-dans-webstorm">intégration jasmine dans webstorm</h3> <p><a href="http://stackoverflow.com/questions/8108461/how-can-i-get-webstorm-to-recognize-jasmine-methohtml">http://stackoverflow.com/questions/8108461/how-can-i-get-webstorm-to-recognize-jasmine-methods</a></p> <p>Selection jasmine definitly typed : <a href="http://stackoverflow.com/a/368642html">http://stackoverflow.com/a/36864225</a></p> <h3 id="title-examples">examples</h3> <h4 id="title-repos-examples">repos examples</h4> <ul> <li><p><a href="https://github.com/Puigcerber/angular-unit-testihtml">Puigcerber/angular-unit-testing : github.com</a></p> <blockquote> <p>Guidelines and patterns for unit testing AngularJS apps.</p> </blockquote> </li> <li><p><a href="https://github.com/cironunes/angular-testing-reciphtml">cironunes/angular-testing-recipes : github.com</a></p> <blockquote> <p>Unit and e2e testing recipes for AngularJS </p> </blockquote> </li> <li><p><a href="https://www.sitepoint.com/unit-testing-angularjs-services-controllers-providerhtml">Unit Testing in AngularJS: Services, Controllers &amp; Providers : sitepoint.com</a></p> <blockquote> <p><a href="https://github.com/sitepoint-editors/angular-js-unit-testing-services-controllers-providehtml">github repository</a></p> </blockquote> </li> </ul> <h4 id="title-tests-avec-http">tests avec $http</h4> <ul> <li><a href="http://blog.occitech.fr/2013/10/les-tests-angularjs-le-guide-de-a-a-z-partie-1-les-tests-unitairehtml">les-tests-angularjs-le-guide-de-a-a-z</a></li> </ul> <h4 id="title-tests-de-services">tests de services</h4> <ul> <li><a href="http://stackoverflow.com/questions/13013772/how-do-i-test-an-angularjs-service-with-jasmihtml">how-do-i-test-an-angularjs-service-with-jasmine</a></li> </ul> <h4 id="title-tests-de-directives">tests de directives</h4> <ul> <li><a href="https://www.sitepoint.com/angular-testing-tips-testing-directivehtml">angular-testing-tips-testing-directives</a></li> </ul> <h4 id="title-dependencies-mocking">Dependencies mocking</h4> <ul> <li><a href="http://stackoverflow.com/questions/17554727/mocking-angular-module-dependencies-in-jasmine-unit-teshtml">mocking-angular-module-dependencies</a></li> <li><a href="http://stackoverflow.com/questions/14773269/injecting-a-mock-into-an-angularjs-service/18756347#187563html">injecting-a-mock-into-an-angularjs-service</a></li> <li><a href="http://www.sitepoint.com/mocking-dependencies-angularjs-testhtml">divers</a></li> <li><a href="http://blog.softit.fr/post/dummy-fake-stub-mock-et-spy-les-tests-unitaires-avec-l-aide-de-mhtml">Dummy, Fake, Stub, Mock et Spy, les tests unitaires avec l’aide de Moq</a></li> </ul> <h4 id="title-testing-a-throw-exception-">Testing a throw exception :</h4> <pre><code class="lang-javascript">it(&#39;throws exception when args are undefined or null&#39;, inject(function (HistoryLRindexService) {
+  expect(function(){HistoryLRindexService.addIndexElement(undefined, &#39;toto&#39;);})
+    .toThrowError(&#39;HistoryLRindexValueFactory.addIndexElement(key, data) error : key null or undefined&#39;);
+}));</code></pre> <ul> <li><p>use anonymous function for the call</p> </li> <li><p>use <code>toThrowError(exceptionMsg)</code> <a href="http://jasmine.github.io/2.3/introduction.html#section-Included_Matchehtml">matcher from Jasmine</a></p> </li> <li><p>your impl should be something like that :</p> <pre><code class="lang-javascript">if(!key) {
+throw new Error(&#39;HistoryLRindexValueFactory.addIndexElement(key, data) error : key null or undefined&#39;);
+}</code></pre> </li> </ul> <h4 id="title-testing-a-directive-">Testing a directive :</h4> <pre><code class="lang-javascript">(function () {
+    &#39;use strict&#39;;
+
+    angular
+        .module(&#39;app&#39;)
+        .directive(&#39;exampleDirective&#39;, exampleDirective);
+
+    function exampleDirective() {
+        return {
+            restrict: &#39;E&#39;,
+            scope: {
+                stroke: &quot;@&quot;,
+                fill: &quot;@&quot;
+            },
+            template: &#39;&lt;svg ng-attr-height=&quot;{{values.canvas}}&quot; ng-attr-width=&quot;{{values.canvas}}&quot; class=&quot;gray&quot;&gt;&#39; +
+            &#39;&lt;circle ng-attr-cx=&quot;{{values.center}}&quot; ng-attr-cy=&quot;{{values.center}}&quot;&#39; +
+            &#39;ng-attr-r=&quot;{{values.radius}}&quot; stroke=&quot;{{stroke}}&quot;&#39; +
+            &#39;stroke-width=&quot;3&quot; fill=&quot;{{fill}}&quot; /&gt;&#39; +
+            &#39;&lt;/svg&gt;&#39;,
+            link: function(scope, element, attrs) {
+                var calculateValues = function(size) {
+                    var canvasSize = size * 2.5;
+
+                    scope.values = {
+                        canvas: canvasSize,
+                        radius: size,
+                        center: canvasSize / 2
+                    };
+                };
+
+                attrs.$observe(&#39;size&#39;, function(newSize) {
+                    calculateValues(parseInt(newSize, 10));
+                });
+            }
+        };
+    }
+
+}());</code></pre> <pre><code class="lang-javascript">(function () {
+    &#39;use strict&#39;;
+
+    describe(&#39;directive: example&#39;, function() {
+        var element, scope;
+
+        beforeEach(module(&#39;app&#39;));
+
+        beforeEach(inject(function($rootScope, $compile) {
+            scope = $rootScope.$new();
+
+            element =
+                &#39;&lt;example-directive size=&quot;{{size}}&quot; stroke=&quot;black&quot; fill=&quot;blue&quot;&gt;&lt;/example-directive&gt;&#39;;
+
+            scope.size = 100;
+
+            element = $compile(element)(scope);
+            scope.$digest();
+        }));
+
+        describe(&#39;with the first given value&#39;, function() {
+            it(&quot;should compute the size to create other values&quot;, function() {
+                var isolated = element.isolateScope();
+                expect(isolated.values.canvas).toBe(250);
+                expect(isolated.values.center).toBe(125);
+                expect(isolated.values.radius).toBe(100);
+            });
+
+            it(&quot;should contain a svg tag with proper size&quot;, function() {
+                expect(element.find(&#39;svg&#39;).attr(&#39;height&#39;)).toBe(&#39;250&#39;);
+                expect(element.find(&#39;svg&#39;).attr(&#39;width&#39;)).toBe(&#39;250&#39;);
+            });
+
+            it(&quot;should contain a circle with proper attributes&quot;, function() {
+                expect(element.find(&#39;circle&#39;).attr(&#39;cx&#39;)).toBe(&#39;125&#39;);
+                expect(element.find(&#39;circle&#39;).attr(&#39;cy&#39;)).toBe(&#39;125&#39;);
+                expect(element.find(&#39;circle&#39;).attr(&#39;r&#39;)).toBe(&#39;100&#39;);
+                expect(element.find(&#39;circle&#39;).attr(&#39;stroke&#39;)).toBe(&#39;black&#39;);
+                expect(element.find(&#39;circle&#39;).attr(&#39;fill&#39;)).toBe(&#39;blue&#39;);
+            });
+        });
+
+        describe(&#39;when changing the initial value to a different one&#39;, function() {
+
+            beforeEach(function() {
+                scope.size = 160;
+                scope.$digest();
+            });
+
+            it(&quot;should compute the size to create other values&quot;, function() {
+                var isolated = element.isolateScope();
+                expect(isolated.values.canvas).toBe(400);
+                expect(isolated.values.center).toBe(200);
+                expect(isolated.values.radius).toBe(160);
+            });
+
+            it(&quot;should contain a svg tag with proper size&quot;, function() {
+                expect(element.find(&#39;svg&#39;).attr(&#39;height&#39;)).toBe(&#39;400&#39;);
+                expect(element.find(&#39;svg&#39;).attr(&#39;width&#39;)).toBe(&#39;400&#39;);
+            });
+
+            it(&quot;should contain a circle with proper attributes&quot;, function() {
+                expect(element.find(&#39;circle&#39;).attr(&#39;cx&#39;)).toBe(&#39;200&#39;);
+                expect(element.find(&#39;circle&#39;).attr(&#39;cy&#39;)).toBe(&#39;200&#39;);
+                expect(element.find(&#39;circle&#39;).attr(&#39;r&#39;)).toBe(&#39;160&#39;);
+                expect(element.find(&#39;circle&#39;).attr(&#39;stroke&#39;)).toBe(&#39;black&#39;);
+                expect(element.find(&#39;circle&#39;).attr(&#39;fill&#39;)).toBe(&#39;blue&#39;);
+            });
+        });
+
+    });
+
+}());</code></pre> <h2 id="title-e2e-testing">e2e testing</h2> <ul> <li>[angularjs-e2e-testing-using-ngmocke2e] (<a href="http://blog.xebia.com/2014/03/08/angularjs-e2e-testing-using-ngmocke2html">http://blog.xebia.com/2014/03/08/angularjs-e2e-testing-using-ngmocke2e/</a>)</li> <li>[locators protractors] (<a href="http://www.protractortest.org/#/locatohtml">http://www.protractortest.org/#/locators</a>)</li> <li>[page objects] (<a href="https://docs.google.com/presentation/d/1B6manhG0zEXkC-H-tPo2vwU06JhL8w9-XCF9oehXzAQ/edit?pli=1#slide=id.g2bc490733_html">https://docs.google.com/presentation/d/1B6manhG0zEXkC-H-tPo2vwU06JhL8w9-XCF9oehXzAQ/edit?pli=1#slide=id.g2bc490733_00</a>)</li> <li>[protractor-styleguide] (<a href="https://github.com/CarmenPopoviciu/protractor-styleguihtml">https://github.com/CarmenPopoviciu/protractor-styleguide</a>)</li> <li><a href="https://www.exratione.com/2015/02/phantomjs-has-many-uses-but-function-testing-isnt-one-of-thehtml">phantomjs not good for e2e</a></li> </ul> <h3 id="title-installation-des-drivers-pour-webdrivers">installation des drivers pour webdrivers</h3> <p>ATTENTION CHROME &amp; FIREFOX, need dl update de webdriver.</p> <p>Derrière un proxy il faut config envvar <code>HTTP_PROXY</code> &amp; <code>HTTPS_PROXY</code> sur fiddler (<code>http://localhost:8888</code>)<br>et set <code>ignore_ssl</code> à true si le magasin de certificat du réseau est fucké. Pour le moment on sait le faire que en dur dans le source de webdriver-manager ( <code>.\node_modules\gulp-protractor\node_modules\protractor\bin\webdriver-manager</code> )<br>ligne 93 (<code>default(&#39;ignore_ssl&#39;, false)</code>.)</p> <ul> <li><code>ignore_ssl</code> for protractor [issue 1847] (<a href="https://github.com/angular/protractor/issues/1847#issuecomment-760239html">https://github.com/angular/protractor/issues/1847#issuecomment-76023932</a>).</li> <li>proxy config + ignore_ssl for webdriver-manager, [issue 1477] (<a href="https://github.com/angular/protractor/issues/14html">https://github.com/angular/protractor/issues/1477</a>).</li> </ul> <p>ATTENTION IE :<br>pour exécution sur IE [need drivers spécifiques] (<a href="http://selenium-release.storage.googleapis.com/index.hthtml">http://selenium-release.storage.googleapis.com/index.html</a>).<br>(dépendent de la plateforme, sur win x64 : <code>IEDriverServer_x64_2.47.0.zip</code>)<br>Config à faire ensuite dans <code>protractor.conf.js</code> pour lancer sur ce server (géré au niveau du generator)</p> <h3 id="title-lancer-la-suite-de-test-sur-chaque-browser">lancer la suite de test sur chaque browser</h3> <pre><code class="lang-javascript">multiCapabilities: [{
+    &#39;browserName&#39;: &#39;firefox&#39;
+  }, {
+    &#39;browserName&#39;: &#39;chrome&#39;
+  }, {
+    &#39;browserName&#39;: &#39;ie&#39;
+  }],
+</code></pre> <h3 id="title-tests-pour-ie-fail">tests pour ie fail</h3> <pre><code>UnknownError: The path to the driver executable must be set by the webdriver.ie.driver system property; for more information, see http://code.google.com/p/selenium/wiki/InternetExplorerDriver. The latest version can be downloaded from http://selenium-release.storage.googleapis.com/index.html</code></pre><p>IE nécessite un driver spécifique et une config spécifique.<br>Dans <code>gulp-protractor</code> les drivers webdriver de IE ne sont pas DL, cf [issue 38] (<a href="https://github.com/mllrsohn/gulp-protractor/issues/html">https://github.com/mllrsohn/gulp-protractor/issues/38</a>)<br>Télécharger les drivers IE manuellement [ici] (<a href="http://selenium-release.storage.googleapis.com/index.hthtml">http://selenium-release.storage.googleapis.com/index.html</a>).<br>Doc du driver [ici] (<a href="https://code.google.com/p/selenium/wiki/InternetExplorerDrivhtml">https://code.google.com/p/selenium/wiki/InternetExplorerDriver</a>).</p> <p>Installer l’exe dans la partie exécutable du disque dur.</p> <p>Ajouter de la config à protractor.conf.js :</p> <pre><code class="lang-javascript"> seleniumArgs: [
+    &#39;-Dwebdriver.ie.driver=C:\\Produits\\dev\\ws-js\\webdriver-ie\\IEDriverServer.exe&#39;
+  ],</code></pre> <p>Ajouter la capability à la config de <code>protractor.conf.js</code> :</p> <pre><code class="lang-javascript"> multiCapabilities: [{
+    &#39;browserName&#39;: &#39;firefox&#39;
+  }, {
+    &#39;browserName&#39;: &#39;chrome&#39;
+  }, {
+    &#39;browserName&#39;: &#39;internet explorer&#39;,
+    &#39;platform&#39;: &#39;ANY&#39;,
+    &#39;version&#39;: &#39;11&#39;
+  }],</code></pre> <h3 id="title-exporter-les-résultats">exporter les résultats</h3> <pre><code class="lang-javascript">resultJsonOutputFile: &#39;e2e.results.json&#39;,</code></pre> <p>Nécessite que jasmineNodeOpts.isVerbose soit à true.</p> <h3 id="title-reporter">reporter</h3> <ul> <li>[Jasmine reporter] (<a href="https://github.com/larrymyers/jasmine-reporters#protracthtml">https://github.com/larrymyers/jasmine-reporters#protractor</a>)</li> <li>Discussion dans les [issues de protractor] (<a href="https://github.com/angular/protractor/issues/html">https://github.com/angular/protractor/issues/60</a>)</li> </ul> <p>installation : </p> <pre><code>npm install jasmine-reporters@^2.0.7 --save-dev</code></pre><p>Dans <code>protractor.conf.js</code>, ajouter :</p> <pre><code class="lang-javascript">var jasmineReporters = require(&#39;jasmine-reporters&#39;);
+exports.config = {
+    // ...
+    framework: &#39;jasmine2&#39;,
+    // ...
+    onPrepare: function () {
+    jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
+      savePath: paths.e2e + &#39;/reports/&#39;,
+      consolidateAll: true,
+      filePrefix: &#39;e2e.chrome.results.&#39; + _currentTimestampToString()
+    }));
+    // ...
+    // Options to be passed to Jasmine-node.
+  jasmineNodeOpts: {
+    showColors: true,
+    defaultTimeoutInterval: 60000,
+    print: function() {}
+  }
+  },
+};</code></pre> <p>Va créer le rapport dans <code>../e2e/reports/</code></p> <p>Le rapport est un fichier au format xml qui nécessite une mise en forme.<br>[Cette xslt] (<a href="https://github.com/niedbalski/nosetest-xunit-xslt/blob/master/nosetests.xshtml">https://github.com/niedbalski/nosetest-xunit-xslt/blob/master/nosetests.xslt</a>) peut être utilisée pour<br>mettre en forme le xml d’output mais manque un moyen pour linker automatiquement le xml de sortie avec la xsl. (pas prévu par le module)</p> </article></body></html>

@@ -1,5 +1,0 @@
-# freebox - videos
-
-- enregistrer via l'enregistreur normal
-- pour visionner avec VLC il faut avoir la vidéo en local
-- pour convertir en avi cf [lien forum ubuntu] (http://forum.ubuntu-fr.org/viewtopic.php?id=406808)

@@ -1,0 +1,85 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-whiptail">whiptail</h1> <ul> <li>[manpage whiptail] (<a href="http://www.linuxcertif.com/man/1/whiptaihtml">http://www.linuxcertif.com/man/1/whiptail/</a>)</li> </ul> <h2 id="title-howto">howto</h2> <ul> <li>[en.wikibooks.org : whiptail] (<a href="http://en.wikibooks.org/wiki/Bash_Shell_Scripting/Whiptahtml">http://en.wikibooks.org/wiki/Bash_Shell_Scripting/Whiptail</a>)</li> <li>[How-to-use-whiptail-to-write-interactive-shell-scripts] (<a href="http://japan.elecgeek.com/How-to-use-whiptail-to-write-interactive-shell-scripthtml">http://japan.elecgeek.com/How-to-use-whiptail-to-write-interactive-shell-scripts/</a>)</li> <li>[netkiller.github.com : whiptail] (<a href="http://netkiller.github.com/linux/shell/whiptail.hthtml">http://netkiller.github.com/linux/shell/whiptail.html</a>)</li> </ul> <h2 id="title-whiptail-or-dialog-">whiptail or dialog ?</h2> <ul> <li>[whiptail-or-dialog] (<a href="http://unix.stackexchange.com/questions/64627/whiptail-or-dialhtml">http://unix.stackexchange.com/questions/64627/whiptail-or-dialog</a>)</li> </ul> <h2 id="title-examples">examples</h2> <h3 id="title-checklist">checklist</h3> <pre><code class="lang-bash">
+#! /bin/bash 
+
+whiptail --title &quot;Check list example&quot; --checklist \
+&quot;Choose user&#39;s permissions&quot; 20 80 10 \
+&quot;NET_OUTBOUND&quot; &quot;Allow connections to other hosts&quot; ON \
+&quot;NET_INBOUND&quot; &quot;Allow connections from other hosts&quot; OFF \
+&quot;LOCAL_MOUNT&quot; &quot;Allow mounting of local devices&quot; OFF \
+&quot;REMOTE_MOUNT&quot; &quot;Allow mounting of remote devices&quot; OFF
+</code></pre> <h3 id="title-gauge">gauge</h3> <pre><code class="lang-bash">
+#! /bin/bash 
+
+{
+    for ((i = 0 ; i &lt;= 100 ; i+=30)); do
+        sleep 1
+        echo $i
+    done
+} | whiptail --gauge &quot;Please wait&quot; 5 50 0    
+
+whiptail --title &quot;Example Dialog&quot; --msgbox &quot;Traitement terminé.&quot; 10 60
+</code></pre> <h3 id="title-infobox">infobox</h3> <pre><code class="lang-bash">
+#! /bin/bash 
+
+whiptail --title &quot;Example Dialog&quot; --msgbox &quot;This is an example of a message box. You must hit OK to continue.&quot; 10 60
+</code></pre> <h3 id="title-inputbox">inputbox</h3> <pre><code class="lang-bash">
+#! /bin/bash 
+
+result=$(tempfile) ; chmod go-rw $result
+whiptail --inputbox &quot;Enter some text&quot; 10 30 2&gt;$result
+echo Result=$(cat $result)
+rm $result
+
+COLOR=$(whiptail --inputbox &quot;What is your favorite Color?&quot; 8 78 --title &quot;Example Dialog&quot; 3&gt;&amp;1 1&gt;&amp;2 2&gt;&amp;3)
+
+exitstatus=$?
+if [ $exitstatus = 0 ]; then
+    echo &quot;User selected Ok and entered &quot; $COLOR
+else
+    echo &quot;User selected Cancel.&quot;
+fi
+
+echo &quot;(Exit status was $exitstatus)&quot;        
+</code></pre> <h3 id="title-menu">menu</h3> <pre><code class="lang-bash">
+#! /bin/bash 
+
+whiptail --title &quot;Menu example&quot; --menu &quot;Choose an option&quot; 22 80 10 \
+&quot;&lt;-- Back&quot; &quot;Return to the main menu.&quot; \
+&quot;Add User&quot; &quot;Add a user to the system.&quot; \
+&quot;Modify User&quot; &quot;Modify an existing user.&quot; \
+&quot;List Users&quot; &quot;List all users on the system.&quot; \
+&quot;Add Group&quot; &quot;Add a user group to the system.&quot; \
+&quot;Modify Group&quot; &quot;Modify a group and its list of members.&quot; \
+&quot;List Groups&quot; &quot;List all groups on the system.&quot;
+</code></pre> <h3 id="title-passwordbox">passwordbox</h3> <pre><code class="lang-bash">
+#! /bin/bash 
+
+whiptail --title &quot;Example Dialog&quot; --passwordbox &quot;This is an example of a password box. You must hit OK to continue.&quot; 8 78
+</code></pre> <h3 id="title-radiolist">radiolist</h3> <pre><code class="lang-bash">
+#! /bin/bash 
+
+whiptail --title &quot;Check list example&quot; --radiolist \
+&quot;Choose user&#39;s permissions&quot; 20 78 10 \
+&quot;NET_OUTBOUND&quot; &quot;Allow connections to other hosts&quot; ON \
+&quot;NET_INBOUND&quot; &quot;Allow connections from other hosts&quot; OFF \
+&quot;LOCAL_MOUNT&quot; &quot;Allow mounting of local devices&quot; OFF \
+&quot;REMOTE_MOUNT&quot; &quot;Allow mounting of remote devices&quot; OFF
+</code></pre> <h3 id="title-textbox">textbox</h3> <pre><code class="lang-bash">
+#! /bin/bash 
+
+whiptail --title &quot;Example Dialog&quot; --textbox /etc/passwd 20 60
+whiptail --title &quot;Example Dialog&quot; --textbox /etc/passwd 20 60 --scrolltext
+</code></pre> <h3 id="title-yesno">yesno</h3> <pre><code class="lang-bash">
+#! /bin/bash 
+
+whiptail --title &quot;Example Dialog&quot; --yesno &quot;This is an example of a yes/no box.&quot; 8 78
+
+exitstatus=$?
+if [ $exitstatus = 0 ]; then
+    echo &quot;User selected Yes.&quot;
+else
+    echo &quot;User selected No.&quot;
+fi
+
+echo &quot;(Exit status was $exitstatus)&quot;
+</code></pre> </article></body></html>

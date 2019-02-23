@@ -1,0 +1,91 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-function-invocation-patterns">function invocation patterns</h1> <p>from “Javascript: The Good Parts”, Douglas Crockford (2008) ISBN “978-0-596-51774-8”</p> <ul> <li>method invocation pattern</li> <li>function invocation pattern</li> <li>constructor invocation pattern (<em>not recommended</em>)</li> <li>apply invocation pattern</li> </ul> <h2 id="title-method-invocation-pattern">method invocation pattern</h2> <pre><code class="lang-javascript">var myObject = {
+    value: 0,
+    increment: function (inc) {
+        this.value += typeof inc === &#39;number&#39; ? inc : 1;
+    }
+};
+
+myObject.increment();
+console.log(myObject.value); // 1
+
+myObject.increment(2);
+console.log(myObject.value); // 3</code></pre> <p>A <code>function</code> stored as an object property is called a <code>method</code>.</p> <p>When a <code>method</code> is invoked, <code>this</code> is bound to that object.</p> <p>Methods that get their object context from <code>this</code> are called <code>public methods</code>.</p> <h2 id="title-function-invocation-pattern">function invocation pattern</h2> <pre><code class="lang-javascript">var add = function (a, b) {
+    return a +b;
+};
+
+var sum = add(3, 4); // return 7</code></pre> <p><code>this</code> is bound to the global object.</p> <p>Mistake in the language design.</p> <p>There is a workaround using the <code>var that = this;</code> trick :</p> <pre><code class="lang-javascript">var myObject = {
+    value: 0,
+    increment: function (inc) {
+        this.value += typeof inc === &#39;number&#39; ? inc : 1;
+    }
+};
+
+myObject.increment(2);
+console.log(myObject.value);
+
+var add = function (a, b) {
+    return a +b;
+};
+
+// augmenting myObject with a double method
+
+myObject.double = function () {
+    var that = this; // workaround
+
+    var helper = function () {
+        that.value = add(that.value, that.value);
+    };
+
+    helper(); // Invoke helper as a function.
+};
+
+// Invoke double as a method :
+
+myObject.double();
+console.log(myObject.value);</code></pre> <h2 id="title-constructor-invocation-pattern">constructor invocation pattern</h2> <p>If a function is invoked with the <code>new</code> prefix, then a new object will be created.</p> <p>Created with a hidden link to the value of the function’s <code>prototype</code> member.</p> <p><code>this</code> will be bound to that new object.</p> <pre><code class="lang-javascript">// create a constructor function called Quo
+// it makes an object with a status property
+
+var Quo = function (string) {
+    this.status = string;
+};
+
+// give all instances of Quo a public method called get_status
+
+Quo.prototype.get_status = function () {
+    return this.status;
+};
+
+// make an instance of Quo
+
+var myQuo = new Quo(&#39;confused&#39;);
+
+console.log(myQuo.get_status()); // confused</code></pre> <p>Functions intented to be used with the <code>new</code> prefix are called <em>constructors</em>.</p> <p>By convention they are named in UpperCamelCase.</p> <p>Calling a constructor function without the <code>new</code> prefix is a common bug source<br>(<code>this</code> context is not the same)</p> <p>Using this constructor style is <strong>not</strong> recommended.</p> <h2 id="title-apply-invocation-pattern">apply invocation pattern</h2> <p>Functions can have methods.</p> <p>The <code>apply</code> method from the <code>function</code> object let us invoke the function with a chosen <code>this</code> context and an array of parameters.</p> <p>See <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apphtml"><code>Function.prototype.apply()</code> : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply</a> </p> <pre><code class="lang-javascript">var add = function (a, b) {
+    return a +b;
+};
+
+var array = [3, 4];
+var sum = add.apply(null, array); // 7
+console.log(sum);
+
+// make an object with a status member.
+
+var Quo = function (string) {
+    this.status = string;
+};
+
+Quo.prototype.get_status = function () {
+    return this.status;
+};
+
+var myQuo = new Quo(&#39;confused&#39;);
+
+console.log(myQuo.get_status()); // confused
+
+var statusObject = {
+    status: &#39;A-OK&#39;
+};
+
+// statusObject does not inherit from Quo.prototype but we can invoke get_status method on statusObject
+
+var status = Quo.prototype.get_status.apply(statusObject);
+console.log(status); // &#39;A-OK&#39;</code></pre> </article></body></html>

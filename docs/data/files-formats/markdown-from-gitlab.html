@@ -1,0 +1,150 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-markdown">Markdown</h1> <h2 id="title-table-of-contents">Table of Contents</h2> <p><strong><a href="#gitlab-flavored-markdown-ghtml">GitLab Flavored Markdown</a></strong></p> <ul> <li><a href="#newlinhtml">Newlines</a></li> <li><a href="#multiple-underscores-in-worhtml">Multiple underscores in words</a></li> <li><a href="#url-auto-linkihtml">URL auto-linking</a></li> <li><a href="#code-and-syntax-highlightihtml">Code and Syntax Highlighting</a></li> <li><a href="#emohtml">Emoji</a></li> <li><a href="#special-gitlab-referenchtml">Special GitLab references</a></li> <li><a href="#task-lishtml">Task lists</a></li> </ul> <p><strong><a href="#standard-markdohtml">Standard Markdown</a></strong></p> <ul> <li><a href="#headehtml">Headers</a></li> <li><a href="#emphashtml">Emphasis</a></li> <li><a href="#lishtml">Lists</a></li> <li><a href="#linhtml">Links</a></li> <li><a href="#imaghtml">Images</a></li> <li><a href="#blockquothtml">Blockquotes</a></li> <li><a href="#inline-hthtml">Inline HTML</a></li> <li><a href="#horizontal-ruhtml">Horizontal Rule</a></li> <li><a href="#line-breahtml">Line Breaks</a></li> <li><a href="#tablhtml">Tables</a></li> </ul> <p><strong><a href="#referenchtml">References</a></strong></p> <h2 id="title-gitlab-flavored-markdown-gfm">GitLab Flavored Markdown (GFM)</h2> <p>For GitLab we developed something we call “GitLab Flavored Markdown” (GFM). It extends the standard Markdown in a few significant ways to add some useful functionality.</p> <p>You can use GFM in</p> <ul> <li>comments</li> <li>issues</li> <li>merge requests</li> <li>milestones</li> <li>wiki pages</li> </ul> <p>You can also use other rich text files in GitLab. You might have to install a dependency to do so. Please see the <a href="https://github.com/gitlabhq/markup#markuhtml">github-markup gem readme</a> for more information.</p> <h2 id="title-newlines">Newlines</h2> <p>GFM honors the markdown specification in how <a href="http://daringfireball.net/projects/markdown/syntaxhtml">paragraphs and line breaks are handled</a>.</p> <p>A paragraph is simply one or more consecutive lines of text, separated by one or more blank lines.<br>Line-breaks, or softreturns, are rendered if you end a line with two or more spaces</p> <pre><code>Roses are red [followed by two or more spaces]  
+Violets are blue
+
+Sugar is sweet</code></pre><p>Roses are red<br>Violets are blue</p> <p>Sugar is sweet</p> <h2 id="title-multiple-underscores-in-words">Multiple underscores in words</h2> <p>It is not reasonable to italicize just <em>part</em> of a word, especially when you’re dealing with code and names that often appear with multiple underscores. Therefore, GFM ignores multiple underscores in words.</p> <pre><code>perform_complicated_task
+do_this_and_do_that_and_another_thing</code></pre><p>perform_complicated_task<br>do_this_and_do_that_and_another_thing</p> <h2 id="title-url-auto-linking">URL auto-linking</h2> <p>GFM will autolink almost any URL you copy and paste into your text.</p> <pre><code>* http://www.google.com
+* https://google.com/
+* ftp://ftp.us.debian.org/debian/
+* smb://foo/bar/baz
+* irc://irc.freenode.net/gitlab
+* http://localhost:3000</code></pre><ul> <li><a href="http://www.google.chtml">http://www.google.com</a></li> <li><a href="https://google.cohtml">https://google.com/</a></li> <li><a href="ftp://ftp.us.debian.org/debiahtml">ftp://ftp.us.debian.org/debian/</a></li> <li>smb://foo/bar/baz</li> <li>irc://irc.freenode.net/gitlab</li> <li><a href="http://localhost:30html">http://localhost:3000</a></li> </ul> <h2 id="title-code-and-syntax-highlighting">Code and Syntax Highlighting</h2> <p>Blocks of code are either fenced by lines with three back-ticks <code>```</code>, or are indented with four spaces. Only the fenced code blocks support syntax highlighting.</p> <pre><code class="lang-no-highlight">Inline `code` has `back-ticks around` it.</code></pre> <p>Inline <code>code</code> has <code>back-ticks around</code> it.</p> <p>Example:</p> <pre><code>```javascript
+var s = &quot;JavaScript syntax highlighting&quot;;
+alert(s);
+```
+
+```python
+def function():
+    #indenting works just fine in the fenced code block
+    s = &quot;Python syntax highlighting&quot;
+    print s
+```
+
+```ruby
+require &#39;redcarpet&#39;
+markdown = Redcarpet.new(&quot;Hello World!&quot;)
+puts markdown.to_html
+```
+
+```
+No language indicated, so no syntax highlighting.
+s = &quot;There is no highlighting for this.&quot;
+But let&#39;s throw in a &lt;b&gt;tag&lt;/b&gt;.
+```</code></pre><p>becomes:</p> <pre><code class="lang-javascript">var s = &quot;JavaScript syntax highlighting&quot;;
+alert(s);</code></pre> <pre><code class="lang-python">def function():
+    #indenting works just fine in the fenced code block
+    s = &quot;Python syntax highlighting&quot;
+    print s</code></pre> <pre><code class="lang-ruby">require &#39;redcarpet&#39;
+markdown = Redcarpet.new(&quot;Hello World!&quot;)
+puts markdown.to_html</code></pre> <pre><code>No language indicated, so no syntax highlighting.
+s = &quot;There is no highlighting for this.&quot;
+But let&#39;s throw in a &lt;b&gt;tag&lt;/b&gt;.</code></pre><h2 id="title-emoji">Emoji</h2> <pre><code>Sometimes you want to :monkey: around a bit and add some :star2: to your :speech_balloon:. Well we have a gift for you:
+
+:zap: You can use emoji anywhere GFM is supported. :v:
+
+You can use it to point out a :bug: or warn about :speak_no_evil: patches. And if someone improves your really :snail: code, send them some :birthday:. People will :heart: you for that.
+
+If you are new to this, don&#39;t be :fearful:. You can easily join the emoji :family:. All you need to do is to look up on the supported codes.
+
+Consult the [Emoji Cheat Sheet](http://emoji.codes) for a list of all supported emoji codes. :thumbsup:</code></pre><p>Sometimes you want to :monkey: around a bit and add some :star2: to your :speech_balloon:. Well we have a gift for you:</p> <p>:zap: You can use emoji anywhere GFM is supported. :v:</p> <p>You can use it to point out a :bug: or warn about :speak_no_evil: patches. And if someone improves your really :snail: code, send them some :birthday:. People will :heart: you for that.</p> <p>If you are new to this, don’t be :fearful:. You can easily join the emoji :family:. All you need to do is to look up on the supported codes.</p> <p>Consult the <a href="http://emoji.codhtml">Emoji Cheat Sheet</a> for a list of all supported emoji codes. :thumbsup:</p> <h2 id="title-special-gitlab-references">Special GitLab References</h2> <p>GFM recognizes special references.</p> <p>You can easily reference e.g. an issue, a commit, a team member or even the whole team within a project.</p> <p>GFM will turn that reference into a link so you can navigate between them easily.</p> <p>GFM will recognize the following:</p> <table> <thead> <tr> <th align="left">input</th> <th align="left">references</th> </tr> </thead> <tbody><tr> <td align="left"><code>@user_name</code></td> <td align="left">specific user</td> </tr> <tr> <td align="left"><code>@group_name</code></td> <td align="left">specific group</td> </tr> <tr> <td align="left"><code>@all</code></td> <td align="left">entire team</td> </tr> <tr> <td align="left"><code>#123</code></td> <td align="left">issue</td> </tr> <tr> <td align="left"><code>!123</code></td> <td align="left">merge request</td> </tr> <tr> <td align="left"><code>$123</code></td> <td align="left">snippet</td> </tr> <tr> <td align="left"><code>~123</code></td> <td align="left">label by ID</td> </tr> <tr> <td align="left"><code>~bug</code></td> <td align="left">one-word label by name</td> </tr> <tr> <td align="left"><code>~&quot;feature request&quot;</code></td> <td align="left">multi-word label by name</td> </tr> <tr> <td align="left"><code>9ba12248</code></td> <td align="left">specific commit</td> </tr> <tr> <td align="left"><code>9ba12248...b19a04f5</code></td> <td align="left">commit range comparison</td> </tr> <tr> <td align="left"><code>[README](doc/README)</code></td> <td align="left">repository file references</td> </tr> </tbody></table> <p>GFM also recognizes certain cross-project references:</p> <table> <thead> <tr> <th align="left">input</th> <th align="left">references</th> </tr> </thead> <tbody><tr> <td align="left"><code>namespace/project#123</code></td> <td align="left">issue</td> </tr> <tr> <td align="left"><code>namespace/project!123</code></td> <td align="left">merge request</td> </tr> <tr> <td align="left"><code>namespace/project$123</code></td> <td align="left">snippet</td> </tr> <tr> <td align="left"><code>namespace/project@9ba12248</code></td> <td align="left">specific commit</td> </tr> <tr> <td align="left"><code>namespace/project@9ba12248...b19a04f5</code></td> <td align="left">commit range comparison</td> </tr> </tbody></table> <h2 id="title-task-lists">Task Lists</h2> <p>You can add task lists to issues, merge requests and comments. To create a task list, add a specially-formatted Markdown list, like so:</p> <pre><code class="lang-no-highlight">- [x] Completed task
+- [ ] Incomplete task
+    - [ ] Sub-task 1
+    - [x] Sub-task 2
+    - [ ] Sub-task 3</code></pre> <ul> <li><input checked disabled type="checkbox"> Completed task</li> <li><input disabled type="checkbox"> Incomplete task<ul> <li><input disabled type="checkbox"> Sub-task 1</li> <li><input checked disabled type="checkbox"> Sub-task 2</li> <li><input disabled type="checkbox"> Sub-task 3</li> </ul> </li> </ul> <p>Task lists can only be created in descriptions, not in titles. Task item state can be managed by editing the description’s Markdown or by toggling the rendered check boxes.</p> <h1 id="title-standard-markdown">Standard Markdown</h1> <h2 id="title-headers">Headers</h2> <pre><code class="lang-no-highlight"># H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+
+Alternatively, for H1 and H2, an underline-ish style:
+
+Alt-H1
+======
+
+Alt-H2
+------</code></pre> <h1 id="title-h1">H1</h1> <h2 id="title-h2">H2</h2> <h3 id="title-h3">H3</h3> <h4 id="title-h4">H4</h4> <h5 id="title-h5">H5</h5> <h6 id="title-h6">H6</h6> <p>Alternatively, for H1 and H2, an underline-ish style:</p> <h1 id="title-alt-h1">Alt-H1</h1> <h2 id="title-alt-h2">Alt-H2</h2> <h3 id="title-header-ids-and-links">Header IDs and links</h3> <p>All Markdown-rendered headers automatically get IDs, except in comments.</p> <p>On hover a link to those IDs becomes visible to make it easier to copy the link to the header to give it to someone else.</p> <p>The IDs are generated from the content of the header according to the following rules:</p> <ol> <li>All text is converted to lowercase</li> <li>All non-word text (e.g., punctuation, HTML) is removed</li> <li>All spaces are converted to hyphens</li> <li>Two or more hyphens in a row are converted to one</li> <li>If a header with the same ID has already been generated, a unique<br>incrementing number is appended, starting at 1.</li> </ol> <p>For example:</p> <pre><code># This header has spaces in it
+## This header has a :thumbsup: in it
+# This header has Unicode in it: 한글
+## This header has spaces in it
+### This header has spaces in it</code></pre><p>Would generate the following link IDs:</p> <ol> <li><code>this-header-has-spaces-in-it</code></li> <li><code>this-header-has-a-in-it</code></li> <li><code>this-header-has-unicode-in-it-한글</code></li> <li><code>this-header-has-spaces-in-it</code></li> <li><code>this-header-has-spaces-in-it-1</code></li> </ol> <p>Note that the Emoji processing happens before the header IDs are generated, so the Emoji is converted to an image which then gets removed from the ID.</p> <h2 id="title-emphasis">Emphasis</h2> <pre><code class="lang-no-highlight">Emphasis, aka italics, with *asterisks* or _underscores_.
+
+Strong emphasis, aka bold, with **asterisks** or __underscores__.
+
+Combined emphasis with **asterisks and _underscores_**.
+
+Strikethrough uses two tildes. ~~Scratch this.~~</code></pre> <p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p> <p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p> <p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p> <p>Strikethrough uses two tildes. <del>Scratch this.</del></p> <h2 id="title-lists">Lists</h2> <pre><code class="lang-no-highlight">1. First ordered list item
+2. Another item
+  * Unordered sub-list.
+1. Actual numbers don&#39;t matter, just that it&#39;s a number
+  1. Ordered sub-list
+4. And another item.
+
+* Unordered list can use asterisks
+- Or minuses
++ Or pluses</code></pre> <ol> <li>First ordered list item</li> <li>Another item<ul> <li>Unordered sub-list.</li> </ul> </li> <li>Actual numbers don’t matter, just that it’s a number<ol> <li>Ordered sub-list</li> </ol> </li> <li>And another item.</li> </ol> <ul> <li>Unordered list can use asterisks</li> <li>Or minuses</li> <li>Or pluses</li> </ul> <p>If a list item contains multiple paragraphs,<br>each subsequent paragraph should be indented with four spaces.</p> <pre><code class="lang-no-highlight">1.  First ordered list item
+
+    Second paragraph of first item.
+2.  Another item</code></pre> <ol> <li><p>First ordered list item</p> <p>Second paragraph of first item.</p> </li> <li><p>Another item</p> </li> </ol> <p>If the second paragraph isn’t indented with four spaces,<br>the second list item will be incorrectly labeled as <code>1</code>.</p> <pre><code class="lang-no-highlight">1. First ordered list item
+
+   Second paragraph of first item.
+2. Another item</code></pre> <ol> <li><p>First ordered list item</p> <p>Second paragraph of first item.</p> </li> <li><p>Another item</p> </li> </ol> <h2 id="title-links">Links</h2> <p>There are two ways to create links, inline-style and reference-style.</p> <pre><code>[I&#39;m an inline-style link](https://www.google.com)
+
+[I&#39;m a reference-style link][Arbitrary case-insensitive reference text]
+
+[I&#39;m a relative reference to a repository file](LICENSE)
+
+[You can use numbers for reference-style link definitions][1]
+
+Or leave it empty and use the [link text itself][]
+
+Some text to show that the reference links can follow later.
+
+[arbitrary case-insensitive reference text]: https://www.mozilla.org
+[1]: http://slashdot.org
+[link text itself]: http://www.reddit.com</code></pre><p><a href="https://www.google.chtml">I’m an inline-style link</a></p> <p><a href="https://www.mozilla.ohtml">I’m a reference-style link</a></p> <p><a href="LICENhtml">I’m a relative reference to a repository file</a></p> <p><a href="http://slashdot.ohtml">You can use numbers for reference-style link definitions</a></p> <p>Or leave it empty and use the <a href="http://www.reddit.chtml">link text itself</a></p> <p>Some text to show that the reference links can follow later.</p> <p><strong>Note</strong></p> <p>Relative links do not allow referencing project files in a wiki page or wiki page in a project file. The reason for this is that, in GitLab, wiki is always a separate git repository. For example:</p> <p><code>[I&#39;m a reference-style link](style)</code></p> <p>will point the link to <code>wikis/style</code> when the link is inside of a wiki markdown file.</p> <h2 id="title-images">Images</h2> <pre><code>Here&#39;s our logo (hover to see the title text):
+
+Inline-style:
+![alt text](assets/logo-white.png)
+
+Reference-style:
+![alt text1][logo]
+
+[logo]: assets/logo-white.png</code></pre><p>Here’s our logo:</p> <p>Inline-style:</p> <p><code>![alt text](/assets/logo-white.png)</code></p> <p>Reference-style:</p> <p><code>![alt text][logo]</code></p> <p><code>[logo]: /assets/logo-white.png</code></p> <h2 id="title-blockquotes">Blockquotes</h2> <pre><code class="lang-no-highlight">&gt; Blockquotes are very handy in email to emulate reply text.
+&gt; This line is part of the same quote.
+
+Quote break.
+
+&gt; This is a very long line that will still be quoted properly when it wraps. Oh boy let&#39;s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.</code></pre> <blockquote> <p>Blockquotes are very handy in email to emulate reply text.<br>This line is part of the same quote.</p> </blockquote> <p>Quote break.</p> <blockquote> <p>This is a very long line that will still be quoted properly when it wraps. Oh boy let’s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.</p> </blockquote> <h2 id="title-inline-html">Inline HTML</h2> <p>You can also use raw HTML in your Markdown, and it’ll mostly work pretty well.</p> <p>See the documentation for HTML::Pipeline’s <a href="http://www.rubydoc.info/gems/html-pipeline/HTML/Pipeline/SanitizationFilter#WHITELIST-constahtml">SanitizationFilter</a> class for the list of allowed HTML tags and attributes. In addition to the default <code>SanitizationFilter</code> whitelist, GitLab allows <code>span</code> elements.</p> <pre><code class="lang-no-highlight">&lt;dl&gt;
+  &lt;dt&gt;Definition list&lt;/dt&gt;
+  &lt;dd&gt;Is something people use sometimes.&lt;/dd&gt;
+
+  &lt;dt&gt;Markdown in HTML&lt;/dt&gt;
+  &lt;dd&gt;Does *not* work **very** well. Use HTML &lt;em&gt;tags&lt;/em&gt;.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre> <dl> <dt>Definition list</dt> <dd>Is something people use sometimes.</dd> <dt>Markdown in HTML</dt> <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd> </dl> <h2 id="title-horizontal-rule">Horizontal Rule</h2> <pre><code>Three or more...
+
+---
+
+Hyphens
+
+***
+
+Asterisks
+
+___
+
+Underscores</code></pre><p>Three or more…</p> <hr> <p>Hyphens</p> <hr> <p>Asterisks</p> <hr> <p>Underscores</p> <h2 id="title-line-breaks">Line Breaks</h2> <p>My basic recommendation for learning how line breaks work is to experiment and discover – hit &lt;Enter&gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You’ll soon learn to get what you want. “Markdown Toggle” is your friend.</p> <p>Here are some things to try out:</p> <pre><code>Here&#39;s a line for us to start with.
+
+This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
+
+This line is also a separate paragraph, but...
+This line is only separated by a single newline, so it&#39;s a separate line in the *same paragraph*.
+
+This line is also a separate paragraph, and...  
+This line is on its own line, because the previous line ends with two
+spaces.</code></pre><p>Here’s a line for us to start with.</p> <p>This line is separated from the one above by two newlines, so it will be a <em>separate paragraph</em>.</p> <p>This line is also begins a separate paragraph, but…<br>This line is only separated by a single newline, so it’s a separate line in the <em>same paragraph</em>.</p> <p>This line is also a separate paragraph, and…<br>This line is on its own line, because the previous line ends with two<br>spaces.</p> <h2 id="title-tables">Tables</h2> <p>Tables aren’t part of the core Markdown spec, but they are part of GFM and Markdown Here supports them.</p> <pre><code>| header 1 | header 2 |
+| -------- | -------- |
+| cell 1   | cell 2   |
+| cell 3   | cell 4   |</code></pre><p>Code above produces next output:</p> <table> <thead> <tr> <th>header 1</th> <th>header 2</th> </tr> </thead> <tbody><tr> <td>cell 1</td> <td>cell 2</td> </tr> <tr> <td>cell 3</td> <td>cell 4</td> </tr> </tbody></table> <p><strong>Note</strong></p> <p>The row of dashes between the table header and body must have at least three dashes in each column.</p> <p>By including colons in the header row, you can align the text within that column:</p> <pre><code>| Left Aligned | Centered | Right Aligned | Left Aligned | Centered | Right Aligned |
+| :----------- | :------: | ------------: | :----------- | :------: | ------------: |
+| Cell 1       | Cell 2   | Cell 3        | Cell 4       | Cell 5   | Cell 6        |
+| Cell 7       | Cell 8   | Cell 9        | Cell 10      | Cell 11  | Cell 12       |</code></pre><table> <thead> <tr> <th align="left">Left Aligned</th> <th align="center">Centered</th> <th align="right">Right Aligned</th> <th align="left">Left Aligned</th> <th align="center">Centered</th> <th align="right">Right Aligned</th> </tr> </thead> <tbody><tr> <td align="left">Cell 1</td> <td align="center">Cell 2</td> <td align="right">Cell 3</td> <td align="left">Cell 4</td> <td align="center">Cell 5</td> <td align="right">Cell 6</td> </tr> <tr> <td align="left">Cell 7</td> <td align="center">Cell 8</td> <td align="right">Cell 9</td> <td align="left">Cell 10</td> <td align="center">Cell 11</td> <td align="right">Cell 12</td> </tr> </tbody></table> <h2 id="title-references">References</h2> <ul> <li>This document leveraged heavily from the <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatshehtml">Markdown-Cheatsheet</a>.</li> <li>The <a href="http://daringfireball.net/projects/markdown/synthtml">Markdown Syntax Guide</a> at Daring Fireball is an excellent resource for a detailed explanation of standard markdown.</li> <li><a href="http://dillinger.html">Dillinger.io</a> is a handy tool for testing standard markdown.</li> </ul> </article></body></html>

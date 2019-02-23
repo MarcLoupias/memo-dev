@@ -1,0 +1,96 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../../github-markdown.css" rel="stylesheet" media="all"><link href="../../../main.css" rel="stylesheet" media="all"><link href="../../../github.css" rel="stylesheet"><script src="../../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-tests-dapplication-frontend-nouvelle-génération--cypressio">Tests d’application frontend nouvelle génération : Cypress.io</h1>
+<h2 id="title-etat-de-lart-fin-2017">Etat de l’art fin 2017</h2>
+<p>rappel déf + expliquer les principaux courants et tendances qui ont fait évoluer le dev web ces dernières années</p>
+<h3 id="title-rappel-définitions">rappel définitions</h3>
+<h4 id="title-test-unitaire">test unitaire</h4>
+<p>diff entre tests unitaires et tests de collaboration (impact sur le Behavior Driven Dev, article mocking is a code smell)</p>
+<h4 id="title-test-intégration">test intégration</h4>
+<h4 id="title-test-e2e">test e2e</h4>
+<ul>
+<li>fake (serveurs de mocks, configs applicatives différentes)</li>
+<li>true (stack réelle, environnement de stagging (preprod))</li>
+</ul>
+<h3 id="title-devops">devops</h3>
+<p>build en un clic</p>
+<p>CI/CD/CD</p>
+<p>always ready to deploy</p>
+<p>importance des tests</p>
+<p>boucle de feedback</p>
+<h3 id="title-nouvelle-architecture-front">nouvelle architecture front</h3>
+<p>passage du templating côté serveur indissocié du backend à séparation nette du frontend qui devient une application à part entière consommant des endpoints REST. (SPA)</p>
+<p>peut être une application hybride pour mobile</p>
+<p>PWA, Reactive</p>
+<p>de plus en plus de logique transférée côté front</p>
+<p>de plus en plus de nouvelle logique côté front du fait de la complexification des IHM</p>
+<h3 id="title-selenium--webdriver">Selenium / Webdriver</h3>
+<p>(solution de testing actuelle datant du templating côté serveur)</p>
+<ul>
+<li>fonctionnement et problèmes<ul>
+<li>lourd à mettre en oeuvre (binaire selenium, navigateur)</li>
+<li>flaky</li>
+<li>lent</li>
+</ul>
+</li>
+</ul>
+<p>mettre en évidence ces problèmes par l’exemple (sujet du tutu) plutôt que l’affirmer simplement</p>
+<ul>
+<li>décliner les solutions basées sur selenium / webdriver<ul>
+<li>protractor, cuncumber, nightwatch</li>
+</ul>
+</li>
+</ul>
+<p>check <a href="https://www.blackpepper.co.uk/what-we-think/blog/if-youre-using-browser-sleep-in-your-cucumber-protractor-selenium-tests-youre-doing-it-wrohtml"><code>browser.wait</code></a>. Permet de faire à peu près ce que fait cypress out of the box mais <a href="https://stackoverflow.com/questions/30205235/protractor-waiting-for-element-to-be-in-dom?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_html">en devant coder tout</a>.</p>
+<p><a href="https://docs.seleniumhq.org/docs/04_webdriver_advanced.jhtml">cf doc officielle selenium</a> avec les explicits et implicits waits.</p>
+<h2 id="title-protractor-vs-cypress">protractor vs cypress</h2>
+<p>sujet du tuto, prendre protractor qui est un grand classique d’utilisation de selenium pour tester des SPA AngularJS / Angular</p>
+<p>et le comparer à cypress pour voir la plus-value de cypress</p>
+<h3 id="title-théorie">théorie</h3>
+<h4 id="title-archi-de-selenium">archi de selenium</h4>
+<p>explications de l’archi</p>
+<h4 id="title-archi-de-cypress">archi de cypress</h4>
+<p>explications de l’archi</p>
+<h3 id="title-exemple-basique">exemple basique</h3>
+<h4 id="title-todomvc">TodoMVC</h4>
+<p>présententation de ce repo.</p>
+<p>A ce stade on a une webapp toute bête qui utilise le localStorage comme backend.</p>
+<ul>
+<li>exemple avec TodoMVC app + protractor<br><a href="https://github.com/MatthewVita/TodoMVC-Protractor-Examphtml">https://github.com/MatthewVita/TodoMVC-Protractor-Example</a></li>
+</ul>
+<h4 id="title-protractor">protractor</h4>
+<h5 id="title-installation--dépendances">installation + dépendances</h5>
+<h5 id="title-exécution">exécution</h5>
+<h4 id="title-cypress">cypress</h4>
+<h5 id="title-installation--dépendances-1">installation + dépendances</h5>
+<h5 id="title-exécution-1">exécution</h5>
+<p>manque réécriture des mêmes tests que pour protractor. </p>
+<h3 id="title-ajouter-un-backend">ajouter un backend</h3>
+<p>un backend express sans BDD</p>
+<p>avec simulation latence réseau + traitements serveurs via un timeout côté serveur</p>
+<p>modifier la webapp en conséquence</p>
+<p>on s’approche des conditions réelles</p>
+<h4 id="title-impacts-sur-protractor">impacts sur protractor</h4>
+<p>les tests fails</p>
+<p>obligé d’ajouter des timeouts</p>
+<p>augmentation de la durée d’exécution</p>
+<p>les tests peuvent échouer + facilement</p>
+<h4 id="title-impacts-sur-cypress">impacts sur cypress</h4>
+<p>les tests sont toujours OK</p>
+<p>exécution plus longue</p>
+<p>possibilté de stub les xhr entrainant une amélioration de l’exécution</p>
+<h3 id="title-simuler-des-problèmes">simuler des problèmes</h3>
+<p>ajouter des erreurs dans le code front pour voir le debug</p>
+<h4 id="title-debug-avec-protractor">debug avec protractor</h4>
+<h4 id="title-debug-avec-cypress">debug avec cypress</h4>
+<p>msg erreur, time travel, vidéos, usage debugger navigateur</p>
+<h3 id="title-combinaison-ti--fake-e2e">combinaison TI + fake e2e</h3>
+<h4 id="title-impacts-protractor">impacts protractor</h4>
+<p>très difficile à réaliser</p>
+<h4 id="title-impacts-e2e">impacts e2e</h4>
+<p>les TI peuvent être écrits via cypress</p>
+<p>données récupérées pour les tests e2e stubbés</p>
+<h3 id="title-nouveau-champ-de-test">nouveau champ de test</h3>
+<ul>
+<li>tester facilement le comportement du front en fonction des retours http (200, 4xx, 5xx, …)</li>
+<li>assertions sur les payload de sortie du front (POST, PUT)</li>
+</ul>
+</article></body></html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-js---download-files">js - download files</h1> <p><a href="https://www.developpez.net/forums/d1813419/javascript/bibliotheques-frameworks/angular/telechargement-d-fichier-excel-via-service-angular-4-html">Téléchargement d’un fichier Excel via service avec Angular 4 - www.developpez.net - 20180210</a></p> <blockquote> <p>Tu ne peux pas écrire sur le disque depuis le navigateur.</p> <p>Il te faut donc ouvrir le fichier dans un nouvel onglet, le navigateur donnera alors la main à l’utilisateur pour ouvrir directement le fichier dans son tableur ou pour l’enregistrer sur son disque.</p> <p>Ça se fait en passant un <a href="https://developer.mozilla.org/fr/docs/Web/API/Blhtml"><code>Blob</code></a> à <a href="https://developer.mozilla.org/fr/docs/Web/API/URL/createObjectUhtml"><code>URL.createObjectURL</code></a> qui retourne une url que tu vas ouvrir assez classiquement via <a href="https://developer.mozilla.org/fr/docs/Web/API/Window/ophtml"><code>window.open</code></a>.</p> </blockquote> <p><a href="https://www.developpez.net/forums/d1844070/javascript/general-javascript/enregistrer-sous-ouvrir-donnees-cshtml">Enregistrer sous ou ouvrir des données csv - www.developpez.net - 20180423</a></p> <blockquote> <p>Quand je clique sur un bouton mon code construit des données csv dans une variable.<br>Donc je suis au moment ou ma variable contient ce genre de données :<br>Exploitation;Ilot;Parcellaire;Action;Nom;Date;Commentaire;Traitement<br>test;test;test;test;test;test;test;test</p> <p>J’aimerais arriver ici que cela déclenche une boite de dialogue enregistrer sous mes données csv ou ouvrir mes données avec excel. </p> <p>Je te remercie ça fonctionne avec ce code du coup : (response sont mes données)</p> <pre><code class="lang-javascript">let parsedResponse = response;
+let blob = new Blob([parsedResponse], { type: &#39;text/csv&#39; });
+let url = window.URL.createObjectURL(blob);
+
+if (navigator.msSaveOrOpenBlob) {
+    navigator.msSaveBlob(blob, &#39;export.csv&#39;);
+ } else {
+    let a = document.createElement(&#39;a&#39;);
+    a.href = url;
+    a.download = &#39;export.csv&#39;;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
+
+window.URL.revokeObjectURL(url);</code></pre> </blockquote> </article></body></html>

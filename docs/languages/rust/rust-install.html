@@ -1,0 +1,57 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-rust-install">rust install</h1> <p><a href="https://www.rust-lang.org/en-US/install.hthtml">Install Rust - www.rust-lang.org</a></p> <p><a href="https://doc.rust-lang.org/book/second-edition/ch01-01-installation.hthtml">Installation - doc.rust-lang.org/book/second-edition</a></p> <p>Linux : <code>curl https://sh.rustup.rs -sSf | sh</code></p> <pre><code class="lang-bash">
+marco@marco-ubuntu:~/dev$ curl https://sh.rustup.rs -sSf | sh
+info: downloading installer
+
+Welcome to Rust!
+
+This will download and install the official compiler for the Rust programming 
+language, and its package manager, Cargo.
+
+It will add the cargo, rustc, rustup and other commands to Cargo&#39;s bin 
+directory, located at:
+
+  /home/marco/.cargo/bin
+
+This path will then be added to your PATH environment variable by modifying the
+profile file located at:
+
+  /home/marco/.profile
+
+You can uninstall at any time with rustup self uninstall and these changes will
+be reverted.
+
+Current installation options:
+
+   default host triple: x86_64-unknown-linux-gnu
+     default toolchain: stable
+  modify PATH variable: yes
+
+1) Proceed with installation (default)
+2) Customize installation
+3) Cancel installation
+&gt;
+</code></pre> <p>Typing <code>1</code> outputs</p> <pre><code class="lang-bash">
+info: syncing channel updates for &#39;stable-x86_64-unknown-linux-gnu&#39;
+info: latest update on 2018-07-20, rust version 1.27.2 (58cc626de 2018-07-18)
+info: downloading component &#39;rustc&#39;
+ 72.0 MiB /  72.0 MiB (100 %)  11.2 MiB/s ETA:   0 s                
+info: downloading component &#39;rust-std&#39;
+ 56.0 MiB /  56.0 MiB (100 %)  11.2 MiB/s ETA:   0 s                
+info: downloading component &#39;cargo&#39;
+info: downloading component &#39;rust-docs&#39;                                                                                      
+info: installing component &#39;rustc&#39;                                                                                           
+info: installing component &#39;rust-std&#39;                                                                                        
+info: installing component &#39;cargo&#39;                                                                                           
+info: installing component &#39;rust-docs&#39;                                                                                       
+info: default toolchain set to &#39;stable&#39;                                                                                      
+
+  stable installed - rustc 1.27.2 (58cc626de 2018-07-18)                                                                     
+
+
+Rust is installed now. Great!                                                                                                
+
+To get started you need Cargo&#39;s bin directory ($HOME/.cargo/bin) in your PATH                                                
+environment variable. Next time you log in this will be done automatically.                                                  
+
+To configure your current shell run source $HOME/.cargo/env                                                                  
+</code></pre> </article></body></html>

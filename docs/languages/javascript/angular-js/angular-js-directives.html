@@ -1,0 +1,51 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-angularjs-directives">AngularJS directives</h1> <h2 id="title-definition">definition</h2> <p><a href="http://amitgharat.wordpress.com/2013/06/08/the-hitchhikers-guide-to-the-directivhtml">the-hitchhikers-guide-to-the-directive/</a></p> <pre><code class="lang-javascript">var myModule = angular.module(...); 
+myModule.directive(&#39;directiveName&#39;, function (injectables) {
+  return {
+    restrict: &#39;A&#39;,
+    template: &#39;&lt;div&gt;&lt;/div&gt;&#39;,
+    templateUrl: &#39;directive.html&#39;,
+    replace: false,
+    priority: 0,
+    transclude: false,
+    scope: false,
+    terminal: false,
+    require: false,
+    controller: function($scope, $element, $attrs, $transclude, otherInjectables) { ... },
+    compile: function compile(tElement, tAttrs, transclude) {
+      return {
+        pre: function preLink(scope, iElement, iAttrs, controller) { ... },
+        post: function postLink(scope, iElement, iAttrs, controller) { ... }
+      }
+    },
+    link: function postLink(scope, iElement, iAttrs) { ... }
+  };
+});</code></pre> <h2 id="title-params-on-directives">params on directives</h2> <p>Les différentes solutions pour gérer les paramètres d’une directive <a href="https://gist.github.com/CMCDragonkai/62827html">sur ce gist</a>.</p> <h2 id="title-compile">compile</h2> <ul> <li><a href="http://stackoverflow.com/questions/21452706/angularjs-append-html-to-an-element-in-directive-and-make-a-local-function-html">angularjs-append-html-to-an-element-in-directive</a> <a href="http://plnkr.co/edit/IlTIWrvG5lA0B4JwEPoS?p=inhtml">plunkr demo</a></li> </ul> <h2 id="title-link">link</h2> <ul> <li><a href="http://jasonmore.net/angular-js-directives-difference-controller-linhtml">angular-js-directives-difference-controller-link</a></li> <li><a href="http://tutorials.jenkov.com/angularjs/custom-directives.hthtml">custom-directives</a></li> </ul> <p><strong>intercept user click</strong></p> <pre><code class="lang-javascript">return {
+    restrict: &#39;A&#39;,
+    scope: true,
+    link: function (scope, elem) {
+        elem.bind(&#39;click&#39;, function () {
+            // impl ...
+        });
+    }
+};</code></pre> <h2 id="title-ondestroy-and-watchers">onDestroy and watchers</h2> <ul> <li><a href="http://stackoverflow.com/questions/17203005/angularjs-directive-destrhtml">Directive onDestroy</a></li> <li><a href="http://www.bennadel.com/blog/2480-unbinding-watch-listeners-in-angularjs.hhtml">Unbinding watchers</a></li> </ul> <p>Une directive qui est détruite lève un event destroy.</p> <p>Donc dans le controleur de la directive il faut écouter cet event :</p> <pre><code class="lang-javascript">scope.$on(&#39;$destroy&#39;, function() {
+  console.log(&quot;destroy&quot;);
+});</code></pre> <p>Pour le watcher, quand il est posé il retourne une fonction. Cet fonction détruit le watcher si elle est exécutée :</p> <pre><code class="lang-javascript">var unbindWatcher = $scope.$watch(
+  &quot;clickCount&quot;,
+  function( newClickCount ) {
+
+     console.log( &quot;Watching click count.&quot; );
+
+     if ( newClickCount &gt;= 5 ) {
+
+    $scope.isShowingFeedback = true;
+
+    // Once the feedback has been displayed,
+    // there&#39;s no more need to watch the change
+    // in the model value.
+    unbindWatcher();
+
+  }
+
+ }
+);
+</code></pre> <h2 id="title-existing-directives">existing directives</h2> <h3 id="title-ng-grid">ng-grid</h3> <p><a href="http://ui-grid.infhtml">ng-grid site doc</a></p> <p>select directive in a cell :<br><a href="http://plnkr.co/edit/VABAEu?p=previhtml">plunkr demo</a>.<br>Related to : <a href="http://technpol.wordpress.com/2013/12/06/editable-nggrid-with-both-dropdowns-and-selecthtml">editable-nggrid-with-both-dropdowns-and-selects</a></p> <p>typehead directive in a cell : <a href="https://github.com/angular-ui/ng-grid/issues/4html">issue 435</a><br><a href="http://plnkr.co/edit/cum0CBuoJUvGIBu85aBS?p=previhtml">plunkr demo</a></p> <h3 id="title-tag-list">tag-list</h3> <ul> <li><a href="https://github.com/chrispittman/angular-taglihtml">angular-taglist</a></li> <li><a href="http://plnkr.co/edit/0vzZsn70SGQkIKKZoVEP?p=previhtml">plunkr demo</a></li> <li>the best one by far : <a href="http://decipherinc.github.io/angular-taghtml">decipherinc.github.io/angular-tags</a></li> </ul> <h3 id="title-l18n">l18n</h3> <ul> <li><a href="http://pascalprecht.github.io/angular-translathtml">angular-translate</a></li> <li><a href="http://www.ng-newsletter.com/posts/angular-translate.hthtml">angular-translate</a></li> <li><a href="http://www.frangular.com/2012/12/traduction-des-libelles-dans-les-vues-angularjs.hthtml">trad libellés</a></li> <li><a href="http://docs.angularjs.org/guide/i1html">doc off i18n</a></li> </ul> <h3 id="title-ng-model">ng-model</h3> <ul> <li><a href="https://docs.angularjs.org/api/ng/type/ngModel.NgModelControllhtml">doc off : ngModel.NgModelController</a></li> <li><a href="http://stackoverflow.com/questions/21083543/when-ngmodels-render-is-called-in-angularhtml">ngModel.$render</a></li> <li><a href="http://stackoverflow.com/questions/24042811/angularjs-ng-if-hiddenremoved-ng-model-variable-not-removed-from-scohtml">ng-if=”false” -&gt; ng-model not removed</a></li> </ul> <h3 id="title-angular-ui">angular-ui</h3> <p><a href="http://stackoverflow.com/questions/16327846/bootstrap-3-with-angularhtml">bootstrap-3-with-angularjs</a></p> <h3 id="title-ng-cookies">ng-cookies</h3> <ul> <li><a href="http://en.wikipedia.org/wiki/HTTP_cookie#Setting_a_cookhtml">HTTP_cookie</a></li> <li><a href="http://fr.openclassrooms.com/informatique/cours/ajax-et-l-echange-de-donnees-en-javascript/les-cookieshtml">ajax-et-l-echange-de-donnees-en-javascript</a></li> <li><a href="https://docs.angularjs.org/api/ngCookihtml">ngCookies</a></li> </ul> <h3 id="title-angularjs-feature-flipping">AngularJS feature flipping</h3> <p><a href="https://github.com/yairhaimo/angular-feature-togghtml">angular-feature-toggle : github.com/yairhaimo</a></p> </article></body></html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-linux---manipuler-les-fichiers">Linux - Manipuler les fichiers</h1> <h2 id="title-cat"><code>cat</code></h2> <p><code>cat book.json</code> affiche le contenu de <code>book.json</code> sur la sortie standard</p> <p><code>cat book.json .gitignore</code> affiche le contenu de <code>book.json</code> et de <code>.gitignore</code> à la suite sur la sortie standard</p> <p><code>cat book.json .gitignore &gt; content.log</code> enregistre le contenu de <code>book.json</code> et de <code>.gitignore</code> à la suite dans un fichier <code>content.log</code></p> <h2 id="title-tac"><code>tac</code></h2> <p>Fait tout pareil que cat mais en lisant les fichiers depuis la dernière ligne vers la première.</p> <h2 id="title-head"><code>head</code></h2> <p>Affiche les premières ligne d’un fichier (10 par défaut)</p> <h2 id="title-tail"><code>tail</code></h2> <p>Affiche les dernières ligne d’un fichier (10 par défaut)</p> <h2 id="title-nl"><code>nl</code></h2> <p>Affiche le contenu d’un fichier en numérotant les lignes</p> <h2 id="title-uniq"><code>uniq</code></h2> <p>Affiche le contenu d’un fichier sans les doublons de lignes</p> <h2 id="title-sort"><code>sort</code></h2> <p>Affiche le contenu d’un fichier en triant les lignes (par ordre alphabétique par défaut)</p> <h2 id="title-split"><code>split</code></h2> <p>Découpe un fichier par blocs en fonction d’une taille en octets ou d’un nombre de lignes.</p> <p>La commande <code>cat</code> permet de concaténer facilement un fichier découpé avec <code>split</code>.</p> <h2 id="title-diff"><code>diff</code></h2> <p>Permet d’afficher les différences entre 2 fichiers.</p> <p><code>diff &lt;options&gt; fichier-1 fichier-2</code></p> <h2 id="title-wc"><code>wc</code></h2> <p>Permet de compter le nombre de caractères, de mots et de lignes d’un fichier.</p> <pre><code class="lang-bash">
+$ wc book.json
+ 3  9 56 book.json
+</code></pre> <p>Le fichier <code>book.json</code> comporte 3 lignes, 9 mots, et 56 caractères.</p> <h2 id="title-file"><code>file</code></h2> <p>Permet de connaitre le type d’un fichier.</p> <pre><code class="lang-bash">
+$ file book.json
+book.json: ASCII text
+</code></pre> <h2 id="title-touch"><code>touch</code></h2> <p>La commande <code>touch</code> permet de créer un nouveau fichier vide.</p> <h2 id="title-find"><code>find</code></h2> <p>Permet de faire une recherche sur le système de fichier et d’afficher le résultat sur la sortie standard.</p> <h3 id="title-recherche-sur-le-nom-de-fichier">Recherche sur <strong>le nom de fichier</strong></h3> <pre><code class="lang-bash">
+$ find . -name &quot;*.json&quot; -print
+./book.json
+./node_modules/gitbook-plugin-theme-faq/package.json
+./node_modules/gitbook-plugin-theme-faq/_i18n/en.json
+</code></pre> <p>On a recherché tous les fichiers ayant l’extension <code>.json</code> dans leur nom de fichier depuis le répertoire courant.</p> <h3 id="title-recherche-sur-la-date-du-fichier">Recherche sur <strong>la date du fichier</strong></h3> <pre><code class="lang-bash">
+$ find . -mtime 2 -print
+./divers/divers-articles.md
+./languages/javascript/angular-js/angular-js-components.md
+./security/security-webapp.md
+./software-engineering/genie-logiciel.md
+./web/shadow-dom.md
+</code></pre> <p>On a recherché tous les fichiers ayant été modifiés il y a exactement 2 jours.<br>Les fichiers modifiés hier ne sont donc pas affichés, seulement ceux modifiés avant-hier. </p> <p>La commande <code>find</code> est très puissante et présente de nombreuses options. Se référer à <a href="http://www.linux-france.org/article/man-fr/man1/find-1.hthtml">la man page correspondante</a>.</p> <h2 id="title-grep"><code>grep</code></h2> <p>Permet de rechercher un mot dans un fichier et d’afficher les lignes dans lesquelles ce mot a été trouvé.</p> <h3 id="title-recherche-de-tous-les-fichiers-contenant-un-mot">Recherche de tous les fichiers contenant un mot</h3> <pre><code class="lang-bash">
+$ grep -Ril &quot;optimiser&quot;
+security/security-basics.md
+web/web-tracking.md
+</code></pre> <ul> <li><code>i</code> pour ignorer la casse</li> <li><code>R</code> pour récursif</li> <li><code>l</code> pour obtenir en sortie les noms des fichiers (avec chemin relatif depuis la working directory) et pas leur contenu</li> </ul> <p>On obtient donc la liste de tous les fichiers contenant le mot “optimiser” (sans la casse) depuis la working directory.</p> <h2 id="title-commande-pipe-">commande pipe <code>|</code></h2> <p>La commande <code>|</code> (pipe) permet de chainer les commandes unix. La 1ère commande donne à la seconde sa sortie en entrée, et etc …</p> <p>Par exemple pour concaténer 2 fichiers et numéroter les lignes du résultat final :</p> <pre><code class="lang-bash">
+$ cat book.json .gitignore | nl
+     1  {
+     2      &quot;plugins&quot;: [ &quot;theme-faq&quot; , &quot;-search&quot;, &quot;-lunr&quot; ]
+     3  }
+     4  # Node rules:
+     5  ## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+     6  .grunt
+
+     7  ## Dependency directory
+     8  ## Commenting this out is preferred by some people, see
+     9  ## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
+    10  node_modules
+
+    11  # Book build output
+    12  _book
+
+    13  # eBook build output
+    14  *.epub
+    15  *.mobi
+    16  *.pdf
+
+    17  # jetbrains
+    18  .idea/
+</code></pre> <p>Ajoutons à cette chaine la commande head qui va limiter à 10 lignes l’affichage :</p> <pre><code class="lang-bash">
+$ cat book.json .gitignore | nl | head
+     1  {
+     2      &quot;plugins&quot;: [ &quot;theme-faq&quot; , &quot;-search&quot;, &quot;-lunr&quot; ]
+     3  }
+     4  # Node rules:
+     5  ## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+     6  .grunt
+
+     7  ## Dependency directory
+     8  ## Commenting this out is preferred by some people, see
+     9  ## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
+</code></pre> <p>On remarquera que la commande <code>nl</code> ne numérote pas les lignes vides mais que la commande <code>head</code> en tient compte pour limiter son affichage.</p> <p>Tout est question de paramétrage des commandes pour obtenir le résultat souhaité.</p> <h2 id="title-du"><code>du</code></h2> <p>Lister la size des fichiers du répertoire courant :</p> <pre><code class="lang-bash">$ du -sh * | sort -n</code></pre> <h2 id="title-df"><code>df</code></h2> <p>Afficher l’espace disque dispo pour le volume logique :</p> <pre><code class="lang-bash">$ df -h /home/robert/appli/
+Filesystem        Size  Used Avail Use% Mounted on
+/dev/boubou/bibi  100G   22G   79G  22% /home/robert/appli</code></pre> </article></body></html>

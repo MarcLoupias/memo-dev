@@ -1,0 +1,87 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../github-markdown.css" rel="stylesheet" media="all"><link href="../../main.css" rel="stylesheet" media="all"><link href="../../github.css" rel="stylesheet"><script src="../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-git---internals">git - internals</h1>
+<h2 id="title-ressources">ressources</h2>
+<p><a href="https://www.youtube.com/watch?v=Hd_UpJPDlik&index=88&list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXhtml">Entrer dans les entrailles de Git, ou comment faire un commit sans faire du Git (Alexandre Garnier) : Devoxx fr 2016</a></p>
+<blockquote>
+<p>[<a href="https://youtu.be/Hd_UpJPDlik?list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXAO&t=2html">4:48</a>]les fichiers objects (de <code>.git/objects/</code>) sont compressés avec zlib.</p>
+</blockquote>
+<p><a href="https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.hthtml">The anatomy of a Git commit : Christoph Burgdorf - 20141118</a></p>
+<h2 id="title-objects-files">objects files</h2>
+<p><a href="https://matthew-brett.github.io/curious-git/git_object_types.hthtml">Types of git objects</a></p>
+<p><a href="https://matthew-brett.github.io/curious-git/reading_git_objects.hthtml">Reading git objects</a></p>
+<p>written in <code>.git/objects/</code></p>
+<p>list all objects files in <code>.git/objects/</code> :</p>
+<pre><code class="lang-bash">$ find .git/objects -type f
+
+.git/objects/56/a6051ca2b02b04ef92d5150c9ef600403cb1de
+.git/objects/ff/e298c3ce8bb07326f888907996eaa48d266db4
+.git/objects/2e/65efe2a145dda7ee51d1741299f848e5bf752e
+.git/objects/7b/35c3cb173e25102b0c26600ed2d45361c7a44e
+.git/objects/27/4c0052dd5408f8ae2bc8440029ff67d79bc5c3
+.git/objects/0e/ed1217a2947f4930583229987d90fe5e8e0b74
+</code></pre>
+<p>4 types of objects files :</p>
+<ul>
+<li>commit (the commit description)</li>
+<li>tree (directory state)</li>
+<li>blob (content files state)</li>
+<li>annotated tag</li>
+</ul>
+<p><strong>warning objects files creation</strong></p>
+<p>Theses files are created once the <code>git add</code> command is executed. It means you could have a lot of orphans objects (not linked with a <code>ref</code>)<br>if you have added to the <code>index</code> a lot of files or directories without putting them into a <code>commit</code>.</p>
+<p>The command <code>git prune -n</code> (or <code>git fsck --unreachable</code>) display the list of orphans objects.</p>
+<p>The command <code>git prune -v</code> delete the orphans objects then print the deleted list.</p>
+<p><strong>immutability</strong></p>
+<p>git <code>objects</code> files are <strong>immutable</strong>, once created, git reads them, and that’s all. There is no modification ever on it.<br>They are only deleted when the user execute the <code>prune</code> command if they are unreachable from any <code>refs</code>.</p>
+<h3 id="title-lire-les-fichiers-objects">lire les fichiers objects</h3>
+<p>La commande <code>git cat-file &lt;object-hash&gt; -p</code> permet d’afficher le contenu d’un fichier object.</p>
+<p>Ex commit : </p>
+<pre><code class="lang-bash">$ git cat-file 87a68b76ea470d7ad0f6ecbc5b46eda45e628e43 -p
+tree 3852c9e63207a9ca2ccf00a5ba5233661ee6ff00
+author Robert DUCHMOUL &lt;robert.duchmoul@domain.tld&gt; 1524570143 +0200
+committer Robert DUCHMOUL &lt;robert.duchmoul@domain.tld&gt; 1524570143 +0200
+
+test</code></pre>
+<p>Ex tree :</p>
+<pre><code class="lang-bash">$ git cat-file 3852c9e63207a9ca2ccf00a5ba5233661ee6ff00 -p
+100644 blob 274c0052dd5408f8ae2bc8440029ff67d79bc5c3    number.txt</code></pre>
+<p>Ex blob :</p>
+<pre><code class="lang-bash">$ git cat-file 274c0052dd5408f8ae2bc8440029ff67d79bc5c3 -p
+1234</code></pre>
+<p>La même commande en remplaçant <code>-p</code> par <code>-t</code> pour avoir le type de l’object.</p>
+<pre><code class="lang-bash">$ git cat-file 87a68b76ea470d7ad0f6ecbc5b46eda45e628e43 -t
+commit
+
+$ git cat-file 3852c9e63207a9ca2ccf00a5ba5233661ee6ff00 -t
+tree
+
+$ git cat-file 274c0052dd5408f8ae2bc8440029ff67d79bc5c3 -t
+blob</code></pre>
+<h3 id="title-lire-le-fichier-index">lire le fichier index</h3>
+<pre><code class="lang-bash">$ git ls-files --stage
+100644 274c0052dd5408f8ae2bc8440029ff67d79bc5c3 0       number.txt</code></pre>
+<p><a href="https://stackoverflow.com/questions/4084921/what-does-the-git-index-contain-exactly?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_html">What does the git index contain EXACTLY?</a></p>
+<h3 id="title-files-structure">files structure</h3>
+<p><strong>blob file</strong></p>
+<p>A blob store the content of a file. Structure is header + content.</p>
+<p>Header is : the file type (blob), a space, the length value in byte, a null char to terminate.</p>
+<p>Ex : <code>blob 16\u0000</code></p>
+<p>A blob for a file containing <code>what is up, doc?</code> would output this object file content <code>blob 16\u0000what is up, doc?</code>.</p>
+<p>Then git compute the sha1 for the object file content <code>bd9dbf5aae1a3862dd1526723246b20206e5fc37</code>.</p>
+<p>Then git compress the content with zlib.</p>
+<p>Then git create a new object file in <code>.git/objects/</code>. </p>
+<p>The first two sha1 hash chars are the directory (<code>bd</code>), the 38 last the object file name (<code>9dbf5aae1a3862dd1526723246b20206e5fc37</code>).</p>
+<p><strong>tree file</strong></p>
+<p>Exactly the same as blob, but the content is not a file content but a list of the represented directory :</p>
+<pre><code class="lang-bash">100644 blob 2e65efe2a145dda7ee51d1741299f848e5bf752e    letter.txt
+100644 blob 56a6051ca2b02b04ef92d5150c9ef600403cb1de    number.txt</code></pre>
+<p><strong>commit file</strong></p>
+<p>Same but the content is different, it contains the referenced base tree, the author, the committer (could be different),<br>a blank line, then the commit message (could be on several lines) :</p>
+<pre><code class="lang-bash">tree 83207f0274383b4a79ff6d6c297e95204ba961bc
+author Matthew Brett &lt;matthew.brett@gmail.com&gt; 1487004984 +0000
+committer Matthew Brett &lt;matthew.brett@gmail.com&gt; 1487004984 +0000
+
+An example commit</code></pre>
+<p><strong>index file</strong></p>
+<p>It is a lot more complicated and support structure versions.</p>
+<p>Cf <a href="https://github.com/git/git/blob/867b1c1bf68363bcfd17667d6d4b9031fa6a1300/Documentation/technical/index-format.thtml">appropriate documentation</a> in the git repo itself.</p>
+</article></body></html>

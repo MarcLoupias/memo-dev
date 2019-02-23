@@ -1,0 +1,52 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-git---config">git - config</h1> <p><a href="https://git-scm.com/docs/git-confhtml">git-config : git-scm.com</a></p> <h2 id="title-config-files">config files</h2> <h3 id="title-config-files-on-windows-systems">config files on windows systems</h3> <p>the order in which Git for Windows sources configuration information is as follows:</p> <ol> <li><code>C:\ProgramData\Git\config</code></li> <li>system config (e.g. <code>C:\Program Files\Git\mingw64\etc\gitconfig</code>)</li> <li>global config (<code>%HOMEPATH%\.gitconfig</code>)</li> <li>local config (repository-specific <code>.git/config</code>)</li> </ol> <h3 id="title-list-config-via-cli">list config via CLI</h3> <p><code>git config --list</code></p> <p>Print all the config:</p> <pre><code>core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html</code></pre><p><code>git config --list --show-origin</code></p> <p>Print all the config and shows config file origin for each property :</p> <pre><code>file:&quot;C:\\ProgramData/Git/config&quot;       core.symlinks=false
+file:&quot;C:\\ProgramData/Git/config&quot;       core.autocrlf=true
+file:&quot;C:\\ProgramData/Git/config&quot;       core.fscache=true
+file:&quot;C:\\ProgramData/Git/config&quot;       color.diff=auto
+file:&quot;C:\\ProgramData/Git/config&quot;       color.status=auto
+file:&quot;C:\\ProgramData/Git/config&quot;       color.branch=auto
+file:&quot;C:\\ProgramData/Git/config&quot;       color.interactive=true
+file:&quot;C:\\ProgramData/Git/config&quot;       help.format=html
+file:&quot;C:\\ProgramData/Git/config&quot;       http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+file:&quot;C:\\ProgramData/Git/config&quot;       diff.astextplain.textconv=astextplain
+file:&quot;C:\\ProgramData/Git/config&quot;       rebase.autosquash=true
+file:&quot;C:\\Program Files\\Git\\mingw64/etc/gitconfig&quot;    credential.helper=manager
+file:C:/Users/robert/.gitconfig  user.name=rob
+file:C:/Users/robert/.gitconfig  user.email=me@robert.tld
+file:C:/Users/robert/.gitconfig  core.autocrlf=false
+file:.git/config        core.repositoryformatversion=0
+file:.git/config        core.filemode=false
+file:.git/config        core.bare=false</code></pre><h3 id="title-list-scoped-config-via-cli">list scoped config via CLI</h3> <p><code>git config --system --list --show-origin</code></p> <pre><code>file:&quot;C:\\Program Files\\Git\\mingw64/etc/gitconfig&quot;    credential.helper=manager</code></pre><p><code>git config --global --list --show-origin</code></p> <pre><code>file:C:/Users/robert/.gitconfig  user.name=rob
+file:C:/Users/robert/.gitconfig  user.email=me@robert.tld
+file:C:/Users/robert/.gitconfig  core.autocrlf=false</code></pre><p><code>git config --local --list --show-origin</code></p> <pre><code>file:.git/config        core.repositoryformatversion=0
+file:.git/config        core.filemode=false
+file:.git/config        core.bare=false</code></pre><h3 id="title-gitattributes-file"><code>.gitattributes</code> file</h3> <p><a href="https://git-scm.com/docs/gitattributhtml">gitattributes : git-scm.com</a></p> <p>For line endings management, check <a href="https://git-scm.com/docs/gitattributes#_effechtml">text</a> option.</p> <h3 id="title-changing-config-values-via-cli">changing config values via CLI</h3> <h4 id="title-pattern">pattern</h4> <p><code>git config &lt;scope&gt; &lt;property&gt; &lt;value&gt;</code></p> <h4 id="title-example">example</h4> <p><code>git config --global user.name &quot;Robert Duchmoul&quot;</code></p> <h2 id="title-excluding-files">excluding files</h2> <p><a href="http://365git.tumblr.com/post/519016351/three-ways-of-excluding-filhtml">Three ways of excluding files</a></p> <ul> <li>Per Project: .gitignore file in the repository</li> <li>Per Repository: in .git/info/excludes</li> <li>Per Computer: through settings in ~/.gitconfig</li> </ul> <h3 id="title-global-gitignore">global <code>.gitignore</code></h3> <p>Configure a global <code>.gitignore</code> file applying to every project on the computer :</p> <p>Create a gitignore file in your home dir, for ex <code>~/.gitignore_global</code>.</p> <p>A possible content :</p> <pre><code># Logs #
+########
+*.log
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files #
+#############
+nbproject
+.~lock.*
+.buildpath
+.idea
+.project
+.settings
+composer.lock</code></pre><p>Others examples <a href="https://gist.github.com/octocat/92576html">here</a> and <a href="https://gist.github.com/zpetr/e783d537f8a40bb6echtml">here</a>.</p> <p>Then add this file to the current config :</p> <ul> <li>inside <code>~/.gitconfig</code> :</li> </ul> <pre><code>[core]
+    excludesfile = /home/user/.gitignore_global</code></pre><ul> <li>or with CLI :</li> </ul> <pre><code class="lang-bash">$ git config --global core.excludesfile ~/.gitignore_global</code></pre> </article></body></html>

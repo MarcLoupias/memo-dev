@@ -1,0 +1,130 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-data---basics">data - basics</h1> <h2 id="title-difference-between-data-and-information">difference between data and information</h2> <p>Computers need data. Humans need information.</p> <p>Data is a building block. Information gives meaning and context.</p> <p>Example :</p> <p><code>20180101</code> is the raw data. It is a suite of 8 numbers.</p> <p>Interpreted as a date it is the 1st january 2018.</p> <p>It could be also a transaction amount of around 20 millions (euros ? dollars ?).</p> <p>It could be a (bad) password, it could be a lot of things.</p> <p>To become an information, the data need context.</p> <h2 id="title-anglicismes">anglicismes</h2> <p>Beaucoup de confusions terminologiques sont faites en français du fait de mauvaises traductions qui affectent le sens.</p> <h3 id="title-digital-et-numérique">digital et numérique</h3> <p>Par exemple <em>digit</em> en anglais signifie <em>chiffre</em>.</p> <p>Ce qui conduit certaines personnes à parler de <em>digital</em> au lieu de <em>numérique</em>.</p> <p>L’informatisation du monde est le processus de transformation de l’information en nombres, il s’agit donc de numérisation<br>et non de digital. En français digital se rapporte aux doigts.</p> <h3 id="title-chiffrement-et-cryptage">chiffrement et cryptage</h3> <p>Il en va de même pour <em>chiffrement</em> et <em>cryptage</em> (anglicisme de <em>encryption</em>).</p> <h3 id="title-bit-et-octet">bit et octet</h3> <p>En anglais <em>bit</em> se traduit <em>bit</em>. Pas de différence.</p> <p>En revanche <em>octet</em> se traduit <em>byte</em>.</p> <p>Un octet étant composé de 8 bits, parler de 10 megabits par seconde n’est pas du tout équivalent à 10 megabytes par seconde !</p> <h2 id="title-data">data</h2> <h3 id="title-bit">bit</h3> <p>The smallest piece of data. Short for binary digit (chiffre binaire).</p> <p>A bit has a single binary value, either <code>0</code> or <code>1</code>.</p> <h3 id="title-byte">byte</h3> <p>A byte is a unit of data that is eight binary digits long.</p> <p>Example, the number <code>73</code> in decimal base is <code>01001001</code> in binary base.</p> <h2 id="title-data-structure">data structure</h2> <h3 id="title-text">text</h3> <p>The first data structure for text is the <a href="https://fr.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchanhtml">ASCII (American Standard Code for Information Interchange)</a></p> <p>128 characters available (0 to 127) expressed in a table :</p> <pre><code>| Dec | Hexa | Oct | Html     | chr | binary  | description              |
+| --- | ---- | --- | -------- | --- | ------- | ------------------------ |
+|   0 |    0 |   0 |          | NUL | 0000000 | (null)                   |
+|   1 |    1 | 001 |          | SOH | 0000001 | (start of heading)       |
+|   2 |    2 | 002 |          | STX | 0000010 | (start of text)          |
+|   3 |    3 | 003 |          | ETX | 0000011 | (end of text)            |
+|   4 |    4 | 004 |          | EOT | 0000100 | (end of transmission)    |
+|   5 |    5 | 005 |          | ENQ | 0000101 | (enquiry)                |
+|   6 |    6 | 006 |          | ACK | 0000110 | (acknowledge)            |
+|   7 |    7 | 007 |          | BEL | 0000111 | (bell)                   |
+|   8 |    8 | 010 |          | BS  | 0001000 | (backspace)              |
+|   9 |    9 | 011 |          | TAB | 0001001 | (horizontal tab)         |
+|  10 |    A | 012 |          | LF  | 0001010 | (NL line feed, new line) | 
+|  11 |    B | 013 |          | VT  | 0001011 | (vertical tab)           | 
+|  12 |    C | 014 |          | FF  | 0001100 | (NP form feed, new page) |
+|  13 |    D | 015 |          | CR  | 0001101 | (carriage return)        |
+|  14 |    E | 016 |          | SO  | 0001110 | (shift out)              |
+|  15 |    F | 017 |          | SI  | 0001111 | (shift in)               |
+|  16 |   10 | 020 |          | DLE | 0010000 | (data link escape)       |
+|  17 |   11 | 021 |          | DC1 | 0010001 | (device control 1)       |
+|  18 |   12 | 022 |          | DC2 | 0010010 | (device control 2)       |
+|  19 |   13 | 023 |          | DC3 | 0010011 | (device control 3)       |
+|  20 |   14 | 024 |          | DC4 | 0010100 | (device control 4)       |
+|  21 |   15 | 025 |          | NAK | 0010101 | (negative acknowledge)   |
+|  22 |   16 | 026 |          | SYN | 0010110 | (synchronous idle)       |
+|  23 |   17 | 027 |          | ETB | 0010111 | (end of trans. block)    |
+|  24 |   18 | 030 |          | CAN | 0011000 | (cancel)                 |
+|  25 |   19 | 031 |          | EM  | 0011001 | (end of medium)          |
+|  26 |   1A | 032 |          | SUB | 0011010 | (substitute)             |
+|  27 |   1B | 033 |          | ESC | 0011011 | (escape)                 |
+|  28 |   1C | 034 |          | FS  | 0011100 | (file separator)         |
+|  29 |   1D | 035 |          | GS  | 0011101 | (group separator)        |
+|  30 |   1E | 036 |          | RS  | 0011110 | (record separator)       |
+|  31 |   1F | 037 |          | US  | 0011111 | (unit separator)         |
+|  32 |   20 | 040 | `&amp;#32;`  | Spc | 0100000 | (space)                  |
+|  33 |   21 | 041 | `&amp;#33;`  | !   | 0100001 |                          |
+|  34 |   22 | 042 | `&amp;#34;`  | &quot;   | 0100010 |                          |
+|  35 |   23 | 043 | `&amp;#35;`  | #   | 0100011 |                          |
+|  36 |   24 | 044 | `&amp;#36;`  | $   | 0100100 |                          |
+|  37 |   25 | 045 | `&amp;#37;`  | %   | 0100101 |                          |
+|  38 |   26 | 046 | `&amp;#38;`  | &amp;   | 0100110 |                          |
+|  39 |   27 | 047 | `&amp;#39;`  | &#39;   | 0100111 |                          |
+|  40 |   28 | 050 | `&amp;#40;`  | (   | 0101000 |                          |
+|  41 |   29 | 051 | `&amp;#41;`  | )   | 0101001 |                          |
+|  42 |   2A | 052 | `&amp;#42;`  | *   | 0101010 |                          |
+|  43 |   2B | 053 | `&amp;#43;`  | +   | 0101011 |                          |
+|  44 |   2C | 054 | `&amp;#44;`  | ,   | 0101100 |                          |
+|  45 |   2D | 055 | `&amp;#45;`  | -   | 0101101 |                          |
+|  46 |   2E | 056 | `&amp;#46;`  | .   | 0101110 |                          |
+|  47 |   2F | 057 | `&amp;#47;`  | /   | 0101111 |                          |
+|  48 |   30 | 060 | `&amp;#48;`  | 0   | 0110000 |                          |
+|  49 |   31 | 061 | `&amp;#49;`  | 1   | 0110001 |                          |
+|  50 |   32 | 062 | `&amp;#50;`  | 2   | 0110010 |                          |
+|  51 |   33 | 063 | `&amp;#51;`  | 3   | 0110011 |                          |
+|  52 |   34 | 064 | `&amp;#52;`  | 4   | 0110100 |                          |
+|  53 |   35 | 065 | `&amp;#53;`  | 5   | 0110101 |                          |
+|  54 |   36 | 066 | `&amp;#54;`  | 6   | 0110110 |                          |
+|  55 |   37 | 067 | `&amp;#55;`  | 7   | 0110111 |                          |
+|  56 |   38 | 070 | `&amp;#56;`  | 8   | 0111000 |                          |
+|  57 |   39 | 071 | `&amp;#57;`  | 9   | 0111001 |                          |
+|  58 |   3A | 072 | `&amp;#58;`  | :   | 0111010 |                          |
+|  59 |   3B | 073 | `&amp;#59;`  | ;   | 0111011 |                          |
+|  60 |   3C | 074 | `&amp;#60;`  | &lt;   | 0111100 |                          |
+|  61 |   3D | 075 | `&amp;#61;`  | =   | 0111101 |                          |
+|  62 |   3E | 076 | `&amp;#62;`  | &gt;   | 0111110 |                          |
+|  63 |   3F | 077 | `&amp;#63;`  | ?   | 0111111 |                          |
+|  64 |   40 | 100 | `&amp;#64;`  | @   | 1000000 |                          |
+|  65 |   41 | 101 | `&amp;#65;`  | A   | 1000001 |                          |
+|  66 |   42 | 102 | `&amp;#66;`  | B   | 1000010 |                          |
+|  67 |   43 | 103 | `&amp;#67;`  | C   | 1000011 |                          |
+|  68 |   44 | 104 | `&amp;#68;`  | D   | 1000100 |                          |
+|  69 |   45 | 105 | `&amp;#69;`  | E   | 1000101 |                          |
+|  70 |   46 | 106 | `&amp;#70;`  | F   | 1000110 |                          |
+|  71 |   47 | 107 | `&amp;#71;`  | G   | 1000111 |                          |
+|  72 |   48 | 110 | `&amp;#72;`  | H   | 1001000 |                          |
+|  73 |   49 | 111 | `&amp;#73;`  | I   | 1001001 |                          |
+|  74 |   4A | 112 | `&amp;#74;`  | J   | 1001010 |                          |
+|  75 |   4B | 113 | `&amp;#75;`  | K   | 1001011 |                          |
+|  76 |   4C | 114 | `&amp;#76;`  | L   | 1001100 |                          |
+|  77 |   4D | 115 | `&amp;#77;`  | M   | 1001101 |                          |
+|  78 |   4E | 116 | `&amp;#78;`  | N   | 1001110 |                          |
+|  79 |   4F | 117 | `&amp;#79;`  | O   | 1001111 |                          |
+|  80 |   50 | 120 | `&amp;#80;`  | P   | 1010000 |                          |
+|  81 |   51 | 121 | `&amp;#81;`  | Q   | 1010001 |                          |
+|  82 |   52 | 122 | `&amp;#82;`  | R   | 1010010 |                          |
+|  83 |   53 | 123 | `&amp;#83;`  | S   | 1010011 |                          |
+|  84 |   54 | 124 | `&amp;#84;`  | T   | 1010100 |                          |
+|  85 |   55 | 125 | `&amp;#85;`  | U   | 1010101 |                          |
+|  86 |   56 | 126 | `&amp;#86;`  | V   | 1010110 |                          |
+|  87 |   57 | 127 | `&amp;#87;`  | W   | 1010111 |                          |
+|  88 |   58 | 130 | `&amp;#88;`  | X   | 1011000 |                          |
+|  89 |   59 | 131 | `&amp;#89;`  | Y   | 1011001 |                          |
+|  90 |   5A | 132 | `&amp;#90;`  | Z   | 1011010 |                          |
+|  91 |   5B | 133 | `&amp;#91;`  | [   | 1011011 |                          |
+|  92 |   5C | 134 | `&amp;#92;`  | \   | 1011100 |                          |
+|  93 |   5D | 135 | `&amp;#93;`  | ]   | 1011101 |                          |
+|  94 |   5E | 136 | `&amp;#94;`  | ^   | 1011110 |                          |
+|  95 |   5F | 137 | `&amp;#95;`  | _   | 1011111 |                          |
+|  96 |   60 | 140 | `&amp;#96;`  | `   | 1100000 |                          |
+|  97 |   61 | 141 | `&amp;#97;`  | a   | 1100001 |                          |
+|  98 |   62 | 142 | `&amp;#98;`  | b   | 1100010 |                          |
+|  99 |   63 | 143 | `&amp;#99;`  | c   | 1100011 |                          |
+| 100 |   64 | 144 | `&amp;#100;` | d   | 1100100 |                          |
+| 101 |   65 | 145 | `&amp;#101;` | e   | 1100101 |                          |
+| 102 |   66 | 146 | `&amp;#102;` | f   | 1100110 |                          |
+| 103 |   67 | 147 | `&amp;#103;` | g   | 1100111 |                          |
+| 104 |   68 | 150 | `&amp;#104;` | h   | 1101000 |                          |
+| 105 |   69 | 151 | `&amp;#105;` | i   | 1101001 |                          |
+| 106 |   6A | 152 | `&amp;#106;` | j   | 1101010 |                          |
+| 107 |   6B | 153 | `&amp;#107;` | k   | 1101011 |                          |
+| 108 |   6C | 154 | `&amp;#108;` | l   | 1101100 |                          |
+| 109 |   6D | 155 | `&amp;#109;` | m   | 1101101 |                          |
+| 110 |   6E | 156 | `&amp;#110;` | n   | 1101110 |                          |
+| 111 |   6F | 157 | `&amp;#111;` | o   | 1101111 |                          |
+| 112 |   70 | 160 | `&amp;#112;` | p   | 1110000 |                          |
+| 113 |   71 | 161 | `&amp;#113;` | q   | 1110001 |                          |
+| 114 |   72 | 162 | `&amp;#114;` | r   | 1110010 |                          |
+| 115 |   73 | 163 | `&amp;#115;` | s   | 1110011 |                          |
+| 116 |   74 | 164 | `&amp;#116;` | t   | 1110100 |                          |
+| 117 |   75 | 165 | `&amp;#117;` | u   | 1110101 |                          |
+| 118 |   76 | 166 | `&amp;#118;` | v   | 1110110 |                          |
+| 119 |   77 | 167 | `&amp;#119;` | w   | 1110111 |                          |
+| 120 |   78 | 170 | `&amp;#120;` | x   | 1111000 |                          |
+| 121 |   79 | 171 | `&amp;#121;` | y   | 1111001 |                          |
+| 122 |   7A | 172 | `&amp;#122;` | z   | 1111010 |                          |
+| 123 |   7B | 173 | `&amp;#123;` | {   | 1111011 |                          |
+| 124 |   7C | 174 | `&amp;#124;` | \|  | 1111100 |                          |
+| 125 |   7D | 175 | `&amp;#125;` | }   | 1111101 |                          |
+| 126 |   7E | 176 | `&amp;#126;` | ~   | 1111110 |                          |
+| 127 |   7F | 177 | `&amp;#127;` | DEL | 1111111 |                          |</code></pre><h3 id="title-image">image</h3> <p>The very raw image format is an array of pixels.</p> <p>A pixel is a picture cell, a raw colored point.</p> <p>Each pixel is composed by 3 numbers representing the red value, the green value, and the blue value.</p> <p>It is named RGB (or Digital 8-bit per channel).</p> <p>It is a 24bits data structure (3 bytes because 3x8bits) : </p> <ul> <li>represented with integers : <code>RGB(255, 255, 255)</code></li> <li>represented with hexadecimals : <code>#FFFFFF</code></li> </ul> <p>It is named true color and allows 16,777,216 color variations. The human eye can discriminate up to 10 millions colors.</p> <h2 id="title-information">information</h2> <p>An information contained in a data rely on the interpretation context.</p> <p>For example, the number 20 stored in a data to represent 20 degree. Knowing that the number 20 is for degree (temperature)<br>is not enough to have the information. Is it Celcius or Fahrenheit ? 20°F equal -6.6°C. This is not the same thing in the<br>physical reality.</p> <p>Other example, a transaction amount. 20 euros is not the same value as 20 dollars.</p> </article></body></html>

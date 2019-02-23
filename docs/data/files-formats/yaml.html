@@ -1,0 +1,36 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-yaml">YAML</h1> <h2 id="title-descriptions">descriptions</h2> <p>Est un format de représentation de données par sérialisation Unicode</p> <p>Auteur : Clark Evans</p> <p><a href="http://www.yaml.orhtml">http://www.yaml.org/</a></p> <p>Exemple :</p> <pre><code class="lang-yaml">
+---
+receipt:     Oz-Ware Purchase Invoice
+date:        2012-08-06
+customer:
+    given:   Dorothy
+    family:  Gale
+
+items:
+    - part_no:   A4786
+      descrip:   Water Bucket (Filled)
+      price:     1.47
+      quantity:  4
+
+    - part_no:   E1628
+      descrip:   High Heeled &quot;Ruby&quot; Slippers
+      size:      8
+      price:     100.27
+      quantity:  1
+
+bill-to:  &amp;id001
+    street: |
+            123 Tornado Alley
+            Suite 16
+    city:   East Centerville
+    state:  KS
+
+ship-to:  *id001
+
+specialDelivery:  &gt;
+    Follow the Yellow Brick
+    Road to the Emerald City.
+    Pay no attention to the
+    man behind the curtain.
+...
+</code></pre> <h2 id="title-specs">specs</h2> <p><a href="https://yaml.orhtml">specs at yaml.org</a> :</p> <ul> <li><a href="https://yaml.org/spec/1.2/spec.hthtml">YAML 1.2</a></li> <li><a href="https://yaml.org/spec/1.html">YAML 1.1</a></li> <li><a href="https://yaml.org/spec/1.html">YAML 1.0</a></li> </ul> <p><a href="https://github.com/yahtml">The YAML Project - github.com</a></p> <blockquote> <p>repository list with <a href="https://github.com/yaml/yahtml">yaml/yaml - github.com</a> to discuss issues</p> </blockquote> <h2 id="title-tools">tools</h2> <h3 id="title-js-yaml-yaml-to-js-litteral">js-yaml (yaml to js litteral)</h3> <p><a href="https://github.com/nodeca/js-yahtml">js-yaml - github.com/nodeca</a></p> <p><a href="http://nodeca.github.io/js-yamhtml">js-yaml - online webtool</a></p> <blockquote> <p>to test yaml to js conversion</p> </blockquote> </article></body></html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-js---simple-logger">js - simple-logger</h1> <pre><code class="lang-javascript">window.simpleLogger = {
+
+    loggers: [],
+
+    load: function (str) {
+        console.warn(&quot;simpleLogger fallback logger to console&quot;);
+    },
+    getLogger: function (loggerName) {
+        var logger = this.loggers[loggerName];
+        if (!logger) {
+            logger = new SimpleLogger(loggerName, console);
+            this.loggers[loggerName] = logger;
+        }
+        return logger;
+    }
+};
+
+SimpleLogger._LVL_ERROR = 1;
+SimpleLogger._LVL_WARN = 2;
+SimpleLogger._LVL_INFO = 3;
+SimpleLogger._LVL_DEBUG = 4;
+
+function SimpleLogger(name, console) {
+    this.name = name;
+    this.console = console;
+    this.level = SimpleLogger._LVL_ERROR;
+}
+
+SimpleLogger.prototype.setLevel = function (level) {
+    this.level = level;
+
+    var noop = function () {
+    };
+
+    this.error = noop;
+    this.warn = noop;
+    this.info = noop;
+    this.debug = noop;
+
+    if (level === SimpleLogger._LVL_ERROR) {
+        this.error = window.console.error.bind(window.console, &#39;[ERROR] [&#39; + this.name + &#39;] - %s&#39;);
+    }
+    if (level === SimpleLogger._LVL_WARN) {
+        this.warn = window.console.warn.bind(window.console, &#39;[WARN] [&#39; + this.name + &#39;] - %s&#39;);
+    }
+    if (level === SimpleLogger._LVL_INFO) {
+        this.info = window.console.info.bind(window.console, &#39;[INFO] [&#39; + this.name + &#39;] - %s&#39;);
+    }
+    if (level === SimpleLogger._LVL_DEBUG) {
+        this.debug = window.console.debug.bind(window.console, &#39;[DEBUG] [&#39; + this.name + &#39;] - %s&#39;);
+        this.log = window.console.log.bind(window.console, &#39;[DEBUG] [&#39; + this.name + &#39;] - %s&#39;);
+    }
+};
+
+SimpleLogger.prototype.log = function (message) {
+    if (this.level &gt;= SimpleLogger._LVL_DEBUG) {
+        this.log = window.console.log.bind(window.console, &#39;[DEBUG] [&#39; + this.name + &#39;] - %s&#39;);
+    }
+};
+
+SimpleLogger.prototype.debug = function (message) {
+    if (this.level &gt;= SimpleLogger._LVL_DEBUG) {
+        this.debug = window.console.debug.bind(window.console, &#39;[DEBUG] [&#39; + this.name + &#39;] - %s&#39;);
+    }
+};
+
+SimpleLogger.prototype.info = function (message) {
+    if (this.level &gt;= SimpleLogger._LVL_INFO) {
+        this.info = window.console.info.bind(window.console, &#39;[INFO] [&#39; + this.name + &#39;] - %s&#39;);
+    }
+};
+
+SimpleLogger.prototype.warn = function (message) {
+    if (this.level &gt;= SimpleLogger._LVL_WARN) {
+        this.warn = window.console.warn.bind(window.console, &#39;[WARN] [&#39; + this.name + &#39;] - %s&#39;);
+    }
+};
+
+SimpleLogger.prototype.error = function (message) {
+    if (this.level &gt;= SimpleLogger._LVL_ERROR) {
+        this.error = window.console.error.bind(window.console, &#39;[ERROR] [&#39; + this.name + &#39;] - %s&#39;);
+    }
+};</code></pre> </article></body></html>

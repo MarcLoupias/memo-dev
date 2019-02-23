@@ -1,5 +1,0 @@
-# js - doc
-
-- [Javascript doc : developer.mozilla.org] (https://developer.mozilla.org/fr/docs/Web/JavaScript)
-- [Tutorials : www.w3schools.com] (http://www.w3schools.com/js/)
-- [API] (https://developer.mozilla.org/en-US/docs/Web/API)
