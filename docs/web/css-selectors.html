@@ -1,1 +1,74 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="main.cb64a04a.css" rel="stylesheet" media="all"><link href="github.51c27d45.css" rel="stylesheet"><script src="docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-css-selectors">css selectors</h1> <h2 id="title-type-selector">Type selector</h2> <p><code>A</code>: Selects all elements of type A. Type refers to the type of tag, so div, p and ul are all different element types.</p> <h2 id="title-id-selector">ID selector</h2> <p><code>#id</code>: Selects the element with a specific id. You can also combine the ID selector with the type selector.</p> <h2 id="title-class-selector">Class selector</h2> <p><code>.classname</code>: The class selector selects all elements with that class attribute. Elements can only have one ID, but many classes.</p> <p><code>A.className</code>: You can combine the class selector with other selectors, like the type selector.</p> <h2 id="title-universal-selector">Universal selector</h2> <p><code>*</code>: It allows selecting all elements in a page.<br><code>A *</code>: This selects all elements inside of A.</p> <h1 id="title-combinators">Combinators</h1> <h2 id="title-descendant-combinator-space">Descendant Combinator (space)</h2> <p><code>A B</code>: Selects all B inside of A. B is called a descendant because it is inside of another element.</p> <h2 id="title-comma-combinator">Comma Combinator</h2> <p><code>A, B</code>: Selects all A and B elements. You can combine any selectors this way, and you can specify more than two.</p> <h2 id="title-adjacent-sibling-selector">Adjacent Sibling Selector</h2> <p><code>A + B</code>: This selects all B elements that directly follow A. Elements that follow one another are called siblings. They’re on the same level, or depth.</p> <h2 id="title-general-sibling-selector">General Sibling Selector</h2> <p><code>A ~ B</code>: You can select all siblings of an element that follow it. This is like the Adjacent Selector (A + B) except it gets all of the following elements instead of one.</p> <h2 id="title-child-selector">Child Selector</h2> <p><code>A &gt; B</code>: You can select elements that are direct children of other elements. A child element is any element that is nested directly in another element.</p> <h1 id="title-pseudo-classes">Pseudo-classes</h1> <h2 id="title-first-child-pseudo-selector">First Child Pseudo-selector</h2> <p><code>:first-child</code>: You can select the first child element. A child element is any element that is directly nested in another element. You can combine this pseudo-selector with other selectors.</p> <h2 id="title-only-child-pseudo-selector">Only Child Pseudo-selector</h2> <p><code>:only-child</code>: You can select any element that is the only element inside of another one.</p> <h2 id="title-last-child-pseudo-selector">Last Child Pseudo-selector</h2> <p><code>:last-child</code>: You can use this selector to select an element that is the last child element inside of another element.</p> <h2 id="title-nth-child-pseudo-selector">Nth Child Pseudo-selector</h2> <p><code>A:nth-child(n)</code>: Selects the n-th (Ex: 1st, 3rd, 12th etc.) child element in A element.</p> <h2 id="title-nth-last-child-pseudo-selector">Nth Last Child Pseudo-selector</h2> <p><code>A:nth-last-child(n)</code>: Selects the n-th (Ex: 1st, 3rd, 12th etc.) child element in A element starting from the bottom.</p> <h2 id="title-first-of-type-selector">First of Type Selector</h2> <p><code>:first-of-type</code>: Selects the first element of that type within another element.</p> <h2 id="title-nth-of-type-selector">Nth of Type Selector</h2> <p><code>:nth-of-type(A)</code>: Selects a specific element based on its type and order in another element - or even or odd instances of that element.</p> <p><code>div:nth-of-type(2)</code>: selects the second instance of a div.</p> <p><code>.example:nth-of-type(odd)</code>: selects all odd instances of a the example class.</p> <p><code>span:nth-of-type(6n+2)</code>: selects every 6th instance of a span, starting from (and including) the second instance.</p> <h2 id="title-only-of-type-selector">Only of Type Selector</h2> <p><code>:only-of-type</code>: Selects the only element of its type within another element.</p> <h2 id="title-last-of-type-selector">Last of Type Selector</h2> <p><code>:last-of-type</code>: Selects each last element of that type within another element. Remember type refers the kind of tag, so p and span are different types. </p> <p><code>div:last-of-type</code>: selects the last div in every element.</p> <h2 id="title-empty-selector">Empty Selector</h2> <p><code>:empty</code>: Selects elements that don’t have any other elements inside of them.</p> <h2 id="title-negation-selector">Negation Selector</h2> <p><code>:not(X)</code>: Select all elements that do not match selector “X”.</p> <h1 id="title-attribute-selectors">Attribute selectors</h1> <h2 id="title-attribute-selector">Attribute Selector</h2> <p><code>[attribute]</code>: Select all elements that have a specific attribute</p> <h2 id="title-attribute-value-selector">Attribute Value Selector</h2> <p><code>[attribute=&quot;value&quot;]</code>: Select all elements that have a specific attribute value</p> <h2 id="title-attribute-starts-with-selector">Attribute Starts With Selector</h2> <p><code>[attribute^=&quot;value&quot;]</code>: Select all elements with an attribute value that starts with specific characters</p> <h2 id="title-attribute-ends-with-selector">Attribute Ends With Selector</h2> <p><code>[attribute$=&quot;value&quot;]</code>: Select all elements with an attribute value that ends with specific characters</p> <h2 id="title-attribute-wildcard-selector">Attribute Wildcard Selector</h2> <p><code>[attribute*=&quot;value&quot;]</code>: Select all elements with an attribute value that contains specific characters anywhere</p> <h2 id="title-attribute--selector">Attribute ? Selector</h2> <p><code>[attribute~=&quot;value&quot;]</code>: Select all elements with an attribute value that it is a whitespace-separated list of words and one of which is exactly “value”.</p> <h2 id="title-attribute--selector-1">Attribute ? Selector</h2> <p><code>[attribute|=&quot;value&quot;]</code>: Select all elements with an attribute value that can be exactly “value” or can begin with “value” immediately followed by “-” (U+002D). It can be used for language subcode matches</p> <h1 id="title-pseudo-elements">Pseudo elements</h1> <p>Pseudo-elements are very much like pseudo-classes, but they have differences. They are keywords (this time preceded by two colons (::)) that can be added to the end of selectors to select a certain part of an element. They are:</p> <ul> <li>::after</li> <li>::before</li> <li>::first-letter</li> <li>::first-line</li> <li>::selection</li> <li>::backdrop</li> </ul> </article></body></html>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../github-markdown.css" rel="stylesheet" media="all"><link href="../main.css" rel="stylesheet" media="all"><link href="../github.css" rel="stylesheet"><script src="../index.js"></script></head><body><article class="markdown-body"><h1 id="title-css-selectors">css selectors</h1>
+<h2 id="title-type-selector">Type selector</h2>
+<p><code>A</code>: Selects all elements of type A. Type refers to the type of tag, so div, p and ul are all different element types.</p>
+<h2 id="title-id-selector">ID selector</h2>
+<p><code>#id</code>: Selects the element with a specific id. You can also combine the ID selector with the type selector.</p>
+<h2 id="title-class-selector">Class selector</h2>
+<p><code>.classname</code>: The class selector selects all elements with that class attribute. Elements can only have one ID, but many classes.</p>
+<p><code>A.className</code>: You can combine the class selector with other selectors, like the type selector.</p>
+<h2 id="title-universal-selector">Universal selector</h2>
+<p><code>*</code>: It allows selecting all elements in a page.<br><code>A  *</code>: This selects all elements inside of A.</p>
+<h1 id="title-combinators">Combinators</h1>
+<h2 id="title-descendant-combinator-space">Descendant Combinator (space)</h2>
+<p><code>A B</code>: Selects all B inside of A. B is called a descendant because it is inside of another element.</p>
+<h2 id="title-comma-combinator">Comma Combinator</h2>
+<p><code>A, B</code>: Selects all A and B elements. You can combine any selectors this way, and you can specify more than two.</p>
+<h2 id="title-adjacent-sibling-selector">Adjacent Sibling Selector</h2>
+<p><code>A + B</code>: This selects all B elements that directly follow A. Elements that follow one another are called siblings. They’re on the same level, or depth.</p>
+<h2 id="title-general-sibling-selector">General Sibling Selector</h2>
+<p><code>A ~ B</code>: You can select all siblings of an element that follow it. This is like the Adjacent Selector (A + B) except it gets all of the following elements instead of one.</p>
+<h2 id="title-child-selector">Child Selector</h2>
+<p><code>A &gt; B</code>: You can select elements that are direct children of other elements. A child element is any element that is nested directly in another element.</p>
+<h1 id="title-pseudo-classes">Pseudo-classes</h1>
+<h2 id="title-first-child-pseudo-selector">First Child Pseudo-selector</h2>
+<p><code>:first-child</code>: You can select the first child element. A child element is any element that is directly nested in another element. You can combine this pseudo-selector with other selectors.</p>
+<h2 id="title-only-child-pseudo-selector">Only Child Pseudo-selector</h2>
+<p><code>:only-child</code>: You can select any element that is the only element inside of another one.</p>
+<h2 id="title-last-child-pseudo-selector">Last Child Pseudo-selector</h2>
+<p><code>:last-child</code>: You can use this selector to select an element that is the last child element inside of another element.</p>
+<h2 id="title-nth-child-pseudo-selector">Nth Child Pseudo-selector</h2>
+<p><code>A:nth-child(n)</code>: Selects the n-th (Ex: 1st, 3rd, 12th etc.) child element in A element.</p>
+<h2 id="title-nth-last-child-pseudo-selector">Nth Last Child Pseudo-selector</h2>
+<p><code>A:nth-last-child(n)</code>: Selects the n-th (Ex: 1st, 3rd, 12th etc.) child element in A element starting from the bottom.</p>
+<h2 id="title-first-of-type-selector">First of Type Selector</h2>
+<p><code>:first-of-type</code>: Selects the first element of that type within another element.</p>
+<h2 id="title-nth-of-type-selector">Nth of Type Selector</h2>
+<p><code>:nth-of-type(A)</code>: Selects a specific element based on its type and order in another element - or even or odd instances of that element.</p>
+<p><code>div:nth-of-type(2)</code>: selects the second instance of a div.</p>
+<p><code>.example:nth-of-type(odd)</code>: selects all odd instances of a the example class.</p>
+<p><code>span:nth-of-type(6n+2)</code>: selects every 6th instance of a span, starting from (and including) the second instance.</p>
+<h2 id="title-only-of-type-selector">Only of Type Selector</h2>
+<p><code>:only-of-type</code>: Selects the only element of its type within another element.</p>
+<h2 id="title-last-of-type-selector">Last of Type Selector</h2>
+<p><code>:last-of-type</code>: Selects each last element of that type within another element. Remember type refers the kind of tag, so p and span are different types. </p>
+<p><code>div:last-of-type</code>: selects the last div in every element.</p>
+<h2 id="title-empty-selector">Empty Selector</h2>
+<p><code>:empty</code>: Selects elements that don’t have any other elements inside of them.</p>
+<h2 id="title-negation-selector">Negation Selector</h2>
+<p><code>:not(X)</code>: Select all elements that do not match selector “X”.</p>
+<h1 id="title-attribute-selectors">Attribute selectors</h1>
+<h2 id="title-attribute-selector">Attribute Selector</h2>
+<p><code>[attribute]</code>: Select all elements that have a specific attribute</p>
+<h2 id="title-attribute-value-selector">Attribute Value Selector</h2>
+<p><code>[attribute=&quot;value&quot;]</code>: Select all elements that have a specific attribute value</p>
+<h2 id="title-attribute-starts-with-selector">Attribute Starts With Selector</h2>
+<p><code>[attribute^=&quot;value&quot;]</code>: Select all elements with an attribute value that starts with specific characters</p>
+<h2 id="title-attribute-ends-with-selector">Attribute Ends With Selector</h2>
+<p><code>[attribute$=&quot;value&quot;]</code>: Select all elements with an attribute value that ends with specific characters</p>
+<h2 id="title-attribute-wildcard-selector">Attribute Wildcard Selector</h2>
+<p><code>[attribute*=&quot;value&quot;]</code>: Select all elements with an attribute value that contains specific characters anywhere</p>
+<h2 id="title-attribute--selector">Attribute ? Selector</h2>
+<p><code>[attribute~=&quot;value&quot;]</code>: Select all elements with an attribute value that it is a whitespace-separated list of words and one of which is exactly “value”.</p>
+<h2 id="title-attribute--selector-1">Attribute ? Selector</h2>
+<p><code>[attribute|=&quot;value&quot;]</code>: Select all elements with an attribute value that can be exactly “value” or can begin with “value” immediately followed by “-” (U+002D). It can be used for language subcode matches</p>
+<h1 id="title-pseudo-elements">Pseudo elements</h1>
+<p>Pseudo-elements are very much like pseudo-classes, but they have differences. They are keywords (this time preceded by two colons (::)) that can be added to the end of selectors to select a certain part of an element. They are:</p>
+<ul>
+<li>::after</li>
+<li>::before</li>
+<li>::first-letter</li>
+<li>::first-line</li>
+<li>::selection</li>
+<li>::backdrop</li>
+</ul>
+</article></body></html>

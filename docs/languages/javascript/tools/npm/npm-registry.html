@@ -1,1 +1,57 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="main.cb64a04a.css" rel="stylesheet" media="all"><link href="github.51c27d45.css" rel="stylesheet"><script src="docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-npm-registry">npm registry</h1> <p><a href="https://github.com/npm/registhtml">npm/registry : github.com</a></p> <blockquote> <p>A public issue repo for the npm registry team.</p> </blockquote> <p><a href="https://registry.npmjs.org/nodhtml">https://registry.npmjs.org/node/ - explore online</a></p> <blockquote> <p>need the package name in the path : <code>https://registry.npmjs.org/&lt;package-name&gt;/</code></p> </blockquote> <h2 id="title-cdn">cdn</h2> <p><a href="https://unpkg.com/html">unpkg</a>)</p> <blockquote> <p>The CDN for everything on npm</p> </blockquote> <h2 id="title-registry-impl">registry impl</h2> <h3 id="title-artifactory">artifactory</h3> <p><a href="https://jfrog.com/artifactorhtml">JFrog Artifactory Enterprise Universal Repository Manager</a></p> <blockquote> <p>Support a lot more then just npm registry, but include a npm registry impl</p> </blockquote> <h3 id="title-verdaccio">verdaccio</h3> <p><a href="https://verdaccio.orhtml">verdaccio</a></p> <blockquote> <p>A lightweight private npm proxy registry</p> </blockquote> <blockquote> <p>Verdaccio is a simple, <strong>zero-config-required local private npm registry</strong>. No need for an entire database just to get started! Verdaccio comes out of the box with <strong>its own tiny database</strong>, and the ability to proxy other registries (eg. npmjs.org), caching the downloaded modules along the way.</p> </blockquote> <p><a href="https://github.com/verdacchtml">verdaccio</a></p> <p><a href="https://github.com/verdaccio/verdacchtml">verdaccio - github.com/verdaccio</a></p> <h4 id="title-npm-packages-smoke-test-with-verdaccio">npm packages smoke test with verdaccio</h4> <p>Can be used to <a href="https://en.wikipedia.org/wiki/Smoke_testing_(softwarhtml">smoke test</a> <code>npm publish</code> command.</p> <p>See example with <a href="https://github.com/facebook/create-react-app/pull/37html">facebook/create-react-app</a>.</p> <p>See also <a href="https://stackoverflow.com/questions/50206729/how-to-test-an-npm-publish-result-without-actually-publishing-to-nhtml">How to test an <code>npm publish</code> result, without actually publishing to NPM? - stackoverflow.com</a></p> <h2 id="title-articles">articles</h2> <ul> <li><a href="http://blog.javascripting.com/2015/06/11/so-remind-me-again-why-do-we-need-the-npm-registrhtml">why-do-we-need-the-npm-registry : blog.javascripting.com</a></li> </ul> <blockquote> <p>this guy would like to avoid using registry because he is annoying when wanting a particular package version not put by the package owner into the npm registry. He would prefer npm as a fin layer on the top of github (like bower does). Comments are worth to read.</p> </blockquote> <h2 id="title-alternatives">alternatives</h2> <h3 id="title-bower">bower</h3> <p><a href="https://bower.ihtml">bower.io</a></p> <p>One of the first package manager for the web (only for frontend projects).</p> <p>It is at the end of his life. The bower team recommands using yarn and webpack.</p> <h3 id="title-yarn">yarn</h3> <p><a href="https://yarnpkg.chtml">yarn</a></p> <p>Yarn is not a new package manager, it is just a new CLI built on top of the npm registry. He behave differently then npm CLI. This was really true before npm published @5.y.z version of npm CLI.</p> <p>Yarn is developed by some Google and Facebook devs.</p> <p>Diff w/ npm CLI (see <a href="https://blog.zenika.com/2017/03/13/npm-vs-yarhtml">npm-vs-yarn : blog.zenika.com 20170313</a> :</p> <ul> <li>parallelized downloads (so yarn is faster)</li> <li>deterministic with <code>yarn.lock</code> file (it is npm shrinkwrap autoexec, it is same as package.lock from <a href="mailto:npm@5.yhtml">npm@5.y.z</a>)</li> <li>…</li> </ul> </article></body></html>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../../../github-markdown.css" rel="stylesheet" media="all"><link href="../../../../main.css" rel="stylesheet" media="all"><link href="../../../../github.css" rel="stylesheet"><script src="../../../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-npm-registry">npm registry</h1>
+<p><a href="https://github.com/npm/registhtml">npm/registry : github.com</a></p>
+<blockquote>
+<p>A public issue repo for the npm registry team.</p>
+</blockquote>
+<p><a href="https://registry.npmjs.org/nodhtml">https://registry.npmjs.org/node/ - explore online</a></p>
+<blockquote>
+<p>need the package name in the path : <code>https://registry.npmjs.org/&lt;package-name&gt;/</code></p>
+</blockquote>
+<h2 id="title-cdn">cdn</h2>
+<p><a href="https://unpkg.com/html">unpkg</a>)</p>
+<blockquote>
+<p>The CDN for everything on npm</p>
+</blockquote>
+<h2 id="title-registry-impl">registry impl</h2>
+<h3 id="title-artifactory">artifactory</h3>
+<p><a href="https://jfrog.com/artifactorhtml">JFrog Artifactory Enterprise Universal Repository Manager</a></p>
+<blockquote>
+<p>Support a lot more then just npm registry, but include a npm registry impl</p>
+</blockquote>
+<h3 id="title-verdaccio">verdaccio</h3>
+<p><a href="https://verdaccio.orhtml">verdaccio</a></p>
+<blockquote>
+<p>A lightweight private npm proxy registry</p>
+</blockquote>
+<blockquote>
+<p>Verdaccio is a simple, <strong>zero-config-required local private npm registry</strong>. No need for an entire database just to get started! Verdaccio comes out of the box with <strong>its own tiny database</strong>, and the ability to proxy other registries (eg. npmjs.org), caching the downloaded modules along the way.</p>
+</blockquote>
+<p><a href="https://github.com/verdacchtml">verdaccio</a></p>
+<p><a href="https://github.com/verdaccio/verdacchtml">verdaccio - github.com/verdaccio</a></p>
+<h4 id="title-npm-packages-smoke-test-with-verdaccio">npm packages smoke test with verdaccio</h4>
+<p>Can be used to <a href="https://en.wikipedia.org/wiki/Smoke_testing_(softwarhtml">smoke test</a> <code>npm publish</code> command.</p>
+<p>See example with <a href="https://github.com/facebook/create-react-app/pull/37html">facebook/create-react-app</a>.</p>
+<p>See also <a href="https://stackoverflow.com/questions/50206729/how-to-test-an-npm-publish-result-without-actually-publishing-to-nhtml">How to test an <code>npm publish</code> result, without actually publishing to NPM? - stackoverflow.com</a></p>
+<h2 id="title-articles">articles</h2>
+<ul>
+<li><a href="http://blog.javascripting.com/2015/06/11/so-remind-me-again-why-do-we-need-the-npm-registrhtml">why-do-we-need-the-npm-registry : blog.javascripting.com</a></li>
+</ul>
+<blockquote>
+<p>this guy would like to avoid using registry because he is annoying when wanting a particular package version not put by the package owner into the npm registry. He would prefer npm as a fin layer on the top of github (like bower does). Comments are worth to read.</p>
+</blockquote>
+<h2 id="title-alternatives">alternatives</h2>
+<h3 id="title-bower">bower</h3>
+<p><a href="https://bower.ihtml">bower.io</a></p>
+<p>One of the first package manager for the web (only for frontend projects).</p>
+<p>It is at the end of his life. The bower team recommands using yarn and webpack.</p>
+<h3 id="title-yarn">yarn</h3>
+<p><a href="https://yarnpkg.chtml">yarn</a></p>
+<p>Yarn is not a new package manager, it is just a new CLI built on top of the npm registry. He behave differently then npm CLI. This was really true before npm published @5.y.z version of npm CLI.</p>
+<p>Yarn is developed by some Google and Facebook devs.</p>
+<p>Diff w/ npm CLI (see <a href="https://blog.zenika.com/2017/03/13/npm-vs-yarhtml">npm-vs-yarn : blog.zenika.com 20170313</a> :</p>
+<ul>
+<li>parallelized downloads (so yarn is faster)</li>
+<li>deterministic with <code>yarn.lock</code> file (it is npm shrinkwrap autoexec, it is same as package.lock from <a href="mailto:npm@5.yhtml">npm@5.y.z</a>)</li>
+<li>…</li>
+</ul>
+</article></body></html>

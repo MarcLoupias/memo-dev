@@ -1,8 +1,22 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="main.cb64a04a.css" rel="stylesheet" media="all"><link href="github.51c27d45.css" rel="stylesheet"><script src="docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-nodejs---hello-world">nodejs - hello world</h1> <p><a href="https://tutorials.kode-blog.com/nodejs-hello-worhtml">Node.JS Hello World : tutorials.kode-blog.com 20160802</a></p> <h2 id="title-create-packagejson-using-npm">Create <code>package.json</code> using <code>npm</code></h2> <pre><code>mkdir node
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../../github-markdown.css" rel="stylesheet" media="all"><link href="../../../main.css" rel="stylesheet" media="all"><link href="../../../github.css" rel="stylesheet"><script src="../../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-nodejs---hello-world">nodejs - hello world</h1>
+<p><a href="https://tutorials.kode-blog.com/nodejs-hello-worhtml">Node.JS Hello World : tutorials.kode-blog.com 20160802</a></p>
+<h2 id="title-create-packagejson-using-npm">Create <code>package.json</code> using <code>npm</code></h2>
+<pre><code>mkdir node
 cd node
 mkdir hello-world
 cd hello-world
-npm init</code></pre><p>Fill in the answers to the utility questions.</p> <h2 id="title-nodejs-hello-world-console-application">Node.JS Hello World Console Application</h2> <p>Create a new file <code>app.js</code></p> <p>Add the following code :</p> <pre><code class="lang-javascript">console.log(&#39;Hello World!&#39;);</code></pre> <p>Console is a global module that provides simple debugging console that is similar to the one JavaScript console in web browsers. </p> <p>Run the following command :</p> <pre><code>node app.js</code></pre><p><code>.js</code> extension is not mandatory, this works also :</p> <pre><code>node app</code></pre><h2 id="title-nodejs-hello-world-web-application">Node.JS Hello World Web Application</h2> <p>Create a new file <code>web.js</code></p> <p>Add the following code :</p> <pre><code class="lang-javascript">var http = require(&quot;http&quot;);
+npm init</code></pre><p>Fill in the answers to the utility questions.</p>
+<h2 id="title-nodejs-hello-world-console-application">Node.JS Hello World Console Application</h2>
+<p>Create a new file <code>app.js</code></p>
+<p>Add the following code :</p>
+<pre><code class="lang-javascript">console.log(&#39;Hello World!&#39;);</code></pre>
+<p>Console is a global module that provides simple debugging console that is similar to the one JavaScript console in web browsers. </p>
+<p>Run the following command :</p>
+<pre><code>node app.js</code></pre><p><code>.js</code> extension is not mandatory, this works also :</p>
+<pre><code>node app</code></pre><h2 id="title-nodejs-hello-world-web-application">Node.JS Hello World Web Application</h2>
+<p>Create a new file <code>web.js</code></p>
+<p>Add the following code :</p>
+<pre><code class="lang-javascript">var http = require(&quot;http&quot;);
 
 var port = 3000;
 
@@ -11,4 +25,7 @@ http.createServer(function(reqst, resp) {
     resp.end(&#39;Hello World!&#39;);
 }).listen(port);
 
-console.log(&#39;Load http://127.0.0.1:&#39; + port + &#39; and watch the magic&#39;);</code></pre> <p>Run the following command :</p> <pre><code>node web</code></pre><p>Load the following url in your browser : <code>http://127.0.0.1:3000/</code></p> </article></body></html>
+console.log(&#39;Load http://127.0.0.1:&#39; + port + &#39; and watch the magic&#39;);</code></pre>
+<p>Run the following command :</p>
+<pre><code>node web</code></pre><p>Load the following url in your browser : <code>http://127.0.0.1:3000/</code></p>
+</article></body></html>

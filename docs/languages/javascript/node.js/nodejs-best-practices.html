@@ -1,3 +1,103 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="main.cb64a04a.css" rel="stylesheet" media="all"><link href="github.51c27d45.css" rel="stylesheet"><script src="docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-nodejs---best-practices">nodejs - best practices</h1> <h2 id="title-misc-links">misc links</h2> <p><a href="https://github.com/sindresorhus/awesome-nodehtml">sindresorhus/awesome-nodejs - github.com</a></p> <p><a href="https://github.com/ryanmcdermott/clean-code-javascrihtml">ryanmcdermott/clean-code-javascript - github.com</a></p> <p><a href="https://github.com/i0natan/nodebestpractichtml">i0natan/nodebestpractices - github.com</a></p> <p><a href="https://www.codementor.io/mattgoldspink/nodejs-best-practices-du1086jhtml">Node.js Best Practices : Matt Goldspink 20160829</a></p> <ul> <li>Start all projects with <code>npm init</code></li> <li>Setup <code>.npmrc</code></li> <li>Add scripts to your <code>package.json</code></li> <li>Use environment variables</li> <li>Use a style guide</li> <li>Embrace async</li> <li>Handle errors</li> <li>Ensure your app automatically restarts</li> <li>Cluster your app to improve performance and reliability</li> <li>Require all your dependencies up front</li> <li>Use a logging library to increase errors visibility</li> <li>Use <a href="https://github.com/helmetjs/helmhtml">Helmet</a> if you’re writing a web app</li> <li>Monitor your applications</li> <li>Test your code</li> </ul> <p><a href="https://blog.risingstack.com/node-js-best-practices-201html">Node.js Best Practices - How to Become a Better Developer in 2017 : blog.risingstack.com</a></p> <h2 id="title-switching-node-version-between-projects">switching node version between projects</h2> <h3 id="title-articles">articles</h3> <p><a href="https://medium.com/gitignore/nvm-vs-n-f34ebca314html">nvm vs n! - .gitignore - 20170522</a></p> <p><a href="https://steelbrain.me/2016/07/19/how-i-manage-multiple-node-js-versions.hthtml">How I manage multiple Node.js versions - steelbrain.me - 20160719</a></p> <p><a href="https://yoember.com/nodejs/the-best-way-to-install-node-jhtml">The Best Way to Install Node.js - yoember.com - 20180929</a></p> <h3 id="title-tooling-comparison">tooling comparison</h3> <p><a href="https://stackoverflow.com/a/295455html">Taken from stackoverflow answer from <code>nvm</code> maintainer</a></p> <blockquote> <p>The most-used version managers for node are without a doubt <a href="http://nvm.html">http://nvm.sh</a>, <a href="https://www.npmjs.com/package/nahtml">https://www.npmjs.com/package/nave</a>, and <a href="https://www.npmjs.com/packagehtml">https://www.npmjs.com/package/n</a>.</p> <p><code>nvm</code> is for modifying individual shell sessions to use the version you want. <code>nave</code> is for launching subshells with the version you want loaded. n is for switching a single system-wide version of node.</p> <p><code>nvm</code> uses a <code>.nvmrc</code> file, which like <code>.ruby-version</code>, contains the version-ish string X you’d normally couple with <code>nvm use X</code> or <code>nvm install X</code>. <code>nvm use</code> or <code>nvm install</code> by itself will locate the <code>.nvmrc</code> file, as will simply sourcing <code>nvm</code> upon opening a new shell.</p> <p>It appears <code>nave</code> supports a <code>.naverc</code> file, but I’m not too familiar with its usage.</p> <p><code>n</code> doesn’t appear to support any such config, but as it’s system-wide, it doesn’t really make as much sense to do so.</p> <p><code>avn</code> supports <code>.node-version</code> and attempts to provide automatic version switching by hooking into <code>cd</code>, after <code>nvm</code> decided that was too invasive a behavior to include.</p> </blockquote> <h3 id="title-nvm"><code>nvm</code></h3> <p><a href="https://github.com/creationix/nhtml">creationix/nvm - github.com</a></p> <p><a href="https://gist.github.com/calendee/bb55962fd720a6dbeed6bf35697665html">NVM Automatic Switching : gist</a></p> <h3 id="title-n"><code>n</code></h3> <p><a href="https://github.com/tjhtml">tj/n - github.com</a></p> <blockquote> <p>Node.js version management: no subshells, no profile setup, no convoluted API, just simple.</p> </blockquote> <h4 id="title-usage">usage</h4> <p>Super easy but system wide.</p> <p>List installed version </p> <pre><code class="lang-bash">n</code></pre> <p>Output :</p> <pre><code class="lang-bash">  0.8.14
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../../github-markdown.css" rel="stylesheet" media="all"><link href="../../../main.css" rel="stylesheet" media="all"><link href="../../../github.css" rel="stylesheet"><script src="../../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-nodejs---best-practices">nodejs - best practices</h1>
+<h2 id="title-misc-links">misc links</h2>
+<p><a href="https://github.com/sindresorhus/awesome-nodehtml">sindresorhus/awesome-nodejs - github.com</a></p>
+<p><a href="https://github.com/ryanmcdermott/clean-code-javascrihtml">ryanmcdermott/clean-code-javascript - github.com</a></p>
+<p><a href="https://github.com/i0natan/nodebestpractichtml">i0natan/nodebestpractices - github.com</a></p>
+<p><a href="https://www.codementor.io/mattgoldspink/nodejs-best-practices-du1086jhtml">Node.js Best Practices : Matt Goldspink 20160829</a></p>
+<ul>
+<li>Start all projects with <code>npm init</code></li>
+<li>Setup <code>.npmrc</code></li>
+<li>Add scripts to your <code>package.json</code></li>
+<li>Use environment variables</li>
+<li>Use a style guide</li>
+<li>Embrace async</li>
+<li>Handle errors</li>
+<li>Ensure your app automatically restarts</li>
+<li>Cluster your app to improve performance and reliability</li>
+<li>Require all your dependencies up front</li>
+<li>Use a logging library to increase errors visibility</li>
+<li>Use <a href="https://github.com/helmetjs/helmhtml">Helmet</a> if you’re writing a web app</li>
+<li>Monitor your applications</li>
+<li>Test your code</li>
+</ul>
+<p><a href="https://blog.risingstack.com/node-js-best-practices-201html">Node.js Best Practices - How to Become a Better Developer in 2017 : blog.risingstack.com</a></p>
+<h2 id="title-switching-node-version-between-projects">switching node version between projects</h2>
+<h3 id="title-articles">articles</h3>
+<p><a href="https://medium.com/gitignore/nvm-vs-n-f34ebca314html">nvm vs n! - .gitignore - 20170522</a></p>
+<p><a href="https://steelbrain.me/2016/07/19/how-i-manage-multiple-node-js-versions.hthtml">How I manage multiple Node.js versions - steelbrain.me - 20160719</a></p>
+<p><a href="https://yoember.com/nodejs/the-best-way-to-install-node-jhtml">The Best Way to Install Node.js - yoember.com - 20180929</a></p>
+<h3 id="title-tooling-comparison">tooling comparison</h3>
+<p><a href="https://stackoverflow.com/a/295455html">Taken from stackoverflow answer from <code>nvm</code> maintainer</a></p>
+<blockquote>
+<p>The most-used version managers for node are without a doubt <a href="http://nvm.html">http://nvm.sh</a>, <a href="https://www.npmjs.com/package/nahtml">https://www.npmjs.com/package/nave</a>, and <a href="https://www.npmjs.com/packagehtml">https://www.npmjs.com/package/n</a>.</p>
+<p><code>nvm</code> is for modifying individual shell sessions to use the version you want. <code>nave</code> is for launching subshells with the version you want loaded. n is for switching a single system-wide version of node.</p>
+<p><code>nvm</code> uses a <code>.nvmrc</code> file, which like <code>.ruby-version</code>, contains the version-ish string X you’d normally couple with <code>nvm use X</code> or <code>nvm install X</code>. <code>nvm use</code> or <code>nvm install</code> by itself will locate the <code>.nvmrc</code> file, as will simply sourcing <code>nvm</code> upon opening a new shell.</p>
+<p>It appears <code>nave</code> supports a <code>.naverc</code> file, but I’m not too familiar with its usage.</p>
+<p><code>n</code> doesn’t appear to support any such config, but as it’s system-wide, it doesn’t really make as much sense to do so.</p>
+<p><code>avn</code> supports <code>.node-version</code> and attempts to provide automatic version switching by hooking into <code>cd</code>, after <code>nvm</code> decided that was too invasive a behavior to include.</p>
+</blockquote>
+<h3 id="title-nvm"><code>nvm</code></h3>
+<p><a href="https://github.com/creationix/nhtml">creationix/nvm - github.com</a></p>
+<p><a href="https://gist.github.com/calendee/bb55962fd720a6dbeed6bf35697665html">NVM Automatic Switching : gist</a></p>
+<h3 id="title-n"><code>n</code></h3>
+<p><a href="https://github.com/tjhtml">tj/n - github.com</a></p>
+<blockquote>
+<p>Node.js version management: no subshells, no profile setup, no convoluted API, just simple.</p>
+</blockquote>
+<h4 id="title-usage">usage</h4>
+<p>Super easy but system wide.</p>
+<p>List installed version </p>
+<pre><code class="lang-bash">n</code></pre>
+<p>Output :</p>
+<pre><code class="lang-bash">  0.8.14
 ο 0.8.17
-  0.9.6</code></pre> <p>Change the active version by selecting the line and hit space bar.</p> <p>Install desired node version with <code>n &lt;version&gt;</code> ex <code>n 10.2.1</code>.</p> <h4 id="title-issues">issues</h4> <p>Possible issue with <code>npm</code>, any <code>npm</code> command will output this :</p> <pre><code class="lang-text">npm WARN lifecycle npm is using /home/&lt;HOME_DIR&gt;/n/bin/node but there is no node binary in the current PATH. Use the `--scripts-prepend-node-path` option to include the path for the node binary npm was executed with.</code></pre> <p>Fixed by adding a .npmrc file in the project root dir containing :</p> <pre><code class="lang-text">scripts-prepend-node-path=true</code></pre> <h3 id="title-node-package-with-npx"><code>node</code> package with <code>npx</code></h3> <p><a href="https://www.npmjs.com/package/nohtml">using a node package inside package.json</a></p> <blockquote> <p>cf <a href="https://twitter.com/maybekatz/status/9581574743971717html">tweet</a></p> </blockquote> <h2 id="title-app-structure">app structure</h2> <p><a href="https://www.youtube.com/watch?time_continue=1&v=Q9rS9e1KIhtml">STRUCTURER MA PREMIÈRE APPLICATION NODEJS - RemixJobs - François-Guillaume Ribreau et Julien Breux - 20160726</a></p> <blockquote> <ul> <li>DRY sur le config projet (eslint, code quality, etc …)</li> <li>automatisation des conventions</li> <li>12 factors</li> <li>logging</li> <li>swagger</li> <li>unit / functionnal testing</li> <li>CI (circle &amp; jenkins)</li> <li>deploy</li> <li>health checking</li> <li>métriques métiers</li> </ul> </blockquote> <p><a href="https://blog.codeship.com/advanced-node-js-project-structure-tutoriahtml">Advanced Node.js Project Structure Tutorial - 20180508</a></p> <h2 id="title-microservices">microservices</h2> <p><a href="https://blog.risingstack.com/top-nodejs-microservices-articles-risingstachtml">The Best Node.js &amp; Microservices Articles we Ever Wrote - blog.risingstack.com - 20180516</a></p> <p><a href="https://www.tutorialspoint.com/nodejs/nodejs_file_system.hhtml">Node.js - File System - www.tutorialspoint.com</a></p> <blockquote> <ul> <li>Synchronous vs Asynchronous</li> <li>Open a File</li> <li>Flags</li> <li>Get File Information</li> <li>Writing a File</li> <li>Reading a File</li> <li>Closing a File</li> <li>Truncate a File</li> <li>Delete a File</li> <li>Create a Directory</li> <li>Read a Directory</li> <li>Remove a Directory</li> </ul> </blockquote> </article></body></html>
+  0.9.6</code></pre>
+<p>Change the active version by selecting the line and hit space bar.</p>
+<p>Install desired node version with <code>n &lt;version&gt;</code> ex <code>n 10.2.1</code>.</p>
+<h4 id="title-issues">issues</h4>
+<p>Possible issue with <code>npm</code>, any <code>npm</code> command will output this :</p>
+<pre><code class="lang-text">npm WARN lifecycle npm is using /home/&lt;HOME_DIR&gt;/n/bin/node but there is no node binary in the current PATH. Use the `--scripts-prepend-node-path` option to include the path for the node binary npm was executed with.</code></pre>
+<p>Fixed by adding a .npmrc file in the project root dir containing :</p>
+<pre><code class="lang-text">scripts-prepend-node-path=true</code></pre>
+<h3 id="title-node-package-with-npx"><code>node</code> package with <code>npx</code></h3>
+<p><a href="https://www.npmjs.com/package/nohtml">using a node package inside package.json</a></p>
+<blockquote>
+<p>cf <a href="https://twitter.com/maybekatz/status/9581574743971717html">tweet</a></p>
+</blockquote>
+<h2 id="title-app-structure">app structure</h2>
+<p><a href="https://www.youtube.com/watch?time_continue=1&v=Q9rS9e1KIhtml">STRUCTURER MA PREMIÈRE APPLICATION NODEJS - RemixJobs - François-Guillaume Ribreau et Julien Breux - 20160726</a></p>
+<blockquote>
+<ul>
+<li>DRY sur le config projet (eslint, code quality, etc …)</li>
+<li>automatisation des conventions</li>
+<li>12 factors</li>
+<li>logging</li>
+<li>swagger</li>
+<li>unit / functionnal testing</li>
+<li>CI (circle &amp; jenkins)</li>
+<li>deploy</li>
+<li>health checking</li>
+<li>métriques métiers</li>
+</ul>
+</blockquote>
+<p><a href="https://blog.codeship.com/advanced-node-js-project-structure-tutoriahtml">Advanced Node.js Project Structure Tutorial - 20180508</a></p>
+<h2 id="title-microservices">microservices</h2>
+<p><a href="https://blog.risingstack.com/top-nodejs-microservices-articles-risingstachtml">The Best Node.js &amp; Microservices Articles we Ever Wrote - blog.risingstack.com - 20180516</a></p>
+<p><a href="https://www.tutorialspoint.com/nodejs/nodejs_file_system.hhtml">Node.js - File System - www.tutorialspoint.com</a></p>
+<blockquote>
+<ul>
+<li>Synchronous vs Asynchronous</li>
+<li>Open a File</li>
+<li>Flags</li>
+<li>Get File Information</li>
+<li>Writing a File</li>
+<li>Reading a File</li>
+<li>Closing a File</li>
+<li>Truncate a File</li>
+<li>Delete a File</li>
+<li>Create a Directory</li>
+<li>Read a Directory</li>
+<li>Remove a Directory</li>
+</ul>
+</blockquote>
+</article></body></html>

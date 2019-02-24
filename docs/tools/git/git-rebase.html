@@ -1,5 +1,15 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="main.cb64a04a.css" rel="stylesheet" media="all"><link href="github.51c27d45.css" rel="stylesheet"><script src="docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-git---rebase">git - rebase</h1> <h2 id="title-doc">doc</h2> <p><a href="http://git-scm.com/book/ch3-6.html#The-Perils-of-Rebasihtml">offical doc</a></p> <h2 id="title-usefull-commands-rebase">usefull commands rebase</h2> <pre><code># cancel a rebase
-git rebase --abort</code></pre><h2 id="title-article-rebase">Article rebase</h2> <p><a href="http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.hthtml">squashing commits with rebase</a></p> <p>The rebase command has some awesome options available in its <code>--interactive</code> (or <code>-i</code>) mode, and one of<br>the most widely used is the ability to squash commits. What this does is take smaller commits and<br>combine them into larger ones, which could be useful if you’re wrapping up the day’s work or if you<br>just want to package your changes differently. We’re going to go over how you can do this easily.</p> <p>A word of caution: <strong>Only do this on commits that haven’t been pushed an external repository</strong>. If others<br>have based work off of the commits that you’re going to delete, plenty of conflicts can occur.<br><strong>Just don’t rewrite your history if it’s been shared with others</strong>.</p> <p>So let’s say you’ve just made a few small commits, and you want to make one larger commit out of them.<br>Our repository’s history currently looks like this:</p> <p>The last 4 commits would be much happier if they were wrapped up together, so let’s do just that through<br>interactive rebasing:</p> <pre><code>$ git rebase -i HEAD~4
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../github-markdown.css" rel="stylesheet" media="all"><link href="../../main.css" rel="stylesheet" media="all"><link href="../../github.css" rel="stylesheet"><script src="../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-git---rebase">git - rebase</h1>
+<h2 id="title-doc">doc</h2>
+<p><a href="http://git-scm.com/book/ch3-6.html#The-Perils-of-Rebasihtml">offical doc</a></p>
+<h2 id="title-usefull-commands-rebase">usefull commands rebase</h2>
+<pre><code># cancel a rebase
+git rebase --abort</code></pre><h2 id="title-article-rebase">Article rebase</h2>
+<p><a href="http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.hthtml">squashing commits with rebase</a></p>
+<p>The rebase command has some awesome options available in its <code>--interactive</code> (or <code>-i</code>) mode, and one of<br>the most widely used is the ability to squash commits. What this does is take smaller commits and<br>combine them into larger ones, which could be useful if you’re wrapping up the day’s work or if you<br>just want to package your changes differently. We’re going to go over how you can do this easily.</p>
+<p>A word of caution: <strong>Only do this on commits that haven’t been pushed an external repository</strong>. If others<br>have based work off of the commits that you’re going to delete, plenty of conflicts can occur.<br><strong>Just don’t rewrite your history if it’s been shared with others</strong>.</p>
+<p>So let’s say you’ve just made a few small commits, and you want to make one larger commit out of them.<br>Our repository’s history currently looks like this:</p>
+<p>The last 4 commits would be much happier if they were wrapped up together, so let’s do just that through<br>interactive rebasing:</p>
+<pre><code>$ git rebase -i HEAD~4
 
 pick 01d1124 Adding license
 pick 6340aaa Moving license into its own file
@@ -15,10 +25,12 @@ pick 30e0ccb Changed the tagline in the binary, too.
 #
 # If you remove a line here THAT COMMIT WILL BE LOST.
 # However, if you remove everything, the rebase will be aborted.
-#</code></pre><p>So, a few things have happened here. First of all, I told Git that I wanted to rebase using the<br>last four commits from where the <code>HEAD</code> is with <code>HEAD~4</code>. Git has now put me into an editor with<br>the above text in it, and a little explanation of what can be done. You have plenty of options<br>available to you from this screen, but right now we’re just going to squash everything into one commit.<br>So, changing the first four lines of the file to this will do the trick:</p> <pre><code>pick 01d1124 Adding license
+#</code></pre><p>So, a few things have happened here. First of all, I told Git that I wanted to rebase using the<br>last four commits from where the <code>HEAD</code> is with <code>HEAD~4</code>. Git has now put me into an editor with<br>the above text in it, and a little explanation of what can be done. You have plenty of options<br>available to you from this screen, but right now we’re just going to squash everything into one commit.<br>So, changing the first four lines of the file to this will do the trick:</p>
+<pre><code>pick 01d1124 Adding license
 squash 6340aaa Moving license into its own file
 squash ebfd367 Jekyll has become self-aware.
-squash 30e0ccb Changed the tagline in the binary, too.</code></pre><p>Basically this tells Git to combine all four commits into the the first commit in the list.<br>Once this is done and saved, another editor pops up with the following:</p> <pre><code># This is a combination of 4 commits.
+squash 30e0ccb Changed the tagline in the binary, too.</code></pre><p>Basically this tells Git to combine all four commits into the the first commit in the list.<br>Once this is done and saved, another editor pops up with the following:</p>
+<pre><code># This is a combination of 4 commits.
 # The first commit&#39;s message is:
 Adding license
 
@@ -45,11 +57,32 @@ Changed the tagline in the binary, too.
 #    modified:   README.textile
 #    modified:   Rakefile
 #    modified:   bin/jekyll
-#</code></pre><p>Since we’re combining so many commits, Git allows you to modify the new commit’s message<br>based on the rest of the commits involved in the process. Edit the message as you see fit,<br>then save and quit. Once that’s done, your commits have been successfully squashed!</p> <pre><code>Created commit 0fc4eea: Creating license file, and making jekyll self-aware.
+#</code></pre><p>Since we’re combining so many commits, Git allows you to modify the new commit’s message<br>based on the rest of the commits involved in the process. Edit the message as you see fit,<br>then save and quit. Once that’s done, your commits have been successfully squashed!</p>
+<pre><code>Created commit 0fc4eea: Creating license file, and making jekyll self-aware.
  4 files changed, 27 insertions(+), 30 deletions(-)
   create mode 100644 LICENSE
-    Successfully rebased and updated refs/heads/master.</code></pre><p>And if we look at the history again…</p> <p>So, this has been a relatively painless so far. If you run into conflicts during the rebase,<br>they’re usually quite easy to resolve and Git leads you through as much as possible.<br>The basics of this is fix the conflict in question, git add the file, and then <code>git rebase --continue</code><br>will resume the process. Of course, doing a <code>git rebase --abort</code> will bring you back to your previous state<br>if you want. If for some reason you’ve lost a commit in the rebase, you can use the reflog to get it back.<br><a href="http://gitready.com/intermediate/2009/02/09/reflog-your-safety-net.hthtml">reflog tutorial</a></p> <p>There’s plenty of other uses for <code>git rebase -i</code> that haven’t been covered yet.<br>If you have one you’d like to share, please do so! GitCasts also has a fantastic video on this process<br>as a whole that also covers some more complex examples of the command.<br><a href="http://gitcasts.cohtml">gitcasts</a><br><a href="http://gitcasts.com/posts/rebasihtml">videos</a></p> <h2 id="title-rebase-for-renaming">rebase for renaming</h2> <p>Exemple, rebasing 2 lasts commits to rename commit message. Theses commits contains a <code>#</code> for github/gitlab issue linking.</p> <p><code>git rebase -i HEAD~2</code></p> <p>then use <code>edit</code> (and not <code>reword</code>) command.</p> <p>The rebase will stop at each commit. You will be able to use :</p> <p><code>git commit --amend -m &quot;#&lt;issue_number&gt; &lt;your_commit_message&gt;&quot;</code></p> <p>then the classical</p> <p><code>git rebase --continue</code></p> <h2 id="title-rebase-to-split-a-commit-into-several-commits">rebase to split a commit into several commits</h2> <p>from <a href="https://emmanuelbernard.com/blog/2014/04/14/split-a-commit-in-two-with-gihtml">Emmanuel Bernard blog - Split a commit in two with Git - 20140414</a></p> <p>L’idée est donc de créer un ou plusieurs commits pendant l’édition du commit à split lors du rebase intéractif. En bout de ligne cela donne le commit initial dont on sort les éléments que l’on veut mettre dans un nouveau commit. Le commit initial est recréé en premier et le résultat du split est créé ensuite.</p> <p><code>git rebase -i &lt;oldsha1&gt;</code> ou <code>git rebase -i HEAD~3</code> pour agir sur un ou plusieurs des 3 derniers commits.</p> <p>Lors du rebase intéractif, marquer le commit à split à <code>edit</code>.</p> <p><code>git reset HEAD^</code> a pour effet de sortir toutes les modifications du commit de l’index.</p> <p>On peut aussi utiliser <code>git reset --soft HEAD^</code>, les modifications restent alors indexées, et il est alors possible de ne sortir de l’index que les fichiers voulus via <code>git reset HEAD &lt;file&gt;</code></p> <p>Reste ensuite à créer les nouveaux commits.</p> <pre><code class="lang-bash">git add ...
+    Successfully rebased and updated refs/heads/master.</code></pre><p>And if we look at the history again…</p>
+<p>So, this has been a relatively painless so far. If you run into conflicts during the rebase,<br>they’re usually quite easy to resolve and Git leads you through as much as possible.<br>The basics of this is fix the conflict in question, git add the file, and then <code>git rebase --continue</code><br>will resume the process. Of course, doing a <code>git rebase --abort</code> will bring you back to your previous state<br>if you want. If for some reason you’ve lost a commit in the rebase, you can use the reflog to get it back.<br><a href="http://gitready.com/intermediate/2009/02/09/reflog-your-safety-net.hthtml">reflog tutorial</a></p>
+<p>There’s plenty of other uses for <code>git rebase -i</code> that haven’t been covered yet.<br>If you have one you’d like to share, please do so! GitCasts also has a fantastic video on this process<br>as a whole that also covers some more complex examples of the command.<br><a href="http://gitcasts.cohtml">gitcasts</a><br><a href="http://gitcasts.com/posts/rebasihtml">videos</a></p>
+<h2 id="title-rebase-for-renaming">rebase for renaming</h2>
+<p>Exemple, rebasing 2 lasts commits to rename commit message. Theses commits contains a <code>#</code> for github/gitlab issue linking.</p>
+<p><code>git rebase -i HEAD~2</code></p>
+<p>then use <code>edit</code> (and not <code>reword</code>) command.</p>
+<p>The rebase will stop at each commit. You will be able to use :</p>
+<p><code>git commit --amend -m &quot;#&lt;issue_number&gt; &lt;your_commit_message&gt;&quot;</code></p>
+<p>then the classical</p>
+<p><code>git rebase --continue</code></p>
+<h2 id="title-rebase-to-split-a-commit-into-several-commits">rebase to split a commit into several commits</h2>
+<p>from <a href="https://emmanuelbernard.com/blog/2014/04/14/split-a-commit-in-two-with-gihtml">Emmanuel Bernard blog - Split a commit in two with Git - 20140414</a></p>
+<p>L’idée est donc de créer un ou plusieurs commits pendant l’édition du commit à split lors du rebase intéractif. En bout de ligne cela donne le commit initial dont on sort les éléments que l’on veut mettre dans un nouveau commit. Le commit initial est recréé en premier et le résultat du split est créé ensuite.</p>
+<p><code>git rebase -i &lt;oldsha1&gt;</code> ou <code>git rebase -i HEAD~3</code> pour agir sur un ou plusieurs des 3 derniers commits.</p>
+<p>Lors du rebase intéractif, marquer le commit à split à <code>edit</code>.</p>
+<p><code>git reset HEAD^</code> a pour effet de sortir toutes les modifications du commit de l’index.</p>
+<p>On peut aussi utiliser <code>git reset --soft HEAD^</code>, les modifications restent alors indexées, et il est alors possible de ne sortir de l’index que les fichiers voulus via <code>git reset HEAD &lt;file&gt;</code></p>
+<p>Reste ensuite à créer les nouveaux commits.</p>
+<pre><code class="lang-bash">git add ...
 git commit -m &quot;First part&quot;
 git add ...
 git commit -m &quot;Second part&quot;
-git rebase --continue</code></pre> </article></body></html>
+git rebase --continue</code></pre>
+</article></body></html>

@@ -1,1 +1,47 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="main.cb64a04a.css" rel="stylesheet" media="all"><link href="github.51c27d45.css" rel="stylesheet"><script src="docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-compilateur">Compilateur</h1> <h2 id="title-définitions">Définitions</h2> <p><a href="https://fr.wikipedia.org/wiki/Compilatehtml">Compilateur - fr.wikipedia.org</a></p> <blockquote> <p>Un compilateur est un programme qui transforme un code source écrit dans un langage de programmation (le langage source) en un autre langage informatique (appelé langage cible)</p> <p>Pour qu’il puisse être exploité par une machine, le compilateur traduit le code source, écrit dans un langage de haut niveau d’abstraction, facilement compréhensible par l’humain, vers un langage de plus bas niveau, un langage d’assemblage ou langage machine.</p> <p>Inversement, un programme qui traduit un langage de bas niveau vers un langage de plus haut niveau est un décompilateur. </p> </blockquote> <p><a href="https://fr.wikipedia.org/wiki/Langage_machihtml">Langage machine</a></p> <blockquote> <p>C’est le langage natif d’un processeur, c’est-à-dire le seul qu’il puisse traiter. Il est composé d’instructions et de données à traiter codées en binaire. </p> </blockquote> <h2 id="title-présentation-générale">Présentation générale</h2> <p>Les étapes de la compilation incluent :</p> <ul> <li>le <strong>prétraitement</strong>, nécessaire pour certains langages comme C, qui prend en charge la substitution de macro et de la compilation conditionnelle.</li> <li>l’<strong>analyse lexicale</strong>, qui découpe le code source en petits morceaux appelés jetons (tokens).</li> <li>l’<strong>analyse syntaxique</strong> implique l’analyse de la séquence jeton pour identifier la structure syntaxique du programme.</li> <li>l’<strong>analyse sémantique</strong> est la phase durant laquelle le compilateur ajoute des informations sémantiques à l’arbre d’analyse et construit la table des symboles.</li> <li>la <strong>transformation</strong> du code source en code intermédiaire ;</li> <li>l’application de techniques d’<strong>optimisation sur le code intermédiaire</strong> : c’est-à-dire rendre le programme « meilleur » selon son usage (voir infra) ;</li> <li>la <strong>génération de code</strong> avec l’allocation de registres et la traduction du code intermédiaire en code objet, avec éventuellement l’insertion de données de débogage et d’analyse de l’exécution ;</li> <li>l’<strong>édition des liens</strong>.</li> </ul> <h2 id="title-lever-vs-parser">Lever vs Parser</h2> <p><a href="http://savage.net.au/Ron/html/graphviz2.marpa/Lexing.and.Parsing.Overview.hthtml">An Overview of Lexing and Parsing - savage.net.au</a></p> <p>Same at <a href="https://www.perl.com/pub/2012/10/an-overview-of-lexing-and-parsing.htmhtml">An Overview of Lexing and Parsing - www.perl.com</a></p> <p><a href="https://stackoverflow.com/questions/2842809/lexers-vs-parsehtml">lexers vs parsers - stackoverflow.com</a></p> <p>Lexer synonyms : tokenizer, scanner, …</p> <h2 id="title-compiler-vs-transpiler">Compiler vs Transpiler</h2> <p><a href="https://stackoverflow.com/questions/40605642/what-is-the-main-difference-between-compiler-and-transpilhtml">What is the main difference between Compiler and Transpiler - stackoverflow.com</a></p> <blockquote> <p><strong>Compiler</strong> - compiles code to a lower level code.</p> <p>Example:</p> <ul> <li>“Developer code” -&gt; “Machine code”</li> <li>PHP -&gt; C</li> <li>Java -&gt; bytecode</li> </ul> <p><strong>Transpiler</strong> - compiles code to same level of code/abstraction.</p> <p>Example:</p> <ul> <li>“Developer code” -&gt; “Another developer code or version”</li> <li>JavaScript ES2015+ -&gt; JavaScript ES5</li> </ul> </blockquote> </article></body></html>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../github-markdown.css" rel="stylesheet" media="all"><link href="../main.css" rel="stylesheet" media="all"><link href="../github.css" rel="stylesheet"><script src="../index.js"></script></head><body><article class="markdown-body"><h1 id="title-compilateur">Compilateur</h1>
+<h2 id="title-définitions">Définitions</h2>
+<p><a href="https://fr.wikipedia.org/wiki/Compilatehtml">Compilateur - fr.wikipedia.org</a></p>
+<blockquote>
+<p>Un compilateur est un programme qui transforme un code source écrit dans un langage de programmation (le langage source) en un autre langage informatique (appelé langage cible)</p>
+<p>Pour qu’il puisse être exploité par une machine, le compilateur traduit le code source, écrit dans un langage de haut niveau d’abstraction, facilement compréhensible par l’humain, vers un langage de plus bas niveau, un langage d’assemblage ou langage machine.</p>
+<p>Inversement, un programme qui traduit un langage de bas niveau vers un langage de plus haut niveau est un décompilateur. </p>
+</blockquote>
+<p><a href="https://fr.wikipedia.org/wiki/Langage_machihtml">Langage machine</a></p>
+<blockquote>
+<p>C’est le langage natif d’un processeur, c’est-à-dire le seul qu’il puisse traiter. Il est composé d’instructions et de données à traiter codées en binaire. </p>
+</blockquote>
+<h2 id="title-présentation-générale">Présentation générale</h2>
+<p>Les étapes de la compilation incluent :</p>
+<ul>
+<li>le <strong>prétraitement</strong>, nécessaire pour certains langages comme C, qui prend en charge la substitution de macro et de la compilation conditionnelle.</li>
+<li>l’<strong>analyse lexicale</strong>, qui découpe le code source en petits morceaux appelés jetons (tokens).</li>
+<li>l’<strong>analyse syntaxique</strong> implique l’analyse de la séquence jeton pour identifier la structure syntaxique du programme.</li>
+<li>l’<strong>analyse sémantique</strong> est la phase durant laquelle le compilateur ajoute des informations sémantiques à l’arbre d’analyse et construit la table des symboles.</li>
+<li>la <strong>transformation</strong> du code source en code intermédiaire ;</li>
+<li>l’application de techniques d’<strong>optimisation sur le code intermédiaire</strong> : c’est-à-dire rendre le programme « meilleur » selon son usage (voir infra) ;</li>
+<li>la <strong>génération de code</strong> avec l’allocation de registres et la traduction du code intermédiaire en code objet, avec éventuellement l’insertion de données de débogage et d’analyse de l’exécution ;</li>
+<li>l’<strong>édition des liens</strong>.</li>
+</ul>
+<h2 id="title-lever-vs-parser">Lever vs Parser</h2>
+<p><a href="http://savage.net.au/Ron/html/graphviz2.marpa/Lexing.and.Parsing.Overview.hthtml">An Overview of Lexing and Parsing - savage.net.au</a></p>
+<p>Same at <a href="https://www.perl.com/pub/2012/10/an-overview-of-lexing-and-parsing.htmhtml">An Overview of Lexing and Parsing - www.perl.com</a></p>
+<p><a href="https://stackoverflow.com/questions/2842809/lexers-vs-parsehtml">lexers vs parsers - stackoverflow.com</a></p>
+<p>Lexer synonyms : tokenizer, scanner, …</p>
+<h2 id="title-compiler-vs-transpiler">Compiler vs Transpiler</h2>
+<p><a href="https://stackoverflow.com/questions/40605642/what-is-the-main-difference-between-compiler-and-transpilhtml">What is the main difference between Compiler and Transpiler - stackoverflow.com</a></p>
+<blockquote>
+<p><strong>Compiler</strong> - compiles code to a lower level code.</p>
+<p>Example:</p>
+<ul>
+<li>“Developer code” -&gt; “Machine code”</li>
+<li>PHP -&gt; C</li>
+<li>Java -&gt; bytecode</li>
+</ul>
+<p><strong>Transpiler</strong> - compiles code to same level of code/abstraction.</p>
+<p>Example:</p>
+<ul>
+<li>“Developer code” -&gt; “Another developer code or version”</li>
+<li>JavaScript ES2015+ -&gt; JavaScript ES5</li>
+</ul>
+</blockquote>
+</article></body></html>

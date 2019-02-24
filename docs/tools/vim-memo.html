@@ -1,1 +1,57 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="main.cb64a04a.css" rel="stylesheet" media="all"><link href="github.51c27d45.css" rel="stylesheet"><script src="docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-vim-memo">VIM memo</h1> <p><a href="http://www.catswhocode.com/blog/100-vim-commands-every-programmer-should-knhtml">vim commands list</a><br><a href="http://www.fprintf.net/vimCheatSheet.hthtml">vim cheat sheet</a></p> <h2 id="title-copy-and-paste">copy and paste</h2> <ul> <li><code>dd</code> cut the line where the cursor is</li> <li><code>p</code> paste the text after the line where the cursor is</li> </ul> <h2 id="title-how-to-exit">How to Exit</h2> <ul> <li><code>:q[uit]</code> Quit Vim. This fails when changes have been made.</li> <li><code>:q[uit]!</code> Quit without writing.</li> <li><code>:cq[uit]</code> Quit always, without writing.</li> <li><code>:wq</code> Write the current file and exit.</li> <li><code>:wq!</code> Write the current file and exit always.</li> <li><code>:wq {file}</code> Write to {file}. Exit if not editing the last</li> <li><code>:wq! {file}</code> Write to {file} and exit always.</li> <li><code>:[range]wq[!] [file]</code> Same as above, but only write the lines in [range].</li> <li><code>ZZ</code> Write current file, if modified, and exit.</li> <li><code>ZQ</code> Quit current file and exit (same as “:q!”).</li> </ul> <h2 id="title-editing-a-file">Editing a File</h2> <ul> <li><code>:e[dit]</code> Edit the current file. This is useful to re-edit the current file, when it has been changed outside of Vim.</li> <li><code>:e[dit]!</code> Edit the current file always. Discard any changes to the current buffer. This is useful if you want to start all over again.</li> <li><code>:e[dit] {file}</code> Edit {file}.</li> <li><code>:e[dit]! {file}</code> Edit {file} always. Discard any changes to the current buffer.</li> <li><code>gf</code> Edit the file whose name is under or after the cursor. Mnemonic: “goto file”.</li> </ul> <h2 id="title-inserting-text">Inserting Text</h2> <ul> <li><code>a</code> Append text after the cursor [count] times.</li> <li><code>A</code> Append text at the end of the line [count] times.</li> <li><code>i</code> Insert text before the cursor [count] times.</li> <li><code>I</code> Insert text before the first non-blank in the line [count] times.</li> <li><code>gI</code> Insert text in column 1 [count] times.</li> <li><code>o</code> Begin a new line below the cursor and insert text, repeat [count] times.</li> <li><code>O</code> Begin a new line above the cursor and insert text, repeat [count] times.</li> </ul> <h2 id="title-inserting-a-file">Inserting a file</h2> <ul> <li><code>:r[ead] [name]</code> Insert the file [name] below the cursor.</li> <li><code>:r[ead] !{cmd}</code> Execute {cmd} and insert its standard output below the cursor.</li> </ul> <h2 id="title-deleting-text">Deleting Text</h2> <ul> <li><code>&lt;Del&gt;</code> or<br><code>x</code> Delete [count] characters under and after the cursor</li> <li><code>X</code> Delete [count] characters before the cursor</li> <li><code>d{motion}</code> Delete text that {motion} moves over</li> <li><code>dd</code> Delete [count] lines</li> <li><code>D</code> Delete the characters under the cursor until the end of the line</li> <li><code>{Visual}x</code> or<br><code>{Visual}d</code> Delete the highlighted text (for {Visual} see Selecting Text).</li> <li><code>{Visual}CTRL-H</code> or<br><code>{Visual}</code> When in Select mode: Delete the highlighted text</li> <li><code>{Visual}X</code> or<br><code>{Visual}D</code> Delete the highlighted lines</li> <li><code>:[range]d[elete]</code> Delete [range] lines (default: current line)</li> <li><code>:[range]d[elete] {count}</code> Delete {count} lines, starting with [range]</li> </ul> </article></body></html>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../github-markdown.css" rel="stylesheet" media="all"><link href="../main.css" rel="stylesheet" media="all"><link href="../github.css" rel="stylesheet"><script src="../index.js"></script></head><body><article class="markdown-body"><h1 id="title-vim-memo">VIM memo</h1>
+<p><a href="http://www.catswhocode.com/blog/100-vim-commands-every-programmer-should-knhtml">vim commands list</a><br><a href="http://www.fprintf.net/vimCheatSheet.hthtml">vim cheat sheet</a></p>
+<h2 id="title-copy-and-paste">copy and paste</h2>
+<ul>
+<li><code>dd</code>  cut the line where the cursor is</li>
+<li><code>p</code>  paste the text after the line where the cursor is</li>
+</ul>
+<h2 id="title-how-to-exit">How to Exit</h2>
+<ul>
+<li><code>:q[uit]</code>     Quit Vim. This fails when changes have been made.</li>
+<li><code>:q[uit]!</code>     Quit without writing.</li>
+<li><code>:cq[uit]</code>     Quit always, without writing.</li>
+<li><code>:wq</code>     Write the current file and exit.</li>
+<li><code>:wq!</code>     Write the current file and exit always.</li>
+<li><code>:wq {file}</code>     Write to {file}. Exit if not editing the last</li>
+<li><code>:wq! {file}</code>     Write to {file} and exit always.</li>
+<li><code>:[range]wq[!]     [file]</code> Same as above, but only write the lines in [range].</li>
+<li><code>ZZ</code>     Write current file, if modified, and exit.</li>
+<li><code>ZQ</code>     Quit current file and exit (same as “:q!”).</li>
+</ul>
+<h2 id="title-editing-a-file">Editing a File</h2>
+<ul>
+<li><code>:e[dit]</code>     Edit the current file. This is useful to re-edit the current file, when it has been changed outside of Vim.</li>
+<li><code>:e[dit]!</code>     Edit the current file always. Discard any changes to the current buffer. This is useful if you want to start all over again.</li>
+<li><code>:e[dit] {file}</code>     Edit {file}.</li>
+<li><code>:e[dit]! {file}</code>     Edit {file} always. Discard any changes to the current buffer.</li>
+<li><code>gf</code>     Edit the file whose name is under or after the cursor. Mnemonic: “goto file”.</li>
+</ul>
+<h2 id="title-inserting-text">Inserting Text</h2>
+<ul>
+<li><code>a</code>     Append text after the cursor [count] times.</li>
+<li><code>A</code>     Append text at the end of the line [count] times.</li>
+<li><code>i</code>     Insert text before the cursor [count] times.</li>
+<li><code>I</code>     Insert text before the first non-blank in the line [count] times.</li>
+<li><code>gI</code>     Insert text in column 1 [count] times.</li>
+<li><code>o</code>     Begin a new line below the cursor and insert text, repeat [count] times.</li>
+<li><code>O</code>     Begin a new line above the cursor and insert text, repeat [count] times.</li>
+</ul>
+<h2 id="title-inserting-a-file">Inserting a file</h2>
+<ul>
+<li><code>:r[ead] [name]</code>     Insert the file [name] below the cursor.</li>
+<li><code>:r[ead] !{cmd}</code>     Execute {cmd} and insert its standard output below the cursor.</li>
+</ul>
+<h2 id="title-deleting-text">Deleting Text</h2>
+<ul>
+<li><code>&lt;Del&gt;</code> or<br><code>x</code>     Delete [count] characters under and after the cursor</li>
+<li><code>X</code>     Delete [count] characters before the cursor</li>
+<li><code>d{motion}</code>     Delete text that {motion} moves over</li>
+<li><code>dd</code>     Delete [count] lines</li>
+<li><code>D</code>     Delete the characters under the cursor until the end of the line</li>
+<li><code>{Visual}x</code> or<br><code>{Visual}d</code>     Delete the highlighted text (for {Visual} see Selecting Text).</li>
+<li><code>{Visual}CTRL-H</code> or<br><code>{Visual}</code>     When in Select mode: Delete the highlighted text</li>
+<li><code>{Visual}X</code> or<br><code>{Visual}D</code>     Delete the highlighted lines</li>
+<li><code>:[range]d[elete]</code>     Delete [range] lines (default: current line)</li>
+<li><code>:[range]d[elete] {count}</code>     Delete {count} lines, starting with [range]</li>
+</ul>
+</article></body></html>

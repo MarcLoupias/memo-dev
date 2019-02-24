@@ -1,4 +1,11 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="main.cb64a04a.css" rel="stylesheet" media="all"><link href="github.51c27d45.css" rel="stylesheet"><script src="docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-js---closures">js - closures</h1> <h2 id="title-definition">definition</h2> <p><a href="https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41html">The Two Pillars of JavaScript — Pt 2: Functional Programming</a></p> <p>Like objects, closures are a mechanism for containing state. </p> <p>In JavaScript, <strong>a closure is created whenever a function accesses a variable defined outside the immediate function scope</strong>. </p> <p>It’s easy to create closures: Simply define a function inside another function, and expose the inner function, either<br>by returning it, or passing it into another function. The variables used by the inner function will be available to it,<br>even after the outer function has finished running.</p> <p>You can use closures to create data privacy in JavaScript using a factory function:</p> <pre><code class="lang-javascript">var counter = function counter() {
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../github-markdown.css" rel="stylesheet" media="all"><link href="../../main.css" rel="stylesheet" media="all"><link href="../../github.css" rel="stylesheet"><script src="../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-js---closures">js - closures</h1>
+<h2 id="title-definition">definition</h2>
+<p><a href="https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41html">The Two Pillars of JavaScript — Pt 2: Functional Programming</a></p>
+<p>Like objects, closures are a mechanism for containing state. </p>
+<p>In JavaScript, <strong>a closure is created whenever a function accesses a variable defined outside the immediate function scope</strong>. </p>
+<p>It’s easy to create closures: Simply define a function inside another function, and expose the inner function, either<br>by returning it, or passing it into another function. The variables used by the inner function will be available to it,<br>even after the outer function has finished running.</p>
+<p>You can use closures to create data privacy in JavaScript using a factory function:</p>
+<pre><code class="lang-javascript">var counter = function counter() {
   var count = 0;
   return {
     getCount: function getCount() {
@@ -8,7 +15,12 @@
       count += 1;
     }
   };
-};</code></pre> <h2 id="title-examples">examples</h2> <p><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Closurhtml">Closures : developer.mozilla.org</a></p> <h3 id="title-lexical-scoping">lexical scoping</h3> <p>Nested functions have access to variables declared in their outer scope.</p> <pre><code class="lang-javascript">function init() {
+};</code></pre>
+<h2 id="title-examples">examples</h2>
+<p><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Closurhtml">Closures : developer.mozilla.org</a></p>
+<h3 id="title-lexical-scoping">lexical scoping</h3>
+<p>Nested functions have access to variables declared in their outer scope.</p>
+<pre><code class="lang-javascript">function init() {
   var name = &#39;Mozilla&#39;; // name is a local variable created by init
   function displayName() { // displayName() is the inner function, a closure
     alert(name); // use variable declared in the parent function    
@@ -17,7 +29,9 @@
 }
 init();
 
-// will print &#39;Mozilla&#39; in an alert box</code></pre> <h3 id="title-closure---simple-example">closure - simple example</h3> <pre><code class="lang-javascript">function makeFunc() {
+// will print &#39;Mozilla&#39; in an alert box</code></pre>
+<h3 id="title-closure---simple-example">closure - simple example</h3>
+<pre><code class="lang-javascript">function makeFunc() {
   var name = &#39;Mozilla&#39;;
   function displayName() {
     alert(name);
@@ -26,7 +40,15 @@ init();
 }
 
 var myFunc = makeFunc();
-myFunc();</code></pre> <p>Running this code has exactly the same effect as the previous example.</p> <p>May seem unintuitive that this code still works. In some programming languages, the local variables within a function<br>exist only for the duration of that function’s execution.</p> <p>However, because the code still works as expected, this is obviously not the case in JavaScript.</p> <p>The reason is that functions in JavaScript form closures. A closure is the combination of a function and the lexical<br>environment within which that function was declared.</p> <p><code>myFunc</code> is a reference to the instance of the function <code>displayName</code> created when <code>makeFunc</code> is run. </p> <p>The instance of <code>displayName</code> maintains a reference to its lexical environment, within which the variable <code>name</code> exists.</p> <h3 id="title-closure---deeper-example">closure - deeper example</h3> <pre><code class="lang-javascript">function makeAdder(x) {
+myFunc();</code></pre>
+<p>Running this code has exactly the same effect as the previous example.</p>
+<p>May seem unintuitive that this code still works. In some programming languages, the local variables within a function<br>exist only for the duration of that function’s execution.</p>
+<p>However, because the code still works as expected, this is obviously not the case in JavaScript.</p>
+<p>The reason is that functions in JavaScript form closures. A closure is the combination of a function and the lexical<br>environment within which that function was declared.</p>
+<p><code>myFunc</code> is a reference to the instance of the function <code>displayName</code> created when <code>makeFunc</code> is run. </p>
+<p>The instance of <code>displayName</code> maintains a reference to its lexical environment, within which the variable <code>name</code> exists.</p>
+<h3 id="title-closure---deeper-example">closure - deeper example</h3>
+<pre><code class="lang-javascript">function makeAdder(x) {
   return function(y) {
     return x + y;
   };
@@ -36,7 +58,16 @@ var add5 = makeAdder(5);
 var add10 = makeAdder(10);
 
 console.log(add5(2));  // 7
-console.log(add10(2)); // 12</code></pre> <p><code>makeAdder</code> is a function factory ; it creates functions which can add a specific value to their argument.</p> <p><code>add5</code> and <code>add10</code> are both closures. </p> <p>They share the <strong>same function body definition</strong>, but store <strong>different lexical environments</strong>. </p> <p>In <code>add5</code>‘s lexical environment, <code>x</code> is <code>5</code>, while in the lexical environment for <code>add10</code>, <code>x</code> is <code>10</code>.</p> <h3 id="title-closure---practical-example">closure - practical example</h3> <p>Closures are useful because they let you associate some data (the lexical environment) with a function that operates on that data.</p> <p>Consequently, you can use a closure anywhere that you might normally use an object with only a single method.</p> <p>For instance, suppose we wish to add some buttons to a page that adjust the text size.<br>One way of doing this is to specify the font-size of the body element in pixels, then set the size of the other elements<br>on the page (such as headers) using the relative <code>em</code> unit.</p> <pre><code class="lang-css">body {
+console.log(add10(2)); // 12</code></pre>
+<p><code>makeAdder</code> is a function factory ; it creates functions which can add a specific value to their argument.</p>
+<p><code>add5</code> and <code>add10</code> are both closures. </p>
+<p>They share the <strong>same function body definition</strong>, but store <strong>different lexical environments</strong>. </p>
+<p>In <code>add5</code>‘s lexical environment, <code>x</code> is <code>5</code>, while in the lexical environment for <code>add10</code>, <code>x</code> is <code>10</code>.</p>
+<h3 id="title-closure---practical-example">closure - practical example</h3>
+<p>Closures are useful because they let you associate some data (the lexical environment) with a function that operates on that data.</p>
+<p>Consequently, you can use a closure anywhere that you might normally use an object with only a single method.</p>
+<p>For instance, suppose we wish to add some buttons to a page that adjust the text size.<br>One way of doing this is to specify the font-size of the body element in pixels, then set the size of the other elements<br>on the page (such as headers) using the relative <code>em</code> unit.</p>
+<pre><code class="lang-css">body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
@@ -47,7 +78,8 @@ h1 {
 
 h2 {
   font-size: 1.2em;
-}</code></pre> <pre><code class="lang-javascript">function makeSizer(size) {
+}</code></pre>
+<pre><code class="lang-javascript">function makeSizer(size) {
   return function() {
     document.body.style.fontSize = size + &#39;px&#39;;
   };
@@ -59,13 +91,22 @@ var size16 = makeSizer(16);
 
 document.getElementById(&#39;size-12&#39;).onclick = size12;
 document.getElementById(&#39;size-14&#39;).onclick = size14;
-document.getElementById(&#39;size-16&#39;).onclick = size16;</code></pre> <pre><code class="lang-html">&lt;p&gt;Some paragraph text&lt;/p&gt;
+document.getElementById(&#39;size-16&#39;).onclick = size16;</code></pre>
+<pre><code class="lang-html">&lt;p&gt;Some paragraph text&lt;/p&gt;
 &lt;h1&gt;some heading 1 text&lt;/h1&gt;
 &lt;h2&gt;some heading 2 text&lt;/h2&gt;
 
 &lt;a href=&quot;#&quot; id=&quot;size-12&quot;&gt;12&lt;/a&gt;
 &lt;a href=&quot;#&quot; id=&quot;size-14&quot;&gt;14&lt;/a&gt;
-&lt;a href=&quot;#&quot; id=&quot;size-16&quot;&gt;16&lt;/a&gt;</code></pre> <p>A click on 14 link will change the base <code>font-size</code> to <code>14px</code>, then <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code> will resize accordingly.</p> <h3 id="title-closure---emulating-private-methods">closure - emulating private methods</h3> <p>Using closures in this way is known as <strong>the module pattern</strong> :</p> <p>We create a single lexical environment that is shared by three functions:<br><code>counter.increment</code>, <code>counter.decrement</code>, and <code>counter.value</code>.</p> <p>The shared lexical environment is created in the body of an anonymous function, which is executed as soon as it has been defined.</p> <p>The lexical environment contains two private items: a variable called <code>privateCounter</code> and a function called <code>changeBy</code>.</p> <p>Those three public functions are closures that share the same environment.</p> <pre><code class="lang-javascript">var counter = (function() {
+&lt;a href=&quot;#&quot; id=&quot;size-16&quot;&gt;16&lt;/a&gt;</code></pre>
+<p>A click on 14 link will change the base <code>font-size</code> to <code>14px</code>, then <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code> will resize accordingly.</p>
+<h3 id="title-closure---emulating-private-methods">closure - emulating private methods</h3>
+<p>Using closures in this way is known as <strong>the module pattern</strong> :</p>
+<p>We create a single lexical environment that is shared by three functions:<br><code>counter.increment</code>, <code>counter.decrement</code>, and <code>counter.value</code>.</p>
+<p>The shared lexical environment is created in the body of an anonymous function, which is executed as soon as it has been defined.</p>
+<p>The lexical environment contains two private items: a variable called <code>privateCounter</code> and a function called <code>changeBy</code>.</p>
+<p>Those three public functions are closures that share the same environment.</p>
+<pre><code class="lang-javascript">var counter = (function() {
   var privateCounter = 0;
   function changeBy(val) {
     privateCounter += val;
@@ -88,7 +129,9 @@ counter.increment();
 counter.increment();
 console.log(counter.value()); // logs 2
 counter.decrement();
-console.log(counter.value()); // logs 1</code></pre> <p>We could store this anonymous function that creates a counter in a separate variable <code>makeCounter</code> and use it to create several counters :</p> <pre><code class="lang-javascript">var makeCounter = function() {
+console.log(counter.value()); // logs 1</code></pre>
+<p>We could store this anonymous function that creates a counter in a separate variable <code>makeCounter</code> and use it to create several counters :</p>
+<pre><code class="lang-javascript">var makeCounter = function() {
   var privateCounter = 0;
   function changeBy(val) {
     privateCounter += val;
@@ -114,4 +157,18 @@ counter1.increment();
 alert(counter1.value()); /* Alerts 2 */
 counter1.decrement();
 alert(counter1.value()); /* Alerts 1 */
-alert(counter2.value()); /* Alerts 0 */</code></pre> <p>Each of the two counters, <code>counter1</code> and <code>counter2</code>, maintains its independence from the other.</p> <p>Using closures in this way provides a number of benefits that are normally associated with object oriented programming<br>(data hiding and encapsulation).</p> <h3 id="title-creating-closures-in-loops-a-common-mistake">creating closures in loops: A common mistake</h3> <p>See details in main link.</p> <p>Issue with the shared lexical scope.</p> <p>3 ways to avoid :</p> <ul> <li>use more closures with a factory function</li> <li>use IIFE inside the loop</li> <li>use the <code>let</code> keyword introduced in ES2015</li> </ul> <h3 id="title-closure---performance-considerations">closure - performance considerations</h3> <p>It is unwise to unnecessarily create functions within other functions if closures are not needed for a particular task,<br>as <strong>it will negatively affect script performance</strong> both in terms of processing speed and memory consumption.</p> </article></body></html>
+alert(counter2.value()); /* Alerts 0 */</code></pre>
+<p>Each of the two counters, <code>counter1</code> and <code>counter2</code>, maintains its independence from the other.</p>
+<p>Using closures in this way provides a number of benefits that are normally associated with object oriented programming<br>(data hiding and encapsulation).</p>
+<h3 id="title-creating-closures-in-loops-a-common-mistake">creating closures in loops: A common mistake</h3>
+<p>See details in main link.</p>
+<p>Issue with the shared lexical scope.</p>
+<p>3 ways to avoid :</p>
+<ul>
+<li>use more closures with a factory function</li>
+<li>use IIFE inside the loop</li>
+<li>use the <code>let</code> keyword introduced in ES2015</li>
+</ul>
+<h3 id="title-closure---performance-considerations">closure - performance considerations</h3>
+<p>It is unwise to unnecessarily create functions within other functions if closures are not needed for a particular task,<br>as <strong>it will negatively affect script performance</strong> both in terms of processing speed and memory consumption.</p>
+</article></body></html>

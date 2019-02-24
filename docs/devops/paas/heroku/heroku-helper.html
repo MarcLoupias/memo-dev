@@ -1,4 +1,48 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="main.cb64a04a.css" rel="stylesheet" media="all"><link href="github.51c27d45.css" rel="stylesheet"><script src="docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-heroku---helper">heroku - helper</h1> <p><a href="https://devcenter.heroku.com/articles/getting-started-with-play#test-localhtml">Tuto play</a> but outdated (play 1.x)</p> <p>Play infos ok</p> <ul> <li><a href="https://devcenter.heroku.com/articles/play-support#play-2html">devcenter.heroku.com : play-support#play-2-2</a></li> <li><a href="http://www.playframework.com/documentation/2.2.x/Productihtml">playframework.com : 2.2.x/Production</a></li> </ul> <h2 id="title-app-url">app url</h2> <p><code>http://desolate-brook-9012.herokuapp.com/</code></p> <h2 id="title-database-config">database config</h2> <pre><code>mysql://&lt;username&gt;:&lt;pwd&gt;@us-cdbr-east-04.cleardb.com/heroku_blablabla</code></pre><p>Heroku commands to set up env var with user/pwd</p> <pre><code>$ heroku config:set PPRB_DB_USER=&lt;username&gt;
-$ heroku config:set PPRB_DB_PWD=&lt;pwd&gt;</code></pre><h2 id="title-mysql-tools-config">mysql tools config</h2> <ul> <li><a href="http://stackoverflow.com/questions/9822313/remote-connect-to-cleardb-heroku-databahtml">stackoverflow.com : remote-connect-to-cleardb-heroku-database</a> to configure mysql tools to reach prod database</li> </ul> <h2 id="title-commands">commands</h2> <ul> <li>créer une nouvelle app</li> </ul> <pre><code>$ heroku create</code></pre><ul> <li>lister les dyno installées et donner leur statut :</li> </ul> <pre><code>$ heroku ps</code></pre><pre><code>marco@debianmarco:~/dev/poc-play-rest-backend$ heroku ps
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../../github-markdown.css" rel="stylesheet" media="all"><link href="../../../main.css" rel="stylesheet" media="all"><link href="../../../github.css" rel="stylesheet"><script src="../../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-heroku---helper">heroku - helper</h1>
+<p><a href="https://devcenter.heroku.com/articles/getting-started-with-play#test-localhtml">Tuto play</a> but outdated (play 1.x)</p>
+<p>Play infos ok</p>
+<ul>
+<li><a href="https://devcenter.heroku.com/articles/play-support#play-2html">devcenter.heroku.com : play-support#play-2-2</a></li>
+<li><a href="http://www.playframework.com/documentation/2.2.x/Productihtml">playframework.com : 2.2.x/Production</a></li>
+</ul>
+<h2 id="title-app-url">app url</h2>
+<p><code>http://desolate-brook-9012.herokuapp.com/</code></p>
+<h2 id="title-database-config">database config</h2>
+<pre><code>mysql://&lt;username&gt;:&lt;pwd&gt;@us-cdbr-east-04.cleardb.com/heroku_blablabla</code></pre><p>Heroku commands to set up env var with user/pwd</p>
+<pre><code>$ heroku config:set PPRB_DB_USER=&lt;username&gt;
+$ heroku config:set PPRB_DB_PWD=&lt;pwd&gt;</code></pre><h2 id="title-mysql-tools-config">mysql tools config</h2>
+<ul>
+<li><a href="http://stackoverflow.com/questions/9822313/remote-connect-to-cleardb-heroku-databahtml">stackoverflow.com : remote-connect-to-cleardb-heroku-database</a> to configure mysql tools to reach prod database</li>
+</ul>
+<h2 id="title-commands">commands</h2>
+<ul>
+<li>créer une nouvelle app</li>
+</ul>
+<pre><code>$ heroku create</code></pre><ul>
+<li>lister les dyno installées et donner leur statut :</li>
+</ul>
+<pre><code>$ heroku ps</code></pre><pre><code>marco@debianmarco:~/dev/poc-play-rest-backend$ heroku ps
 === web (1X): `target/start -Dhttp.port=${PORT} ${JAVA_OPTS} -DapplyEvolutions.default=true -Ddb.default.driver=com.mysql.jdbc.Driver -Ddb.default.url=${CLEARDB_DATABASE_URL}`
-web.1: crashed 2014/01/10 13:57:53 (~ 8m ago)</code></pre><ul> <li>déployer le code de la branche courante sur heroku. Heroku build l’app sur cette base.</li> </ul> <pre><code>$ git push heroku master</code></pre><ul> <li>setter une seule dyno (gratuit)</li> </ul> <pre><code>$ heroku ps:scale web=1</code></pre><ul> <li>from the project root dir to get logs from heroku in your play logs dir</li> </ul> <pre><code>$ heroku logs &gt; logs/heroku.log</code></pre><h2 id="title-common-errors">common errors</h2> <ul> <li><p>heroku bash: target/start: No such file or directory</p> </li> <li><p><a href="http://stackoverflow.com/questions/19085213/scala-play-2-2-application-crashes-after-deploying-in-heroku-target-start-no-html">stackoverflow.com : crashes-after-deploying</a></p> </li> <li><p><a href="https://discussion.heroku.com/t/bash-target-start-no-such-file-or-directory-error-after-upgrading-to-play-2-2/1html">discussion.heroku.com : no-such-file-or-directory</a></p> </li> <li><p>heroku <any_command> returns ‘! App not found’ after renaming an app in dashboard</any_command></p> </li> <li><p><a href="http://stackoverflow.com/questions/7615807/renamed-heroku-app-from-website-now-its-not-fouhtml">stackoverflow.com : heroku app not found</a> Need to update the remote entry in <code>project/.git/config</code> file with the new name !!</p> </li> </ul> </article></body></html>
+web.1: crashed 2014/01/10 13:57:53 (~ 8m ago)</code></pre><ul>
+<li>déployer le code de la branche courante sur heroku. Heroku build l’app sur cette base.</li>
+</ul>
+<pre><code>$ git push heroku master</code></pre><ul>
+<li>setter une seule dyno (gratuit)</li>
+</ul>
+<pre><code>$ heroku ps:scale web=1</code></pre><ul>
+<li>from the project root dir to get logs from heroku in your play logs dir</li>
+</ul>
+<pre><code>$ heroku logs &gt; logs/heroku.log</code></pre><h2 id="title-common-errors">common errors</h2>
+<ul>
+<li><p>heroku bash: target/start: No such file or directory</p>
+</li>
+<li><p><a href="http://stackoverflow.com/questions/19085213/scala-play-2-2-application-crashes-after-deploying-in-heroku-target-start-no-html">stackoverflow.com : crashes-after-deploying</a></p>
+</li>
+<li><p><a href="https://discussion.heroku.com/t/bash-target-start-no-such-file-or-directory-error-after-upgrading-to-play-2-2/1html">discussion.heroku.com : no-such-file-or-directory</a></p>
+</li>
+<li><p>heroku <any_command> returns ‘! App not found’ after renaming an app in dashboard</p>
+</li>
+<li><p><a href="http://stackoverflow.com/questions/7615807/renamed-heroku-app-from-website-now-its-not-fouhtml">stackoverflow.com : heroku app not found</a> Need to update the remote entry in <code>project/.git/config</code> file with the new name !!</p>
+</li>
+</ul>
+</article></body></html>

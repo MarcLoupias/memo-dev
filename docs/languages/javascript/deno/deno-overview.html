@@ -1,1 +1,99 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="main.cb64a04a.css" rel="stylesheet" media="all"><link href="github.51c27d45.css" rel="stylesheet"><script src="docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-deno---overview">deno - overview</h1> <p>Announced by Ryan Dahl @ Berlin JS Conf 2018</p> <p>The conference video : <a href="https://www.youtube.com/watch?v=M3BM9TB-8html">10 Things I Regret About Node.js - Ryan Dahl - JSConf EU 2018</a></p> <p><a href="http://tinyclouds.org/jsconf2018.phtml">The slides</a></p> <p><a href="https://news.ycombinator.com/item?id=172471html">hackernews about the conf</a></p> <p><a href="https://www.youtube.com/watch?v=FlTG0UXRAhtml">Deno, A New Server-Side Runtime By Ryan Dahl - JSDC 2018 - 201811</a></p> <h2 id="title-genesis">genesis</h2> <p><a href="https://nodejs.developpez.com/actu/208633/JSConf-Berlin-2018-moins-Ryan-Dahl-liste-10-erreurs-de-conception-sur-Node-js-et-devoile-son-prototype-denhtml">JSConf Berlin 2018 - Ryan Dahl liste 10 erreurs de conception sur Node.js et dévoile son prototype deno - nodejs.developpez.com - 20180611</a></p> <p>Ryan Dahl have left node in 2012 thinking the project was done. </p> <p>He is not happy with some design choices he mades on node.</p> <p>He wants to fix the node issues especially the securities issues.</p> <p><strong>“philosophical” source</strong></p> <p>The idea of rewritting all node could be explained by his text : <a href="http://tinyclouds.org/rant.hthtml">I hate almost all software. - tinyclouds.org - Ryan Dahl “blog” - 2011</a></p> <blockquote> <p>There will come a point where the accumulated complexity of our existing systems is greater than the complexity of creating a new one. When that happens all of this shit will be trashed.</p> </blockquote> <h2 id="title-the-10-things-he-regrets-about-nodejs">the 10 things he regrets about Node.js</h2> <ul> <li>Not sticking with Promises</li> </ul> <p>Added in <a href="https://github.com/nodejs/node/commit/7cd09874c666f0ce64b1d7776de74f55ff3e53html">June 2009</a>, removed in <a href="https://github.com/nodejs/node/commit/0485cc41d5c260458f590d249c073794047434html">February 2010</a>.</p> <p>Promises are mandatory to impl async/await.</p> <p>He thinks an early and stable Promise impl in node would have helped a lot to speed, standardization and the adoption of theses tools.</p> <ul> <li>Security</li> </ul> <p>V8 is a good sandbox but Node need embedded security tools. For ex a linter should not have access to the network by default.</p> <ul> <li>The Build System (GYP)</li> </ul> <p>Rely on Python, needed to link Node and others languages libs (ex systems libs). Ugly and node is the solo user. Regret </p> <ul> <li>The Build System (GYP)</li> </ul> <p>He regrets to not have listenned the community enough for the adoption of a core foreign function interface (FFI).</p> <ul> <li><code>package.json</code></li> </ul> <p>Allowing node <code>require()</code> to inspect <code>package.json</code> and embbed npm into node made npm the defacto package standard.</p> <p>This standard is centralized AND privately controlled which is bad.</p> <ul> <li>the way <code>require()</code> works</li> </ul> <p>There are too many places where it is defined (js program, package.json, npm database, local node_modules folder)</p> <ul> <li><code>package.json</code></li> </ul> <p>Regret the way it works. Allowing package.json gave rise to the concept of a “module” as a directory of<br>files.</p> <p>package.json now includes all sorts of unnecessary information.<br>License? Repository? Description?<br>It’s boilerplate noise.</p> <p>Would prefer a path or an url containing the version.</p> <ul> <li>node_modules directory</li> </ul> <p>Vendored-by-default has good intentions, but in practice just using <code>$NODE_PATH</code> wouldn’t have precluded that</p> <p>Deviates greatly from browser semantics.</p> <ul> <li>ability to require a module without extension</li> </ul> <p>It’s bad, because it is needlessly less explicit.</p> <p>Not how browser javascript works.</p> <p>The module loader has to query the file system at multiple locations trying to guess what the user intended.</p> <ul> <li><code>index.js</code></li> </ul> <p>Thought it was cute because there is <code>index.html</code> in web. </p> <p>It needlessly complicated the module loading system.</p> <p>It became especially unnecessary after <code>require</code> supported <code>package.json</code>.</p> <p><strong>conclusion</strong></p> <p>My problems with Node are almost entirely around how it manages user code.</p> <p>Because in contrast to the focus on evented I/O early on, the module system was essentially an afterthought.</p> <h2 id="title-rydeno">ry/deno</h2> <p><a href="https://github.com/ry/dehtml">ry/deno - github.com</a></p> <p>Very nascent prototype that could be TLDR as : <em>A secure TypeScript runtime on V8</em>.</p> <p>TypeScript is builtin.</p> <p>No npm nor package.json nor node_modules support.</p> <p>By default, a deno process has readonly access on the file system and no network access at all. It needs configuration (flags) to enable access and write.</p> <h3 id="title-roadmap">roadmap</h3> <p>See <a href="https://github.com/ry/deno/blob/master/Roadmap.html">the roadmap</a>, at that time, we cannot use network stuff, only read/write files on the fs.</p> <blockquote> <p>Actual at 20180730 :</p> <ul> <li>Milestone 1: Rust rewrite / V8 snapshot (ETA: July 2018)</li> <li>libdeno C API</li> <li>TypeScript API</li> </ul> <p>There are three layers of API to consider:</p> <ul> <li>L1: the low-level message passing API exported by libdeno (L1),</li> <li>L2: the protobuf messages used internally (L2),</li> <li>L3: the final “deno” namespace exported to users (L3).</li> </ul> </blockquote> <h3 id="title-resources">resources</h3> <p><a href="https://deno.lahtml">deno.land - official website</a></p> <p><a href="https://deno.land/manual.hthtml">deno.land/manual</a></p> <p><a href="https://deno.land/typedohtml">deno TypeScript API</a></p> <p><a href="https://github.com/denoland/deno/milestonhtml">deno/milestones</a></p> <p><a href="https://deno.newhtml">newsletter - deno.news</a></p> </article></body></html>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../../github-markdown.css" rel="stylesheet" media="all"><link href="../../../main.css" rel="stylesheet" media="all"><link href="../../../github.css" rel="stylesheet"><script src="../../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-deno---overview">deno - overview</h1>
+<p>Announced by Ryan Dahl @ Berlin JS Conf 2018</p>
+<p>The conference video : <a href="https://www.youtube.com/watch?v=M3BM9TB-8html">10 Things I Regret About Node.js - Ryan Dahl - JSConf EU 2018</a></p>
+<p><a href="http://tinyclouds.org/jsconf2018.phtml">The slides</a></p>
+<p><a href="https://news.ycombinator.com/item?id=172471html">hackernews about the conf</a></p>
+<p><a href="https://www.youtube.com/watch?v=FlTG0UXRAhtml">Deno, A New Server-Side Runtime By Ryan Dahl - JSDC 2018 - 201811</a></p>
+<h2 id="title-genesis">genesis</h2>
+<p><a href="https://nodejs.developpez.com/actu/208633/JSConf-Berlin-2018-moins-Ryan-Dahl-liste-10-erreurs-de-conception-sur-Node-js-et-devoile-son-prototype-denhtml">JSConf Berlin 2018 - Ryan Dahl liste 10 erreurs de conception sur Node.js et dévoile son prototype deno - nodejs.developpez.com - 20180611</a></p>
+<p>Ryan Dahl have left node in 2012 thinking the project was done. </p>
+<p>He is not happy with some design choices he mades on node.</p>
+<p>He wants to fix the node issues especially the securities issues.</p>
+<p><strong>“philosophical” source</strong></p>
+<p>The idea of rewritting all node could be explained by his text : <a href="http://tinyclouds.org/rant.hthtml">I hate almost all software. - tinyclouds.org - Ryan Dahl “blog” - 2011</a></p>
+<blockquote>
+<p>There will come a point where the accumulated complexity of our existing systems is greater than the complexity of creating a new one. When that happens all of this shit will be trashed.</p>
+</blockquote>
+<h2 id="title-the-10-things-he-regrets-about-nodejs">the 10 things he regrets about Node.js</h2>
+<ul>
+<li>Not sticking with Promises</li>
+</ul>
+<p>Added in <a href="https://github.com/nodejs/node/commit/7cd09874c666f0ce64b1d7776de74f55ff3e53html">June 2009</a>, removed in <a href="https://github.com/nodejs/node/commit/0485cc41d5c260458f590d249c073794047434html">February 2010</a>.</p>
+<p>Promises are mandatory to impl async/await.</p>
+<p>He thinks an early and stable Promise impl in node would have helped a lot to speed, standardization and the adoption of theses tools.</p>
+<ul>
+<li>Security</li>
+</ul>
+<p>V8 is a good sandbox but Node need embedded security tools. For ex a linter should not have access to the network by default.</p>
+<ul>
+<li>The Build System (GYP)</li>
+</ul>
+<p>Rely on Python, needed to link Node and others languages libs (ex systems libs). Ugly and node is the solo user. Regret </p>
+<ul>
+<li>The Build System (GYP)</li>
+</ul>
+<p>He regrets to not have listenned the community enough for the adoption of a core foreign function interface (FFI).</p>
+<ul>
+<li><code>package.json</code></li>
+</ul>
+<p>Allowing node <code>require()</code> to inspect <code>package.json</code> and embbed npm into node made npm the defacto package standard.</p>
+<p>This standard is centralized AND privately controlled which is bad.</p>
+<ul>
+<li>the way <code>require()</code> works</li>
+</ul>
+<p>There are too many places where it is defined (js program, package.json, npm database, local node_modules folder)</p>
+<ul>
+<li><code>package.json</code></li>
+</ul>
+<p>Regret the way it works. Allowing package.json gave rise to the concept of a “module” as a directory of<br>files.</p>
+<p>package.json now includes all sorts of unnecessary information.<br>License? Repository? Description?<br>It’s boilerplate noise.</p>
+<p>Would prefer a path or an url containing the version.</p>
+<ul>
+<li>node_modules directory</li>
+</ul>
+<p>Vendored-by-default has good intentions, but in practice just using <code>$NODE_PATH</code> wouldn’t have precluded that</p>
+<p>Deviates greatly from browser semantics.</p>
+<ul>
+<li>ability to require a module without extension</li>
+</ul>
+<p>It’s bad, because it is needlessly less explicit.</p>
+<p>Not how browser javascript works.</p>
+<p>The module loader has to query the file system at multiple locations trying to guess what the user intended.</p>
+<ul>
+<li><code>index.js</code></li>
+</ul>
+<p>Thought it was cute because there is <code>index.html</code> in web. </p>
+<p>It needlessly complicated the module loading system.</p>
+<p>It became especially unnecessary after <code>require</code> supported <code>package.json</code>.</p>
+<p><strong>conclusion</strong></p>
+<p>My problems with Node are almost entirely around how it manages user code.</p>
+<p>Because in contrast to the focus on evented I/O early on, the module system was essentially an afterthought.</p>
+<h2 id="title-rydeno">ry/deno</h2>
+<p><a href="https://github.com/ry/dehtml">ry/deno - github.com</a></p>
+<p>Very nascent prototype that could be TLDR as : <em>A secure TypeScript runtime on V8</em>.</p>
+<p>TypeScript is builtin.</p>
+<p>No npm nor package.json nor node_modules support.</p>
+<p>By default, a deno process has readonly access on the file system and no network access at all. It needs configuration (flags) to enable access and write.</p>
+<h3 id="title-roadmap">roadmap</h3>
+<p>See <a href="https://github.com/ry/deno/blob/master/Roadmap.html">the roadmap</a>, at that time, we cannot use network stuff, only read/write files on the fs.</p>
+<blockquote>
+<p>Actual at 20180730 :</p>
+<ul>
+<li>Milestone 1: Rust rewrite / V8 snapshot (ETA: July 2018)</li>
+<li>libdeno C API</li>
+<li>TypeScript API</li>
+</ul>
+<p>There are three layers of API to consider:</p>
+<ul>
+<li>L1: the low-level message passing API exported by libdeno (L1),</li>
+<li>L2: the protobuf messages used internally (L2),</li>
+<li>L3: the final “deno” namespace exported to users (L3).</li>
+</ul>
+</blockquote>
+<h3 id="title-resources">resources</h3>
+<p><a href="https://deno.lahtml">deno.land - official website</a></p>
+<p><a href="https://deno.land/manual.hthtml">deno.land/manual</a></p>
+<p><a href="https://deno.land/typedohtml">deno TypeScript API</a></p>
+<p><a href="https://github.com/denoland/deno/milestonhtml">deno/milestones</a></p>
+<p><a href="https://deno.newhtml">newsletter - deno.news</a></p>
+</article></body></html>

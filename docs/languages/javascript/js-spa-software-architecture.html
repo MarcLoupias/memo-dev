@@ -1,11 +1,221 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="main.cb64a04a.css" rel="stylesheet" media="all"><link href="github.51c27d45.css" rel="stylesheet"><script src="docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-spa-software-architecture">SPA software architecture</h1> <h2 id="title-generics-articles">generics articles</h2> <p><a href="https://medium.com/javascript-scene/the-best-way-to-learn-to-code-is-to-code-learn-app-architecture-by-building-apps-7ec029db6ehtml">Learn App Architecture by Building Apps : Eric Elliott 20160718</a></p> <blockquote> <p>SPA Architecture review : AngularJS 2w bindings then React unidirectionnal then Redux </p> </blockquote> <p><a href="https://www.youtube.com/watch?time_continue=1&v=hXI78pk2khtml">change detection strategy : Echyzen Website : 20171116</a></p> <blockquote> <p>based on <a href="https://teropa.info/blog/2015/03/02/change-and-its-detection-in-javascript-frameworks.hthtml">Change And Its Detection In JavaScript Frameworks : 20150302</a></p> </blockquote> <p><a href="http://sylvainpv.developpez.com/publications/data-bindinhtml">Comprendre le data binding dans Angular, React et Vue : Sylvain Pollet-Villard : 20160322</a></p> <blockquote> <p>same as above but Angular, React and Vue centric and more detailled</p> </blockquote> <h2 id="title-component">component</h2> <p><a href="http://developer.telerik.com/featured/front-end-application-frameworks-component-architecturehtml">Front-end Application Libraries and Component Architectures</a></p> <h2 id="title-react--facebook">react &amp; facebook</h2> <p><a href="https://www.youtube.com/watch?v=nYkdrAPrdcw&t=html">Hacker Way: Rethinking Web App Development at Facebook : facebook</a></p> <h3 id="title-flux">Flux</h3> <p><a href="https://github.com/facebook/flhtml">Flux : github.com/facebook</a></p> <p><a href="http://facebook.github.io/flux/docs/in-depth-overview.html#contehtml">Flux In Depth Overview : facebook.github.io</a></p> <p><a href="https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.phtml">Flux In Depth Diagram : facebook.github.io</a></p> <p><a href="https://www.youtube.com/watch?v=l9RC1M_pVGw&list=PLklQqdqnBkPgctKh1xIvF4eFGtmvUvE2b&index=1html">Flux, l’architecture de Facebook : Devoxx2015</a>)</p> <blockquote> <ul> <li><p>Balayage des architectures web :</p> <ul> <li>Java Spring MVC</li> <li>js backbone MVC ? MVP ? MV???</li> <li>js AngularJS MVC ? MVVM ? MVW???</li> <li>js React (pas vraiment d’archi, juste une lib de composants)</li> <li>A la demande de la communauté, ils ont sorti <a href="https://github.com/facebook/flhtml">Flux</a></li> </ul> </li> <li><p>Histoire de Flux</p> <ul> <li>2011 à Palo Alto (équipe dev du chat)</li> <li>Problème : Comment sync la toolbar au top qui notifie du nb de msg non-lus avec le composant de chat</li> <li>Un seul composant (le handler) gérait la logique et les états de tout</li> <li>Changement archi en séparant la logique dans chaque composant qui soit son état à lui</li> <li>Une action envoie au store qui envoie à la vue</li> <li>Ajout du dispatcher qui sert de goulot d’étranglement des actions (toutes les actions remontent à lui, il renvoie<br>tout au store)</li> <li>Avantages : Flow unidirectionnel, séparation entre data et state de la vue, debug et tests + faciles</li> <li>Exemple sur un code de projet</li> </ul> </li> <li><p>Pourquoi s’y intéresser</p> <ul> <li>Réponse concrète aux problèmes d’archi front</li> <li>Créé suite à un use case concret (chat de facebook)</li> <li>Archi orientée events, générique et customisable</li> </ul> </li> <li><p>Libs basées sur cette archi</p> <ul> <li>RefluxJS</li> <li>TUXX</li> <li>Fluxy</li> <li>delorean</li> </ul> </li> </ul> </blockquote> <h3 id="title-articles">Articles</h3> <ul> <li><a href="https://css-tricks.com/learning-react-routehtml">Leveling Up With React: React Router : css-tricks.com</a></li> <li><a href="https://css-tricks.com/learning-react-container-componenthtml">Leveling Up With React: Container Components : css-tricks.com</a></li> <li><a href="https://css-tricks.com/learning-react-reduhtml">Leveling Up with React: Redux : css-tricks.com</a></li> </ul> <h2 id="title-angular">angular</h2> <p><a href="https://ngcourse-1.rangle.io/index.hthtml">Introduction to Angular 1.x and ngCourse</a></p> <p><a href="https://angular-2-training-book.rangle.ihtml">Rangle’s Angular Training Book</a></p> <h2 id="title-isomorphisme">isomorphisme</h2> <p><a href="http://blog.soat.fr/2016/04/introduction-a-lisomorphisme-avec-react-et-node-jhtml">Introduction à l’isomorphisme avec React et Node.js</a></p> <p>L’idée c’est de générer les vues côtés front pour :</p> <ul> <li>des questions de performances, l’utilisateur aurait une vue utilisable plus rapidement, ce point est tout à fait contestable</li> <li>gérer le SEO de SPA. Ce point est valide mais voué à disparaitre dès que les moteurs de recherches seront capables d’indexer des contenus générés via javascript.</li> </ul> <p><a href="https://medium.com/@asyncmax/why-youll-always-need-isomorphic-javascript-bd310596d2html">Why You’ll Always Need Isomorphic JavaScript</a></p> <blockquote> <p>Key Benefits of Isomorphism :</p> <ul> <li>Better user experience</li> <li>Faster overall loading time</li> <li>More predictable SEO and Site Indexing</li> </ul> </blockquote> <h2 id="title-universal">universal</h2> <p><a href="https://medium.com/@ghengeveld/isomorphism-vs-universal-javascript-4b47fb481bhtml">Isomorphism vs Universal JavaScript</a></p> <blockquote> <p>TLDR : </p> <ul> <li><strong>Isomorphism</strong> is the functional aspect of seamlessly switching between client- and server-side rendering without losing state. </li> <li><strong>Universal</strong> is a term used to emphasize the fact that a particular piece of JavaScript code is able to run in multiple environments.</li> </ul> </blockquote> <p><a href="http://jamesknelson.com/universal-react-youre-doing-it-wronhtml">Universal React: You’re doing it wrong 20160316</a></p> <p><a href="https://codepicnic.com/posts/universal-javascript-and-the-future-of-the-single-page-apps-084b6fbb10729ed4da8c3d3f5a3ae7html">Universal JavaScript and the future of the Single Page Apps 20161029</a></p> <p><a href="https://www.quora.com/Am-I-the-only-one-that-thinks-isomorphic-universal-rendering-with-React-is-a-nightmahtml">Am I the only one that thinks isomorphic/universal rendering with React is a nightmare? : quora.com 201604xx</a></p> <p><a href="https://universal.angular.ihtml">Angular Universal</a></p> <blockquote> <p>Server-side Rendering for Angular 2 apps</p> <p>Better Perceived Performance<br>Optimized for Search Engines</p> </blockquote> <p><a href="https://github.com/DavidWells/isomorphic-react-examphtml">isomorphic-react-example : github.com/DavidWells</a></p> <p><a href="https://github.com/kriasoft/react-starter-khtml">react-starter-kit : github.com/kriasoft</a></p> <h2 id="title-immutability">immutability</h2> <ul> <li><a href="https://github.com/facebook/immutable-jhtml">Immutable.js : facebook</a></li> <li><a href="http://facebook.github.io/flux/docs/in-depth-overview.html#contehtml">Flux architecture : facebook</a></li> </ul> <h2 id="title-redux">Redux</h2> <p><a href="https://jrsinclair.com/articles/2018/react-redux-javascript-architecturhtml">React, Redux and JavaScript Architecture - James Sinclair - 20180108</a></p> <p><a href="https://www.youtube.com/watch?v=hf2PN0jfn20&list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXhtml">L’architecture Redux en RxJS (Florent Le Gall) : Devoxx2016</a></p> <p><a href="https://medium.com/@Xourse/reactjs-app-architecture-7a33d7ae98html">ReactJS App Architecture</a></p> <p><a href="https://css-tricks.com/learning-react-reduhtml">Leveling Up with React: Redux : css-tricks.com</a></p> <p><a href="https://www.baptiste-donaux.fr/react-redux-concephtml">React &amp; Redux : Les concepts : baptiste-donaux.fr : 20170412</a></p> <p><a href="https://www.youtube.com/watch?v=rgzrByrqRhtml">Le mois du JS - React/Redux : la stack tendance, efficace et performante : xebia</a></p> <blockquote> <p>comparatif des différents design fronts (MVC, MVP, MVVM, … MVW)</p> <p>exemple avec Angular (scope+watchers) : Mutation du modèle (Valable aussi avec Aurelia et Ember)</p> <p>Mutation pas bien, préférer immutable.</p> <p>Donc préférer React (lib de composants) :</p> <ul> <li>pas un framework</li> <li>lib UI</li> <li>vue déclarative</li> <li>binding unidirectionnel</li> <li>DOM Virtuel</li> </ul> <p>Exemples de composants (normal &amp; dumb)</p> <p>JSX (Javascript Syntax eXtension)</p> <p>A la compilation le JSX disparait pour laisser du js vanilla</p> <p>Explication binding unidirectionnel</p> <p>setState ou setProps : React redessine tout le composant</p> <p>son state interne est mutable mais le dev ne doit pas y accéder ni le toucher</p> <p>DOM Virtuel (react fait un diff du nouveau DOM et du DOM actuellement affiché sans accéder au DOM réel<br>donc c’est très rapide)</p> <p>Flux :Architecture utilisée par facebook sur ses webapps</p> <p>Quelques impls : Redux, Flux, Alt, Reflux, Relay</p> <p>Pourquoi Redux :</p> <ul> <li>le plus simple</li> <li>store unique et immutable</li> <li>reducers à la place des stores</li> <li>bcp d’outils dispo</li> </ul> <p>Principe de base : <code>(previousState, action) =&gt; newState</code></p> <p>Action (objet respectant une convention) :</p> <pre><code class="lang-javascript">const action = {
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../github-markdown.css" rel="stylesheet" media="all"><link href="../../main.css" rel="stylesheet" media="all"><link href="../../github.css" rel="stylesheet"><script src="../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-spa-software-architecture">SPA software architecture</h1>
+<h2 id="title-generics-articles">generics articles</h2>
+<p><a href="https://medium.com/javascript-scene/the-best-way-to-learn-to-code-is-to-code-learn-app-architecture-by-building-apps-7ec029db6ehtml">Learn App Architecture by Building Apps : Eric Elliott 20160718</a></p>
+<blockquote>
+<p>SPA Architecture review : AngularJS 2w bindings then React unidirectionnal then Redux </p>
+</blockquote>
+<p><a href="https://www.youtube.com/watch?time_continue=1&v=hXI78pk2khtml">change detection strategy : Echyzen Website : 20171116</a></p>
+<blockquote>
+<p>based on <a href="https://teropa.info/blog/2015/03/02/change-and-its-detection-in-javascript-frameworks.hthtml">Change And Its Detection In JavaScript Frameworks : 20150302</a></p>
+</blockquote>
+<p><a href="http://sylvainpv.developpez.com/publications/data-bindinhtml">Comprendre le data binding dans Angular, React et Vue : Sylvain Pollet-Villard : 20160322</a></p>
+<blockquote>
+<p>same as above but Angular, React and Vue centric and more detailled</p>
+</blockquote>
+<h2 id="title-component">component</h2>
+<p><a href="http://developer.telerik.com/featured/front-end-application-frameworks-component-architecturehtml">Front-end Application Libraries and Component Architectures</a></p>
+<h2 id="title-react--facebook">react &amp; facebook</h2>
+<p><a href="https://www.youtube.com/watch?v=nYkdrAPrdcw&t=html">Hacker Way: Rethinking Web App Development at Facebook : facebook</a></p>
+<h3 id="title-flux">Flux</h3>
+<p><a href="https://github.com/facebook/flhtml">Flux : github.com/facebook</a></p>
+<p><a href="http://facebook.github.io/flux/docs/in-depth-overview.html#contehtml">Flux In Depth Overview : facebook.github.io</a></p>
+<p><a href="https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.phtml">Flux In Depth Diagram : facebook.github.io</a></p>
+<p><a href="https://www.youtube.com/watch?v=l9RC1M_pVGw&list=PLklQqdqnBkPgctKh1xIvF4eFGtmvUvE2b&index=1html">Flux, l’architecture de Facebook : Devoxx2015</a>)</p>
+<blockquote>
+<ul>
+<li><p>Balayage des architectures web :</p>
+<ul>
+<li>Java Spring MVC</li>
+<li>js backbone MVC ? MVP ? MV???</li>
+<li>js AngularJS MVC ? MVVM ? MVW???</li>
+<li>js React (pas vraiment d’archi, juste une lib de composants)</li>
+<li>A la demande de la communauté, ils ont sorti <a href="https://github.com/facebook/flhtml">Flux</a></li>
+</ul>
+</li>
+<li><p>Histoire de Flux</p>
+<ul>
+<li>2011 à Palo Alto (équipe dev du chat)</li>
+<li>Problème : Comment sync la toolbar au top qui notifie du nb de msg non-lus avec le composant de chat</li>
+<li>Un seul composant (le handler) gérait la logique et les états de tout</li>
+<li>Changement archi en séparant la logique dans chaque composant qui soit son état à lui</li>
+<li>Une action envoie au store qui envoie à la vue</li>
+<li>Ajout du dispatcher qui sert de goulot d’étranglement des actions (toutes les actions remontent à lui, il renvoie<br>tout au store)</li>
+<li>Avantages : Flow unidirectionnel, séparation entre data et state de la vue, debug et tests + faciles</li>
+<li>Exemple sur un code de projet</li>
+</ul>
+</li>
+<li><p>Pourquoi s’y intéresser</p>
+<ul>
+<li>Réponse concrète aux problèmes d’archi front</li>
+<li>Créé suite à un use case concret (chat de facebook)</li>
+<li>Archi orientée events, générique et customisable</li>
+</ul>
+</li>
+<li><p>Libs basées sur cette archi</p>
+<ul>
+<li>RefluxJS</li>
+<li>TUXX</li>
+<li>Fluxy</li>
+<li>delorean</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="title-articles">Articles</h3>
+<ul>
+<li><a href="https://css-tricks.com/learning-react-routehtml">Leveling Up With React: React Router : css-tricks.com</a></li>
+<li><a href="https://css-tricks.com/learning-react-container-componenthtml">Leveling Up With React: Container Components : css-tricks.com</a></li>
+<li><a href="https://css-tricks.com/learning-react-reduhtml">Leveling Up with React: Redux : css-tricks.com</a></li>
+</ul>
+<h2 id="title-angular">angular</h2>
+<p><a href="https://ngcourse-1.rangle.io/index.hthtml">Introduction to Angular 1.x and ngCourse</a></p>
+<p><a href="https://angular-2-training-book.rangle.ihtml">Rangle’s Angular Training Book</a></p>
+<h2 id="title-isomorphisme">isomorphisme</h2>
+<p><a href="http://blog.soat.fr/2016/04/introduction-a-lisomorphisme-avec-react-et-node-jhtml">Introduction à l’isomorphisme avec React et Node.js</a></p>
+<p>L’idée c’est de générer les vues côtés front pour :</p>
+<ul>
+<li>des questions de performances, l’utilisateur aurait une vue utilisable plus rapidement, ce point est tout à fait contestable</li>
+<li>gérer le SEO de SPA. Ce point est valide mais voué à disparaitre dès que les moteurs de recherches seront capables d’indexer des contenus générés via javascript.</li>
+</ul>
+<p><a href="https://medium.com/@asyncmax/why-youll-always-need-isomorphic-javascript-bd310596d2html">Why You’ll Always Need Isomorphic JavaScript</a></p>
+<blockquote>
+<p>Key Benefits of Isomorphism :</p>
+<ul>
+<li>Better user experience</li>
+<li>Faster overall loading time</li>
+<li>More predictable SEO and Site Indexing</li>
+</ul>
+</blockquote>
+<h2 id="title-universal">universal</h2>
+<p><a href="https://medium.com/@ghengeveld/isomorphism-vs-universal-javascript-4b47fb481bhtml">Isomorphism vs Universal JavaScript</a></p>
+<blockquote>
+<p>TLDR : </p>
+<ul>
+<li><strong>Isomorphism</strong> is the functional aspect of seamlessly switching between client- and server-side rendering without losing state. </li>
+<li><strong>Universal</strong> is a term used to emphasize the fact that a particular piece of JavaScript code is able to run in multiple environments.</li>
+</ul>
+</blockquote>
+<p><a href="http://jamesknelson.com/universal-react-youre-doing-it-wronhtml">Universal React: You’re doing it wrong 20160316</a></p>
+<p><a href="https://codepicnic.com/posts/universal-javascript-and-the-future-of-the-single-page-apps-084b6fbb10729ed4da8c3d3f5a3ae7html">Universal JavaScript and the future of the Single Page Apps 20161029</a></p>
+<p><a href="https://www.quora.com/Am-I-the-only-one-that-thinks-isomorphic-universal-rendering-with-React-is-a-nightmahtml">Am I the only one that thinks isomorphic/universal rendering with React is a nightmare? : quora.com 201604xx</a></p>
+<p><a href="https://universal.angular.ihtml">Angular Universal</a></p>
+<blockquote>
+<p>Server-side Rendering for Angular 2 apps</p>
+<p>Better Perceived Performance<br>Optimized for Search Engines</p>
+</blockquote>
+<p><a href="https://github.com/DavidWells/isomorphic-react-examphtml">isomorphic-react-example : github.com/DavidWells</a></p>
+<p><a href="https://github.com/kriasoft/react-starter-khtml">react-starter-kit : github.com/kriasoft</a></p>
+<h2 id="title-immutability">immutability</h2>
+<ul>
+<li><a href="https://github.com/facebook/immutable-jhtml">Immutable.js : facebook</a></li>
+<li><a href="http://facebook.github.io/flux/docs/in-depth-overview.html#contehtml">Flux architecture : facebook</a></li>
+</ul>
+<h2 id="title-redux">Redux</h2>
+<p><a href="https://jrsinclair.com/articles/2018/react-redux-javascript-architecturhtml">React, Redux and JavaScript Architecture - James Sinclair - 20180108</a></p>
+<p><a href="https://www.youtube.com/watch?v=hf2PN0jfn20&list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXhtml">L’architecture Redux en RxJS (Florent Le Gall) : Devoxx2016</a></p>
+<p><a href="https://medium.com/@Xourse/reactjs-app-architecture-7a33d7ae98html">ReactJS App Architecture</a></p>
+<p><a href="https://css-tricks.com/learning-react-reduhtml">Leveling Up with React: Redux : css-tricks.com</a></p>
+<p><a href="https://www.baptiste-donaux.fr/react-redux-concephtml">React &amp; Redux : Les concepts : baptiste-donaux.fr : 20170412</a></p>
+<p><a href="https://www.youtube.com/watch?v=rgzrByrqRhtml">Le mois du JS - React/Redux : la stack tendance, efficace et performante : xebia</a></p>
+<blockquote>
+<p>comparatif des différents design fronts (MVC, MVP, MVVM, … MVW)</p>
+<p>exemple avec Angular (scope+watchers) : Mutation du modèle (Valable aussi avec Aurelia et Ember)</p>
+<p>Mutation pas bien, préférer immutable.</p>
+<p>Donc préférer React (lib de composants) :</p>
+<ul>
+<li>pas un framework</li>
+<li>lib UI</li>
+<li>vue déclarative</li>
+<li>binding unidirectionnel</li>
+<li>DOM Virtuel</li>
+</ul>
+<p>Exemples de composants (normal &amp; dumb)</p>
+<p>JSX (Javascript Syntax eXtension)</p>
+<p>A la compilation le JSX disparait pour laisser du js vanilla</p>
+<p>Explication binding unidirectionnel</p>
+<p>setState ou setProps : React redessine tout le composant</p>
+<p>son state interne est mutable mais le dev ne doit pas y accéder ni le toucher</p>
+<p>DOM Virtuel (react fait un diff du nouveau DOM et du DOM actuellement affiché sans accéder au DOM réel<br>donc c’est très rapide)</p>
+<p>Flux :Architecture utilisée par facebook sur ses webapps</p>
+<p>Quelques impls : Redux, Flux, Alt, Reflux, Relay</p>
+<p>Pourquoi Redux :</p>
+<ul>
+<li>le plus simple</li>
+<li>store unique et immutable</li>
+<li>reducers à la place des stores</li>
+<li>bcp d’outils dispo</li>
+</ul>
+<p>Principe de base : <code>(previousState, action) =&gt; newState</code></p>
+<p>Action (objet respectant une convention) :</p>
+<pre><code class="lang-javascript">const action = {
     type: &#39;ADD_SLOT&#39;,
     slot: {
         group: &#39;Les 4 fantastiques&#39;,
         name: &#39;React / Redux&#39;
     }
-}</code></pre> <p>Action creator : Fonction qui retourne une action</p> <p>Reducer : prends en arg le précédent state + l’action à exec et retourne le nouveau state</p> <p>Store : (peu de fonctions : subscribe() (pour être notifié des modifs du store), dispatch(), getState())</p> <p>Composant Provider va définir le store pour toute la webapp</p> </blockquote> <p><a href="https://medium.com/hyperapp/hyperapp-for-redux-refugees-2507c9dd1dhtml">Hyperapp for Redux refugees</a></p> <blockquote> <p>comparison between React + Redux and Hyperapp + Redux</p> </blockquote> <p><a href="https://hacks.mozilla.org/2018/04/testing-strategies-for-react-and-reduhtml">Testing Strategies for React and Redux - hacks.mozilla.org - 20180424</a></p> <h2 id="title-observables">observables</h2> <p>ES6 <strong>required</strong> for this.</p> <ul> <li><a href="https://www.youtube.com/watch?v=XbOuCBuQehtml">What is an Observable? [Simply Explained]</a></li> </ul> <blockquote> <p>Vidéo très courte expliquant le principe des observables dans angular.</p> </blockquote> <p><a href="https://www.youtube.com/watch?v=T9wOu11uUhtml">RxJS - What and Why?</a></p> <blockquote> <p>Vidéo un peu plus longue expliquant les bénéfices en montrant des uses cases avec code ES5 et code ES6 + observables via RxJS</p> </blockquote> <ul> <li><a href="https://www.youtube.com/watch?v=Sol2uLolmhtml">Angular Tutorial - What is an Observable ? Introduction to Streams and RxJs Observables</a></li> </ul> <h3 id="title-naming-convention">Naming convention</h3> <p>A variable with a <code>$</code> at the end of his name is an observable :</p> <pre><code class="lang-javascript">// a string var
+}</code></pre>
+<p>Action creator : Fonction qui retourne une action</p>
+<p>Reducer : prends en arg le précédent state + l’action à exec et retourne le nouveau state</p>
+<p>Store : (peu de fonctions : subscribe() (pour être notifié des modifs du store), dispatch(), getState())</p>
+<p>Composant Provider va définir le store pour toute la webapp</p>
+</blockquote>
+<p><a href="https://medium.com/hyperapp/hyperapp-for-redux-refugees-2507c9dd1dhtml">Hyperapp for Redux refugees</a></p>
+<blockquote>
+<p>comparison between React + Redux and Hyperapp + Redux</p>
+</blockquote>
+<p><a href="https://hacks.mozilla.org/2018/04/testing-strategies-for-react-and-reduhtml">Testing Strategies for React and Redux - hacks.mozilla.org - 20180424</a></p>
+<h2 id="title-observables">observables</h2>
+<p>ES6 <strong>required</strong> for this.</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=XbOuCBuQehtml">What is an Observable? [Simply Explained]</a></li>
+</ul>
+<blockquote>
+<p>Vidéo très courte expliquant le principe des observables dans angular.</p>
+</blockquote>
+<p><a href="https://www.youtube.com/watch?v=T9wOu11uUhtml">RxJS - What and Why?</a></p>
+<blockquote>
+<p>Vidéo un peu plus longue expliquant les bénéfices en montrant des uses cases avec code ES5 et code ES6 + observables via RxJS</p>
+</blockquote>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=Sol2uLolmhtml">Angular Tutorial - What is an Observable ? Introduction to Streams and RxJs Observables</a></li>
+</ul>
+<h3 id="title-naming-convention">Naming convention</h3>
+<p>A variable with a <code>$</code> at the end of his name is an observable :</p>
+<pre><code class="lang-javascript">// a string var
 this.nameFilter = &#39;&#39;;
 
 // an observable var based on a string var
-this.nameFilter$ = new Rx.BehaviorSubject(this.nameFilter);</code></pre> <h3 id="title-rxjs">RxJS</h3> <p><a href="https://www.technologies-ebusiness.com/enjeux-et-tendances/rxjs-pour-les-humaihtml">RxJS pour les humains : technologies-ebusiness.com : 20161011</a></p> <p><strong>The Need to go Reactive</strong></p> <blockquote> <p>Applications, especially on the web have changed over the years from being a simple static page, to DHTML with<br>animations, to the Ajax revolution. Each time, we’re adding more complexity, more data, and asynchronous behavior to<br>our applications. How do we manage it all? How do we scale it? By moving towards “Reactive Architectures” which are<br>event-driven, resilient and responsive. With the Reactive Extensions, you have all the tools you need to help build<br>these systems.</p> </blockquote> <p><strong>Why RxJS?</strong></p> <blockquote> <p>One question you may ask yourself is why RxJS? What about <strong>Promises</strong>? <strong>Promises</strong> are good for solving asynchronous<br>operations such as querying a service with an <strong>XMLHttpRequest</strong>, where the expected behavior is one value and then<br>completion. Reactive Extensions for JavaScript unify both the world of <strong>Promises</strong>, <strong>callbacks</strong> as well as evented data<br>such as <strong>DOM Input</strong>, <strong>Web Workers</strong>, and <strong>Web Sockets</strong>. Unifying these concepts enables rich composition.</p> </blockquote> <p><a href="http://reactivex.io/rxjhtml">The ReactiveX library for JavaScript.</a></p> <blockquote> <p>RxJS is a library for reactive programming using Observables, to make it easier to compose asynchronous or<br>callback-based code. This project is a rewrite of <a href="https://github.com/Reactive-Extensions/Rxhtml">Reactive-Extensions/RxJS</a><br>with better performance, better modularity, better debuggable call stacks, while staying mostly backwards compatible,<br>with some breaking changes that reduce the API surface.</p> </blockquote> <p><a href="https://github.com/OasisDigital/angularjs-rxjs-examphtml">AngularJS Promise / RxJS Comparison</a></p> <blockquote> <p>This small example application is meant to illustrate that:</p> <ul> <li>Straightforward AngularJS 1.x promise-based applications often have defects in real-world conditions of variale<br>backend response latency.</li> <li>These can be easily avoided using RxJS…</li> <li>… which is also more future-ready</li> <li>… and often requires less code.</li> </ul> </blockquote> <p><a href="https://github.com/cvuorinen/angular1-async-filthtml">Angular1 async filter</a></p> <blockquote> <p>Angular2 async pipe implemented as Angular 1 filter to handle Promises &amp; RxJS Observables</p> </blockquote> <p><a href="https://github.com/ReactiveX/Rxhtml">RxJS 5</a></p> <blockquote> <p>Reactive Extensions Library for JavaScript. This is a rewrite of <a href="https://github.com/Reactive-Extensions/Rxhtml">Reactive-Extensions/RxJS</a><br>and is the latest production-ready version of RxJS. This rewrite is meant to have better performance, better<br>modularity, better debuggable call stacks, while staying mostly backwards compatible, with some breaking changes that<br>reduce the API surface.</p> </blockquote> </article></body></html>
+this.nameFilter$ = new Rx.BehaviorSubject(this.nameFilter);</code></pre>
+<h3 id="title-rxjs">RxJS</h3>
+<p><a href="https://www.technologies-ebusiness.com/enjeux-et-tendances/rxjs-pour-les-humaihtml">RxJS pour les humains : technologies-ebusiness.com : 20161011</a></p>
+<p><strong>The Need to go Reactive</strong></p>
+<blockquote>
+<p>Applications, especially on the web have changed over the years from being a simple static page, to DHTML with<br>animations, to the Ajax revolution. Each time, we’re adding more complexity, more data, and asynchronous behavior to<br>our applications. How do we manage it all? How do we scale it? By moving towards “Reactive Architectures” which are<br>event-driven, resilient and responsive. With the Reactive Extensions, you have all the tools you need to help build<br>these systems.</p>
+</blockquote>
+<p><strong>Why RxJS?</strong></p>
+<blockquote>
+<p>One question you may ask yourself is why RxJS? What about <strong>Promises</strong>? <strong>Promises</strong> are good for solving asynchronous<br>operations such as querying a service with an <strong>XMLHttpRequest</strong>, where the expected behavior is one value and then<br>completion. Reactive Extensions for JavaScript unify both the world of <strong>Promises</strong>, <strong>callbacks</strong> as well as evented data<br>such as <strong>DOM Input</strong>, <strong>Web Workers</strong>, and <strong>Web Sockets</strong>. Unifying these concepts enables rich composition.</p>
+</blockquote>
+<p><a href="http://reactivex.io/rxjhtml">The ReactiveX library for JavaScript.</a></p>
+<blockquote>
+<p>RxJS is a library for reactive programming using Observables, to make it easier to compose asynchronous or<br>callback-based code. This project is a rewrite of <a href="https://github.com/Reactive-Extensions/Rxhtml">Reactive-Extensions/RxJS</a><br>with better performance, better modularity, better debuggable call stacks, while staying mostly backwards compatible,<br>with some breaking changes that reduce the API surface.</p>
+</blockquote>
+<p><a href="https://github.com/OasisDigital/angularjs-rxjs-examphtml">AngularJS Promise / RxJS Comparison</a></p>
+<blockquote>
+<p>This small example application is meant to illustrate that:</p>
+<ul>
+<li>Straightforward AngularJS 1.x promise-based applications often have defects in real-world conditions of variale<br>backend response latency.</li>
+<li>These can be easily avoided using RxJS…</li>
+<li>… which is also more future-ready</li>
+<li>… and often requires less code.</li>
+</ul>
+</blockquote>
+<p><a href="https://github.com/cvuorinen/angular1-async-filthtml">Angular1 async filter</a></p>
+<blockquote>
+<p>Angular2 async pipe implemented as Angular 1 filter to handle Promises &amp; RxJS Observables</p>
+</blockquote>
+<p><a href="https://github.com/ReactiveX/Rxhtml">RxJS 5</a></p>
+<blockquote>
+<p>Reactive Extensions Library for JavaScript. This is a rewrite of <a href="https://github.com/Reactive-Extensions/Rxhtml">Reactive-Extensions/RxJS</a><br>and is the latest production-ready version of RxJS. This rewrite is meant to have better performance, better<br>modularity, better debuggable call stacks, while staying mostly backwards compatible, with some breaking changes that<br>reduce the API surface.</p>
+</blockquote>
+</article></body></html>

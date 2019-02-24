@@ -1,1 +1,141 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="main.cb64a04a.css" rel="stylesheet" media="all"><link href="github.51c27d45.css" rel="stylesheet"><script src="docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-no-silver-bullet-fbrooks---notes"><em>no silver bullet</em> F.Brooks - notes</h1> <p><a href="http://www.cs.nott.ac.uk/~pszcah/G51ISS/Documents/NoSilverBullet.hthtml">No Silver Bullet: Essence and Accidents of Software Engineering</a></p> <p>by Frederick P. Brooks, Jr.</p> <blockquote> <p>ref: Brooks, Frederick P., “No Silver Bullet: Essence and Accidents of Software Engineering,” Computer, Vol. 20, No. 4 (April 1987) pp. 10-19. </p> </blockquote> <h2 id="title-synthesis">synthesis</h2> <p>A project can be seen as innocent and straightforward but can become a monster of missed schedules, blown budgets, and flawed products.</p> <p>Need for a <strong>silver bullet</strong> to drop software costs.</p> <p>But there is no silver bullet ; the purpose of the article is to show why by examining :</p> <ul> <li>the nature of the software problem</li> <li>the properties of the bullets proposed in the past</li> </ul> <p>There is no breakthrough, but there is things to do to improve software engineering, slowly.</p> <blockquote> <p>There is no royal road, but there is a road.</p> </blockquote> <p>Nice metaphor with medicine, from magical theories to modern medicine, the road is hard, long, step by step, require<br>discipline but it works better every day.</p> <blockquote> <p>So it is with software engineering today.</p> </blockquote> <h2 id="title-tldr">TLDR</h2> <ul> <li>Essential difficulties are the conception parts</li> <li>Accidental difficulties are the writing parts</li> <li>All the past and actual breakthroughs concerns writing a software</li> <li>A software is grown, not built ; so attacking the essentials difficulties means using :<ul> <li>quick feedback loop</li> <li>great designers (great people)</li> </ul> </li> </ul> <h2 id="title-a---does-it-have-to-be-hardessential-difficulties">A - Does It Have to Be Hard?–Essential Difficulties</h2> <p>In comparison to hardware productivity enhancement software engineering is slow.<br>But hardware enhancement is an exception against all others technologies. </p> <p>Following Aristotle, Brooks divide software engineering difficulties in :</p> <ul> <li>essence difficulties (inherent in the nature of software)</li> <li>accidents difficulties (difficulties that today attend its production but are not inherent)</li> </ul> <p>The software essence is a construct of interlocking concepts: data sets, relationships among data items, algorithms,<br>and invocations of functions.</p> <blockquote> <p>I believe the hard part of building software to be the specification, design, and testing of this conceptual construct,<br>not the labor of representing it and testing the fidelity of the representation.</p> </blockquote> <blockquote> <p>If this is true, building software will always be hard. There is inherently no silver bullet. </p> </blockquote> <p>The inherent properties of this irreducible essence of modern software systems are :</p> <ul> <li>complexity</li> <li>conformity</li> <li>changeability</li> <li>invisibility</li> </ul> <h3 id="title-complexity">complexity</h3> <ul> <li>software systems differ profoundly from computers, buildings, or automobiles, where repeated elements abound</li> <li>computers are more complex than most things people build, Software systems have orders-of-magnitude more states than computers do</li> <li>the complexity of the whole increases much more than linearly</li> <li>the complexity of software is an essential property, not an accidental one</li> <li>many of the classic problems of developing software products derive from this essential complexity and its nonlinear increases with size</li> </ul> <p>complexity is the source of the difficulty of :</p> <ul> <li>communication among team members (leads to product flaws, cost overruns, schedule delays)</li> <li>enumerating all the possible states of the program (leads to unreliability)</li> <li>invoking function (makes programs hard to use)</li> <li>extending programs to new functions (side effects)</li> <li>from complexity of structure come the unvisualized states (security trapdoors)</li> <li>management (remendous learning and understanding burden that makes personnel turnover a disaster)</li> </ul> <h3 id="title-conformity">conformity</h3> <ul> <li>software must conform to interfaces designed by humans (including human institutions and systems), not by nature (or god).</li> <li>much complexity comes from conformation to other interfaces</li> <li>cannot be simplified out by any redesign of the software alone</li> </ul> <h3 id="title-changeability">changeability</h3> <ul> <li>the software entity is constantly subject to pressures for change</li> <li>manufactured things are infrequently changed after manufacture</li> <li>successful software have a long life<ul> <li>users pushes new behaviors</li> <li>they need to adapt to new hardware </li> </ul> </li> </ul> <h3 id="title-invisibility">invisibility</h3> <ul> <li>software is invisible and unvisualizable. A building or a machine can be viewed globally with a plan, software are too<br>complex for that</li> <li>visualizing a software require several diagrams and schemes, each of them is a bias</li> <li>this cause communication issues</li> </ul> <h2 id="title-b---past-breakthroughs-solved-accidental-difficulties">B - Past Breakthroughs Solved Accidental Difficulties</h2> <h3 id="title-high-level-languages">High-level languages</h3> <ul> <li>it frees a program from much of its accidental complexity</li> <li>language development approaches closer and closer to the sophistication of users </li> </ul> <p>so there is a maximum gain here</p> <h3 id="title-time-sharing">Time-sharing</h3> <ul> <li>the principal effect of timesharing is to shorten system response time</li> <li>as this response time goes to zero, at some point it passes the human threshold of noticeability, about 100 milliseconds</li> </ul> <p>so beyond that threshold, no benefits are to be expected</p> <h3 id="title-unified-programming-environments">Unified programming environments</h3> <p>mostly Unix</p> <p>attack the accidental difficulties that result from using individual programs together, by providing integrated libraries,<br>unified file formats, and pipes and filters</p> <h2 id="title-c---hopes-for-the-silver">C - Hopes for the Silver</h2> <p>potential silver bullets :</p> <ul> <li>High-level language advances (Ada, Java, …)</li> <li>Object-oriented programming (abstract data types and hierarchical types)</li> <li>Artificial intelligence (rule-based programming)</li> <li>Expert systems (put at the service of the inexperienced programmer the experience and accumulated wisdom of the best programmers)</li> <li>“Automatic” programming (the generation of a program for solving a problem from a statement of the problem specifications)</li> <li>Graphical programming (software is very difficult to visualize, a software system is not a 3-space dimension realization)</li> <li>Program verification (much of the essence of building a program is in fact the debugging of the specification not the program itself)</li> <li>Environments and tools</li> <li>Workstations</li> </ul> <h2 id="title-d---promising-attacks-on-the-conceptual-essence">D - Promising Attacks on the Conceptual Essence</h2> <h3 id="title-buy-versus-build">Buy versus build</h3> <blockquote> <p>The most radical possible solution for constructing software is not to construct it at all.</p> </blockquote> <h3 id="title-requirements-refinement-and-rapid-prototyping">Requirements refinement and rapid prototyping</h3> <ul> <li>The hardest single part of building a software system is deciding precisely what to build.</li> <li>For the truth is, the client does not know what he wants.</li> <li>it is really impossible for a client to specify completely, precisely, and correctly the exact requirements of a<br>modern software product before trying some versions of the product</li> </ul> <blockquote> <p>Therefore, one of the most promising of the current technological efforts, and one that attacks the essence,<br>not the accidents, of the software problem, is the development of approaches and tools for rapid prototyping of<br>systems as prototyping is part of the iterative specification of requirements. </p> </blockquote> <p><strong>The secret is that it (ie : the software) is grown, not built.</strong></p> <h3 id="title-great-designers">Great designers</h3> <p>The central question in how to improve the software art centers, as it always has, on people.</p> <p>Great designs come from great designers. Software construction is a creative process. Sound methodology can empower and<br>liberate the creative mind; it cannot inflame or inspire the drudge. </p> </article></body></html>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../github-markdown.css" rel="stylesheet" media="all"><link href="../main.css" rel="stylesheet" media="all"><link href="../github.css" rel="stylesheet"><script src="../index.js"></script></head><body><article class="markdown-body"><h1 id="title-no-silver-bullet-fbrooks---notes"><em>no silver bullet</em> F.Brooks - notes</h1>
+<p><a href="http://www.cs.nott.ac.uk/~pszcah/G51ISS/Documents/NoSilverBullet.hthtml">No Silver Bullet: Essence and Accidents of Software Engineering</a></p>
+<p>by Frederick P. Brooks, Jr.</p>
+<blockquote>
+<p>ref: Brooks, Frederick P., “No Silver Bullet: Essence and Accidents of Software Engineering,” Computer, Vol. 20, No. 4 (April 1987) pp. 10-19. </p>
+</blockquote>
+<h2 id="title-synthesis">synthesis</h2>
+<p>A project can be seen as innocent and straightforward but can become a monster of missed schedules, blown budgets, and flawed products.</p>
+<p>Need for a <strong>silver bullet</strong> to drop software costs.</p>
+<p>But there is no silver bullet ; the purpose of the article is to show why by examining :</p>
+<ul>
+<li>the nature of the software problem</li>
+<li>the properties of the bullets proposed in the past</li>
+</ul>
+<p>There is no breakthrough, but there is things to do to improve software engineering, slowly.</p>
+<blockquote>
+<p>There is no royal road, but there is a road.</p>
+</blockquote>
+<p>Nice metaphor with medicine, from magical theories to modern medicine, the road is hard, long, step by step, require<br>discipline but it works better every day.</p>
+<blockquote>
+<p>So it is with software engineering today.</p>
+</blockquote>
+<h2 id="title-tldr">TLDR</h2>
+<ul>
+<li>Essential difficulties are the conception parts</li>
+<li>Accidental difficulties are the writing parts</li>
+<li>All the past and actual breakthroughs concerns writing a software</li>
+<li>A software is grown, not built ; so attacking the essentials difficulties means using :<ul>
+<li>quick feedback loop</li>
+<li>great designers (great people)</li>
+</ul>
+</li>
+</ul>
+<h2 id="title-a---does-it-have-to-be-hardessential-difficulties">A - Does It Have to Be Hard?–Essential Difficulties</h2>
+<p>In comparison to hardware productivity enhancement software engineering is slow.<br>But hardware enhancement is an exception against all others technologies. </p>
+<p>Following Aristotle, Brooks divide software engineering difficulties in :</p>
+<ul>
+<li>essence difficulties (inherent in the nature of software)</li>
+<li>accidents difficulties (difficulties that today attend its production but are not inherent)</li>
+</ul>
+<p>The software essence is a construct of interlocking concepts: data sets, relationships among data items, algorithms,<br>and invocations of functions.</p>
+<blockquote>
+<p>I believe the hard part of building software to be the specification, design, and testing of this conceptual construct,<br>not the labor of representing it and testing the fidelity of the representation.</p>
+</blockquote>
+<blockquote>
+<p>If this is true, building software will always be hard. There is inherently no silver bullet. </p>
+</blockquote>
+<p>The inherent properties of this irreducible essence of modern software systems are :</p>
+<ul>
+<li>complexity</li>
+<li>conformity</li>
+<li>changeability</li>
+<li>invisibility</li>
+</ul>
+<h3 id="title-complexity">complexity</h3>
+<ul>
+<li>software systems differ profoundly from computers, buildings, or automobiles, where repeated elements abound</li>
+<li>computers are more complex than most things people build, Software systems have orders-of-magnitude more states than computers do</li>
+<li>the complexity of the whole increases much more than linearly</li>
+<li>the complexity of software is an essential property, not an accidental one</li>
+<li>many of the classic problems of developing software products derive from this essential complexity and its nonlinear increases with size</li>
+</ul>
+<p>complexity is the source of the difficulty of :</p>
+<ul>
+<li>communication among team members (leads to product flaws, cost overruns, schedule delays)</li>
+<li>enumerating all the possible states of the program (leads to unreliability)</li>
+<li>invoking function (makes programs hard to use)</li>
+<li>extending programs to new functions (side effects)</li>
+<li>from complexity of structure come the unvisualized states (security trapdoors)</li>
+<li>management (remendous learning and understanding burden that makes personnel turnover a disaster)</li>
+</ul>
+<h3 id="title-conformity">conformity</h3>
+<ul>
+<li>software must conform to interfaces designed by humans (including human institutions and systems), not by nature (or god).</li>
+<li>much complexity comes from conformation to other interfaces</li>
+<li>cannot be simplified out by any redesign of the software alone</li>
+</ul>
+<h3 id="title-changeability">changeability</h3>
+<ul>
+<li>the software entity is constantly subject to pressures for change</li>
+<li>manufactured things are infrequently changed after manufacture</li>
+<li>successful software have a long life<ul>
+<li>users pushes new behaviors</li>
+<li>they need to adapt to new hardware </li>
+</ul>
+</li>
+</ul>
+<h3 id="title-invisibility">invisibility</h3>
+<ul>
+<li>software is invisible and unvisualizable. A building or a machine can be viewed globally with a plan, software are too<br>complex for that</li>
+<li>visualizing a software require several diagrams and schemes, each of them is a bias</li>
+<li>this cause communication issues</li>
+</ul>
+<h2 id="title-b---past-breakthroughs-solved-accidental-difficulties">B - Past Breakthroughs Solved Accidental Difficulties</h2>
+<h3 id="title-high-level-languages">High-level languages</h3>
+<ul>
+<li>it frees a program from much of its accidental complexity</li>
+<li>language development approaches closer and closer to the sophistication of users </li>
+</ul>
+<p>so there is a maximum gain here</p>
+<h3 id="title-time-sharing">Time-sharing</h3>
+<ul>
+<li>the principal effect of timesharing is to shorten system response time</li>
+<li>as this response time goes to zero, at some point it passes the human threshold of noticeability, about 100 milliseconds</li>
+</ul>
+<p>so beyond that threshold, no benefits are to be expected</p>
+<h3 id="title-unified-programming-environments">Unified programming environments</h3>
+<p>mostly Unix</p>
+<p>attack the accidental difficulties that result from using individual programs together, by providing integrated libraries,<br>unified file formats, and pipes and filters</p>
+<h2 id="title-c---hopes-for-the-silver">C - Hopes for the Silver</h2>
+<p>potential silver bullets :</p>
+<ul>
+<li>High-level language advances (Ada, Java, …)</li>
+<li>Object-oriented programming (abstract data types and hierarchical types)</li>
+<li>Artificial intelligence (rule-based programming)</li>
+<li>Expert systems (put at the service of the inexperienced programmer the experience and accumulated wisdom of the best programmers)</li>
+<li>“Automatic” programming (the generation of a program for solving a problem from a statement of the problem specifications)</li>
+<li>Graphical programming (software is very difficult to visualize, a software system is not a 3-space dimension realization)</li>
+<li>Program verification (much of the essence of building a program is in fact the debugging of the specification not the program itself)</li>
+<li>Environments and tools</li>
+<li>Workstations</li>
+</ul>
+<h2 id="title-d---promising-attacks-on-the-conceptual-essence">D - Promising Attacks on the Conceptual Essence</h2>
+<h3 id="title-buy-versus-build">Buy versus build</h3>
+<blockquote>
+<p>The most radical possible solution for constructing software is not to construct it at all.</p>
+</blockquote>
+<h3 id="title-requirements-refinement-and-rapid-prototyping">Requirements refinement and rapid prototyping</h3>
+<ul>
+<li>The hardest single part of building a software system is deciding precisely what to build.</li>
+<li>For the truth is, the client does not know what he wants.</li>
+<li>it is really impossible for a client to specify completely, precisely, and correctly the exact requirements of a<br>modern software product before trying some versions of the product</li>
+</ul>
+<blockquote>
+<p>Therefore, one of the most promising of the current technological efforts, and one that attacks the essence,<br>not the accidents, of the software problem, is the development of approaches and tools for rapid prototyping of<br>systems as prototyping is part of the iterative specification of requirements. </p>
+</blockquote>
+<p><strong>The secret is that it (ie : the software) is grown, not built.</strong></p>
+<h3 id="title-great-designers">Great designers</h3>
+<p>The central question in how to improve the software art centers, as it always has, on people.</p>
+<p>Great designs come from great designers. Software construction is a creative process. Sound methodology can empower and<br>liberate the creative mind; it cannot inflame or inspire the drudge. </p>
+</article></body></html>

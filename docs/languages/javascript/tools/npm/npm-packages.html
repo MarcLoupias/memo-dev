@@ -1,4 +1,25 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="main.cb64a04a.css" rel="stylesheet" media="all"><link href="github.51c27d45.css" rel="stylesheet"><script src="docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-npm---packages">npm - packages</h1> <ul> <li><p>middleware proxy à exec avec browser-sync :<br>[http-proxy-middleware] (<a href="https://github.com/chimurai/http-proxy-middlewahtml">https://github.com/chimurai/http-proxy-middleware</a>) &amp; [browsersync - option-server] (<a href="http://www.browsersync.io/docs/options/#option-servhtml">http://www.browsersync.io/docs/options/#option-server</a>)</p> </li> <li><p>[glob] (<a href="https://www.npmjs.com/package/glhtml">https://www.npmjs.com/package/glob</a>)</p> <blockquote> <p>“Globs” are the patterns you type when you do stuff like <code>ls *.js</code> on<br>the command line, or put <code>build/*</code> in a <code>.gitignore</code> file.</p> </blockquote> </li> <li><p>[lodash] (<a href="https://lodash.cohtml">https://lodash.com/</a>)<br>La librairie javascript Lodash est une alternative à la librairie utilitaire Underscore, alternative se voulant plus performante, plus consistante et ajoutant quelques fonctionnalités supplémentaires.<br>Autres liens : [github lodash] (<a href="https://github.com/lodash/lodahtml">https://github.com/lodash/lodash</a>), [article blog.xebia.fr sur lodash] (<a href="http://blog.xebia.fr/2013/02/20/lodash-librairie-utilitaire-javascript-alternative-a-underscorhtml">http://blog.xebia.fr/2013/02/20/lodash-librairie-utilitaire-javascript-alternative-a-underscore/</a>)</p> </li> <li><p><a href="http://www.data-forge-js.cohtml">data-forge</a></p> </li> </ul> <p><a href="https://github.com/data-forge/data-forge-thtml">data-forge-ts / github.com</a></p> <blockquote> <p>Data-Forge can load CSV, JSON or arbitrary data sets.</p> <p>Parse the data, filter it, transform it, aggregate it, sort it and much more.</p> <p>Use the data however you want or export it to CSV or JSON.</p> </blockquote> <p>Example :</p> <pre><code class="lang-javascript">const dataForge = require(&#39;data-forge&#39;);
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../../../github-markdown.css" rel="stylesheet" media="all"><link href="../../../../main.css" rel="stylesheet" media="all"><link href="../../../../github.css" rel="stylesheet"><script src="../../../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-npm---packages">npm - packages</h1>
+<ul>
+<li><p>middleware proxy à exec avec browser-sync :<br>[http-proxy-middleware] (<a href="https://github.com/chimurai/http-proxy-middlewahtml">https://github.com/chimurai/http-proxy-middleware</a>) &amp; [browsersync - option-server] (<a href="http://www.browsersync.io/docs/options/#option-servhtml">http://www.browsersync.io/docs/options/#option-server</a>)</p>
+</li>
+<li><p>[glob] (<a href="https://www.npmjs.com/package/glhtml">https://www.npmjs.com/package/glob</a>)</p>
+<blockquote>
+<p>“Globs” are the patterns you type when you do stuff like <code>ls *.js</code> on<br>the command line, or put <code>build/*</code> in a <code>.gitignore</code> file.</p>
+</blockquote>
+</li>
+<li><p>[lodash] (<a href="https://lodash.cohtml">https://lodash.com/</a>)<br>La librairie javascript Lodash est une alternative à la librairie utilitaire Underscore, alternative se voulant plus performante, plus consistante et ajoutant quelques fonctionnalités supplémentaires.<br>Autres liens : [github lodash] (<a href="https://github.com/lodash/lodahtml">https://github.com/lodash/lodash</a>), [article blog.xebia.fr sur lodash] (<a href="http://blog.xebia.fr/2013/02/20/lodash-librairie-utilitaire-javascript-alternative-a-underscorhtml">http://blog.xebia.fr/2013/02/20/lodash-librairie-utilitaire-javascript-alternative-a-underscore/</a>)</p>
+</li>
+<li><p><a href="http://www.data-forge-js.cohtml">data-forge</a></p>
+</li>
+</ul>
+<p><a href="https://github.com/data-forge/data-forge-thtml">data-forge-ts / github.com</a></p>
+<blockquote>
+<p>Data-Forge can load CSV, JSON or arbitrary data sets.</p>
+<p>Parse the data, filter it, transform it, aggregate it, sort it and much more.</p>
+<p>Use the data however you want or export it to CSV or JSON.</p>
+</blockquote>
+<p>Example :</p>
+<pre><code class="lang-javascript">const dataForge = require(&#39;data-forge&#39;);
 dataForge.readFile(&#39;./input-data-file.csv&#39;) // Read CSV file (or JSON!)
     .parseCSV()
     .parseDates([&quot;Column B&quot;]) // Parse date columns.
@@ -14,7 +35,9 @@ dataForge.readFile(&#39;./input-data-file.csv&#39;) // Read CSV file (or JSON!)
     })
     .catch(err =&gt; {
         console.log(&quot;An error occurred!&quot;);
-    });</code></pre> <ul> <li>[wiredep] (<a href="https://github.com/taptapship/wiredhtml">https://github.com/taptapship/wiredep</a>)<br>Wire Bower dependencies to your source code.<br>Ex : <pre><code class="lang-html">&lt;html&gt;
+    });</code></pre>
+<ul>
+<li>[wiredep] (<a href="https://github.com/taptapship/wiredhtml">https://github.com/taptapship/wiredep</a>)<br>Wire Bower dependencies to your source code.<br>Ex : <pre><code class="lang-html">&lt;html&gt;
 &lt;head&gt;
 &lt;!-- bower:css --&gt;
 &lt;!-- endbower --&gt;
@@ -23,9 +46,18 @@ dataForge.readFile(&#39;./input-data-file.csv&#39;) // Read CSV file (or JSON!)
 &lt;!-- bower:js --&gt;
 &lt;!-- endbower --&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre> </li> <li>[autoprefixer] (<a href="https://github.com/postcss/autoprefixhtml">https://github.com/postcss/autoprefixer</a>)</li> </ul> <blockquote> <p>PostCSS plugin to parse CSS and add vendor prefixes to CSS rules using values from Can I Use. It is recommended by Google and used in Twitter, and Taobao.</p> </blockquote> <pre><code class="lang-css">:fullscreen a {
+&lt;/html&gt;</code></pre>
+</li>
+<li>[autoprefixer] (<a href="https://github.com/postcss/autoprefixhtml">https://github.com/postcss/autoprefixer</a>)</li>
+</ul>
+<blockquote>
+<p>PostCSS plugin to parse CSS and add vendor prefixes to CSS rules using values from Can I Use. It is recommended by Google and used in Twitter, and Taobao.</p>
+</blockquote>
+<pre><code class="lang-css">:fullscreen a {
     display: flex
-}</code></pre> <p>becomes</p> <pre><code class="lang-css">:-webkit-full-screen a {
+}</code></pre>
+<p>becomes</p>
+<pre><code class="lang-css">:-webkit-full-screen a {
     display: -webkit-box;
     display: -webkit-flex;
     display: flex
@@ -42,4 +74,5 @@ dataForge.readFile(&#39;./input-data-file.csv&#39;) // Read CSV file (or JSON!)
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex
-}</code></pre> </article></body></html>
+}</code></pre>
+</article></body></html>

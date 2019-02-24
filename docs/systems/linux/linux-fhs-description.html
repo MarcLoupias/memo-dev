@@ -1,4 +1,23 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="main.cb64a04a.css" rel="stylesheet" media="all"><link href="github.51c27d45.css" rel="stylesheet"><script src="docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-linux---description-du-fhs">Linux - Description du FHS</h1> <p>FHS = Filesystem Hierarchy Standard</p> <p><a href="https://fr.wikipedia.org/wiki/Filesystem_Hierarchy_Standahtml">FHS sur wikipedia</a></p> <p><strong>sources</strong></p> <ul> <li><a href="http://cyberzoide.developpez.com/unix/sys.phhtml">Système de fichiers sous Unix, Hugo ETIEVANT : developpez.com</a></li> <li><a href="http://p.karatchentzeff.free.fr/freesoft/debian/debian-guide/html/ch9.html#s9html">Patrice KARATCHENTZEFF : p.karatchentzeff.free.fr</a></li> <li><a href="https://www.youtube.com/watch?v=xqdWi6Sblhtml">Linux est ton meilleur ami (Pierre Antoine Grégoire - Olivier Robert - Nicolas Helleringer) : devoxx2017</a></li> </ul> <h2 id="title-arborescence">Arborescence</h2> <p>L’architecture du système de fichiers est sous la forme d’un arbre dont le répertoire noté <code>/</code> est la racine. Tous les autres répertoires en sont les noeuds et les fichiers les feuilles.</p> <ul> <li>Tous les caractères sont acceptés pour le nommage sauf espace et les caractères accentués.</li> <li>pas de notion de disque dur physique ou logique comme sous Windows.</li> <li>Le FHS est transparent par rapport aux points de montages (qui peuvent correspondre à des DD physiques).</li> <li><strong>Tout est fichier</strong> : disquette, CDROM, disque dur, interfaces réseau, …</li> <li>Un fichier préfixé par un <code>.</code> est caché.</li> </ul> <p>Cette arborescence peut légèrement varier en fonction des distributions.</p> <pre><code>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../github-markdown.css" rel="stylesheet" media="all"><link href="../../main.css" rel="stylesheet" media="all"><link href="../../github.css" rel="stylesheet"><script src="../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-linux---description-du-fhs">Linux - Description du FHS</h1>
+<p>FHS = Filesystem Hierarchy Standard</p>
+<p><a href="https://fr.wikipedia.org/wiki/Filesystem_Hierarchy_Standahtml">FHS sur wikipedia</a></p>
+<p><strong>sources</strong></p>
+<ul>
+<li><a href="http://cyberzoide.developpez.com/unix/sys.phhtml">Système de fichiers sous Unix, Hugo ETIEVANT : developpez.com</a></li>
+<li><a href="http://p.karatchentzeff.free.fr/freesoft/debian/debian-guide/html/ch9.html#s9html">Patrice KARATCHENTZEFF : p.karatchentzeff.free.fr</a></li>
+<li><a href="https://www.youtube.com/watch?v=xqdWi6Sblhtml">Linux est ton meilleur ami (Pierre Antoine Grégoire - Olivier Robert - Nicolas Helleringer) : devoxx2017</a></li>
+</ul>
+<h2 id="title-arborescence">Arborescence</h2>
+<p>L’architecture du système de fichiers est sous la forme d’un arbre dont le répertoire noté <code>/</code> est la racine. Tous les autres répertoires en sont les noeuds et les fichiers les feuilles.</p>
+<ul>
+<li>Tous les caractères sont acceptés pour le nommage sauf espace et les caractères accentués.</li>
+<li>pas de notion de disque dur physique ou logique comme sous Windows.</li>
+<li>Le FHS est transparent par rapport aux points de montages (qui peuvent correspondre à des DD physiques).</li>
+<li><strong>Tout est fichier</strong> : disquette, CDROM, disque dur, interfaces réseau, …</li>
+<li>Un fichier préfixé par un <code>.</code> est caché.</li>
+</ul>
+<p>Cette arborescence peut légèrement varier en fonction des distributions.</p>
+<pre><code>
 /
 /bin/
 /boot/
@@ -18,7 +37,167 @@
 /tmp/
 /usr/
 /var/
-</code></pre><h3 id="title-bin-binaries"><code>/bin/</code> binaries</h3> <p>Contient :</p> <ul> <li>les exécutables des commandes de bases pour tous les utilisateurs.</li> <li>les fichiers exécutables indispensables au fonctionnement du système.</li> </ul> <p>Par exemple <code>cat</code>, <code>ls</code>, <code>cp</code>, <code>zip</code>, <code>unzip</code>, …</p> <h3 id="title-boot"><code>/boot/</code></h3> <p>Contient les fichiers liés au noyau, les noyaux eux-mêmes, et leurs fichiers de configurations.</p> <p>Contient un dossier grub si un chargeur d’amorçage est installé contenant son paramétrage (<code>grub.conf</code>)</p> <h3 id="title-dev-devices"><code>/dev/</code> devices</h3> <p>Ensemble de répertoires et fichiers système décrivant les périphériques.</p> <ul> <li><code>/dev/hda</code> est le premier disque dur IDE reconnu par le système.</li> <li><code>/dev/hda1</code> est la 1ère partition de ce disque dur.</li> <li><code>/dev/cdrom</code> est le lecteur cd.</li> </ul> <h3 id="title-etc-editing-text-configuration"><code>/etc/</code> editing text configuration</h3> <p>Ce répertoire contient l’ensemble des fichiers de configuration du système. Lorsque vous désirez changer quelque chose au système qui impacte tous les utilisateurs de votre ordinateur - comme votre connexion Internet ou bien un changement de carte vidéo - vous aurez probablement à vous loguer en <code>root</code> et à modifier un fichier dans <code>/etc/</code>.</p> <p>Contient les fichiers de configuration du système.</p> <ul> <li><code>/etc/fstab</code> est le fichier décrivant les points de montages à monter au démarrage du système.</li> <li><code>/etc/passwd</code> est le fichier listant les utilisateurs du système.</li> <li><code>/etc/group</code> est le fichier listant les groupes du système.</li> </ul> <p>Contient de nombreux sous répertoires importants, par exemple :</p> <ul> <li><code>/etc/X11/</code> fichiers de config de Xwindow (serveur du bureau graphique)</li> <li><code>/etc/init.d/</code> scripts de démarrage des différents services</li> <li><code>/etc/cron/</code> les tâches à mettre automatiquement en route (= planificateur de tâches)</li> <li><code>/etc/skel/</code> les fichiers à recopier automatiquement à la création d’un utilisateur</li> </ul> <p>Contient des sous répertoires pour des applications</p> <ul> <li><code>/etc/samba/</code> qui contient les fichiers de config de samba (<code>samba.conf</code>)</li> </ul> <h3 id="title-home"><code>/home/</code></h3> <p>(= <code>Documents And Settings</code> sous Windows)</p> <p>C’est l’endroit où l’on place le répertoire personnel de tous les utilisateurs normaux - c’est-à-dire tous sauf le <code>root</code>.<br>Chaque répertoire personnel est appelé du nom de l’utilisateur; par exemple <code>/home/jane</code>.<br>Si vous utilisez un système de taille conséquente, comme pour une école ou une entreprise,<br>votre administrateur système a peut-être créé des répertoires supplémentaires pour contenir les répertoires personnels:<br><code>/home1</code> et <code>/home2</code> par exemple.<br>Dans d’autres systèmes, on peut apercevoir un niveau supplémentaire de sous-répertoire :</p> <pre><code>
+</code></pre><h3 id="title-bin-binaries"><code>/bin/</code> binaries</h3>
+<p>Contient :</p>
+<ul>
+<li>les exécutables des commandes de bases pour tous les utilisateurs.</li>
+<li>les fichiers exécutables indispensables au fonctionnement du système.</li>
+</ul>
+<p>Par exemple <code>cat</code>, <code>ls</code>, <code>cp</code>, <code>zip</code>, <code>unzip</code>, …</p>
+<h3 id="title-boot"><code>/boot/</code></h3>
+<p>Contient les fichiers liés au noyau, les noyaux eux-mêmes,  et leurs fichiers de configurations.</p>
+<p>Contient un dossier grub si un chargeur d’amorçage est installé contenant son paramétrage (<code>grub.conf</code>)</p>
+<h3 id="title-dev-devices"><code>/dev/</code> devices</h3>
+<p>Ensemble de répertoires et fichiers système décrivant les périphériques.</p>
+<ul>
+<li><code>/dev/hda</code> est le premier disque dur IDE reconnu par le système.</li>
+<li><code>/dev/hda1</code> est la 1ère partition de ce disque dur.</li>
+<li><code>/dev/cdrom</code> est le lecteur cd.</li>
+</ul>
+<h3 id="title-etc-editing-text-configuration"><code>/etc/</code> editing text configuration</h3>
+<p>Ce répertoire contient l’ensemble des fichiers de configuration du système. Lorsque vous désirez changer quelque chose au système qui impacte tous les utilisateurs de votre ordinateur - comme votre connexion Internet ou bien un changement de carte vidéo - vous aurez probablement à vous loguer en <code>root</code> et à modifier un fichier dans <code>/etc/</code>.</p>
+<p>Contient les fichiers de configuration du système.</p>
+<ul>
+<li><code>/etc/fstab</code> est le fichier décrivant les points de montages à monter au démarrage du système.</li>
+<li><code>/etc/passwd</code> est le fichier listant les utilisateurs du système.</li>
+<li><code>/etc/group</code> est le fichier listant les groupes du système.</li>
+</ul>
+<p>Contient de nombreux sous répertoires importants, par exemple :</p>
+<ul>
+<li><code>/etc/X11/</code> fichiers de config de Xwindow (serveur du bureau graphique)</li>
+<li><code>/etc/init.d/</code> scripts de démarrage des différents services</li>
+<li><code>/etc/cron/</code> les tâches à mettre automatiquement en route (= planificateur de tâches)</li>
+<li><code>/etc/skel/</code> les fichiers à recopier automatiquement à la création d’un utilisateur</li>
+</ul>
+<p>Contient des sous répertoires pour des applications</p>
+<ul>
+<li><code>/etc/samba/</code> qui contient les fichiers de config de samba (<code>samba.conf</code>)</li>
+</ul>
+<h3 id="title-home"><code>/home/</code></h3>
+<p>(= <code>Documents And Settings</code> sous Windows)</p>
+<p>C’est l’endroit où l’on place le répertoire personnel de tous les utilisateurs normaux - c’est-à-dire tous sauf le <code>root</code>.<br>Chaque répertoire personnel est appelé du nom de l’utilisateur; par exemple <code>/home/jane</code>.<br>Si vous utilisez un système de taille conséquente, comme pour une école ou une entreprise,<br>votre administrateur système a peut-être créé des répertoires supplémentaires pour contenir les répertoires personnels:<br><code>/home1</code> et <code>/home2</code> par exemple.<br>Dans d’autres systèmes, on peut apercevoir un niveau supplémentaire de sous-répertoire :</p>
+<pre><code>
 /home/eleves/nomdutilisateur, 
 /home/equipe/nomdutilisateur, etc...
-</code></pre><p>Votre répertoire personnel est l’endroit où vous placez vos travaux personnels, votre courrier électronique et<br>tous les autres documents, ainsi que vos fichiers de configurations personnelles.<br>C’est votre “chez vous” dans le système…</p> <p>Les fichiers de configuration sont généralement cachés.</p> <p>Parmi les fichiers importants :</p> <ul> <li><code>.bashrc</code> qui est un script exécuté à chaque connexion. Permet de définir des alias, des commandes ou de positionner des variables d’environnement.</li> <li><code>.bash_logout</code> idem mais lors de la déconnexion</li> <li><code>.bash_history</code> historique des commandes utilisées</li> </ul> <h3 id="title-lib-libraries"><code>/lib/</code> libraries</h3> <p>Contient les librairies partagées utilisées par le système et les applications.</p> <p><code>/lib/modules/</code> contient les modules additionnels du noyau.<br><code>/lib64/</code> idem que <code>/lib/</code> mais version 64bit</p> <h3 id="title-lostfound"><code>/lost+found/</code></h3> <p>Les fichiers abimés ou trouvés après un crash du sytème vont ici.</p> <h3 id="title-media"><code>/media/</code></h3> <p>Point de montage pour les médias amovibles. (CDROM, disquettes, clés USB, …)</p> <h3 id="title-mnt-mount"><code>/mnt/</code> mount</h3> <p>Points de montage pour le système de fichiers.</p> <h3 id="title-opt-optionnal"><code>/opt/</code> optionnal</h3> <p>Logiciels optionnels.</p> <p>Répertoire cross-distribution.</p> <p>Par exemple Chrome s’installe dans <code>/opt/chrome/</code>.</p> <h3 id="title-proc-process"><code>/proc/</code> process</h3> <p>Fichiers permettant d’accéder à des infos sur le matériel, la config du noyau, et les processus en cours d’exécution.</p> <p>Les fichiers <code>uptime</code>, <code>stat</code>, <code>meminfo</code>, <code>cpuinfo</code> contiennent des infos sur l’état du système.</p> <p>Pour chaque processus actif, un répertoire est créé du nom du <code>PID</code> du processus.</p> <p>Chacun de ces dossiers contient les fichiers suivants :</p> <ul> <li><code>cmdline</code> qui contient la ligne de commande utilisée pour lancer l’application</li> <li><code>status</code> qui contient des infos sur l’état du processus (attente, exec, etc …)</li> <li><code>exe</code> qui est un lien vers le fichier exécutable du processus</li> </ul> <h3 id="title-root"><code>/root/</code></h3> <p>Répertoire de l’utilisateur <code>root</code>.</p> <p>Attention à la confusion avec la racine du FHS (<code>/</code>) en discutant en anglais.</p> <h3 id="title-sbin-system-binaries"><code>/sbin/</code> system binaries</h3> <p>Contient des utilitaires pour l’administration du système.<br>Par exemple, <code>halt</code>, <code>reboot</code>, <code>ifconfig</code>, <code>fdisk</code>, <code>iptables</code>, …</p> <h3 id="title-srv-services"><code>/srv/</code> services</h3> <p>Données pour les services hébergés par le système. Par exemple sites web, FTP, …</p> <h3 id="title-tmp-temporary"><code>/tmp/</code> temporary</h3> <p>Données temporaires. Est vidé à chaque démarrage. Possède le <code>StickyBit</code> (cf gestion des droits.)</p> <p>Correspond au <code>Temp</code> (système et utilisateur) sur windows</p> <h3 id="title-usr-unix-system-ressource"><code>usr</code> Unix System Ressource</h3> <p>Contient toute une série de sous dossiers semblables à ceux de la racine (<code>/</code>) mais qui ne sont pas nécessaires au fonctionnement minimal du système.</p> <p>En d’autres termes, les fichiers y figurant ne sont pas considérés comme vitaux pour le système.</p> <p>Par exemple :</p> <ul> <li><code>/usr/bin/</code> exécutables en complément de <code>/bin/</code></li> <li><code>/usr/include/</code> headers des librairies partagées</li> <li><code>/usr/lib/</code> librairies partagées</li> <li><code>/usr/sbin/</code> scripts et exécutables en complément pour l’administration du système. (<code>addgroup</code>, <code>adduser</code>, <code>dpkg-reconfigure</code>, …)</li> <li><code>/usr/src/</code> les sources du noyau et des programmes</li> <li><code>/usr/man</code>, <code>/usr/doc</code>, <code>/usr/info</code> manuel linux, documentation et pages d’infos.</li> </ul> <h3 id="title-var-variables"><code>/var/</code> variables</h3> <p>Fichiers variables, bases de données, sites web, …</p> <p><code>/var/log/</code> contient les logs du système</p> <h2 id="title-noms">Noms</h2> <ul> <li>tous les caractères alphanumériques plus la ponctuation sont des caractères valides</li> <li>pas de notion d’extention de fichier</li> <li>pas de caractères accentués</li> <li>distingue les minuscules des majuscules (<code>monfichier</code> et <code>monFichier</code> sont deux fichiers distincts !)</li> </ul> <h2 id="title-chemins">Chemins</h2> <ul> <li>L’arborescence du filesystem part de la racine <code>/</code></li> <li>Les répertoires sont séparés par des <code>/</code></li> <li>Un fichier est identifié par son <strong>chemin absolu</strong> depuis la racine du filesystem <code>/repertoire-1/repertoire-2/fichier</code></li> <li>Le répertoire parent est identifié par <code>..</code></li> <li>Le répertoire courant est identifié par <code>.</code></li> <li>Un fichier peut être identifié par son chemin relatif par rapport au répertoire courant <code>./repertoire-2/fichier</code> si l’on est dans <code>/repertoire-1/</code> </li> </ul> <h2 id="title-types-de-fichiers">Types de fichiers</h2> <h3 id="title-exécutable">exécutable</h3> <p>Forme binaire (exécutable) des programmes.</p> <h3 id="title-répertoire">répertoire</h3> <p>Collection de répertoire et de fichiers.</p> <h3 id="title-lien">lien</h3> <p>Pointeur vers un autre fichier.</p> <p>Se crée avec la commande <code>ln</code>.</p> <h4 id="title-lien-symbolique">lien symbolique</h4> <p>Un simple pointeur</p> <p><code>ln -s fichier-a-pointer nom-du-lien</code></p> <h4 id="title-lien-physique">lien physique</h4> <p>Comme un lien symbolique mais le lien occupe autant d’espace disque que le fichier référencé.</p> <p><code>ln fichier-a-pointer nom-du-lien</code></p> <h3 id="title-fichier">fichier</h3> <p>Le fichier standard, ce n’est ni un exécutable, ni un répertoire ni un lien.</p> <h3 id="title-fichier-caché">fichier caché</h3> <p>Un fichier normal mais préfixé par un <code>.</code>.</p> <p>Ne sera pas affiché par les commandes de listage des fichiers sauf option particulière.</p> <p><code>ls -l</code> va lister les fichiers du répertoire courant sauf les fichiers cachés.</p> <p><code>ls -la</code> va lister les fichiers du répertoire courant ainsi que les fichiers cachés.</p> <h2 id="title-navigation">Navigation</h2> <p><code>pwd</code> (print working directory) permet de connaitre le répertoire courant (working directory) </p> <p>La commande <code>cd</code> (change directory) permet de naviguer dans le FHS en changeant le répertoire courant.</p> <ul> <li><code>cd ..</code> change la working directory pour le répertoire parent du répertoire courant actuel.</li> <li><code>cd ../..</code> change la working directory pour le répertoire parent du répertoire parent du répertoire courant actuel.</li> <li><code>cd /</code> change la working directory pour la racine du FHS.</li> <li><code>cd /home</code> change la working directory pour le répertoire <code>home</code> en partant de la racine (chemin absolu).</li> <li><code>cd home</code> change la working directory pour le répertoire <code>home</code> contenu dans la working directory courante.</li> <li><code>cd ../home</code> change la working directory pour le répertoire <code>home</code> contenu dans le parent de la working directory courante.</li> </ul> <h2 id="title-commandes">Commandes</h2> <ul> <li><code>rm</code> Supprime un fichier ou un répertoire.</li> <li><code>mv</code> Déplace ou renomme un fichier ou un réperoire.</li> <li><code>mkdir</code> Crée un réperoire.</li> <li><code>rmdir</code> Supprime un répertoire.</li> <li><code>cp</code> Copie un fichier ou un répertoire.</li> <li><code>pwd</code> Affiche le chemin du répertoire courant.</li> <li><code>cd</code> Se déplace dans le système de fichier.</li> <li><code>ls</code> Affiche la liste des fichiers et répertoires.</li> <li><code>ln</code> Crée un lien vers un fichier.</li> </ul> <h2 id="title-meta-caracteres">Meta-caracteres</h2> <p><code>*</code> remplace zéro, un ou plusieurs caractères dans l’expression où il apparait.</p> <p>Par exemple : <code>ls -l *.json</code> liste tous les fichiers <code>.json</code> du répertoire courant.</p> <p><code>?</code> remplace un seul caractère dans l’expression où il apparait.</p> <p>Par exemple : <code>ls -l ??ok.json</code> liste tous les fichiers ayant deux caractères suivis de <code>ok.json</code> dans le répertoire courant.</p> </article></body></html>
+</code></pre><p>Votre répertoire personnel est l’endroit où vous placez vos travaux personnels, votre courrier électronique et<br>tous les autres documents, ainsi que vos fichiers de configurations personnelles.<br>C’est votre “chez vous” dans le système…</p>
+<p>Les fichiers de configuration sont généralement cachés.</p>
+<p>Parmi les fichiers importants :</p>
+<ul>
+<li><code>.bashrc</code> qui est un script exécuté à chaque connexion. Permet de définir des alias, des commandes ou de positionner des variables d’environnement.</li>
+<li><code>.bash_logout</code> idem mais lors de la déconnexion</li>
+<li><code>.bash_history</code> historique des commandes utilisées</li>
+</ul>
+<h3 id="title-lib-libraries"><code>/lib/</code> libraries</h3>
+<p>Contient les librairies partagées utilisées par le système et les applications.</p>
+<p><code>/lib/modules/</code> contient les modules additionnels du noyau.<br><code>/lib64/</code> idem que <code>/lib/</code> mais version 64bit</p>
+<h3 id="title-lostfound"><code>/lost+found/</code></h3>
+<p>Les fichiers abimés ou trouvés après un crash du sytème vont ici.</p>
+<h3 id="title-media"><code>/media/</code></h3>
+<p>Point de montage pour les médias amovibles. (CDROM, disquettes, clés USB, …)</p>
+<h3 id="title-mnt-mount"><code>/mnt/</code> mount</h3>
+<p>Points de montage pour le système de fichiers.</p>
+<h3 id="title-opt-optionnal"><code>/opt/</code> optionnal</h3>
+<p>Logiciels optionnels.</p>
+<p>Répertoire cross-distribution.</p>
+<p>Par exemple Chrome s’installe dans <code>/opt/chrome/</code>.</p>
+<h3 id="title-proc-process"><code>/proc/</code> process</h3>
+<p>Fichiers permettant d’accéder à des infos sur le matériel, la config du noyau, et les processus en cours d’exécution.</p>
+<p>Les fichiers <code>uptime</code>, <code>stat</code>, <code>meminfo</code>, <code>cpuinfo</code> contiennent des infos sur l’état du système.</p>
+<p>Pour chaque processus actif, un répertoire est créé du nom du <code>PID</code> du processus.</p>
+<p>Chacun de ces dossiers contient les fichiers suivants :</p>
+<ul>
+<li><code>cmdline</code> qui contient la ligne de commande utilisée pour lancer l’application</li>
+<li><code>status</code> qui contient des infos sur l’état du processus (attente, exec, etc …)</li>
+<li><code>exe</code> qui est un lien vers le fichier exécutable du processus</li>
+</ul>
+<h3 id="title-root"><code>/root/</code></h3>
+<p>Répertoire de l’utilisateur <code>root</code>.</p>
+<p>Attention à la confusion avec la racine du FHS (<code>/</code>) en discutant en anglais.</p>
+<h3 id="title-sbin-system-binaries"><code>/sbin/</code> system binaries</h3>
+<p>Contient des utilitaires pour l’administration du système.<br>Par exemple, <code>halt</code>, <code>reboot</code>, <code>ifconfig</code>, <code>fdisk</code>, <code>iptables</code>, …</p>
+<h3 id="title-srv-services"><code>/srv/</code> services</h3>
+<p>Données pour les services hébergés par le système. Par exemple sites web, FTP, …</p>
+<h3 id="title-tmp-temporary"><code>/tmp/</code> temporary</h3>
+<p>Données temporaires. Est vidé à chaque démarrage. Possède le <code>StickyBit</code> (cf gestion des droits.)</p>
+<p>Correspond au <code>Temp</code> (système et utilisateur) sur windows</p>
+<h3 id="title-usr-unix-system-ressource"><code>usr</code> Unix System Ressource</h3>
+<p>Contient toute une série de sous dossiers semblables à ceux de la racine (<code>/</code>) mais qui ne sont pas nécessaires au fonctionnement minimal du système.</p>
+<p>En d’autres termes, les fichiers y figurant ne sont pas considérés comme vitaux pour le système.</p>
+<p>Par exemple :</p>
+<ul>
+<li><code>/usr/bin/</code> exécutables en complément de <code>/bin/</code></li>
+<li><code>/usr/include/</code> headers des librairies partagées</li>
+<li><code>/usr/lib/</code> librairies partagées</li>
+<li><code>/usr/sbin/</code> scripts et exécutables en complément pour l’administration du système. (<code>addgroup</code>, <code>adduser</code>, <code>dpkg-reconfigure</code>, …)</li>
+<li><code>/usr/src/</code> les sources du noyau et des programmes</li>
+<li><code>/usr/man</code>, <code>/usr/doc</code>, <code>/usr/info</code> manuel linux, documentation et pages d’infos.</li>
+</ul>
+<h3 id="title-var-variables"><code>/var/</code> variables</h3>
+<p>Fichiers variables, bases de données, sites web, …</p>
+<p><code>/var/log/</code> contient les logs du système</p>
+<h2 id="title-noms">Noms</h2>
+<ul>
+<li>tous les caractères alphanumériques plus la ponctuation sont des caractères valides</li>
+<li>pas de notion d’extention de fichier</li>
+<li>pas de caractères accentués</li>
+<li>distingue les minuscules des majuscules (<code>monfichier</code> et <code>monFichier</code> sont deux fichiers distincts !)</li>
+</ul>
+<h2 id="title-chemins">Chemins</h2>
+<ul>
+<li>L’arborescence du filesystem part de la racine <code>/</code></li>
+<li>Les répertoires sont séparés par des <code>/</code></li>
+<li>Un fichier est identifié par son <strong>chemin absolu</strong> depuis la racine du filesystem <code>/repertoire-1/repertoire-2/fichier</code></li>
+<li>Le répertoire parent est identifié par <code>..</code></li>
+<li>Le répertoire courant est identifié par <code>.</code></li>
+<li>Un fichier peut être identifié par son chemin relatif par rapport au répertoire courant <code>./repertoire-2/fichier</code> si l’on est dans <code>/repertoire-1/</code> </li>
+</ul>
+<h2 id="title-types-de-fichiers">Types de fichiers</h2>
+<h3 id="title-exécutable">exécutable</h3>
+<p>Forme binaire (exécutable) des programmes.</p>
+<h3 id="title-répertoire">répertoire</h3>
+<p>Collection de répertoire et de fichiers.</p>
+<h3 id="title-lien">lien</h3>
+<p>Pointeur vers un autre fichier.</p>
+<p>Se crée avec la commande <code>ln</code>.</p>
+<h4 id="title-lien-symbolique">lien symbolique</h4>
+<p>Un simple pointeur</p>
+<p><code>ln -s fichier-a-pointer nom-du-lien</code></p>
+<h4 id="title-lien-physique">lien physique</h4>
+<p>Comme un lien symbolique mais le lien occupe autant d’espace disque que le fichier référencé.</p>
+<p><code>ln fichier-a-pointer nom-du-lien</code></p>
+<h3 id="title-fichier">fichier</h3>
+<p>Le fichier standard, ce n’est ni un exécutable, ni un répertoire ni un lien.</p>
+<h3 id="title-fichier-caché">fichier caché</h3>
+<p>Un fichier normal mais préfixé par un <code>.</code>.</p>
+<p>Ne sera pas affiché par les commandes de listage des fichiers sauf option particulière.</p>
+<p><code>ls -l</code> va lister les fichiers du répertoire courant sauf les fichiers cachés.</p>
+<p><code>ls -la</code> va lister les fichiers du répertoire courant ainsi que les fichiers cachés.</p>
+<h2 id="title-navigation">Navigation</h2>
+<p><code>pwd</code> (print working directory) permet de connaitre le répertoire courant (working directory) </p>
+<p>La commande <code>cd</code> (change directory) permet de naviguer dans le FHS en changeant le répertoire courant.</p>
+<ul>
+<li><code>cd ..</code> change la working directory pour le répertoire parent du répertoire courant actuel.</li>
+<li><code>cd ../..</code> change la working directory pour le répertoire parent du répertoire parent du répertoire courant actuel.</li>
+<li><code>cd /</code> change la working directory pour la racine du FHS.</li>
+<li><code>cd /home</code> change la working directory pour le répertoire <code>home</code> en partant de la racine (chemin absolu).</li>
+<li><code>cd home</code> change la working directory pour le répertoire <code>home</code> contenu dans la working directory courante.</li>
+<li><code>cd ../home</code> change la working directory pour le répertoire <code>home</code> contenu dans le parent de la working directory courante.</li>
+</ul>
+<h2 id="title-commandes">Commandes</h2>
+<ul>
+<li><code>rm</code> Supprime un fichier ou un répertoire.</li>
+<li><code>mv</code> Déplace ou renomme un fichier ou un réperoire.</li>
+<li><code>mkdir</code> Crée un réperoire.</li>
+<li><code>rmdir</code> Supprime un répertoire.</li>
+<li><code>cp</code> Copie un fichier ou un répertoire.</li>
+<li><code>pwd</code> Affiche le chemin du répertoire courant.</li>
+<li><code>cd</code> Se déplace dans le système de fichier.</li>
+<li><code>ls</code> Affiche la liste des fichiers et répertoires.</li>
+<li><code>ln</code> Crée un lien vers un fichier.</li>
+</ul>
+<h2 id="title-meta-caracteres">Meta-caracteres</h2>
+<p><code>*</code> remplace zéro, un ou plusieurs caractères dans l’expression où il apparait.</p>
+<p>Par exemple : <code>ls -l *.json</code> liste tous les fichiers <code>.json</code> du répertoire courant.</p>
+<p><code>?</code> remplace un seul caractère dans l’expression où il apparait.</p>
+<p>Par exemple : <code>ls -l ??ok.json</code> liste tous les fichiers ayant deux caractères suivis de <code>ok.json</code> dans le répertoire courant.</p>
+</article></body></html>
