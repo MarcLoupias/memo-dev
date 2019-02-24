@@ -1,6 +1,6 @@
 # memo-dev
 
-[memo-dev available here](https://marcloupias.github.io/memo-dev/)
+[memo-dev available here](http://memo-dev.marc-loupias.fr)
 
 This website is a personal reminder for work. Aka : memo, knowledge base, cheatsheets, til, ... 
 
@@ -12,7 +12,7 @@ Any comments welcome ...
 
 > Others similar repo linked [there](https://github.com/RichardLitt/meta-knowledge).
 
-## how it works
+## how it works
 
 ### markdown files
 
@@ -24,7 +24,7 @@ They are linted with [DavidAnson/markdownlint](https://github.com/DavidAnson/mar
 
 Each markdown file contain a [front-matter](https://www.npmjs.com/package/front-matter) to define `<title>`, `<meta>`, `<style>` and `<script>` tags.
 
-### html generation
+### html generation
 
 The `content/*.md` files are converted into `.html` with [MarcLoupias/mdfc-map-to-html](https://github.com/MarcLoupias/mdfc-map-to-html).
 
@@ -42,7 +42,7 @@ Then the `docs/` folder is ready to serve.
 
 ### css
 
-#### general design
+#### general design
 
 [sindresorhus/github-markdown-css](https://github.com/sindresorhus/github-markdown-css)
 
@@ -58,8 +58,7 @@ Using [highlight.js](https://highlightjs.org).
 
 [GitHub pages](https://help.github.com/en/categories/github-pages-basics) with the `docs/` folder configuration is used to deploy.
 
-## TODO
+## TODO
 
-- **BUG** parcel me fait chier à réécrire toutes les urls en absolue. Si on définit en public (https://en.parceljs.org/cli.html#set-the-public-url-to-serve-on) il préserve pas ce qui existait (`../../toto` devient `toto`)
 - A new `index.html` page in the form of a SPA to support a full text research with [lunr](https://www.npmjs.com/package/lunr).
 - A TravisCI job with a [GitHub Webhook](https://developer.github.com/webhooks/) to lint the markdown and generate automatically the `docs/` folder when editing the `content/` folder from the GitHub UI.
