@@ -1,21 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../../github-markdown.css" rel="stylesheet" media="all"><link href="../../../main.css" rel="stylesheet" media="all"><link href="../../../github.css" rel="stylesheet"><script src="../../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-tools---release-workflow">tools - release workflow</h1>
-<p>By release workflow, i mean all the tasks starting to the commit to be published (excluding Work In Progress, aka WIP commits, to be squashed).</p>
-<p>The tasks are :</p>
-<ul>
-<li>commit to be released</li>
-<li>CHANGELOG generation</li>
-<li>CHANGELOG commit</li>
-<li>tagging</li>
-<li>npm packaging</li>
-<li>git push</li>
-<li>git PR/MR (Pull Request / Merge Request) resolution (including CI job)</li>
-<li>release to npm registry or deploy to environment (depending of the deliverable nature)</li>
-</ul>
-<p>The operational workflow varies depending on <em>where</em> theses tasks are executed.</p>
-<p>They can be executed on the developer computer or/and in the CI pipeline.</p>
-<p>The release workflow is highly coupled the Git workflow, anyway this is another matter.</p>
-<p>We could resume the release workflow this way :</p>
-<pre><code class="lang-text">
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-tools---release-workflow">tools - release workflow</h1> <p>By release workflow, i mean all the tasks starting to the commit to be published (excluding Work In Progress, aka WIP commits, to be squashed).</p> <p>The tasks are :</p> <ul> <li>commit to be released</li> <li>CHANGELOG generation</li> <li>CHANGELOG commit</li> <li>tagging</li> <li>npm packaging</li> <li>git push</li> <li>git PR/MR (Pull Request / Merge Request) resolution (including CI job)</li> <li>release to npm registry or deploy to environment (depending of the deliverable nature)</li> </ul> <p>The operational workflow varies depending on <em>where</em> theses tasks are executed.</p> <p>They can be executed on the developer computer or/and in the CI pipeline.</p> <p>The release workflow is highly coupled the Git workflow, anyway this is another matter.</p> <p>We could resume the release workflow this way :</p> <pre><code class="lang-text">
 commit ---&gt; CHANGELOG ---&gt; tag ---&gt; merge
 
                             |
@@ -23,175 +6,11 @@ commit ---&gt; CHANGELOG ---&gt; tag ---&gt; merge
                             V
 
                          package ---&gt; release
-</code></pre>
-<h2 id="title-foundation-basics">foundation basics</h2>
-<p>Theses tools are based on Git, a common commits messages convention, the semver specification and obviously npm.</p>
-<h3 id="title-codebase-git">codebase (Git)</h3>
-<p>The famous <a href="https://git-scm.cohtml">Source Control Manager</a>.</p>
-<p>Manage the codebase contained in a repository.</p>
-<h3 id="title-codebase-revisions-git-commits-messages-convention">codebase revisions (Git commits messages convention)</h3>
-<p>Popularized by AngularJS team. Can be <a href="https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelinhtml">found here</a>.</p>
-<p>Each codebase revision is hold in a commit. Each commit contain a commit message.</p>
-<p>Commit message standardization leads to :</p>
-<ul>
-<li>CHANGELOG generation automation.</li>
-<li>version generation (tagging) automation.</li>
-</ul>
-<h3 id="title-versions-system-semver">versions system (Semver)</h3>
-<p>Popularized by npm to manage the version system.</p>
-<p><a href="https://semver.orhtml">Dedicated website semver.org</a>.</p>
-<p>It is about how to structure a version number and for what meaning.</p>
-<h3 id="title-deliverable-management-npm">deliverable management (npm)</h3>
-<p>The <a href="https://www.npmjs.cohtml">node package manager</a>.</p>
-<ul>
-<li>Manage the dependencies in a project.</li>
-<li>Structure the deliverable (named “package” in npm world), the npm registry store the deliverable. Users download packages from it.</li>
-</ul>
-<p>The following npm CLI commands are especially involved :</p>
-<ul>
-<li><a href="https://docs.npmjs.com/cli/version.hthtml"><code>npm version</code></a></li>
-<li><a href="https://docs.npmjs.com/cli/pack.hthtml"><code>npm pack</code></a></li>
-</ul>
-<p>Commands like <code>npm build</code>, <code>npm test</code>, <code>npm ci</code> are obviously also involved, but they are already involved in the development process.</p>
-<h3 id="title-articles">articles</h3>
-<p><a href="https://hackernoon.com/these-6-essential-tools-will-maintain-your-npm-modules-for-you-4cbbee88e0html">These 6 essential tools will release, version, and maintain your NPM modules for you - hackernoon.com - 20180425</a></p>
-<blockquote>
-<ul>
-<li>Automate your releases and semantic versioning with <code>semantic-release</code></li>
-<li>Use <code>commitizen</code> with <code>cz-convential-changelog</code> to capture additional details about each commit</li>
-<li>Run Automated Tests that generate Code Coverage reports</li>
-<li>Maintain coverage standards with <code>Codecov</code></li>
-<li>Ensure consistent code formatting, and avoid simple mistakes by Linting your code</li>
-<li>Keep your dependencies up to date with <code>GreenKeeper</code></li>
-</ul>
-</blockquote>
-<p><a href="https://michaljanaszek.com/blog/lerna-conventional-commihtml">Semantic Release with Lerna and Conventional Commits - michaljanaszek.com/blog - 20180616</a></p>
-<blockquote>
-<p>In this tutorial, I will show you how to configure Lerna with Conventional Commits to achieve automatic Semantic Release based only on the history of commits.</p>
-<p>Conventional Commits + Conventional Changelog + Semantic Release + Commitlint</p>
-</blockquote>
-<p><a href="https://samhogy.co.uk/2018/08/lerna-independent-mode-with-semver.hthtml">Lerna Independent Mode with Semver - samhogy.co.uk - 20180816</a></p>
-<blockquote>
-<p>focus on lerna independent mode with semantic versioning.</p>
-</blockquote>
-<h2 id="title-tools-overview">tools overview</h2>
-<h3 id="title-monorepo-management">monorepo management</h3>
-<p><a href="https://github.com/lerna/lerhtml">lerna/lerna - github.com</a> / <a href="https://lernajs.ihtml">lernajs.io</a></p>
-<blockquote>
-<p>A tool for managing JavaScript projects with multiple packages</p>
-</blockquote>
-<p>Lerna config belongs to <code>lerna.json</code> file.</p>
-<p>Logs goes into <code>lerna-debug.log</code> file.</p>
-<p><strong>Features</strong></p>
-<ul>
-<li>Version / tag management in 2 modes :<ul>
-<li>Fixed/Locked mode (every package got the same version number / tag)</li>
-<li>Independent mode (each package got his own version number / tag)</li>
-</ul>
-</li>
-<li>Common <code>devDependencies</code> (hoisting of common dependencies, most of the <code>devDependencies</code> are commons)</li>
-</ul>
-<p>WARNING : lerna used with semantic-release is not mature at all. See <a href="https://github.com/semantic-release/semantic-release/issues/1html">issue on semantic-release repo</a>.</p>
-<h3 id="title-dependencies-automatic-management">dependencies automatic management</h3>
-<p><a href="https://greenkeeper.ihtml">greenkeeper.io</a> <a href="https://github.com/greenkeeperhtml">greenkeeperio - github.com</a></p>
-<blockquote>
-<p>Get safety &amp; consistency with real-time monitoring and automatic updates for npm dependencies</p>
-</blockquote>
-<h3 id="title-commit-message-management">commit message management</h3>
-<p><a href="https://www.conventionalcommits.org/en/v1.0.0-beta.html">Conventional Commits</a></p>
-<blockquote>
-<p>A specification for adding human and machine readable meaning to commit messages</p>
-</blockquote>
-<p>Commit message structure :</p>
-<pre><code class="lang-text">&lt;type&gt;[optional scope]: &lt;description&gt;
+</code></pre> <h2 id="title-foundation-basics">foundation basics</h2> <p>Theses tools are based on Git, a common commits messages convention, the semver specification and obviously npm.</p> <h3 id="title-codebase-git">codebase (Git)</h3> <p>The famous <a href="https://git-scm.com/">Source Control Manager</a>.</p> <p>Manage the codebase contained in a repository.</p> <h3 id="title-codebase-revisions-git-commits-messages-convention">codebase revisions (Git commits messages convention)</h3> <p>Popularized by AngularJS team. Can be <a href="https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines">found here</a>.</p> <p>Each codebase revision is hold in a commit. Each commit contain a commit message.</p> <p>Commit message standardization leads to :</p> <ul> <li>CHANGELOG generation automation.</li> <li>version generation (tagging) automation.</li> </ul> <h3 id="title-versions-system-semver">versions system (Semver)</h3> <p>Popularized by npm to manage the version system.</p> <p><a href="https://semver.org/">Dedicated website semver.org</a>.</p> <p>It is about how to structure a version number and for what meaning.</p> <h3 id="title-deliverable-management-npm">deliverable management (npm)</h3> <p>The <a href="https://www.npmjs.com/">node package manager</a>.</p> <ul> <li>Manage the dependencies in a project.</li> <li>Structure the deliverable (named “package” in npm world), the npm registry store the deliverable. Users download packages from it.</li> </ul> <p>The following npm CLI commands are especially involved :</p> <ul> <li><a href="https://docs.npmjs.com/cli/version.html"><code>npm version</code></a></li> <li><a href="https://docs.npmjs.com/cli/pack.html"><code>npm pack</code></a></li> </ul> <p>Commands like <code>npm build</code>, <code>npm test</code>, <code>npm ci</code> are obviously also involved, but they are already involved in the development process.</p> <h3 id="title-articles">articles</h3> <p><a href="https://hackernoon.com/these-6-essential-tools-will-maintain-your-npm-modules-for-you-4cbbee88e0cb">These 6 essential tools will release, version, and maintain your NPM modules for you - hackernoon.com - 20180425</a></p> <blockquote> <ul> <li>Automate your releases and semantic versioning with <code>semantic-release</code></li> <li>Use <code>commitizen</code> with <code>cz-convential-changelog</code> to capture additional details about each commit</li> <li>Run Automated Tests that generate Code Coverage reports</li> <li>Maintain coverage standards with <code>Codecov</code></li> <li>Ensure consistent code formatting, and avoid simple mistakes by Linting your code</li> <li>Keep your dependencies up to date with <code>GreenKeeper</code></li> </ul> </blockquote> <p><a href="https://michaljanaszek.com/blog/lerna-conventional-commits">Semantic Release with Lerna and Conventional Commits - michaljanaszek.com/blog - 20180616</a></p> <blockquote> <p>In this tutorial, I will show you how to configure Lerna with Conventional Commits to achieve automatic Semantic Release based only on the history of commits.</p> <p>Conventional Commits + Conventional Changelog + Semantic Release + Commitlint</p> </blockquote> <p><a href="https://samhogy.co.uk/2018/08/lerna-independent-mode-with-semver.html">Lerna Independent Mode with Semver - samhogy.co.uk - 20180816</a></p> <blockquote> <p>focus on lerna independent mode with semantic versioning.</p> </blockquote> <h2 id="title-tools-overview">tools overview</h2> <h3 id="title-monorepo-management">monorepo management</h3> <p><a href="https://github.com/lerna/lerna">lerna/lerna - github.com</a> / <a href="https://lernajs.io/">lernajs.io</a></p> <blockquote> <p>A tool for managing JavaScript projects with multiple packages</p> </blockquote> <p>Lerna config belongs to <code>lerna.json</code> file.</p> <p>Logs goes into <code>lerna-debug.log</code> file.</p> <p><strong>Features</strong></p> <ul> <li>Version / tag management in 2 modes :<ul> <li>Fixed/Locked mode (every package got the same version number / tag)</li> <li>Independent mode (each package got his own version number / tag)</li> </ul> </li> <li>Common <code>devDependencies</code> (hoisting of common dependencies, most of the <code>devDependencies</code> are commons)</li> </ul> <p>WARNING : lerna used with semantic-release is not mature at all. See <a href="https://github.com/semantic-release/semantic-release/issues/193">issue on semantic-release repo</a>.</p> <h3 id="title-dependencies-automatic-management">dependencies automatic management</h3> <p><a href="https://greenkeeper.io/">greenkeeper.io</a> <a href="https://github.com/greenkeeperio">greenkeeperio - github.com</a></p> <blockquote> <p>Get safety &amp; consistency with real-time monitoring and automatic updates for npm dependencies</p> </blockquote> <h3 id="title-commit-message-management">commit message management</h3> <p><a href="https://www.conventionalcommits.org/en/v1.0.0-beta.3/">Conventional Commits</a></p> <blockquote> <p>A specification for adding human and machine readable meaning to commit messages</p> </blockquote> <p>Commit message structure :</p> <pre><code class="lang-text">&lt;type&gt;[optional scope]: &lt;description&gt;
 
 [optional body]
 
-[optional footer]</code></pre>
-<p><a href="https://github.com/conventional-changelog/commitlihtml">conventional-changelog/commitlint - github.com</a></p>
-<blockquote>
-<p>Lint commit messages</p>
-</blockquote>
-<p><a href="https://github.com/commitizen/cz-chtml">commitizen/cz-cli - github.com</a></p>
-<blockquote>
-<p>The commitizen command line utility.</p>
-</blockquote>
-<p><a href="https://github.com/commitizen/cz-conventional-changelhtml">commitizen/cz-conventional-changelog - github.com</a></p>
-<blockquote>
-<p>A commitizen adapter for the angular preset of <a href="https://github.com/conventional-changelhtml">conventional-changelog</a>.</p>
-</blockquote>
-<h3 id="title-changelogmd-management"><code>CHANGELOG.md</code> management</h3>
-<p><a href="https://www.npmtrends.com/standard-version-vs-semantic-release-vs-conventional-changelog-vs-generate-changelog-vs-@semantic-release/github-vs-@semantic-release/release-notes-generator-vs-@semantic-release/nhtml">npmtrends.com comparison</a></p>
-<p>2 years time range give a better view :</p>
-<ul>
-<li><strong>generate-changelog</strong> have really low usage.</li>
-<li><strong>conventional-changelog</strong> is the older and the most used but adoption seems stable.</li>
-<li><strong>semantic-release</strong> is growing quite fast since mid-2018, close to <strong>conventional-changelog</strong> adoption and still growing.</li>
-</ul>
-<h4 id="title-lobgenerate-changelog">lob/generate-changelog</h4>
-<p><a href="https://github.com/lob/generate-changelhtml">lob/generate-changelog - github.com</a></p>
-<p>The simpler one.</p>
-<p>Limited to the <code>CHANGELOG.md</code> file generation.</p>
-<p>Recommendations available for the tag and push tasks.</p>
-<h4 id="title-conventional-changelog">conventional-changelog</h4>
-<p><strong>Executed on the developer computer manually by the developer.</strong></p>
-<p><a href="https://github.com/conventional-changelhtml">conventional-changelog - github.com</a></p>
-<p><a href="https://github.com/conventional-changelog/standard-versihtml">standard-version</a> is the high level entry point repo.</p>
-<p><code>standard-version</code> does the following:</p>
-<ol>
-<li>bumps the version in metadata files (package.json, composer.json, etc).</li>
-<li>uses <a href="https://github.com/conventional-changelog/conventional-changelhtml">conventional-changelog</a> to update <em>CHANGELOG.md</em></li>
-<li>commits <em>package.json (et al.)</em> and <em>CHANGELOG.md</em></li>
-<li>tags a new release</li>
-</ol>
-<p><strong>Others tools</strong></p>
-<p><a href="https://github.com/conventional-changelog/releaser-toohtml">releaser-tools - github.com/conventional-changelog</a></p>
-<blockquote>
-<p>Create a GitHub/GitLab/etc. release using a project’s commit messages and metadata.</p>
-</blockquote>
-<h4 id="title-semantic-release">semantic-release</h4>
-<p><strong>Executed by a CI job.</strong></p>
-<p><a href="https://github.com/semantic-releahtml">semantic-release - github.com</a></p>
-<p><a href="https://semantic-release.gitbook.io/semantic-releashtml">semantic-release - semantic-release.gitbook.io</a></p>
-<blockquote>
-<p><strong>semantic-release</strong> automates the whole package release workflow including: determining the next version number, generating the release notes and publishing the package.</p>
-<p>This removes the immediate connection between human emotions and version numbers, strictly following the <a href="http://semver.ohtml">Semantic Versioning</a> specification.</p>
-</blockquote>
-<h4 id="title-conventional-changelog-versus-semantic-release">conventional-changelog versus semantic-release</h4>
-<p><a href="https://github.com/conventional-changelog/standard-version/issueshtml">explain the relationship to semantic-release - github.com/conventional-changelog</a></p>
-<p><a href="https://github.com/conventional-changelog/standard-version/issues/html">How is it different than <code>semantic-release</code> - github.com/conventional-changelog</a></p>
-<blockquote>
-<p><a href="https://github.com/semantic-release/semantic-releahtml"><code>semantic-release</code></a> is a fully automated library/system for versioning, changelog generation, git tagging, and publishing to the npm registry.</p>
-<p><code>standard-version</code> is different because it handles the versioning, changelog generation, and git tagging for you <strong>without</strong> automatic pushing (to GitHub) or publishing (to an npm registry). Use of <code>standard-version</code> only affects your local git repo - it doesn’t affect remote resources at all. After you run <code>standard-version</code>, you still have to ability to review things and correct mistakes if you want to.</p>
-<p>They are both based on the same foundation of structured commit messages (using <a href="https://github.com/bcoe/conventional-changelog-standard/blob/master/convention.html">Angular format</a>), but <code>standard-version</code> is a good choice for folks who are not yet comfortable letting publishes go out automatically. In this way, you can view <code>standard-version</code> as an incremental step to adopting <code>semantic-release</code>.</p>
-</blockquote>
-<h2 id="title-a-working-continuous-delivery-workflow">a working continuous delivery workflow</h2>
-<h3 id="title-overview">overview</h3>
-<p>Setup a continuous delivery workflow with as much automation as possible from commit to deployment.</p>
-<p>The CI service used is <a href="https://travis-ci.orhtml">TravisCI</a>.</p>
-<p>GitHooks are managed by <a href="https://github.com/typicode/hushtml">Husky</a>.</p>
-<p>Commit message convention used is <a href="https://www.conventionalcommits.org/en/v1.0.0-beta.html">www.conventionalcommits.org</a>.</p>
-<p>Commit messages are linted by <a href="https://conventional-changelog.github.io/commitlint/html">commitlint</a>.</p>
-<p>Commit can be produced with the help of the <a href="http://commitizen.github.io/cz-clhtml">commitizen CLI</a> with the <a href="https://github.com/commitizen/cz-conventional-changelhtml">cz-conventional-changelog</a> config.</p>
-<p>Automation is provided by <a href="https://github.com/semantic-release/semantic-releahtml">semantic-release</a>.</p>
-<h3 id="title-git-workflow">git workflow</h3>
-<p>Two branches, <code>master</code> and <code>develop</code>, both must be protected.</p>
-<p><code>develop</code> is the target for every PR. Set it as default branch instead of <code>master</code> branch.</p>
-<p>PR are done with classic features branches based on <code>develop</code>, never based on <code>master</code>.</p>
-<p><code>master</code> is the distribution channel to deploy.</p>
-<p>Every branch push trigger a CI job.</p>
-<p>A CI job is composed of 3 stages :</p>
-<ul>
-<li><code>commitlint</code> stage to reject malformed commit message</li>
-<li><code>test</code> stage to reject invalid commit content (test should execute at least lint + tests)</li>
-<li><code>deploy</code> stage triggered only by the <code>master</code> branch to build the package and deploy it to the npm registry.<br>It also determine the version number, compute the release CHANGELOG, tag the tip of the branch and push it with release CHANGELOG to origin.</li>
-</ul>
-<p>To deploy, the git owner must merge locally <code>develop</code> into <code>master</code>. It should be always a fast-forward, <code>develop</code> and <code>master</code> are mirrors.</p>
-<p>Never use a PR to merge <code>develop</code> into <code>master</code>, semantic-release will not trigger the deploy stage for a PR.</p>
-<h3 id="title-installation">installation</h3>
-<p>Before any steps, be sure to have a valid <code>package.json</code> file, and especially a fulfilled <code>&quot;repository&quot;</code> section in it.</p>
-<p>You should also already have a <code>.npmignore</code> file with a content like this :</p>
-<pre><code class="lang-text">node_modules/
+[optional footer]</code></pre> <p><a href="https://github.com/conventional-changelog/commitlint">conventional-changelog/commitlint - github.com</a></p> <blockquote> <p>Lint commit messages</p> </blockquote> <p><a href="https://github.com/commitizen/cz-cli">commitizen/cz-cli - github.com</a></p> <blockquote> <p>The commitizen command line utility.</p> </blockquote> <p><a href="https://github.com/commitizen/cz-conventional-changelog">commitizen/cz-conventional-changelog - github.com</a></p> <blockquote> <p>A commitizen adapter for the angular preset of <a href="https://github.com/conventional-changelog">conventional-changelog</a>.</p> </blockquote> <h3 id="title-changelogmd-management"><code>CHANGELOG.md</code> management</h3> <p><a href="https://www.npmtrends.com/standard-version-vs-semantic-release-vs-conventional-changelog-vs-generate-changelog-vs-@semantic-release/github-vs-@semantic-release/release-notes-generator-vs-@semantic-release/npm">npmtrends.com comparison</a></p> <p>2 years time range give a better view :</p> <ul> <li><strong>generate-changelog</strong> have really low usage.</li> <li><strong>conventional-changelog</strong> is the older and the most used but adoption seems stable.</li> <li><strong>semantic-release</strong> is growing quite fast since mid-2018, close to <strong>conventional-changelog</strong> adoption and still growing.</li> </ul> <h4 id="title-lobgenerate-changelog">lob/generate-changelog</h4> <p><a href="https://github.com/lob/generate-changelog">lob/generate-changelog - github.com</a></p> <p>The simpler one.</p> <p>Limited to the <code>CHANGELOG.md</code> file generation.</p> <p>Recommendations available for the tag and push tasks.</p> <h4 id="title-conventional-changelog">conventional-changelog</h4> <p><strong>Executed on the developer computer manually by the developer.</strong></p> <p><a href="https://github.com/conventional-changelog">conventional-changelog - github.com</a></p> <p><a href="https://github.com/conventional-changelog/standard-version">standard-version</a> is the high level entry point repo.</p> <p><code>standard-version</code> does the following:</p> <ol> <li>bumps the version in metadata files (package.json, composer.json, etc).</li> <li>uses <a href="https://github.com/conventional-changelog/conventional-changelog">conventional-changelog</a> to update <em>CHANGELOG.md</em></li> <li>commits <em>package.json (et al.)</em> and <em>CHANGELOG.md</em></li> <li>tags a new release</li> </ol> <p><strong>Others tools</strong></p> <p><a href="https://github.com/conventional-changelog/releaser-tools">releaser-tools - github.com/conventional-changelog</a></p> <blockquote> <p>Create a GitHub/GitLab/etc. release using a project’s commit messages and metadata.</p> </blockquote> <h4 id="title-semantic-release">semantic-release</h4> <p><strong>Executed by a CI job.</strong></p> <p><a href="https://github.com/semantic-release">semantic-release - github.com</a></p> <p><a href="https://semantic-release.gitbook.io/semantic-release/">semantic-release - semantic-release.gitbook.io</a></p> <blockquote> <p><strong>semantic-release</strong> automates the whole package release workflow including: determining the next version number, generating the release notes and publishing the package.</p> <p>This removes the immediate connection between human emotions and version numbers, strictly following the <a href="http://semver.org">Semantic Versioning</a> specification.</p> </blockquote> <h4 id="title-conventional-changelog-versus-semantic-release">conventional-changelog versus semantic-release</h4> <p><a href="https://github.com/conventional-changelog/standard-version/issues/3">explain the relationship to semantic-release - github.com/conventional-changelog</a></p> <p><a href="https://github.com/conventional-changelog/standard-version/issues/22">How is it different than <code>semantic-release</code> - github.com/conventional-changelog</a></p> <blockquote> <p><a href="https://github.com/semantic-release/semantic-release"><code>semantic-release</code></a> is a fully automated library/system for versioning, changelog generation, git tagging, and publishing to the npm registry.</p> <p><code>standard-version</code> is different because it handles the versioning, changelog generation, and git tagging for you <strong>without</strong> automatic pushing (to GitHub) or publishing (to an npm registry). Use of <code>standard-version</code> only affects your local git repo - it doesn’t affect remote resources at all. After you run <code>standard-version</code>, you still have to ability to review things and correct mistakes if you want to.</p> <p>They are both based on the same foundation of structured commit messages (using <a href="https://github.com/bcoe/conventional-changelog-standard/blob/master/convention.html">Angular format</a>), but <code>standard-version</code> is a good choice for folks who are not yet comfortable letting publishes go out automatically. In this way, you can view <code>standard-version</code> as an incremental step to adopting <code>semantic-release</code>.</p> </blockquote> <h2 id="title-a-working-continuous-delivery-workflow">a working continuous delivery workflow</h2> <h3 id="title-overview">overview</h3> <p>Setup a continuous delivery workflow with as much automation as possible from commit to deployment.</p> <p>The CI service used is <a href="https://travis-ci.org/">TravisCI</a>.</p> <p>GitHooks are managed by <a href="https://github.com/typicode/husky">Husky</a>.</p> <p>Commit message convention used is <a href="https://www.conventionalcommits.org/en/v1.0.0-beta.3/">www.conventionalcommits.org</a>.</p> <p>Commit messages are linted by <a href="https://conventional-changelog.github.io/commitlint/#/">commitlint</a>.</p> <p>Commit can be produced with the help of the <a href="http://commitizen.github.io/cz-cli/">commitizen CLI</a> with the <a href="https://github.com/commitizen/cz-conventional-changelog">cz-conventional-changelog</a> config.</p> <p>Automation is provided by <a href="https://github.com/semantic-release/semantic-release">semantic-release</a>.</p> <h3 id="title-git-workflow">git workflow</h3> <p>Two branches, <code>master</code> and <code>develop</code>, both must be protected.</p> <p><code>develop</code> is the target for every PR. Set it as default branch instead of <code>master</code> branch.</p> <p>PR are done with classic features branches based on <code>develop</code>, never based on <code>master</code>.</p> <p><code>master</code> is the distribution channel to deploy.</p> <p>Every branch push trigger a CI job.</p> <p>A CI job is composed of 3 stages :</p> <ul> <li><code>commitlint</code> stage to reject malformed commit message</li> <li><code>test</code> stage to reject invalid commit content (test should execute at least lint + tests)</li> <li><code>deploy</code> stage triggered only by the <code>master</code> branch to build the package and deploy it to the npm registry.<br>It also determine the version number, compute the release CHANGELOG, tag the tip of the branch and push it with release CHANGELOG to origin.</li> </ul> <p>To deploy, the git owner must merge locally <code>develop</code> into <code>master</code>. It should be always a fast-forward, <code>develop</code> and <code>master</code> are mirrors.</p> <p>Never use a PR to merge <code>develop</code> into <code>master</code>, semantic-release will not trigger the deploy stage for a PR.</p> <h3 id="title-installation">installation</h3> <p>Before any steps, be sure to have a valid <code>package.json</code> file, and especially a fulfilled <code>&quot;repository&quot;</code> section in it.</p> <p>You should also already have a <code>.npmignore</code> file with a content like this :</p> <pre><code class="lang-text">node_modules/
 public/
 dist/
 npm-debug.log
@@ -207,57 +26,21 @@ tests/
 tsconfig.json
 tsconfig-dev.json
 tslint.json
-.travis.yml</code></pre>
-<p><strong>install semantic-release in your project</strong></p>
-<pre><code class="lang-bash">npm i -D semantic-release</code></pre>
-<p><strong>install semantic-release-cli</strong></p>
-<pre><code class="lang-bash">npm i -g semantic-release-cli</code></pre>
-<p><strong>configure semantic-release</strong></p>
-<pre><code class="lang-bash">semantic-release-cli setup</code></pre>
-<p>Answer the questions, you will need to provide your logins / passwords for npm registry and github account.<br>semantic-release will generate tokens with them and will push them to TravisCI to allows the CI job to push into them.</p>
-<p>GitHub webhook will be automatically configured.<br>TravisCI job will be automatically created and configured during the first deploy attempt (push on the <code>master</code> branch).</p>
-<p>The version number in your <code>package.json</code> will be set to <code>0.0.0-development</code> and will never move.<br>semantic-release modify only the <code>package.json</code> put into the npm package sent to the registry.</p>
-<p><strong>install commitizen</strong></p>
-<pre><code class="lang-bash">npm i -D commitizen cz-conventional-changelog</code></pre>
-<p>commitizen provide a CLI wizard to help creating valid commit messages</p>
-<p>cz-conventional-changelog describe the desired commit format (for this example it is <a href="https://www.conventionalcommits.org/en/v1.0.0-beta.html">the conventional changelog spec</a>)</p>
-<p><strong>configure commitizen</strong></p>
-<p>In your <code>package.json</code>, add this section to configure commitizen :</p>
-<pre><code class="lang-json">    &quot;config&quot;: {
+.travis.yml</code></pre> <p><strong>install semantic-release in your project</strong></p> <pre><code class="lang-bash">npm i -D semantic-release</code></pre> <p><strong>install semantic-release-cli</strong></p> <pre><code class="lang-bash">npm i -g semantic-release-cli</code></pre> <p><strong>configure semantic-release</strong></p> <pre><code class="lang-bash">semantic-release-cli setup</code></pre> <p>Answer the questions, you will need to provide your logins / passwords for npm registry and github account.<br>semantic-release will generate tokens with them and will push them to TravisCI to allows the CI job to push into them.</p> <p>GitHub webhook will be automatically configured.<br>TravisCI job will be automatically created and configured during the first deploy attempt (push on the <code>master</code> branch).</p> <p>The version number in your <code>package.json</code> will be set to <code>0.0.0-development</code> and will never move.<br>semantic-release modify only the <code>package.json</code> put into the npm package sent to the registry.</p> <p><strong>install commitizen</strong></p> <pre><code class="lang-bash">npm i -D commitizen cz-conventional-changelog</code></pre> <p>commitizen provide a CLI wizard to help creating valid commit messages</p> <p>cz-conventional-changelog describe the desired commit format (for this example it is <a href="https://www.conventionalcommits.org/en/v1.0.0-beta.3/">the conventional changelog spec</a>)</p> <p><strong>configure commitizen</strong></p> <p>In your <code>package.json</code>, add this section to configure commitizen :</p> <pre><code class="lang-json">    &quot;config&quot;: {
         &quot;commitizen&quot;: {
             &quot;path&quot;: &quot;./node_modules/cz-conventional-changelog&quot;
         }
-    },</code></pre>
-<p>And under the <code>script</code> section add this command :</p>
-<pre><code class="lang-json">&quot;cz-commit&quot;: &quot;git-cz&quot;</code></pre>
-<p>To avoid conflict with husky, prefix the script with <code>cz-</code> (defaut in the documentation is just <code>commit</code>).</p>
-<p><strong>commitizen usage</strong></p>
-<p>Stages the files you want to commit, then use the CLI tool with <code>npm run cz-commit</code> then answer the questions.</p>
-<p><strong>install commitlint</strong></p>
-<pre><code class="lang-bash">npm i -D @commitlint/cli @commitlint/config-conventional @commitlint/travis-cli</code></pre>
-<p>Same as commitizen, the commitlint CLI is configured with the @commitlint/config-conventional package to define the commit message convention used.</p>
-<p>The @commitlint/travis-cli will be used in the TravisCI job to lint server side en enforce the convention.</p>
-<p><strong>configure commitlint</strong></p>
-<p>Add this section to your <code>package.json</code> to configure commitlint :</p>
-<pre><code class="lang-json">    &quot;commitlint&quot;: {
+    },</code></pre> <p>And under the <code>script</code> section add this command :</p> <pre><code class="lang-json">&quot;cz-commit&quot;: &quot;git-cz&quot;</code></pre> <p>To avoid conflict with husky, prefix the script with <code>cz-</code> (defaut in the documentation is just <code>commit</code>).</p> <p><strong>commitizen usage</strong></p> <p>Stages the files you want to commit, then use the CLI tool with <code>npm run cz-commit</code> then answer the questions.</p> <p><strong>install commitlint</strong></p> <pre><code class="lang-bash">npm i -D @commitlint/cli @commitlint/config-conventional @commitlint/travis-cli</code></pre> <p>Same as commitizen, the commitlint CLI is configured with the @commitlint/config-conventional package to define the commit message convention used.</p> <p>The @commitlint/travis-cli will be used in the TravisCI job to lint server side en enforce the convention.</p> <p><strong>configure commitlint</strong></p> <p>Add this section to your <code>package.json</code> to configure commitlint :</p> <pre><code class="lang-json">    &quot;commitlint&quot;: {
         &quot;extends&quot;: [
             &quot;@commitlint/config-conventional&quot;
         ]
-    },</code></pre>
-<p>Add a hook to the husky configuration in your <code>package.json</code> :</p>
-<pre><code class="lang-json">    &quot;commit-msg&quot;: &quot;commitlint -E HUSKY_GIT_PARAMS&quot;,</code></pre>
-<p>Each local commit attempt will trigger commitlint.</p>
-<p>Your husky configuraton in your <code>package.json</code> should look like this :</p>
-<pre><code class="lang-json">    &quot;husky&quot;: {
+    },</code></pre> <p>Add a hook to the husky configuration in your <code>package.json</code> :</p> <pre><code class="lang-json">    &quot;commit-msg&quot;: &quot;commitlint -E HUSKY_GIT_PARAMS&quot;,</code></pre> <p>Each local commit attempt will trigger commitlint.</p> <p>Your husky configuraton in your <code>package.json</code> should look like this :</p> <pre><code class="lang-json">    &quot;husky&quot;: {
         &quot;hooks&quot;: {
             &quot;commit-msg&quot;: &quot;commitlint -E HUSKY_GIT_PARAMS&quot;,
             &quot;pre-commit&quot;: &quot;npm test&quot;,
             &quot;pre-push&quot;: &quot;npm test&quot;
         }
-    },</code></pre>
-<p><strong>create and fill your <code>.travis.yml</code> file</strong></p>
-<p>This content should do the job :</p>
-<pre><code class="lang-yaml">language: node_js
+    },</code></pre> <p><strong>create and fill your <code>.travis.yml</code> file</strong></p> <p>This content should do the job :</p> <pre><code class="lang-yaml">language: node_js
 
 node_js:
     - 10
@@ -284,20 +67,4 @@ jobs:
           node_js: &#39;10&#39;
           script:
               - npm install -g semantic-release@^15
-              - semantic-release</code></pre>
-<p>semantic-release is tested only with the last LTS node version. So your app should do the same.</p>
-<h3 id="title-initialize-the-workflow">initialize the workflow</h3>
-<p>You should have already an initial commit. The message commit convention for this commit is not important.</p>
-<p>The next commit should contain all this configuration and should be able to generate something to package and deliver to the npm registry.</p>
-<p>Be careful to choose a <em>feat</em> or <em>fix</em> type for the commit message. Others type will not trigger a release.</p>
-<p>The <code>develop</code> branch should not exist yet.</p>
-<p>When the commit is written, push it directly into <code>master</code> to trigger the first CI job and the first deploy.</p>
-<p>This deploy is mandatory because TravisCI needs the <code>.travis.yml</code> files present into each branches in order to run.</p>
-<p>So you need first to deploy a dummy app version, then the contribution branch which will be the destination for PR will be created based on <code>master</code>.</p>
-<p>Check the CI result. Check also the npm registry.</p>
-<p>At this point, if everything is ok you have the CI up and runnning and a first package version in the npm registry.</p>
-<p>Now you can create the <code>develop</code> branch in your remote repository. Don’t forget to protect it and to set it to the default branch.</p>
-<p>The master branch needs also to be protected.</p>
-<p>You can add rules to the protected branches to force some checks when a PR occurs.<br>After the first CI completed job you are able to force a CI status check to validate a PR.</p>
-<p>You’re done.</p>
-</article></body></html>
+              - semantic-release</code></pre> <p>semantic-release is tested only with the last LTS node version. So your app should do the same.</p> <h3 id="title-initialize-the-workflow">initialize the workflow</h3> <p>You should have already an initial commit. The message commit convention for this commit is not important.</p> <p>The next commit should contain all this configuration and should be able to generate something to package and deliver to the npm registry.</p> <p>Be careful to choose a <em>feat</em> or <em>fix</em> type for the commit message. Others type will not trigger a release.</p> <p>The <code>develop</code> branch should not exist yet.</p> <p>When the commit is written, push it directly into <code>master</code> to trigger the first CI job and the first deploy.</p> <p>This deploy is mandatory because TravisCI needs the <code>.travis.yml</code> files present into each branches in order to run.</p> <p>So you need first to deploy a dummy app version, then the contribution branch which will be the destination for PR will be created based on <code>master</code>.</p> <p>Check the CI result. Check also the npm registry.</p> <p>At this point, if everything is ok you have the CI up and runnning and a first package version in the npm registry.</p> <p>Now you can create the <code>develop</code> branch in your remote repository. Don’t forget to protect it and to set it to the default branch.</p> <p>The master branch needs also to be protected.</p> <p>You can add rules to the protected branches to force some checks when a PR occurs.<br>After the first CI completed job you are able to force a CI status check to validate a PR.</p> <p>You’re done.</p> </article></body></html>

@@ -1,25 +1,6 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../../github-markdown.css" rel="stylesheet" media="all"><link href="../../../main.css" rel="stylesheet" media="all"><link href="../../../github.css" rel="stylesheet"><script src="../../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-angularjs---misc">AngularJS - misc</h1>
-<h2 id="title-framework-google-support-duration">framework Google support duration</h2>
-<p><a href="https://blog.angular.io/stable-angularjs-and-long-term-support-7e077635eehtml">Stable AngularJS and Long Term Support : 20180126</a></p>
-<blockquote>
-<p>AngularJS is planning one more significant release, version 1.7, and on July 1, 2018 it will enter a 3 year Long Term Support period.</p>
-</blockquote>
-<p><a href="http://stackoverflow.com/questions/37037251/angularjs-1-x-support-lifecychtml">angularjs-1-x-support-lifecycle : stackoverflow.com</a></p>
-<h2 id="title-angularjs-origins">AngularJS origins</h2>
-<p>Un super texte sur <a href="http://java.dzone.com/articles/java-origins-angular-html">les origines d’angular</a></p>
-<h2 id="title-browser-console">browser console</h2>
-<p>It is possible to access angular services via the browser console at runtime :</p>
-<pre><code class="lang-javascript">angular.element(document.body).injector().get(&#39;serviceName&#39;);</code></pre>
-<p>At this point you have access to the singleton service instance.</p>
-<h2 id="title-xml-management">XML management</h2>
-<p><strong>Utiliser des webservices retournant du xml avec AngularJS</strong></p>
-<p>Utiliser jQuery : <a href="http://api.jquery.com/jquery.parsexmhtml">jquery.parsexml</a></p>
-<p>Côté angular faire un call de webservice via <code>$http</code>.<br>Le xml retourné est dans <code>res.data</code>.</p>
-<pre><code class="lang-javascript">if (typeof(xml) === &#39;string&#39;) {
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-angularjs---misc">AngularJS - misc</h1> <h2 id="title-framework-google-support-duration">framework Google support duration</h2> <p><a href="https://blog.angular.io/stable-angularjs-and-long-term-support-7e077635ee9c">Stable AngularJS and Long Term Support : 20180126</a></p> <blockquote> <p>AngularJS is planning one more significant release, version 1.7, and on July 1, 2018 it will enter a 3 year Long Term Support period.</p> </blockquote> <p><a href="http://stackoverflow.com/questions/37037251/angularjs-1-x-support-lifecycle">angularjs-1-x-support-lifecycle : stackoverflow.com</a></p> <h2 id="title-angularjs-origins">AngularJS origins</h2> <p>Un super texte sur <a href="http://java.dzone.com/articles/java-origins-angular-js">les origines d’angular</a></p> <h2 id="title-browser-console">browser console</h2> <p>It is possible to access angular services via the browser console at runtime :</p> <pre><code class="lang-javascript">angular.element(document.body).injector().get(&#39;serviceName&#39;);</code></pre> <p>At this point you have access to the singleton service instance.</p> <h2 id="title-xml-management">XML management</h2> <p><strong>Utiliser des webservices retournant du xml avec AngularJS</strong></p> <p>Utiliser jQuery : <a href="http://api.jquery.com/jquery.parsexml/">jquery.parsexml</a></p> <p>Côté angular faire un call de webservice via <code>$http</code>.<br>Le xml retourné est dans <code>res.data</code>.</p> <pre><code class="lang-javascript">if (typeof(xml) === &#39;string&#39;) {
   xml = $.parseXML(xml);
-}</code></pre>
-<p>Typer les données via des pseudos classes javascript et faire une methode parse dans chaque classe pour remplir un objet via un simple :</p>
-<pre><code class="lang-javascript">function MaClasse(data) {
+}</code></pre> <p>Typer les données via des pseudos classes javascript et faire une methode parse dans chaque classe pour remplir un objet via un simple :</p> <pre><code class="lang-javascript">function MaClasse(data) {
   this.data1 = &#39;&#39;;
   this.data2 = {};
   this.data3 = [];
@@ -39,6 +20,4 @@ MaClasse.prototype.parse = function( data ) {
   data.find(&#39;&gt;data3&#39;).each(function () {
     that.data3.push(new MaClasseData3( $(this) ));
   });
-}</code></pre>
-<p>Ce fonctionnement permet d’avoir des méthodes utilitaires dans le prototype de chaque type créé pour accéder au data via des règles métiers ou autre.</p>
-</article></body></html>
+}</code></pre> <p>Ce fonctionnement permet d’avoir des méthodes utilitaires dans le prototype de chaque type créé pour accéder au data via des règles métiers ou autre.</p> </article></body></html>

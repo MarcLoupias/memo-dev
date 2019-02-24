@@ -1,10 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../../github-markdown.css" rel="stylesheet" media="all"><link href="../../../main.css" rel="stylesheet" media="all"><link href="../../../github.css" rel="stylesheet"><script src="../../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-java---play---pojo-validation">java - play - pojo validation</h1>
-<p><a href="http://www.playframework.com/documentation/2.2.x/JavaForhtml">http://www.playframework.com/documentation/2.2.x/JavaForms</a></p>
-<p><a href="http://docs.spring.io/spring/docs/3.0.x/reference/validation.hthtml">http://docs.spring.io/spring/docs/3.0.x/reference/validation.html</a></p>
-<p>checker JSR-303 (Bean Validation)</p>
-<p><a href="http://blog.octo.com/jsr-303-bean-validation-etat-des-lieuhtml">http://blog.octo.com/jsr-303-bean-validation-etat-des-lieux/</a></p>
-<p>check des raw types :</p>
-<pre><code class="lang-java">@NotNull
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-java---play---pojo-validation">java - play - pojo validation</h1> <p><a href="http://www.playframework.com/documentation/2.2.x/JavaForms">http://www.playframework.com/documentation/2.2.x/JavaForms</a></p> <p><a href="http://docs.spring.io/spring/docs/3.0.x/reference/validation.html">http://docs.spring.io/spring/docs/3.0.x/reference/validation.html</a></p> <p>checker JSR-303 (Bean Validation)</p> <p><a href="http://blog.octo.com/jsr-303-bean-validation-etat-des-lieux/">http://blog.octo.com/jsr-303-bean-validation-etat-des-lieux/</a></p> <p>check des raw types :</p> <pre><code class="lang-java">@NotNull
 @Constraints.Required
 @Constraints.MinLength(value = 5)
 @Constraints.MaxLength(value = 20)
@@ -21,14 +15,10 @@ private Integer numberInteger;
 @Nullable
 @Constraints.Min(value = 10)
 @Constraints.Max(value = 20)
-private Long numberLong;</code></pre>
-<p>SQL version :</p>
-<pre><code class="lang-sql">`date` datetime DEFAULT NULL,
+private Long numberLong;</code></pre> <p>SQL version :</p> <pre><code class="lang-sql">`date` datetime DEFAULT NULL,
 `name` varchar(255) DEFAULT NULL,
 `numberInteger` int(11) DEFAULT NULL,
-`numberLong` bigint(20) DEFAULT NULL,</code></pre>
-<p>unit test :</p>
-<pre><code class="lang-java">package models;
+`numberLong` bigint(20) DEFAULT NULL,</code></pre> <p>unit test :</p> <pre><code class="lang-java">package models;
 
 
 import com.fasterxml.jackson.databind.JsonNode;
@@ -220,5 +210,4 @@ public class ProductValidationTest {
         fieldError = fieldErrors.get(0);
         Assert.assertEquals(&quot;error.max&quot;, fieldError.message());
     }
-}</code></pre>
-</article></body></html>
+}</code></pre> </article></body></html>

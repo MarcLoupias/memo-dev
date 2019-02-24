@@ -1,7 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../../github-markdown.css" rel="stylesheet" media="all"><link href="../../../main.css" rel="stylesheet" media="all"><link href="../../../github.css" rel="stylesheet"><script src="../../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-nodejs---handling-files">nodejs - handling files</h1>
-<h2 id="title-super-basic-and-old-school">super basic and old school</h2>
-<p><a href="https://stackoverflow.com/questions/18386361/read-a-file-in-node-html">Read a file in Node.js - stackoverflow.com</a></p>
-<pre><code class="lang-javascript">var fs = require(&#39;fs&#39;),
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-nodejs---handling-files">nodejs - handling files</h1> <h2 id="title-super-basic-and-old-school">super basic and old school</h2> <p><a href="https://stackoverflow.com/questions/18386361/read-a-file-in-node-js">Read a file in Node.js - stackoverflow.com</a></p> <pre><code class="lang-javascript">var fs = require(&#39;fs&#39;),
     path = require(&#39;path&#39;),    
     filePath = path.join(__dirname, &#39;start.html&#39;);
 
@@ -14,26 +11,12 @@ fs.readFile(filePath, {encoding: &#39;utf-8&#39;}, function(err,data){
     } else {
         console.log(err);
     }
-});</code></pre>
-<h2 id="title-streams">streams</h2>
-<p><a href="https://medium.com/@dalaidunc/fs-readfile-vs-streams-to-read-text-files-in-node-js-5dd0710c80html">fs.readFile vs streams to read text files in node.js - medium.com - Duncan Grant - 20170822</a></p>
-<blockquote>
-<p>TLDR: my suggestion is once you are planning on dealing with text files of greater size than around 10MB, it’s best to ditch readFile and start using streams instead.</p>
-</blockquote>
-<h2 id="title-with-promises">with promises</h2>
-<p><a href="https://dev.to/mrm8488/from-callbacks-to-fspromises-to-handle-the-file-system-in-nodejs-56html">From callbacks to fs/promises to handle the file system in Node.js - dev.to/mrm8488 - 20180529</a></p>
-<blockquote>
-<p>In this post, I will show you the evolution of Node.js to work with the file system.</p>
-</blockquote>
-<p>With callback (old school way to do in node) :</p>
-<pre><code class="lang-javascript">const fs = require(&quot;fs&quot;);
+});</code></pre> <h2 id="title-streams">streams</h2> <p><a href="https://medium.com/@dalaidunc/fs-readfile-vs-streams-to-read-text-files-in-node-js-5dd0710c80ea">fs.readFile vs streams to read text files in node.js - medium.com - Duncan Grant - 20170822</a></p> <blockquote> <p>TLDR: my suggestion is once you are planning on dealing with text files of greater size than around 10MB, it’s best to ditch readFile and start using streams instead.</p> </blockquote> <h2 id="title-with-promises">with promises</h2> <p><a href="https://dev.to/mrm8488/from-callbacks-to-fspromises-to-handle-the-file-system-in-nodejs-56p2">From callbacks to fs/promises to handle the file system in Node.js - dev.to/mrm8488 - 20180529</a></p> <blockquote> <p>In this post, I will show you the evolution of Node.js to work with the file system.</p> </blockquote> <p>With callback (old school way to do in node) :</p> <pre><code class="lang-javascript">const fs = require(&quot;fs&quot;);
 
 fs.writeFile(&quot;/tmp/test.js&quot;, &quot;console.log(&#39;Hello world&#39;);&quot;, error =&gt; {
     if (error) console.error(error);
     else console.log(&quot;file created successfully!&quot;);
-});</code></pre>
-<p>Promisify must be manual <strong>before</strong> <code>node@8</code> (or using <code>bluebird</code> or <code>Q</code>) :</p>
-<pre><code class="lang-javascript">const fs = require(&quot;fs&quot;);
+});</code></pre> <p>Promisify must be manual <strong>before</strong> <code>node@8</code> (or using <code>bluebird</code> or <code>Q</code>) :</p> <pre><code class="lang-javascript">const fs = require(&quot;fs&quot;);
 
 const writeFilePromise = (file, data) =&gt; {
     return new Promise((resolve, reject) =&gt; {
@@ -51,9 +34,7 @@ writeFilePromise(
     .then(result =&gt; console.log(result))
 
     .catch(error =&gt; console.log(error));
-</code></pre>
-<p>The <code>node@8</code> release introduce <a href="https://nodejs.org/api/util.html#util_util_promisify_originhtml"><code>util.promisify()</code> api</a> :</p>
-<pre><code class="lang-javascript">const fs = require(&quot;fs&quot;);
+</code></pre> <p>The <code>node@8</code> release introduce <a href="https://nodejs.org/api/util.html#util_util_promisify_original"><code>util.promisify()</code> api</a> :</p> <pre><code class="lang-javascript">const fs = require(&quot;fs&quot;);
 const util = require(&quot;util&quot;);
 
 const writeFile = util.promisify(fs.writeFile);
@@ -62,9 +43,7 @@ writeFile(&quot;/tmp/test3.js&quot;, &quot;console.log(&#39;Hello world with pro
   .then(() =&gt; console.log(&quot;file created successfully with promisify!&quot;))
 
   .catch(error =&gt; console.log(error));
-</code></pre>
-<p>Same with <code>async</code>/<code>await</code> :</p>
-<pre><code class="lang-javascript">const fs = require(&quot;fs&quot;);
+</code></pre> <p>Same with <code>async</code>/<code>await</code> :</p> <pre><code class="lang-javascript">const fs = require(&quot;fs&quot;);
 const { promisify } = require(&quot;util&quot;);
 
 const writeFile = promisify(fs.writeFile);
@@ -76,9 +55,7 @@ async function main() {
     console.info(&quot;file created successfully with promisify and async/await!&quot;);
 }
 
-main().catch(error =&gt; console.error(error));</code></pre>
-<p>The <code>node@10</code> release introduce <a href="https://nodejs.org/api/fs.html#fs_fs_promises_ahtml"><code>fs/promises</code> api</a> :</p>
-<pre><code class="lang-javascript">const fsp = require(&quot;fs&quot;).promises;
+main().catch(error =&gt; console.error(error));</code></pre> <p>The <code>node@10</code> release introduce <a href="https://nodejs.org/api/fs.html#fs_fs_promises_api"><code>fs/promises</code> api</a> :</p> <pre><code class="lang-javascript">const fsp = require(&quot;fs&quot;).promises;
 
 try {
     await fsp.writeFile(&quot;/tmp/test5.js&quot;, &quot;console.log(&#39;Hello world with Node.js v10 fs/promises!&#39;&quot;);
@@ -86,6 +63,4 @@ try {
 } catch (error){
     console.error(error);
 }
-</code></pre>
-<p>This code is using the experimental top level await feature, node needs to be executed with the <code>--experimental-repl-await</code> flag.</p>
-</article></body></html>
+</code></pre> <p>This code is using the experimental top level await feature, node needs to be executed with the <code>--experimental-repl-await</code> flag.</p> </article></body></html>

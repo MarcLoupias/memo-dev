@@ -1,18 +1,10 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../github-markdown.css" rel="stylesheet" media="all"><link href="../../main.css" rel="stylesheet" media="all"><link href="../../github.css" rel="stylesheet"><script src="../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-git---remotes">git - remotes</h1>
-<ul>
-<li><a href="https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remothtml">git-scm.com - working with remotes</a></li>
-<li><a href="https://www.grafikart.fr/formations/git/remote-push-puhtml">www.grafikart.fr</a></li>
-</ul>
-<h2 id="title-memo">memo</h2>
-<pre><code>git remote # Liste les dépôts distants
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-git---remotes">git - remotes</h1> <ul> <li><a href="https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes">git-scm.com - working with remotes</a></li> <li><a href="https://www.grafikart.fr/formations/git/remote-push-pull">www.grafikart.fr</a></li> </ul> <h2 id="title-memo">memo</h2> <pre><code>git remote # Liste les dépôts distants
 git remote -v # Liste les dépôts distants et les chemins associés
 git remote add &lt;alias&gt; &lt;chemin/url&gt; # Ajoute un nouveau dépôt distant
 git remote rm &lt;alias&gt; # Supprimé un dépôt distant
 git remote rename &lt;old&gt; &lt;new&gt;
 git remote set-url &lt;alias&gt; &lt;url&gt; # change les fetch et push url du remote
-git remote set-url --push &lt;alias&gt; &lt;url&gt; # change seulement la push url du remote</code></pre><h2 id="title-showing-your-remotes">Showing Your Remotes</h2>
-<p>To see which remote servers you have configured, you can run the <code>git remote</code> command. It lists the shortnames of each remote handle you’ve specified. If you’ve cloned your repository, you should at least see origin – that is the default name Git gives to the server you cloned from:</p>
-<pre><code>$ git clone https://github.com/schacon/ticgit
+git remote set-url --push &lt;alias&gt; &lt;url&gt; # change seulement la push url du remote</code></pre><h2 id="title-showing-your-remotes">Showing Your Remotes</h2> <p>To see which remote servers you have configured, you can run the <code>git remote</code> command. It lists the shortnames of each remote handle you’ve specified. If you’ve cloned your repository, you should at least see origin – that is the default name Git gives to the server you cloned from:</p> <pre><code>$ git clone https://github.com/schacon/ticgit
 Cloning into &#39;ticgit&#39;...
 remote: Reusing existing pack: 1857, done.
 remote: Total 1857 (delta 0), reused 0 (delta 0)
@@ -34,27 +26,21 @@ defunkt   https://github.com/defunkt/grit (push)
 koke      git://github.com/koke/grit.git (fetch)
 koke      git://github.com/koke/grit.git (push)
 origin    git@github.com:mojombo/grit.git (fetch)
-origin    git@github.com:mojombo/grit.git (push)</code></pre><h2 id="title-adding-remote-repositories">Adding Remote Repositories</h2>
-<p>We’ve mentioned and given some demonstrations of how the clone command implicitly adds the <code>origin</code> remote for you. Here’s how to add a new remote explicitly. To add a new remote Git repository as a shortname you can reference easily, run <code>git remote add &lt;shortname&gt; &lt;url&gt;</code>:</p>
-<pre><code>$ git remote
+origin    git@github.com:mojombo/grit.git (push)</code></pre><h2 id="title-adding-remote-repositories">Adding Remote Repositories</h2> <p>We’ve mentioned and given some demonstrations of how the clone command implicitly adds the <code>origin</code> remote for you. Here’s how to add a new remote explicitly. To add a new remote Git repository as a shortname you can reference easily, run <code>git remote add &lt;shortname&gt; &lt;url&gt;</code>:</p> <pre><code>$ git remote
 origin
 $ git remote add pb https://github.com/paulboone/ticgit
 $ git remote -v
 origin    https://github.com/schacon/ticgit (fetch)
 origin    https://github.com/schacon/ticgit (push)
 pb    https://github.com/paulboone/ticgit (fetch)
-pb    https://github.com/paulboone/ticgit (push)</code></pre><p>Now you can use the string <code>pb</code> on the command line in lieu of the whole URL. For example, if you want to fetch all the information that Paul has but that you don’t yet have in your repository, you can run <code>git fetch pb</code>:</p>
-<pre><code>$ git fetch pb
+pb    https://github.com/paulboone/ticgit (push)</code></pre><p>Now you can use the string <code>pb</code> on the command line in lieu of the whole URL. For example, if you want to fetch all the information that Paul has but that you don’t yet have in your repository, you can run <code>git fetch pb</code>:</p> <pre><code>$ git fetch pb
 remote: Counting objects: 43, done.
 remote: Compressing objects: 100% (36/36), done.
 remote: Total 43 (delta 10), reused 31 (delta 5)
 Unpacking objects: 100% (43/43), done.
 From https://github.com/paulboone/ticgit
  * [new branch]      master     -&amp;gt; pb/master
- * [new branch]      ticgit     -&amp;gt; pb/ticgit</code></pre><p>Paul’s master branch is now accessible locally as <code>pb/master</code> – you can merge it into one of your branches, or you can check out a local branch at that point if you want to inspect it. </p>
-<h2 id="title-inspecting-a-remote">Inspecting a Remote</h2>
-<p>If you want to see more information about a particular remote, you can use the <code>git remote show [remote-name]</code> command. If you run this command with a particular shortname, such as <code>origin</code>, you get something like this:</p>
-<pre><code>$ git remote show origin
+ * [new branch]      ticgit     -&amp;gt; pb/ticgit</code></pre><p>Paul’s master branch is now accessible locally as <code>pb/master</code> – you can merge it into one of your branches, or you can check out a local branch at that point if you want to inspect it. </p> <h2 id="title-inspecting-a-remote">Inspecting a Remote</h2> <p>If you want to see more information about a particular remote, you can use the <code>git remote show [remote-name]</code> command. If you run this command with a particular shortname, such as <code>origin</code>, you get something like this:</p> <pre><code>$ git remote show origin
 * remote origin
   Fetch URL: https://github.com/schacon/ticgit
   Push  URL: https://github.com/schacon/ticgit
@@ -84,13 +70,9 @@ From https://github.com/paulboone/ticgit
   Local refs configured for &#39;git push&#39;:
     dev-branch                     pushes to dev-branch                     (up to date)
     markdown-strip                 pushes to markdown-strip                 (up to date)
-    master                         pushes to master                         (up to date)</code></pre><h2 id="title-removing-and-renaming-remotes">Removing and Renaming Remotes</h2>
-<p>You can run <code>git remote rename</code> to change a remote’s shortname. For instance, if you want to rename <code>pb</code> to <code>paul</code>, you can do so with <code>git remote rename</code>:</p>
-<pre><code>$ git remote rename pb paul
+    master                         pushes to master                         (up to date)</code></pre><h2 id="title-removing-and-renaming-remotes">Removing and Renaming Remotes</h2> <p>You can run <code>git remote rename</code> to change a remote’s shortname. For instance, if you want to rename <code>pb</code> to <code>paul</code>, you can do so with <code>git remote rename</code>:</p> <pre><code>$ git remote rename pb paul
 $ git remote
 origin
-paul</code></pre><p>It’s worth mentioning that this changes all your remote-tracking branch names, too. What used to be referenced at <code>pb/master</code> is now at <code>paul/master</code>.</p>
-<p>If you want to remove a remote for some reason – you’ve moved the server or are no longer using a particular mirror, or perhaps a contributor isn’t contributing anymore – you can use <code>git remote rm</code>:</p>
-<pre><code>$ git remote rm paul
+paul</code></pre><p>It’s worth mentioning that this changes all your remote-tracking branch names, too. What used to be referenced at <code>pb/master</code> is now at <code>paul/master</code>.</p> <p>If you want to remove a remote for some reason – you’ve moved the server or are no longer using a particular mirror, or perhaps a contributor isn’t contributing anymore – you can use <code>git remote rm</code>:</p> <pre><code>$ git remote rm paul
 $ git remote
 origin</code></pre></article></body></html>

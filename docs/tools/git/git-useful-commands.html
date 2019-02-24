@@ -1,12 +1,6 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../github-markdown.css" rel="stylesheet" media="all"><link href="../../main.css" rel="stylesheet" media="all"><link href="../../github.css" rel="stylesheet"><script src="../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-git---tips--tricks">git - tips &amp; tricks</h1>
-<p><a href="http://tdd.github.io/devoxx-git-protips/?utm_source=porteneuve&utm_medium=slides&utm_campaign=devoxxfr-2016html">Protips de Christophe Porteneuve : Devoxx2016</a></p>
-<h2 id="title-cloning">cloning</h2>
-<pre><code class="lang-bash"># cloning a repository in a specific folder
-$ git clone &lt;url&gt; &lt;dir_name&gt;</code></pre>
-<h2 id="title-branch">branch</h2>
-<pre><code class="lang-bash"># list local branch
-$ git branch -l</code></pre>
-<pre><code class="lang-bash"># list all branches (remote and local, tracked and untracked) : git remote show [remote]
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-git---tips--tricks">git - tips &amp; tricks</h1> <p><a href="http://tdd.github.io/devoxx-git-protips/?utm_source=porteneuve&utm_medium=slides&utm_campaign=devoxxfr-2016#/">Protips de Christophe Porteneuve : Devoxx2016</a></p> <h2 id="title-cloning">cloning</h2> <pre><code class="lang-bash"># cloning a repository in a specific folder
+$ git clone &lt;url&gt; &lt;dir_name&gt;</code></pre> <h2 id="title-branch">branch</h2> <pre><code class="lang-bash"># list local branch
+$ git branch -l</code></pre> <pre><code class="lang-bash"># list all branches (remote and local, tracked and untracked) : git remote show [remote]
 $ git remote show origin
 
 * remote origin
@@ -25,70 +19,39 @@ $ git remote show origin
     master  merges with remote master
   Local refs configured for &#39;git push&#39;:
     develop pushes to develop (local out of date)
-    master  pushes to master  (up to date)</code></pre>
-<pre><code class="lang-bash"># delete local branch
-$ git branch -d &lt;branch_name&gt;</code></pre>
-<pre><code class="lang-bash"># delete a local branch with diff from other branch
-$ git branch -D &lt;branch_name&gt;</code></pre>
-<pre><code class="lang-bash"># list local branch filtered with local branches merged in the currently checkouted branch
+    master  pushes to master  (up to date)</code></pre> <pre><code class="lang-bash"># delete local branch
+$ git branch -d &lt;branch_name&gt;</code></pre> <pre><code class="lang-bash"># delete a local branch with diff from other branch
+$ git branch -D &lt;branch_name&gt;</code></pre> <pre><code class="lang-bash"># list local branch filtered with local branches merged in the currently checkouted branch
 $ git branch --merged
 iss53
 * master
-# we are on the master branch, and the iss53 branch have been merged in.</code></pre>
-<h2 id="title-working-directory">working directory</h2>
-<pre><code class="lang-bash"># change working directory with HEAD of branch_name
-$ git checkout &lt;branch_name&gt;</code></pre>
-<pre><code class="lang-bash"># change working directory with last branch 
-$ git checkout -</code></pre>
-<pre><code class="lang-bash"># create and pull a remote branch from a remote
-$ git checkout -b &lt;new_branch&gt; origin/&lt;new_branch&gt;</code></pre>
-<pre><code class="lang-bash"># create a local branch, do stuff, then push that new branch to the remote repo
+# we are on the master branch, and the iss53 branch have been merged in.</code></pre> <h2 id="title-working-directory">working directory</h2> <pre><code class="lang-bash"># change working directory with HEAD of branch_name
+$ git checkout &lt;branch_name&gt;</code></pre> <pre><code class="lang-bash"># change working directory with last branch 
+$ git checkout -</code></pre> <pre><code class="lang-bash"># create and pull a remote branch from a remote
+$ git checkout -b &lt;new_branch&gt; origin/&lt;new_branch&gt;</code></pre> <pre><code class="lang-bash"># create a local branch, do stuff, then push that new branch to the remote repo
 $ git checkout -b mynewfeature
 ... edit files, add and commit ...
-$ git push -u origin mynewfeature</code></pre>
-<h2 id="title-commit-management">commit management</h2>
-<pre><code class="lang-bash"># delete last commit (will not delete modifications, just the commit)
-$ git reset HEAD^</code></pre>
-<pre><code class="lang-bash"># delete the 3 last commits (will not delete modifications, just the commits)
-$ git reset --soft HEAD~3</code></pre>
-<pre><code class="lang-bash"># delete the 3 last commits (including last modifications)
-$ git reset --hard HEAD~3</code></pre>
-<pre><code class="lang-bash"># rename last commit msg
-$ git commit --amend -m &quot;New commit message&quot;</code></pre>
-<pre><code class="lang-bash"># rollback local repo after a git pull
+$ git push -u origin mynewfeature</code></pre> <h2 id="title-commit-management">commit management</h2> <pre><code class="lang-bash"># delete last commit (will not delete modifications, just the commit)
+$ git reset HEAD^</code></pre> <pre><code class="lang-bash"># delete the 3 last commits (will not delete modifications, just the commits)
+$ git reset --soft HEAD~3</code></pre> <pre><code class="lang-bash"># delete the 3 last commits (including last modifications)
+$ git reset --hard HEAD~3</code></pre> <pre><code class="lang-bash"># rename last commit msg
+$ git commit --amend -m &quot;New commit message&quot;</code></pre> <pre><code class="lang-bash"># rollback local repo after a git pull
 # use git log to find the hash of the desired commit then 
-$ git reset --hard 1234abcd where 1234abcd is the hash of the desired commit.</code></pre>
-<h2 id="title-commit-message-management">commit message management</h2>
-<p><a href="https://stackoverflow.com/questions/16122234/how-to-commit-a-change-with-both-message-and-description-from-the-command-li/22909204#229092html">How to commit a change with both “message” and “description” from the command line? : stackoverflow.com</a></p>
-<h2 id="title-diff">diff</h2>
-<pre><code class="lang-bash"># checking difference between the current branch and the non-staged changes
-$ git diff </code></pre>
-<pre><code class="lang-bash"># checking difference between the current branch and the staged changes
+$ git reset --hard 1234abcd where 1234abcd is the hash of the desired commit.</code></pre> <h2 id="title-commit-message-management">commit message management</h2> <p><a href="https://stackoverflow.com/questions/16122234/how-to-commit-a-change-with-both-message-and-description-from-the-command-li/22909204#22909204">How to commit a change with both “message” and “description” from the command line? : stackoverflow.com</a></p> <h2 id="title-diff">diff</h2> <pre><code class="lang-bash"># checking difference between the current branch and the non-staged changes
+$ git diff </code></pre> <pre><code class="lang-bash"># checking difference between the current branch and the staged changes
 $ git diff --staged
 # or 
-$ git diff --cached</code></pre>
-<pre><code class="lang-bash"># checking difference between 2 branches and put that log into a file
-$ git diff main-branch..alt-branch &gt; file.name.diff</code></pre>
-<pre><code class="lang-bash"># checking difference in a single file between 2 tags
-$ git diff 0.11.0..0.12.0 src/config.js</code></pre>
-<pre><code class="lang-bash"># same as above but without the context line (output just the changes)
-$ git diff --unified=0 0.11.0..0.12.0 src/config.js</code></pre>
-<pre><code class="lang-bash"># modified files list between 2 tags
-$ git diff --stat &lt;tag1&gt;...&lt;tag2&gt;</code></pre>
-<h2 id="title-merge-management">merge management</h2>
-<pre><code class="lang-bash"># cancel a merge (git version &gt;= 1.7.4)
-$ git merge --abort</code></pre>
-<pre><code class="lang-bash"># merge conflict in favor of &quot;their&quot; changes (origin changes)
-$ git merge --strategy-option theirs</code></pre>
-<h2 id="title-cherry-pick">cherry-pick</h2>
-<pre><code class="lang-bash"># cherry-pick a specific commit from one branch to another 
+$ git diff --cached</code></pre> <pre><code class="lang-bash"># checking difference between 2 branches and put that log into a file
+$ git diff main-branch..alt-branch &gt; file.name.diff</code></pre> <pre><code class="lang-bash"># checking difference in a single file between 2 tags
+$ git diff 0.11.0..0.12.0 src/config.js</code></pre> <pre><code class="lang-bash"># same as above but without the context line (output just the changes)
+$ git diff --unified=0 0.11.0..0.12.0 src/config.js</code></pre> <pre><code class="lang-bash"># modified files list between 2 tags
+$ git diff --stat &lt;tag1&gt;...&lt;tag2&gt;</code></pre> <h2 id="title-merge-management">merge management</h2> <pre><code class="lang-bash"># cancel a merge (git version &gt;= 1.7.4)
+$ git merge --abort</code></pre> <pre><code class="lang-bash"># merge conflict in favor of &quot;their&quot; changes (origin changes)
+$ git merge --strategy-option theirs</code></pre> <h2 id="title-cherry-pick">cherry-pick</h2> <pre><code class="lang-bash"># cherry-pick a specific commit from one branch to another 
 # (https://ariejan.net/2010/06/10/cherry-picking-specific-commits-from-another-branch/)
 # here master is the targeted branch (ie : where the commit will go)
 $ git checkout master
-$ git cherry-pick 1234abcd</code></pre>
-<h3 id="title-cherry-pick-from-another-repo">cherry-pick from another repo</h3>
-<p><a href="https://coderwall.com/p/sgpksw/git-cherry-pick-from-another-repositohtml">source : git-cherry-pick-from-another-repository : 20160913</a></p>
-<pre><code class="lang-bash"># Cloning our fork
+$ git cherry-pick 1234abcd</code></pre> <h3 id="title-cherry-pick-from-another-repo">cherry-pick from another repo</h3> <p><a href="https://coderwall.com/p/sgpksw/git-cherry-pick-from-another-repository">source : git-cherry-pick-from-another-repository : 20160913</a></p> <pre><code class="lang-bash"># Cloning our fork
 $ git clone git@github.com:ifad/rest-client.git
 
 # Adding (as &quot;endel&quot;) the repo from we want to cherry-pick
@@ -101,10 +64,7 @@ $ git fetch endel
 $ git log endel/master
 
 # Cherry-pick the commit we need
-$ git cherry-pick 97fedac</code></pre>
-<h2 id="title-patch">patch</h2>
-<p><a href="http://renaudmathieu.fr/creer-et-appliquer-un-patch-avec-gihtml">creer-et-appliquer-un-patch-avec-git : renaudmathieu.fr : 201300820</a></p>
-<pre><code class="lang-bash"># listing the 10 alst commit, stdout only the complete sha1 then the commit title
+$ git cherry-pick 97fedac</code></pre> <h2 id="title-patch">patch</h2> <p><a href="http://renaudmathieu.fr/creer-et-appliquer-un-patch-avec-git/">creer-et-appliquer-un-patch-avec-git : renaudmathieu.fr : 201300820</a></p> <pre><code class="lang-bash"># listing the 10 alst commit, stdout only the complete sha1 then the commit title
 $ git log --pretty=oneline -10
 
 # -1 indicates there is only one commit contained in the patch ; this will create a .patch file containing the commit
@@ -117,63 +77,40 @@ $ git apply --stat &lt;name&gt;.patch
 $ git apply --check &lt;name&gt;.patch
 
 # signoff is to keep the original author in the commit metadata. -k is to keep flags in the commit message
-$ git am --signoff -k &lt; &lt;name&gt;.patch</code></pre>
-<p><a href="https://feeding.cloud.geek.nz/posts/cherry-picking-range-of-git-commithtml">cherry-picking-range-of-git-commits : feeding.cloud.geek.nz : 20100720</a></p>
-<pre><code class="lang-bash"># creating multiples patches from a range of commits
+$ git am --signoff -k &lt; &lt;name&gt;.patch</code></pre> <p><a href="https://feeding.cloud.geek.nz/posts/cherry-picking-range-of-git-commits/">cherry-picking-range-of-git-commits : feeding.cloud.geek.nz : 20100720</a></p> <pre><code class="lang-bash"># creating multiples patches from a range of commits
 $ git format-patch 7f545188^..a7785c10  
 0001-Add-third-file.patch  
 0002-Add-lines-to-3rd-file.patch  
-$ git am *.patch</code></pre>
-<h2 id="title-files-tracking">files tracking</h2>
-<pre><code class="lang-bash"># removing a directory from git tracking without deleting it locally
+$ git am *.patch</code></pre> <h2 id="title-files-tracking">files tracking</h2> <pre><code class="lang-bash"># removing a directory from git tracking without deleting it locally
 # first, add the folder to the .gitignore file
 # then
-$ git rm -r --cached path_to_your_folder/</code></pre>
-<pre><code class="lang-bash"># ignore changes on tracked files
+$ git rm -r --cached path_to_your_folder/</code></pre> <pre><code class="lang-bash"># ignore changes on tracked files
 $ git update-index --assume-unchanged README.md
 
 # list ignored files
 $ git ls-files -v | grep &#39;^h&#39;
 
 # rollback
-$ git update-index --no-assume-unchanged README.d</code></pre>
-<h2 id="title-log">log</h2>
-<pre><code class="lang-bash"># print a log filtered on commit message with regex
-$ git log --grep &#39;regex&#39;</code></pre>
-<pre><code class="lang-bash"># print a log filtered on commit content (+ lines &amp; -lines) with regex
-$ git log -G &#39;regex&#39;</code></pre>
-<pre><code class="lang-bash"># print a log filtered on author name
-$ git log --author=&quot;automatix&quot;</code></pre>
-<pre><code class="lang-bash"># print a log filtered since commit date
+$ git update-index --no-assume-unchanged README.d</code></pre> <h2 id="title-log">log</h2> <pre><code class="lang-bash"># print a log filtered on commit message with regex
+$ git log --grep &#39;regex&#39;</code></pre> <pre><code class="lang-bash"># print a log filtered on commit content (+ lines &amp; -lines) with regex
+$ git log -G &#39;regex&#39;</code></pre> <pre><code class="lang-bash"># print a log filtered on author name
+$ git log --author=&quot;automatix&quot;</code></pre> <pre><code class="lang-bash"># print a log filtered since commit date
 $ git log --since=&quot;2013-01-30&quot;
 # print a log filtered until commit date
-$ git log --until=&quot;2013-01-30&quot;</code></pre>
-<pre><code class="lang-bash"># print a log with a list of modified files
-$ git log --stat</code></pre>
-<pre><code class="lang-bash"># print a log of all commits from all branches (just active branch by default)
-$ git log --all</code></pre>
-<pre><code class="lang-bash"># print a condensed log where each commit is one line 
-$ git log --oneline</code></pre>
-<pre><code class="lang-bash"># print a graphic log in console 
-$ git log --graph</code></pre>
-<pre><code class="lang-bash"># print a graphic log in console from all branches where a commit is only one line
-$ git log --graph --oneline --all</code></pre>
-<pre><code class="lang-bash"># print the commit list changelog between 2 tags
-$ git log 0.11.0..0.12.0 --oneline</code></pre>
-<pre><code class="lang-bash"># print the commit list changelog with changed files between 2 tags
-$ git log 0.11.0..0.12.0 --oneline --stat</code></pre>
-<pre><code class="lang-bash"># print a condensed log for a given file name, following files names rewrites
-$ git log --oneline --follow &quot;project/dir/subdir/file.ext&quot;</code></pre>
-<pre><code class="lang-bash"># print a condensed log for a given file name, including merge commits
-$ git log --oneline --full-history &quot;project/dir/subdir/file.ext&quot;</code></pre>
-<pre><code class="lang-bash"># print the committer name and email (can be different with the author name and email)
+$ git log --until=&quot;2013-01-30&quot;</code></pre> <pre><code class="lang-bash"># print a log with a list of modified files
+$ git log --stat</code></pre> <pre><code class="lang-bash"># print a log of all commits from all branches (just active branch by default)
+$ git log --all</code></pre> <pre><code class="lang-bash"># print a condensed log where each commit is one line 
+$ git log --oneline</code></pre> <pre><code class="lang-bash"># print a graphic log in console 
+$ git log --graph</code></pre> <pre><code class="lang-bash"># print a graphic log in console from all branches where a commit is only one line
+$ git log --graph --oneline --all</code></pre> <pre><code class="lang-bash"># print the commit list changelog between 2 tags
+$ git log 0.11.0..0.12.0 --oneline</code></pre> <pre><code class="lang-bash"># print the commit list changelog with changed files between 2 tags
+$ git log 0.11.0..0.12.0 --oneline --stat</code></pre> <pre><code class="lang-bash"># print a condensed log for a given file name, following files names rewrites
+$ git log --oneline --follow &quot;project/dir/subdir/file.ext&quot;</code></pre> <pre><code class="lang-bash"># print a condensed log for a given file name, including merge commits
+$ git log --oneline --full-history &quot;project/dir/subdir/file.ext&quot;</code></pre> <pre><code class="lang-bash"># print the committer name and email (can be different with the author name and email)
 $ git log --pretty=format&quot;%cn &lt;%ce&gt; committed %h on %cd&quot;
-# where %cn = committer name, %ce = commiter email, %h = abbreviated commit hash, %cd = committer date</code></pre>
-<pre><code class="lang-bash"># print the author name and email 
+# where %cn = committer name, %ce = commiter email, %h = abbreviated commit hash, %cd = committer date</code></pre> <pre><code class="lang-bash"># print the author name and email 
 $ git log --pretty=format&quot;%an &lt;%ae&gt; committed %h on %cd&quot;
-# where %an = author name, %ae = author email, %h = abbreviated commit hash, %cd = committer date</code></pre>
-<h2 id="title-blame">blame</h2>
-<pre><code class="lang-bash"># who have modified each line with timestamp
+# where %an = author name, %ae = author email, %h = abbreviated commit hash, %cd = committer date</code></pre> <h2 id="title-blame">blame</h2> <pre><code class="lang-bash"># who have modified each line with timestamp
 $ git blame sha1_file.c
 ...
 0fcfd160 (Linus Torvalds  2005-04-18 13:04:43 -0700    8)  */
@@ -186,8 +123,7 @@ a733cb60 (Linus Torvalds  2005-06-28 14:21:02 -0700   11) #include &quot;pack.h&
 8e440259 (Peter Eriksen   2006-04-02 14:44:09 +0200   15) #include &quot;tree.h&quot;
 f35a6d3b (Linus Torvalds  2007-04-09 21:20:29 -0700   16) #include &quot;refs.h&quot;
 70f5d5d3 (Nicolas Pitre   2008-02-28 00:25:19 -0500   17) #include &quot;pack-revindex.h&quot;628522ec (Junio C Hamano              2007-12-29 02:05:47 -0800   18) #include &quot;sha1-lookup.h&quot;
-...</code></pre>
-<pre><code class="lang-bash"># can be filtered to specific line range
+...</code></pre> <pre><code class="lang-bash"># can be filtered to specific line range
 $ git blame -L 160,+10 sha1_file.c 
 ace1534d (Junio C Hamano 2005-05-07 00:38:04 -0700       160)}
 ace1534d (Junio C Hamano 2005-05-07 00:38:04 -0700       161)
@@ -198,29 +134,13 @@ ace1534d (Junio C Hamano 2005-05-07 00:38:04 -0700       161)
 ace1534d (Junio C Hamano 2005-05-07 00:38:04 -0700       166) *
 ace1534d (Junio C Hamano 2005-05-07 00:38:04 -0700       167) * Also note that this returns the location
 ace1534d (Junio C Hamano 2005-05-07 00:38:04 -0700       168) * SHA1 file can happen from any alternate 
-d19938ab (Junio C Hamano 2005-05-09 17:57:56 -0700       169) * DB_ENVIRONMENT environment variable if i</code></pre>
-<h2 id="title-checking-changes-between-2-tags">checking changes between 2 tags</h2>
-<p>We want to know :</p>
-<ul>
-<li>the commit list</li>
-<li>the changed files list by commit</li>
-<li>the full changed files list</li>
-<li>the full changed content</li>
-</ul>
-<pre><code class="lang-bash"># print the commit list that &lt;tag2&gt; have and &lt;tag1&gt; does not have (just sha1 and log msg)
-$ git log --oneline &lt;tag1&gt;..&lt;tag2&gt;</code></pre>
-<pre><code class="lang-bash"># print the commit list that &lt;tag2&gt; have and &lt;tag1&gt; does not have (just sha1 and log msg) with the changed files, commit by commit
-$ git log --oneline --stat &lt;tag1&gt;..&lt;tag2&gt;</code></pre>
-<pre><code class="lang-bash"># print the changed files list in &lt;tag2&gt; files that &lt;tag1&gt; files does not have
-$ git diff --stat &lt;tag1&gt;...&lt;tag2&gt;</code></pre>
-<pre><code class="lang-bash"># print the content changed in &lt;tag2&gt; files that &lt;tag1&gt; files does not have
-$ git diff &lt;tag1&gt;...&lt;tag2&gt;</code></pre>
-<h2 id="title-reflog">reflog</h2>
-<pre><code class="lang-bash"># print the history of the tip of the branch (you can see how the HEAD have evolved)
+d19938ab (Junio C Hamano 2005-05-09 17:57:56 -0700       169) * DB_ENVIRONMENT environment variable if i</code></pre> <h2 id="title-checking-changes-between-2-tags">checking changes between 2 tags</h2> <p>We want to know :</p> <ul> <li>the commit list</li> <li>the changed files list by commit</li> <li>the full changed files list</li> <li>the full changed content</li> </ul> <pre><code class="lang-bash"># print the commit list that &lt;tag2&gt; have and &lt;tag1&gt; does not have (just sha1 and log msg)
+$ git log --oneline &lt;tag1&gt;..&lt;tag2&gt;</code></pre> <pre><code class="lang-bash"># print the commit list that &lt;tag2&gt; have and &lt;tag1&gt; does not have (just sha1 and log msg) with the changed files, commit by commit
+$ git log --oneline --stat &lt;tag1&gt;..&lt;tag2&gt;</code></pre> <pre><code class="lang-bash"># print the changed files list in &lt;tag2&gt; files that &lt;tag1&gt; files does not have
+$ git diff --stat &lt;tag1&gt;...&lt;tag2&gt;</code></pre> <pre><code class="lang-bash"># print the content changed in &lt;tag2&gt; files that &lt;tag1&gt; files does not have
+$ git diff &lt;tag1&gt;...&lt;tag2&gt;</code></pre> <h2 id="title-reflog">reflog</h2> <pre><code class="lang-bash"># print the history of the tip of the branch (you can see how the HEAD have evolved)
 $ git reflog
 
 # or (show is the default one)
-$ git reflog show</code></pre>
-<pre><code class="lang-bash"># git reflog show accepts the same commands as git log, here you can print the modified files
-$ git reflog show --stat</code></pre>
-</article></body></html>
+$ git reflog show</code></pre> <pre><code class="lang-bash"># git reflog show accepts the same commands as git log, here you can print the modified files
+$ git reflog show --stat</code></pre> </article></body></html>

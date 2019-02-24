@@ -1,15 +1,1 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../github-markdown.css" rel="stylesheet" media="all"><link href="../../main.css" rel="stylesheet" media="all"><link href="../../github.css" rel="stylesheet"><script src="../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-js---double-negation-">js - double negation <code>!!</code></h1>
-<p><a href="http://stackoverflow.com/questions/10467475/double-negation-in-javascript-what-is-the-purpohtml">double-negation-in-javascript-what-is-the-purpose : stackoverflow.com</a></p>
-<p>It casts to boolean. The first <code>!</code> negates it once, converting values like so:</p>
-<ul>
-<li><code>undefined</code> to <code>true</code></li>
-<li><code>null</code> to <code>true</code></li>
-<li><code>+0</code> to <code>true</code></li>
-<li><code>-0</code> to <code>true</code></li>
-<li><code>&#39;&#39;</code> to <code>true</code></li>
-<li><code>NaN</code> to <code>true</code></li>
-<li><code>false</code> to <code>true</code></li>
-<li>All other expressions to <code>false</code></li>
-</ul>
-<p>Then the other <code>!</code> negates it again. A concise cast to boolean, exactly equivalent to ToBoolean simply because <code>!</code> is defined as its negation. It’s unnecessary here, though, because it’s only used as the condition of the conditional operator, which will determine truthiness in the same way.</p>
-</article></body></html>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-js---double-negation-">js - double negation <code>!!</code></h1> <p><a href="http://stackoverflow.com/questions/10467475/double-negation-in-javascript-what-is-the-purpose">double-negation-in-javascript-what-is-the-purpose : stackoverflow.com</a></p> <p>It casts to boolean. The first <code>!</code> negates it once, converting values like so:</p> <ul> <li><code>undefined</code> to <code>true</code></li> <li><code>null</code> to <code>true</code></li> <li><code>+0</code> to <code>true</code></li> <li><code>-0</code> to <code>true</code></li> <li><code>&#39;&#39;</code> to <code>true</code></li> <li><code>NaN</code> to <code>true</code></li> <li><code>false</code> to <code>true</code></li> <li>All other expressions to <code>false</code></li> </ul> <p>Then the other <code>!</code> negates it again. A concise cast to boolean, exactly equivalent to ToBoolean simply because <code>!</code> is defined as its negation. It’s unnecessary here, though, because it’s only used as the condition of the conditional operator, which will determine truthiness in the same way.</p> </article></body></html>

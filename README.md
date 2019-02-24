@@ -60,5 +60,6 @@ Using [highlight.js](https://highlightjs.org).
 
 ## TODO
 
+- **BUG** parcel me fait chier à réécrire toutes les urls en absolue. Si on définit en public (https://en.parceljs.org/cli.html#set-the-public-url-to-serve-on) il préserve pas ce qui existait (`../../toto` devient `toto`)
 - A new `index.html` page in the form of a SPA to support a full text research with [lunr](https://www.npmjs.com/package/lunr).
 - A TravisCI job with a [GitHub Webhook](https://developer.github.com/webhooks/) to lint the markdown and generate automatically the `docs/` folder when editing the `content/` folder from the GitHub UI.

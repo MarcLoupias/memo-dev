@@ -1,12 +1,6 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../github-markdown.css" rel="stylesheet" media="all"><link href="../../main.css" rel="stylesheet" media="all"><link href="../../github.css" rel="stylesheet"><script src="../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-js---samples-and-miscs">js - samples and miscs</h1>
-<h2 id="title-utiliser-des-webservices-retournant-du-xml-avec-angularjs-es5">utiliser des webservices retournant du xml avec AngularJS (ES5)</h2>
-<p>Utiliser jQuery : <a href="http://api.jquery.com/jquery.parsexmhtml">http://api.jquery.com/jquery.parsexml/</a></p>
-<p>Côté angular faire un call de webservice via <code>$http</code><br>Le xml retourné est dans <code>res.data</code></p>
-<pre><code class="lang-javascript">if (typeof(xml) === &#39;string&#39;) {
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-js---samples-and-miscs">js - samples and miscs</h1> <h2 id="title-utiliser-des-webservices-retournant-du-xml-avec-angularjs-es5">utiliser des webservices retournant du xml avec AngularJS (ES5)</h2> <p>Utiliser jQuery : <a href="http://api.jquery.com/jquery.parsexml/">http://api.jquery.com/jquery.parsexml/</a></p> <p>Côté angular faire un call de webservice via <code>$http</code><br>Le xml retourné est dans <code>res.data</code></p> <pre><code class="lang-javascript">if (typeof(xml) === &#39;string&#39;) {
   xml = $.parseXML(xml);
-}</code></pre>
-<p>Typer les données via des pseudos classes javascript et faire une methode parse dans chaque classe pour remplir un objet via un simple :</p>
-<pre><code class="lang-javascript">function MaClasse(data) {
+}</code></pre> <p>Typer les données via des pseudos classes javascript et faire une methode parse dans chaque classe pour remplir un objet via un simple :</p> <pre><code class="lang-javascript">function MaClasse(data) {
   this.data1 = &#39;&#39;;
   this.data2 = {};
   this.data3 = [];
@@ -27,27 +21,15 @@ MaClasse.prototype.parse = function( data ) {
   data.find(&#39;&gt;data3&#39;).each(function () {
     that.data3.push(new MaClasseData3( $(this) ));
   });
-}</code></pre>
-<p>Ce fonctionnement permet d’avoir des méthodes utilitaires dans le prototype de chaque type créé<br>pour accéder au data via des règles métiers ou autre.</p>
-<h2 id="title-télécharger-un-fichier-pdf-xls--dans-un-nouvel-onglet">télécharger un fichier (pdf, xls, …) dans un nouvel onglet</h2>
-<p>Dans la promesse success du call au endpoint retournant le flux binaire :</p>
-<ul>
-<li>créer un blob avec le type correspondant :</li>
-</ul>
-<pre><code class="lang-javascript">// où response.data correspond au flux de retour
+}</code></pre> <p>Ce fonctionnement permet d’avoir des méthodes utilitaires dans le prototype de chaque type créé<br>pour accéder au data via des règles métiers ou autre.</p> <h2 id="title-télécharger-un-fichier-pdf-xls--dans-un-nouvel-onglet">télécharger un fichier (pdf, xls, …) dans un nouvel onglet</h2> <p>Dans la promesse success du call au endpoint retournant le flux binaire :</p> <ul> <li>créer un blob avec le type correspondant :</li> </ul> <pre><code class="lang-javascript">// où response.data correspond au flux de retour
 
 // pdf
 var file = new Blob([response.data], {type: &#39;application/pdf&#39;});
 
 // xls
-var file = new Blob([response.data], {type: &#39;application/vnd.ms-excel&#39;});</code></pre>
-<ul>
-<li>sauvegarder le fichier dans le temp du navigateur et ouvrir dans un nouvel onglet</li>
-</ul>
-<pre><code class="lang-javascript">if (window.navigator.msSaveOrOpenBlob) { // IE
+var file = new Blob([response.data], {type: &#39;application/vnd.ms-excel&#39;});</code></pre> <ul> <li>sauvegarder le fichier dans le temp du navigateur et ouvrir dans un nouvel onglet</li> </ul> <pre><code class="lang-javascript">if (window.navigator.msSaveOrOpenBlob) { // IE
     window.navigator.msSaveOrOpenBlob(file);
 } else { // autres browsers
     var fileURL = window.URL.createObjectURL(file);
     window.open(fileURL, &#39;_blank&#39;);
-}</code></pre>
-</article></body></html>
+}</code></pre> </article></body></html>

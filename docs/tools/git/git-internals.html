@@ -1,13 +1,13 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../github-markdown.css" rel="stylesheet" media="all"><link href="../../main.css" rel="stylesheet" media="all"><link href="../../github.css" rel="stylesheet"><script src="../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-git---internals">git - internals</h1>
 <h2 id="title-ressources">ressources</h2>
-<p><a href="https://www.youtube.com/watch?v=Hd_UpJPDlik&index=88&list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXhtml">Entrer dans les entrailles de Git, ou comment faire un commit sans faire du Git (Alexandre Garnier) : Devoxx fr 2016</a></p>
+<p><a href="https://www.youtube.com/watch?v=Hd_UpJPDlik&index=88&list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXAO">Entrer dans les entrailles de Git, ou comment faire un commit sans faire du Git (Alexandre Garnier) : Devoxx fr 2016</a></p>
 <blockquote>
-<p>[<a href="https://youtu.be/Hd_UpJPDlik?list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXAO&t=2html">4:48</a>]les fichiers objects (de <code>.git/objects/</code>) sont compressés avec zlib.</p>
+<p>[<a href="https://youtu.be/Hd_UpJPDlik?list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXAO&t=290">4:48</a>]les fichiers objects (de <code>.git/objects/</code>) sont compressés avec zlib.</p>
 </blockquote>
-<p><a href="https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.hthtml">The anatomy of a Git commit : Christoph Burgdorf - 20141118</a></p>
+<p><a href="https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html">The anatomy of a Git commit : Christoph Burgdorf - 20141118</a></p>
 <h2 id="title-objects-files">objects files</h2>
-<p><a href="https://matthew-brett.github.io/curious-git/git_object_types.hthtml">Types of git objects</a></p>
-<p><a href="https://matthew-brett.github.io/curious-git/reading_git_objects.hthtml">Reading git objects</a></p>
+<p><a href="https://matthew-brett.github.io/curious-git/git_object_types.html">Types of git objects</a></p>
+<p><a href="https://matthew-brett.github.io/curious-git/reading_git_objects.html">Reading git objects</a></p>
 <p>written in <code>.git/objects/</code></p>
 <p>list all objects files in <code>.git/objects/</code> :</p>
 <pre><code class="lang-bash">$ find .git/objects -type f
@@ -59,7 +59,7 @@ blob</code></pre>
 <h3 id="title-lire-le-fichier-index">lire le fichier index</h3>
 <pre><code class="lang-bash">$ git ls-files --stage
 100644 274c0052dd5408f8ae2bc8440029ff67d79bc5c3 0       number.txt</code></pre>
-<p><a href="https://stackoverflow.com/questions/4084921/what-does-the-git-index-contain-exactly?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_html">What does the git index contain EXACTLY?</a></p>
+<p><a href="https://stackoverflow.com/questions/4084921/what-does-the-git-index-contain-exactly?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa">What does the git index contain EXACTLY?</a></p>
 <h3 id="title-files-structure">files structure</h3>
 <p><strong>blob file</strong></p>
 <p>A blob store the content of a file. Structure is header + content.</p>
@@ -83,5 +83,5 @@ committer Matthew Brett &lt;matthew.brett@gmail.com&gt; 1487004984 +0000
 An example commit</code></pre>
 <p><strong>index file</strong></p>
 <p>It is a lot more complicated and support structure versions.</p>
-<p>Cf <a href="https://github.com/git/git/blob/867b1c1bf68363bcfd17667d6d4b9031fa6a1300/Documentation/technical/index-format.thtml">appropriate documentation</a> in the git repo itself.</p>
+<p>Cf <a href="https://github.com/git/git/blob/867b1c1bf68363bcfd17667d6d4b9031fa6a1300/Documentation/technical/index-format.txt">appropriate documentation</a> in the git repo itself.</p>
 </article></body></html>

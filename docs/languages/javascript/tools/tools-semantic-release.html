@@ -1,29 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="../../../github-markdown.css" rel="stylesheet" media="all"><link href="../../../main.css" rel="stylesheet" media="all"><link href="../../../github.css" rel="stylesheet"><script src="../../../index.js"></script></head><body><article class="markdown-body"><h1 id="title-semantic-release">semantic-release</h1>
-<p><a href="https://github.com/semantic-releahtml">semantic-release - github.com</a></p>
-<p><a href="https://semantic-release.gitbook.io/semantic-releashtml">semantic-release - semantic-release.gitbook.io</a></p>
-<blockquote>
-<p><strong>semantic-release</strong> automates the whole package release workflow including: determining the next version number, generating the release notes and publishing the package.</p>
-<p>This removes the immediate connection between human emotions and version numbers, strictly following the <a href="http://semver.ohtml">Semantic Versioning</a> specification.</p>
-</blockquote>
-<h2 id="title-installation">installation</h2>
-<p><a href="https://semantic-release.gitbook.io/semantic-release/usage/installatihtml">Installation - semantic-release.gitbook.io</a></p>
-<ul>
-<li>install semantic-release package as devDepencencies</li>
-</ul>
-<p><code>npm i --save-dev semantic-release</code></p>
-<ul>
-<li>install globally the semantic-release CLI to ease the configuration</li>
-</ul>
-<p><a href="https://github.com/semantic-release/chtml">semantic-release/cli - github.com</a></p>
-<p><code>npm i -g semantic-release-cli</code></p>
-<p>Execute the CLI with <code>semantic-release-cli setup</code> and answer the questions.</p>
-<h2 id="title-configuration">configuration</h2>
-<h3 id="title-travisci">TravisCI</h3>
-<p><a href="https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/travis.html">Using semantic-release with Travis CI - github.com/semantic-release</a></p>
-<p>When semantic-release-cli is run to setup, it configures automatically the github repository.</p>
-<p>Just needs after to create a <code>.travis.yml</code> configuration file.</p>
-<h4 id="title-travisyml-example"><code>.travis.yml</code> example</h4>
-<pre><code class="lang-yaml">language: node_js
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-semantic-release">semantic-release</h1> <p><a href="https://github.com/semantic-release">semantic-release - github.com</a></p> <p><a href="https://semantic-release.gitbook.io/semantic-release/">semantic-release - semantic-release.gitbook.io</a></p> <blockquote> <p><strong>semantic-release</strong> automates the whole package release workflow including: determining the next version number, generating the release notes and publishing the package.</p> <p>This removes the immediate connection between human emotions and version numbers, strictly following the <a href="http://semver.org">Semantic Versioning</a> specification.</p> </blockquote> <h2 id="title-installation">installation</h2> <p><a href="https://semantic-release.gitbook.io/semantic-release/usage/installation">Installation - semantic-release.gitbook.io</a></p> <ul> <li>install semantic-release package as devDepencencies</li> </ul> <p><code>npm i --save-dev semantic-release</code></p> <ul> <li>install globally the semantic-release CLI to ease the configuration</li> </ul> <p><a href="https://github.com/semantic-release/cli">semantic-release/cli - github.com</a></p> <p><code>npm i -g semantic-release-cli</code></p> <p>Execute the CLI with <code>semantic-release-cli setup</code> and answer the questions.</p> <h2 id="title-configuration">configuration</h2> <h3 id="title-travisci">TravisCI</h3> <p><a href="https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/travis.html">Using semantic-release with Travis CI - github.com/semantic-release</a></p> <p>When semantic-release-cli is run to setup, it configures automatically the github repository.</p> <p>Just needs after to create a <code>.travis.yml</code> configuration file.</p> <h4 id="title-travisyml-example"><code>.travis.yml</code> example</h4> <pre><code class="lang-yaml">language: node_js
 
 node_js:
     - 10
@@ -51,13 +26,4 @@ jobs:
           script:
               - npm install -g semantic-release@^15
               - semantic-release
-</code></pre>
-<p>This config will run against <code>node@10</code>, install deps and run tests.</p>
-<p>If the destination branch is <code>master</code> and is not a fork, semantic-release will be also triggered.</p>
-<h3 id="title-continuous-delivery-workflow">continuous delivery workflow</h3>
-<p>By default semantic-release used with a single <code>master</code> branch will output to a continuous deployment workflow.<br>As soon as something is merged in <code>master</code>, it will trigger the deploy stage.</p>
-<p>Using a continuous delivery workflow gives more control over what is released in production.</p>
-<p>Just add a <code>develop</code> branch, set this branch as default to be the destination for PR.</p>
-<p>When you want to deploy, just merge locally your <code>develop</code> into <code>master</code>, a build will be triggered with the release stage active.</p>
-<p>Don’t use PR to merge <code>develop</code> into <code>master</code>, release stage is disabled for PR. This limitation is builtin.</p>
-</article></body></html>
+</code></pre> <p>This config will run against <code>node@10</code>, install deps and run tests.</p> <p>If the destination branch is <code>master</code> and is not a fork, semantic-release will be also triggered.</p> <h3 id="title-continuous-delivery-workflow">continuous delivery workflow</h3> <p>By default semantic-release used with a single <code>master</code> branch will output to a continuous deployment workflow.<br>As soon as something is merged in <code>master</code>, it will trigger the deploy stage.</p> <p>Using a continuous delivery workflow gives more control over what is released in production.</p> <p>Just add a <code>develop</code> branch, set this branch as default to be the destination for PR.</p> <p>When you want to deploy, just merge locally your <code>develop</code> into <code>master</code>, a build will be triggered with the release stage active.</p> <p>Don’t use PR to merge <code>develop</code> into <code>master</code>, release stage is disabled for PR. This limitation is builtin.</p> </article></body></html>
