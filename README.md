@@ -1,6 +1,6 @@
 # memo-dev
 
-[memo-dev available here](https://memo-dev/github.io)
+[memo-dev available here](https://marcloupias.github.io/memo-dev/)
 
 This website is a personal reminder for work. Aka : memo, knowledge base, cheatsheets, til, ... 
 
