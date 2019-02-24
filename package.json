@@ -26,7 +26,7 @@
         "test": "markdownlint content/**/*.md",
         "prebuild": "mdfc convert 'mdfc-map-to-html' 'content/**/*.md' -o '../../../marked-options.js' && rimraf 'docs/'",
         "build": "cd content/ && find . -name '*.html' -or -name '*.png' -or -name '*.jpg' | cpio -pdm ../docs/ && find . -name '*.html' -type f -delete && cd .. && mv docs/SUMMARY.html docs/index.html && cp node_modules/github-markdown-css/github-markdown.css docs/github-markdown.css && cp -avr assets/. docs/",
-        "postbuild": "parcel build docs/index.html --out-dir docs/",
+        "postbuild": "parcel build docs/index.html --out-dir docs/ --public-url ./",
         "serve": "http-server -c-1 docs/"
     },
     "license": "ISC",
