@@ -140,6 +140,56 @@ htmlHead:
 > 
 > Conservatisme très fort. Pas encore présent sur le radar technique des gros groupes.
 
+[question Java/C++/C# vs Node.js - 20170718](https://medium.com/@_ericelliott/companies-who-trust-node-js-4bfb8385ab84)
+
+> From comments in article [The Shocking Secret About Static Types](https://medium.com/javascript-scene/the-shocking-secret-about-static-types-514d39bf30a3) by Eric Elliott - 20160505
+> 
+> **[question from pwadev](https://medium.com/@pwadev33/hi-eric-ive-been-seeing-a-lot-of-java-c-c-devs-saying-that-you-shouldn-t-use-node-js-d4c831db105)**
+> 
+> I’ve been seeing a lot of Java/C++/C# devs saying that you shouldn’t use Node.js to build a production app because it isn’t stable enough or maintainable enough partly due to it’s lack of static typing. They say Electron isn’t usable for desktop development for the same reasons.
+> [...]
+> Do you think Node.js is stable enough for creating commercial apps without needing tons of maintenance or should I use a language like Java instead?
+>
+> **[answer from Eric Elliott](https://medium.com/@_ericelliott/companies-who-trust-node-js-4bfb8385ab84)**
+>
+> Companies who trust Node.js: Walmart, PayPal, Adobe, LinkedIn, IBM, Microsoft, Netflix, Uber, Medium, New York Times, etc…
+> 
+> PayPal made the switch from Java to Node in spite of the fact that PayPal’s entire engineering team was mostly familiar with Java, and not familiar with JavaScript.
+> 
+> Much of PayPal’s middle-tier infrastructure is now powered by Node and the team is now confident to push changes to production at a much higher pace than they ever did with Java.
+> 
+> You can see this for yourself looking at the vast improvement in all their apps since 2012. Learning to embrace change helped them stay relevant and restored their position as an innnovative company.
+> 
+> If the leading provider of global online payment solutions trusts Node in spite of the fact that the whole team was previously deeply invested in Java, and screwing up could impact the global payment economy that PayPal supports, that should tell you everything you need to know.
+> 
+> But in case it doesn’t, here’s my experience: I have a background in C++ and Java. I never built a large production C++ app that had an uptime you could measure in months or years. Because of the manual memory management and complicated (very imperative) type system, I was always fighting memory leaks or trying to escape strict typing with dynamic hacks. It felt too manual, rigid and restrictive.
+> 
+> My experience with Java was worse. Java made it hard to use simple functions as a basic building block. A lot of great work can be done by composing simple functions, but in Java, even the most trivial things require the overhead of class building and object instantiation, and even objects in Java are harder to compose than they need to be.
+> 
+> I kept my “Design Patterns” book on my desk when I was building apps with Java, constantly consulting it to figure out how to work around restrictions in the language.
+> 
+> Java was purpose built to abstract away from specific hardware platforms. It’s just a language, and nothing but classes and objects feel like first class citizens.
+> 
+> I thought all OO programming languages were like Java or C++ that until I started coding in JavaScript. JavaScript’s support for annotation-free types makes generic function programming default behavior. Support for first class functions and closures means powerful higher-order functions are at our fingertips whenever we need them. The syntax for those features is simple, easy to both write and read.
+> 
+> In other words, JavaScript can do a lot more with a lot less code, syntax noise, and cognitive overhead.
+> 
+> I have built many successful mission-critical apps in Node used by millions of people, with rock-solid performance and uptime, with development finishing twice as fast or even orders of magnitude faster than the legacy apps they replaced. I’ve been involved in PHP, Ruby on Rails, and Java ports to Node that have all been very successful.
+> 
+> When I code in Java or C++ now I feel like I’ve been stuck in a straight jacket.
+> 
+> Detractors will say “without static types you’ll have lots of bugs”, to which I say “type correctness does not guarantee program correctness.”
+> 
+> Whether or not you use static types, you should still use other bug prevention measures such as TDD (40% — 80% fewer bugs in production) code review (every hour in code review saves 33 hours in maintenance), and automated CI/CD.
+> 
+> It turns out, when you’re doing all that, very few type errors slip out into production anyway. Read “The Shocking Secret About Static Types”. Turns out that evidence finds static types have a very small impact on over-all bug density.
+> 
+> If you want reliable production apps, don’t use type system training wheels as your primary guarantee. Instead, invest in a good quality TDD + CI/CD process and code review.
+> 
+> Static types are cool, but anybody who tells you that you need them to build large, enterprise-scale apps is feeding you biassed opinion, ignorant of the facts, ignoring many thousands of mission critical enterprise apps that have been a huge success partially thanks to Node.
+> 
+> Node is such a solid choice these days it makes a great default workhorse for middle-tier web platform apps. And I haven’t even mentioned Universal JavaScript or Next.js yet. Google it. You’ll thank me.
+
 ## architecture
 
 [Understanding Node.js Event-Driven Architecture](https://medium.freecodecamp.com/understanding-node-js-event-driven-architecture-223292fcbc2d)
