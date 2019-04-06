@@ -1,4 +1,16 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-js---duck-typing">js - duck typing</h1> <p><a href="https://stackoverflow.com/questions/3379529/duck-typing-in-javascript">Duck Typing in Javascript</a></p> <p><a href="http://en.wikipedia.org/wiki/Duck_typing">Duck Typing - en.wikipedia.org</a></p> <blockquote> <p>If it looks like a duck, swims like a duck, and quacks like a duck, then it probably is a duck.</p> </blockquote> <blockquote> <p>In a class-based object-oriented programming language (C++, for example) to make both objects look like a duck you must inherit their classes from a common “interface” class, so the compiler would let you call <code>duck</code> methods on them. That is called a strong typing. </p> </blockquote> <blockquote> <p>Now this is how it’s done in Javascript:</p> </blockquote> <pre><code class="lang-javascript">var duck = {  
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.a092d0a1.js"></script></head><body><article class="markdown-body"><h1 id="title-js---duck-typing">js - duck typing</h1>
+<p><a href="https://stackoverflow.com/questions/3379529/duck-typing-in-javascript">Duck Typing in Javascript</a></p>
+<p><a href="http://en.wikipedia.org/wiki/Duck_typing">Duck Typing - en.wikipedia.org</a></p>
+<blockquote>
+<p>If it looks like a duck, swims like a duck, and quacks like a duck, then it probably is a duck.</p>
+</blockquote>
+<blockquote>
+<p>In a class-based object-oriented programming language (C++, for example) to make both objects look like a duck you must inherit their classes from a common “interface” class, so the compiler would let you call <code>duck</code> methods on them. That is called a strong typing. </p>
+</blockquote>
+<blockquote>
+<p>Now this is how it’s done in Javascript:</p>
+</blockquote>
+<pre><code class="lang-javascript">var duck = {  
     appearance: &quot;feathers&quot;,  
     quack: function duck_quack(what) {  
         print(what + &quot; quack-quack!&quot;);  
@@ -23,4 +35,8 @@ function check(who) {
 }  
 
 check(duck);  // true
-check(someAnimal);  // true</code></pre> <blockquote> <p>See, the <code>check</code> function check whether the passed object looks like a duck (it checks appearance and its’ ability to quack). We pass two different objects to it and it will return <code>true</code> on both. Besides the appearance and quacking these may be completely different things, but IN THIS PARTICULAR <code>check</code> function they behave the same way (have a common interface), they both look like a “duck”. We can call the <code>quack</code> method on both objects (and who cares what they really are).</p> </blockquote> </article></body></html>
+check(someAnimal);  // true</code></pre>
+<blockquote>
+<p>See, the <code>check</code> function check whether the passed object looks like a duck (it checks appearance and its’ ability to quack). We pass two different objects to it and it will return <code>true</code> on both. Besides the appearance and quacking these may be completely different things, but IN THIS PARTICULAR <code>check</code> function they behave the same way (have a common interface), they both look like a “duck”. We can call the <code>quack</code> method on both objects (and who cares what they really are).</p>
+</blockquote>
+</article></body></html>

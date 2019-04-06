@@ -1,1 +1,29 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-javascript-math">JavaScript Math</h1> <h2 id="title-float-and-money">float and money</h2> <p>JavaScript Numbers are IEEE 754 64-bit floating point. The result is that we can’t safely add money because the decimal will get skewered by floating point rounding errors.</p> <pre><code class="lang-javascript">.2 + .1 === .3; // false</code></pre> <h3 id="title-the-money-problem">the money problem</h3> <p><a href="https://spin.atomicobject.com/2014/08/14/currency-rounding-errors/">Floating Point Numbers &amp; Currency Rounding Errors - Patrick Bacon - 20140814</a></p> <blockquote> <p><strong>Don’t use floating point numbers for money</strong></p> <p>Ways it Can Go Wrong :</p> <ul> <li>During Calculations</li> <li>During Storage</li> <li>During Retrieval</li> <li>Before Display</li> </ul> </blockquote> <p><a href="https://stackoverflow.com/questions/3730019/why-not-use-double-or-float-to-represent-currency/3730040#3730040">stackoverflow comment explaining the problem</a></p> <h3 id="title-quicks-solutions">quicks solutions</h3> <h4 id="title-tofixed">toFixed()</h4> <p><a href="https://stackoverflow.com/a/12511102">using <code>Number.prototype.toFixed()</code> - stackoverflow.com</a> / <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed">MDN</a></p> <p>Warning <code>toFixed</code> returns a string. This to prepare display in UI not to do maths.</p> <h4 id="title-do-calculation-on-cents">do calculation on cents</h4> <p><a href="https://www.quora.com/What-is-the-best-way-to-handle-floating-point-problems-with-financial-calculations-in-JavaScript">What is the best way to handle floating point problems with financial calculations in JavaScript? - quora.com - 2015</a></p> <blockquote> <p>just represent all monetary values using an integer number of the smallest relevant units of the currency</p> </blockquote> <h3 id="title-libs">libs</h3> <p><a href="https://github.com/ericelliott/moneysafe">ericelliott/moneysafe : github.com</a></p> </article></body></html>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.a092d0a1.js"></script></head><body><article class="markdown-body"><h1 id="title-javascript-math">JavaScript Math</h1>
+<h2 id="title-float-and-money">float and money</h2>
+<p>JavaScript Numbers are IEEE 754 64-bit floating point. The result is that we can’t safely add money because the decimal will get skewered by floating point rounding errors.</p>
+<pre><code class="lang-javascript">.2 + .1 === .3; // false</code></pre>
+<h3 id="title-the-money-problem">the money problem</h3>
+<p><a href="https://spin.atomicobject.com/2014/08/14/currency-rounding-errors/">Floating Point Numbers &amp; Currency Rounding Errors - Patrick Bacon - 20140814</a></p>
+<blockquote>
+<p><strong>Don’t use floating point numbers for money</strong></p>
+<p>Ways it Can Go Wrong :</p>
+<ul>
+<li>During Calculations</li>
+<li>During Storage</li>
+<li>During Retrieval</li>
+<li>Before Display</li>
+</ul>
+</blockquote>
+<p><a href="https://stackoverflow.com/questions/3730019/why-not-use-double-or-float-to-represent-currency/3730040#3730040">stackoverflow comment explaining the problem</a></p>
+<h3 id="title-quicks-solutions">quicks solutions</h3>
+<h4 id="title-tofixed">toFixed()</h4>
+<p><a href="https://stackoverflow.com/a/12511102">using <code>Number.prototype.toFixed()</code> - stackoverflow.com</a> / <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed">MDN</a></p>
+<p>Warning <code>toFixed</code> returns a string. This to prepare display in UI not to do maths.</p>
+<h4 id="title-do-calculation-on-cents">do calculation on cents</h4>
+<p><a href="https://www.quora.com/What-is-the-best-way-to-handle-floating-point-problems-with-financial-calculations-in-JavaScript">What is the best way to handle floating point problems with financial calculations in JavaScript? - quora.com - 2015</a></p>
+<blockquote>
+<p>just represent all monetary values using an integer number of the smallest relevant units of the currency</p>
+</blockquote>
+<h3 id="title-libs">libs</h3>
+<p><a href="https://github.com/ericelliott/moneysafe">ericelliott/moneysafe : github.com</a></p>
+</article></body></html>

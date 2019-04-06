@@ -1,4 +1,18 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-how-browsers-init-a-web-page">how browsers init a web page</h1> <h2 id="title-heres-what-happens-when-a-browser-loads-a-website">Here’s what happens when a browser loads a website</h2> <ol> <li>Fetch the HTML page (e.g. <code>index.html</code>)</li> <li>Begin parsing the HTML</li> <li>The parser encounters a <code>&lt;script&gt;</code> tag referencing an external script file.</li> <li>The browser requests the script file. Meanwhile, the parser blocks and stops parsing the other HTML on your page.</li> <li>After some time the script is downloaded and subsequently executed.</li> <li>The parser continues parsing the rest of the HTML document.</li> </ol> <p>Step 4 causes a bad user experience. Your website basically stops loading until you’ve downloaded all scripts. If there’s one thing that users hate it’s waiting for a website to load.</p> <h2 id="title-why-does-this-even-happen">Why does this even happen?</h2> <p>Any script can insert its own HTML via <code>document.write()</code> or other DOM manipulations. This implies that the parser has to wait until the script has been downloaded &amp; executed before it can safely parse the rest of the document. After all, the script could have inserted its own HTML in the document.</p> <p>However, most javascript developers no longer manipulate the DOM while the document is loading. Instead, they wait until the document has been loaded before modifying it. For example:</p> <pre><code class="lang-html">&lt;!-- index.html --&gt;
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.a092d0a1.js"></script></head><body><article class="markdown-body"><h1 id="title-how-browsers-init-a-web-page">how browsers init a web page</h1>
+<h2 id="title-heres-what-happens-when-a-browser-loads-a-website">Here’s what happens when a browser loads a website</h2>
+<ol>
+<li>Fetch the HTML page (e.g. <code>index.html</code>)</li>
+<li>Begin parsing the HTML</li>
+<li>The parser encounters a <code>&lt;script&gt;</code> tag referencing an external script file.</li>
+<li>The browser requests the script file. Meanwhile, the parser blocks and stops parsing the other HTML on your page.</li>
+<li>After some time the script is downloaded and subsequently executed.</li>
+<li>The parser continues parsing the rest of the HTML document.</li>
+</ol>
+<p>Step 4 causes a bad user experience. Your website basically stops loading until you’ve downloaded all scripts. If there’s one thing that users hate it’s waiting for a website to load.</p>
+<h2 id="title-why-does-this-even-happen">Why does this even happen?</h2>
+<p>Any script can insert its own HTML via <code>document.write()</code> or other DOM manipulations. This implies that the parser has to wait until the script has been downloaded &amp; executed before it can safely parse the rest of the document. After all, the script could have inserted its own HTML in the document.</p>
+<p>However, most javascript developers no longer manipulate the DOM while the document is loading. Instead, they wait until the document has been loaded before modifying it. For example:</p>
+<pre><code class="lang-html">&lt;!-- index.html --&gt;
 &lt;html&gt;
     &lt;head&gt;
         &lt;title&gt;My Page&lt;/title&gt;
@@ -7,10 +21,38 @@
     &lt;body&gt;
         &lt;div id=&quot;user-greeting&quot;&gt;Welcome back, user&lt;/div&gt;
     &lt;/body&gt;
-&lt;/html&gt;</code></pre> <p>Javascript:</p> <pre><code class="lang-javascript">// my-script.js
+&lt;/html&gt;</code></pre>
+<p>Javascript:</p>
+<pre><code class="lang-javascript">// my-script.js
 document.addEventListener(&quot;DOMContentLoaded&quot;, function() { 
     // this function runs when the DOM is ready, i.e. when the document has been parsed
     document.getElementById(&quot;user-greeting&quot;).textContent = &quot;Welcome back, Bart&quot;;
-});</code></pre> <p>Because your browser does not know <code>my-script.js</code> isn’t going to modify the document until it has been downloaded &amp; executed, the parser stops parsing.</p> <h2 id="title-antiquated-recommendation">Antiquated recommendation</h2> <p>The old approach to solve this problem was to put <code>&lt;script&gt;</code> tags at the bottom of your <code>&lt;body&gt;</code>, because this ensures the parser isn’t blocked until the very end.</p> <p>This approach has its own problem: the browser cannot start downloading the scripts until the entire document is parsed. For larger websites with large scripts &amp; stylesheets, being able to download the script as soon as possible is very important for performance. If your website doesn’t load within 2 seconds, people will go to another website.</p> <p>In an optimal solution, the browser would start downloading your scripts as soon as possible, while at the same time parsing the rest of your document.</p> <h2 id="title-the-modern-approach">The modern approach</h2> <p>Today, browsers support the <code>async</code> and <code>defer</code> attributes on scripts. These attributes tell the browser it’s safe to continue parsing while the scripts are being downloaded.</p> <h3 id="title-async">async</h3> <pre><code class="lang-html">&lt;script type=&quot;text/javascript&quot; src=&quot;path/to/script1.js&quot; async&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;path/to/script2.js&quot; async&gt;&lt;/script&gt;</code></pre> <p>Scripts with the async attribute are executed asynchronously. This means the script is executed as soon as it’s downloaded, without blocking the browser in the meantime.<br>This implies that it’s possible script 2 is downloaded &amp; executed before script 1.</p> <p>According to <a href="http://caniuse.com/#feat=script-async">http://caniuse.com/#feat=script-async</a>, 90% of all browsers support this.</p> <h3 id="title-defer">defer</h3> <pre><code class="lang-html">&lt;script type=&quot;text/javascript&quot; src=&quot;path/to/script1.js&quot; defer&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;path/to/script2.js&quot; defer&gt;&lt;/script&gt;</code></pre> <p>Scripts with the <code>defer</code> attribute are executed in order (i.e. first script 1, then script 2). This also does not block the browser.</p> <p>Unlike async scripts, defer scripts are only executed after the entire document has been loaded.</p> <p>According to <a href="http://caniuse.com/#feat=script-defer">http://caniuse.com/#feat=script-defer</a>, 90% of all browsers support this. 92% support it at least partially.</p> <p>An important note on browser compatibility: in some circumstances IE &lt;= 9 may execute deferred scripts out of order. If you need to support those browsers, please read this first!</p> <h2 id="title-conclusion">Conclusion</h2> <p>The current state-of-the-art is to put scripts in the <code>&lt;head&gt;</code> tag and use the <code>async</code> or <code>defer</code> attributes. This allows your scripts to be downloaded asap without blocking your browser.</p> <p>The good thing is that your website should still load correctly on the 20% of browsers that do not support these attributes, while speeding up the other 80%.</p> <h2 id="title-sources">sources</h2> <ul> <li><a href="http://stackoverflow.com/a/24070373">Where is the best place to put <code>&lt;script&gt;</code> tags in HTML markup?</a></li> <li><a href="https://developers.google.com/speed/docs/insights/BlockingJS#recommandations">developers.google.com : Supprimer les fichiers JavaScript qui bloquent l’affichage</a></li> </ul> </article></body></html>
+});</code></pre>
+<p>Because your browser does not know <code>my-script.js</code> isn’t going to modify the document until it has been downloaded &amp; executed, the parser stops parsing.</p>
+<h2 id="title-antiquated-recommendation">Antiquated recommendation</h2>
+<p>The old approach to solve this problem was to put <code>&lt;script&gt;</code> tags at the bottom of your <code>&lt;body&gt;</code>, because this ensures the parser isn’t blocked until the very end.</p>
+<p>This approach has its own problem: the browser cannot start downloading the scripts until the entire document is parsed. For larger websites with large scripts &amp; stylesheets, being able to download the script as soon as possible is very important for performance. If your website doesn’t load within 2 seconds, people will go to another website.</p>
+<p>In an optimal solution, the browser would start downloading your scripts as soon as possible, while at the same time parsing the rest of your document.</p>
+<h2 id="title-the-modern-approach">The modern approach</h2>
+<p>Today, browsers support the <code>async</code> and <code>defer</code> attributes on scripts. These attributes tell the browser it’s safe to continue parsing while the scripts are being downloaded.</p>
+<h3 id="title-async">async</h3>
+<pre><code class="lang-html">&lt;script type=&quot;text/javascript&quot; src=&quot;path/to/script1.js&quot; async&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;path/to/script2.js&quot; async&gt;&lt;/script&gt;</code></pre>
+<p>Scripts with the async attribute are executed asynchronously. This means the script is executed as soon as it’s downloaded, without blocking the browser in the meantime.<br>This implies that it’s possible script 2 is downloaded &amp; executed before script 1.</p>
+<p>According to <a href="http://caniuse.com/#feat=script-async">http://caniuse.com/#feat=script-async</a>, 90% of all browsers support this.</p>
+<h3 id="title-defer">defer</h3>
+<pre><code class="lang-html">&lt;script type=&quot;text/javascript&quot; src=&quot;path/to/script1.js&quot; defer&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;path/to/script2.js&quot; defer&gt;&lt;/script&gt;</code></pre>
+<p>Scripts with the <code>defer</code> attribute are executed in order (i.e. first script 1, then script 2). This also does not block the browser.</p>
+<p>Unlike async scripts, defer scripts are only executed after the entire document has been loaded.</p>
+<p>According to <a href="http://caniuse.com/#feat=script-defer">http://caniuse.com/#feat=script-defer</a>, 90% of all browsers support this. 92% support it at least partially.</p>
+<p>An important note on browser compatibility: in some circumstances IE &lt;= 9 may execute deferred scripts out of order. If you need to support those browsers, please read this first!</p>
+<h2 id="title-conclusion">Conclusion</h2>
+<p>The current state-of-the-art is to put scripts in the <code>&lt;head&gt;</code> tag and use the <code>async</code> or <code>defer</code> attributes. This allows your scripts to be downloaded asap without blocking your browser.</p>
+<p>The good thing is that your website should still load correctly on the 20% of browsers that do not support these attributes, while speeding up the other 80%.</p>
+<h2 id="title-sources">sources</h2>
+<ul>
+<li><a href="http://stackoverflow.com/a/24070373">Where is the best place to put <code>&lt;script&gt;</code> tags in HTML markup?</a></li>
+<li><a href="https://developers.google.com/speed/docs/insights/BlockingJS#recommandations">developers.google.com : Supprimer les fichiers JavaScript qui bloquent l’affichage</a></li>
+</ul>
+</article></body></html>

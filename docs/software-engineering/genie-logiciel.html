@@ -1,1 +1,447 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-génie-logiciel">Génie Logiciel</h1> <ul> <li><a href="https://fr.wikipedia.org/wiki/G%C3%A9nie_logiciel">Définition wikipédia</a></li> </ul> <h2 id="title-principes">principes</h2> <ul> <li><a href="http://effectivesoftwaredesign.com/2012/02/05/separation-of-concerns/">Separation of Concerns</a></li> </ul> <blockquote> <p>Découper un problème en plusieurs problèmes plus simples</p> </blockquote> <p>Low <a href="https://en.wikipedia.org/wiki/Coupling_%28computer_programming%29">coupling</a>, high <a href="https://en.wikipedia.org/wiki/Cohesion_%28computer_science%29">cohesion</a>, <a href="http://en.wikipedia.org/wiki/Maintainability">maintainability</a>, <a href="http://en.wikipedia.org/wiki/Extensibility">extensibility</a>, <a href="http://en.wikipedia.org/wiki/Reusability">reusability</a>.</p> <ul> <li>Loi de Hofstadter</li> </ul> <blockquote> <p>Il faut toujours plus de temps que prévu, même en tenant compte de la Loi de Hofstadter.</p> </blockquote> <ul> <li>Donald Knuth à propos de l’optimisation prématurée</li> </ul> <blockquote> <p>Premature optimization is the root of all evil</p> </blockquote> <ul> <li><a href="https://fr.wikipedia.org/wiki/Loi_de_Brooks">Loi de Brooks</a></li> </ul> <blockquote> <p>Ajouter des personnes à un projet en retard accroît son retard</p> </blockquote> <blockquote> <p>Adding manpower to a late software project makes it later </p> </blockquote> <ul> <li><a href="https://fr.wikipedia.org/wiki/Le_Mythe_du_mois-homme">Le mythe du mois-homme</a></li> </ul> <blockquote> <p>Neuf femmes ne font pas un enfant en un mois</p> </blockquote> <ul> <li><a href="https://fr.wikipedia.org/wiki/Principe_de_Pareto">Principe de Pareto</a></li> </ul> <blockquote> <p>80 % des effets sont le produit de 20 % des causes</p> </blockquote> <ul> <li><p><a href="http://christian.hohmann.free.fr/index.php/lean-en-conception-et-developpement/les-basiques-du-lean-en-conception-et-developpement/286-panique-en-developpement-effet-tunnel">Effet Tunnel</a></p> </li> <li><p><a href="https://en.wikipedia.org/wiki/Conway's_law">Loi de Conway</a></p> </li> </ul> <blockquote> <p>Les organisations à l’origine des architectures doivent refléter le système en lui-même.</p> </blockquote> <blockquote> <p>organizations which design systems … are constrained to produce designs which are copies of the communication structures of these organizations</p> </blockquote> <blockquote> <p>“The structure of a problem reflects the structure of the organization that created it.” Bill Corcoran’s version of Conway’s Law</p> </blockquote> <ul> <li><a href="https://cavares.com/2016/12/26/le-facteur-%CF%80/">Facteur PI</a></li> </ul> <blockquote> <p>Pour un projet innovant, il faut multiplier l’estimation initiale des coûts par 3,14.</p> </blockquote> <ul> <li>Loi de Parkinson</li> </ul> <blockquote> <p>Plus on a de temps pour réaliser une tâche, plus cette tâche prend du temps.</p> </blockquote> <ul> <li>Loi de Murphy</li> </ul> <blockquote> <p>Toute chose prend plus de temps qu’on ne l’avait prévu</p> </blockquote> <ul> <li>Loi d’Illich</li> </ul> <blockquote> <p>Au delà d’un certain seuil de travail, l’efficacité décroit</p> </blockquote> <ul> <li>Loi de Carson</li> </ul> <blockquote> <p>Faire un travail de façon continue prend moins de temps que de le faire en plusieurs fois</p> </blockquote> <ul> <li>Loi de Fraisse</li> </ul> <blockquote> <p>1 heure n’est pas toujours égale à 1 heure</p> </blockquote> <ul> <li><a href="https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter">Loi de Demeter</a></li> </ul> <blockquote> <p>Ne parlez qu’à vos amis immédiats</p> </blockquote> <p>La notion fondamentale est qu’un objet devrait faire aussi peu d’hypothèses que possible à propos de la structure de quoi que ce soit d’autre, y compris ses propres sous-composants.</p> <p><a href="http://misko.hevery.com/2008/07/18/breaking-the-law-of-demeter-is-like-looking-for-a-needle-in-the-haystack/">Exemple concret</a> par Misko Hevery</p> <ul> <li>YAGNI (You aren’t gonna need it)</li> </ul> <blockquote> <p>Always implement things when you actually need them, never when you just foresee that you need them. (Ron Jeffries)</p> </blockquote> <p><a href="https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it">You aren’t gonna need it : en.wikipedia.org</a></p> <h2 id="title-inversion-of-control">Inversion of Control</h2> <ul> <li><a href="https://en.wikipedia.org/wiki/Inversion_of_control">Inversion of Control</a></li> <li><a href="https://en.wikipedia.org/wiki/Dependency_injection">Dependency Injection</a></li> <li><a href="https://en.wikipedia.org/wiki/Dependency_inversion_principle">Dependency Inversion Principle</a></li> <li><a href="https://en.wikipedia.org/wiki/Service_locator_pattern">Service Locator Pattern</a></li> <li><a href="https://www.youtube.com/watch?v=ZasXwtTRkio">Dead-Simple Dependency Injection - Scala - Rúnar Óli Bjarnason - 2012</a></li> </ul> <h2 id="title-normes">normes</h2> <ul> <li><a href="https://fr.wikipedia.org/wiki/ISO/CEI_29110">ISO/CEI 29110 : ingénierie de systèmes et l’Ingénierie du logiciel - les processus de cycle de vie pour les très petits organismes</a></li> <li><a href="https://fr.wikipedia.org/wiki/ISO/CEI_15504">ISO/CEI 15504 : cadre pour l’évaluation des processus</a></li> </ul> <h2 id="title-pratiques">pratiques</h2> <h3 id="title-monorepo">monorepo</h3> <p>Plusieurs solutions de gestion des repos/projets :</p> <ul> <li>1 repo = 1 projet</li> <li>1 repo = 1 micro-service</li> <li>monorepo (tout le SI est contenu dans un seul repo)</li> </ul> <p>défaut des 2 premiers : Dependency Hell.</p> <p>avantages du monorepo :</p> <ul> <li>version unifiée du code</li> <li>unique source de vérité</li> <li>réutilisation intensive</li> <li>gestion des dépendances simplifiées (tous les projets ont les mêmes versions)</li> <li>collaboration inter-équipes améliorées (mais nécessite meilleure communication)</li> <li>frontières des équipes et code ownership flexibles (résoud le problème levé par la loi de Conway)</li> </ul> <p>inconvénients du monorep :</p> <ul> <li>difficulté à faire des montées de version des dépendances (puisque tout le monde est impacté)</li> <li>investissement très lourd du tooling pour gérer les projets</li> <li>sécurité du code (tout le monde a tout le code)</li> </ul> <p>impact git :</p> <ul> <li>généralement on fait du feature branching (rend difficile la collaboration)</li> <li>monorepo impose le <a href="https://trunkbaseddevelopment.com/">trunk based development</a> (commit quotidiens sur le trunk + feature toggle)</li> </ul> <p>Le monorepo est la pratique actuelle des géants comme Google et Facebook.</p> <p>Exemple Google (janvier 2015) :</p> <ul> <li>1 repo (exclus : Chrome, Android, …)</li> <li>25K ingés</li> <li>1 milliard de fichiers</li> <li>35 millions de commits</li> <li>9 millions de fichiers sources</li> <li>2 milliards de lignes de code</li> </ul> <p><a href="https://www.youtube.com/watch?v=7Dfes-qJQ54">Pourquoi votre entreprise devrait stocker l’ensemble de son code dans un seul repo (Thierry Abaléa) Devoxx2017</a></p> <p><a href="https://www.youtube.com/watch?v=W71BTkUbdqE">Why Google Stores Billions of Lines of Code in a Single Repository : Rachel Potvin@Google 20150914</a></p> <h3 id="title-continuous-integration">continuous integration</h3> <p><a href="https://en.wikipedia.org/wiki/Continuous_integration">wikipedia</a></p> <blockquote> <p>Continuous integration (CI) is the practice, in software engineering, of merging all developer working copies to a shared mainline several times a day.</p> </blockquote> <h3 id="title-continuous-delivery">continuous delivery</h3> <p><a href="https://en.wikipedia.org/wiki/Continuous_delivery">wikipedia</a></p> <blockquote> <p>Continuous delivery (CD) is a software engineering approach in which teams produce software in short cycles, ensuring that the software can be reliably released at any time. It aims at building, testing, and releasing software faster and more frequently. The approach helps reduce the cost, time, and risk of delivering changes by allowing for more incremental updates to applications in production. A straightforward and repeatable deployment process is important for continuous delivery.</p> </blockquote> <h3 id="title-continuous-deployment">continuous deployment</h3> <p><a href="https://en.wikipedia.org/wiki/Continuous_delivery#Relationship_to_continuous_deployment">wikipedia</a></p> <blockquote> <p> Continuous deployment means that every change is automatically deployed to production.</p> </blockquote> <h3 id="title-continuous-delivery--deployment-and-semver">continuous delivery / deployment and semver</h3> <p><a href="http://blog.ploeh.dk/2013/12/10/semantic-versioning-with-continuous-deployment/">Semantic Versioning with Continuous Deployment by Mark Seemann : blog.ploeh.dk</a></p> <h3 id="title-feature-flipping">feature flipping</h3> <p><a href="http://blog.octo.com/feature-flipping/">feature-flipping : blog.octo.com</a></p> <p><a href="http://featureflags.io/feature-flags/">feature flags explained : featureflags.io</a> (very good link, with lots of use case, eg : early access)</p> <p><strong>drawback</strong></p> <p><a href="https://www.youtube.com/watch?v=glZ1C-Yu5tw">Settings are evil - MPJ’s Musings - FunFunFunction #62</a></p> <blockquote> <p>TLDR : Feature toggle generate combinatorial explosion of test cases -&gt; lower quality</p> </blockquote> <p>Martin Fowler deal with this question in <a href="https://martinfowler.com/bliki/FeatureToggle.html">his feature toggle article</a> :</p> <blockquote> <p>A common question we hear about feature toggles concerns testing - <strong>does using feature toggles mean a combinatorial<br>explosion of tests</strong>? In general there’s <strong>no need to test all combinations of features</strong>.<br>For release toggles it’s usually sufficient to run two combinations :</p> <ul> <li>all the toggles on that are expected to be on in the next release</li> <li>all toggles on</li> </ul> <p>This is pretty much the same as what you need to do with feature branches if you want to find any integration bugs.</p> <p><strong>It’s very important to retire release toggles once the pending features have bedded down in production</strong>.<br>This involves removing the definitions on the configuration file and all the code that uses them.<br><strong>Otherwise you will get a pile of toggles that nobody can remember how to use</strong>. In one memorable example I heard of,<br>it required making a special recompilation of the linux kernel to handle enough command line switches.</p> </blockquote> <p><a href="https://fournines.wordpress.com/2011/11/20/feature-branches-vs-feature-toggles/">Feature branches vs. feature toggles : fournines.wordpress.com : 20111120</a></p> <blockquote> <p>The biggest mistake you can make when deciding on how to use branches is trying to define “one branching strategy to rule them all”.</p> </blockquote> <blockquote> <p>Feature toggle should not be systematicly used. It should be only if the team experience pain merges.</p> </blockquote> <blockquote> <p>Features branches cons :</p> <ul> <li>the feature branch is not merged in the mainline, so there is no CI on it</li> <li>concurrent feature branch works can lead to big conflicts when merging. The last team to merge will have to handle<br>all the issues.</li> </ul> </blockquote> <blockquote> <p>Conflicts could symptomatic of underlying problems :</p> <ul> <li>poor design</li> <li>no cohesive view of the domain (no or bad modelization)</li> <li>or multiple logical views of the domain</li> <li>refactor-rage (a dev doing lot’s of cow boy refactoring)</li> </ul> </blockquote> <blockquote> <p>Feature toggle can be impl at build time or at runtime. Build time means you need several CI pipeline, run time increase<br>increase code complexity.</p> </blockquote> <blockquote> <p>Feature toggles are certainly an interesting concept, and seem to mesh well with the principle of building composable<br>applications. However, they are not without their pitfalls, so if you are thinking about trying them out, make sure<br>that they are the most appropriate solution to the actual problem that you’re trying to solve.</p> </blockquote> <h2 id="title-méthodes">méthodes</h2> <h3 id="title-waterfall">waterfall</h3> <ul> <li><a href="https://en.wikipedia.org/wiki/Waterfall_model">waterfall - généralités</a></li> </ul> <h3 id="title-cycle-en-v">cycle en V</h3> <ul> <li><a href="https://en.wikipedia.org/wiki/V-Model_%28software_development%29">cycle en V - généralités</a></li> </ul> <h3 id="title-agiles">agiles</h3> <ul> <li><a href="https://fr.wikipedia.org/wiki/M%C3%A9thode_agile">méthodes agiles - généralités</a></li> <li><a href="https://fr.wikipedia.org/wiki/Scrum_%28m%C3%A9thode%29">SCRUM</a></li> <li><a href="https://fr.wikipedia.org/wiki/Kanban_%28d%C3%A9veloppement%29">kanban</a></li> <li><a href="https://fr.wikipedia.org/wiki/Extreme_programming">Extreme programming</a></li> </ul> <h2 id="title-auteurs">auteurs</h2> <ul> <li><p><a href="https://fr.wikipedia.org/wiki/Frederick_Brooks">Frederick Brooks</a></p> <ul> <li><a href="https://fr.wikipedia.org/wiki/OS/360">OS/360</a></li> <li><a href="https://fr.wikipedia.org/wiki/Le_Mythe_du_mois-homme">Mythe du mois / homme</a></li> <li><a href="http://www.cs.nott.ac.uk/~pszcah/G51ISS/Documents/NoSilverBullet.html">No Silver Bullet — Essence and Accidents of Software Engineering</a></li> </ul> </li> <li><p><a href="https://en.wikipedia.org/wiki/Grady_Booch">Grady Booch</a></p> <ul> <li>Booch Method</li> <li>UML</li> <li>Continuous Integration</li> </ul> </li> <li><p><a href="http://gb-prod.fr/2016/06/12/artisan-developpeur.html">Gilles Roustan : Artisan développeur</a></p> </li> <li><p><a href="http://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/">William Durand : From STUPID to SOLID code</a></p> </li> <li><p><a href="http://www.c2.com/cgi/wiki?PrematureOptimization">Donald Knuth : Premature Optimization</a></p> </li> <li><p><a href="https://en.wikipedia.org/wiki/Robert_Cecil_Martin">Robert Cecil Martin (Uncle Bob)</a></p> <ul> <li>SOLID concept, Agile Manifesto Software Craftmanship</li> <li><a href="http://alm.developpez.com/livres/index/?page=Les-livres-en-francais#L2744023272">Clean Code</a></li> </ul> </li> <li><p><a href="http://codurance.com/blog/author/sandro-mancuso/">Sandro Mancuso : Software Craftmanship</a></p> </li> <li><p><a href="https://fr.wikipedia.org/wiki/Martin_Fowler">Martin Fowler : Agile Manifesto, CI</a> <a href="https://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672/ref=asap_bc?ie=UTF8">Refactoring</a></p> </li> <li><p><a href="https://en.wikipedia.org/wiki/Allen_Holub">Allen Holub</a></p> <ul> <li><a href="https://www.youtube.com/watch?v=vSnCeJEka_s">The death of Agile</a></li> <li><a href="https://www.youtube.com/watch?v=QVBlnCTu9Ms">#NoEstimates</a></li> </ul> </li> <li><p><a href="https://leanpub.com/u/ericelliott">Eric Elliott : “Programming JavaScript Applications” (O’Reilly)</a></p> <ul> <li><a href="https://github.com/ericelliott">github profile</a></li> <li>massive article writer on <a href="https://medium.com/@_ericelliott">medium.com</a></li> </ul> </li> <li><p>David Heinemeier Hansson (Creator of Ruby on Rails)</p> <ul> <li><a href="https://m.signalvnoise.com/the-majestic-monolith-29166d022228">The Majestic Monolith : medium.com 20160229</a></li> </ul> </li> <li><p><a href="https://fr.wikipedia.org/wiki/G%C3%A9rard_Berry">Gérard Berry</a></p> <ul> <li>le lambda calcul et la programmation fonctionnelle ;</li> <li>la programmation parallèle et temps réel ;</li> <li>la conception assistée par ordinateur de circuits intégrés synchrones ;</li> <li>la vérification formelle de programmes et circuits ;</li> <li>la modélisation du calcul en général.</li> <li><a href="https://www.franceculture.fr/emissions/la-grande-table-2eme-partie/dominer-linformatique-avec-gerard-berry">Dominer l’informatique avec Gérard Berry - France Culture - 20171030</a></li> <li><a href="https://www.college-de-france.fr/site/gerard-berry/inaugural-lecture-2008-01-17-18h00.htm">Pourquoi et comment le monde devient numérique - Collèges de France - 20080117</a></li> <li><a href="https://www.franceculture.fr/emissions/la-methode-scientifique/gerard-berry-le-meilleur-des-mondes-informatiques">Le meilleur des mondes informatiques - 20180829</a><ul> <li>ordinateur est la plus souple des machines puisqu’on peut lui télécharger ce qu’elle peut faire </li> <li>problème de sémantique avec l’informatique, on mélange tout (algo, numérique, IoT, …). Nous sommes absents de l’industrie (1 seule société dans les 100 premières mondiales) alors que nous sommes très en pointe en recherche.</li> <li>pourtant l’informatique est partout autour de nous</li> <li>absence de formation pour les gens qui utilisent sans rien comprendre</li> <li>cite <a href="https://fr.wikipedia.org/wiki/Jean-Marie_Hullot">Jean-Marie Hullot</a> créateur de <a href="http://www.graphmobile.com/dossier/2-iphone-histoire.htm">l’IPhone pour Steve Jobs</a>.</li> <li>histoire informatique, au début tout était dur. Bootstraping, on commence par faire des petites choses dures, qui permettent de faire plus facilement des choses plus dures, etc … </li> <li>langage <a href="https://fr.wikipedia.org/wiki/Esterel_(langage)">Esterel</a> servant dans l’aviation. Permet de gérer le temps et de fournir des preuves de programmes (par ex le programme de l’ascenseur n’autorise pas l’ascenseur à monter ou descendre avec la porte ouverte).</li> <li>3 formes de communications possible : <em>asynchrone</em> (internet par ex, on envoie un message on ne sait pas si il va arriver ni quand), <em>synchrone</em> (on envoie un message et on fait comme si il arrivait en temps zéro), <em>vibratoire</em> (envoie message qui arrive à une vitesse connue, par le GPS), c’est en étudiant comment programmer sur ces 3 paradigmes et en les faisant communiquer qu’ils ont développé Esterel.</li> <li>question de Manuel Serrano (chercheur INRIA dev de <a href="http://hop.inria.fr/home/index.html">Hop.js</a>) : Années 90 mise en réseau des ordis nous entraine dans l’ère de la prog distribuée. Web a spécificité, grosse diff entre machines serveurs qui font beaucoup de traitements et clients qui sont plus nombreux mais en font moins. On a eu la prog multi-tiers début 2000, question de savoir comment on peut parler de la prog asynchrone et de la temporalité des programmes. Ont pris le langage Esterel et ils l’ont adapté au web pour donner <a href="https://github.com/manuel-serrano/hiphop">hip-hop</a>. Quelles seront les grandes étapes à franchir pour améliorer la sureté et la sécurité notamment pour l’internet des objets où la communication est encore plus fréquente que sur le web ?</li> <li>réponse de G. Berry : algo distribués très différents des algos séquentiels. Peuvent être horriblement simple à écrire et horriblement compliqués à comprendre. Un des plus connus et utilisé est TCP (Transfert Control Protocol). Algo très délicats, souvent mon gros. En synchrone tout le monde partage le temps. En asynchrone non. En IoT, on a des interfaces asynchrones, tout va se mélanger. Bcp de questions, énorme source d’erreurs. Ex en asynchrone chacun veut 2 objets, chacun en possède un, et aucun ne veut lacher le sien, ça s’appele un dead lock qui entrain un blocage du système. On a pas les théories mathématiques qui faut. Pour la prog classique on a <a href="https://fr.wikipedia.org/wiki/Lambda-calcul">le lambda calculus de Church</a>. On a pas l’équivalent en distribué. En synchrone on peut faire de la vérification formelle. Pas en asynchrone. La dominence du web fait que les gens sont incroyablement tolérants à la mauvaise qualité.</li> </ul> </li> </ul> </li> <li><p><a href="https://www.eyrolles.com/Accueil/Auteur/jacques-printz-15337">Jacques Printz</a></p> <blockquote> <p>a été titulaire de la chaire de génie logiciel du Cnam. A dirigé les développements logiciels des ordinateurs Bull DPS7. Consultant en systèmes d’information auprès de grandes entreprises et administrations. Auteur de nombreux ouvrages sur le génie logiciel. </p> </blockquote> </li> <li><p><a href="https://fr.wikipedia.org/wiki/Louis_Pouzin">Louis Pouzin</a></p> <blockquote> <p>inventeur du datagramme et concepteur du premier réseau à commutation de paquets, à la base de ce qui deviendra Internet. Lauréat du Queen Elizabeth Prize for Engineering en 2013. Militant du multilinguisme dans l’espace numérique et d’une nouvelle gouvernance d’Internet</p> </blockquote> </li> <li><p><a href="https://www.lip6.fr/actualite/personnes-fiche.php?ident=P242">François Anceau</a></p> <blockquote> <p>a été titulaire de la chaire des techniques fondamentales de l’informatique du Cnam, responsable de recherche à l’Imag, Bull et l’Ecole Polytechnique. Pionnier en France des architectures de circuits intégrés, en particulier sur leur preuve formelle et leur synchronisation interne.</p> </blockquote> </li> <li><p><a href="https://fr.wikipedia.org/wiki/Najah_Naffah">Najah Naffah</a></p> <blockquote> <p>Précurseur à l’INRIA de la notion de routeur de réseau, puis du poste de travail intelligent, en dirigeant le projet Kayak. Il a ensuite exercé des responsabilités de direction dans l’Industrie (Bull, EDS, Sabre, Prologue), et maintenant de conseil en management.</p> </blockquote> </li> <li><p><a href="http://glazman.org/weblog/">Daniel Glazman</a> Former co-chairman of the W3C CSS Working Group</p> <ul> <li><a href="https://www.franceculture.fr/emissions/linvite-des-matins-2eme-partie/sommes-nous-a-la-merci-de-nos-systemes-informatiques">Sommes-nous à la merci de nos systèmes informatiques ? - France Culture - 20171205</a></li> </ul> </li> <li><p>Rich Hickey <a href="https://clojure.org/">Clojure</a> author, <a href="https://pbs.twimg.com/media/DL-3OUcUMAAaXID.jpg">The problems of programming</a></p> </li> <li><p><a href="https://github.com/tj">TJ Holowaychuk</a></p> <ul> <li>founder of Express, Koa, Commander, …</li> </ul> </li> <li><p>[<a href="http://tinyclouds.org]">http://tinyclouds.org]</a>(Ryan Dahl)</p> <ul> <li>founder of Node.js, denom, …</li> <li><a href="https://www.mappingthejourney.com/single-post/2017/08/31/episode-8-interview-with-ryan-dahl-creator-of-nodejs/">Interview with Ryan Dahl, Creator of Node.js - www.mappingthejourney.com - 20170831</a></li> </ul> </li> <li><p><a href="https://www.youtube.com/watch?v=UX4YijQ3zhc">Top 10 Programming Books Every Software Developer Should Read</a></p> </li> </ul> <h2 id="title-histoire">histoire</h2> <ul> <li><a href="https://en.wikipedia.org/wiki/Software_crisis">Software crisis</a><br>Fin des années 70, les ordinateurs sont montés en puissance, donc permettent le développement de programmes plus puissants et plus complexe. Dégradation massive de la qualité du à la complexité. C’est le début des recherches en génie logiciel pour définir les bonnes pratiques du développement logiciel (gestion qualité, méthodes, invention programmation procédurale puis objet).</li> <li><a href="https://en.wikipedia.org/wiki/Dot-com_bubble">bulle internet</a> Fin 90 début 2000 le crash boursier entraine de nombreux licenciements de développeurs suite aux réductions du couts et aux sociétés déposants le bilan. Les développeurs ont alors tendance à se transformer en oui:oui pour éviter de perdre leur emploi, entrainant une dégradation massive de la qualité des productions. Ce phénomène associé à l’arrivée de nombreux jeunes développeurs sur le marché du travail quelques années après sont les deux phénomènes responsables de l’immaturité de l’industrie du développement logiciel dénoncée par Robert C. Martin (cf Martin pour une explication plus détaillée dans <a href="https://www.youtube.com/watch?v=ecIWPzGEbFc">The Future of Programming</a>)</li> <li><a href="https://plus.google.com/+RipRowan/posts/eVeouesvaVX">Jeff Bezos API Mandate explained by Google employee</a><blockquote> <p>1) All teams will henceforth expose their data and functionality through service interfaces.<br>2) Teams must communicate with each other through these interfaces.<br>3) There will be no other form of interprocess communication allowed: no direct linking, no direct reads of another team’s data store, no shared-memory model, no back-doors whatsoever. The only communication allowed is via service interface calls over the network.<br>4) It doesn’t matter what technology they use. HTTP, Corba, Pubsub, custom protocols – doesn’t matter. Bezos doesn’t care.<br>5) All service interfaces, without exception, must be designed from the ground up to be externalizable. That is to say, the team must plan and design to be able to expose the interface to developers in the outside world. No exceptions.<br>6) Anyone who doesn’t do this will be fired.</p> </blockquote> </li> </ul> <h2 id="title-courants">courants</h2> <h3 id="title-software-craftmanship">Software Craftmanship</h3> <ul> <li><a href="http://manifesto.softwarecraftsmanship.org/#/fr-fr">manifesto.softwarecraftsmanship.org</a></li> <li><a href="https://fr.wikipedia.org/wiki/Software_craftsmanship">Software_craftsmanship : fr.wikipedia.org</a></li> <li><a href="https://www.youtube.com/watch?v=AQlsOPMKgBE">Software Craftsmanship by Sandro Mancuso @ Devoxx France 20??</a></li> </ul> <blockquote> <p>Agile : Are we building the right thing ?</p> </blockquote> <blockquote> <p>Craftsmanship : Are we building the thing right ?</p> </blockquote> <blockquote> <p>from Software Craftsmanship by Sandro Mancuso @ Devoxx France 20??</p> </blockquote> <ul> <li><a href="https://www.youtube.com/watch?v=p0O1VVqRSK0">Demanding Professionalism in Software Development : Robert C. Martin (Uncle Bob)</a></li> <li><a href="https://www.youtube.com/watch?v=0oGpWmS0aYQ">Agility and Architecture : Robert C. Martin (Uncle Bob)</a></li> <li><a href="https://www.youtube.com/watch?v=KtHQGs3zFAM">Jim Coplien and Bob Martin Debate TDD</a></li> </ul> <p><strong>Conférences</strong></p> <ul> <li><a href="https://craft-conf.com/">SOFTWARE DELIVERY CRAFTSMANSHIP MATTERS</a></li> </ul> <h2 id="title-exemples-concrets">exemples concrets</h2> <p><a href="https://www.youtube.com/watch?v=P9G7jBBwLjc&index=80&list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXAO">odyssée du Continuous Delivery Diego Lemos David Caramelo (Nicolas Bourgeois)</a><br>Présentation Devoxx2016 sur le passage du code legacy au continuous delivery à la Société Générale. Juste génial.</p> <p><a href="https://www.youtube.com/watch?v=vUTYKLEneuI">SOAT Agile Day - Keynote de Romain Niccoli - Etre agile dans un contexte de forte croissance</a></p> <h2 id="title-architecture">architecture</h2> <p><a href="http://www.dossier-andreas.net/software_architecture/">Architectural patterns - www.dossier-andreas.net</a></p> <blockquote> <ul> <li>Model-View-Controller</li> <li>Presentation-Abstraction-Control</li> <li>Pipe-And-Filter</li> <li>Layered Systems</li> <li>Microkernel</li> <li>Client-Server and N-Tier Systems</li> <li>Repository</li> <li>Blackboard</li> <li>Finite State Machine</li> <li>Process Control</li> <li>Multi Agent System</li> <li>Broker a.k.a. Service Oriented Architecture</li> <li>Master-Slave</li> <li>Interpreter a.k.a. Virtual Machine</li> <li>Hub-And-Spoke</li> <li>Message Bus a.k.a. Event Bus</li> <li>Structural Model</li> <li>Ports-And-Adapters a.k.a. Hexagonal Architecture</li> <li>Peer-to-peer</li> <li>Event sourcing</li> <li>CQRS </li> </ul> </blockquote> <h3 id="title-clean-architecture">clean architecture</h3> <p><a href="https://medium.com/@mickalwegerich/la-clean-architecture-catalyseur-de-productivit%C3%A9-68ff61aa38ff">La Clean Architecture : catalyseur de productivité - medium.com/@mickalwegerich - 20180507</a></p> <p><a href="http://blog.xebia.fr/2016/03/16/perennisez-votre-metier-avec-larchitecture-hexagonale/">Pérennisez votre métier avec l’architecture hexagonale ! - blog.xebia.fr - 20160316</a></p> <p><a href="https://www.youtube.com/watch?v=Nsjsiz2A9mg">Robert C Martin - Clean Architecture and Design - www.youtube.com - 2013</a></p> <p><a href="http://blog.cleancoder.com/uncle-bob/2016/01/04/ALittleArchitecture.html">Robert C Martin - A Little Architecture - blog.cleancoder.com - 20160104</a></p> <p><a href="http://www.dossier-andreas.net/software_architecture/ports_and_adapters.html">Ports-And-Adapters / Hexagonal Architecture - www.dossier-andreas.net</a></p> <p><a href="https://www.youtube.com/watch?v=Hi5aDfRe-aE">Architecture hexagonale pour les nuls (Y. Chéné) - DevoxxFrance 2018</a></p> <blockquote> <p>a substituer à l’architecture en couche connue de tous</p> <p>tackling complexity in the heart of software (Eric Evans 2003)</p> <p>“ports and adapters architecture” ou “Object Structural” ou “Hexagonal Architecture” (cf Alistair Cockburn)</p> <p>Archi similaires : Clean Architecture, Onion Architecture</p> <p>Règle 1 : Pas de framework ou de dépendances sur le domaine, on écrit tout en vanilla (on peut avoir éventuellement des dépendances sur des libs générales, par ex en js ça serait lodash)</p> <p>Règle 2 : Le domaine est le central, c’est l’extérieur qui appelle le domaine. Le domaine n’appelle jamais l’extérieur. Il ne doit donc jamais y avoir de code d’infra dans le domaine, en d’autres termes toutes les I/O sont à l’extérieur.</p> <p>le reste de la prez il commente un exemple avec Spring Boot</p> </blockquote> <p><a href="https://soundcloud.com/michael-az-948266686/les-vices-de-lagilite-choisir-les-technos-avant-de-commencer-a-coder">Podcast Les vices de l’agilité - Choisir les technos avant de commencer à coder - Mickael Azerhad - 20180725</a></p> <p><a href="https://www.tutorialspoint.com/software_architecture_design/index.htm">Software Architecture &amp; Design Tutorial - www.tutorialspoint.com</a></p> <h2 id="title-divers">divers</h2> <p><a href="https://www.lucidchart.com/techblog/2015/08/31/the-worst-mistake-of-computer-science/">The worst mistake of computer science - www.lucidchart.com/techblog - 20150831</a></p> <blockquote> <p>In commemoration of the 50th anniversary of Sir Hoare’s null, this article explains what null is, why it is so terrible, and how to avoid it.</p> </blockquote> </article></body></html>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.a092d0a1.js"></script></head><body><article class="markdown-body"><h1 id="title-génie-logiciel">Génie Logiciel</h1>
+<ul>
+<li><a href="https://fr.wikipedia.org/wiki/G%C3%A9nie_logiciel">Définition wikipédia</a></li>
+</ul>
+<h2 id="title-principes">principes</h2>
+<ul>
+<li><a href="http://effectivesoftwaredesign.com/2012/02/05/separation-of-concerns/">Separation of Concerns</a></li>
+</ul>
+<blockquote>
+<p>Découper un problème en plusieurs problèmes plus simples</p>
+</blockquote>
+<p>Low <a href="https://en.wikipedia.org/wiki/Coupling_%28computer_programming%29">coupling</a>, high <a href="https://en.wikipedia.org/wiki/Cohesion_%28computer_science%29">cohesion</a>, <a href="http://en.wikipedia.org/wiki/Maintainability">maintainability</a>, <a href="http://en.wikipedia.org/wiki/Extensibility">extensibility</a>, <a href="http://en.wikipedia.org/wiki/Reusability">reusability</a>.</p>
+<ul>
+<li>Loi de Hofstadter</li>
+</ul>
+<blockquote>
+<p>Il faut toujours plus de temps que prévu, même en tenant compte de la Loi de Hofstadter.</p>
+</blockquote>
+<ul>
+<li>Donald Knuth à propos de l’optimisation prématurée</li>
+</ul>
+<blockquote>
+<p>Premature optimization is the root of all evil</p>
+</blockquote>
+<ul>
+<li><a href="https://fr.wikipedia.org/wiki/Loi_de_Brooks">Loi de Brooks</a></li>
+</ul>
+<blockquote>
+<p>Ajouter des personnes à un projet en retard accroît son retard</p>
+</blockquote>
+<blockquote>
+<p>Adding manpower to a late software project makes it later </p>
+</blockquote>
+<ul>
+<li><a href="https://fr.wikipedia.org/wiki/Le_Mythe_du_mois-homme">Le mythe du mois-homme</a></li>
+</ul>
+<blockquote>
+<p>Neuf femmes ne font pas un enfant en un mois</p>
+</blockquote>
+<ul>
+<li><a href="https://fr.wikipedia.org/wiki/Principe_de_Pareto">Principe de Pareto</a></li>
+</ul>
+<blockquote>
+<p>80 % des effets sont le produit de 20 % des causes</p>
+</blockquote>
+<ul>
+<li><p><a href="http://christian.hohmann.free.fr/index.php/lean-en-conception-et-developpement/les-basiques-du-lean-en-conception-et-developpement/286-panique-en-developpement-effet-tunnel">Effet Tunnel</a></p>
+</li>
+<li><p><a href="https://en.wikipedia.org/wiki/Conway's_law">Loi de Conway</a></p>
+</li>
+</ul>
+<blockquote>
+<p>Les organisations à l’origine des architectures doivent refléter le système en lui-même.</p>
+</blockquote>
+<blockquote>
+<p>organizations which design systems … are constrained to produce designs which are copies of the communication structures of these organizations</p>
+</blockquote>
+<blockquote>
+<p>“The structure of a problem reflects the structure of the organization that created it.” Bill Corcoran’s version of Conway’s Law</p>
+</blockquote>
+<ul>
+<li><a href="https://cavares.com/2016/12/26/le-facteur-%CF%80/">Facteur PI</a></li>
+</ul>
+<blockquote>
+<p>Pour un projet innovant, il faut multiplier l’estimation initiale des coûts par 3,14.</p>
+</blockquote>
+<ul>
+<li>Loi de Parkinson</li>
+</ul>
+<blockquote>
+<p>Plus on a de temps pour réaliser une tâche, plus cette tâche prend du temps.</p>
+</blockquote>
+<ul>
+<li>Loi de Murphy</li>
+</ul>
+<blockquote>
+<p>Toute chose prend plus de temps qu’on ne l’avait prévu</p>
+</blockquote>
+<ul>
+<li>Loi d’Illich</li>
+</ul>
+<blockquote>
+<p>Au delà d’un certain seuil de travail, l’efficacité décroit</p>
+</blockquote>
+<ul>
+<li>Loi de Carson</li>
+</ul>
+<blockquote>
+<p>Faire un travail de façon continue prend moins de temps que de le faire en plusieurs fois</p>
+</blockquote>
+<ul>
+<li>Loi de Fraisse</li>
+</ul>
+<blockquote>
+<p>1 heure n’est pas toujours égale à 1 heure</p>
+</blockquote>
+<ul>
+<li><a href="https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter">Loi de Demeter</a></li>
+</ul>
+<blockquote>
+<p>Ne parlez qu’à vos amis immédiats</p>
+</blockquote>
+<p>La notion fondamentale est qu’un objet devrait faire aussi peu d’hypothèses que possible à propos de la structure de quoi que ce soit d’autre, y compris ses propres sous-composants.</p>
+<p><a href="http://misko.hevery.com/2008/07/18/breaking-the-law-of-demeter-is-like-looking-for-a-needle-in-the-haystack/">Exemple concret</a> par Misko Hevery</p>
+<ul>
+<li>YAGNI (You aren’t gonna need it)</li>
+</ul>
+<blockquote>
+<p>Always implement things when you actually need them, never when you just foresee that you need them. (Ron Jeffries)</p>
+</blockquote>
+<p><a href="https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it">You aren’t gonna need it : en.wikipedia.org</a></p>
+<h2 id="title-inversion-of-control">Inversion of Control</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Inversion_of_control">Inversion of Control</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dependency_injection">Dependency Injection</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dependency_inversion_principle">Dependency Inversion Principle</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Service_locator_pattern">Service Locator Pattern</a></li>
+<li><a href="https://www.youtube.com/watch?v=ZasXwtTRkio">Dead-Simple Dependency Injection - Scala - Rúnar Óli Bjarnason - 2012</a></li>
+</ul>
+<h2 id="title-normes">normes</h2>
+<ul>
+<li><a href="https://fr.wikipedia.org/wiki/ISO/CEI_29110">ISO/CEI 29110 : ingénierie de systèmes et l’Ingénierie du logiciel - les processus de cycle de vie pour les très petits organismes</a></li>
+<li><a href="https://fr.wikipedia.org/wiki/ISO/CEI_15504">ISO/CEI 15504 : cadre pour l’évaluation des processus</a></li>
+</ul>
+<h2 id="title-pratiques">pratiques</h2>
+<h3 id="title-monorepo">monorepo</h3>
+<p>Plusieurs solutions de gestion des repos/projets :</p>
+<ul>
+<li>1 repo = 1 projet</li>
+<li>1 repo = 1 micro-service</li>
+<li>monorepo (tout le SI est contenu dans un seul repo)</li>
+</ul>
+<p>défaut des 2 premiers : Dependency Hell.</p>
+<p>avantages du monorepo :</p>
+<ul>
+<li>version unifiée du code</li>
+<li>unique source de vérité</li>
+<li>réutilisation intensive</li>
+<li>gestion des dépendances simplifiées (tous les projets ont les mêmes versions)</li>
+<li>collaboration inter-équipes améliorées (mais nécessite meilleure communication)</li>
+<li>frontières des équipes et code ownership flexibles (résoud le problème levé par la loi de Conway)</li>
+</ul>
+<p>inconvénients du monorep :</p>
+<ul>
+<li>difficulté à faire des montées de version des dépendances (puisque tout le monde est impacté)</li>
+<li>investissement très lourd du tooling pour gérer les projets</li>
+<li>sécurité du code (tout le monde a tout le code)</li>
+</ul>
+<p>impact git :</p>
+<ul>
+<li>généralement on fait du feature branching (rend difficile la collaboration)</li>
+<li>monorepo impose le <a href="https://trunkbaseddevelopment.com/">trunk based development</a> (commit quotidiens sur le trunk + feature toggle)</li>
+</ul>
+<p>Le monorepo est la pratique actuelle des géants comme Google et Facebook.</p>
+<p>Exemple Google (janvier 2015) :</p>
+<ul>
+<li>1 repo (exclus : Chrome, Android, …)</li>
+<li>25K ingés</li>
+<li>1 milliard de fichiers</li>
+<li>35 millions de commits</li>
+<li>9 millions de fichiers sources</li>
+<li>2 milliards de lignes de code</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=7Dfes-qJQ54">Pourquoi votre entreprise devrait stocker l’ensemble de son code dans un seul repo (Thierry Abaléa) Devoxx2017</a></p>
+<p><a href="https://www.youtube.com/watch?v=W71BTkUbdqE">Why Google Stores Billions of Lines of Code in a Single Repository : Rachel Potvin@Google 20150914</a></p>
+<h3 id="title-continuous-integration">continuous integration</h3>
+<p><a href="https://en.wikipedia.org/wiki/Continuous_integration">wikipedia</a></p>
+<blockquote>
+<p>Continuous integration (CI) is the practice, in software engineering, of merging all developer working copies to a shared mainline several times a day.</p>
+</blockquote>
+<h3 id="title-continuous-delivery">continuous delivery</h3>
+<p><a href="https://en.wikipedia.org/wiki/Continuous_delivery">wikipedia</a></p>
+<blockquote>
+<p>Continuous delivery (CD) is a software engineering approach in which teams produce software in short cycles, ensuring that the software can be reliably released at any time. It aims at building, testing, and releasing software faster and more frequently. The approach helps reduce the cost, time, and risk of delivering changes by allowing for more incremental updates to applications in production. A straightforward and repeatable deployment process is important for continuous delivery.</p>
+</blockquote>
+<h3 id="title-continuous-deployment">continuous deployment</h3>
+<p><a href="https://en.wikipedia.org/wiki/Continuous_delivery#Relationship_to_continuous_deployment">wikipedia</a></p>
+<blockquote>
+<p> Continuous deployment means that every change is automatically deployed to production.</p>
+</blockquote>
+<h3 id="title-continuous-delivery--deployment-and-semver">continuous delivery / deployment and semver</h3>
+<p><a href="http://blog.ploeh.dk/2013/12/10/semantic-versioning-with-continuous-deployment/">Semantic Versioning with Continuous Deployment by Mark Seemann : blog.ploeh.dk</a></p>
+<h3 id="title-feature-flipping">feature flipping</h3>
+<p><a href="http://blog.octo.com/feature-flipping/">feature-flipping : blog.octo.com</a></p>
+<p><a href="http://featureflags.io/feature-flags/">feature flags explained : featureflags.io</a> (very good link, with lots of use case, eg : early access)</p>
+<p><strong>drawback</strong></p>
+<p><a href="https://www.youtube.com/watch?v=glZ1C-Yu5tw">Settings are evil - MPJ’s Musings - FunFunFunction #62</a></p>
+<blockquote>
+<p>TLDR : Feature toggle generate combinatorial explosion of test cases -&gt; lower quality</p>
+</blockquote>
+<p>Martin Fowler deal with this question in <a href="https://martinfowler.com/bliki/FeatureToggle.html">his feature toggle article</a> :</p>
+<blockquote>
+<p>A common question we hear about feature toggles concerns testing - <strong>does using feature toggles mean a combinatorial<br>explosion of tests</strong>? In general there’s <strong>no need to test all combinations of features</strong>.<br>For release toggles it’s usually sufficient to run two combinations :</p>
+<ul>
+<li>all the toggles on that are expected to be on in the next release</li>
+<li>all toggles on</li>
+</ul>
+<p>This is pretty much the same as what you need to do with feature branches if you want to find any integration bugs.</p>
+<p><strong>It’s very important to retire release toggles once the pending features have bedded down in production</strong>.<br>This involves removing the definitions on the configuration file and all the code that uses them.<br><strong>Otherwise you will get a pile of toggles that nobody can remember how to use</strong>. In one memorable example I heard of,<br>it required making a special recompilation of the linux kernel to handle enough command line switches.</p>
+</blockquote>
+<p><a href="https://fournines.wordpress.com/2011/11/20/feature-branches-vs-feature-toggles/">Feature branches vs. feature toggles : fournines.wordpress.com : 20111120</a></p>
+<blockquote>
+<p>The biggest mistake you can make when deciding on how to use branches is trying to define “one branching strategy to rule them all”.</p>
+</blockquote>
+<blockquote>
+<p>Feature toggle should not be systematicly used. It should be only if the team experience pain merges.</p>
+</blockquote>
+<blockquote>
+<p>Features branches cons :</p>
+<ul>
+<li>the feature branch is not merged in the mainline, so there is no CI on it</li>
+<li>concurrent feature branch works can lead to big conflicts when merging. The last team to merge will have to handle<br>all the issues.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>Conflicts could symptomatic of underlying problems :</p>
+<ul>
+<li>poor design</li>
+<li>no cohesive view of the domain (no or bad modelization)</li>
+<li>or multiple logical views of the domain</li>
+<li>refactor-rage (a dev doing lot’s of cow boy refactoring)</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>Feature toggle can be impl at build time or at runtime. Build time means you need several CI pipeline, run time increase<br>increase code complexity.</p>
+</blockquote>
+<blockquote>
+<p>Feature toggles are certainly an interesting concept, and seem to mesh well with the principle of building composable<br>applications. However, they are not without their pitfalls, so if you are thinking about trying them out, make sure<br>that they are the most appropriate solution to the actual problem that you’re trying to solve.</p>
+</blockquote>
+<h2 id="title-méthodes">méthodes</h2>
+<h3 id="title-waterfall">waterfall</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Waterfall_model">waterfall - généralités</a></li>
+</ul>
+<h3 id="title-cycle-en-v">cycle en V</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/V-Model_%28software_development%29">cycle en V - généralités</a></li>
+</ul>
+<h3 id="title-agiles">agiles</h3>
+<ul>
+<li><a href="https://fr.wikipedia.org/wiki/M%C3%A9thode_agile">méthodes agiles - généralités</a></li>
+<li><a href="https://fr.wikipedia.org/wiki/Scrum_%28m%C3%A9thode%29">SCRUM</a></li>
+<li><a href="https://fr.wikipedia.org/wiki/Kanban_%28d%C3%A9veloppement%29">kanban</a></li>
+<li><a href="https://fr.wikipedia.org/wiki/Extreme_programming">Extreme programming</a></li>
+</ul>
+<h2 id="title-auteurs">auteurs</h2>
+<ul>
+<li><p><a href="https://fr.wikipedia.org/wiki/Frederick_Brooks">Frederick Brooks</a></p>
+<ul>
+<li><a href="https://fr.wikipedia.org/wiki/OS/360">OS/360</a></li>
+<li><a href="https://fr.wikipedia.org/wiki/Le_Mythe_du_mois-homme">Mythe du mois / homme</a></li>
+<li><a href="http://www.cs.nott.ac.uk/~pszcah/G51ISS/Documents/NoSilverBullet.html">No Silver Bullet — Essence and Accidents of Software Engineering</a></li>
+</ul>
+</li>
+<li><p><a href="https://en.wikipedia.org/wiki/Grady_Booch">Grady Booch</a></p>
+<ul>
+<li>Booch Method</li>
+<li>UML</li>
+<li>Continuous Integration</li>
+</ul>
+</li>
+<li><p><a href="http://gb-prod.fr/2016/06/12/artisan-developpeur.html">Gilles Roustan : Artisan développeur</a></p>
+</li>
+<li><p><a href="http://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/">William Durand : From STUPID to SOLID code</a></p>
+</li>
+<li><p><a href="http://www.c2.com/cgi/wiki?PrematureOptimization">Donald Knuth : Premature Optimization</a></p>
+</li>
+<li><p><a href="https://en.wikipedia.org/wiki/Robert_Cecil_Martin">Robert Cecil Martin (Uncle Bob)</a></p>
+<ul>
+<li>SOLID concept, Agile Manifesto Software Craftmanship</li>
+<li><a href="http://alm.developpez.com/livres/index/?page=Les-livres-en-francais#L2744023272">Clean Code</a></li>
+</ul>
+</li>
+<li><p><a href="http://codurance.com/blog/author/sandro-mancuso/">Sandro Mancuso : Software Craftmanship</a></p>
+</li>
+<li><p><a href="https://fr.wikipedia.org/wiki/Martin_Fowler">Martin Fowler : Agile Manifesto, CI</a> <a href="https://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672/ref=asap_bc?ie=UTF8">Refactoring</a></p>
+</li>
+<li><p><a href="https://en.wikipedia.org/wiki/Allen_Holub">Allen Holub</a></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=vSnCeJEka_s">The death of Agile</a></li>
+<li><a href="https://www.youtube.com/watch?v=QVBlnCTu9Ms">#NoEstimates</a></li>
+</ul>
+</li>
+<li><p><a href="https://leanpub.com/u/ericelliott">Eric Elliott : “Programming JavaScript Applications” (O’Reilly)</a></p>
+<ul>
+<li><a href="https://github.com/ericelliott">github profile</a></li>
+<li>massive article writer on <a href="https://medium.com/@_ericelliott">medium.com</a></li>
+</ul>
+</li>
+<li><p>David Heinemeier Hansson (Creator of Ruby on Rails)</p>
+<ul>
+<li><a href="https://m.signalvnoise.com/the-majestic-monolith-29166d022228">The Majestic Monolith : medium.com 20160229</a></li>
+</ul>
+</li>
+<li><p><a href="https://fr.wikipedia.org/wiki/G%C3%A9rard_Berry">Gérard Berry</a></p>
+<ul>
+<li>le lambda calcul et la programmation fonctionnelle ;</li>
+<li>la programmation parallèle et temps réel ;</li>
+<li>la conception assistée par ordinateur de circuits intégrés synchrones ;</li>
+<li>la vérification formelle de programmes et circuits ;</li>
+<li>la modélisation du calcul en général.</li>
+<li><a href="https://www.franceculture.fr/emissions/la-grande-table-2eme-partie/dominer-linformatique-avec-gerard-berry">Dominer l’informatique avec Gérard Berry - France Culture - 20171030</a></li>
+<li><a href="https://www.college-de-france.fr/site/gerard-berry/inaugural-lecture-2008-01-17-18h00.htm">Pourquoi et comment le monde devient numérique - Collèges de France - 20080117</a></li>
+<li><a href="https://www.franceculture.fr/emissions/la-methode-scientifique/gerard-berry-le-meilleur-des-mondes-informatiques">Le meilleur des mondes informatiques - 20180829</a><ul>
+<li>ordinateur est la plus souple des machines puisqu’on peut lui télécharger ce qu’elle peut faire </li>
+<li>problème de sémantique avec l’informatique, on mélange tout (algo, numérique, IoT, …). Nous sommes absents de l’industrie (1 seule société dans les 100 premières mondiales) alors que nous sommes très en pointe en recherche.</li>
+<li>pourtant l’informatique est partout autour de nous</li>
+<li>absence de formation pour les gens qui utilisent sans rien comprendre</li>
+<li>cite <a href="https://fr.wikipedia.org/wiki/Jean-Marie_Hullot">Jean-Marie Hullot</a> créateur de <a href="http://www.graphmobile.com/dossier/2-iphone-histoire.htm">l’IPhone pour Steve Jobs</a>.</li>
+<li>histoire informatique, au début tout était dur. Bootstraping, on commence par faire des petites choses dures, qui permettent de faire plus facilement des choses plus dures, etc … </li>
+<li>langage <a href="https://fr.wikipedia.org/wiki/Esterel_(langage)">Esterel</a> servant dans l’aviation. Permet de gérer le temps et de fournir des preuves de programmes (par ex le programme de l’ascenseur n’autorise pas l’ascenseur à monter ou descendre avec la porte ouverte).</li>
+<li>3 formes de communications possible : <em>asynchrone</em> (internet par ex, on envoie un message on ne sait pas si il va arriver ni quand), <em>synchrone</em> (on envoie un message et on fait comme si il arrivait en temps zéro), <em>vibratoire</em> (envoie message qui arrive à une vitesse connue, par le GPS), c’est en étudiant comment programmer sur ces 3 paradigmes et en les faisant communiquer qu’ils ont développé Esterel.</li>
+<li>question de Manuel Serrano (chercheur INRIA dev de <a href="http://hop.inria.fr/home/index.html">Hop.js</a>) : Années 90 mise en réseau des ordis nous entraine dans l’ère de la prog distribuée. Web a spécificité, grosse diff entre machines serveurs qui font beaucoup de traitements et clients qui sont plus nombreux mais en font moins. On a eu la prog multi-tiers début 2000, question de savoir comment on peut parler de la prog asynchrone et de la temporalité des programmes. Ont pris le langage Esterel et ils l’ont adapté au web pour donner <a href="https://github.com/manuel-serrano/hiphop">hip-hop</a>. Quelles seront les grandes étapes à franchir pour améliorer la sureté et la sécurité notamment pour l’internet des objets où la communication est encore plus fréquente que sur le web ?</li>
+<li>réponse de G. Berry : algo distribués très différents des algos séquentiels. Peuvent être horriblement simple à écrire et horriblement compliqués à comprendre. Un des plus connus et utilisé est TCP (Transfert Control Protocol). Algo très délicats, souvent mon gros. En synchrone tout le monde partage le temps. En asynchrone non. En IoT, on a des interfaces asynchrones, tout va se mélanger. Bcp de questions, énorme source d’erreurs. Ex en asynchrone chacun veut 2 objets, chacun en possède un, et aucun ne veut lacher le sien, ça s’appele un dead lock qui entrain un blocage du système. On a pas les théories mathématiques qui faut. Pour la prog classique on a <a href="https://fr.wikipedia.org/wiki/Lambda-calcul">le lambda calculus de Church</a>. On a pas l’équivalent en distribué. En synchrone on peut faire de la vérification formelle. Pas en asynchrone. La dominence du web fait que les gens sont incroyablement tolérants à la mauvaise qualité.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a href="https://www.eyrolles.com/Accueil/Auteur/jacques-printz-15337">Jacques Printz</a></p>
+<blockquote>
+<p>a été titulaire de la chaire de génie logiciel du Cnam. A dirigé les développements logiciels des ordinateurs Bull DPS7. Consultant en systèmes d’information auprès de grandes entreprises et administrations. Auteur de nombreux ouvrages sur le génie logiciel. </p>
+</blockquote>
+</li>
+<li><p><a href="https://fr.wikipedia.org/wiki/Louis_Pouzin">Louis Pouzin</a></p>
+<blockquote>
+<p>inventeur du datagramme et concepteur du premier réseau à commutation de paquets, à la base de ce qui deviendra Internet. Lauréat du Queen Elizabeth Prize for Engineering en 2013. Militant du multilinguisme dans l’espace numérique et d’une nouvelle gouvernance d’Internet</p>
+</blockquote>
+</li>
+<li><p><a href="https://www.lip6.fr/actualite/personnes-fiche.php?ident=P242">François Anceau</a></p>
+<blockquote>
+<p>a été titulaire de la chaire des techniques fondamentales de l’informatique du Cnam, responsable de recherche à l’Imag, Bull et l’Ecole Polytechnique. Pionnier en France des architectures de circuits intégrés, en particulier sur leur preuve formelle et leur synchronisation interne.</p>
+</blockquote>
+</li>
+<li><p><a href="https://fr.wikipedia.org/wiki/Najah_Naffah">Najah Naffah</a></p>
+<blockquote>
+<p>Précurseur à l’INRIA de la notion de routeur de réseau, puis du poste de travail intelligent, en dirigeant le projet Kayak. Il a ensuite exercé des responsabilités de direction dans l’Industrie (Bull, EDS, Sabre, Prologue), et maintenant de conseil en management.</p>
+</blockquote>
+</li>
+<li><p><a href="http://glazman.org/weblog/">Daniel Glazman</a> Former co-chairman of the W3C CSS Working Group</p>
+<ul>
+<li><a href="https://www.franceculture.fr/emissions/linvite-des-matins-2eme-partie/sommes-nous-a-la-merci-de-nos-systemes-informatiques">Sommes-nous à la merci de nos systèmes informatiques ? - France Culture - 20171205</a></li>
+</ul>
+</li>
+<li><p>Rich Hickey <a href="https://clojure.org/">Clojure</a> author, <a href="https://pbs.twimg.com/media/DL-3OUcUMAAaXID.jpg">The problems of programming</a></p>
+</li>
+<li><p><a href="https://github.com/tj">TJ Holowaychuk</a></p>
+<ul>
+<li>founder of Express, Koa, Commander, …</li>
+</ul>
+</li>
+<li><p>[<a href="http://tinyclouds.org]">http://tinyclouds.org]</a>(Ryan Dahl)</p>
+<ul>
+<li>founder of Node.js, denom, …</li>
+<li><a href="https://www.mappingthejourney.com/single-post/2017/08/31/episode-8-interview-with-ryan-dahl-creator-of-nodejs/">Interview with Ryan Dahl, Creator of Node.js - www.mappingthejourney.com - 20170831</a></li>
+</ul>
+</li>
+<li><p><a href="https://www.youtube.com/watch?v=UX4YijQ3zhc">Top 10 Programming Books Every Software Developer Should Read</a></p>
+</li>
+</ul>
+<h2 id="title-histoire">histoire</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Software_crisis">Software crisis</a><br>Fin des années 70, les ordinateurs sont montés en puissance, donc permettent le développement de programmes plus puissants et plus complexe. Dégradation massive de la qualité du à la complexité. C’est le début des recherches en génie logiciel pour définir les bonnes pratiques du développement logiciel (gestion qualité, méthodes, invention programmation procédurale puis objet).</li>
+<li><a href="https://en.wikipedia.org/wiki/Dot-com_bubble">bulle internet</a> Fin 90 début 2000 le crash boursier entraine de nombreux licenciements de développeurs suite aux réductions du couts et aux sociétés déposants le bilan. Les développeurs ont alors tendance à se transformer en oui:oui pour éviter de perdre leur emploi, entrainant une dégradation massive de la qualité des productions. Ce phénomène associé à l’arrivée de nombreux jeunes développeurs sur le marché du travail quelques années après sont les deux phénomènes responsables de l’immaturité de l’industrie du développement logiciel dénoncée par Robert C. Martin (cf Martin pour une explication plus détaillée dans <a href="https://www.youtube.com/watch?v=ecIWPzGEbFc">The Future of Programming</a>)</li>
+<li><a href="https://plus.google.com/+RipRowan/posts/eVeouesvaVX">Jeff Bezos API Mandate explained by Google employee</a><blockquote>
+<p>1) All teams will henceforth expose their data and functionality through service interfaces.<br>2) Teams must communicate with each other through these interfaces.<br>3) There will be no other form of interprocess communication allowed: no direct linking, no direct reads of another team’s data store, no shared-memory model, no back-doors whatsoever. The only communication allowed is via service interface calls over the network.<br>4) It doesn’t matter what technology they use. HTTP, Corba, Pubsub, custom protocols – doesn’t matter. Bezos doesn’t care.<br>5) All service interfaces, without exception, must be designed from the ground up to be externalizable. That is to say, the team must plan and design to be able to expose the interface to developers in the outside world. No exceptions.<br>6) Anyone who doesn’t do this will be fired.</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="title-courants">courants</h2>
+<h3 id="title-software-craftmanship">Software Craftmanship</h3>
+<ul>
+<li><a href="http://manifesto.softwarecraftsmanship.org/#/fr-fr">manifesto.softwarecraftsmanship.org</a></li>
+<li><a href="https://fr.wikipedia.org/wiki/Software_craftsmanship">Software_craftsmanship : fr.wikipedia.org</a></li>
+<li><a href="https://www.youtube.com/watch?v=AQlsOPMKgBE">Software Craftsmanship by Sandro Mancuso @ Devoxx France 20??</a></li>
+</ul>
+<blockquote>
+<p>Agile : Are we building the right thing ?</p>
+</blockquote>
+<blockquote>
+<p>Craftsmanship : Are we building the thing right ?</p>
+</blockquote>
+<blockquote>
+<p>from Software Craftsmanship by Sandro Mancuso @ Devoxx France 20??</p>
+</blockquote>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=p0O1VVqRSK0">Demanding Professionalism in Software Development : Robert C. Martin (Uncle Bob)</a></li>
+<li><a href="https://www.youtube.com/watch?v=0oGpWmS0aYQ">Agility and Architecture : Robert C. Martin (Uncle Bob)</a></li>
+<li><a href="https://www.youtube.com/watch?v=KtHQGs3zFAM">Jim Coplien and Bob Martin Debate TDD</a></li>
+</ul>
+<p><strong>Conférences</strong></p>
+<ul>
+<li><a href="https://craft-conf.com/">SOFTWARE DELIVERY CRAFTSMANSHIP MATTERS</a></li>
+</ul>
+<h2 id="title-exemples-concrets">exemples concrets</h2>
+<p><a href="https://www.youtube.com/watch?v=P9G7jBBwLjc&index=80&list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXAO">odyssée du Continuous Delivery Diego Lemos David Caramelo (Nicolas Bourgeois)</a><br>Présentation Devoxx2016 sur le passage du code legacy au continuous delivery à la Société Générale. Juste génial.</p>
+<p><a href="https://www.youtube.com/watch?v=vUTYKLEneuI">SOAT Agile Day - Keynote de Romain Niccoli - Etre agile dans un contexte de forte croissance</a></p>
+<h2 id="title-architecture">architecture</h2>
+<p><a href="http://www.dossier-andreas.net/software_architecture/">Architectural patterns - www.dossier-andreas.net</a></p>
+<blockquote>
+<ul>
+<li>Model-View-Controller</li>
+<li>Presentation-Abstraction-Control</li>
+<li>Pipe-And-Filter</li>
+<li>Layered Systems</li>
+<li>Microkernel</li>
+<li>Client-Server and N-Tier Systems</li>
+<li>Repository</li>
+<li>Blackboard</li>
+<li>Finite State Machine</li>
+<li>Process Control</li>
+<li>Multi Agent System</li>
+<li>Broker a.k.a. Service Oriented Architecture</li>
+<li>Master-Slave</li>
+<li>Interpreter a.k.a. Virtual Machine</li>
+<li>Hub-And-Spoke</li>
+<li>Message Bus a.k.a. Event Bus</li>
+<li>Structural Model</li>
+<li>Ports-And-Adapters a.k.a. Hexagonal Architecture</li>
+<li>Peer-to-peer</li>
+<li>Event sourcing</li>
+<li>CQRS </li>
+</ul>
+</blockquote>
+<h3 id="title-clean-architecture">clean architecture</h3>
+<p><a href="https://medium.com/@mickalwegerich/la-clean-architecture-catalyseur-de-productivit%C3%A9-68ff61aa38ff">La Clean Architecture : catalyseur de productivité - medium.com/@mickalwegerich - 20180507</a></p>
+<p><a href="http://blog.xebia.fr/2016/03/16/perennisez-votre-metier-avec-larchitecture-hexagonale/">Pérennisez votre métier avec l’architecture hexagonale ! - blog.xebia.fr - 20160316</a></p>
+<p><a href="https://www.youtube.com/watch?v=Nsjsiz2A9mg">Robert C Martin - Clean Architecture and Design - www.youtube.com - 2013</a></p>
+<p><a href="http://blog.cleancoder.com/uncle-bob/2016/01/04/ALittleArchitecture.html">Robert C Martin - A Little Architecture - blog.cleancoder.com - 20160104</a></p>
+<p><a href="http://www.dossier-andreas.net/software_architecture/ports_and_adapters.html">Ports-And-Adapters / Hexagonal Architecture - www.dossier-andreas.net</a></p>
+<p><a href="https://www.youtube.com/watch?v=Hi5aDfRe-aE">Architecture hexagonale pour les nuls (Y. Chéné) - DevoxxFrance 2018</a></p>
+<blockquote>
+<p>a substituer à l’architecture en couche connue de tous</p>
+<p>tackling complexity in the heart of software (Eric Evans 2003)</p>
+<p>“ports and adapters architecture” ou “Object Structural” ou “Hexagonal Architecture” (cf Alistair Cockburn)</p>
+<p>Archi similaires : Clean Architecture, Onion Architecture</p>
+<p>Règle 1 : Pas de framework ou de dépendances sur le domaine, on écrit tout en vanilla (on peut avoir éventuellement des dépendances sur des libs générales, par ex en js ça serait lodash)</p>
+<p>Règle 2 : Le domaine est le central, c’est l’extérieur qui appelle le domaine. Le domaine n’appelle jamais l’extérieur. Il ne doit donc jamais y avoir de code d’infra dans le domaine, en d’autres termes toutes les I/O sont à l’extérieur.</p>
+<p>le reste de la prez il commente un exemple avec Spring Boot</p>
+</blockquote>
+<p><a href="https://soundcloud.com/michael-az-948266686/les-vices-de-lagilite-choisir-les-technos-avant-de-commencer-a-coder">Podcast Les vices de l’agilité - Choisir les technos avant de commencer à coder - Mickael Azerhad - 20180725</a></p>
+<p><a href="https://www.tutorialspoint.com/software_architecture_design/index.htm">Software Architecture &amp; Design Tutorial - www.tutorialspoint.com</a></p>
+<h2 id="title-divers">divers</h2>
+<p><a href="https://www.lucidchart.com/techblog/2015/08/31/the-worst-mistake-of-computer-science/">The worst mistake of computer science - www.lucidchart.com/techblog - 20150831</a></p>
+<blockquote>
+<p>In commemoration of the 50th anniversary of Sir Hoare’s null, this article explains what null is, why it is so terrible, and how to avoid it.</p>
+</blockquote>
+</article></body></html>

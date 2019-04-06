@@ -1,10 +1,20 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-composition-over-inheritance">composition over inheritance</h1> <h2 id="title-sources">sources</h2> <p><a href="https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3">The Two Pillars of JavaScript: Part 1: How to Escape the 7th Circle of Hell by Eric Elliott 20141021</a></p> <p><a href="https://www.youtube.com/watch?v=wfMtDGfHWpA">Composition over Inheritance : Youtube channel Fun Fun Function</a></p> <h2 id="title-explanation">explanation</h2> <p><strong>inheritance</strong> is when you design objects around what they <strong>are</strong></p> <p><strong>composition</strong> is when you design objects around what they <strong>do</strong></p> <h2 id="title-example">example</h2> <p>We design a game where we have</p> <pre><code>Dog
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.a092d0a1.js"></script></head><body><article class="markdown-body"><h1 id="title-composition-over-inheritance">composition over inheritance</h1>
+<h2 id="title-sources">sources</h2>
+<p><a href="https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3">The Two Pillars of JavaScript: Part 1: How to Escape the 7th Circle of Hell by Eric Elliott 20141021</a></p>
+<p><a href="https://www.youtube.com/watch?v=wfMtDGfHWpA">Composition over Inheritance : Youtube channel Fun Fun Function</a></p>
+<h2 id="title-explanation">explanation</h2>
+<p><strong>inheritance</strong> is when you design objects around what they <strong>are</strong></p>
+<p><strong>composition</strong> is when you design objects around what they <strong>do</strong></p>
+<h2 id="title-example">example</h2>
+<p>We design a game where we have</p>
+<pre><code>Dog
   .poop()
   .bark()
 
 Cat
   .poop()
-  .meow()</code></pre><p>Because of <code>poop</code> function duplication we create a mother <code>class</code></p> <pre><code>Animal
+  .meow()</code></pre><p>Because of <code>poop</code> function duplication we create a mother <code>class</code></p>
+<pre><code>Animal
   .poop()
 
     Dog
@@ -13,7 +23,8 @@ Cat
 
     Cat
       .poop()
-      .meow()</code></pre><p>Now we add more classes on a different line of inheritance</p> <pre><code>MurderRobot
+      .meow()</code></pre><p>Now we add more classes on a different line of inheritance</p>
+<pre><code>MurderRobot
   .drive()
   .kill()
 
@@ -30,7 +41,8 @@ Animal
 
     Cat
       .poop()
-      .meow()</code></pre><p>Same problem as before, we need another mother class for robots</p> <pre><code>Robot
+      .meow()</code></pre><p>Same problem as before, we need another mother class for robots</p>
+<pre><code>Robot
   .drive()
 
   MurderRobot
@@ -49,8 +61,34 @@ Animal
 
     Cat
       .poop()
-      .meow()</code></pre><p>After a while a new needs is coming : We need a murder robot dog who can kill, drive and bark.<br>But it cannot poop (no digestive system)</p> <p>At this point, the class inheritance taxinomy is deeply wrong. We cannot put a MurderRobotDog class inside.</p> <p>The only solution keeping inheritance is to set a super motherclass but children will have method they should not<br>have in attached to them. So it is bad.</p> <p>This problem is called the <strong>Gorilla Banana Problem</strong> (You request a Banana, you got a Gorilla and the entire Jungle with it).</p> <p>The solution is <strong>composition</strong> (design objects around what they <strong>do</strong>)</p> <pre><code>dog            = pooper + barker
+      .meow()</code></pre><p>After a while a new needs is coming : We need a murder robot dog who can kill, drive and bark.<br>But it cannot poop (no digestive system)</p>
+<p>At this point, the class inheritance taxinomy is deeply wrong. We cannot put a MurderRobotDog class inside.</p>
+<p>The only solution keeping inheritance is to set a super motherclass but children will have method they should not<br>have in attached to them. So it is bad.</p>
+<p>This problem is called the <strong>Gorilla Banana Problem</strong> (You request a Banana, you got a Gorilla and the entire Jungle with it).</p>
+<p>The solution is <strong>composition</strong> (design objects around what they <strong>do</strong>)</p>
+<pre><code>dog            = pooper + barker
 cat            = pooper + meower
 cleaningRobot  = driver + cleaner
 murderRobot    = driver + killer
-murderRobotDog = driver + killer + barker</code></pre><h2 id="title-when-to-use-compositioninheritance">when to use composition/inheritance</h2> <p>Lots of devs just favors composition over inheritance and some never use inheritance.</p> <p><a href="https://refactoring.com/catalog/replaceConstructorWithFactoryMethod.html">Replace Constructor with Factory Method : Martin Fowler 1999</a></p> <blockquote> <p>He is not saying inheritance is bad directly but if you don’t use constructors you cannot use <code>super</code> keyword.</p> </blockquote> <p><a href="https://martinfowler.com/bliki/CallSuper.html">CallSuper is an anti-pattern: Martin Fowler 20050811</a></p> <blockquote> <p>or a code smell</p> </blockquote> <p><a href="https://en.wikipedia.org/wiki/Composition_over_inheritance">Composition over inheritance : en.wikipedia.org</a></p> <p><a href="https://www.thoughtworks.com/insights/blog/composition-vs-inheritance-how-choose">Composition vs. Inheritance: How to Choose? 20150512</a></p> <h2 id="title-articles">articles</h2> <p><a href="https://medium.com/javascript-scene/the-open-minded-explorer-s-guide-to-object-composition-88fe68961bed">The Open Minded Explorer’s Guide to Object Composition : Eric Elliott 20151015</a></p> <p><a href="https://medium.com/@FennNaten/composition-over-inheritance-the-importance-of-context-d8916f041a7e">Composition over Inheritance, the importance of context : Damien Lebreuilly 20160131</a></p> <blockquote> <p>In the rest of this article, I’ll explain what are those inheritance pitfalls that composition (in GoF sense) tries<br>to avoid, and I’ll show that concatenative inheritance still carries them.</p> </blockquote> <blockquote> <p>he is taking the @mpj <code>murderRobotDog</code> example adding more complexity to output this conclusion :<br><strong>Object composition is not object merging.</strong></p> </blockquote> </article></body></html>
+murderRobotDog = driver + killer + barker</code></pre><h2 id="title-when-to-use-compositioninheritance">when to use composition/inheritance</h2>
+<p>Lots of devs just favors composition over inheritance and some never use inheritance.</p>
+<p><a href="https://refactoring.com/catalog/replaceConstructorWithFactoryMethod.html">Replace Constructor with Factory Method : Martin Fowler 1999</a></p>
+<blockquote>
+<p>He is not saying inheritance is bad directly but if you don’t use constructors you cannot use <code>super</code> keyword.</p>
+</blockquote>
+<p><a href="https://martinfowler.com/bliki/CallSuper.html">CallSuper is an anti-pattern: Martin Fowler 20050811</a></p>
+<blockquote>
+<p>or a code smell</p>
+</blockquote>
+<p><a href="https://en.wikipedia.org/wiki/Composition_over_inheritance">Composition over inheritance : en.wikipedia.org</a></p>
+<p><a href="https://www.thoughtworks.com/insights/blog/composition-vs-inheritance-how-choose">Composition vs. Inheritance: How to Choose? 20150512</a></p>
+<h2 id="title-articles">articles</h2>
+<p><a href="https://medium.com/javascript-scene/the-open-minded-explorer-s-guide-to-object-composition-88fe68961bed">The Open Minded Explorer’s Guide to Object Composition : Eric Elliott 20151015</a></p>
+<p><a href="https://medium.com/@FennNaten/composition-over-inheritance-the-importance-of-context-d8916f041a7e">Composition over Inheritance, the importance of context : Damien Lebreuilly 20160131</a></p>
+<blockquote>
+<p>In the rest of this article, I’ll explain what are those inheritance pitfalls that composition (in GoF sense) tries<br>to avoid, and I’ll show that concatenative inheritance still carries them.</p>
+</blockquote>
+<blockquote>
+<p>he is taking the @mpj <code>murderRobotDog</code> example adding more complexity to output this conclusion :<br><strong>Object composition is not object merging.</strong></p>
+</blockquote>
+</article></body></html>

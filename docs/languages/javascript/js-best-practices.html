@@ -1,7 +1,107 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-javascript-best-practices">javascript best practices</h1> <h2 id="title-coding-style">coding style</h2> <ul> <li><a href="https://github.com/airbnb/javascript">coding style from airbnb</a></li> </ul> <h2 id="title-articles">articles</h2> <ul> <li><a href="http://qooxdoo.org/docs/general/javascript_best_practises">javascript_best_practises : qooxdoo.org</a></li> <li><a href="http://www.crockford.com/javascript/">javascript : Douglas Crockford</a></li> <li><a href="http://sylvainpv.developpez.com/traductions/javascript/idees-fausses-heritage/">Onze idées fausses sur l’héritage en JavaScript : sylvainpv.developpez.com - 20150523</a> (trad article Eric Elliott)</li> <li><a href="https://medium.freecodecamp.org/the-complete-javascript-handbook-f26b2c71719c">The Complete JavaScript Handbook - medium.freecodecamp.org - 20181030</a></li> </ul> <blockquote> <p>Table of Contents</p> <ul> <li>ECMAscript</li> <li>ES6</li> <li>ES2016</li> <li>ES2017</li> <li>ES2018</li> <li>Coding Style</li> <li>Lexical Structure</li> <li>Variables</li> <li>Types</li> <li>Expressions</li> <li>Prototypal Inheritance</li> <li>Classes</li> <li>Exceptions</li> <li>Semicolons</li> <li>Quotes</li> <li>Template Literals</li> <li>Functions</li> <li>Arrow Functions</li> <li>Closures</li> <li>Arrays</li> <li>Loops</li> <li>Events</li> <li>The Event Loop</li> <li>Asynchronous Programming and Callbacks</li> <li>Promises</li> <li>Async and Await</li> <li>Loops and Scope</li> <li>Timers</li> <li>This</li> <li>Strict Mode</li> <li>Immediately-Invoked Function Expressions (IFFE’s)</li> <li>Math Operators</li> <li>The Math Object</li> <li>ES modules</li> <li>CommonJS</li> <li>Glossary</li> </ul> </blockquote> <h2 id="title-perfs">perfs</h2> <p><a href="https://developer.mozilla.org/en-US/docs/Tools/Performance/Scenarios/Intensive_JavaScript">Intensive JavaScript - developer.mozilla.org</a></p> <blockquote> <p>By default the browser uses a single thread to run all the JavaScript in your page as well as to perform layout, reflows, and garbage collection. This means that long-running JavaScript functions can block the thread, leading to an unresponsive page and a bad user experience.</p> <p>You can use the <a href="https://developer.mozilla.org/en-US/docs/Tools/Performance/Frame_rate">Frame rate</a> and <a href="https://developer.mozilla.org/en-US/docs/Tools/Performance/Waterfall">Waterfall tools</a> to see when JavaScript is causing performance problems, and to single out the particular functions that need attention.</p> <p>In this article we’ll take an example site whose long-running JavaScript causes responsiveness problems, and apply two different approaches to fixing them. The first is to split long-running functions into pieces and use <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame"><code>requestAnimationFrame</code></a> to schedule each piece, and the second is to run the whole function in a separate thread using a <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers">web worker</a>.</p> </blockquote> <h2 id="title-undefined--null-check">undefined &amp; null check</h2> <ul> <li><a href="http://davidbcalhoun.com/2011/checking-for-undefined-null-and-empty-variables-in-javascript/">checking-for-undefined-null-and-empty-variables-in-javascript : davidbcalhoun.com</a></li> </ul> <h2 id="title-javascript-strict-mode">javascript strict mode</h2> <p><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Strict_mode">Strict mode : developer.mozilla.org</a><br>Le mode strict apporte quelques changements à la sémantique « normale » de JavaScript :</p> <ul> <li>le mode strict élimine quelques erreurs silencieuses de JavaScript en les changeant en erreurs explicites (une exception sera levée)</li> <li>le mode strict corrige les erreurs qui font qu’il est difficile pour les moteurs JavaScript d’effectuer des optimisations (exécution plus rapide)</li> <li>le mode strict interdit les mot-clés susceptibles d’être définis dans les futures versions de ECMAScript</li> </ul> <h2 id="title-online-tools">online tools</h2> <ul> <li><a href="https://mothereff.in/js-variables">js-variables name validator</a></li> </ul> <h2 id="title-array-iteration">array iteration</h2> <p><a href="http://stackoverflow.com/questions/3010840/loop-through-an-array-in-javascript">Loop through an array in JavaScript : stackoverflow.com</a></p> <p><a href="http://stackoverflow.com/questions/9329446/for-each-over-an-array-in-javascript">For-each over an array in JavaScript? : stackoverflow.com</a></p> <p><a href="https://blog.overnetcity.com/2014/08/29/array-foreach-nest-pas-toujours-meilleure-solution/">Array.forEach n’est pas toujours la meilleure solution ! - blog.overnetcity.com - 20140829</a></p> <h2 id="title-array--object--map--set"><code>array</code> / <code>object</code> / <code>Map</code> / <code>Set</code></h2> <h3 id="title-definitions">definitions</h3> <h4 id="title-array"><code>array</code></h4> <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array in MDN</a></p> <pre><code class="lang-javascript">const fruits = [&#39;Apple&#39;, &#39;Banana&#39;];
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.a092d0a1.js"></script></head><body><article class="markdown-body"><h1 id="title-javascript-best-practices">javascript best practices</h1>
+<h2 id="title-coding-style">coding style</h2>
+<ul>
+<li><a href="https://github.com/airbnb/javascript">coding style from airbnb</a></li>
+</ul>
+<h2 id="title-articles">articles</h2>
+<ul>
+<li><a href="http://qooxdoo.org/docs/general/javascript_best_practises">javascript_best_practises : qooxdoo.org</a></li>
+<li><a href="http://www.crockford.com/javascript/">javascript : Douglas Crockford</a></li>
+<li><a href="http://sylvainpv.developpez.com/traductions/javascript/idees-fausses-heritage/">Onze idées fausses sur l’héritage en JavaScript : sylvainpv.developpez.com - 20150523</a> (trad article Eric Elliott)</li>
+<li><a href="https://medium.freecodecamp.org/the-complete-javascript-handbook-f26b2c71719c">The Complete JavaScript Handbook - medium.freecodecamp.org - 20181030</a></li>
+</ul>
+<blockquote>
+<p>Table of Contents</p>
+<ul>
+<li>ECMAscript</li>
+<li>ES6</li>
+<li>ES2016</li>
+<li>ES2017</li>
+<li>ES2018</li>
+<li>Coding Style</li>
+<li>Lexical Structure</li>
+<li>Variables</li>
+<li>Types</li>
+<li>Expressions</li>
+<li>Prototypal Inheritance</li>
+<li>Classes</li>
+<li>Exceptions</li>
+<li>Semicolons</li>
+<li>Quotes</li>
+<li>Template Literals</li>
+<li>Functions</li>
+<li>Arrow Functions</li>
+<li>Closures</li>
+<li>Arrays</li>
+<li>Loops</li>
+<li>Events</li>
+<li>The Event Loop</li>
+<li>Asynchronous Programming and Callbacks</li>
+<li>Promises</li>
+<li>Async and Await</li>
+<li>Loops and Scope</li>
+<li>Timers</li>
+<li>This</li>
+<li>Strict Mode</li>
+<li>Immediately-Invoked Function Expressions (IFFE’s)</li>
+<li>Math Operators</li>
+<li>The Math Object</li>
+<li>ES modules</li>
+<li>CommonJS</li>
+<li>Glossary</li>
+</ul>
+</blockquote>
+<h2 id="title-perfs">perfs</h2>
+<p><a href="https://developer.mozilla.org/en-US/docs/Tools/Performance/Scenarios/Intensive_JavaScript">Intensive JavaScript - developer.mozilla.org</a></p>
+<blockquote>
+<p>By default the browser uses a single thread to run all the JavaScript in your page as well as to perform layout, reflows, and garbage collection. This means that long-running JavaScript functions can block the thread, leading to an unresponsive page and a bad user experience.</p>
+<p>You can use the <a href="https://developer.mozilla.org/en-US/docs/Tools/Performance/Frame_rate">Frame rate</a> and <a href="https://developer.mozilla.org/en-US/docs/Tools/Performance/Waterfall">Waterfall tools</a> to see when JavaScript is causing performance problems, and to single out the particular functions that need attention.</p>
+<p>In this article we’ll take an example site whose long-running JavaScript causes responsiveness problems, and apply two different approaches to fixing them. The first is to split long-running functions into pieces and use <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame"><code>requestAnimationFrame</code></a> to schedule each piece, and the second is to run the whole function in a separate thread using a <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers">web worker</a>.</p>
+</blockquote>
+<h2 id="title-undefined--null-check">undefined &amp; null check</h2>
+<ul>
+<li><a href="http://davidbcalhoun.com/2011/checking-for-undefined-null-and-empty-variables-in-javascript/">checking-for-undefined-null-and-empty-variables-in-javascript : davidbcalhoun.com</a></li>
+</ul>
+<h2 id="title-javascript-strict-mode">javascript strict mode</h2>
+<p><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Strict_mode">Strict mode : developer.mozilla.org</a><br>Le mode strict apporte quelques changements à la sémantique « normale » de JavaScript :</p>
+<ul>
+<li>le mode strict élimine quelques erreurs silencieuses de JavaScript en les changeant en erreurs explicites (une exception sera levée)</li>
+<li>le mode strict corrige les erreurs qui font qu’il est difficile pour les moteurs JavaScript d’effectuer des optimisations (exécution plus rapide)</li>
+<li>le mode strict interdit les mot-clés susceptibles d’être définis dans les futures versions de ECMAScript</li>
+</ul>
+<h2 id="title-online-tools">online tools</h2>
+<ul>
+<li><a href="https://mothereff.in/js-variables">js-variables name validator</a></li>
+</ul>
+<h2 id="title-array-iteration">array iteration</h2>
+<p><a href="http://stackoverflow.com/questions/3010840/loop-through-an-array-in-javascript">Loop through an array in JavaScript : stackoverflow.com</a></p>
+<p><a href="http://stackoverflow.com/questions/9329446/for-each-over-an-array-in-javascript">For-each over an array in JavaScript? : stackoverflow.com</a></p>
+<p><a href="https://blog.overnetcity.com/2014/08/29/array-foreach-nest-pas-toujours-meilleure-solution/">Array.forEach n’est pas toujours la meilleure solution ! - blog.overnetcity.com - 20140829</a></p>
+<h2 id="title-array--object--map--set"><code>array</code> / <code>object</code> / <code>Map</code> / <code>Set</code></h2>
+<h3 id="title-definitions">definitions</h3>
+<h4 id="title-array"><code>array</code></h4>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array in MDN</a></p>
+<pre><code class="lang-javascript">const fruits = [&#39;Apple&#39;, &#39;Banana&#39;];
 
 console.log(fruits.length);
-// 2</code></pre> <p>It’s an indexed list.</p> <p>Never use the new constructor (<code>const list = new Array();</code>), always use directly the literal (<code>const list = [];</code>).<br>The constructor is slower and there is a common mistake with it, when an array is instantiated with only one arg you define the array length, and not an array of one element :<br><code>const list = new Array(2); // the array contains in fact [undefined, undefined], but const list = new Array(1, 2) leads to [1, 2]</code>.</p> <p>Resize automatically. Order preserved (‘cause indexed). Any types in it. Values can be duplicated (<code>const list = [1, 2, 2, 2, &#39;toto&#39;];</code>)</p> <p>See MDN for details.</p> <h4 id="title-object"><code>object</code></h4> <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object in MDN</a></p> <pre><code class="lang-javascript">const fruit = { name: &#39;Apple&#39; };</code></pre> <p>See <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer">Object initializer in MDN</a> for details with <code>new</code> keyword or <code>Object.create()</code> function.</p> <p>The <code>const object = new Object();</code> is rarely used.</p> <p>The <code>const object = Object.create(proto);</code> is used to create an object based on a <code>proto</code> prototype. <code>const object = Object.create(null);</code> allows object creation without any prototype.</p> <p>An object is a key/value dictionnary.</p> <p>A key must be unique and a string (or a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">Symbol</a>). Keys are unordered, use Map instead if you need to keep an order.</p> <p>Values can be of any types.</p> <p>Can’t get the size (numbers of K/V) easily.</p> <h4 id="title-map"><code>Map</code></h4> <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map in MDN</a></p> <pre><code class="lang-javascript">var myMap = new Map();
+// 2</code></pre>
+<p>It’s an indexed list.</p>
+<p>Never use the new constructor (<code>const list = new Array();</code>), always use directly the literal (<code>const list = [];</code>).<br>The constructor is slower and there is a common mistake with it, when an array is instantiated with only one arg you define the array length, and not an array of one element :<br><code>const list = new Array(2); // the array contains in fact [undefined, undefined], but const list = new Array(1, 2) leads to [1, 2]</code>.</p>
+<p>Resize automatically. Order preserved (‘cause indexed). Any types in it. Values can be duplicated (<code>const list = [1, 2, 2, 2, &#39;toto&#39;];</code>)</p>
+<p>See MDN for details.</p>
+<h4 id="title-object"><code>object</code></h4>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object in MDN</a></p>
+<pre><code class="lang-javascript">const fruit = { name: &#39;Apple&#39; };</code></pre>
+<p>See <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer">Object initializer in MDN</a> for details with <code>new</code> keyword or <code>Object.create()</code> function.</p>
+<p>The <code>const object = new Object();</code> is rarely used.</p>
+<p>The <code>const object = Object.create(proto);</code> is used to create an object based on a <code>proto</code> prototype. <code>const object = Object.create(null);</code> allows object creation without any prototype.</p>
+<p>An object is a key/value dictionnary.</p>
+<p>A key must be unique and a string (or a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">Symbol</a>). Keys are unordered, use Map instead if you need to keep an order.</p>
+<p>Values can be of any types.</p>
+<p>Can’t get the size (numbers of K/V) easily.</p>
+<h4 id="title-map"><code>Map</code></h4>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">Map in MDN</a></p>
+<pre><code class="lang-javascript">var myMap = new Map();
 
 var keyString = &#39;a string&#39;,
     keyObj = {},
@@ -22,7 +122,16 @@ myMap.get(keyFunc);      // &quot;value associated with keyFunc&quot;
 myMap.get(&#39;a string&#39;);   // &quot;value associated with &#39;a string&#39;&quot;
                          // because keyString === &#39;a string&#39;
 myMap.get({});           // undefined, because keyObj !== {}
-myMap.get(function() {}) // undefined, because keyFunc !== function () {}</code></pre> <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#Objects_and_maps_compared">Objects and maps compared</a></p> <p>A key must be unique and from any type (including function).</p> <p>Keys are ordered.</p> <p>There is a <code>size()</code> function to get the K/V number.</p> <p>Map is iterable.</p> <p>A Map may perform better in scenarios involving frequent addition and removal of key pairs.</p> <h4 id="title-set"><code>Set</code></h4> <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set in MDN</a></p> <pre><code class="lang-javascript">const set1 = new Set([1, 2, 3, 4, 5]);
+myMap.get(function() {}) // undefined, because keyFunc !== function () {}</code></pre>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#Objects_and_maps_compared">Objects and maps compared</a></p>
+<p>A key must be unique and from any type (including function).</p>
+<p>Keys are ordered.</p>
+<p>There is a <code>size()</code> function to get the K/V number.</p>
+<p>Map is iterable.</p>
+<p>A Map may perform better in scenarios involving frequent addition and removal of key pairs.</p>
+<h4 id="title-set"><code>Set</code></h4>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set in MDN</a></p>
+<pre><code class="lang-javascript">const set1 = new Set([1, 2, 3, 4, 5]);
 
 console.log(set1.has(1));
 // expected output: true
@@ -30,4 +139,136 @@ console.log(set1.has(1));
 // ...
 
 // iterate a Set
-for (let item of mySet) console.log(item);</code></pre> <p><code>Set</code> objects are collections of values. You can iterate through the elements of a set in insertion order. A value in the <code>Set</code> <strong>may only occur once</strong>; it is unique in the <code>Set</code>‘s collection.</p> <p><code>Set</code>, more familiar as a Math concept, is an abstract data type which contains only distinct elements/objects without the need of being allocated orderly by index.</p> <p>A <code>Set</code> is fundamentally different with an <code>Array</code>, a <code>Set</code> is a keyed collection where an <code>Array</code> is an indexed collection.</p> <p>Indexed collections are collections of data which are ordered by an index value</p> <p>Keyed collections are collections which use keys; these contain elements which are iterable in the order of insertion.</p> <h3 id="title-articles-1">articles</h3> <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections">Array in Indexed collections article - MDN</a></p> <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections">Maps and Sets in Key collections article - MDN</a></p> <p><a href="https://medium.com/front-end-weekly/es6-map-vs-object-what-and-when-b80621932373">Map vs Object — What and when? - Maya Shavin - medium.com - 20180201</a></p> <p><a href="https://medium.com/front-end-weekly/es6-set-vs-array-what-and-when-efc055655e1a">Set vs Array — What and when? - Maya Shavin - medium.com - 20180124</a></p> <h2 id="title-async--await"><code>async</code> / <code>await</code></h2> <p><a href="https://www.youtube.com/watch?v=FZ51IVn6tVM">Coder l’asynchrone en Javascript (Par Matthieu Lux)</a></p> <p><a href="https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/">Tasks, microtasks, queues and schedules - jakearchibald.com - 20150817</a></p> <blockquote> <p>In summary:</p> <ul> <li>Tasks execute in order, and the browser may render between them</li> <li>Microtasks execute in order, and are executed:<ul> <li>after every callback, as long as no other JavaScript is mid-execution</li> <li>at the end of each task</li> </ul> </li> </ul> <p><a href="https://www.developpez.net/forums/d1890469-2/forums-beneficiaires-d-hebergement/priv-redaction/priv-articles/2018-09-05-javascript-recursivite-parcours-d-arbres-l-objet-promise/#post10497961">Commentaire SylvainPV sur dev.com (fil privé)</a> :</p> <p>Ce qu’il faut retenir, c’est qu’un <code>Promise.resolve</code> n’entraîne pas de “vrai asynchronisme”, c’est-à-dire qu’il n’attend pas la prochaine boucle d’événements. On a besoin d’attendre la boucle d’événements pour laisser le navigateur faire le rendu et ne pas avoir de freeze.</p> </blockquote> <p><a href="https://hackernoon.com/javascript-async-await-the-good-part-pitfalls-and-how-to-use-9b759ca21cda">JavaScript <code>async</code>/<code>await</code>: The Good Part, Pitfalls and How to Use - hackernoon.com - Charlee Li - 20180607</a></p> <p><a href="https://javascript.info/async-await"><code>async</code>/<code>await</code> - javascript.info</a></p> <blockquote> <p><strong>TLDR :</strong></p> <p>The <code>async</code> keyword before a function has two effects:</p> <ol> <li>Makes it always return a promise.</li> <li>Allows to use <code>await</code> in it.</li> </ol> <p>The <code>await</code> keyword before a promise makes JavaScript wait until that promise settles, and then:</p> <ol> <li>If it’s an error, the exception is generated, same as if <code>throw error</code> were called at that very place.</li> <li>Otherwise, it returns the result, so we can assign it to a value.</li> </ol> <p>Together they provide a great framework to write asynchronous code that is easy both to read and write.</p> <p>With <code>async/await</code> we rarely need to write <code>promise.then/catch</code>, but we still shouldn’t forget that they are based on promises, because sometimes (e.g. in the outermost scope) we have to use these methods. Also <code>Promise.all</code> is a nice thing to wait for many tasks simultaneously.</p> </blockquote> <h3 id="title-drawbacks">drawbacks</h3> <p><a href="https://medium.freecodecamp.org/avoiding-the-async-await-hell-c77a0fb71c4c">How to escape async/await hell</a></p> <blockquote> <p><strong>TLDR :</strong> use successives <code>await</code> when not needed, the program control flow should continue. Use <code>Promise.all</code> when needed. </p> </blockquote> <h2 id="title-design-patterns">design patterns</h2> <p><a href="https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns">The Comprehensive Guide to JavaScript Design Patterns - www.toptal.com - Marko Mišura - 201803xx</a></p> <p><a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/">Learning JavaScript Design Patterns - Volume 1.7.0 - Addy Osmani - 2017</a></p> <p>Table of Content</p> <blockquote> <ul> <li>Introduction</li> <li>What is a Pattern?</li> <li>“Pattern”-ity Testing, Proto-Patterns &amp; The Rule Of Three</li> <li>The Structure Of A Design Pattern</li> <li>Writing Design Patterns</li> <li>Anti-Patterns</li> <li>Categories Of Design Pattern</li> <li>Summary Table Of Design Pattern Categorization</li> <li>JavaScript Design Patterns<ul> <li>Constructor Pattern</li> <li>Module Pattern</li> <li>Revealing Module Pattern</li> <li>Singleton Pattern</li> <li>Observer Pattern</li> <li>Mediator Pattern</li> <li>Prototype Pattern</li> <li>Command Pattern</li> <li>Facade Pattern</li> <li>Factory Pattern</li> <li>Mixin Pattern</li> <li>Decorator Pattern</li> <li>Flyweight Pattern </li> </ul> </li> <li>JavaScript MV* Patterns<ul> <li>MVC Pattern</li> <li>MVP Pattern</li> <li>MVVM Pattern </li> </ul> </li> <li>Modern Modular JavaScript Design Patterns<ul> <li>AMD</li> <li>CommonJS</li> <li>ES Harmony </li> </ul> </li> <li>Design Patterns In jQuery<ul> <li>Composite Pattern</li> <li>Adapter Pattern</li> <li>Facade Pattern</li> <li>Observer Pattern</li> <li>Iterator Pattern</li> <li>Lazy Initialization Pattern</li> <li>Proxy Pattern</li> <li>Builder Pattern</li> </ul> </li> <li>jQuery Plugin Design Patterns</li> <li>JavaScript Namespacing Patterns</li> <li>Conclusions</li> <li>References</li> </ul> </blockquote> <h2 id="title-class"><code>class</code></h2> <p><a href="https://medium.com/@dan_abramov/how-to-use-classes-and-sleep-at-night-9af8de78ccb4">How to Use Classes and Sleep at Night - Dan Abramov - 20151015</a></p> <p>Problem :</p> <ul> <li>Classes obscure the prototypal inheritance at the core of JS.</li> <li>Classes encourage inheritance but you should prefer composition.</li> <li>Classes tend to lock you into the first bad design you came up with.</li> </ul> <p>How to use classes and sleep at night :</p> <ul> <li>Resist making classes your public API.</li> <li>Don’t inherit more than once.</li> <li>Don’t make <code>super</code> calls from methods.</li> <li>Don’t expect people to use your classes.</li> <li>Learn functional programming</li> </ul> <p>Applied to React :</p> <ul> <li>You can use <code>class</code> in your JS if you don’t inherit twice and don’t use <code>super</code>.</li> <li>Prefer to write React components as pure functions when possible.</li> <li>Use ES6 classes for components if you need the state or lifecycle hooks.</li> <li>In this case, you may only extend <code>React.Component</code> directly.</li> <li>Give your feedback to the React team on the functional state proposals.</li> </ul> </article></body></html>
+for (let item of mySet) console.log(item);</code></pre>
+<p><code>Set</code> objects are collections of values. You can iterate through the elements of a set in insertion order. A value in the <code>Set</code> <strong>may only occur once</strong>; it is unique in the <code>Set</code>‘s collection.</p>
+<p><code>Set</code>, more familiar as a Math concept, is an abstract data type which contains only distinct elements/objects without the need of being allocated orderly by index.</p>
+<p>A <code>Set</code> is fundamentally different with an <code>Array</code>, a <code>Set</code> is a keyed collection where an <code>Array</code> is an indexed collection.</p>
+<p>Indexed collections are collections of data which are ordered by an index value</p>
+<p>Keyed collections are collections which use keys; these contain elements which are iterable in the order of insertion.</p>
+<h3 id="title-articles-1">articles</h3>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections">Array in Indexed collections article - MDN</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections">Maps and Sets in Key collections article - MDN</a></p>
+<p><a href="https://medium.com/front-end-weekly/es6-map-vs-object-what-and-when-b80621932373">Map vs Object — What and when? - Maya Shavin - medium.com - 20180201</a></p>
+<p><a href="https://medium.com/front-end-weekly/es6-set-vs-array-what-and-when-efc055655e1a">Set vs Array — What and when? - Maya Shavin - medium.com - 20180124</a></p>
+<h2 id="title-async--await"><code>async</code> / <code>await</code></h2>
+<p><a href="https://www.youtube.com/watch?v=FZ51IVn6tVM">Coder l’asynchrone en Javascript (Par Matthieu Lux)</a></p>
+<p><a href="https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/">Tasks, microtasks, queues and schedules - jakearchibald.com - 20150817</a></p>
+<blockquote>
+<p>In summary:</p>
+<ul>
+<li>Tasks execute in order, and the browser may render between them</li>
+<li>Microtasks execute in order, and are executed:<ul>
+<li>after every callback, as long as no other JavaScript is mid-execution</li>
+<li>at the end of each task</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://www.developpez.net/forums/d1890469-2/forums-beneficiaires-d-hebergement/priv-redaction/priv-articles/2018-09-05-javascript-recursivite-parcours-d-arbres-l-objet-promise/#post10497961">Commentaire SylvainPV sur dev.com (fil privé)</a> :</p>
+<p>Ce qu’il faut retenir, c’est qu’un <code>Promise.resolve</code> n’entraîne pas de “vrai asynchronisme”, c’est-à-dire qu’il n’attend pas la prochaine boucle d’événements. On a besoin d’attendre la boucle d’événements pour laisser le navigateur faire le rendu et ne pas avoir de freeze.</p>
+</blockquote>
+<p><a href="https://hackernoon.com/javascript-async-await-the-good-part-pitfalls-and-how-to-use-9b759ca21cda">JavaScript <code>async</code>/<code>await</code>: The Good Part, Pitfalls and How to Use - hackernoon.com - Charlee Li - 20180607</a></p>
+<p><a href="https://javascript.info/async-await"><code>async</code>/<code>await</code> - javascript.info</a></p>
+<blockquote>
+<p><strong>TLDR :</strong></p>
+<p>The <code>async</code> keyword before a function has two effects:</p>
+<ol>
+<li>Makes it always return a promise.</li>
+<li>Allows to use <code>await</code> in it.</li>
+</ol>
+<p>The <code>await</code> keyword before a promise makes JavaScript wait until that promise settles, and then:</p>
+<ol>
+<li>If it’s an error, the exception is generated, same as if <code>throw error</code> were called at that very place.</li>
+<li>Otherwise, it returns the result, so we can assign it to a value.</li>
+</ol>
+<p>Together they provide a great framework to write asynchronous code that is easy both to read and write.</p>
+<p>With <code>async/await</code> we rarely need to write <code>promise.then/catch</code>, but we still shouldn’t forget that they are based on promises, because sometimes (e.g. in the outermost scope) we have to use these methods. Also <code>Promise.all</code> is a nice thing to wait for many tasks simultaneously.</p>
+</blockquote>
+<h3 id="title-drawbacks">drawbacks</h3>
+<p><a href="https://medium.freecodecamp.org/avoiding-the-async-await-hell-c77a0fb71c4c">How to escape async/await hell</a></p>
+<blockquote>
+<p><strong>TLDR :</strong> use successives <code>await</code> when not needed, the program control flow should continue. Use <code>Promise.all</code> when needed. </p>
+</blockquote>
+<h2 id="title-design-patterns">design patterns</h2>
+<p><a href="https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns">The Comprehensive Guide to JavaScript Design Patterns - www.toptal.com - Marko Mišura - 201803xx</a></p>
+<p><a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/">Learning JavaScript Design Patterns - Volume 1.7.0 - Addy Osmani - 2017</a></p>
+<p>Table of Content</p>
+<blockquote>
+<ul>
+<li>Introduction</li>
+<li>What is a Pattern?</li>
+<li>“Pattern”-ity Testing, Proto-Patterns &amp; The Rule Of Three</li>
+<li>The Structure Of A Design Pattern</li>
+<li>Writing Design Patterns</li>
+<li>Anti-Patterns</li>
+<li>Categories Of Design Pattern</li>
+<li>Summary Table Of Design Pattern Categorization</li>
+<li>JavaScript Design Patterns<ul>
+<li>Constructor Pattern</li>
+<li>Module Pattern</li>
+<li>Revealing Module Pattern</li>
+<li>Singleton Pattern</li>
+<li>Observer Pattern</li>
+<li>Mediator Pattern</li>
+<li>Prototype Pattern</li>
+<li>Command Pattern</li>
+<li>Facade Pattern</li>
+<li>Factory Pattern</li>
+<li>Mixin Pattern</li>
+<li>Decorator Pattern</li>
+<li>Flyweight Pattern </li>
+</ul>
+</li>
+<li>JavaScript MV* Patterns<ul>
+<li>MVC Pattern</li>
+<li>MVP Pattern</li>
+<li>MVVM Pattern </li>
+</ul>
+</li>
+<li>Modern Modular JavaScript Design Patterns<ul>
+<li>AMD</li>
+<li>CommonJS</li>
+<li>ES Harmony </li>
+</ul>
+</li>
+<li>Design Patterns In jQuery<ul>
+<li>Composite Pattern</li>
+<li>Adapter Pattern</li>
+<li>Facade Pattern</li>
+<li>Observer Pattern</li>
+<li>Iterator Pattern</li>
+<li>Lazy Initialization Pattern</li>
+<li>Proxy Pattern</li>
+<li>Builder Pattern</li>
+</ul>
+</li>
+<li>jQuery Plugin Design Patterns</li>
+<li>JavaScript Namespacing Patterns</li>
+<li>Conclusions</li>
+<li>References</li>
+</ul>
+</blockquote>
+<h2 id="title-class"><code>class</code></h2>
+<p><a href="https://medium.com/@dan_abramov/how-to-use-classes-and-sleep-at-night-9af8de78ccb4">How to Use Classes and Sleep at Night - Dan Abramov - 20151015</a></p>
+<p>Problem :</p>
+<ul>
+<li>Classes obscure the prototypal inheritance at the core of JS.</li>
+<li>Classes encourage inheritance but you should prefer composition.</li>
+<li>Classes tend to lock you into the first bad design you came up with.</li>
+</ul>
+<p>How to use classes and sleep at night :</p>
+<ul>
+<li>Resist making classes your public API.</li>
+<li>Don’t inherit more than once.</li>
+<li>Don’t make <code>super</code> calls from methods.</li>
+<li>Don’t expect people to use your classes.</li>
+<li>Learn functional programming</li>
+</ul>
+<p>Applied to React :</p>
+<ul>
+<li>You can use <code>class</code> in your JS if you don’t inherit twice and don’t use <code>super</code>.</li>
+<li>Prefer to write React components as pure functions when possible.</li>
+<li>Use ES6 classes for components if you need the state or lifecycle hooks.</li>
+<li>In this case, you may only extend <code>React.Component</code> directly.</li>
+<li>Give your feedback to the React team on the functional state proposals.</li>
+</ul>
+</article></body></html>

@@ -1,12 +1,33 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-git---branch-tracking">git - branch tracking</h1> <h2 id="title-understanding-tracking-branches-in-git">Understanding Tracking Branches in Git</h2> <ul> <li><a href="http://www.lornajane.net/posts/2014/understanding-tracking-branches-in-git">source</a></li> <li><a href="https://git-scm.com/book/it/v2/Git-Branching-Remote-Branches">git-scm.com - Git-Branching-Remote-Branches <strong>must read</strong></a></li> </ul> <h2 id="title-what-is-a-tracking-branch">What is a tracking branch?</h2> <p>This is a branch which knows which remote branch it is related to, and making this link allows us to take advantage of some neat git tricks. In particular:</p> <ul> <li>You can <code>git push</code> or <code>git pull</code> without specifying remote or branch and it will use its tracking sister branch by default</li> <li>The <code>git status</code> command will include information about how far behind your tracking branch you are - useful to remind you that you haven’t pushed your changes yet! It looks like this:</li> </ul> <pre><code class="lang-bash">$ git status
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.a092d0a1.js"></script></head><body><article class="markdown-body"><h1 id="title-git---branch-tracking">git - branch tracking</h1>
+<h2 id="title-understanding-tracking-branches-in-git">Understanding Tracking Branches in Git</h2>
+<ul>
+<li><a href="http://www.lornajane.net/posts/2014/understanding-tracking-branches-in-git">source</a></li>
+<li><a href="https://git-scm.com/book/it/v2/Git-Branching-Remote-Branches">git-scm.com - Git-Branching-Remote-Branches <strong>must read</strong></a></li>
+</ul>
+<h2 id="title-what-is-a-tracking-branch">What is a tracking branch?</h2>
+<p>This is a branch which knows which remote branch it is related to, and making this link allows us to take advantage of some neat git tricks. In particular:</p>
+<ul>
+<li>You can <code>git push</code> or <code>git pull</code> without specifying remote or branch and it will use its tracking sister branch by default</li>
+<li>The <code>git status</code> command will include information about how far behind your tracking branch you are - useful to remind you that you haven’t pushed your changes yet! It looks like this:</li>
+</ul>
+<pre><code class="lang-bash">$ git status
 # On branch branch1
 # Your branch is ahead of &#39;origin/branch1&#39; by 1 commit.
 #   (use &quot;git push&quot; to publish your local commits)
 #
-nothing to commit, working directory clean</code></pre> <h2 id="title-which-branches-are-tracking-what">Which branches are tracking what?</h2> <p>Let’s start with getting a handle on what branches are currently tracking other branches, using <code>git branch -vv</code></p> <pre><code class="lang-bash">$ git branch -vv
+nothing to commit, working directory clean</code></pre>
+<h2 id="title-which-branches-are-tracking-what">Which branches are tracking what?</h2>
+<p>Let’s start with getting a handle on what branches are currently tracking other branches, using <code>git branch -vv</code></p>
+<pre><code class="lang-bash">$ git branch -vv
   branch1    c98bacf [origin/branch1] A random change of 24459 to ideas2.txt
   experiment 09a0eb9 A random change of 16603 to list2.txt
-* master     09a0eb9 [origin/master] A random change of 16603 to list2.txt</code></pre> <p>This shows three branches, two of them are tracking branches on another remote. It’s common for the branches to have the same names on the various remotes but it’s only a convention; you can actually call them anything you like (but beware of getting confused!)</p> <h2 id="title-remove-a-current-tracking-relationship">Remove a current tracking relationship</h2> <pre><code class="lang-bash">git branch --unset-upstream</code></pre> <h2 id="title-link-a-branch-to-an-upstream-branch">Link a branch to an upstream branch</h2> <p>If you’re pushing a branch (even if it exists in both places) to a remote location and you want to create the link:</p> <pre><code class="lang-bash">$ git push -u origin feature
+* master     09a0eb9 [origin/master] A random change of 16603 to list2.txt</code></pre>
+<p>This shows three branches, two of them are tracking branches on another remote. It’s common for the branches to have the same names on the various remotes but it’s only a convention; you can actually call them anything you like (but beware of getting confused!)</p>
+<h2 id="title-remove-a-current-tracking-relationship">Remove a current tracking relationship</h2>
+<pre><code class="lang-bash">git branch --unset-upstream</code></pre>
+<h2 id="title-link-a-branch-to-an-upstream-branch">Link a branch to an upstream branch</h2>
+<p>If you’re pushing a branch (even if it exists in both places) to a remote location and you want to create the link:</p>
+<pre><code class="lang-bash">$ git push -u origin feature
 Counting objects: 9, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (5/5), done.
@@ -14,13 +35,24 @@ Writing objects: 100% (9/9), 746 bytes | 0 bytes/s, done.
 Total 9 (delta 2), reused 0 (delta 0)
 To /home/lorna/.../scripts/origin.git
  * [new branch]      feature -&gt; feature
-Branch feature set up to track remote branch feature from origin.</code></pre> <p>If you’re creating a local version of an existing remote branch:</p> <pre><code class="lang-bash">$ git fetch origin
+Branch feature set up to track remote branch feature from origin.</code></pre>
+<p>If you’re creating a local version of an existing remote branch:</p>
+<pre><code class="lang-bash">$ git fetch origin
 remote: Counting objects: 9, done.
 remote: Compressing objects: 100% (5/5), done.
 remote: Total 9 (delta 2), reused 0 (delta 0)
 Unpacking objects: 100% (9/9), done.
 From /home/lorna/.../scripts/origin
- * [new branch]      feature    -&gt; origin/feature</code></pre> <p>Then:</p> <pre><code class="lang-bash">$ git checkout feature
+ * [new branch]      feature    -&gt; origin/feature</code></pre>
+<p>Then:</p>
+<pre><code class="lang-bash">$ git checkout feature
 Branch feature set up to track remote branch feature from origin.
-Switched to a new branch &#39;feature&#39;</code></pre> <p>Addenda : If you have already an existing remote branch (<code>upstream</code> is the remote alias):</p> <pre><code class="lang-bash">git checkout foo
-git branch -u upstream/foo</code></pre> <p>or</p> <pre><code class="lang-bash">git branch -u upstream/foo foo</code></pre> <h2 id="title-which-branches-get-pushedpulled">Which branches get pushed/pulled?</h2> <p>This is an area of confusion because the defaults changed between versions of git. Take a look at your config (use <code>git config --list</code>) and find a setting called <code>push.default</code>. The usual default is <code>simple</code> which will only push/pull the branch to/from the branch you’re currently on and the one it tracks. You can optionally set this to be <code>matching</code> (this was once the default) which will then push/pull all changes between all branches and their remote tracking sisters. Sometimes this second option is cumbersome if you have a branch that is not the one you’re working on get into a state where it won’t merge!</p> </article></body></html>
+Switched to a new branch &#39;feature&#39;</code></pre>
+<p>Addenda : If you have already an existing remote branch (<code>upstream</code> is the remote alias):</p>
+<pre><code class="lang-bash">git checkout foo
+git branch -u upstream/foo</code></pre>
+<p>or</p>
+<pre><code class="lang-bash">git branch -u upstream/foo foo</code></pre>
+<h2 id="title-which-branches-get-pushedpulled">Which branches get pushed/pulled?</h2>
+<p>This is an area of confusion because the defaults changed between versions of git. Take a look at your config (use <code>git config --list</code>) and find a setting called <code>push.default</code>. The usual default is <code>simple</code> which will only push/pull the branch to/from the branch you’re currently on and the one it tracks. You can optionally set this to be <code>matching</code> (this was once the default) which will then push/pull all changes between all branches and their remote tracking sisters. Sometimes this second option is cumbersome if you have a branch that is not the one you’re working on get into a state where it won’t merge!</p>
+</article></body></html>

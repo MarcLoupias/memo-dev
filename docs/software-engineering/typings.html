@@ -1,4 +1,19 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-typings">typings</h1> <p><a href="https://en.wikipedia.org/wiki/Type_system">Type System</a></p> <p>In programming languages, a type system is a set of rules that assigns a property called type to the various constructs of a computer program, such as variables, expressions, functions or modules.[1] These types formalize and enforce the otherwise implicit categories the programmer uses for algebraic data types, data structures, or other components (e.g. “string”, “array of float”, “function returning boolean”).</p> <p>The main purpose of a type system is to reduce possibilities for bugs in computer programs[2] by defining interfaces between different parts of a computer program, and then checking that the parts have been connected in a consistent way.</p> <p>This checking can happen <strong>statically</strong> (<strong>at compile time</strong>), <strong>dynamically</strong> (<strong>at run time</strong>), or as a combination of static and dynamic checking.</p> <h2 id="title-static-vs-dynamic-typings">static vs dynamic typings</h2> <h3 id="title-static-type-checking">static type checking</h3> <p>Static type checking is the process of verifying the type safety of a program based on analysis of a program’s text (source code).<br>If a program passes a static type checker, then the program is guaranteed to satisfy some set of type safety properties for all possible inputs.</p> <p>Can be ran before compile time, at write time.</p> <h3 id="title-dynamic-type-checking">dynamic type checking</h3> <p>Dynamic type checking is the process of verifying the type safety of a program at runtime.</p> <h3 id="title-combination">combination</h3> <p>Combination of static and dynamic type checking enable downcasting :</p> <p>In class-based programming, downcasting or type refinement is the act of casting a reference of a base class to one of its derived classes.</p> <p>Example in Java :</p> <pre><code class="lang-java">
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.a092d0a1.js"></script></head><body><article class="markdown-body"><h1 id="title-typings">typings</h1>
+<p><a href="https://en.wikipedia.org/wiki/Type_system">Type System</a></p>
+<p>In programming languages, a type system is a set of rules that assigns a property called type to the various constructs of a computer program, such as variables, expressions, functions or modules.[1] These types formalize and enforce the otherwise implicit categories the programmer uses for algebraic data types, data structures, or other components (e.g. “string”, “array of float”, “function returning boolean”).</p>
+<p>The main purpose of a type system is to reduce possibilities for bugs in computer programs[2] by defining interfaces between different parts of a computer program, and then checking that the parts have been connected in a consistent way.</p>
+<p>This checking can happen <strong>statically</strong> (<strong>at compile time</strong>), <strong>dynamically</strong> (<strong>at run time</strong>), or as a combination of static and dynamic checking.</p>
+<h2 id="title-static-vs-dynamic-typings">static vs dynamic typings</h2>
+<h3 id="title-static-type-checking">static type checking</h3>
+<p>Static type checking is the process of verifying the type safety of a program based on analysis of a program’s text (source code).<br>If a program passes a static type checker, then the program is guaranteed to satisfy some set of type safety properties for all possible inputs.</p>
+<p>Can be ran before compile time, at write time.</p>
+<h3 id="title-dynamic-type-checking">dynamic type checking</h3>
+<p>Dynamic type checking is the process of verifying the type safety of a program at runtime.</p>
+<h3 id="title-combination">combination</h3>
+<p>Combination of static and dynamic type checking enable downcasting :</p>
+<p>In class-based programming, downcasting or type refinement is the act of casting a reference of a base class to one of its derived classes.</p>
+<p>Example in Java :</p>
+<pre><code class="lang-java">
 public class Fruit{}  // parent class
 public class Apple extends Fruit{}  // child class
 
@@ -9,14 +24,24 @@ public static void main(String args[]) {
     // holding an instance of Apple:
     Apple child = (Apple)parent;
 }
-</code></pre> <h2 id="title-manifest-vs-inferred-typings">manifest vs inferred typings</h2> <h3 id="title-manifest-typing">manifest typing</h3> <p>Manifest typing is explicit identification by the software programmer of the type of each variable being declared.</p> <p>For example: if variable X is going to store integers then its type must be declared as integer.</p> <pre><code class="lang-C">
+</code></pre>
+<h2 id="title-manifest-vs-inferred-typings">manifest vs inferred typings</h2>
+<h3 id="title-manifest-typing">manifest typing</h3>
+<p>Manifest typing is explicit identification by the software programmer of the type of each variable being declared.</p>
+<p>For example: if variable X is going to store integers then its type must be declared as integer.</p>
+<pre><code class="lang-C">
 int addone(int x) {
     int result; /* declare integer result */
 
     result = x + 1;
     return result;
 }
-</code></pre> <p>The type system rejects, at compile-time, such fallacies as trying to pass a string to <code>addone</code> function.</p> <h3 id="title-inferred-typing">inferred typing</h3> <p>Type inference refers to the automatic detection of the data type of an expression in a programming language.</p> <p>This JavaScript example would not work in C language :</p> <pre><code class="lang-javascript">
+</code></pre>
+<p>The type system rejects, at compile-time, such fallacies as trying to pass a string to <code>addone</code> function.</p>
+<h3 id="title-inferred-typing">inferred typing</h3>
+<p>Type inference refers to the automatic detection of the data type of an expression in a programming language.</p>
+<p>This JavaScript example would not work in C language :</p>
+<pre><code class="lang-javascript">
 function addOneThenOne(x) {
      var result;  /* inferred-type variable result */
      var result2; /* inferred-type variable result #2 */
@@ -28,4 +53,21 @@ function addOneThenOne(x) {
  }
 
  addOneThenOne(2); // return 4
-</code></pre> <h2 id="title-nominal-vs-structural-typings">nominal vs structural typings</h2> <h3 id="title-nominal-typing">nominal typing</h3> <p>A nominal or nominative type system (or name-based type system) is a major class of type system, in which compatibility and equivalence of data types is determined by explicit declarations and/or <strong>the name</strong> of the types.</p> <p>Nominal typing means that two variables are type-compatible <strong>if and only if</strong> their declarations name the same type.</p> <p>For example, in C, two <code>struct</code> types with different names in the same translation unit are never considered compatible, even if they have identical field declarations.</p> <p>C++, C#, Java, Objective-C, Delphi, Swift, and Rust all primarily use both nominal typing and nominal subtyping.</p> <h3 id="title-structural-typing">structural typing</h3> <p>A structural type system (or property-based type system) is a major class of type system, in which type compatibility and equivalence are determined by the type’s actual structure or definition, and not by other characteristics such as its name or place of declaration.</p> <h3 id="title-pros-vs-cons">pros vs cons</h3> <p>Nominal typing is useful at preventing accidental type equivalence, which allows better type-safety than structural typing. The cost is a reduced flexibility, as, for example, nominal typing does not allow new super-types to be created without modification of the existing subtypes.</p> <h2 id="title-duck-typing">duck typing</h2> <p>“If it walks like a duck and it quacks like a duck, then it must be a duck.”</p> <p>Usually evaluated at runtime, some languages have capabilities to evaluate it at compile time.</p> <h3 id="title-duck-typing-is-not-equal-to-structural-typing">duck typing is not equal to structural typing</h3> <p>The main difference is that structural typing is enforced during static analysis found in statically typed languages, while duck typing is a runtime phenomenon emerging from the object semantics of dynamically typed languages.</p> <p>In other wors, structural typing is a static typing and duck typing is a dynamic typing.</p> </article></body></html>
+</code></pre>
+<h2 id="title-nominal-vs-structural-typings">nominal vs structural typings</h2>
+<h3 id="title-nominal-typing">nominal typing</h3>
+<p>A nominal or nominative type system (or name-based type system) is a major class of type system, in which compatibility and equivalence of data types is determined by explicit declarations and/or <strong>the name</strong> of the types.</p>
+<p>Nominal typing means that two variables are type-compatible <strong>if and only if</strong> their declarations name the same type.</p>
+<p>For example, in C, two <code>struct</code> types with different names in the same translation unit are never considered compatible, even if they have identical field declarations.</p>
+<p>C++, C#, Java, Objective-C, Delphi, Swift, and Rust all primarily use both nominal typing and nominal subtyping.</p>
+<h3 id="title-structural-typing">structural typing</h3>
+<p>A structural type system (or property-based type system) is a major class of type system, in which type compatibility and equivalence are determined by the type’s actual structure or definition, and not by other characteristics such as its name or place of declaration.</p>
+<h3 id="title-pros-vs-cons">pros vs cons</h3>
+<p>Nominal typing is useful at preventing accidental type equivalence, which allows better type-safety than structural typing. The cost is a reduced flexibility, as, for example, nominal typing does not allow new super-types to be created without modification of the existing subtypes.</p>
+<h2 id="title-duck-typing">duck typing</h2>
+<p>“If it walks like a duck and it quacks like a duck, then it must be a duck.”</p>
+<p>Usually evaluated at runtime, some languages have capabilities to evaluate it at compile time.</p>
+<h3 id="title-duck-typing-is-not-equal-to-structural-typing">duck typing is not equal to structural typing</h3>
+<p>The main difference is that structural typing is enforced during static analysis found in statically typed languages, while duck typing is a runtime phenomenon emerging from the object semantics of dynamically typed languages.</p>
+<p>In other wors, structural typing is a static typing and duck typing is a dynamic typing.</p>
+</article></body></html>

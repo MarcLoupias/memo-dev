@@ -1,1 +1,259 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-authentification">Authentification</h1> <h2 id="title-articles-divers">articles divers</h2> <p><a href="https://www.01net.com/actualites/l-authentification-sans-mot-de-passe-sur-le-web-c-est-pour-bientot-1475642.html">L’authentification sans mot de passe sur le Web, c’est pour bientôt - www.01net.com - 20180826</a></p> <blockquote> <p><strong>L’API WebAuthn pourrait rapidement s’imposer</strong></p> <ul> <li>Cf FIDO2 et <a href="https://www.yubico.com/2018/04/new-security-key-fido2/">Yubico</a>.</li> <li>Supporté par W3C</li> <li>Démo : <a href="https://webauthn.org/">https://webauthn.org/</a></li> </ul> <p><strong>Le courrier électronique comme moyen d’authentification ?</strong></p> <ul> <li>Authentification par mail en se basant sur les headers DKIM (Domain Keys Identified Mail).</li> <li>Cf <a href="https://swoopnow.com/">Swoop</a>.</li> </ul> <p><strong>Utiliser les technologies des cryptomonnaies</strong></p> <p>Utiliser les applis qui gèrent les comptes de cryptomonnaies pour authentifier les utilisateurs.</p> </blockquote> <h2 id="title-cookies-vs-tokens">Cookies vs Tokens</h2> <p><a href="https://auth0.com/blog/cookies-vs-tokens-definitive-guide/">Cookies vs Tokens: The Definitive Guide - auth0.com - 20160531</a></p> <h2 id="title-diff-oauth--openid--saml">diff oAuth / OpenID / SAML</h2> <ul> <li><p>OAuth is about giving access to your stuff without sharing your identity at all</p> </li> <li><p>OpenID is all about using a single identity to sign into many sites</p> </li> <li><p><a href="http://stackoverflow.com/questions/1087031/whats-the-difference-between-openid-and-oauth">What’s the difference between OpenID and OAuth? : stackoverflow.com</a></p> </li> <li><p><a href="https://security.stackexchange.com/questions/44611/difference-between-oauth-openid-and-openid-connect-in-very-simple-term">Difference Between OAUTH, OpenID and OPENID Connect in very simple term? : security.stackexchange.com</a></p> </li> <li><p><a href="https://security.stackexchange.com/questions/94995/oauth-2-vs-openid-connect-to-secure-api">OAuth 2 vs OpenID Connect to secure API : security.stackexchange.com</a></p> </li> </ul> <p><a href="https://spin.atomicobject.com/2016/05/30/openid-oauth-saml/">Authentication and Authorization: OpenID vs OAuth2 vs SAML</a></p> <table> <thead> <tr> <th></th> <th>OAuth2</th> <th>OpenId</th> <th>SAML</th> </tr> </thead> <tbody><tr> <td>Token (or assertion) format</td> <td>JSON or SAML2</td> <td>JSON</td> <td>XML</td> </tr> <tr> <td>Authorization?</td> <td>Yes</td> <td>No</td> <td>Yes</td> </tr> <tr> <td>Authentication?</td> <td>Pseudo-authentification</td> <td>Yes</td> <td>Yes</td> </tr> <tr> <td>Year created</td> <td>2005</td> <td>2006</td> <td>2001</td> </tr> <tr> <td>Current version</td> <td>OAuth2</td> <td>OpenID Connect</td> <td>SAML 2.0</td> </tr> <tr> <td>Transport</td> <td>HTTP</td> <td>HTTP GET and POST</td> <td>HTTP Redirect, SOAP, …</td> </tr> <tr> <td>Best suited for</td> <td>API authorization</td> <td>SSO for consumer apps</td> <td>SSO for enterprise (bad on mobile)</td> </tr> </tbody></table> <p>See article above for security risks.</p> <p><a href="https://www.gluu.org/blog/oauth-vs-saml-vs-openid-connect/">OAuth vs. SAML vs. OpenID Connect</a></p> <blockquote> <p>So when should you use SAML, and when should you use OpenID Connect?</p> <ul> <li>If you have a mobile application, use OpenID Connect–no question. See <a href="http://www.gluu.co/appauth-blog">this blog on the use of AppAuth</a>.</li> <li>If you have an application that already supports SAML–use SAML!</li> <li>If you are writing a new application, use OpenID Connect–skate to where the puck is going!</li> <li>If you need to protect API’s, or you need to create an API Gateway… that’s a topic for another blog. Short answer: use OAuth2 or the <a href="https://www.gluu.org/resources/documents/standards/uma/">User Managed Access (“UMA”)</a> protocol!</li> </ul> </blockquote> <h2 id="title-oauth">OAuth</h2> <ul> <li><a href="http://oauth.net/">oauth.net</a></li> <li><a href="http://hueniverse.com/2007/09/05/explaining-oauth/">explaining-oauth : hueniverse.com</a></li> <li><a href="http://hueniverse.com/2007/10/04/beginners-guide-to-oauth-part-i-overview/">beginners-guide-to-oauth-part-i-overview : hueniverse.com</a></li> <li><a href="http://stackoverflow.com/questions/12319385/angularjs-oauth-play-2-0">Angularjs + OAuth + Play 2.0</a></li> </ul> <h2 id="title-is-oauth-deprecated-">Is OAuth deprecated ?</h2> <p><a href="http://stackoverflow.com/questions/17679523/am-i-right-in-thinking-oauth-1-0-has-been-deprecated-in-favour-of-oauth-2-0">Am I right in thinking OAuth 1.0 has been deprecated in favour of OAuth 2.0? : stackoverflow.com</a></p> <blockquote> <p>IETF has published a new version of OAuth 2 obsoleting OAuth 1.x and it strongly recommends the new Auth providers switch to OAuth2.</p> <p>There is a revision to <strong>OAuth 1.0a</strong> which fixes many of the security flaws found in 1.0 and is widely considered to be the most secure OAuth version yet. </p> </blockquote> <h2 id="title-oauth2">OAuth2</h2> <p><a href="https://oauth.net/2/">OAuth 2.0 website</a></p> <p><a href="https://oauth.net/articles/authentication/">User Authentication with OAuth 2.0</a></p> <blockquote> <p>The OAuth 2.0 specification defines a delegation protocol that is useful for conveying authorization decisions across<br>a network of web-enabled applications and APIs. OAuth is used in a wide variety of applications, including providing<br>mechanisms for user authentication.<br>This has led many developers and API providers to incorrectly conclude that OAuth is itself an authentication protocol<br>and to mistakenly use it as such. Let’s say that again, to be clear:</p> <p><strong>OAuth 2.0 is not an authentication protocol.</strong></p> <p>Much of the confusion comes from the fact that OAuth is used <em>inside</em> of authentication protocols, and developers will<br>see the OAuth components and interact with the OAuth flow and assume that by simply using OAuth, they can accomplish<br>user authentication. This turns out to be not only untrue, but also dangerous for service providers, developers, and end users.</p> </blockquote> <p><a href="http://www.bortzmeyer.org/6749.html">Analyse RFC 6749 par Stéphane Bortzmeyer</a></p> <blockquote> <p>OpenID vise à authentifier un utilisateur humain, OAuth à authentifier la requête d’un programme, agissant<br>pour le compte d’un humain.</p> </blockquote> <p><a href="https://aaronparecki.com/oauth-2-simplified/">OAuth 2 Simplified : aaronparecki.com</a></p> <blockquote> <p>This post describes OAuth 2.0 in a simplified format to help developers and service providers implement the protocol.</p> <p>The OAuth 2 spec can be a bit confusing to read, so I’ve written this post to help describe the terminology in a<br>simplified format. The core spec leaves many decisions up to the implementer, often based on security tradeoffs of the<br>implementation. Instead of describing all possible decisions that need to be made to successfully implement OAuth 2,<br>this post makes decisions that are appropriate for most implementations.</p> </blockquote> <h3 id="title-rfc">RFC</h3> <h4 id="title-core">Core</h4> <p><a href="https://tools.ietf.org/html/rfc6749">RFC6749 - The OAuth 2.0 Authorization Framework</a></p> <blockquote> <p>The OAuth 2.0 authorization framework enables a third-party<br>application to obtain limited access to an HTTP service, either on<br>behalf of a resource owner by orchestrating an approval interaction<br>between the resource owner and the HTTP service, or by allowing the<br>third-party application to obtain access on its own behalf. This<br>specification replaces and obsoletes the OAuth 1.0 protocol described<br>in RFC 5849.</p> </blockquote> <p><a href="https://tools.ietf.org/html/rfc6750">RFC6750 - The OAuth 2.0 Authorization Framework: Bearer Token Usage</a></p> <blockquote> <p>This specification describes how to use bearer tokens in HTTP<br>requests to access OAuth 2.0 protected resources. Any party in<br>possession of a bearer token (a “bearer”) can use it to get access to<br>the associated resources (without demonstrating possession of a<br>cryptographic key). To prevent misuse, bearer tokens need to be<br>protected from disclosure in storage and in transport.</p> </blockquote> <p><a href="https://tools.ietf.org/html/rfc6819">RFC6819 - OAuth 2.0 Threat Model and Security Considerations</a></p> <blockquote> <p>This document gives additional security considerations for OAuth,<br>beyond those in the OAuth 2.0 specification, based on a comprehensive<br>threat model for the OAuth 2.0 protocol.</p> </blockquote> <h4 id="title-extensions">Extensions</h4> <p><a href="https://tools.ietf.org/html/rfc7521">RFC 7521 - Assertion Framework for OAuth 2.0 Client Authentication and Authorization Grants</a></p> <blockquote> <p>This specification provides a framework for the use of assertions<br>with OAuth 2.0 in the form of a new client authentication mechanism<br>and a new authorization grant type. Mechanisms are specified for<br>transporting assertions during interactions with a token endpoint;<br>general processing rules are also specified.</p> <p>The intent of this specification is to provide a common framework for<br>OAuth 2.0 to interwork with other identity systems using assertions<br>and to provide alternative client authentication mechanisms.</p> <p>Note that this specification only defines abstract message flows and<br>processing rules. In order to be implementable, companion<br>specifications are necessary to provide the corresponding concrete<br>instantiations.</p> </blockquote> <p><a href="https://tools.ietf.org/html/rfc7591">RFC7591 - OAuth 2.0 Dynamic Client Registration Protocol</a></p> <blockquote> <p>This specification defines mechanisms for dynamically registering<br>OAuth 2.0 clients with authorization servers. Registration requests<br>send a set of desired client metadata values to the authorization<br>server. The resulting registration responses return a client<br>identifier to use at the authorization server and the client metadata<br>values registered for the client. The client can then use this<br>registration information to communicate with the authorization server<br>using the OAuth 2.0 protocol. This specification also defines a set<br>of common client metadata fields and values for clients to use during<br>registration.</p> </blockquote> <p><a href="https://tools.ietf.org/html/rfc7592">RFC7592 - OAuth 2.0 Dynamic Client Registration Management Protocol</a></p> <blockquote> <p>This specification defines methods for management of OAuth 2.0<br>dynamic client registrations for use cases in which the properties of<br>a registered client may need to be changed during the lifetime of the<br>client. Not all authorization servers supporting dynamic client<br>registration will support these management methods.</p> </blockquote> <p><a href="https://tools.ietf.org/html/rfc7662">RFC7662 - OAuth 2.0 Token Introspection</a></p> <blockquote> <p>This specification defines a method for a protected resource to query<br>an OAuth 2.0 authorization server to determine the active state of an<br>OAuth 2.0 token and to determine meta-information about this token.<br>OAuth 2.0 deployments can use this method to convey information about<br>the authorization context of the token from the authorization server<br>to the protected resource.</p> </blockquote> <p><a href="https://tools.ietf.org/html/rfc7797">RFC7797 - JSON Web Signature (JWS) Unencoded Payload Option</a></p> <blockquote> <p>JSON Web Signature (JWS) represents the payload of a JWS as a<br>base64url-encoded value and uses this value in the JWS Signature<br>computation. While this enables arbitrary payloads to be integrity<br>protected, some have described use cases in which the base64url<br>encoding is unnecessary and/or an impediment to adoption, especially<br>when the payload is large and/or detached. This specification<br>defines a means of accommodating these use cases by defining an<br>option to change the JWS Signing Input computation to not base64url-<br>encode the payload. This option is intended to broaden the set of<br>use cases for which the use of JWS is a good fit.</p> <p>This specification updates RFC 7519 by stating that JSON Web Tokens<br>(JWTs) MUST NOT use the unencoded payload option defined by this<br>specification.</p> </blockquote> <p><a href="https://tools.ietf.org/html/rfc7523">RFC7523 - JSON Web Token (JWT) Profile for OAuth 2.0 Client Authentication and Authorization Grants</a></p> <blockquote> <p>This specification defines the use of a JSON Web Token (JWT) Bearer<br>Token as a means for requesting an OAuth 2.0 access token as well as<br>for client authentication.</p> </blockquote> <p><a href="https://tools.ietf.org/html/rfc7800">RFC7800 - Proof-of-Possession Key Semantics for JSON Web Tokens (JWTs)</a></p> <blockquote> <p>This specification describes how to declare in a JSON Web Token (JWT)<br>that the presenter of the JWT possesses a particular proof-of-<br>possession key and how the recipient can cryptographically confirm<br>proof of possession of the key by the presenter. Being able to prove<br>possession of a key is also sometimes described as the presenter<br>being a holder-of-key.</p> </blockquote> <p><a href="https://tools.ietf.org/html/rfc7009">RFC7009 - OAuth 2.0 Token Revocation</a></p> <blockquote> <p>This document proposes an additional endpoint for OAuth authorization<br>servers, which allows clients to notify the authorization server that<br>a previously obtained refresh or access token is no longer needed.<br>This allows the authorization server to clean up security<br>credentials. A revocation request will invalidate the actual token<br>and, if applicable, other tokens based on the same authorization<br>grant.</p> </blockquote> <p><a href="https://tools.ietf.org/html/rfc7522">RFC7522 - Security Assertion Markup Language (SAML) 2.0 Profile for OAuth 2.0 Client Authentication and Authorization Grants</a></p> <blockquote> <p>This specification defines the use of a Security Assertion Markup<br>Language (SAML) 2.0 Bearer Assertion as a means for requesting an<br>OAuth 2.0 access token as well as for client authentication.</p> </blockquote> <p><a href="https://tools.ietf.org/html/rfc7636">RFC7636 - Proof Key for Code Exchange by OAuth Public Clients</a></p> <blockquote> <p>OAuth 2.0 public clients utilizing the Authorization Code Grant are<br>susceptible to the authorization code interception attack. This<br>specification describes the attack as well as a technique to mitigate<br>against the threat through the use of Proof Key for Code Exchange<br>(PKCE, pronounced “pixy”).</p> </blockquote> <p><a href="https://tools.ietf.org/html/rfc6755">RFC6755 - An IETF URN Sub-Namespace for OAuth</a></p> <blockquote> <p>This document establishes an IETF URN Sub-namespace for use with<br>OAuth-related specifications.</p> </blockquote> <h3 id="title-articles">Articles</h3> <ul> <li><a href="http://www.bubblecode.net/fr/2016/01/22/comprendre-oauth2/">Comprendre OAuth2 : http://www.bubblecode.net</a> <strong>good</strong></li> <li><a href="https://www.cnet.com/news/oauth-2-0-leader-resigns-says-standard-is-bad/">OAuth 2.0 leader resigns, says standard is ‘bad’ : cnet.com</a></li> </ul> <h3 id="title-acces-token--refresh-token">Acces Token &amp; Refresh Token</h3> <p><a href="http://stackoverflow.com/questions/3487991/why-does-oauth-v2-have-both-access-and-refresh-tokens/12885823#12885823">Why Does OAuth v2 Have Both Access and Refresh Tokens? : stackoverflow.com</a></p> <h3 id="title-authorization-servers">Authorization servers</h3> <ul> <li><a href="http://developer.github.com/v3/oauth/">github developer oauth</a></li> <li><a href="https://developers.google.com/identity/protocols/OAuth2">Using OAuth 2.0 to Access Google APIs</a></li> <li><a href="https://developers.facebook.com/docs/facebook-login/web">Facebook Login pour le web avec le SDK JavaScript</a></li> <li><a href="https://dev.twitter.com/oauth/reference/post/oauth2/token">Twitter Developer Documentation - POST oauth2/token</a></li> <li><a href="https://developer.linkedin.com/docs/oauth2#">LinkedIn Authenticating with OAuth 2.0</a></li> </ul> <h2 id="title-jwt">JWT</h2> <p><a href="https://www.youtube.com/watch?v=A2-YImhNVMU">100% Stateless avec JWT (JSON Web Token) (Hubert SABLONNIÈRE) : Devoxx2016</a></p> <blockquote> <p><strong>Historique</strong></p> <ul> <li>historique de la gestion des sessions web via cookie</li> <li>rappel : diff cookie et JWT fausse, c’est diff entre sessionId et JWT car cookie est un mode de transport. JWT est<br>transporté via un cookie</li> <li>diff entre sessionId et token JWT<ul> <li>sessionId = token par référence (contient la référence à la session, la session étant stockée dans le backend)</li> <li>JWT = token par valeur (contient la valeur de la session : <code>H34D3R.P4YLO4D.S1GN47UR3</code>)</li> </ul> </li> </ul> <p><strong>JWT</strong><br>Un token JWT est encodé en Base64url (comme Base64 mais safe pour les urls)<br>3 parties (header, payload et signature) encodées chacune en Base64url, les parties sont séparées par un <code>.</code>.<br>Une fois décodé, les parties header et payload du token sont au format json.</p> <p>Les propriétés de la partie payload sont nommées des <code>claims</code> (codifiés par RFC7519).</p> <p><strong>Avantages</strong></p> <ul> <li>stocké côté client donc scalable</li> <li>multilangage</li> <li>microservices</li> <li>SSO gratuit </li> </ul> <p><strong>Usage avec d’autres technos</strong></p> <ul> <li>OAuth2 : Si le provider OAuth2 fournit des refresh token et access token JWT alors on est complètement stateless</li> <li>OpenID Connect : le token ID est de base un JWT</li> </ul> <p><strong>Inconvénients</strong></p> <ul> <li>Révocation de tokens (blacklist via le claim <code>jti</code>, crée un SPOF (Single Point Of Failure))</li> <li>transporté via cookies donc vulnérables aux attaques XSS et CSRF</li> </ul> <p><strong>Autres usages des JWT</strong></p> <ul> <li>stockage données session (panier, formulaire multipart, …)</li> <li>mail de confirmation en passant le token dans l’url du mail de confirmation (évite le stockage BDD)</li> </ul> <p>Comment gérer les permissions via le JWT si celui-ci est HTTPonly (bonne pratique de sécu) ?<br>Nécessite un webservice qui lit le token et renvoie en clair les permissions.</p> </blockquote> <h3 id="title-rfc-1">RFC</h3> <p><a href="https://tools.ietf.org/html/rfc7519">JSON Web Token (JWT)</a></p> <h3 id="title-articles-1">Articles</h3> <ul> <li><a href="http://angularjs.blogspot.fr/2016/11/easy-angular-authentication-with-json.html">Easy Angular Authentication with JSON Web Tokens : angularjs.blogspot.fr</a></li> <li><a href="https://jwt.io/introduction/">Introduction to JSON Web Tokens : jwt.io</a></li> </ul> <h2 id="title-articles-securing-spa">articles securing SPA</h2> <ul> <li><a href="https://stormpath.com/blog/token-auth-for-java">Token Authentication for Java Applications : stormpath.com</a></li> <li><a href="https://stormpath.com/blog/token-auth-spa">Token Based Authentication for Single Page Apps (SPAs) : stormpath.com</a></li> <li><a href="https://stormpath.com/blog/secure-single-page-app-problem">secure-single-page-app-problem : stormpath.com</a></li> </ul> <h2 id="title-keycloak">keycloak</h2> <p><a href="https://www.youtube.com/watch?v=bVidgluUcg0&index=94&list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXAO">Sécuriser ses applications back et front facilement avec Keycloak (Sebastien Blanc) : Devoxx2016</a></p> </article></body></html>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.a092d0a1.js"></script></head><body><article class="markdown-body"><h1 id="title-authentification">Authentification</h1>
+<h2 id="title-articles-divers">articles divers</h2>
+<p><a href="https://www.01net.com/actualites/l-authentification-sans-mot-de-passe-sur-le-web-c-est-pour-bientot-1475642.html">L’authentification sans mot de passe sur le Web, c’est pour bientôt - www.01net.com - 20180826</a></p>
+<blockquote>
+<p><strong>L’API WebAuthn pourrait rapidement s’imposer</strong></p>
+<ul>
+<li>Cf FIDO2 et <a href="https://www.yubico.com/2018/04/new-security-key-fido2/">Yubico</a>.</li>
+<li>Supporté par W3C</li>
+<li>Démo : <a href="https://webauthn.org/">https://webauthn.org/</a></li>
+</ul>
+<p><strong>Le courrier électronique comme moyen d’authentification ?</strong></p>
+<ul>
+<li>Authentification par mail en se basant sur les headers DKIM (Domain Keys Identified Mail).</li>
+<li>Cf <a href="https://swoopnow.com/">Swoop</a>.</li>
+</ul>
+<p><strong>Utiliser les technologies des cryptomonnaies</strong></p>
+<p>Utiliser les applis qui gèrent les comptes de cryptomonnaies pour authentifier les utilisateurs.</p>
+</blockquote>
+<h2 id="title-cookies-vs-tokens">Cookies vs Tokens</h2>
+<p><a href="https://auth0.com/blog/cookies-vs-tokens-definitive-guide/">Cookies vs Tokens: The Definitive Guide - auth0.com - 20160531</a></p>
+<h2 id="title-diff-oauth--openid--saml">diff oAuth / OpenID / SAML</h2>
+<ul>
+<li><p>OAuth is about giving access to your stuff without sharing your identity at all</p>
+</li>
+<li><p>OpenID is all about using a single identity to sign into many sites</p>
+</li>
+<li><p><a href="http://stackoverflow.com/questions/1087031/whats-the-difference-between-openid-and-oauth">What’s the difference between OpenID and OAuth? : stackoverflow.com</a></p>
+</li>
+<li><p><a href="https://security.stackexchange.com/questions/44611/difference-between-oauth-openid-and-openid-connect-in-very-simple-term">Difference Between OAUTH, OpenID and OPENID Connect in very simple term? : security.stackexchange.com</a></p>
+</li>
+<li><p><a href="https://security.stackexchange.com/questions/94995/oauth-2-vs-openid-connect-to-secure-api">OAuth 2 vs OpenID Connect to secure API : security.stackexchange.com</a></p>
+</li>
+</ul>
+<p><a href="https://spin.atomicobject.com/2016/05/30/openid-oauth-saml/">Authentication and Authorization: OpenID vs OAuth2 vs SAML</a></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>OAuth2</th>
+<th>OpenId</th>
+<th>SAML</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Token (or assertion) format</td>
+<td>JSON or SAML2</td>
+<td>JSON</td>
+<td>XML</td>
+</tr>
+<tr>
+<td>Authorization?</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Authentication?</td>
+<td>Pseudo-authentification</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Year created</td>
+<td>2005</td>
+<td>2006</td>
+<td>2001</td>
+</tr>
+<tr>
+<td>Current version</td>
+<td>OAuth2</td>
+<td>OpenID Connect</td>
+<td>SAML 2.0</td>
+</tr>
+<tr>
+<td>Transport</td>
+<td>HTTP</td>
+<td>HTTP GET and POST</td>
+<td>HTTP Redirect, SOAP, …</td>
+</tr>
+<tr>
+<td>Best suited for</td>
+<td>API authorization</td>
+<td>SSO for consumer apps</td>
+<td>SSO for enterprise (bad on mobile)</td>
+</tr>
+</tbody></table>
+<p>See article above for security risks.</p>
+<p><a href="https://www.gluu.org/blog/oauth-vs-saml-vs-openid-connect/">OAuth vs. SAML vs. OpenID Connect</a></p>
+<blockquote>
+<p>So when should you use SAML, and when should you use OpenID Connect?</p>
+<ul>
+<li>If you have a mobile application, use OpenID Connect–no question. See <a href="http://www.gluu.co/appauth-blog">this blog on the use of AppAuth</a>.</li>
+<li>If you have an application that already supports SAML–use SAML!</li>
+<li>If you are writing a new application, use OpenID Connect–skate to where the puck is going!</li>
+<li>If you need to protect API’s, or you need to create an API Gateway… that’s a topic for another blog. Short answer: use OAuth2 or the <a href="https://www.gluu.org/resources/documents/standards/uma/">User Managed Access (“UMA”)</a> protocol!</li>
+</ul>
+</blockquote>
+<h2 id="title-oauth">OAuth</h2>
+<ul>
+<li><a href="http://oauth.net/">oauth.net</a></li>
+<li><a href="http://hueniverse.com/2007/09/05/explaining-oauth/">explaining-oauth : hueniverse.com</a></li>
+<li><a href="http://hueniverse.com/2007/10/04/beginners-guide-to-oauth-part-i-overview/">beginners-guide-to-oauth-part-i-overview : hueniverse.com</a></li>
+<li><a href="http://stackoverflow.com/questions/12319385/angularjs-oauth-play-2-0">Angularjs + OAuth + Play 2.0</a></li>
+</ul>
+<h2 id="title-is-oauth-deprecated-">Is OAuth deprecated ?</h2>
+<p><a href="http://stackoverflow.com/questions/17679523/am-i-right-in-thinking-oauth-1-0-has-been-deprecated-in-favour-of-oauth-2-0">Am I right in thinking OAuth 1.0 has been deprecated in favour of OAuth 2.0? : stackoverflow.com</a></p>
+<blockquote>
+<p>IETF has published a new version of OAuth 2 obsoleting OAuth 1.x and it strongly recommends the new Auth providers switch to OAuth2.</p>
+<p>There is a revision to <strong>OAuth 1.0a</strong> which fixes many of the security flaws found in 1.0 and is widely considered to be the most secure OAuth version yet. </p>
+</blockquote>
+<h2 id="title-oauth2">OAuth2</h2>
+<p><a href="https://oauth.net/2/">OAuth 2.0 website</a></p>
+<p><a href="https://oauth.net/articles/authentication/">User Authentication with OAuth 2.0</a></p>
+<blockquote>
+<p>The OAuth 2.0 specification defines a delegation protocol that is useful for conveying authorization decisions across<br>a network of web-enabled applications and APIs. OAuth is used in a wide variety of applications, including providing<br>mechanisms for user authentication.<br>This has led many developers and API providers to incorrectly conclude that OAuth is itself an authentication protocol<br>and to mistakenly use it as such. Let’s say that again, to be clear:</p>
+<p><strong>OAuth 2.0 is not an authentication protocol.</strong></p>
+<p>Much of the confusion comes from the fact that OAuth is used <em>inside</em> of authentication protocols, and developers will<br>see the OAuth components and interact with the OAuth flow and assume that by simply using OAuth, they can accomplish<br>user authentication. This turns out to be not only untrue, but also dangerous for service providers, developers, and end users.</p>
+</blockquote>
+<p><a href="http://www.bortzmeyer.org/6749.html">Analyse RFC 6749 par Stéphane Bortzmeyer</a></p>
+<blockquote>
+<p>OpenID vise à authentifier un utilisateur humain, OAuth à authentifier la requête d’un programme, agissant<br>pour le compte d’un humain.</p>
+</blockquote>
+<p><a href="https://aaronparecki.com/oauth-2-simplified/">OAuth 2 Simplified : aaronparecki.com</a></p>
+<blockquote>
+<p>This post describes OAuth 2.0 in a simplified format to help developers and service providers implement the protocol.</p>
+<p>The OAuth 2 spec can be a bit confusing to read, so I’ve written this post to help describe the terminology in a<br>simplified format. The core spec leaves many decisions up to the implementer, often based on security tradeoffs of the<br>implementation. Instead of describing all possible decisions that need to be made to successfully implement OAuth 2,<br>this post makes decisions that are appropriate for most implementations.</p>
+</blockquote>
+<h3 id="title-rfc">RFC</h3>
+<h4 id="title-core">Core</h4>
+<p><a href="https://tools.ietf.org/html/rfc6749">RFC6749 - The OAuth 2.0 Authorization Framework</a></p>
+<blockquote>
+<p>The OAuth 2.0 authorization framework enables a third-party<br>application to obtain limited access to an HTTP service, either on<br>behalf of a resource owner by orchestrating an approval interaction<br>between the resource owner and the HTTP service, or by allowing the<br>third-party application to obtain access on its own behalf. This<br>specification replaces and obsoletes the OAuth 1.0 protocol described<br>in RFC 5849.</p>
+</blockquote>
+<p><a href="https://tools.ietf.org/html/rfc6750">RFC6750 - The OAuth 2.0 Authorization Framework: Bearer Token Usage</a></p>
+<blockquote>
+<p>This specification describes how to use bearer tokens in HTTP<br>requests to access OAuth 2.0 protected resources. Any party in<br>possession of a bearer token (a “bearer”) can use it to get access to<br>the associated resources (without demonstrating possession of a<br>cryptographic key). To prevent misuse, bearer tokens need to be<br>protected from disclosure in storage and in transport.</p>
+</blockquote>
+<p><a href="https://tools.ietf.org/html/rfc6819">RFC6819 - OAuth 2.0 Threat Model and Security Considerations</a></p>
+<blockquote>
+<p>This document gives additional security considerations for OAuth,<br>beyond those in the OAuth 2.0 specification, based on a comprehensive<br>threat model for the OAuth 2.0 protocol.</p>
+</blockquote>
+<h4 id="title-extensions">Extensions</h4>
+<p><a href="https://tools.ietf.org/html/rfc7521">RFC 7521 - Assertion Framework for OAuth 2.0 Client Authentication and Authorization Grants</a></p>
+<blockquote>
+<p>This specification provides a framework for the use of assertions<br>with OAuth 2.0 in the form of a new client authentication mechanism<br>and a new authorization grant type. Mechanisms are specified for<br>transporting assertions during interactions with a token endpoint;<br>general processing rules are also specified.</p>
+<p>The intent of this specification is to provide a common framework for<br>OAuth 2.0 to interwork with other identity systems using assertions<br>and to provide alternative client authentication mechanisms.</p>
+<p>Note that this specification only defines abstract message flows and<br>processing rules. In order to be implementable, companion<br>specifications are necessary to provide the corresponding concrete<br>instantiations.</p>
+</blockquote>
+<p><a href="https://tools.ietf.org/html/rfc7591">RFC7591 - OAuth 2.0 Dynamic Client Registration Protocol</a></p>
+<blockquote>
+<p>This specification defines mechanisms for dynamically registering<br>OAuth 2.0 clients with authorization servers. Registration requests<br>send a set of desired client metadata values to the authorization<br>server. The resulting registration responses return a client<br>identifier to use at the authorization server and the client metadata<br>values registered for the client. The client can then use this<br>registration information to communicate with the authorization server<br>using the OAuth 2.0 protocol. This specification also defines a set<br>of common client metadata fields and values for clients to use during<br>registration.</p>
+</blockquote>
+<p><a href="https://tools.ietf.org/html/rfc7592">RFC7592 - OAuth 2.0 Dynamic Client Registration Management Protocol</a></p>
+<blockquote>
+<p>This specification defines methods for management of OAuth 2.0<br>dynamic client registrations for use cases in which the properties of<br>a registered client may need to be changed during the lifetime of the<br>client. Not all authorization servers supporting dynamic client<br>registration will support these management methods.</p>
+</blockquote>
+<p><a href="https://tools.ietf.org/html/rfc7662">RFC7662 - OAuth 2.0 Token Introspection</a></p>
+<blockquote>
+<p>This specification defines a method for a protected resource to query<br>an OAuth 2.0 authorization server to determine the active state of an<br>OAuth 2.0 token and to determine meta-information about this token.<br>OAuth 2.0 deployments can use this method to convey information about<br>the authorization context of the token from the authorization server<br>to the protected resource.</p>
+</blockquote>
+<p><a href="https://tools.ietf.org/html/rfc7797">RFC7797 - JSON Web Signature (JWS) Unencoded Payload Option</a></p>
+<blockquote>
+<p>JSON Web Signature (JWS) represents the payload of a JWS as a<br>base64url-encoded value and uses this value in the JWS Signature<br>computation. While this enables arbitrary payloads to be integrity<br>protected, some have described use cases in which the base64url<br>encoding is unnecessary and/or an impediment to adoption, especially<br>when the payload is large and/or detached. This specification<br>defines a means of accommodating these use cases by defining an<br>option to change the JWS Signing Input computation to not base64url-<br>encode the payload. This option is intended to broaden the set of<br>use cases for which the use of JWS is a good fit.</p>
+<p>This specification updates RFC 7519 by stating that JSON Web Tokens<br>(JWTs) MUST NOT use the unencoded payload option defined by this<br>specification.</p>
+</blockquote>
+<p><a href="https://tools.ietf.org/html/rfc7523">RFC7523 - JSON Web Token (JWT) Profile for OAuth 2.0 Client Authentication and Authorization Grants</a></p>
+<blockquote>
+<p>This specification defines the use of a JSON Web Token (JWT) Bearer<br>Token as a means for requesting an OAuth 2.0 access token as well as<br>for client authentication.</p>
+</blockquote>
+<p><a href="https://tools.ietf.org/html/rfc7800">RFC7800 - Proof-of-Possession Key Semantics for JSON Web Tokens (JWTs)</a></p>
+<blockquote>
+<p>This specification describes how to declare in a JSON Web Token (JWT)<br>that the presenter of the JWT possesses a particular proof-of-<br>possession key and how the recipient can cryptographically confirm<br>proof of possession of the key by the presenter. Being able to prove<br>possession of a key is also sometimes described as the presenter<br>being a holder-of-key.</p>
+</blockquote>
+<p><a href="https://tools.ietf.org/html/rfc7009">RFC7009 - OAuth 2.0 Token Revocation</a></p>
+<blockquote>
+<p>This document proposes an additional endpoint for OAuth authorization<br>servers, which allows clients to notify the authorization server that<br>a previously obtained refresh or access token is no longer needed.<br>This allows the authorization server to clean up security<br>credentials. A revocation request will invalidate the actual token<br>and, if applicable, other tokens based on the same authorization<br>grant.</p>
+</blockquote>
+<p><a href="https://tools.ietf.org/html/rfc7522">RFC7522 - Security Assertion Markup Language (SAML) 2.0 Profile for OAuth 2.0 Client Authentication and Authorization Grants</a></p>
+<blockquote>
+<p>This specification defines the use of a Security Assertion Markup<br>Language (SAML) 2.0 Bearer Assertion as a means for requesting an<br>OAuth 2.0 access token as well as for client authentication.</p>
+</blockquote>
+<p><a href="https://tools.ietf.org/html/rfc7636">RFC7636 - Proof Key for Code Exchange by OAuth Public Clients</a></p>
+<blockquote>
+<p>OAuth 2.0 public clients utilizing the Authorization Code Grant are<br>susceptible to the authorization code interception attack. This<br>specification describes the attack as well as a technique to mitigate<br>against the threat through the use of Proof Key for Code Exchange<br>(PKCE, pronounced “pixy”).</p>
+</blockquote>
+<p><a href="https://tools.ietf.org/html/rfc6755">RFC6755 - An IETF URN Sub-Namespace for OAuth</a></p>
+<blockquote>
+<p>This document establishes an IETF URN Sub-namespace for use with<br>OAuth-related specifications.</p>
+</blockquote>
+<h3 id="title-articles">Articles</h3>
+<ul>
+<li><a href="http://www.bubblecode.net/fr/2016/01/22/comprendre-oauth2/">Comprendre OAuth2 : http://www.bubblecode.net</a> <strong>good</strong></li>
+<li><a href="https://www.cnet.com/news/oauth-2-0-leader-resigns-says-standard-is-bad/">OAuth 2.0 leader resigns, says standard is ‘bad’ : cnet.com</a></li>
+</ul>
+<h3 id="title-acces-token--refresh-token">Acces Token &amp; Refresh Token</h3>
+<p><a href="http://stackoverflow.com/questions/3487991/why-does-oauth-v2-have-both-access-and-refresh-tokens/12885823#12885823">Why Does OAuth v2 Have Both Access and Refresh Tokens? : stackoverflow.com</a></p>
+<h3 id="title-authorization-servers">Authorization servers</h3>
+<ul>
+<li><a href="http://developer.github.com/v3/oauth/">github developer oauth</a></li>
+<li><a href="https://developers.google.com/identity/protocols/OAuth2">Using OAuth 2.0 to Access Google APIs</a></li>
+<li><a href="https://developers.facebook.com/docs/facebook-login/web">Facebook Login pour le web avec le SDK JavaScript</a></li>
+<li><a href="https://dev.twitter.com/oauth/reference/post/oauth2/token">Twitter Developer Documentation - POST oauth2/token</a></li>
+<li><a href="https://developer.linkedin.com/docs/oauth2#">LinkedIn Authenticating with OAuth 2.0</a></li>
+</ul>
+<h2 id="title-jwt">JWT</h2>
+<p><a href="https://www.youtube.com/watch?v=A2-YImhNVMU">100% Stateless avec JWT (JSON Web Token) (Hubert SABLONNIÈRE) : Devoxx2016</a></p>
+<blockquote>
+<p><strong>Historique</strong></p>
+<ul>
+<li>historique de la gestion des sessions web via cookie</li>
+<li>rappel : diff cookie et JWT fausse, c’est diff entre sessionId et JWT car cookie est un mode de transport. JWT est<br>transporté via un cookie</li>
+<li>diff entre sessionId et token JWT<ul>
+<li>sessionId = token par référence (contient la référence à la session, la session étant stockée dans le backend)</li>
+<li>JWT = token par valeur (contient la valeur de la session : <code>H34D3R.P4YLO4D.S1GN47UR3</code>)</li>
+</ul>
+</li>
+</ul>
+<p><strong>JWT</strong><br>Un token JWT est encodé en Base64url (comme Base64 mais safe pour les urls)<br>3 parties (header, payload et signature) encodées chacune en Base64url, les parties sont séparées par un <code>.</code>.<br>Une fois décodé, les parties header et payload du token sont au format json.</p>
+<p>Les propriétés de la partie payload sont nommées des <code>claims</code> (codifiés par RFC7519).</p>
+<p><strong>Avantages</strong></p>
+<ul>
+<li>stocké côté client donc scalable</li>
+<li>multilangage</li>
+<li>microservices</li>
+<li>SSO gratuit </li>
+</ul>
+<p><strong>Usage avec d’autres technos</strong></p>
+<ul>
+<li>OAuth2 : Si le provider OAuth2 fournit des refresh token et access token JWT alors on est complètement stateless</li>
+<li>OpenID Connect : le token ID est de base un JWT</li>
+</ul>
+<p><strong>Inconvénients</strong></p>
+<ul>
+<li>Révocation de tokens (blacklist via le claim <code>jti</code>, crée un SPOF (Single Point Of Failure))</li>
+<li>transporté via cookies donc vulnérables aux attaques XSS et CSRF</li>
+</ul>
+<p><strong>Autres usages des JWT</strong></p>
+<ul>
+<li>stockage données session (panier, formulaire multipart, …)</li>
+<li>mail de confirmation en passant le token dans l’url du mail de confirmation (évite le stockage BDD)</li>
+</ul>
+<p>Comment gérer les permissions via le JWT si celui-ci est HTTPonly (bonne pratique de sécu) ?<br>Nécessite un webservice qui lit le token et renvoie en clair les permissions.</p>
+</blockquote>
+<h3 id="title-rfc-1">RFC</h3>
+<p><a href="https://tools.ietf.org/html/rfc7519">JSON Web Token (JWT)</a></p>
+<h3 id="title-articles-1">Articles</h3>
+<ul>
+<li><a href="http://angularjs.blogspot.fr/2016/11/easy-angular-authentication-with-json.html">Easy Angular Authentication with JSON Web Tokens : angularjs.blogspot.fr</a></li>
+<li><a href="https://jwt.io/introduction/">Introduction to JSON Web Tokens : jwt.io</a></li>
+</ul>
+<h2 id="title-articles-securing-spa">articles securing SPA</h2>
+<ul>
+<li><a href="https://stormpath.com/blog/token-auth-for-java">Token Authentication for Java Applications : stormpath.com</a></li>
+<li><a href="https://stormpath.com/blog/token-auth-spa">Token Based Authentication for Single Page Apps (SPAs) : stormpath.com</a></li>
+<li><a href="https://stormpath.com/blog/secure-single-page-app-problem">secure-single-page-app-problem : stormpath.com</a></li>
+</ul>
+<h2 id="title-keycloak">keycloak</h2>
+<p><a href="https://www.youtube.com/watch?v=bVidgluUcg0&index=94&list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXAO">Sécuriser ses applications back et front facilement avec Keycloak (Sebastien Blanc) : Devoxx2016</a></p>
+</article></body></html>

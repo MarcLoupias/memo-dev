@@ -1,11 +1,17 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-nodejs---mock-management-via-expressjs">nodejs - mock management via expressjs</h1> <p>The idea is to add a real nodejs rest server in the front project.</p> <h2 id="title-the-gulp-task">the gulp task</h2> <pre><code class="lang-javascript">// write this in your gulp files
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.a092d0a1.js"></script></head><body><article class="markdown-body"><h1 id="title-nodejs---mock-management-via-expressjs">nodejs - mock management via expressjs</h1>
+<p>The idea is to add a real nodejs rest server in the front project.</p>
+<h2 id="title-the-gulp-task">the gulp task</h2>
+<pre><code class="lang-javascript">// write this in your gulp files
 var gulp = require(&#39;gulp&#39;); // 3.9.1
 var gls = require(&#39;gulp-live-server&#39;); // 0.0.28
 
 gulp.task(&#39;server-rest-mock&#39;, function() {
     var server = gls.new([&#39;app.js&#39;]);
     server.start();
-});</code></pre> <h2 id="title-appjs---the-rest-server"><code>/app.js</code> - the rest server</h2> <p>Your server source code is in <code>/server</code></p> <pre><code class="lang-javascript">&#39;use strict&#39;;
+});</code></pre>
+<h2 id="title-appjs---the-rest-server"><code>/app.js</code> - the rest server</h2>
+<p>Your server source code is in <code>/server</code></p>
+<pre><code class="lang-javascript">&#39;use strict&#39;;
 
 var express = require(&#39;express&#39;); // 4.13.3
 var bodyParser = require(&#39;body-parser&#39;); // 1.14.0
@@ -31,7 +37,9 @@ require(&#39;./server/cors&#39;)(app);
 require(&#39;./server/logger&#39;)(app);
 
 // rest impl
-require(&#39;./server/example/example&#39;)(app);</code></pre> <h2 id="title-serverdebugjs---to-ping-the-server"><code>/server/debug.js</code> - to ping the server</h2> <pre><code class="lang-javascript">&#39;use strict&#39;;
+require(&#39;./server/example/example&#39;)(app);</code></pre>
+<h2 id="title-serverdebugjs---to-ping-the-server"><code>/server/debug.js</code> - to ping the server</h2>
+<pre><code class="lang-javascript">&#39;use strict&#39;;
 
 module.exports = function(app)
 {
@@ -39,7 +47,9 @@ module.exports = function(app)
         var result = {code: 200, message:&#39;ok&#39;};
         res.json(result);
     });
-};</code></pre> <h2 id="title-servercorsjs---to-add-cors-support"><code>/server/cors.js</code> - to add CORS support</h2> <pre><code class="lang-javascript">&#39;use strict&#39;;
+};</code></pre>
+<h2 id="title-servercorsjs---to-add-cors-support"><code>/server/cors.js</code> - to add CORS support</h2>
+<pre><code class="lang-javascript">&#39;use strict&#39;;
 
 module.exports = function (app) {
     app.use(function(req, res, next) {
@@ -47,14 +57,18 @@ module.exports = function (app) {
         res.header(&quot;Access-Control-Allow-Headers&quot;, &quot;Origin, X-Requested-With, Content-Type, Accept, If-Modified-Since&quot;);
         next();
     });
-};</code></pre> <h2 id="title-serverloggerjs---to-display-http-request-in-the-gulp-task-console"><code>/server/logger.js</code> - to display http request in the gulp task console</h2> <pre><code class="lang-javascript">&#39;use strict&#39;;
+};</code></pre>
+<h2 id="title-serverloggerjs---to-display-http-request-in-the-gulp-task-console"><code>/server/logger.js</code> - to display http request in the gulp task console</h2>
+<pre><code class="lang-javascript">&#39;use strict&#39;;
 
 module.exports = function (app) {
     app.use(function (req, res, next) {
         console.log(new Date(Date.now()).toLocaleString() + &#39; &#39; + req.url);
         next();
     });
-};</code></pre> <h2 id="title-servercommonjs---to-add-custom-utils-methods"><code>/server/common.js</code> - to add custom utils methods</h2> <pre><code class="lang-javascript">&#39;use strict&#39;;
+};</code></pre>
+<h2 id="title-servercommonjs---to-add-custom-utils-methods"><code>/server/common.js</code> - to add custom utils methods</h2>
+<pre><code class="lang-javascript">&#39;use strict&#39;;
 
 String.prototype.isEmpty = function () {
     return this.length === 0;
@@ -86,7 +100,9 @@ exports.randomTime = function () {
     } else {
         return min + Math.random() * max;
     }
-};</code></pre> <h2 id="title-serverexampleexamplejs---ws-impl-example"><code>/server/example/example.js</code> - WS impl example</h2> <pre><code class="lang-javascript">&#39;use strict&#39;;
+};</code></pre>
+<h2 id="title-serverexampleexamplejs---ws-impl-example"><code>/server/example/example.js</code> - WS impl example</h2>
+<pre><code class="lang-javascript">&#39;use strict&#39;;
 
 var common = require(&#39;../common&#39;);
 var fs = require(&quot;fs&quot;);
@@ -116,4 +132,5 @@ module.exports = function (app) {
             res.json(data);
         }, common.randomTime());
     });
-};</code></pre> </article></body></html>
+};</code></pre>
+</article></body></html>

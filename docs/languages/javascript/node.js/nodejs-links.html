@@ -1,4 +1,126 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.d098492d.css" rel="stylesheet" media="all"><link href="/main.cb64a04a.css" rel="stylesheet" media="all"><link href="/github.51c27d45.css" rel="stylesheet"><script src="/docs.a0c71561.js"></script></head><body><article class="markdown-body"><h1 id="title-nodejs---links">nodejs - links</h1> <h2 id="title-presentations">presentations</h2> <p><a href="https://www.infoworld.com/article/3257673/node-js/nodejs-roadmap-whats-next-for-the-javascript-runtime.html">Node.js roadmap: What’s next for the JavaScript runtime - 20180226</a></p> <blockquote> <p>Although Node.js 10 will debut in April 2018, more features are under consideration for 2018 and 2019</p> <ul> <li>N-API and HTTP/2</li> <li>Better diagnostic capabilities</li> <li>A faster release schedule for V8</li> <li>Better support of ECMAScript (ES) 6 modules</li> <li>progress on security triage for third-party NPM modules</li> <li>Functional testing for third-party modules</li> <li>Use of JavaScript promises in the Node.js core</li> <li>Support for more build/automation infrastructure</li> </ul> </blockquote> <p><a href="https://www.youtube.com/watch?v=_H_HskEf-0U">Node.js core contributor James M Snell presentation about node in 2018</a></p> <p><a href="https://www.youtube.com/watch?v=nFs_opDO7jM&list=PLTbQvx84FrARa9pUtZYK7t_UfyGMCPOBn&index=83">NodeJS 5 bonnes raisons pour lesquelles vous devriez y jeter un oeil (A. Victoor, T. Abaléa) - Devoxx 2018</a></p> <blockquote> <ul> <li>explication sympa sur les workers le module <code>child_process</code> et le module <code>cluster</code></li> <li>explication usage <code>cluster</code> pour éviter les interruptions de service lors des déploiements</li> <li>chrome dev tools sur <code>chrome://inspect/#devices</code></li> <li>leurs 5 bonnes raisons : simplicité, légèreté, JS moderne, écosystème, pourquoi pas</li> </ul> </blockquote> <p><a href="https://www.youtube.com/watch?v=IwpBluLjynI">Node.js partout - Cristophe Porteneuve - WEB2DAY 2017</a></p> <blockquote> <p>seule stack présente dans l’intégralité des uses cases connus (du serveur web à l’IoT)</p> <p>rétro :</p> <ul> <li>200911 : annonce officielle à JsConf de Berlin</li> <li>201309 : 1ère formations en France</li> <li>201310 : formation Node.js au catalogue DI</li> <li>201410 : Node.js démystifié (Paris Web)</li> <li>201502 : NodeSchool Paris 1 (1050+ membres), session n°14 201706</li> </ul> <p><strong>croissance de l’écosystème</strong></p> <p>Plateforme opensource à plus forte croissance mondiale. (cf <a href="http://www.modulecounts.com/">modulecounts.com</a>)</p> <p>500 nouveaux modules par jour (500K au total). (Maven 120/j, 190K)</p> <p>npm est le référentiel de facto pour Node, jQuery, CSS, outils CLI (phonegap, cordova), …</p> <p>371 millions modules téléchargés par jour (201802 : <a href="https://twitter.com/seldo/status/961415623694729216">570 millions par jour !!</a>)</p> <p>accélération permanente</p> <p>npm devient un canal universel d’installation</p> <p><strong>croissance de l’adoption</strong></p> <p>22 millions de téléchargements de Node.js par mois (la France représente 1%)</p> <p>7 millions d’utilisateurs (mai 2017)</p> <p>croissance annuelle de 100% (stable sur 6 ans)</p> <p>2ème techno la plus demandée (après Android) (source stackoverflow)</p> <p>La Fondation Node comprend les plus gros (IBM, Intel, MS, Google, Paypal, RedHat, Yahoo, SAP, Joyent, …)</p> <p>Investissements massifs des gros acteurs</p> <p>la quasi totalité du Fortune 500 a migré vers Node.js (depuis Java EE) avec succès</p> <p>Netflix : (qui stream 8TB/s) bootup -98% (le système mettait 1H20 pour boot, aujourd’hui moins de 3mins), instances EC2 -75%, latence réduite. Economie mensuelle de presque 100 millions de dollars</p> <p>Paypal : RPS x2 (Requetes Par Secondes), temps de réponse -35%, conso AWS divisée par 7. On démarré la migration Node.js sur le paiement en ligne (8,4 milliards de dollars de transaction par jour).</p> <p>Groupon : temps chargement pages -50%</p> <p>Uber, LinkedIn, Walmart, NASA, SpaceX, Tesla, Yahoo, eBay, Medium, Trello, Storify, SitePen, JSBin, Yammer, Zendesk</p> <p><strong>frontend</strong></p> <p>Incontournable en frontend (Babel, ESLint, React, Angular, Vue, Grunt, Gulp, Webpack, …)</p> <p><strong>mobile</strong></p> <p>Cordova (50% du top 10 des AppStores), SDK natifs, mobile backend, …</p> <p><strong>desktop</strong></p> <p>Electron (Visual Studio Code, Slack, Github Desktop, Atom, …)</p> <p>Permet de faire du multi plateforme (bien mieux que Java)</p> <p><strong>cloud</strong></p> <p>Tous les fournisseurs de cloud supportent Node.js</p> <p><strong>API &amp; Microservices</strong></p> <p>avec renaissances des clients riches les APIs explosent</p> <p>Twitter 15 milliards d’appels API par jour (Facebook 7B+, Google 10B+)</p> <p>Le SPAM email commence à passer sous les calls d’API sur l’ensemble d’internet</p> <p>Plus de 15K APIs publiques</p> <p>Emergence du B2D (Business to Developer), Auth0 / Stormpath, Parse / Backendless, Cloudinary, Firebase, Heroku, GitHub, …</p> <p>Hébergement de fonctions stateless (contient ton code spécifique, le reste est fourni par la plateforme / service)</p> <p><strong>IoT</strong></p> <p>Internet of Things</p> <p>Tous les microcontrollers ont un support node intégré (basé V8 ou Shakra core)</p> <p><strong>France</strong></p> <p>On a tout le temps 5 ans de retard. Hype Cycle : US puis Europe du Nord, puis GB puis nous puis Europe du Sud</p> <p>Conservatisme très fort. Pas encore présent sur le radar technique des gros groupes.</p> </blockquote> <h2 id="title-architecture">architecture</h2> <p><a href="https://medium.freecodecamp.com/understanding-node-js-event-driven-architecture-223292fcbc2d">Understanding Node.js Event-Driven Architecture</a></p> <p><a href="https://medium.com/the-node-js-collection/what-you-should-know-to-really-understand-the-node-js-event-loop-and-its-metrics-c4907b19da4c">What you should know to really understand the Node.js Event Loop - 20170720</a></p> <p><a href="http://bijoor.me/2013/06/09/java-ee-threads-vs-node-js-which-is-better-for-concurrent-data-processing-operations/">Java EE threads v/s Node.js - which is better for concurrent data processing operations - 20130609</a></p> <blockquote> <p>The most important differences between NodeJS and Java are the concurrency and I/O models. Java uses multi­threaded synchronous I/O while NodeJS uses single threaded asynchronous I/O.</p> </blockquote> <p><a href="https://medium.com/@siddharthac6/node-js-how-is-it-different-94f97480a4bb">Node.js — How is it different? - Siddhartha Chowdhury - 20180206</a></p> <blockquote> <p><strong>When does Node.js fails ?</strong></p> <p>Node’s underlying architecture implementation fails when some CPU intensive work is involved.</p> <p>By CPU intensive I mean works like Image processing, audio encoding, media conversions, etc.</p> <p>All these jobs involves huge CPU computations and almost no I/O. Hence when the event (which involves as such work) handler is fired, it keeps the the event loop busy until the time the CPU processing is finished, <strong>it halts all other events in the process</strong>. </p> <p>This case is where C++, Java, Python and all other excels coz their underlying architecture makes use of multiple threads to handle concurrency at their core.</p> </blockquote> <h3 id="title-pramod-chandrayan-articles">Pramod Chandrayan articles</h3> <p><a href="https://codeburst.io/getting-started-with-node-js-a-beginners-guide-b03e25bca71b">Getting Started With Node.js : A Beginners Guide - Pramod Chandrayan - 20171105</a></p> <blockquote> <ul> <li>Introduction to Node.js</li> <li>Setting up Node.js</li> <li>npm : Node Package Manager</li> <li>An Example To conclude</li> </ul> </blockquote> <p><a href="https://codeburst.io/all-about-node-js-you-wanted-to-know-25f3374e0be7">All About Node.Js You Wanted To Know ? - Pramod Chandrayan - 20171029</a></p> <blockquote> <p>panorama</p> </blockquote> <p><a href="https://codeburst.io/how-node-js-single-thread-mechanism-work-understanding-event-loop-in-nodejs-230f7440b0ea">How Node.Js Single Thread mechanism Work ? Understanding Event Loop in NodeJs - Pramod Chandrayan - 20171125</a></p> <blockquote> <p>detailled event loop explanation</p> </blockquote> <h3 id="title-v8-engine--run-time-environment">V8 Engine : Run time Environment</h3> <p>It’s an open sourceJIT(Just In Time) compiler written in C++.</p> <p>V8 compiles Javascript directly into assembly level code.</p> <ul> <li><strong>Compiler</strong> : dissects the JS code</li> <li><strong>Optimizer</strong> : Optimizer called crankshaft create abstract syntax tree(AST) which further converts to SSA : static single assignment and gets optimized</li> <li><strong>Garbage Collector</strong> : V8 divides the memory into 2 spaces Old spaces and new spaces both belongs to heap memory and keeps track of JS objects, any new objects is stored in new space. When new space is fully occupied V8’s garbage collector removes dead objects from new space and puts into old space. Gabage collector play vial role in keeping NodeJs lightweight.</li> </ul> <h3 id="title-the-event-loop">the event loop</h3> <p><a href="https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/">The Node.js Event Loop, Timers, and <code>process.nextTick()</code></a></p> <pre><code>   ┌───────────────────────┐
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.a092d0a1.js"></script></head><body><article class="markdown-body"><h1 id="title-nodejs---links">nodejs - links</h1>
+<h2 id="title-presentations">presentations</h2>
+<p><a href="https://www.infoworld.com/article/3257673/node-js/nodejs-roadmap-whats-next-for-the-javascript-runtime.html">Node.js roadmap: What’s next for the JavaScript runtime - 20180226</a></p>
+<blockquote>
+<p>Although Node.js 10 will debut in April 2018, more features are under consideration for 2018 and 2019</p>
+<ul>
+<li>N-API and HTTP/2</li>
+<li>Better diagnostic capabilities</li>
+<li>A faster release schedule for V8</li>
+<li>Better support of ECMAScript (ES) 6 modules</li>
+<li>progress on security triage for third-party NPM modules</li>
+<li>Functional testing for third-party modules</li>
+<li>Use of JavaScript promises in the Node.js core</li>
+<li>Support for more build/automation infrastructure</li>
+</ul>
+</blockquote>
+<p><a href="https://www.youtube.com/watch?v=_H_HskEf-0U">Node.js core contributor James M Snell presentation about node in 2018</a></p>
+<p><a href="https://www.youtube.com/watch?v=nFs_opDO7jM&list=PLTbQvx84FrARa9pUtZYK7t_UfyGMCPOBn&index=83">NodeJS 5 bonnes raisons pour lesquelles vous devriez y jeter un oeil (A. Victoor, T. Abaléa) - Devoxx 2018</a></p>
+<blockquote>
+<ul>
+<li>explication sympa sur les workers le module <code>child_process</code> et le module <code>cluster</code></li>
+<li>explication usage <code>cluster</code> pour éviter les interruptions de service lors des déploiements</li>
+<li>chrome dev tools sur <code>chrome://inspect/#devices</code></li>
+<li>leurs 5 bonnes raisons : simplicité, légèreté, JS moderne, écosystème, pourquoi pas</li>
+</ul>
+</blockquote>
+<p><a href="https://www.youtube.com/watch?v=IwpBluLjynI">Node.js partout - Cristophe Porteneuve - WEB2DAY 2017</a></p>
+<blockquote>
+<p>seule stack présente dans l’intégralité des uses cases connus (du serveur web à l’IoT)</p>
+<p>rétro :</p>
+<ul>
+<li>200911 : annonce officielle à JsConf de Berlin</li>
+<li>201309 : 1ère formations en France</li>
+<li>201310 : formation Node.js au catalogue DI</li>
+<li>201410 : Node.js démystifié (Paris Web)</li>
+<li>201502 : NodeSchool Paris 1 (1050+ membres), session n°14 201706</li>
+</ul>
+<p><strong>croissance de l’écosystème</strong></p>
+<p>Plateforme opensource à plus forte croissance mondiale. (cf <a href="http://www.modulecounts.com/">modulecounts.com</a>)</p>
+<p>500 nouveaux modules par jour (500K au total). (Maven 120/j, 190K)</p>
+<p>npm est le référentiel de facto pour Node, jQuery, CSS, outils CLI (phonegap, cordova), …</p>
+<p>371 millions modules téléchargés par jour (201802 : <a href="https://twitter.com/seldo/status/961415623694729216">570 millions par jour !!</a>)</p>
+<p>accélération permanente</p>
+<p>npm devient un canal universel d’installation</p>
+<p><strong>croissance de l’adoption</strong></p>
+<p>22 millions de téléchargements de Node.js par mois (la France représente 1%)</p>
+<p>7 millions d’utilisateurs (mai 2017)</p>
+<p>croissance annuelle de 100% (stable sur 6 ans)</p>
+<p>2ème techno la plus demandée (après Android) (source stackoverflow)</p>
+<p>La Fondation Node comprend les plus gros (IBM, Intel, MS, Google, Paypal, RedHat, Yahoo, SAP, Joyent, …)</p>
+<p>Investissements massifs des gros acteurs</p>
+<p>la quasi totalité du Fortune 500 a migré vers Node.js (depuis Java EE) avec succès</p>
+<p>Netflix : (qui stream 8TB/s) bootup -98% (le système mettait 1H20 pour boot, aujourd’hui moins de 3mins), instances EC2 -75%, latence réduite. Economie mensuelle de presque 100 millions de dollars</p>
+<p>Paypal : RPS x2 (Requetes Par Secondes), temps de réponse -35%, conso AWS divisée par 7. On démarré la migration Node.js sur le paiement en ligne (8,4 milliards de dollars de transaction par jour).</p>
+<p>Groupon : temps chargement pages -50%</p>
+<p>Uber, LinkedIn, Walmart, NASA, SpaceX, Tesla, Yahoo, eBay, Medium, Trello, Storify, SitePen, JSBin, Yammer, Zendesk</p>
+<p><strong>frontend</strong></p>
+<p>Incontournable en frontend (Babel, ESLint, React, Angular, Vue, Grunt, Gulp, Webpack, …)</p>
+<p><strong>mobile</strong></p>
+<p>Cordova (50% du top 10 des AppStores), SDK natifs, mobile backend, …</p>
+<p><strong>desktop</strong></p>
+<p>Electron (Visual Studio Code, Slack, Github Desktop, Atom, …)</p>
+<p>Permet de faire du multi plateforme (bien mieux que Java)</p>
+<p><strong>cloud</strong></p>
+<p>Tous les fournisseurs de cloud supportent Node.js</p>
+<p><strong>API &amp; Microservices</strong></p>
+<p>avec renaissances des clients riches les APIs explosent</p>
+<p>Twitter 15 milliards d’appels API par jour (Facebook 7B+, Google 10B+)</p>
+<p>Le SPAM email commence à passer sous les calls d’API sur l’ensemble d’internet</p>
+<p>Plus de 15K APIs publiques</p>
+<p>Emergence du B2D (Business to Developer), Auth0 / Stormpath, Parse / Backendless, Cloudinary, Firebase, Heroku, GitHub, …</p>
+<p>Hébergement de fonctions stateless (contient ton code spécifique, le reste est fourni par la plateforme / service)</p>
+<p><strong>IoT</strong></p>
+<p>Internet of Things</p>
+<p>Tous les microcontrollers ont un support node intégré (basé V8 ou Shakra core)</p>
+<p><strong>France</strong></p>
+<p>On a tout le temps 5 ans de retard. Hype Cycle : US puis Europe du Nord, puis GB puis nous puis Europe du Sud</p>
+<p>Conservatisme très fort. Pas encore présent sur le radar technique des gros groupes.</p>
+</blockquote>
+<h2 id="title-architecture">architecture</h2>
+<p><a href="https://medium.freecodecamp.com/understanding-node-js-event-driven-architecture-223292fcbc2d">Understanding Node.js Event-Driven Architecture</a></p>
+<p><a href="https://medium.com/the-node-js-collection/what-you-should-know-to-really-understand-the-node-js-event-loop-and-its-metrics-c4907b19da4c">What you should know to really understand the Node.js Event Loop - 20170720</a></p>
+<p><a href="http://bijoor.me/2013/06/09/java-ee-threads-vs-node-js-which-is-better-for-concurrent-data-processing-operations/">Java EE threads v/s Node.js - which is better for concurrent data processing operations - 20130609</a></p>
+<blockquote>
+<p>The most important differences between NodeJS and Java are the concurrency and I/O models. Java uses multi­threaded synchronous I/O while NodeJS uses single threaded asynchronous I/O.</p>
+</blockquote>
+<p><a href="https://medium.com/@siddharthac6/node-js-how-is-it-different-94f97480a4bb">Node.js — How is it different? - Siddhartha Chowdhury - 20180206</a></p>
+<blockquote>
+<p><strong>When does Node.js fails ?</strong></p>
+<p>Node’s underlying architecture implementation fails when some CPU intensive work is involved.</p>
+<p>By CPU intensive I mean works like Image processing, audio encoding, media conversions, etc.</p>
+<p>All these jobs involves huge CPU computations and almost no I/O. Hence when the event (which involves as such work) handler is fired, it keeps the the event loop busy until the time the CPU processing is finished, <strong>it halts all other events in the process</strong>. </p>
+<p>This case is where C++, Java, Python and all other excels coz their underlying architecture makes use of multiple threads to handle concurrency at their core.</p>
+</blockquote>
+<h3 id="title-pramod-chandrayan-articles">Pramod Chandrayan articles</h3>
+<p><a href="https://codeburst.io/getting-started-with-node-js-a-beginners-guide-b03e25bca71b">Getting Started With Node.js : A Beginners Guide - Pramod Chandrayan - 20171105</a></p>
+<blockquote>
+<ul>
+<li>Introduction to Node.js</li>
+<li>Setting up Node.js</li>
+<li>npm : Node Package Manager</li>
+<li>An Example To conclude</li>
+</ul>
+</blockquote>
+<p><a href="https://codeburst.io/all-about-node-js-you-wanted-to-know-25f3374e0be7">All About Node.Js You Wanted To Know ? - Pramod Chandrayan - 20171029</a></p>
+<blockquote>
+<p>panorama</p>
+</blockquote>
+<p><a href="https://codeburst.io/how-node-js-single-thread-mechanism-work-understanding-event-loop-in-nodejs-230f7440b0ea">How Node.Js Single Thread mechanism Work ? Understanding Event Loop in NodeJs - Pramod Chandrayan - 20171125</a></p>
+<blockquote>
+<p>detailled event loop explanation</p>
+</blockquote>
+<h3 id="title-v8-engine--run-time-environment">V8 Engine : Run time Environment</h3>
+<p>It’s an open sourceJIT(Just In Time) compiler written in C++.</p>
+<p>V8 compiles Javascript directly into assembly level code.</p>
+<ul>
+<li><strong>Compiler</strong> : dissects the JS code</li>
+<li><strong>Optimizer</strong> : Optimizer called crankshaft create abstract syntax tree(AST) which further converts to SSA : static single assignment and gets optimized</li>
+<li><strong>Garbage Collector</strong> : V8 divides the memory into 2 spaces Old spaces and new spaces both belongs to heap memory and keeps track of JS objects, any new objects is stored in new space. When new space is fully occupied V8’s garbage collector removes dead objects from new space and puts into old space. Gabage collector play vial role in keeping NodeJs lightweight.</li>
+</ul>
+<h3 id="title-the-event-loop">the event loop</h3>
+<p><a href="https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/">The Node.js Event Loop, Timers, and <code>process.nextTick()</code></a></p>
+<pre><code>   ┌───────────────────────┐
 ┌─&gt;│        timers         │
 │  └──────────┬────────────┘
 │  ┌──────────┴────────────┐
@@ -15,16 +137,67 @@
 │  └──────────┬────────────┘
 │  ┌──────────┴────────────┐
 └──┤    close callbacks    │
-   └───────────────────────┘</code></pre><p>Phases Overview</p> <ul> <li><strong>timers</strong>: this phase executes callbacks scheduled by <code>setTimeout()</code> and <code>setInterval()</code>.</li> <li><strong>I/O callbacks</strong>: executes almost all callbacks with the exception of close callbacks, the ones scheduled by timers, and <code>setImmediate()</code>.</li> <li><strong>idle, prepare</strong>: only used internally.</li> <li><strong>poll</strong>: retrieve new I/O events; node will block here when appropriate.</li> <li><strong>check</strong>: <code>setImmediate()</code> callbacks are invoked here.</li> <li><strong>close callbacks</strong>: e.g. <code>socket.on(&#39;close&#39;, ...)</code>.</li> </ul> <p>Between each run of the event loop, Node.js checks if it is waiting for any asynchronous I/O or timers and shuts down cleanly if there are not any.</p> <p>Powered by <a href="http://libuv.org/">libuv/libuv</a></p> <blockquote> <p>Cross-platform asynchronous I/O <a href="http://libuv.org/">http://libuv.org/</a></p> </blockquote> <h4 id="title-workers">workers</h4> <p><a href="https://nodejs.org/en/docs/guides/dont-block-the-event-loop/">Don’t Block the Event Loop (or the Worker Pool) - nodejs.org</a></p> <p><a href="https://github.com/nodejs/worker/issues/4">why is it so hard to add threads to nodejs? or web workers? - github.com/nodejs</a></p> <p><a href="http://www.acuriousanimal.com/2017/08/12/understanding-the-nodejs-cluster-module.html">Understanding the NodeJS cluster module - www.acuriousanimal.com - 20170812</a></p> <p><a href="http://www.acuriousanimal.com/2017/08/18/using-cluster-module-with-http-servers.html">Using cluster module with HTTP servers - www.acuriousanimal.com - 20170818</a></p> <blockquote> <p>demo http cluster, how the master manage load balancing with the same port</p> </blockquote> <p><a href="https://blog.xebia.fr/2015/01/13/clusteriser-votre-application-node-js/">Clusteriser votre application Node.js - blog.xebia.fr - 20150113</a></p> <p><a href="https://stackoverflow.com/questions/14981154/node-js-workers-any-need-for-them">Node JS workers - any need for them? - stackoverflow.com - 2013</a></p> <h3 id="title-https-in-node">https in node</h3> <p><a href="https://www.sitepoint.com/how-to-use-ssltls-with-node-js/">How to Use SSL/TLS with Node.js - www.sitepoint.com - 20180125</a></p> <h2 id="title-ecmascript-support">ECMAScript support</h2> <p><a href="http://node.green/">kangax’s compat-table applied only to Node.js</a></p> <h2 id="title-fork">fork</h2> <p><a href="https://www.developpez.net/forums/d1742355/webmasters-developpement-web/javascript-ajax-typescript-dart/javascript/javascript-cote-serveur/node-js-forke-nouveau-donner-naissance-ayo/#post9562073">Node.js forké à nouveau pour donner naissance à Ayo : www.developpez.net 20170825</a></p> <p><a href="https://github.com/ayojs/ayo">ayojs/ayo : github.com</a></p> <h2 id="title-install">install</h2> <h3 id="title-debian">debian</h3> <p><a href="http://blog.nicolargo.com/2012/09/installer-facilement-nodejs-et-npm-sur-une-debian-stable.html">http://blog.nicolargo.com/2012/09/installer-facilement-nodejs-et-npm-sur-une-debian-stable.html</a></p> <p>via package manager (from official repo) :<br><a href="https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager">https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager</a></p> <p>via backports (fait avec ça) :<br><a href="https://github.com/joyent/node/wiki/backports.debian.org">https://github.com/joyent/node/wiki/backports.debian.org</a></p> <p>binaires (node et npm) dans <code>/usr/bin/</code></p> <p>modules (bower grunt yo et les generators) dans <code>/usr/lib/node_modules/</code></p> <p>Installer node en user <a href="http://tnovelli.net/blog/blog.2011-08-27.node-npm-user-install.html">http://tnovelli.net/blog/blog.2011-08-27.node-npm-user-install.html</a></p> <p>Installer des modules nodes globalement sans sudo <a href="https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo-linux.html">https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo-linux.md</a></p> <p>nodejs &amp; npm install en user</p> <p><strong>dépendances pour compiler node</strong></p> <pre><code>sudo apt-get install gcc
+   └───────────────────────┘</code></pre><p>Phases Overview</p>
+<ul>
+<li><strong>timers</strong>: this phase executes callbacks scheduled by <code>setTimeout()</code> and <code>setInterval()</code>.</li>
+<li><strong>I/O callbacks</strong>: executes almost all callbacks with the exception of close callbacks, the ones scheduled by timers, and <code>setImmediate()</code>.</li>
+<li><strong>idle, prepare</strong>: only used internally.</li>
+<li><strong>poll</strong>: retrieve new I/O events; node will block here when appropriate.</li>
+<li><strong>check</strong>: <code>setImmediate()</code> callbacks are invoked here.</li>
+<li><strong>close callbacks</strong>: e.g. <code>socket.on(&#39;close&#39;, ...)</code>.</li>
+</ul>
+<p>Between each run of the event loop, Node.js checks if it is waiting for any asynchronous I/O or timers and shuts down cleanly if there are not any.</p>
+<p>Powered by <a href="http://libuv.org/">libuv/libuv</a></p>
+<blockquote>
+<p>Cross-platform asynchronous I/O <a href="http://libuv.org/">http://libuv.org/</a></p>
+</blockquote>
+<h4 id="title-workers">workers</h4>
+<p><a href="https://nodejs.org/en/docs/guides/dont-block-the-event-loop/">Don’t Block the Event Loop (or the Worker Pool) - nodejs.org</a></p>
+<p><a href="https://github.com/nodejs/worker/issues/4">why is it so hard to add threads to nodejs? or web workers? - github.com/nodejs</a></p>
+<p><a href="http://www.acuriousanimal.com/2017/08/12/understanding-the-nodejs-cluster-module.html">Understanding the NodeJS cluster module - www.acuriousanimal.com - 20170812</a></p>
+<p><a href="http://www.acuriousanimal.com/2017/08/18/using-cluster-module-with-http-servers.html">Using cluster module with HTTP servers - www.acuriousanimal.com - 20170818</a></p>
+<blockquote>
+<p>demo http cluster, how the master manage load balancing with the same port</p>
+</blockquote>
+<p><a href="https://blog.xebia.fr/2015/01/13/clusteriser-votre-application-node-js/">Clusteriser votre application Node.js - blog.xebia.fr - 20150113</a></p>
+<p><a href="https://stackoverflow.com/questions/14981154/node-js-workers-any-need-for-them">Node JS workers - any need for them? - stackoverflow.com - 2013</a></p>
+<h3 id="title-https-in-node">https in node</h3>
+<p><a href="https://www.sitepoint.com/how-to-use-ssltls-with-node-js/">How to Use SSL/TLS with Node.js - www.sitepoint.com - 20180125</a></p>
+<h2 id="title-ecmascript-support">ECMAScript support</h2>
+<p><a href="http://node.green/">kangax’s compat-table applied only to Node.js</a></p>
+<h2 id="title-fork">fork</h2>
+<p><a href="https://www.developpez.net/forums/d1742355/webmasters-developpement-web/javascript-ajax-typescript-dart/javascript/javascript-cote-serveur/node-js-forke-nouveau-donner-naissance-ayo/#post9562073">Node.js forké à nouveau pour donner naissance à Ayo : www.developpez.net 20170825</a></p>
+<p><a href="https://github.com/ayojs/ayo">ayojs/ayo : github.com</a></p>
+<h2 id="title-install">install</h2>
+<h3 id="title-debian">debian</h3>
+<p><a href="http://blog.nicolargo.com/2012/09/installer-facilement-nodejs-et-npm-sur-une-debian-stable.html">http://blog.nicolargo.com/2012/09/installer-facilement-nodejs-et-npm-sur-une-debian-stable.html</a></p>
+<p>via package manager (from official repo) :<br><a href="https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager">https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager</a></p>
+<p>via backports (fait avec ça) :<br><a href="https://github.com/joyent/node/wiki/backports.debian.org">https://github.com/joyent/node/wiki/backports.debian.org</a></p>
+<p>binaires (node et npm) dans <code>/usr/bin/</code></p>
+<p>modules (bower grunt yo et les generators) dans <code>/usr/lib/node_modules/</code></p>
+<p>Installer node en user <a href="http://tnovelli.net/blog/blog.2011-08-27.node-npm-user-install.html">http://tnovelli.net/blog/blog.2011-08-27.node-npm-user-install.html</a></p>
+<p>Installer des modules nodes globalement sans sudo <a href="https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo-linux.html">https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo-linux.md</a></p>
+<p>nodejs &amp; npm install en user</p>
+<p><strong>dépendances pour compiler node</strong></p>
+<pre><code>sudo apt-get install gcc
 sudo apt-get install g++
 sudo apt-get install make
-</code></pre><p><strong>configurer le chemin custom</strong></p> <pre><code>./configure --prefix=~/dev/tools/nodejs
-</code></pre><p><strong>lancer le build</strong></p> <pre><code>make
+</code></pre><p><strong>configurer le chemin custom</strong></p>
+<pre><code>./configure --prefix=~/dev/tools/nodejs
+</code></pre><p><strong>lancer le build</strong></p>
+<pre><code>make
 make install
-</code></pre><p><strong>node_modules symlink</strong></p> <p>Create <code>~/.node_modules</code> symlink. (This directory will be automatically searched when you load modules using require “module” in scripts. I’m not sure why Node doesn’t search <code>~/.local/lib/node_modules</code> by default.)</p> <pre><code>ln -s dev/tools/nodejs/lib/node_modules .node_modules
-</code></pre><p><strong>PATH management</strong></p> <pre><code>add this to ~/.profile
-</code></pre><p><strong>nodejs &amp; npm path</strong></p> <pre><code>export PATH=$HOME/dev/tools/nodejs/bin:$PATH
-</code></pre><p><strong>Test</strong></p> <pre><code>which npm
-</code></pre><p>should return the npm path defined above</p> <p>From there, installing Yeoman &amp; angular app generator</p> <pre><code>npm install -g yo
+</code></pre><p><strong>node_modules symlink</strong></p>
+<p>Create <code>~/.node_modules</code> symlink. (This directory will be automatically searched when you load modules using require “module” in scripts. I’m not sure why Node doesn’t search <code>~/.local/lib/node_modules</code> by default.)</p>
+<pre><code>ln -s dev/tools/nodejs/lib/node_modules .node_modules
+</code></pre><p><strong>PATH management</strong></p>
+<pre><code>add this to ~/.profile
+</code></pre><p><strong>nodejs &amp; npm path</strong></p>
+<pre><code>export PATH=$HOME/dev/tools/nodejs/bin:$PATH
+</code></pre><p><strong>Test</strong></p>
+<pre><code>which npm
+</code></pre><p>should return the npm path defined above</p>
+<p>From there, installing Yeoman &amp; angular app generator</p>
+<pre><code>npm install -g yo
 npm install -g generator-angular
 </code></pre></article></body></html>
