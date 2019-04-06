@@ -39,6 +39,6 @@
         "rimraf": "^2.6.3"
     },
     "dependencies": {
-        "highlight.js": "^9.14.2"
+        "highlight.js": "^9.15.6"
     }
 }
