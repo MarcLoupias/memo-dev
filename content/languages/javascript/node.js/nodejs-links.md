@@ -190,6 +190,16 @@ htmlHead:
 > 
 > Node is such a solid choice these days it makes a great default workhorse for middle-tier web platform apps. And I haven’t even mentioned Universal JavaScript or Next.js yet. Google it. You’ll thank me.
 
+[From Java to Node - the PayPal story - 20160601](http://blog.builtinnode.com/post/from-java-to-node---the-paypal-story)
+
+> Node solved a problem for PayPal, it allowed them to do more, faster. Their existent model couldn't catch up with existent trends, starting with the introduction of full stack developers. The biggest problem at PayPal was the barrier between the server and the browser. Node was a great solution from the beginning because it allowed them to write applications in JavaScript both for the browser and the server. 
+> 
+> This app was built in Kraken.js on express, using the templating engine Dust and the Java software used an internal framework that was mostly based on Spring.  The first production tests showed great promise and also brought peace of mind, as the node app responded to requests about 45% faster than the Java app, a very visible difference for the user.
+
+[PayPal Switches from Java to JavaScript](https://www.infoq.com/news/2013/11/paypal-java-javascript)
+
+[How Netflix and Paypal did product transformation using Node.js? - 20180503](https://hackernoon.com/how-netflix-and-paypal-did-product-transformation-using-node-js-22074e13caad)
+
 ## architecture
 
 [Understanding Node.js Event-Driven Architecture](https://medium.freecodecamp.com/understanding-node-js-event-driven-architecture-223292fcbc2d)
