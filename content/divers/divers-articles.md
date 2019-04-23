@@ -552,6 +552,22 @@ Extensible à tout sujet technique.
 >
 > Lahore is 29$/h while Munich is 91$/h
 
+## durée de travail
+
+[Microsoft and GitHub Workers Take a Stand Against Grueling, Inhumane '996' Culture in China - gizmodo.com - 20190419](https://gizmodo.com/microsoft-and-github-workers-take-a-stand-against-gruel-1834210579)
+
+> For tech workers in China, a brutal work schedule of 9am to 9pm, 6 days a week (usually just called “996") is not only commonplace, it’s been hailed as “a huge blessing” by the likes of Alibaba’s eccentric and fantastically wealthy taskmaster, Jack Ma. 
+> 
+> Chinese workers took to Github, [...] to start a blacklist of sorts.
+>
+> The repo itself was given the name 996.icu—as named because of this demanding schedule’s likeliness to send exhausted coders to the hospital’s intensive care unit.
+>
+> As a sign of wide support, 996.icu has been starred nearly 260,000 times since its creation, making it one of the most popular repositories in the site’s history.
+> 
+> Microsoft and Github workers today released an open letter, making plain their intention to “stand in solidarity with tech workers in China” and resist potential attempts by the Chinese government to pressure Microsoft into censoring 996.icu. “We must entertain the possibility that Microsoft and GitHub will be pressured to remove the repository,” the letter reads. “We encourage Microsoft and GitHub to keep the 996.ICU GitHub repository uncensored and available to everyone.”
+
+[MSWorkers/support.996.ICU](https://github.com/MSWorkers/support.996.ICU)
+
 ## stacks utilisées
 
 [Étude sur l’évolution des technologies backend par année de création des entreprises : hired.com](https://hired.com/blog/france/technologies-backend-les-plus-en-vogue/)
