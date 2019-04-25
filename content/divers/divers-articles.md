@@ -711,6 +711,12 @@ A l'échelle mondiale chiffré à 100 milliards de dollars (chiffre 2008 ?) par 
 
 > probablement le meilleur condensé d'infos de Jancovici sur la non soutenabilité du modèle économique actuel et donc de la société numérisée en l'état
 
+[Lean ICT – Les impacts environnementaux du Numérique](https://theshiftproject.org/lean-ict/)
+
+> Le projet « Lean ICT » du Shift présente une réflexion sur les pratiques et actions permettant de limiter les impacts environnementaux directs et indirects du Numérique, tout en maximisant l’effet net des leviers du Numérique en matière de transition écologique. Il s’inscrit dans un contexte où la consommation énergétique du Numérique augmente plus vite que les prévisions, et où par extension, les émissions de gaz à effet de serre (GES) induites augmentent aussi.
+
+[Le rapport final “Lean ICT : Pour une sobriété numérique” est disponible - 20180329](https://theshiftproject.org/wp-content/uploads/2018/11/Rapport-final-v8-WEB.pdf) ([Résumé aux décideurs](https://theshiftproject.org/wp-content/uploads/2018/10/R%C3%A9sum%C3%A9-aux-d%C3%A9cideurs_Pour-une-sobri%C3%A9t%C3%A9-num%C3%A9rique_Rapport_The-Shift-Project.pdf))
+
 ## FAI
 
 [Forfait Fist First - Made in Groland](https://www.youtube.com/watch?v=y4fCg0tfVfU)
