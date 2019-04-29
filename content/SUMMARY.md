@@ -189,6 +189,7 @@ htmlHead:
 * [*no silver bullet* F.Brooks - notes](software-engineering/brooks-no-silver-bullet-notes.md)
 * [stamps](software-engineering/stamps.md)
 * [typings](software-engineering/typings.md)
+* [*what is software design* Jack W. Reeves - notes](software-engineering/reeves-what-is-software-design-notes.md)
 
 ## Tools
 
