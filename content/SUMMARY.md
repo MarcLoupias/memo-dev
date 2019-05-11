@@ -215,6 +215,7 @@ htmlHead:
 * [Visual Studio Code](tools/visual-studio-code.md)
 * [Diagrams tools](tools/diagrams.md)
 * [Fiddler](tools/fiddler.md)
+* [File diff online tools](tools/file-diff-online-tools.md)
 * [JWT tools](tools/json-web-token-tools.md)
 * [regex online tools](tools/regex-online-tools.md)
 * [UX Tools and links](tools/ux-tools-and-links.md)
