@@ -48,6 +48,26 @@ htmlHead:
 
 [icons8.com](https://icons8.com/)
 
+## sprites
+
+[Tout sur les sprites CSS - la-cascade.io - 20150324](https://la-cascade.io/tout-sur-les-sprites-css/)
+
+> Les sprites CSS sont une façon de combiner plusieurs images dans un fichier image unique, permettant ainsi d’améliorer la performance de votre site en réduisant le nombre de requêtes HTTP.
+
+[CSS Image Sprites - Pros and Cons - getlevelten.com/blog/ahmad-kharbat - 20150911](https://getlevelten.com/blog/ahmad-kharbat/css-image-sprites-pros-and-cons)
+
+> **ProS**
+> 
+> - Fewer HTTP requests, which means less server overhead.
+> - Fewer HTTP requests also means reduced page load time on browser.
+> - Images appear faster (Especially the hover state images) because the Image Sprite is loaded once and for all.
+> 
+> **Cons**
+> 
+> - More development time for slicing images, combining them, and programming background positions in the CSS.
+> - More maintenance time. Whenever a modification is needed, the whole sprite needs to be re-generated carefully
+> - Less SEO friendly. Some images are better be placed in the HTML rather than being backgrounds. HTML images can contain Titles and Alternative texts that are more beneficial to SEO, while CSS backgrounds cannot.
+
 ## persons
 
 [Daniel Glazman](https://fr.wikipedia.org/wiki/Daniel_Glazman) ([blog](http://glazman.org/weblog/))
