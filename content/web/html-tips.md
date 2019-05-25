@@ -40,6 +40,14 @@ htmlHead:
                      width="98" height="66" alt="Toto"/>
 ```
 
+## Link prefetching
+
+[Link prefetching - developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ)
+
+```html
+<link rel="prefetch" href="/images/big.jpeg">
+```
+
 ## donner une baseref à l'ensemble d'un site via une balise :
 
 [tag_base : www.w3schools.com](http://www.w3schools.com/tags/tag_base.asp)
