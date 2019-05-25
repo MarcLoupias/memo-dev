@@ -29,11 +29,67 @@ htmlHead:
 
 > checklits qualité, référencement, accessibilité, performances, ergonomie, ...
 
-[PageSpeed Insights : developers.google.com](https://developers.google.com/speed/pagespeed/insights/)
-
 [The Cost Of JavaScript - Addy Osmani medium blog - 20171115](https://medium.com/dev-channel/the-cost-of-javascript-84009f51e99e)
 
 > tl;dr: less code = less parse/compile + less transfer + less to decompress
+
+## websites perfs KPIs
+
+**online tools**
+
+[PageSpeed Insights : developers.google.com](https://developers.google.com/speed/pagespeed/insights/)
+
+**speed index**
+
+[Speed Index : tout savoir sur cet indicateur majeur de la performance web - blog.dareboost.com - 20180208](https://blog.dareboost.com/fr/2018/02/speed-index-performance-web/)
+
+[Paul Irish: Day 2 Keynote - Delivering The Goods In Under 1000ms - 2014](https://www.youtube.com/watch?v=E5lZ12Z889k)
+
+**Time To First Byte**
+
+Delay between the first HTTP request from the web browser and the reception of the first byte of the web page by the browser.
+
+**Total Weight**
+
+Measures the total weigth of the page, with all resources loaded. 
+
+This will be measured for a first access, without cache, and without scrolling down to the bottom of the page (images below the fold using lazy loading will thus not be downloaded and taken into account in the page weight).
+
+**Start Render**
+
+Delay between the first request from the web browser and the first diplay on the user's screen (the web page is not totally white anymore).
+
+The Start Render indicates the moment when the first element is painted in the user viewport. It is computed thanks to filmstrip video analysis.
+
+This metric is really interesting in terms of UX, since it represents the moment when the user is not facing a white page anymore. 
+
+This does not mean the user is seeing something meaningfull though (the first rendered element can be a backgroud color or a decorative visual element).
+
+**DOM Interactive**
+
+The browser has finished to parse the HTML code. The DOM construction is complete.
+
+**DOM Content Loaded**
+
+The `DOMContentLoaded` event is fired when the DOM and CSSOM trees have been built, without waiting for images and subframes to load. 
+
+Synchronous scripts – and those with a defer attribute – have been executed.
+
+**Visually complete**
+
+Delay between the first request from the web browser and the complete and final render of the above the fold part of the page (the part of the page visible without the user needing to scroll is loaded and displayed).
+
+The final visual state of the page is captured after the end of network trafic. 
+
+The video analysis allows then to determine the moment this final visual state has been reached (most of the time it is way before the end of the network trafic).
+
+**Fully loaded**
+
+The web page is fully loaded, all the resources are fetched, parsed and executed.
+
+All the metrics above are time related metrics and refer to a specific moment on the filmstrip. 
+
+Google even promotes more time based metrics, rather UX oriented, to measure when and how the page is loaded.
 
 ## websites payload size
 

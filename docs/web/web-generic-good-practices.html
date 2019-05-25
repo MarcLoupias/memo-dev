@@ -4,11 +4,39 @@
 <blockquote>
 <p>checklits qualité, référencement, accessibilité, performances, ergonomie, …</p>
 </blockquote>
-<p><a href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights : developers.google.com</a></p>
 <p><a href="https://medium.com/dev-channel/the-cost-of-javascript-84009f51e99e">The Cost Of JavaScript - Addy Osmani medium blog - 20171115</a></p>
 <blockquote>
 <p>tl;dr: less code = less parse/compile + less transfer + less to decompress</p>
 </blockquote>
+<h2 id="title-websites-perfs-kpis">websites perfs KPIs</h2>
+<p><strong>online tools</strong></p>
+<p><a href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights : developers.google.com</a></p>
+<p><strong>speed index</strong></p>
+<p><a href="https://blog.dareboost.com/fr/2018/02/speed-index-performance-web/">Speed Index : tout savoir sur cet indicateur majeur de la performance web - blog.dareboost.com - 20180208</a></p>
+<p><a href="https://www.youtube.com/watch?v=E5lZ12Z889k">Paul Irish: Day 2 Keynote - Delivering The Goods In Under 1000ms - 2014</a></p>
+<p><strong>Time To First Byte</strong></p>
+<p>Delay between the first HTTP request from the web browser and the reception of the first byte of the web page by the browser.</p>
+<p><strong>Total Weight</strong></p>
+<p>Measures the total weigth of the page, with all resources loaded. </p>
+<p>This will be measured for a first access, without cache, and without scrolling down to the bottom of the page (images below the fold using lazy loading will thus not be downloaded and taken into account in the page weight).</p>
+<p><strong>Start Render</strong></p>
+<p>Delay between the first request from the web browser and the first diplay on the user’s screen (the web page is not totally white anymore).</p>
+<p>The Start Render indicates the moment when the first element is painted in the user viewport. It is computed thanks to filmstrip video analysis.</p>
+<p>This metric is really interesting in terms of UX, since it represents the moment when the user is not facing a white page anymore. </p>
+<p>This does not mean the user is seeing something meaningfull though (the first rendered element can be a backgroud color or a decorative visual element).</p>
+<p><strong>DOM Interactive</strong></p>
+<p>The browser has finished to parse the HTML code. The DOM construction is complete.</p>
+<p><strong>DOM Content Loaded</strong></p>
+<p>The <code>DOMContentLoaded</code> event is fired when the DOM and CSSOM trees have been built, without waiting for images and subframes to load. </p>
+<p>Synchronous scripts – and those with a defer attribute – have been executed.</p>
+<p><strong>Visually complete</strong></p>
+<p>Delay between the first request from the web browser and the complete and final render of the above the fold part of the page (the part of the page visible without the user needing to scroll is loaded and displayed).</p>
+<p>The final visual state of the page is captured after the end of network trafic. </p>
+<p>The video analysis allows then to determine the moment this final visual state has been reached (most of the time it is way before the end of the network trafic).</p>
+<p><strong>Fully loaded</strong></p>
+<p>The web page is fully loaded, all the resources are fetched, parsed and executed.</p>
+<p>All the metrics above are time related metrics and refer to a specific moment on the filmstrip. </p>
+<p>Google even promotes more time based metrics, rather UX oriented, to measure when and how the page is loaded.</p>
 <h2 id="title-websites-payload-size">websites payload size</h2>
 <p><a href="https://speedcurve.com/blog/web-performance-page-bloat/">The average web page is 3MB. How much should we care? - Tammy Everts - speedcurve.com/blog - 20170809</a></p>
 <blockquote>
