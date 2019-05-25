@@ -62,3 +62,7 @@ https://support.google.com/webmasters/answer/35769?hl=fr
 [backlink](https://www.definitions-marketing.com/definition/backlink/)
 
 > Un backlink est un lien externe pointant vers un site web ou plus exactement une page web. Le bénéfice lié aux backlinks est double. D’une part, ils peuvent être une source de trafic lorsqu’ils sont utilisés par les visiteurs des sites référents sur lesquels ils se trouvent et d’autre part, ils favorisent le SEO et le classement dans les résultats de Google.
+
+## SEO et images
+
+[SVG vs PNG quel format d’image pour votre SEO ? - admaker.fr/blog - 20180516](https://admaker.fr/blog/svg-vs-png-quel-format-image-seo/)
