@@ -182,6 +182,11 @@ $ git merge --abort
 $ git merge --strategy-option theirs
 ```
 
+```bash
+# Find the most recent common ancestor of two branches (see https://stackoverflow.com/questions/1549146/git-find-the-most-recent-common-ancestor-of-two-branches)
+$ git merge-base branch2 branch3
+```
+
 ## cherry-pick
 
 ```bash

@@ -80,6 +80,8 @@ $ git diff --stat &lt;tag1&gt;...&lt;tag2&gt;</code></pre>
 $ git merge --abort</code></pre>
 <pre><code class="lang-bash"># merge conflict in favor of &quot;their&quot; changes (origin changes)
 $ git merge --strategy-option theirs</code></pre>
+<pre><code class="lang-bash"># Find the most recent common ancestor of two branches (see https://stackoverflow.com/questions/1549146/git-find-the-most-recent-common-ancestor-of-two-branches)
+$ git merge-base branch2 branch3</code></pre>
 <h2 id="title-cherry-pick">cherry-pick</h2>
 <pre><code class="lang-bash"># cherry-pick a specific commit from one branch to another 
 # (https://ariejan.net/2010/06/10/cherry-picking-specific-commits-from-another-branch/)
