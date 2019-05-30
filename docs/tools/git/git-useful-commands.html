@@ -35,6 +35,12 @@ $ git branch --merged
 iss53
 * master
 # we are on the master branch, and the iss53 branch have been merged in.</code></pre>
+<p><a href="https://stackoverflow.com/questions/1419623/how-to-list-branches-that-contain-a-given-commit">How to list branches that contain a given commit? - stackoverflow.com</a></p>
+<pre><code class="lang-bash"># list local branches to that local commit
+$ git branch --contains &lt;commit&gt;
+
+# list local branches that have a direct relationship to a remote branch
+$ git branch -r --contains &lt;commit&gt;</code></pre>
 <h2 id="title-working-directory">working directory</h2>
 <pre><code class="lang-bash"># change working directory with HEAD of branch_name
 $ git checkout &lt;branch_name&gt;</code></pre>

@@ -80,6 +80,16 @@ iss53
 # we are on the master branch, and the iss53 branch have been merged in.
 ```
 
+[How to list branches that contain a given commit? - stackoverflow.com](https://stackoverflow.com/questions/1419623/how-to-list-branches-that-contain-a-given-commit)
+
+```bash
+# list local branches to that local commit
+$ git branch --contains <commit>
+
+# list local branches that have a direct relationship to a remote branch
+$ git branch -r --contains <commit>
+```
+
 ## working directory
 
 ```bash
