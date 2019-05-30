@@ -383,3 +383,4 @@ Vérifie également l'intégrité par ricochet.
 ## actualite / debats
 
 - [Telegram : les services de renseignement US ont tenté de soudoyer ses développeurs pour affaiblir leur chiffrement](https://www.developpez.net/forums/d1712341/systemes/securite/telegram-renseignement-us-tente-soudoyer-developpeurs-affaiblir-chiffrement/#post9376211)
+- [La ville de Baltimore est l’otage d’une cyberattaque depuis trois semaines - www.lefigaro.fr - 20190528](http://www.lefigaro.fr/secteur/high-tech/la-ville-de-baltimore-est-l-otage-d-une-cyberattaque-depuis-trois-semaines-20190527)
