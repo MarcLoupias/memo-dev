@@ -211,6 +211,7 @@ htmlHead:
 * [gitbook - overview](tools/gitbook/gitbook-intro.md)
 * [slides - slides](tools/slides/slides.md)
 * [slides - gitpitch](tools/slides/gitpitch/gitpitch-intro.md)
+* [slides - fusuma](tools/slides/fusuma/fusuma.md)
 * [JetBrains (WebStorm / IntelliJ](tools/jetbrains/jetbrains-overview.md)
 * [Visual Studio Code](tools/visual-studio-code.md)
 * [Diagrams tools](tools/diagrams.md)
