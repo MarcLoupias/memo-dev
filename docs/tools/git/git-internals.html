@@ -27,7 +27,8 @@
 <li>annotated tag</li>
 </ul>
 <p><strong>warning objects files creation</strong></p>
-<p>Theses files are created once the <code>git add</code> command is executed. It means you could have a lot of orphans objects (not linked with a <code>ref</code>)<br>if you have added to the <code>index</code> a lot of files or directories without putting them into a <code>commit</code>.</p>
+<p>Theses files are created once the <code>git add</code> command is executed. It means you could have a lot of orphans objects (not linked with a <code>ref</code>)
+if you have added to the <code>index</code> a lot of files or directories without putting them into a <code>commit</code>.</p>
 <p>The command <code>git prune -n</code> (or <code>git fsck --unreachable</code>) display the list of orphans objects.</p>
 <p>The command <code>git prune -v</code> delete the orphans objects then print the deleted list.</p>
 <p><strong>immutability</strong></p>

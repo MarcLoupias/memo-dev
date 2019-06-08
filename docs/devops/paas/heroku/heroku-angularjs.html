@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.39594acf.js"></script></head><body><article class="markdown-body"><h1 id="title-heroku---angularjs">heroku - angularjs</h1>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.88a59dcb.js"></script></head><body><article class="markdown-body"><h1 id="title-heroku---angularjs">heroku - angularjs</h1>
 <h2 id="title-goal">Goal</h2>
 <p>Running an Angular app as a Node.js app.</p>
 <h2 id="title-deploy-angular-app-on-heroku">deploy angular app on heroku</h2>
@@ -18,7 +18,8 @@ var app = express();
 app.use(express.logger(&#39;dev&#39;));
 app.use(gzippo.staticGzip(&quot;&quot; + __dirname));
 app.listen(process.env.PORT || 9000);</code></pre>
-<p>les fichiers à déployer sont dans la folder <code>/dist</code><br>Modifier <code>Gruntfile.js</code> pour lui faire copier le Procfile, le <code>web.js</code>.<br>TODO : Lui faire copier une version déployable du <code>package.json</code> (nécessaire !)<br>TOFIX : problème avec certaines tasks (la minification notamment, lié à angular-ui (dep cyclic) et ng-grid)<br>Initialiser un repo git au niveau de <code>/dist</code></p>
+<p>les fichiers à déployer sont dans la folder <code>/dist</code><br>Modifier <code>Gruntfile.js</code> pour lui faire copier le Procfile, le <code>web.js</code>.
+TODO : Lui faire copier une version déployable du <code>package.json</code> (nécessaire !)<br>TOFIX : problème avec certaines tasks (la minification notamment, lié à angular-ui (dep cyclic) et ng-grid)<br>Initialiser un repo git au niveau de <code>/dist</code></p>
 <p>puis en console au niveau de <code>/dist</code> :</p>
 <pre><code>$ heroku login
 $ heroku create</code></pre><p>créer le repo, commit</p>

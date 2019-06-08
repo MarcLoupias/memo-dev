@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.39594acf.js"></script></head><body><article class="markdown-body"><h1 id="title-angularjs---testing">AngularJS - testing</h1>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.88a59dcb.js"></script></head><body><article class="markdown-body"><h1 id="title-angularjs---testing">AngularJS - testing</h1>
 <h2 id="title-tools">tools</h2>
 <ul>
 <li><a href="http://karma-runner.github.io/0.13/index.html">karma runner</a></li>
@@ -208,12 +208,14 @@ throw new Error(&#39;HistoryLRindexValueFactory.addIndexElement(key, data) error
 </ul>
 <h3 id="title-installation-des-drivers-pour-webdrivers">installation des drivers pour webdrivers</h3>
 <p>ATTENTION CHROME &amp; FIREFOX, need dl update de webdriver.</p>
-<p>Derrière un proxy il faut config envvar <code>HTTP_PROXY</code> &amp; <code>HTTPS_PROXY</code> sur fiddler (<code>http://localhost:8888</code>)<br>et set <code>ignore_ssl</code> à true si le magasin de certificat du réseau est fucké. Pour le moment on sait le faire que en dur dans le source de webdriver-manager ( <code>.\node_modules\gulp-protractor\node_modules\protractor\bin\webdriver-manager</code> )<br>ligne 93 (<code>default(&#39;ignore_ssl&#39;, false)</code>.)</p>
+<p>Derrière un proxy il faut config envvar <code>HTTP_PROXY</code> &amp; <code>HTTPS_PROXY</code> sur fiddler (<code>http://localhost:8888</code>)
+et set <code>ignore_ssl</code> à true si le magasin de certificat du réseau est fucké. Pour le moment on sait le faire que en dur dans le source de webdriver-manager ( <code>.\node_modules\gulp-protractor\node_modules\protractor\bin\webdriver-manager</code> )<br>ligne 93 (<code>default(&#39;ignore_ssl&#39;, false)</code>.)</p>
 <ul>
 <li><code>ignore_ssl</code> for protractor [issue 1847] (<a href="https://github.com/angular/protractor/issues/1847#issuecomment-76023932">https://github.com/angular/protractor/issues/1847#issuecomment-76023932</a>).</li>
 <li>proxy config + ignore_ssl for webdriver-manager, [issue 1477] (<a href="https://github.com/angular/protractor/issues/1477">https://github.com/angular/protractor/issues/1477</a>).</li>
 </ul>
-<p>ATTENTION IE :<br>pour exécution sur IE [need drivers spécifiques] (<a href="http://selenium-release.storage.googleapis.com/index.html">http://selenium-release.storage.googleapis.com/index.html</a>).<br>(dépendent de la plateforme, sur win x64 : <code>IEDriverServer_x64_2.47.0.zip</code>)<br>Config à faire ensuite dans <code>protractor.conf.js</code> pour lancer sur ce server (géré au niveau du generator)</p>
+<p>ATTENTION IE :<br>pour exécution sur IE [need drivers spécifiques] (<a href="http://selenium-release.storage.googleapis.com/index.html">http://selenium-release.storage.googleapis.com/index.html</a>).<br>(dépendent de la plateforme, sur win x64 : <code>IEDriverServer_x64_2.47.0.zip</code>)
+Config à faire ensuite dans <code>protractor.conf.js</code> pour lancer sur ce server (géré au niveau du generator)</p>
 <h3 id="title-lancer-la-suite-de-test-sur-chaque-browser">lancer la suite de test sur chaque browser</h3>
 <pre><code class="lang-javascript">multiCapabilities: [{
     &#39;browserName&#39;: &#39;firefox&#39;
@@ -224,7 +226,8 @@ throw new Error(&#39;HistoryLRindexValueFactory.addIndexElement(key, data) error
   }],
 </code></pre>
 <h3 id="title-tests-pour-ie-fail">tests pour ie fail</h3>
-<pre><code>UnknownError: The path to the driver executable must be set by the webdriver.ie.driver system property; for more information, see http://code.google.com/p/selenium/wiki/InternetExplorerDriver. The latest version can be downloaded from http://selenium-release.storage.googleapis.com/index.html</code></pre><p>IE nécessite un driver spécifique et une config spécifique.<br>Dans <code>gulp-protractor</code> les drivers webdriver de IE ne sont pas DL, cf [issue 38] (<a href="https://github.com/mllrsohn/gulp-protractor/issues/38">https://github.com/mllrsohn/gulp-protractor/issues/38</a>)<br>Télécharger les drivers IE manuellement [ici] (<a href="http://selenium-release.storage.googleapis.com/index.html">http://selenium-release.storage.googleapis.com/index.html</a>).<br>Doc du driver [ici] (<a href="https://code.google.com/p/selenium/wiki/InternetExplorerDriver">https://code.google.com/p/selenium/wiki/InternetExplorerDriver</a>).</p>
+<pre><code>UnknownError: The path to the driver executable must be set by the webdriver.ie.driver system property; for more information, see http://code.google.com/p/selenium/wiki/InternetExplorerDriver. The latest version can be downloaded from http://selenium-release.storage.googleapis.com/index.html</code></pre><p>IE nécessite un driver spécifique et une config spécifique.<br>Dans <code>gulp-protractor</code> les drivers webdriver de IE ne sont pas DL, cf [issue 38] (<a href="https://github.com/mllrsohn/gulp-protractor/issues/38">https://github.com/mllrsohn/gulp-protractor/issues/38</a>)
+Télécharger les drivers IE manuellement [ici] (<a href="http://selenium-release.storage.googleapis.com/index.html">http://selenium-release.storage.googleapis.com/index.html</a>).<br>Doc du driver [ici] (<a href="https://code.google.com/p/selenium/wiki/InternetExplorerDriver">https://code.google.com/p/selenium/wiki/InternetExplorerDriver</a>).</p>
 <p>Installer l’exe dans la partie exécutable du disque dur.</p>
 <p>Ajouter de la config à protractor.conf.js :</p>
 <pre><code class="lang-javascript"> seleniumArgs: [

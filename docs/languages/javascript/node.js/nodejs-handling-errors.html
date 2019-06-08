@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.39594acf.js"></script></head><body><article class="markdown-body"><h1 id="title-nodejs---handling-errors">nodejs - handling errors</h1>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.88a59dcb.js"></script></head><body><article class="markdown-body"><h1 id="title-nodejs---handling-errors">nodejs - handling errors</h1>
 <h2 id="title-base-documentation">Base documentation</h2>
 <p><a href="https://nodejs.org/api/errors.html">Node.js official documentation - errors - nodejs.org</a></p>
 <p><a href="https://www.joyent.com/node-js/production/design/errors">Error Handling in Node.js - www.joyent.com</a></p>
@@ -97,7 +97,8 @@
 <h5 id="title-the-most-common-case-is-an-operational-error-in-an-asynchronous-function">The most common case is an operational error in an asynchronous function</h5>
 <p>By far, the most common case is an operational error in an asynchronous function (see <code>fs</code> module for examples).</p>
 <h5 id="title-the-next-most-common-case-is-an-operational-error-in-a-synchronous">The next most common case is an operational error in a synchronous</h5>
-<p>The next most common case is an operational error in a synchronous function like <code>JSON.parse</code>.<br>For these functions, if you encounter an operational error (like invalid user input), you have to deliver the error synchronously. You can either throw it (much more common) or return it.</p>
+<p>The next most common case is an operational error in a synchronous function like <code>JSON.parse</code>.
+For these functions, if you encounter an operational error (like invalid user input), you have to deliver the error synchronously. You can either throw it (much more common) or return it.</p>
 <h5 id="title-the-general-rule">The general rule</h5>
 <p>For a given function, if any operational error can be delivered asynchronously, then <strong>all</strong> operational errors should be delivered asynchronously.</p>
 <p>The general rule is that <strong>a function may deliver operational errors synchronously (e.g., by <code>throw</code>ing) or asynchronously (by passing them to a callback or emitting <code>error</code> on an <code>EventEmitter</code>), but it should not do both.</strong></p>

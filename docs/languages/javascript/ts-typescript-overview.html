@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.39594acf.js"></script></head><body><article class="markdown-body"><h1 id="title-typescript">TypeScript</h1>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.88a59dcb.js"></script></head><body><article class="markdown-body"><h1 id="title-typescript">TypeScript</h1>
 <p>Développé par Microsoft</p>
 <blockquote>
 <p> C’est un sur-ensemble de JavaScript (c’est-à-dire que tout code JavaScript correct peut être utilisé avec TypeScript). Le code TypeScript est transcompilé en JavaScript, pouvant ainsi être interprété par n’importe quel navigateur web ou moteur JavaScript.</p>
@@ -8,7 +8,7 @@
 <li><a href="https://fr.wikipedia.org/wiki/TypeScript">TypeScript : fr.wikipedia.org</a></li>
 </ul>
 <h2 id="title-auteurs--contributeurs">auteurs / contributeurs</h2>
-<p><a href="https://en.wikipedia.org/wiki/Anders_Hejlsberg">Anders Hejlsberg</a>) <a href="https://github.com/ahejlsberg">(github profile)</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Anders_Hejlsberg">Anders Hejlsberg</a> (<a href="https://fr.wikipedia.org/wiki/Anders_Hejlsberg">fr</a>) <a href="https://github.com/ahejlsberg">(github profile)</a></p>
 <blockquote>
 <p>Author of Turbo Pascal, chief architect of Delphi, lead architect of C#, conceptor of .NET framework and core developper and conceptor of TypeScript.</p>
 </blockquote>
@@ -135,7 +135,8 @@ f(1, null); // error, &#39;null&#39; is not assignable to &#39;number | undefine
 <p><a href="https://basarat.gitbooks.io/typescript/docs/tips/defaultIsBad.html"><code>export default</code> considered harmful</a></p>
 <p><a href="https://basarat.gitbooks.io/typescript/docs/tips/barrel.html">Barrel</a></p>
 <blockquote>
-<p>practice of creating an <code>index.ts</code> file inside a directory to re-export files (imply to avoid <code>export default</code>)<br>allows destructured import : <code>import { Foo, Bar, Baz } from &#39;../demo&#39;; // demo/index.ts is implied</code></p>
+<p>practice of creating an <code>index.ts</code> file inside a directory to re-export files (imply to avoid <code>export default</code>)
+allows destructured import : <code>import { Foo, Bar, Baz } from &#39;../demo&#39;; // demo/index.ts is implied</code></p>
 </blockquote>
 <h2 id="title-tslint">TSLint</h2>
 <p><a href="https://palantir.github.io/tslint/">tslint - palantir.github.io</a></p>
@@ -342,7 +343,8 @@ example(&#39;hello world&#39;);</code></pre>
 <p>The purpose of the <code>unknown</code> type is to force the developper to check the structure with type guards or assert the type with type assertion.</p>
 <p><a href="http://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#new-unknown-top-type">See what’s new in TS@3.0 - www.typescriptlang.org</a></p>
 <blockquote>
-<p><code>unknown</code> is the type-safe counterpart of <code>any</code>.<br>Anything is assignable to <code>unknown</code>, but <code>unknown</code> isn’t assignable to anything but itself and <code>any</code> without a type assertion or a control flow based narrowing.<br>Likewise, no operations are permitted on an <code>unknown</code> without first asserting or narrowing to a more specific type.</p>
+<p><code>unknown</code> is the type-safe counterpart of <code>any</code>.
+Anything is assignable to <code>unknown</code>, but <code>unknown</code> isn’t assignable to anything but itself and <code>any</code> without a type assertion or a control flow based narrowing.<br>Likewise, no operations are permitted on an <code>unknown</code> without first asserting or narrowing to a more specific type.</p>
 </blockquote>
 <p><a href="https://auth0.com/blog/typescript-3-exploring-tuples-the-unknown-type/">TypeScript 3.0: Exploring Tuples and the Unknown Type - auth0.com/blog - 20180821</a></p>
 <blockquote>
