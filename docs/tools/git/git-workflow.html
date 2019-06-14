@@ -31,6 +31,40 @@
 <li><a href="https://trunkbaseddevelopment.com/">Trunk based development</a></li>
 <li><a href="https://www.toptal.com/software/trunk-based-development-git-flow">Trunk-based Development vs. Git Flow - www.toptal.com - 201705xx</a></li>
 </ul>
+<p><a href="https://www.atlassian.com/blog/git/git-team-workflows-merge-or-rebase">Git team workflows: merge or rebase? - www.atlassian.com/blog - 20131028</a></p>
+<blockquote>
+<p><strong>Rebase as cleanup:</strong></p>
+<ul>
+<li>You’re developing locally.</li>
+<li>Your code is ready for review.</li>
+<li>Review is done and ready to be integrated into the target branch. </li>
+</ul>
+<p><strong>Rebase team policy:</strong></p>
+<p><em>When a feature branch’s development is complete, rebase/squash all the work down to the minimum number of meaningful commits and avoid creating a merge commit</em></p>
+<p>Pros:</p>
+<ul>
+<li>Code history remains flat and readable.</li>
+<li>Manipulating a single commit is easy (e.g. reverting them).</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Squashing can hide context</li>
+<li>Rebasing doesn’t play well with pull requests</li>
+<li>Rebasing can be dangerous!</li>
+<li>It’s more work</li>
+<li>you need to force push at some point</li>
+</ul>
+<p><strong>Merge team policy:</strong></p>
+<p><em>When a feature branch is complete merge it to your target branch (master or develop or next).</em></p>
+<p>Pros:</p>
+<ul>
+<li>Traceability</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>History can become intensely polluted by lots of merge commits</li>
+</ul>
+</blockquote>
 <h2 id="title-opensource-contrib-on-github">opensource contrib on github</h2>
 <p><a href="https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github">How to Contribute to an Open Source Project on GitHub</a></p>
 <blockquote>

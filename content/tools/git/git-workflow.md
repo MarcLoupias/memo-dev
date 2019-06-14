@@ -55,6 +55,41 @@ The main important one, which is "devops compatible" : [Understanding the GitHub
 - [Trunk based development](https://trunkbaseddevelopment.com/)
 - [Trunk-based Development vs. Git Flow - www.toptal.com - 201705xx](https://www.toptal.com/software/trunk-based-development-git-flow)
 
+[Git team workflows: merge or rebase? - www.atlassian.com/blog - 20131028](https://www.atlassian.com/blog/git/git-team-workflows-merge-or-rebase)
+
+> **Rebase as cleanup:**
+> 
+> - You’re developing locally.
+> - Your code is ready for review.
+> - Review is done and ready to be integrated into the target branch. 
+> 
+> **Rebase team policy:**
+> 
+> *When a feature branch’s development is complete, rebase/squash all the work down to the minimum number of meaningful commits and avoid creating a merge commit*
+> 
+> Pros:
+> - Code history remains flat and readable.
+> - Manipulating a single commit is easy (e.g. reverting them).
+> 
+> Cons:
+> - Squashing can hide context
+> - Rebasing doesn’t play well with pull requests
+> - Rebasing can be dangerous!
+> - It’s more work
+> - you need to force push at some point
+> 
+> **Merge team policy:**
+> 
+> *When a feature branch is complete merge it to your target branch (master or develop or next).*
+> 
+> Pros:
+> 
+> - Traceability
+> 
+> Cons:
+> 
+> - History can become intensely polluted by lots of merge commits
+
 ## opensource contrib on github
 
 [How to Contribute to an Open Source Project on GitHub](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
