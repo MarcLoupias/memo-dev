@@ -48,6 +48,8 @@ The main important one, which is "devops compatible" : [Understanding the GitHub
 - [git DMZ workflow](https://gist.github.com/djspiewak/9f2f91085607a4859a66) (Continuous Delivery oriented possible but not mandatory)
 - [GitLab workflow](http://doc.gitlab.com/ee/workflow/gitlab_flow.html) (Continuous Delivery oriented)
 - [github flow](http://www.nicoespeon.com/fr/2013/08/quel-git-workflow-pour-mon-projet/#le-github-flow) (Continuous Delivery oriented) (best one, simple : A single branch, always deployable. Every dev is branched from this branch)
+- [GitHub Flow - Article Orinal par Scott Chacon - 20110831](http://scottchacon.com/2011/08/31/github-flow.html)
+> Scott Chacon est l'auteur de [Pro Git](https://git-scm.com/book/fr/v2) et également employé chez GitHub.
 - [Shared repository workflow (same as github flow)](https://gist.github.com/seshness/3943237) (Continuous Delivery oriented)
 - [Simple git flow](http://blogs.atlassian.com/2014/01/simple-git-workflow-simple/) (Continuous Delivery oriented)
 - [Trunk based development](https://trunkbaseddevelopment.com/)
