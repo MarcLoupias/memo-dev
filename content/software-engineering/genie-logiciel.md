@@ -174,6 +174,14 @@ Exemple Google (janvier 2015) :
 
 >  Continuous deployment means that every change is automatically deployed to production.
 
+### continuous delivery vs continuous deployment
+
+[Continuous Delivery Vs. Continuous Deployment: What's the Diff? - puppet.com/blog - 20130830](https://puppet.com/blog/continuous-delivery-vs-continuous-deployment-what-s-diff)
+
+They are the same except in continuous delivery the prod deploy is manual. Everything else is automated.
+
+In continuous deployment everything is automated from commit to prod.
+
 ### continuous delivery / deployment and semver
 
 [Semantic Versioning with Continuous Deployment by Mark Seemann : blog.ploeh.dk](http://blog.ploeh.dk/2013/12/10/semantic-versioning-with-continuous-deployment/)
