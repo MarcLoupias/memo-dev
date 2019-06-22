@@ -62,3 +62,4 @@ Using [highlight.js](https://highlightjs.org).
 
 - A new `index.html` page in the form of a SPA to support a full text research with [lunr](https://www.npmjs.com/package/lunr).
 - A TravisCI job with a [GitHub Webhook](https://developer.github.com/webhooks/) to lint the markdown and generate automatically the `docs/` folder when editing the `content/` folder from the GitHub UI.
+- Replace the `<title>` tag with the document main title for each page.
