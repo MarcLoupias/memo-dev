@@ -110,6 +110,7 @@ Theses Engines are used in browsers or server side.
 | JavascriptCore | Webkit (Safari) |
 | Chakra | MS Edge |
 | Carakan | Opera still 2013 |
+| [QuickJS](https://bellard.org/quickjs/) [(news)](https://www.developpez.net/forums/d1989575/javascript/bibliotheques-frameworks/quickjs-moteur-javascript-leger-prenant-charge-specification-es2019/#post11040803) | none |
 
 ### JIT
 
