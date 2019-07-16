@@ -168,6 +168,37 @@
 <blockquote>
 <p>Continuous integration (CI) is the practice, in software engineering, of merging all developer working copies to a shared mainline several times a day.</p>
 </blockquote>
+<p><a href="https://www.youtube.com/watch?v=aoMfbgF2D_4">Continuous Delivery - Martin Fowler - XConf - 20150131</a></p>
+<blockquote>
+<p>A developer needs to do some change to the software, and another, and another, and it comes to a new version.</p>
+<p>The question is how good are the changes ?</p>
+<p>Continuous Delivery says : We need to prove the changes are OK. We begin to throw more and more tests (units, integration, functionnals, etc …)</p>
+<p>Until will be confident it is good.</p>
+<p>And it goes through environments closer and closer to production.</p>
+<p>Until you are confident it will be good when goin to production.</p>
+<p>Continuous Delivery is : You <em>can</em> deploy a change to production (but you may choose not to because it is a business decision)</p>
+<p>Continuous Deployment is : You <em>do</em> deploy a change to production</p>
+<p><strong>Needed ingredients :</strong></p>
+<ul>
+<li>Automating everything (build, deploy, tests, even provisioning your machines)</li>
+<li>Configuration management (you have to be able to checkout any version and instantly put it into a dedicated environment) Everything must be in the configuration management</li>
+<li>DevOps Culture (Dev and Ops must collaborate. No separate walls.)</li>
+<li>Continuous Integration (Every developer integrates with everybody elses work frequently)<ul>
+<li>Everyboy commits everyday to mainline (trunk, master)</li>
+<li>Tests give enough confidence to say it’s OK</li>
+<li>If it fails, you fix it immediatly</li>
+</ul>
+</li>
+</ul>
+<p><strong>Benefits :</strong></p>
+<ul>
+<li>Lowering risks (the smaller the change, the smaller the risk)</li>
+<li>Definition Of Done (live in prod) : Real progress</li>
+<li>Learning from frequent delivery from users feedback</li>
+</ul>
+<p>Not easy to make it, can takes months to put in place.</p>
+<p>Probably one of the most critical practice.</p>
+</blockquote>
 <h3 id="title-continuous-delivery">continuous delivery</h3>
 <p><a href="https://en.wikipedia.org/wiki/Continuous_delivery">wikipedia</a></p>
 <blockquote>

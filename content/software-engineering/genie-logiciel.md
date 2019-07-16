@@ -162,6 +162,44 @@ Exemple Google (janvier 2015) :
 
 > Continuous integration (CI) is the practice, in software engineering, of merging all developer working copies to a shared mainline several times a day.
 
+[Continuous Delivery - Martin Fowler - XConf - 20150131](https://www.youtube.com/watch?v=aoMfbgF2D_4)
+
+> A developer needs to do some change to the software, and another, and another, and it comes to a new version.
+> 
+> The question is how good are the changes ?
+> 
+> Continuous Delivery says : We need to prove the changes are OK. We begin to throw more and more tests (units, integration, functionnals, etc ...)
+> 
+> Until will be confident it is good.
+> 
+> And it goes through environments closer and closer to production.
+> 
+> Until you are confident it will be good when goin to production.
+> 
+> Continuous Delivery is : You *can* deploy a change to production (but you may choose not to because it is a business decision)
+> 
+> Continuous Deployment is : You *do* deploy a change to production
+> 
+> **Needed ingredients :**
+> 
+> - Automating everything (build, deploy, tests, even provisioning your machines)
+> - Configuration management (you have to be able to checkout any version and instantly put it into a dedicated environment) Everything must be in the configuration management
+> - DevOps Culture (Dev and Ops must collaborate. No separate walls.)
+> - Continuous Integration (Every developer integrates with everybody elses work frequently)
+>   - Everyboy commits everyday to mainline (trunk, master)
+>   - Tests give enough confidence to say it's OK
+>   - If it fails, you fix it immediatly
+> 
+> **Benefits :**
+> 
+> - Lowering risks (the smaller the change, the smaller the risk)
+> - Definition Of Done (live in prod) : Real progress
+> - Learning from frequent delivery from users feedback
+> 
+> Not easy to make it, can takes months to put in place.
+> 
+> Probably one of the most critical practice.
+
 ### continuous delivery
 
 [wikipedia](https://en.wikipedia.org/wiki/Continuous_delivery)
