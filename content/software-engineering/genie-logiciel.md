@@ -162,6 +162,12 @@ Exemple Google (janvier 2015) :
 
 > Continuous integration (CI) is the practice, in software engineering, of merging all developer working copies to a shared mainline several times a day.
 
+### continuous delivery
+
+[wikipedia](https://en.wikipedia.org/wiki/Continuous_delivery)
+
+> Continuous delivery (CD) is a software engineering approach in which teams produce software in short cycles, ensuring that the software can be reliably released at any time. It aims at building, testing, and releasing software faster and more frequently. The approach helps reduce the cost, time, and risk of delivering changes by allowing for more incremental updates to applications in production. A straightforward and repeatable deployment process is important for continuous delivery.
+
 [Continuous Delivery - Martin Fowler - XConf - 20150131](https://www.youtube.com/watch?v=aoMfbgF2D_4)
 
 > A developer needs to do some change to the software, and another, and another, and it comes to a new version.
@@ -199,12 +205,6 @@ Exemple Google (janvier 2015) :
 > Not easy to make it, can takes months to put in place.
 > 
 > Probably one of the most critical practice.
-
-### continuous delivery
-
-[wikipedia](https://en.wikipedia.org/wiki/Continuous_delivery)
-
-> Continuous delivery (CD) is a software engineering approach in which teams produce software in short cycles, ensuring that the software can be reliably released at any time. It aims at building, testing, and releasing software faster and more frequently. The approach helps reduce the cost, time, and risk of delivering changes by allowing for more incremental updates to applications in production. A straightforward and repeatable deployment process is important for continuous delivery.
 
 ### continuous deployment
 
