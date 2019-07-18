@@ -204,6 +204,83 @@
 <p>Not easy to make it, can takes months to put in place.</p>
 <p>Probably one of the most critical practice.</p>
 </blockquote>
+<p><a href="https://www.youtube.com/watch?v=skLJuksCRTw">Continuous Delivery - Jez Humble - 2012</a></p>
+<blockquote>
+<p>Jez Humble RETEX about a case :</p>
+<ul>
+<li>top management decide to go agile</li>
+<li>they hire scrum master</li>
+<li>they send team into 2 days formation</li>
+<li>and now they should be agile</li>
+</ul>
+<p>The organisation is now something like that :</p>
+<ul>
+<li><em>Customer</em> push user stories to the *”agile dev team”*.</li>
+<li><em>Dev team</em> analyse, design, dev them test and makes showcases. They iterates several sprints inside that box</li>
+<li>The result is pushed to a <em>centralized QA team</em></li>
+<li>They iterates with <em>dev team</em> to fix things</li>
+<li>Then the result is pushed to <em>IT Operations team</em> who deploy.</li>
+</ul>
+<p>The 3 lasts steps are called “the last mile”.</p>
+<p>The end user get any value just at the end.</p>
+<p>Flickr was the first organization to deploy several times a day.</p>
+<p>They got bought buy Yahoo. Yahoo engineers were stonished buy the deployment frequency.</p>
+<p>They compare the service uptime with their core services and found Flickr uptime was far better then any of them.</p>
+<p>Need to kill a myth : Deploy frequently is not killing stability. It is the opposite.</p>
+<p>Why do we care about releasing frequently ?</p>
+<ul>
+<li>building the right thing (far more then 50% of functionnality in software are rarely used)<ul>
+<li>Scientific method : create hypothesis, deliver MVP, get feedback, repeat. This is <strong>lead time</strong>.</li>
+<li>the main work is to optimize a software delivery process around this loop.</li>
+</ul>
+</li>
+<li>reduce risk of release<ul>
+<li>release frequently means delivering smaller batch size</li>
+<li>when Flickr release a change it is about 50 to 100 LoC. Easy to debug a problem.</li>
+<li>MTBF versus MTRS (Mean Time Before Failure vs Mean Time to Restore Service)</li>
+</ul>
+</li>
+<li>real project progress (done means it works on my machine, done done means it works in production)<ul>
+<li>if you want to reduce cycle times (and reduce lead time) you can<ul>
+<li>increase capacity (more peoples) but see mythical man month (it’s trying to speed up pregnancy by adding 8 women)</li>
+<li>reduce demand (reduce the scope)</li>
+<li>the easiest way is to reduce batch size (this is why Kanban is important)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Continuous Delivery</p>
+<ul>
+<li>software always production ready. Keeping the system working is more important then working on other features</li>
+<li>releases tied to business needs, not operational constraints</li>
+<li>production-ready software (fast, automated feedback on the production readiness of your applicatons every time there is a change - to code, infra or config)</li>
+<li>3 pillars :<ul>
+<li>automation</li>
+<li>patterns and practices</li>
+<li>collaboration (ux, tests, business, …)</li>
+</ul>
+</li>
+<li>a single command should install everything i need to run the system on a virgin machine</li>
+<li>continuous integration (merge commit to the trunk every day + build and test each revision)</li>
+<li>W. Edwards Deming : “Cease dependence on mass inspection to achieve quality. Improve the process and build quality into the product in the first place.”<ul>
+<li>testing is not something we do after development (we should do all the time)</li>
+<li>QA is not responsable for quality. Their job is to represent the user.</li>
+<li>See the <a href="http://codegardener.com/the-marick-test-matrix">Marick Test Matrix</a></li>
+</ul>
+</li>
+<li>deployment pipeline (an automated impl of your system’s build, deploy, test, release process)<ul>
+<li>visibility</li>
+<li>feedback</li>
+<li>control</li>
+<li>every build is a release candidate</li>
+<li>if you fear to deploy in production by just pushing a button, it means you need to fix your validation process</li>
+</ul>
+</li>
+<li>release != deployment (release with feature toggle, so it is already deployed, but not released to end user)</li>
+<li>don’t implements continuous delivery in one batch, do it with continuous improvement</li>
+</ul>
+</blockquote>
 <h3 id="title-continuous-deployment">continuous deployment</h3>
 <p><a href="https://en.wikipedia.org/wiki/Continuous_delivery#Relationship_to_continuous_deployment">wikipedia</a></p>
 <blockquote>

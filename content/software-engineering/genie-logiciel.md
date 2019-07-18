@@ -206,6 +206,74 @@ Exemple Google (janvier 2015) :
 > 
 > Probably one of the most critical practice.
 
+[Continuous Delivery - Jez Humble - 2012](https://www.youtube.com/watch?v=skLJuksCRTw)
+
+> Jez Humble RETEX about a case :
+> 
+> - top management decide to go agile
+> - they hire scrum master
+> - they send team into 2 days formation
+> - and now they should be agile
+> 
+> The organisation is now something like that :
+> 
+> - *Customer* push user stories to the *"agile dev team"*.
+> - *Dev team* analyse, design, dev them test and makes showcases. They iterates several sprints inside that box
+> - The result is pushed to a *centralized QA team*
+> - They iterates with *dev team* to fix things
+> - Then the result is pushed to *IT Operations team* who deploy.
+> 
+> The 3 lasts steps are called "the last mile".
+> 
+> The end user get any value just at the end.
+> 
+> Flickr was the first organization to deploy several times a day.
+> 
+> They got bought buy Yahoo. Yahoo engineers were stonished buy the deployment frequency.
+> 
+> They compare the service uptime with their core services and found Flickr uptime was far better then any of them.
+> 
+> Need to kill a myth : Deploy frequently is not killing stability. It is the opposite.
+> 
+> Why do we care about releasing frequently ?
+> 
+> - building the right thing (far more then 50% of functionnality in software are rarely used)
+>   - Scientific method : create hypothesis, deliver MVP, get feedback, repeat. This is **lead time**.
+>   - the main work is to optimize a software delivery process around this loop.
+> - reduce risk of release
+>   - release frequently means delivering smaller batch size
+>   - when Flickr release a change it is about 50 to 100 LoC. Easy to debug a problem.
+>   - MTBF versus MTRS (Mean Time Before Failure vs Mean Time to Restore Service)
+> - real project progress (done means it works on my machine, done done means it works in production)
+>   - if you want to reduce cycle times (and reduce lead time) you can
+>     - increase capacity (more peoples) but see mythical man month (it's trying to speed up pregnancy by adding 8 women)
+>     - reduce demand (reduce the scope)
+>     - the easiest way is to reduce batch size (this is why Kanban is important)
+> 
+> Continuous Delivery
+> 
+> - software always production ready. Keeping the system working is more important then working on other features
+> - releases tied to business needs, not operational constraints
+> - production-ready software (fast, automated feedback on the production readiness of your applicatons every time there is a change - to code, infra or config)
+> - 3 pillars :
+>   - automation
+>   - patterns and practices
+>   - collaboration (ux, tests, business, ...)
+> - a single command should install everything i need to run the system on a virgin machine
+> - continuous integration (merge commit to the trunk every day + build and test each revision)
+> - W. Edwards Deming : "Cease dependence on mass inspection to achieve quality. Improve the process and build quality into the product in the first place."
+>   - testing is not something we do after development (we should do all the time)
+>   - QA is not responsable for quality. Their job is to represent the user.
+>   - See the [Marick Test Matrix](http://codegardener.com/the-marick-test-matrix)
+> - deployment pipeline (an automated impl of your system's build, deploy, test, release process)
+>   - visibility
+>   - feedback
+>   - control
+>   - every build is a release candidate
+>   - if you fear to deploy in production by just pushing a button, it means you need to fix your validation process
+> - release != deployment (release with feature toggle, so it is already deployed, but not released to end user)
+> - don't implements continuous delivery in one batch, do it with continuous improvement
+
 ### continuous deployment
 
 [wikipedia](https://en.wikipedia.org/wiki/Continuous_delivery#Relationship_to_continuous_deployment)

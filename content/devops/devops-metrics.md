@@ -39,6 +39,13 @@ The time it takes to go from code committed to code successfully running in prod
 
 Highers performers deploy in production in less than an hour. Lower performers deploy monthly or less.
 
+[Continuous Delivery - Jez Humble - 2012](https://www.youtube.com/watch?v=skLJuksCRTw)
+
+Jez Humble definition is : 
+
+> "How long would it take your organization to deploy a change that involved just one single line of code ?
+> Do you do this on a repeatable, reliable basis ?"
+
 **Mean Time To Recover**
 
 Time needed to restore the service of the application when an incident occurs. 
