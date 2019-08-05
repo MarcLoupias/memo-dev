@@ -12,6 +12,103 @@
 <p><a href="https://twitter.com/patrickdebois">Patrick Debois - twitter.com</a></p>
 <p><a href="https://www.oxalide.com/il-etait-fois-lhistoire-du-mouvement-devops/">Il était une fois … l’histoire du DevOps - www.oxalide.com - 20140627</a></p>
 <p><a href="https://itrevolution.com/devops-culture-part-1/">DevOps Culture (Part 1) - itrevolution.com - 20120501</a></p>
+<h3 id="title-devops-pipeline">DevOps pipeline</h3>
+<p><img src="/devops-pipeline.6cac85fd.png" alt=""></p>
+<p><a href="https://jch.blog4ever.com/contruire-un-pipeline-devops">Contruire un pipeline DevOps - jch.blog4ever.com - Jean Chambard - 20180217</a></p>
+<blockquote>
+<p>liste les outils associés à chaque étape de la pipeline :</p>
+<p>Plan → Code → Build → Test → Release → Deploy → Operate → Monitor</p>
+<p><strong>Plan</strong> :</p>
+<ul>
+<li>Micro Focus (anciennement HPE) <a href="https://software.microfocus.com/fr-fr/software/agile-project-management-software-development">Agile Manager</a></li>
+<li>Microsoft <a href="https://www.visualstudio.com/fr/tfs/">Team Fondation Server</a> (TFS)</li>
+<li>CA <a href="https://www.ca.com/fr/products/ca-agile-central.html">Agile Central</a> (anciennement Rally)</li>
+<li>Atlassian <a href="https://fr.atlassian.com/software/jira">Jira Software</a> (connu pour son outil de bug tracking)</li>
+<li><a href="https://trello.com/">Trello</a> (de la société éponyme, spin off de Fog Creek Software) : orienté tâches ;</li>
+<li>CollabNet <a href="https://www.collab.net/products/scrumworks">ScrumWorks</a></li>
+<li>Thoughtworks <a href="https://www.thoughtworks.com/mingle/">Mingle</a></li>
+<li><a href="https://www.wrike.com/fr/">Wrike</a> (de la société éponyme)</li>
+<li><a href="https://asana.com/fr/">Asana</a> (de la société éponyme) : orienté tâches</li>
+</ul>
+<p><strong>Code</strong> :</p>
+<ul>
+<li><a href="https://git-scm.com/">Git</a> (l’outil) ou <a href="https://github.com/">GitHub</a> (le service)</li>
+<li>Mercurial <a href="https://www.mercurial-scm.org/">Source Version Control</a> (SVC)</li>
+<li>Canonical <a href="http://bazaar.canonical.com/en/">Bazaar</a></li>
+<li>Fossil <a href="https://www.fossil-scm.org/index.html/doc/trunk/www/index.wiki">Source Version Control</a></li>
+</ul>
+<p><strong>Build</strong> :</p>
+<ul>
+<li><a href="http://hudson-ci.org/">Hudson</a></li>
+<li><a href="https://jenkins.io/">Jenkins</a></li>
+<li>Atlassian <a href="https://fr.atlassian.com/software/bamboo">Bamboo</a></li>
+<li>Jetbrains <a href="https://www.jetbrains.com/teamcity/">Teamcity</a></li>
+<li>Microsoft <a href="https://www.visualstudio.com/fr/tfs/">TFS</a></li>
+</ul>
+<p><strong>Test</strong> :</p>
+<ul>
+<li><a href="http://www.seleniumhq.org/">Selenium</a>, pour tester toutes les applications avec une interface utilisateur basée sur un navigateur Web.</li>
+<li>Micro Focus (Ex HPE) <a href="https://software.microfocus.com/en-us/products/unified-functional-automated-testing/overview">Unified Functionnel Testing</a> (UFT).</li>
+<li>Tricentis <a href="https://www.tricentis.com/software-testing-tools/">Tosca</a>, son challenger.</li>
+<li>Smartbear <a href="https://smartbear.com/product/testcomplete/overview/">TestComplete</a></li>
+<li>IBM <a href="https://www-03.ibm.com/software/products/fr/rtw">Rational</a> Test Workbench. Il faut mieux avoir la suite Rational et un bon Mainframe pour ce genre d’outils.</li>
+</ul>
+<p><strong>Release</strong> :</p>
+<ul>
+<li><a href="http://www.sonatype.org/nexus/">Sonatype Nexus</a></li>
+<li><a href="https://archiva.apache.org/index.cgi">Apache Archiva</a></li>
+<li><a href="https://jfrog.com/artifactory/">JFrog Artifactory</a></li>
+</ul>
+<p><strong>Deploy</strong> :</p>
+<ul>
+<li><p><em>déploiement</em></p>
+<ul>
+<li><a href="https://jenkins.io/">Jenkins</a>. En sus d’assurer l’intégration continue, Jenkins est aussi capable de faire du déploiement continu. Mais cela reste assez rudimentaire. Pour des outils un peu plus évolués, il faut s’orienter vers des outils payants, qui offrent de nombreux plugins et interfaces.</li>
+<li>Electric Cloud <a href="http://electric-cloud.com/products/electricflow/">ElectricFlow</a></li>
+<li>XebiaLabs <a href="https://xebialabs.com/products/xl-deploy/">XL-Deploy</a>. Un des leaders en France.</li>
+<li>CA Technologies <a href="https://automic.com/fr/products/automic-release-automation">Automic Release Automation</a> (rachat). Notons qu’Automic a réalisé un belle cartographie des différents outils, qui vaut le coup d’oeil.</li>
+<li>Octopus <a href="https://octopus.com/">Deploy</a></li>
+<li>IBM <a href="https://www-03.ibm.com/software/products/fr/ucdep">UrbanCode Deploy</a> (rachat)</li>
+</ul>
+</li>
+<li><p><em>provisioning</em></p>
+<ul>
+<li><a href="https://www.chef.io/chef/">Chef</a>.</li>
+<li><a href="https://puppet.com/fr">Puppet</a>.</li>
+<li><a href="https://www.ansible.com/">Ansible</a>. Sans doute le plus simple des 3 produits, et fonctionnant sans agent, ce qui fait son succès, mais aussi le plus limité de ce fait.</li>
+<li>Mentionnons aussi SaltStack et Fabric, des outils assez frustres de déploiement mais qui ont l’avantage d’être simples et gratuits.</li>
+</ul>
+</li>
+<li><p><em>suivi</em></p>
+<ul>
+<li>L’outil le plus connu est certainement XebiaLabs <a href="https://xebialabs.com/products/xl-release/">XL-Release</a>.</li>
+<li>IBM <a href="https://www-03.ibm.com/software/products/fr/ucrel">UrbanCode</a> Release</li>
+<li>CA Technologies <a href="https://automic.com/fr/products/automic-release-automation">Automic Release Automation</a></li>
+<li>BMC <a href="http://www.bmcsoftware.fr/it-solutions/release-process-management.html">Release Process Management</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>Operate</strong> :</p>
+<ul>
+<li>Les conteneurs Linux <a href="https://linuxcontainers.org/fr/">LXC</a></li>
+<li><a href="https://www.docker.com/">Docker</a> (qui n’est qu’une évolution des conteneurs LXC) et Docker Swarm pour la gestion des clusters, du routage, de la scalability.</li>
+<li>Apache <a href="http://mesos.apache.org/">Mesos</a> ; ce n’est pas un système de container mais plutôt un OS distribué supportant un système de container tel que Docker. Intéressant pour sa scalability.</li>
+<li><a href="https://kubernetes.io/">Kubernetes</a> : un système open source conçu à l’origine par Google et offert à la Cloud Native Computing Foundation. Il vise à fournir une « plate-forme permettant d’automatiser le déploiement, la montée en charge et la mise en œuvre de conteneurs d’applications sur des clusters de serveurs ». A noter que Docker offre maintenant le support de Kubertenes dans la Docker Community Edition pour les developpeurs sous Windows et macOS, et dans la Docker Enterprise Edition.</li>
+<li>Les conteneurs <a href="https://www.microsoft.com/fr-fr/cloud-platform/containers">Windows</a> de chez Microsoft</li>
+</ul>
+<p><strong>Monitor</strong> :</p>
+<ul>
+<li>Dynatrace DCRUM et Purepath (<a href="https://www.dynatrace.com/capabilities/#application-monitoring--performance-lifecycle-management">APM</a>)</li>
+<li>Appdynamics <a href="https://www.appdynamics.com/product/application-performance-management/">APM</a></li>
+<li>New Relic <a href="https://newrelic.com/application-monitoring">APM</a></li>
+</ul>
+<p>En complément :</p>
+<ul>
+<li><a href="https://www.elastic.co/fr/products">ELK</a> : acronyme pour 3 projets open source, Elasticsearch, Logstash, et Kibana. Ce triptyque est très répandu et utilisé notamment pour la supervision de la sécurité, mais pas que.</li>
+<li><a href="https://www.splunk.com/fr_fr">Splunk</a> : C’est une sorte de plate-forme d’Intelligence Opérationnelle (par opposition à la Business Intelligence) temps réel. On peut ainsi explorer, surveiller, analyser et visualiser les données machine via Splunk.</li>
+<li><a href="https://www.datadoghq.com/">DataDog</a> : DataDog est une excellente alternative à Splunk. La solution fonctionne aussi sur des environnements dans le Cloud.</li>
+</ul>
+</blockquote>
 <h3 id="title-resources">resources</h3>
 <p><a href="https://devops.com/">devops.com</a></p>
 <p><a href="https://devops-research.com/">DORA - DevOps Research and Assessment</a></p>

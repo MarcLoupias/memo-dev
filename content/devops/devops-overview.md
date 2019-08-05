@@ -41,6 +41,99 @@ htmlHead:
 
 [DevOps Culture (Part 1) - itrevolution.com - 20120501](https://itrevolution.com/devops-culture-part-1/)
 
+### DevOps pipeline
+
+![](devops-pipeline.png)
+
+[Contruire un pipeline DevOps - jch.blog4ever.com - Jean Chambard - 20180217](https://jch.blog4ever.com/contruire-un-pipeline-devops)
+
+> liste les outils associés à chaque étape de la pipeline :
+> 
+> Plan → Code → Build → Test → Release → Deploy → Operate → Monitor
+>
+> **Plan** :
+> 
+> - Micro Focus (anciennement HPE) [Agile Manager](https://software.microfocus.com/fr-fr/software/agile-project-management-software-development)
+> - Microsoft [Team Fondation Server](https://www.visualstudio.com/fr/tfs/) (TFS)
+> - CA [Agile Central](https://www.ca.com/fr/products/ca-agile-central.html) (anciennement Rally)
+> - Atlassian [Jira Software](https://fr.atlassian.com/software/jira) (connu pour son outil de bug tracking)
+> - [Trello](https://trello.com/) (de la société éponyme, spin off de Fog Creek Software) : orienté tâches ;
+> - CollabNet [ScrumWorks](https://www.collab.net/products/scrumworks)
+> - Thoughtworks [Mingle](https://www.thoughtworks.com/mingle/)
+> - [Wrike](https://www.wrike.com/fr/) (de la société éponyme)
+> - [Asana](https://asana.com/fr/) (de la société éponyme) : orienté tâches
+> 
+> **Code** :
+> 
+> - [Git](https://git-scm.com/) (l'outil) ou [GitHub](https://github.com/) (le service)
+> - Mercurial [Source Version Control](https://www.mercurial-scm.org/) (SVC)
+> - Canonical [Bazaar](http://bazaar.canonical.com/en/)
+> - Fossil [Source Version Control](https://www.fossil-scm.org/index.html/doc/trunk/www/index.wiki)
+> 
+> **Build** :
+> 
+> - [Hudson](http://hudson-ci.org/)
+> - [Jenkins](https://jenkins.io/)
+> - Atlassian [Bamboo](https://fr.atlassian.com/software/bamboo)
+> - Jetbrains [Teamcity](https://www.jetbrains.com/teamcity/)
+> - Microsoft [TFS](https://www.visualstudio.com/fr/tfs/)
+> 
+> **Test** :
+> 
+> - [Selenium](http://www.seleniumhq.org/), pour tester toutes les applications avec une interface utilisateur basée sur un navigateur Web.
+> - Micro Focus (Ex HPE) [Unified Functionnel Testing](https://software.microfocus.com/en-us/products/unified-functional-automated-testing/overview) (UFT).
+> - Tricentis [Tosca](https://www.tricentis.com/software-testing-tools/), son challenger.
+> - Smartbear [TestComplete](https://smartbear.com/product/testcomplete/overview/)
+> - IBM [Rational](https://www-03.ibm.com/software/products/fr/rtw) Test Workbench. Il faut mieux avoir la suite Rational et un bon Mainframe pour ce genre d'outils.
+> 
+> **Release** :
+> 
+> - [Sonatype Nexus](http://www.sonatype.org/nexus/)
+> - [Apache Archiva](https://archiva.apache.org/index.cgi)
+> - [JFrog Artifactory](https://jfrog.com/artifactory/)
+> 
+> **Deploy** :
+> 
+> - *déploiement*
+>   - [Jenkins](https://jenkins.io/). En sus d'assurer l'intégration continue, Jenkins est aussi capable de faire du déploiement continu. Mais cela reste assez rudimentaire. Pour des outils un peu plus évolués, il faut s'orienter vers des outils payants, qui offrent de nombreux plugins et interfaces.
+>   - Electric Cloud [ElectricFlow](http://electric-cloud.com/products/electricflow/)
+>   - XebiaLabs [XL-Deploy](https://xebialabs.com/products/xl-deploy/). Un des leaders en France.
+>   - CA Technologies [Automic Release Automation](https://automic.com/fr/products/automic-release-automation) (rachat). Notons qu'Automic a réalisé un belle cartographie des différents outils, qui vaut le coup d'oeil.
+>   - Octopus [Deploy](https://octopus.com/)
+>   - IBM [UrbanCode Deploy](https://www-03.ibm.com/software/products/fr/ucdep) (rachat)
+> 
+> - *provisioning*
+>   - [Chef](https://www.chef.io/chef/).
+>   - [Puppet](https://puppet.com/fr).
+>   - [Ansible](https://www.ansible.com/). Sans doute le plus simple des 3 produits, et fonctionnant sans agent, ce qui fait son succès, mais aussi le plus limité de ce fait.
+>   - Mentionnons aussi SaltStack et Fabric, des outils assez frustres de déploiement mais qui ont l'avantage d'être simples et gratuits.
+> 
+> - *suivi*
+>   - L'outil le plus connu est certainement XebiaLabs [XL-Release](https://xebialabs.com/products/xl-release/).
+>   - IBM [UrbanCode](https://www-03.ibm.com/software/products/fr/ucrel) Release
+>   - CA Technologies [Automic Release Automation](https://automic.com/fr/products/automic-release-automation)
+>   - BMC [Release Process Management](http://www.bmcsoftware.fr/it-solutions/release-process-management.html)
+> 
+> **Operate** :
+> 
+> - Les conteneurs Linux [LXC](https://linuxcontainers.org/fr/)
+> - [Docker](https://www.docker.com/) (qui n'est qu'une évolution des conteneurs LXC) et Docker Swarm pour la gestion des clusters, du routage, de la scalability.
+> - Apache [Mesos](http://mesos.apache.org/) ; ce n'est pas un système de container mais plutôt un OS distribué supportant un système de container tel que Docker. Intéressant pour sa scalability.
+> - [Kubernetes](https://kubernetes.io/) : un système open source conçu à l'origine par Google et offert à la Cloud Native Computing Foundation. Il vise à fournir une « plate-forme permettant d'automatiser le déploiement, la montée en charge et la mise en œuvre de conteneurs d'applications sur des clusters de serveurs ». A noter que Docker offre maintenant le support de Kubertenes dans la Docker Community Edition pour les developpeurs sous Windows et macOS, et dans la Docker Enterprise Edition.
+> - Les conteneurs [Windows](https://www.microsoft.com/fr-fr/cloud-platform/containers) de chez Microsoft
+> 
+> **Monitor** :
+> 
+> - Dynatrace DCRUM et Purepath ([APM](https://www.dynatrace.com/capabilities/#application-monitoring--performance-lifecycle-management))
+> - Appdynamics [APM](https://www.appdynamics.com/product/application-performance-management/)
+> - New Relic [APM](https://newrelic.com/application-monitoring)
+> 
+> En complément :
+> 
+> - [ELK](https://www.elastic.co/fr/products) : acronyme pour 3 projets open source, Elasticsearch, Logstash, et Kibana. Ce triptyque est très répandu et utilisé notamment pour la supervision de la sécurité, mais pas que.
+> - [Splunk](https://www.splunk.com/fr_fr) : C'est une sorte de plate-forme d'Intelligence Opérationnelle (par opposition à la Business Intelligence) temps réel. On peut ainsi explorer, surveiller, analyser et visualiser les données machine via Splunk.
+> - [DataDog](https://www.datadoghq.com/) : DataDog est une excellente alternative à Splunk. La solution fonctionne aussi sur des environnements dans le Cloud.
+
 ### resources
 
 [devops.com](https://devops.com/)
