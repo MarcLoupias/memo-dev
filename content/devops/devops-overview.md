@@ -47,9 +47,9 @@ htmlHead:
 
 [Contruire un pipeline DevOps - jch.blog4ever.com - Jean Chambard - 20180217](https://jch.blog4ever.com/contruire-un-pipeline-devops)
 
-> liste les outils associés à chaque étape de la pipeline :
+> TLDR : Liste et explique les outils associés à chaque étape de la pipeline.
 > 
-> Plan → Code → Build → Test → Release → Deploy → Operate → Monitor
+> Etapdes de la pipeline : Plan → Code → Build → Test → Release → Deploy → Operate → Monitor
 >
 > **Plan** :
 > 
