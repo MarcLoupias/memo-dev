@@ -33,6 +33,27 @@ htmlHead:
 
 [glossary](https://git-scm.com/book/commands)
 
+[Comprendre Git - ancien blog de Xavier Pigeon - 2012](http://xpn-engine.blogspot.com/2012/01/comprendre-git.html)
+
+> *Article intéressant avec une approche travaillée sur l'implémentation interne :*
+> 
+> Git est un :
+>
+> - gestionnaire de contenu,
+> - stocké sous la forme d'un graphe acyclique d'objets,
+> - accessible par des références.
+> 
+> Git est structuré en 2 partie :
+> 
+> - le **frontend**, qui regroupe les commandes dites porcelain (add, commit, checkout, etc).
+> - le **backend**, développé par Linus Torvalds, qui réunit les commandes dites plumbing (hash-object, cat-file).
+>
+> On retrouve cette distinction dans la littérature informatique et dans les formations : souvent, les formations pour débutants présentent le frontend, et le backend ne sera traité que par les formations avancées. Les dissocier de cette manière est une erreur, car en maîtrisant le backend, on maîtrisera bien mieux le frondend.
+> 
+> Concept #1 : Git est un gestionnaire de contenu.
+> Concept #2 : La relation entre commits est un graphe acyclique (ou DAG).
+> Concept #3 : Le contenu est accessible sous forme de références.
+
 ### repository
 Named also a *tree* by some git users.
 It is the whole history of a project (a directory).

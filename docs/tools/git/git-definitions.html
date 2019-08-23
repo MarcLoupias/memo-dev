@@ -8,6 +8,23 @@
 </ul>
 <h2 id="title-concepts">concepts</h2>
 <p><a href="https://git-scm.com/book/commands">glossary</a></p>
+<p><a href="http://xpn-engine.blogspot.com/2012/01/comprendre-git.html">Comprendre Git - ancien blog de Xavier Pigeon - 2012</a></p>
+<blockquote>
+<p><em>Article intéressant avec une approche travaillée sur l’implémentation interne :</em></p>
+<p>Git est un :</p>
+<ul>
+<li>gestionnaire de contenu,</li>
+<li>stocké sous la forme d’un graphe acyclique d’objets,</li>
+<li>accessible par des références.</li>
+</ul>
+<p>Git est structuré en 2 partie :</p>
+<ul>
+<li>le <strong>frontend</strong>, qui regroupe les commandes dites porcelain (add, commit, checkout, etc).</li>
+<li>le <strong>backend</strong>, développé par Linus Torvalds, qui réunit les commandes dites plumbing (hash-object, cat-file).</li>
+</ul>
+<p>On retrouve cette distinction dans la littérature informatique et dans les formations : souvent, les formations pour débutants présentent le frontend, et le backend ne sera traité que par les formations avancées. Les dissocier de cette manière est une erreur, car en maîtrisant le backend, on maîtrisera bien mieux le frondend.</p>
+<p>Concept #1 : Git est un gestionnaire de contenu.<br>Concept #2 : La relation entre commits est un graphe acyclique (ou DAG).<br>Concept #3 : Le contenu est accessible sous forme de références.</p>
+</blockquote>
 <h3 id="title-repository">repository</h3>
 <p>Named also a <em>tree</em> by some git users.<br>It is the whole history of a project (a directory).<br>Composed by commits. Each node is a commit.<br>Created by <code>git init</code> command (or by <code>git clone</code> if you want to copy an existing repository).<br>Create a self-sufficient <code>.git</code> directory. It means that a simple zip on the repository root directory is enough to backup it.</p>
 <h3 id="title-bare-repository">bare repository</h3>
