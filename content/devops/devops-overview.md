@@ -148,9 +148,13 @@ htmlHead:
 
 [Official GitHub Actions collection - github.com/actions](https://github.com/actions)
 
-[GitHub Blog official announcement - github.blog - 20181017](https://github.blog/2018-10-17-action-demos/)
-
 [GitHub Action and `semantic-release` discussion](https://github.com/semantic-release/semantic-release/issues/974)
+
+**GitHub Blog official announcement**
+
+- [GitHub Actions: built by you, run by us - github.blog - 20181017](https://github.blog/2018-10-17-action-demos/)
+- [GitHub Actions: Updates to GitHub Actions (limited public beta) - github.blog - 20190808](https://github.blog/changelog/2019-08-08-updates-to-github-actions-limited-public-beta/)
+- [GitHub Actions: Publishing packages from a GitHub Action to GitHub Package Registry - github.blog - 20190816](https://github.blog/changelog/2019-08-16-publishing-packages-from-a-github-action-to-github-package-registry/)
 
 ### resources
 
