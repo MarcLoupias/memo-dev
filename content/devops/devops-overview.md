@@ -148,6 +148,10 @@ htmlHead:
 
 [Official GitHub Actions collection - github.com/actions](https://github.com/actions)
 
+[GitHub Blog official announcement - github.blog - 20181017](https://github.blog/2018-10-17-action-demos/)
+
+[GitHub Action and `semantic-release` discussion](https://github.com/semantic-release/semantic-release/issues/974)
+
 ### resources
 
 [devops.com](https://devops.com/)
