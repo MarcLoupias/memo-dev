@@ -28,18 +28,18 @@ htmlHead:
 [L’authentification sans mot de passe sur le Web, c'est pour bientôt - www.01net.com - 20180826](https://www.01net.com/actualites/l-authentification-sans-mot-de-passe-sur-le-web-c-est-pour-bientot-1475642.html)
 
 > **L'API WebAuthn pourrait rapidement s'imposer**
-> 
+>
 > - Cf FIDO2 et [Yubico](https://www.yubico.com/2018/04/new-security-key-fido2/).
 > - Supporté par W3C
-> - Démo : https://webauthn.org/
-> 
+> - Démo : [https://webauthn.org/](https://webauthn.org/)
+>
 > **Le courrier électronique comme moyen d'authentification ?**
-> 
+>
 > - Authentification par mail en se basant sur les headers DKIM (Domain Keys Identified Mail).
 > - Cf [Swoop](https://swoopnow.com/).
-> 
+>
 > **Utiliser les technologies des cryptomonnaies**
-> 
+>
 > Utiliser les applis qui gèrent les comptes de cryptomonnaies pour authentifier les utilisateurs.
 
 ## Cookies vs Tokens
@@ -48,8 +48,8 @@ htmlHead:
 
 ## diff oAuth / OpenID / SAML
 
--  OAuth is about giving access to your stuff without sharing your identity at all
--  OpenID is all about using a single identity to sign into many sites
+- OAuth is about giving access to your stuff without sharing your identity at all
+- OpenID is all about using a single identity to sign into many sites
 
 - [What's the difference between OpenID and OAuth? : stackoverflow.com](http://stackoverflow.com/questions/1087031/whats-the-difference-between-openid-and-oauth)
 - [Difference Between OAUTH, OpenID and OPENID Connect in very simple term? : security.stackexchange.com](https://security.stackexchange.com/questions/44611/difference-between-oauth-openid-and-openid-connect-in-very-simple-term)
@@ -72,7 +72,7 @@ See article above for security risks.
 [OAuth vs. SAML vs. OpenID Connect](https://www.gluu.org/blog/oauth-vs-saml-vs-openid-connect/)
 
 > So when should you use SAML, and when should you use OpenID Connect?
-> 
+>
 > - If you have a mobile application, use OpenID Connect–no question. See [this blog on the use of AppAuth](http://www.gluu.co/appauth-blog).
 > - If you have an application that already supports SAML–use SAML!
 > - If you are writing a new application, use OpenID Connect–skate to where the puck is going!
@@ -90,8 +90,8 @@ See article above for security risks.
 [Am I right in thinking OAuth 1.0 has been deprecated in favour of OAuth 2.0? : stackoverflow.com](http://stackoverflow.com/questions/17679523/am-i-right-in-thinking-oauth-1-0-has-been-deprecated-in-favour-of-oauth-2-0)
 
 > IETF has published a new version of OAuth 2 obsoleting OAuth 1.x and it strongly recommends the new Auth providers switch to OAuth2.
-> 
-> There is a revision to **OAuth 1.0a** which fixes many of the security flaws found in 1.0 and is widely considered to be the most secure OAuth version yet. 
+>
+> There is a revision to **OAuth 1.0a** which fixes many of the security flaws found in 1.0 and is widely considered to be the most secure OAuth version yet.
 
 ## OAuth2
 
@@ -99,30 +99,30 @@ See article above for security risks.
 
 [User Authentication with OAuth 2.0](https://oauth.net/articles/authentication/)
 
-> The OAuth 2.0 specification defines a delegation protocol that is useful for conveying authorization decisions across 
-> a network of web-enabled applications and APIs. OAuth is used in a wide variety of applications, including providing 
-> mechanisms for user authentication. 
-> This has led many developers and API providers to incorrectly conclude that OAuth is itself an authentication protocol 
+> The OAuth 2.0 specification defines a delegation protocol that is useful for conveying authorization decisions across
+> a network of web-enabled applications and APIs. OAuth is used in a wide variety of applications, including providing
+> mechanisms for user authentication.
+> This has led many developers and API providers to incorrectly conclude that OAuth is itself an authentication protocol
 > and to mistakenly use it as such. Let's say that again, to be clear:
-> 
+>
 > **OAuth 2.0 is not an authentication protocol.**
-> 
-> Much of the confusion comes from the fact that OAuth is used *inside* of authentication protocols, and developers will 
-> see the OAuth components and interact with the OAuth flow and assume that by simply using OAuth, they can accomplish 
+>
+> Much of the confusion comes from the fact that OAuth is used *inside* of authentication protocols, and developers will
+> see the OAuth components and interact with the OAuth flow and assume that by simply using OAuth, they can accomplish
 > user authentication. This turns out to be not only untrue, but also dangerous for service providers, developers, and end users.
 
 [Analyse RFC 6749 par Stéphane Bortzmeyer](http://www.bortzmeyer.org/6749.html)
 
-> OpenID vise à authentifier un utilisateur humain, OAuth à authentifier la requête d'un programme, agissant 
+> OpenID vise à authentifier un utilisateur humain, OAuth à authentifier la requête d'un programme, agissant
 > pour le compte d'un humain.
 
 [OAuth 2 Simplified : aaronparecki.com](https://aaronparecki.com/oauth-2-simplified/)
 
 > This post describes OAuth 2.0 in a simplified format to help developers and service providers implement the protocol.
-> 
-> The OAuth 2 spec can be a bit confusing to read, so I've written this post to help describe the terminology in a 
-> simplified format. The core spec leaves many decisions up to the implementer, often based on security tradeoffs of the 
-> implementation. Instead of describing all possible decisions that need to be made to successfully implement OAuth 2, 
+>
+> The OAuth 2 spec can be a bit confusing to read, so I've written this post to help describe the terminology in a
+> simplified format. The core spec leaves many decisions up to the implementer, often based on security tradeoffs of the
+> implementation. Instead of describing all possible decisions that need to be made to successfully implement OAuth 2,
 > this post makes decisions that are appropriate for most implementations.
 
 ### RFC
@@ -163,11 +163,11 @@ See article above for security risks.
 > and a new authorization grant type.  Mechanisms are specified for
 > transporting assertions during interactions with a token endpoint;
 > general processing rules are also specified.
-> 
+>
 > The intent of this specification is to provide a common framework for
 > OAuth 2.0 to interwork with other identity systems using assertions
 > and to provide alternative client authentication mechanisms.
-> 
+>
 > Note that this specification only defines abstract message flows and
 > processing rules.  In order to be implementable, companion
 > specifications are necessary to provide the corresponding concrete
@@ -215,7 +215,7 @@ See article above for security risks.
 > option to change the JWS Signing Input computation to not base64url-
 > encode the payload.  This option is intended to broaden the set of
 > use cases for which the use of JWS is a good fit.
-> 
+>
 > This specification updates RFC 7519 by stating that JSON Web Tokens
 > (JWTs) MUST NOT use the unencoded payload option defined by this
 > specification.
@@ -275,7 +275,7 @@ See article above for security risks.
 
 ### Authorization servers
 
-- [github developer oauth](http://developer.github.com/v3/oauth/)
+- [GitHub developer oauth](http://developer.github.com/v3/oauth/)
 - [Using OAuth 2.0 to Access Google APIs](https://developers.google.com/identity/protocols/OAuth2)
 - [Facebook Login pour le web avec le SDK JavaScript](https://developers.facebook.com/docs/facebook-login/web)
 - [Twitter Developer Documentation - POST oauth2/token](https://dev.twitter.com/oauth/reference/post/oauth2/token)
@@ -286,9 +286,9 @@ See article above for security risks.
 [100% Stateless avec JWT (JSON Web Token) (Hubert SABLONNIÈRE) : Devoxx2016](https://www.youtube.com/watch?v=A2-YImhNVMU)
 
 > **Historique**
+>
 > - historique de la gestion des sessions web via cookie
-> - rappel : diff cookie et JWT fausse, c'est diff entre sessionId et JWT car cookie est un mode de transport. JWT est 
-> transporté via un cookie
+> - rappel : diff cookie et JWT fausse, c'est diff entre sessionId et JWT car cookie est un mode de transport. JWT est transporté via un cookie
 > - diff entre sessionId et token JWT
 >   - sessionId = token par référence (contient la référence à la session, la session étant stockée dans le backend)
 >   - JWT = token par valeur (contient la valeur de la session : `H34D3R.P4YLO4D.S1GN47UR3`)
@@ -297,24 +297,28 @@ See article above for security risks.
 > Un token JWT est encodé en Base64url (comme Base64 mais safe pour les urls)
 > 3 parties (header, payload et signature) encodées chacune en Base64url, les parties sont séparées par un `.`.
 > Une fois décodé, les parties header et payload du token sont au format json.
-> 
+>
 > Les propriétés de la partie payload sont nommées des `claims` (codifiés par RFC7519).
 >
 > **Avantages**
+>
 > - stocké côté client donc scalable
 > - multilangage
 > - microservices
-> - SSO gratuit 
+> - SSO gratuit
 >
 > **Usage avec d'autres technos**
+>
 > - OAuth2 : Si le provider OAuth2 fournit des refresh token et access token JWT alors on est complètement stateless
 > - OpenID Connect : le token ID est de base un JWT
-> 
+>
 > **Inconvénients**
+>
 > - Révocation de tokens (blacklist via le claim `jti`, crée un SPOF (Single Point Of Failure))
 > - transporté via cookies donc vulnérables aux attaques XSS et CSRF
 >
 > **Autres usages des JWT**
+>
 > - stockage données session (panier, formulaire multipart, ...)
 > - mail de confirmation en passant le token dans l'url du mail de confirmation (évite le stockage BDD)
 >

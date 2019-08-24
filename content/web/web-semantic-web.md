@@ -26,9 +26,9 @@ htmlHead:
 [semantic web definition - en.wikipedia.org](https://en.wikipedia.org/wiki/Semantic_Web)
 
 > According to the W3C, "The Semantic Web provides a common framework that allows data to be shared and reused across application, enterprise, and community boundaries".
-> 
+>
 > The Semantic Web is therefore regarded as an integrator across different content, information applications and systems.
-> 
+>
 > The standards promote common data formats and exchange protocols on the Web, most fundamentally the Resource Description Framework (RDF).
 
 ## RDF
@@ -40,9 +40,9 @@ htmlHead:
 [RDF definition - en.wikipedia.org](https://en.wikipedia.org/wiki/Resource_Description_Framework)
 
 > The Resource Description Framework (RDF) is a family of World Wide Web Consortium (W3C) specifications[1] originally designed as a metadata data model.
-> 
+>
 > It has come to be used as a general method for conceptual description or modeling of information that is implemented in web resources, using a variety of syntax notations and data serialization formats.
-> 
+>
 > RDF was adopted as a W3C recommendation in 1999. The RDF 1.0 specification was published in 2004, the RDF 1.1 specification in 2014.
 
 [RDFa definition - en.wikipedia.org](https://en.wikipedia.org/wiki/RDFa)
@@ -54,26 +54,26 @@ htmlHead:
 [Linked Data Plaform definition - en.wikipedia.org](https://en.wikipedia.org/wiki/Linked_Data_Platform)
 
 > Linked Data Platform (LDP) is a Linked Data specification defining a set of integration patterns for building RESTful HTTP services that are capable of read-write of RDF data.
-> 
+>
 > The Linked Data Platform allows use of RESTful HTTP to consume, create, update and delete both RDF and non-RDF resources.
-> 
+>
 > In addition, it defines a set of "Container" constructs—buckets into which documents can be added with a relationship between the bucket and the object similar to the relationship between a blog and its constituent blog posts.
 
-[github.com/linkeddata](https://github.com/linkeddata)
+[`github.com/linkeddata`](https://github.com/linkeddata)
 
 [linkeddata/rdflib.js](https://github.com/linkeddata/rdflib.js)
 
-> Javascript RDF library for browsers and Node.js.
+> JavaScript RDF library for browsers and Node.js.
 
 ## solid
 
 [solid - solid.mit.edu](https://solid.mit.edu/)
 
-> Solid is an exciting new project led by Prof. Tim Berners-Lee, inventor of the World Wide Web, taking place at MIT. The project aims to radically change the way Web applications work today, resulting in true data ownership as well as improved privacy. 
+> Solid is an exciting new project led by Prof. Tim Berners-Lee, inventor of the World Wide Web, taking place at MIT. The project aims to radically change the way Web applications work today, resulting in true data ownership as well as improved privacy.
 
-[github.com/solid](https://github.com/solid)
+[`github.com/solid`](https://github.com/solid)
 
-[github.com/solid/node-solid-server](https://github.com/solid/node-solid-server)
+[`github.com/solid/node-solid-server`](https://github.com/solid/node-solid-server)
 
 > Solid server on top of the file-system in NodeJS
 

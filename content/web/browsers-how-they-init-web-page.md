@@ -38,7 +38,7 @@ Step 4 causes a bad user experience. Your website basically stops loading until 
 
 Any script can insert its own HTML via `document.write()` or other DOM manipulations. This implies that the parser has to wait until the script has been downloaded & executed before it can safely parse the rest of the document. After all, the script could have inserted its own HTML in the document.
 
-However, most javascript developers no longer manipulate the DOM while the document is loading. Instead, they wait until the document has been loaded before modifying it. For example:
+However, most JavaScript developers no longer manipulate the DOM while the document is loading. Instead, they wait until the document has been loaded before modifying it. For example:
 
 ```html
 <!-- index.html -->
@@ -53,11 +53,11 @@ However, most javascript developers no longer manipulate the DOM while the docum
 </html>
 ```
 
-Javascript:
+JavaScript:
 
 ```javascript
 // my-script.js
-document.addEventListener("DOMContentLoaded", function() { 
+document.addEventListener("DOMContentLoaded", function() {
     // this function runs when the DOM is ready, i.e. when the document has been parsed
     document.getElementById("user-greeting").textContent = "Welcome back, Bart";
 });
@@ -87,7 +87,7 @@ Today, browsers support the `async` and `defer` attributes on scripts. These att
 Scripts with the async attribute are executed asynchronously. This means the script is executed as soon as it's downloaded, without blocking the browser in the meantime.
 This implies that it's possible script 2 is downloaded & executed before script 1.
 
-According to http://caniuse.com/#feat=script-async, 90% of all browsers support this.
+According to [http://caniuse.com/#feat=script-async](http://caniuse.com/#feat=script-async), 90% of all browsers support this.
 
 ### defer
 
@@ -100,7 +100,7 @@ Scripts with the `defer` attribute are executed in order (i.e. first script 1, t
 
 Unlike async scripts, defer scripts are only executed after the entire document has been loaded.
 
-According to http://caniuse.com/#feat=script-defer, 90% of all browsers support this. 92% support it at least partially.
+According to [http://caniuse.com/#feat=script-defer](http://caniuse.com/#feat=script-defer), 90% of all browsers support this. 92% support it at least partially.
 
 An important note on browser compatibility: in some circumstances IE <= 9 may execute deferred scripts out of order. If you need to support those browsers, please read this first!
 
@@ -114,4 +114,3 @@ The good thing is that your website should still load correctly on the 20% of br
 
 - [Where is the best place to put `<script>` tags in HTML markup?](http://stackoverflow.com/a/24070373)
 - [developers.google.com : Supprimer les fichiers JavaScript qui bloquent l'affichage](https://developers.google.com/speed/docs/insights/BlockingJS#recommandations)
-

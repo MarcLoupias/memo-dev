@@ -53,7 +53,7 @@ Googling on Cyclomatic Complexity (CC), gives some interesting results… Among 
 
 Those two definitions, though perfectly true, are one of the reason for Sonar to exist: going away from the fact that code source quality is a notion only accessible to elite. Sonar is about democratization of the source code quality concepts to be understandable and usable by every stakeholder in a development project.
 
-Having said that, what is it that CC is trying to represent? This is roughly the number of different paths in your source code and there are two ways in java to begin a new path : 
+Having said that, what is it that CC is trying to represent? This is roughly the number of different paths in your source code and there are two ways in java to begin a new path :
 
 - Calling a method (CC + 1)
 - Encountering the following keywords : if, while, repeat, for, &&, ||, catch, case, etc … (CC + 1)

@@ -2,12 +2,12 @@
 <p><a href="https://www.elastic.co/">site officiel www.elastic.co</a></p>
 <h2 id="title-elk-overview">ELK overview</h2>
 <p>Elasticsearch Store, Search, and Analyze</p>
-<p>Logstash: Collect, Enrich, and Transport </p>
+<p>Logstash: Collect, Enrich, and Transport</p>
 <p>Kibana: Explore, Visualize, and Share</p>
 <h2 id="title-exemple">exemple</h2>
 <p><a href="https://www.youtube.com/watch?v=0J5Xt5CCQhQ&index=53&list=PLTbQvx84FrARa9pUtZYK7t_UfyGMCPOBn">Mise en place d’une plateforme centralisée de gestion des logs avec elastic (D. Pilato, E. Demey)</a></p>
 <blockquote>
-<p>Le code est sur <a href="https://github.com/Gillespie59/devoxx-universite-elastic">Gillespie59/devoxx-universite-elastic</a> sur github.</p>
+<p>Le code est sur <a href="https://github.com/Gillespie59/devoxx-universite-elastic">Gillespie59/devoxx-universite-elastic</a> sur GitHub.</p>
 <p>Stack front angular + back node.js, le tout dockérisé. Comment avoir des logs et des stats avec une stack ELK.</p>
 </blockquote>
 <h2 id="title-install">install</h2>
@@ -17,7 +17,7 @@
 <h2 id="title-concepts">Concepts</h2>
 <p><a href="https://stackoverflow.com/questions/15025876/what-is-an-index-in-elasticsearch">What is an index in Elasticsearch</a></p>
 <blockquote>
-<p>Comparing with relationnal database (<strong>5- only !</strong>) : </p>
+<p>Comparing with relationnal database (<strong>5- only !</strong>) :</p>
 <ul>
 <li>MySQL =&gt; Databases =&gt; Tables =&gt; Columns/Rows</li>
 <li>ElasticSearch =&gt; Indices =&gt; Types =&gt; Documents with Properties</li>
@@ -27,7 +27,7 @@
 </blockquote>
 <p><strong>!!! Breaking change in Elasticsearch 6+ !!!</strong></p>
 <p>The type becomes deprecated, in v7 it will be removed.</p>
-<p><a href="https://github.com/elastic/elasticsearch/issues/15613">Remove support for types? - the github issue in elastic/elasticsearch repo</a></p>
+<p><a href="https://github.com/elastic/elasticsearch/issues/15613">Remove support for types? - the GitHub issue in elastic/elasticsearch repo</a></p>
 <p><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/removal-of-types.html">Here is why : Removal of mapping types - www.elastic.co/guide</a></p>
 <p>In an Elasticsearch index, fields that have the same name in different mapping types are backed by the same Lucene field internally.</p>
 <p>In other words, using the example above, the <code>user_name</code> field in the <code>user</code> type is stored in exactly the same field as the <code>user_name</code> field in the <code>tweet</code> type, and both <code>user_name</code> fields must have the same mapping (definition) in both types.</p>
@@ -42,34 +42,42 @@
 <h3 id="title-exploring-the-cluster">exploring the cluster</h3>
 <h4 id="title-cluster-health">cluster health</h4>
 <p><code>GET /_cat/health?v</code></p>
-<pre><code>epoch      timestamp cluster       status node.total node.data shards pri relo init unassign pending_tasks max_task_wait_time active_shards_percent
-1475247709 17:01:49  elasticsearch green           1         1      0   0    0    0        0             0                  -                100.0%</code></pre><p>cf <a href="https://www.elastic.co/guide/en/elasticsearch/reference/5.6/cat.html">cat APIs</a></p>
+<pre><code class="lang-text">epoch      timestamp cluster       status node.total node.data shards pri relo init unassign pending_tasks max_task_wait_time active_shards_percent
+1475247709 17:01:49  elasticsearch green           1         1      0   0    0    0        0             0                  -                100.0%</code></pre>
+<p>cf <a href="https://www.elastic.co/guide/en/elasticsearch/reference/5.6/cat.html">cat APIs</a></p>
 <p><code>GET /_cat/nodes?v</code></p>
-<pre><code>ip        heap.percent ram.percent cpu load_1m load_5m load_15m node.role master name
-127.0.0.1           10           5   5    4.46                        mdi      *      PB2SGZY</code></pre><h4 id="title-list-all-indices">list all indices</h4>
+<pre><code class="lang-text">ip        heap.percent ram.percent cpu load_1m load_5m load_15m node.role master name
+127.0.0.1           10           5   5    4.46                        mdi      *      PB2SGZY</code></pre>
+<h4 id="title-list-all-indices">list all indices</h4>
 <p><code>GET /_cat/indices?v</code></p>
-<pre><code>health status index uuid pri rep docs.count docs.deleted store.size pri.store.size
+<pre><code class="lang-text">health status index uuid pri rep docs.count docs.deleted store.size pri.store.size
 green  open   index_boubou_1       OGxhmflXRKy4z_tHvlqf3w   5   0    5436288            0      6.9gb          6.9gb
-green  open   index_boubou_2       FL3x1kDhT1y1DA4bXy4kLQ   5   0    5436132       162456      7.1gb          7.1gb</code></pre><h4 id="title-create-an-index">create an index</h4>
-<pre><code>PUT /customer?pretty
-GET /_cat/indices?v</code></pre><pre><code>health status index    uuid                   pri rep docs.count docs.deleted store.size pri.store.size
-yellow open   customer 95SQ4TSUT7mWBT7VNHH67A   5   1          0            0       260b           260b</code></pre><h4 id="title-index-a-document">index a document</h4>
+green  open   index_boubou_2       FL3x1kDhT1y1DA4bXy4kLQ   5   0    5436132       162456      7.1gb          7.1gb</code></pre>
+<h4 id="title-create-an-index">create an index</h4>
+<pre><code class="lang-text">PUT /customer?pretty
+GET /_cat/indices?v</code></pre>
+<pre><code class="lang-text">health status index    uuid                   pri rep docs.count docs.deleted store.size pri.store.size
+yellow open   customer 95SQ4TSUT7mWBT7VNHH67A   5   1          0            0       260b           260b</code></pre>
+<h4 id="title-index-a-document">index a document</h4>
 <p>without specifying the id, use a <code>POST</code> request</p>
 <p>in v5.6</p>
-<pre><code>POST /customer/external?pretty
+<pre><code class="lang-text">POST /customer/external?pretty
 {
   &quot;name&quot;: &quot;Jane Doe&quot;
-}</code></pre><p>in v6.2</p>
-<pre><code>POST /customer/_doc?pretty
+}</code></pre>
+<p>in v6.2</p>
+<pre><code class="lang-text">POST /customer/_doc?pretty
 {
   &quot;name&quot;: &quot;Jane Doe&quot;
-}</code></pre><p>to specify the id use a <code>PUT</code> request</p>
+}</code></pre>
+<p>to specify the id use a <code>PUT</code> request</p>
 <p>in v5.6</p>
-<pre><code>PUT /customer/external/1?pretty
+<pre><code class="lang-text">PUT /customer/external/1?pretty
 {
   &quot;name&quot;: &quot;John Doe&quot;
-}</code></pre><p>response </p>
-<pre><code>{
+}</code></pre>
+<p>response</p>
+<pre><code class="lang-json">{
   &quot;_index&quot; : &quot;customer&quot;,
   &quot;_type&quot; : &quot;external&quot;,
   &quot;_id&quot; : &quot;1&quot;,
@@ -81,12 +89,14 @@ yellow open   customer 95SQ4TSUT7mWBT7VNHH67A   5   1          0            0   
     &quot;failed&quot; : 0
   },
   &quot;created&quot; : true
-}</code></pre><p>in v6.2</p>
-<pre><code>PUT /customer/_doc/1?pretty
+}</code></pre>
+<p>in v6.2</p>
+<pre><code class="lang-text">PUT /customer/_doc/1?pretty
 {
   &quot;name&quot;: &quot;John Doe&quot;
-}</code></pre><p>response </p>
-<pre><code>{
+}</code></pre>
+<p>response</p>
+<pre><code class="lang-json">{
   &quot;_index&quot; : &quot;customer&quot;,
   &quot;_type&quot; : &quot;_doc&quot;,
   &quot;_id&quot; : &quot;1&quot;,
@@ -99,47 +109,54 @@ yellow open   customer 95SQ4TSUT7mWBT7VNHH67A   5   1          0            0   
   },
   &quot;_seq_no&quot; : 0,
   &quot;_primary_term&quot; : 1
-}</code></pre><h4 id="title-query-a-document">query a document</h4>
+}</code></pre>
+<h4 id="title-query-a-document">query a document</h4>
 <p>in v5.6</p>
 <p><code>GET /customer/external/1?pretty</code></p>
-<pre><code>{
+<pre><code class="lang-json">{
   &quot;_index&quot; : &quot;customer&quot;,
   &quot;_type&quot; : &quot;external&quot;,
   &quot;_id&quot; : &quot;1&quot;,
   &quot;_version&quot; : 1,
   &quot;found&quot; : true,
   &quot;_source&quot; : { &quot;name&quot;: &quot;John Doe&quot; }
-}</code></pre><p>in v6.2</p>
+}</code></pre>
+<p>in v6.2</p>
 <p><code>GET /customer/_doc/1?pretty</code></p>
-<pre><code>{
+<pre><code class="lang-json">{
   &quot;_index&quot; : &quot;customer&quot;,
   &quot;_type&quot; : &quot;_doc&quot;,
   &quot;_id&quot; : &quot;1&quot;,
   &quot;_version&quot; : 1,
   &quot;found&quot; : true,
   &quot;_source&quot; : { &quot;name&quot;: &quot;John Doe&quot; }
-}</code></pre><h4 id="title-delete-an-index">delete an index</h4>
+}</code></pre>
+<h4 id="title-delete-an-index">delete an index</h4>
 <p>in v5.6 and in v6.2</p>
-<pre><code>DELETE /customer?pretty
-GET /_cat/indices?v</code></pre><pre><code>health status index uuid pri rep docs.count docs.deleted store.size pri.store.size</code></pre><h4 id="title-summary">summary</h4>
+<pre><code class="lang-text">DELETE /customer?pretty
+GET /_cat/indices?v</code></pre>
+<pre><code class="lang-text">health status index uuid pri rep docs.count docs.deleted store.size pri.store.size</code></pre>
+<h4 id="title-summary">summary</h4>
 <p>we have executed in v5.6</p>
-<pre><code>PUT /customer
+<pre><code class="lang-text">PUT /customer
 PUT /customer/external/1
 {
   &quot;name&quot;: &quot;John Doe&quot;
 }
 GET /customer/external/1
-DELETE /customer</code></pre><p>and in v6.2</p>
-<pre><code>PUT /customer
+DELETE /customer</code></pre>
+<p>and in v6.2</p>
+<pre><code class="lang-text">PUT /customer
 PUT /customer/_doc/1
 {
   &quot;name&quot;: &quot;John Doe&quot;
 }
 GET /customer/_doc/1
-DELETE /customer</code></pre><p>pattern to access data in elastic : <code>&lt;REST Verb&gt; /&lt;Index&gt;/&lt;Type&gt;/&lt;ID&gt;</code></p>
+DELETE /customer</code></pre>
+<p>pattern to access data in elastic : <code>&lt;REST Verb&gt; /&lt;Index&gt;/&lt;Type&gt;/&lt;ID&gt;</code></p>
 <p>In v6.2, <code>_doc</code> is the <code>&lt;Type&gt;</code> value by default.</p>
 <h2 id="title-javascript">JavaScript</h2>
-<p><a href="https://github.com/elastic/elasticsearch-js">elastic/elasticsearch-js - github.com</a></p>
+<p><a href="https://github.com/elastic/elasticsearch-js">elastic/elasticsearch-js - <code>github.com</code></a></p>
 <p>Usable from Node or the browser</p>
 <h2 id="title-articles">articles</h2>
 <p><a href="https://medium.com/@siddharthac6/elasticsearch-node-js-b16ea8bec427">Elasticsearch &amp; Node.js [Getting Started] - Siddhartha Chowdhury - 20170123</a></p>

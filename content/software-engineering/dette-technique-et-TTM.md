@@ -57,6 +57,7 @@ Egalement nommé Time To Deliver (TTD)
 - [Technical deb vs ROI](http://www.ontechnicaldebt.com/blog/technical-debt-vs-roi-your-code-may-be-elegant/)
 
 ## speed vs quality
+
 - [software-development-speed-vs-quality : from coderlifestyle.com](http://coderlifestyle.com/software-development-speed-vs-quality-a-tech-shop-conundrum/)
 - [discussion reddit](https://www.reddit.com/r/programming/comments/3eep2m/software_development_speed_vs_quality_a_tech_shop/)
 
@@ -78,6 +79,7 @@ Cf projet SIRHEN ([www.zdnet.fr](https://www.zdnet.fr/blogs/green-si/sirhen-ou-s
 For 1994, USA spend 250b$ per year on IT application dev on around 175K projects.
 
 Average cost per project :
+
 - large company is 2.322m$
 - medium company is 1.331m$
 - small company is 0.434m$
@@ -93,9 +95,9 @@ Sample result for 1994 : T1 = 16.2%, T2 = 52.7%, T3 = 31.1%
 | 1994 | 16 | 53 | 31 |
 | 1996 | 27 | 33 | 40 |
 | 1998 | 26 | 46 | 28 |
-| 2000 | 28 | 49 | 23 | 
-| 2004 | 29 | 53 | 18 | 
-| 2006 | 35 | 46 | 19 | 
+| 2000 | 28 | 49 | 23 |
+| 2004 | 29 | 53 | 18 |
+| 2006 | 35 | 46 | 19 |
 | 2009 | 32 | 44 | 24 |
 
 Conclusions contested by [The rise and fall of the chaos report figures - IEEE Software - 2010](https://www.cs.vu.nl/~x/the_rise_and_fall_of_the_chaos_report_figures.pdf).
@@ -106,7 +108,7 @@ Conclusions contested by [The rise and fall of the chaos report figures - IEEE S
 
 - [Project management triangle](https://en.wikipedia.org/wiki/Project_management_triangle)
 
-```
+```text
            SCOPE
              ^
             / \
@@ -127,10 +129,11 @@ SCOPE /_____________\ TIME
 [Greenkeeper.io](https://greenkeeper.io/)
 
 > Greenkeeper sits between npm and GitHub, observing all of the modules you depend on. When they get updated, your project gets a new branch with that update. Your CI tests kick in, and we watch them to see whether they pass.
-> 
+>
 > Based on the test results and your current version definitions we will open up clear, actionable issues for you. If there’s nothing for you to do, we won’t nag you.
-> 
+>
 > Let the friendly Greenkeeper bot take all the dull work of keeping your dependencies up to date off your shoulders and, optimally, boil it all down to a few clicks. This is as close to fully automatic as we could possibly make it.
 
-#### SQALE : Software Quality Assessment based on Lifecycle Expectations
+## SQALE : Software Quality Assessment based on Lifecycle Expectations
+
 - [sqale.org](http://www.sqale.org/) Permet d'évaluer la qualité du code. Utilisé par [SonarQube](http://www.sonarsource.com/).

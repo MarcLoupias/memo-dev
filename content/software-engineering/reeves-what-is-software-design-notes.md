@@ -27,7 +27,7 @@ htmlHead:
 
 by Jack W. Reeves.
 
-> published in 1992 C++ Journal 
+> published in 1992 C++ Journal
 
 ## context
 
@@ -50,4 +50,4 @@ This support makes abstracting concept and so software design easier.
 - Many different software design notations are potentially useful -- as auxiliary documentation and as tools to help facilitate the design process.  They are not a software design.
 - Software development is still more a craft than an engineering discipline. This is primarily because of a lack of rigor in the critical processes of validating and improving a design.
 - Ultimately, real advances in software development depend upon advances in programming techniques, which in turn mean advances in programming languages. C++ is such an advance.It has exploded in popularity because it is a mainstream programming language that directly supports better software design.
-- C++ is a step in the right direction, but still more advances are needed. 
+- C++ is a step in the right direction, but still more advances are needed.

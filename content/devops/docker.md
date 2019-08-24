@@ -49,7 +49,7 @@ htmlHead:
 
 ### as a node app
 
-[nodejs/docker-node - github.com](https://github.com/nodejs/docker-node)
+[nodejs/docker-node - `github.com`](https://github.com/nodejs/docker-node)
 
 ## articles
 

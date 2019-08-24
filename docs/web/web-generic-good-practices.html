@@ -9,33 +9,51 @@
 <p>tl;dr: less code = less parse/compile + less transfer + less to decompress</p>
 </blockquote>
 <h2 id="title-websites-perfs-kpis">websites perfs KPIs</h2>
-<p><strong>online tools</strong></p>
+<ul>
+<li>online tools</li>
+</ul>
 <p><a href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights : developers.google.com</a></p>
-<p><strong>speed index</strong></p>
+<ul>
+<li>speed index</li>
+</ul>
 <p><a href="https://blog.dareboost.com/fr/2018/02/speed-index-performance-web/">Speed Index : tout savoir sur cet indicateur majeur de la performance web - blog.dareboost.com - 20180208</a></p>
 <p><a href="https://www.youtube.com/watch?v=E5lZ12Z889k">Paul Irish: Day 2 Keynote - Delivering The Goods In Under 1000ms - 2014</a></p>
-<p><strong>Time To First Byte</strong></p>
+<ul>
+<li>Time To First Byte</li>
+</ul>
 <p>Delay between the first HTTP request from the web browser and the reception of the first byte of the web page by the browser.</p>
-<p><strong>Total Weight</strong></p>
-<p>Measures the total weigth of the page, with all resources loaded. </p>
+<ul>
+<li>Total Weight</li>
+</ul>
+<p>Measures the total weigth of the page, with all resources loaded.</p>
 <p>This will be measured for a first access, without cache, and without scrolling down to the bottom of the page (images below the fold using lazy loading will thus not be downloaded and taken into account in the page weight).</p>
-<p><strong>Start Render</strong></p>
+<ul>
+<li>Start Render</li>
+</ul>
 <p>Delay between the first request from the web browser and the first diplay on the user’s screen (the web page is not totally white anymore).</p>
 <p>The Start Render indicates the moment when the first element is painted in the user viewport. It is computed thanks to filmstrip video analysis.</p>
-<p>This metric is really interesting in terms of UX, since it represents the moment when the user is not facing a white page anymore. </p>
+<p>This metric is really interesting in terms of UX, since it represents the moment when the user is not facing a white page anymore.</p>
 <p>This does not mean the user is seeing something meaningfull though (the first rendered element can be a backgroud color or a decorative visual element).</p>
-<p><strong>DOM Interactive</strong></p>
+<ul>
+<li>DOM Interactive</li>
+</ul>
 <p>The browser has finished to parse the HTML code. The DOM construction is complete.</p>
-<p><strong>DOM Content Loaded</strong></p>
-<p>The <code>DOMContentLoaded</code> event is fired when the DOM and CSSOM trees have been built, without waiting for images and subframes to load. </p>
+<ul>
+<li>DOM Content Loaded</li>
+</ul>
+<p>The <code>DOMContentLoaded</code> event is fired when the DOM and CSSOM trees have been built, without waiting for images and subframes to load.</p>
 <p>Synchronous scripts – and those with a defer attribute – have been executed.</p>
-<p><strong>Visually complete</strong></p>
+<ul>
+<li>Visually complete</li>
+</ul>
 <p>Delay between the first request from the web browser and the complete and final render of the above the fold part of the page (the part of the page visible without the user needing to scroll is loaded and displayed).</p>
-<p>The final visual state of the page is captured after the end of network trafic. </p>
+<p>The final visual state of the page is captured after the end of network trafic.</p>
 <p>The video analysis allows then to determine the moment this final visual state has been reached (most of the time it is way before the end of the network trafic).</p>
-<p><strong>Fully loaded</strong></p>
+<ul>
+<li>Fully loaded</li>
+</ul>
 <p>The web page is fully loaded, all the resources are fetched, parsed and executed.</p>
-<p>All the metrics above are time related metrics and refer to a specific moment on the filmstrip. </p>
+<p>All the metrics above are time related metrics and refer to a specific moment on the filmstrip.</p>
 <p>Google even promotes more time based metrics, rather UX oriented, to measure when and how the page is loaded.</p>
 <h2 id="title-websites-payload-size">websites payload size</h2>
 <p><a href="https://speedcurve.com/blog/web-performance-page-bloat/">The average web page is 3MB. How much should we care? - Tammy Everts - speedcurve.com/blog - 20170809</a></p>
@@ -44,8 +62,6 @@
 <li>2011 : 900 kb</li>
 <li>2017 : 3 mo</li>
 </ul>
-</blockquote>
-<blockquote>
 <p>Images are more then 50% of the payload size. Text assets that can compress well represent around 10% of the payload size.</p>
 </blockquote>
 <p><a href="https://www.soasta.com/blog/page-bloat-average-web-page-2-mb/">Page bloat: The average web page size is more than 2MB - Tammy Everts - www.soasta.com/blog - 20150611</a></p>
@@ -77,7 +93,7 @@
 </blockquote>
 <p><a href="https://gist.github.com/Restuta/cda69e50a853aa64912d">Sizes of JS frameworks, just minified + minified and gzipped</a></p>
 <h3 id="title-dealing-with-assets">dealing with assets</h3>
-<p><a href="https://stackoverflow.com/questions/30027673/recommended-size-of-javascript-assets-on-a-web-page?noredirect=1&lq=1">Recommended size of javascript assets on a web page - stackoverflow.com - 20150504</a></p>
+<p><a href="https://stackoverflow.com/questions/30027673/recommended-size-of-javascript-assets-on-a-web-page?noredirect=1&lq=1">Recommended size of JavaScript assets on a web page - stackoverflow.com - 20150504</a></p>
 <p><a href="https://medium.com/@rajaraodv/two-quick-ways-to-reduce-react-apps-size-in-production-82226605771a">Two Quick Ways To Reduce React App’s Size In Production - medium.com/@rajaraodv - 20161130</a></p>
 <h3 id="title-compression">compression</h3>
 <p>N.B. : Google Chrome Tools shows compressed values in network panel.</p>
@@ -87,9 +103,9 @@
 <h2 id="title-accessibility-a11y">accessibility (a11y)</h2>
 <p><a href="https://www.techopedia.com/definition/10165/accessibility-a11y">What is Accessibility (a11y) - www.techopedia.com</a></p>
 <blockquote>
-<p>The word accessibility is abbreviated to “<strong>a11y</strong>,” with the number eleven in the middle referring to the number of letters that the word contains between the first and last letter. It follows an Information and Communications Technology (ICT)-oriented convention, just like internationalization (<strong>i18n</strong>) and localization (<strong>l10n</strong>), which are used mostly in the software community. </p>
+<p>The word accessibility is abbreviated to “<strong>a11y</strong>,” with the number eleven in the middle referring to the number of letters that the word contains between the first and last letter. It follows an Information and Communications Technology (ICT)-oriented convention, just like internationalization (<strong>i18n</strong>) and localization (<strong>l10n</strong>), which are used mostly in the software community.</p>
 </blockquote>
-<p><a href="https://hugogiraudel.com/">Hugo Giraudel</a> <a href="https://github.com/HugoGiraudel">github account</a></p>
+<p><a href="https://hugogiraudel.com/">Hugo Giraudel</a> <a href="https://github.com/HugoGiraudel">GitHub account</a></p>
 <p><a href="https://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA) 1.1 - www.w3.org - 20171214</a></p>
 <p><a href="https://www.w3.org/TR/2017/NOTE-wai-aria-practices-1.1-20171214/examples/landmarks/region.html">landmarks example - www.w3.org - 20171214</a></p>
 <p><a href="https://www.sitepoint.com/how-to-use-aria-effectively-with-html5/">How to Use ARIA Effectively with HTML5 - www.sitepoint.com - 20160211</a></p>
@@ -101,9 +117,9 @@
 <ul>
 <li>Reliable - Load instantly and never show the downasaur, even in uncertain network conditions.</li>
 <li>Fast - Respond quickly to user interactions with silky smooth animations and no janky scrolling.</li>
-<li>Engaging - Feel like a natural app on the device, with an immersive user experience. </li>
+<li>Engaging - Feel like a natural app on the device, with an immersive user experience.</li>
 </ul>
-<p>This new level of quality allows Progressive Web Apps to earn a place on the user’s home screen. </p>
+<p>This new level of quality allows Progressive Web Apps to earn a place on the user’s home screen.</p>
 </blockquote>
 <p><a href="https://makina-corpus.com/blog/metier/2016/introduction-progressive-web-apps">Bien comprendre les Progressive Web Apps : makina-corpus.com</a></p>
 <p><a href="https://github.com/GoogleChrome/workbox">workbox - JavaScript Libraries for Progressive Web Apps</a></p>
@@ -141,7 +157,7 @@
 </ol>
 <h4 id="title-service-workers">service workers</h4>
 <ul>
-<li>proxy côté client codé en javascript, intercepte toutes les requêtes, dispose de son propre cache.</li>
+<li>proxy côté client codé en JavaScript, intercepte toutes les requêtes, dispose de son propre cache.</li>
 <li>ne fonctionne qu’en https</li>
 <li>commun à une origine (domaine + port)</li>
 <li>nouvelle API navigateur, est exécuté dans un thread indépendant, n’a pas accès à <code>window</code></li>

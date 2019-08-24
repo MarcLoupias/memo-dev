@@ -49,6 +49,7 @@ This part focus on the leadership needed to change the behavior of organizations
 
 ## 24 keys capabilities driving improvements in software delivery performances
 
+```txt
 ### Continuous Delivery
 
 #### Version control
@@ -67,13 +68,11 @@ This part focus on the leadership needed to change the behavior of organizations
 
 #### Continuous delivery
 
-
 ### Architecture
 
 #### Loosely coupled architecture
 
 #### Empowered teams
-
 
 ### Product and process
 
@@ -84,7 +83,6 @@ This part focus on the leadership needed to change the behavior of organizations
 #### Working in small batches
 
 #### Team experimentation
-
 
 ### Lean management and monitoring
 
@@ -98,7 +96,6 @@ This part focus on the leadership needed to change the behavior of organizations
 
 #### Visualizing work
 
-
 ### Cultural
 
 #### Westrum organizational culture
@@ -110,4 +107,4 @@ This part focus on the leadership needed to change the behavior of organizations
 #### Job satisfaction
 
 #### Transformational leadership
-
+```

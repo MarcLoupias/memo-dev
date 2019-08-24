@@ -68,7 +68,7 @@ Because the browser has to give you the most up-to-date value.
 ### minimizing repaints and reflows
 
 - Don't change individual styles, one by one.
-- Batch DOM changes and perform them "offline". Offline means not in the live DOM tree. 
+- Batch DOM changes and perform them "offline". Offline means not in the live DOM tree.
   - using ([`documentFragment`](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment))
   - using `display: none` before making the changes then restore the display
 - Don't ask for computed styles excessively. (var caches)
@@ -81,4 +81,3 @@ Because the browser has to give you the most up-to-date value.
 Explain how to optimize repaints / reflows.
 
 Introduce [fastdom](https://github.com/wilsonpage/fastdom) lib to industrialize optimizations.
-

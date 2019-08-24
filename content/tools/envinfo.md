@@ -23,19 +23,19 @@ htmlHead:
 
 # envinfo
 
-[envinfo - github.com/tabrindle](https://github.com/tabrindle/envinfo)
+[envinfo - `github.com/tabrindle`](https://github.com/tabrindle/envinfo)
 
 > Generate a report about your development environment for debugging and issue reporting
-
+>
 > envinfo generates a report of the common details needed when troubleshooting software issues, such as your operating system, binary versions, browsers, installed languages, and more
 
 ## prerequisites
 
-**for execution**
+### for execution
 
 For current version (20190201), needs at least node 4+
 
-**with npx**
+### with npx
 
 Need obviously a complient npm version.
 

@@ -54,14 +54,14 @@
 </tr>
 </tbody></table>
 <p><a href="https://fr.wikipedia.org/wiki/Trident_(moteur_de_rendu)">Trident moteur de IE4 à IE11</a> : stoppé.</p>
-<p><a href="https://github.com/servo/servo">servo/servo - github.com</a></p>
+<p><a href="https://github.com/servo/servo">servo/servo - <code>github.com</code></a></p>
 <p>Servo écrit en Rust est le petit nouveau. MultiThreadé et layout parallèle. Ultra performant. Va probablement beaucoup changer la donne sur mobile.<br>Meilleure vitesse mais surtout meilleure conso. (d’où la collaboration Mozilla / Samsung).</p>
 <p>Opera a abandonné Presto et est passé sur Blink</p>
 <p>Un process par tab, chaque process multithreadé + layout parallèle = gains x30 à x50.</p>
 <p><a href="https://www.developpez.com/actu/236606/C-est-officiel-Microsoft-Edge-sera-desormais-base-sur-Chromium-et-enfin-disponible-sur-Windows-7-Windows-8-et-d-autres-plateformes-comme-macOS/">C’est officiel, Microsoft Edge sera désormais basé sur Chromium</a> (<a href="https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/#86hdHmPeOj1Xq32Q.97">src</a>)</p>
 <blockquote>
 <p>Cela signifie que Microsoft va remplacer son moteur de rendu EdgeHTML et son moteur JavaScript Chackra par Blink et V8 de Chromium.</p>
-<p>Microsoft prévoit encore de publier le nouveau Microsoft Edge sur toutes les versions prises en charge de Windows (c’est-à-dire Windows 7 et Windows 8), mais sans se limiter à son OS. </p>
+<p>Microsoft prévoit encore de publier le nouveau Microsoft Edge sur toutes les versions prises en charge de Windows (c’est-à-dire Windows 7 et Windows 8), mais sans se limiter à son OS.</p>
 <p>Le passage à Chromium prendra environ un an, selon Microsoft, et une préversion sera prête début 2019.</p>
 </blockquote>
 <h2 id="title-browsers-bug-trackers">browsers bug trackers</h2>
@@ -88,19 +88,20 @@
 <li>JavaScript interpreter. Used to parse and execute JavaScript code.</li>
 <li>Data storage. This is a persistence layer. The browser may need to save all sorts of data locally, such as cookies. Browsers also support storage mechanisms such as localStorage, IndexedDB, WebSQL and FileSystem.</li>
 </ol>
-<p><img src="https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png" alt=""></p>
+<p><img src="https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png" alt="How browsers work - layers"></p>
 <h2 id="title-how-do-browsers-render-a-web-page">How do browsers render a web page</h2>
 <ol>
 <li>The DOM (Document Object Model) is formed from the HTML that is received from a server.</li>
 <li>Styles are loaded and parsed, forming the CSSOM (CSS Object Model).</li>
-<li>On top of DOM and CSSOM, a rendering tree is created, which is a set of objects to be rendered (Webkit calls each of those a “renderer” or “render object”, while in Gecko it’s a “frame”). Render tree reflects the DOM structure except for invisible elements (like the <head>tag or elements that have display:none; set). Each text string is represented in the rendering tree as a separate renderer. Each of the rendering objects contains its corresponding DOM object (or a text block) plus the calculated styles. In other words, the render tree describes the visual representation of a DOM.</head></li>
+<li>On top of DOM and CSSOM, a rendering tree is created, which is a set of objects to be rendered (Webkit calls each of those a “renderer” or “render object”, while in Gecko it’s a “frame”). Render tree reflects the DOM structure except for invisible elements (like the <code>&lt;head&gt;</code> tag or elements that have display:none; set). Each text string is represented in the rendering tree as a separate renderer. Each of the rendering objects contains its corresponding DOM object (or a text block) plus the calculated styles. In other words, the render tree describes the visual representation of a DOM.</li>
 <li>For each render tree element, its coordinates are calculated, which is called “layout”. Browsers use a flow method which only required one pass to layout all the elements (tables require more than one pass).</li>
 <li>Finally, this gets actually displayed in a browser window, a process called “painting”.</li>
 </ol>
-<p><img src="http://www.phpied.com/files/reflow/render.png" alt=""></p>
+<p><img src="http://www.phpied.com/files/reflow/render.png" alt="reflow render"></p>
 <p>When users interact with a page, or scripts modify it, some of the aforementioned operations have to be repeated, as the underlying page structure changes.</p>
 <h2 id="title-html-parsing">HTML Parsing</h2>
-<p>HTML cannot be parsed using the regular top down or bottom up parsers.<br>The reasons are:</p>
+<p>HTML cannot be parsed using the regular top down or bottom up parsers.</p>
+<p>The reasons are:</p>
 <ol>
 <li>The forgiving nature of the language: the fact that browsers have traditional error tolerance to support well known cases of invalid HTML.</li>
 <li>The parsing process is reentrant. For other languages, the source doesn’t change during parsing, but in HTML, dynamic code (such as script elements containing document.write() calls) can add extra tokens, so the parsing process actually modifies the input.</li>
@@ -150,9 +151,9 @@
 }</code></pre>
 <h2 id="title-layout">Layout</h2>
 <p>When the renderer is created and added to the tree, it does not have a position and size. Calculating these values is called layout or reflow.</p>
-<p>HTML uses a flow based layout model, meaning that most of the time it is possible to compute the geometry in a single pass. Elements later <code>in the flow&#39;&#39; typically do not affect the geometry of elements that are earlier</code>in the flow’’, so layout can proceed left-to-right, top-to-bottom through the document. There are exceptions: for example, HTML tables may require more than one pass.</p>
+<p>HTML uses a flow based layout model, meaning that most of the time it is possible to compute the geometry in a single pass. Elements later “in the flow” typically do not affect the geometry of elements that are earlier “in the flow”, so layout can proceed left-to-right, top-to-bottom through the document. There are exceptions: for example, HTML tables may require more than one pass.</p>
 <p>The coordinate system is relative to the root frame. Top and left coordinates are used.</p>
-<p>Layout is a recursive process. It begins at the root renderer, which corresponds to the <html>element of the HTML document. Layout continues recursively through some or all of the frame hierarchy, computing geometric information for each renderer that requires it.</html></p>
+<p>Layout is a recursive process. It begins at the root renderer, which corresponds to the <code>&lt;html&gt;</code> element of the HTML document. Layout continues recursively through some or all of the frame hierarchy, computing geometric information for each renderer that requires it.</p>
 <p>The position of the root renderer is 0,0 and its dimensions are the viewport–the visible part of the browser window.<br>All renderers have a “layout” or “reflow” method, each renderer invokes the layout method of its children that need layout.</p>
 <h3 id="title-dirty-bit-system">Dirty bit system</h3>
 <p>In order not to do a full layout for every small change, browsers use a “dirty bit” system. A renderer that is changed or added marks itself and its children as “dirty”: needing layout.</p>
@@ -243,21 +244,21 @@ $(this).css(&#39;margin-left&#39;, 50);</code></pre>
 <ul>
 <li>Create valid HTML and CSS</li>
 <li>Do not forget to specify the document encoding</li>
-<li>Styles should be included into <head></head></li>
-<li>Scripts appended to the end of the <body> tag. Think about async and defer attribute.</body></li>
+<li>Styles should be included into <code>&lt;head&gt;</code></li>
+<li>Scripts appended to the end of the <code>&lt;body&gt;</code> tag. Think about async and defer attribute.</li>
 <li>Try to simplify and optimize CSS selectors (this optimization is almost universally ignored by developers who mostly use CSS preprocessors). Keep nesting levels at a minimum. This is how CSS selectors rank according to their performance (starting from the fastest ones):<ul>
-<li>Identificator: #id</li>
-<li>Class: .class</li>
-<li>Tag: div</li>
-<li>Adjacent sibling selector: a + i</li>
-<li>Parent selector: ul &gt; li</li>
-<li>Universal selector: *</li>
-<li>Attribute selector: input[type=”text”]</li>
-<li>Pseudoclasses and pseudoelements: a:hover You should remember that browsers process selectors from right to left, that’s why the rightmost selector should be the fastest one — either #id or .class:<ul>
-<li>div * {…} // bad</li>
-<li>.list li {…} // bad</li>
-<li>.list-item {…} // good</li>
-<li>#list .list-item {…} // good</li>
+<li>Identificator: <code>#id</code></li>
+<li>Class: <code>.class</code></li>
+<li>Tag: <code>&lt;div&gt;</code></li>
+<li>Adjacent sibling selector: <code>a + i</code></li>
+<li>Parent selector: <code>ul &gt; li</code></li>
+<li>Universal selector: <code>*</code></li>
+<li>Attribute selector: <code>input[type=&quot;text&quot;]</code></li>
+<li>Pseudoclasses and pseudoelements: <code>a:hover</code> You should remember that browsers process selectors from right to left, that’s why the rightmost selector should be the fastest one — either <code>#id</code> or <code>.class</code>:<ul>
+<li><code>div * {...} // bad</code></li>
+<li><code>.list li {...} // bad</code></li>
+<li><code>.list-item {...} // good</code></li>
+<li><code>#list .list-item {...} // good</code></li>
 </ul>
 </li>
 </ul>
@@ -265,6 +266,6 @@ $(this).css(&#39;margin-left&#39;, 50);</code></pre>
 <li>In your scripts, minimize DOM manipulation whenever possible. Cache everything, including properties and objects (if they are to be reused). It’s better to work with an “offline” element when performing complicated manipulations (an “offline” element is one that is disconnected from DOM and only stored in memory), and append it to DOM afterwards.</li>
 <li>To change element’s styles, modifying the “class” attribute is one of the most performant ways. The deeper in the DOM tree you perform this change, the better (also because this helps decouple logic from presentation).</li>
 <li>Animate only absolute/fixed positioned elements if you can.</li>
-<li>It is a good idea to disable complicated :hover animations while scrolling (e.g. by adding an extra “no-hover” class to <body>).</body></li>
+<li>It is a good idea to disable complicated <code>:hover</code> animations while scrolling (e.g. by adding an extra “no-hover” class to <code>&lt;body&gt;</code>).</li>
 </ul>
 </article></body></html>

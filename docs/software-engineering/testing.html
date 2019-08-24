@@ -42,7 +42,7 @@
 <h3 id="title-mock-vs-spy">mock vs spy</h3>
 <p><a href="http://stackoverflow.com/questions/12827580/mocking-vs-spying-in-mocking-frameworks">mocking vs spying</a></p>
 <h3 id="title-test-driven-development-tdd">Test Driven Development (TDD)</h3>
-<p>A TDD cycle is composed of three, iterative phases.</p>
+<p>A TDD cycle is composed of three, iterative phases :</p>
 <ul>
 <li>Red: Write a unit test; the unit test fails.</li>
 <li>Green: Write production code; the unit test passes.</li>
@@ -151,8 +151,6 @@
 <p><strong>Then</strong> ensure the account is debited</p>
 <p>And ensure cash is dispensed</p>
 <p>And ensure the card is returned</p>
-</blockquote>
-<blockquote>
 <p>+Scenario 2: Account is overdrawn past the overdraft limit+</p>
 <p><strong>Given</strong> the account is overdrawn</p>
 <p>And the card is valid</p>
@@ -167,7 +165,7 @@
 <h2 id="title-writing-testable-code">Writing Testable Code</h2>
 <p><a href="http://misko.hevery.com/code-reviewers-guide/">Guide: Writing Testable Code : misko.hevery.com</a></p>
 <h3 id="title-flaw-1-constructor-does-real-work">Flaw 1: <a href="http://misko.hevery.com/code-reviewers-guide/flaw-constructor-does-real-work/">Constructor does Real Work</a></h3>
-<p><strong>Warning Signs</strong></p>
+<p>Warning Signs :</p>
 <ul>
 <li>new keyword in a constructor or at field declaration</li>
 <li>Static method calls in a constructor or at field declaration</li>
@@ -178,14 +176,14 @@
 <li>Adding or using an initialization block</li>
 </ul>
 <h3 id="title-flaw-2-digging-into-collaborators">Flaw 2: <a href="http://misko.hevery.com/code-reviewers-guide/flaw-digging-into-collaborators/">Digging into Collaborators</a></h3>
-<p><strong>Warning Signs</strong></p>
+<p>Warning Signs :</p>
 <ul>
 <li>Objects are passed in but never used directly (only used to get access to other objects)</li>
 <li>Law of Demeter violation: method call chain walks an object graph with more than one dot (.)</li>
 <li>Suspicious names: context, environment, principal, container, or manager</li>
 </ul>
 <h3 id="title-flaw-3-brittle-global-state--singletons">Flaw 3: <a href="http://misko.hevery.com/code-reviewers-guide/flaw-brittle-global-state-singletons/">Brittle Global State &amp; Singletons</a></h3>
-<p><strong>Warning Signs</strong></p>
+<p>Warning Signs :</p>
 <ul>
 <li>Adding or using singletons</li>
 <li>Adding or using static fields or static methods</li>
@@ -194,7 +192,7 @@
 <li>Adding or using service locators</li>
 </ul>
 <h3 id="title-flaw-4-class-does-too-much">Flaw 4: <a href="http://misko.hevery.com/code-reviewers-guide/flaw-class-does-too-much/">Class Does Too Much</a></h3>
-<p><strong>Warning Signs</strong></p>
+<p>Warning Signs :</p>
 <ul>
 <li>Summing up what the class does includes the word “and”</li>
 <li>Class would be challenging for new team members to read and quickly “get it”</li>
@@ -254,9 +252,9 @@
 </blockquote>
 <p><a href="https://www.youtube.com/watch?v=EZ05e7EMOLM">DevTernity 2017: Ian Cooper - TDD, Where Did It All Go Wrong</a></p>
 <blockquote>
-<p>Since Kent Beck wrote the book on TDD in 2002 a lot of words have been dedicated to the subject. </p>
-<p>But many of them propagated misunderstandings of Kent’s original rules so that TDD practice bears little resemblance to Kent’s original ideas. </p>
-<p>Key misunderstandings around what do I test, what is a unit test, and what is the ‘public interface’ have led to test suites that are brittle, hard to read, and do not support easy refactoring. </p>
+<p>Since Kent Beck wrote the book on TDD in 2002 a lot of words have been dedicated to the subject.</p>
+<p>But many of them propagated misunderstandings of Kent’s original rules so that TDD practice bears little resemblance to Kent’s original ideas.</p>
+<p>Key misunderstandings around what do I test, what is a unit test, and what is the ‘public interface’ have led to test suites that are brittle, hard to read, and do not support easy refactoring.</p>
 <p>In this talk, we re-discover Kent’s original proposition, discover where key misunderstandings occurred and look at a better approach to TDD that supports software development instead of impeding it.<br>Be prepared from some sacred cows to be slaughtered and fewer but better tests to be written.</p>
 </blockquote>
 <p><a href="http://robdmoore.id.au/blog/2015/01/26/review-of-ian-cooper-tdd-where-did-it-all-go-wrong">Review of: Ian Cooper – TDD, where did it all go wrong - 20150126 - Robert Daniel Moore</a></p>
@@ -266,8 +264,8 @@
 <ul>
 <li>you should write unit tests for every method and class that you introduce in an application</li>
 <li>but this will necessarily result in you baking implementation details into your tests</li>
-<li>causing them to be fragile when refactoring, contain a lot of mocking, </li>
-<li>result in a high proportion of test code to implementation code </li>
+<li>causing them to be fragile when refactoring, contain a lot of mocking,</li>
+<li>result in a high proportion of test code to implementation code</li>
 <li>and ultimately slowing your TTM</li>
 </ul>
 <p><strong>Testing behaviours rather than implementations</strong></p>
@@ -292,9 +290,9 @@
 <ul>
 <li>Complex implementation<br>One of the questions that was raised and answered in Ian’s presentation was about what to do when the code you are implementing to make a high-level unit test test pass is really complex and you find yourself needing more guidance.</li>
 <li>Combinatorial explosion<br>I’ve covered this comprehensively in the <a href="http://robdmoore.id.au/blog/2015/01/26/review-of-j-b-rainsberger-integrated-tests-are-a-scam/">previous article</a>. This can be a serious problem, but as per the previous section in those instances just write the lower-level tests.</li>
-<li>Complex tests<br>The other point that Ian raised is that you are interacting with more objects this might mean there is more you need to set up in your tests, which then make the arrange section of the tests harder to understand and maintain and reducing the advantage of writing the tests in the first place. </li>
+<li>Complex tests<br>The other point that Ian raised is that you are interacting with more objects this might mean there is more you need to set up in your tests, which then make the arrange section of the tests harder to understand and maintain and reducing the advantage of writing the tests in the first place.</li>
 <li>Multiple test failures<br>It’s definitely possible that you can cause multiple tests to fail by changing one thing.</li>
-<li>Shared code gets tested twice<br>that’s fine because that shared code is an implementation detail </li>
+<li>Shared code gets tested twice<br>that’s fine because that shared code is an implementation detail</li>
 </ul>
 </blockquote>
 <p><a href="http://robdmoore.id.au/blog/2015/01/26/review-of-j-b-rainsberger-integrated-tests-are-a-scam/">Review of: J.B. Rainsberger – Integrated Tests Are A Scam - 20150126 - Robert Daniel Moore</a></p>

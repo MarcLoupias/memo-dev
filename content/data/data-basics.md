@@ -30,7 +30,7 @@ Computers need data. Humans need information.
 Data is a building block. Information gives meaning and context.
 
 Example :
- 
+
 `20180101` is the raw data. It is a suite of 8 numbers.
 
 Interpreted as a date it is the 1st january 2018.
@@ -46,7 +46,7 @@ To become an information, the data need context.
 Beaucoup de confusions terminologiques sont faites en français du fait de mauvaises traductions qui affectent le sens.
 
 ### digital et numérique
- 
+
 Par exemple *digit* en anglais signifie *chiffre*.
 
 Ce qui conduit certaines personnes à parler de *digital* au lieu de *numérique*.
@@ -88,7 +88,7 @@ The first data structure for text is the [ASCII (American Standard Code for Info
 
 128 characters available (0 to 127) expressed in a table :
 
-```
+```txt
 | Dec | Hexa | Oct | Html     | chr | binary  | description              |
 | --- | ---- | --- | -------- | --- | ------- | ------------------------ |
 |   0 |    0 |   0 |          | NUL | 0000000 | (null)                   |
@@ -101,8 +101,8 @@ The first data structure for text is the [ASCII (American Standard Code for Info
 |   7 |    7 | 007 |          | BEL | 0000111 | (bell)                   |
 |   8 |    8 | 010 |          | BS  | 0001000 | (backspace)              |
 |   9 |    9 | 011 |          | TAB | 0001001 | (horizontal tab)         |
-|  10 |    A | 012 |          | LF  | 0001010 | (NL line feed, new line) | 
-|  11 |    B | 013 |          | VT  | 0001011 | (vertical tab)           | 
+|  10 |    A | 012 |          | LF  | 0001010 | (NL line feed, new line) |
+|  11 |    B | 013 |          | VT  | 0001011 | (vertical tab)           |
 |  12 |    C | 014 |          | FF  | 0001100 | (NP form feed, new page) |
 |  13 |    D | 015 |          | CR  | 0001101 | (carriage return)        |
 |  14 |    E | 016 |          | SO  | 0001110 | (shift out)              |
@@ -231,7 +231,7 @@ Each pixel is composed by 3 numbers representing the red value, the green value,
 
 It is named RGB (or Digital 8-bit per channel).
 
-It is a 24bits data structure (3 bytes because 3x8bits) : 
+It is a 24bits data structure (3 bytes because 3x8bits) :
 
 - represented with integers : `RGB(255, 255, 255)`
 - represented with hexadecimals : `#FFFFFF`

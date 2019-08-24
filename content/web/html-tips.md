@@ -30,7 +30,7 @@ htmlHead:
 [Comprendre le Viewport dans le Web mobile - www.alsacreations.com - 20121015](https://www.alsacreations.com/article/lire/1490-Comprendre-le-Viewport-dans-le-Web-mobile.html)
 
 > Afin de forcer le bon niveau de zoom aux navigateurs mobiles, mais aussi pour leur imposer une largeur de viewport qui n'est pas égale à 980px (ou autres valeurs selon le navigateur), il vous sera nécessaire d'inclure une balise `<meta>` `"viewport"` au sein du `<head>` de votre document HTML.
-> 
+>
 > `<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">`
 
 ## stocker une image directement dans le html
@@ -48,7 +48,7 @@ htmlHead:
 <link rel="prefetch" href="/images/big.jpeg">
 ```
 
-## donner une baseref à l'ensemble d'un site via une balise :
+## donner une baseref à l'ensemble d'un site via une balise
 
 [tag_base : www.w3schools.com](http://www.w3schools.com/tags/tag_base.asp)
 
@@ -67,7 +67,8 @@ htmlHead:
 - [101 balises HTML5 + exemples : buzut.fr](https://buzut.fr/101-balises-html5-exemples/)
 
 Proper semantics means :
-- a more searchable content that leads to a better search engine ranking. 
+
+- a more searchable content that leads to a better search engine ranking.
 - increase accessibility, as assistive technologies such as screen readers can better interpret the meaning of our content.
 
 ### Semantic Elements Before HTML5
@@ -114,5 +115,4 @@ Proper semantics means :
 - The sections defined by the `<nav></nav>`, and the `<aside></aside>` tags don’t belong to the main outline of the HTML document, they are usually not rendered initially by assistive technologies.
 - Each section (`body`, `section`, `article`, `aside`, `nav`) can have their own `<header></header>` and `<footer></footer>` tags, that defines the `header` (such as logo, author’s name, dates, meta info, etc.) and the `footer` (copyright, notes, links, etc.) of that section.
 
-![document-outline-example.jpg](http://media02.hongkiat.com/html-5-semantics/document-outline-example.jpg)
-
+![document outline example](http://media02.hongkiat.com/html-5-semantics/document-outline-example.jpg)

@@ -25,19 +25,19 @@ htmlHead:
 
 ## Définition
 
-http://www.definitions-marketing.com/definition/seo/
+[http://www.definitions-marketing.com/definition/seo/](http://www.definitions-marketing.com/definition/seo/)
 
-https://fr.wikipedia.org/wiki/Optimisation_pour_les_moteurs_de_recherche
+[https://fr.wikipedia.org/wiki/Optimisation_pour_les_moteurs_de_recherche](https://fr.wikipedia.org/wiki/Optimisation_pour_les_moteurs_de_recherche)
 
 ## Terminologie
 
 ### résultats naturel
 
-http://www.definitions-marketing.com/definition/resultat-naturel/
+[http://www.definitions-marketing.com/definition/resultat-naturel/](http://www.definitions-marketing.com/definition/resultat-naturel/)
 
-http://www.definitions-marketing.com/glossaire/le-seo-en-50-def/
+[http://www.definitions-marketing.com/glossaire/le-seo-en-50-def/](http://www.definitions-marketing.com/glossaire/le-seo-en-50-def/)
 
-https://support.google.com/webmasters/answer/35769?hl=fr
+[https://support.google.com/webmasters/answer/35769?hl=fr](https://support.google.com/webmasters/answer/35769?hl=fr)
 
 [mobilegeddon](http://www.definitions-marketing.com/definition/mobilegeddon/)
 

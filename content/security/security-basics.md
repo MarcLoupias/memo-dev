@@ -98,16 +98,18 @@ src : résumé pris depuis [Introduction à la Cryptographie](http://ram-0000.de
 
 #### Cryptographie mécanique
 
-Usage de moyens mécaniques pour chiffrer un message. 
+Usage de moyens mécaniques pour chiffrer un message.
 
 **La sécurité repose sur le secret de fabrication**.
 
 - Nabuchodonosor (-600)
-> Aux alentours de -600, Nabuchodonosor, roi de Babylone, employait une méthode originale : il écrivait sur le crâne rasé de ses esclaves, attendait que leurs cheveux aient repoussé, et il les envoyait à ses généraux. Il suffisait ensuite de raser à nouveau le messager pour lire le texte. Il s'agit toutefois de stéganographie à proprement parler et non pas de cryptographie : l'information est cachée et non pas codée.
 
+> Aux alentours de -600, Nabuchodonosor, roi de Babylone, employait une méthode originale : il écrivait sur le crâne rasé de ses esclaves, attendait que leurs cheveux aient repoussé, et il les envoyait à ses généraux. Il suffisait ensuite de raser à nouveau le messager pour lire le texte. Il s'agit toutefois de stéganographie à proprement parler et non pas de cryptographie : l'information est cachée et non pas codée.
+>
 > En utilisant cette technique, l'interception du message par un tiers est tout de suite remarquée.
 
 - Le code de César (-50)
+
 substitution monoalphabétique. A -> D, B -> E, etc ...
 
 - ...
@@ -159,7 +161,7 @@ Permet :
 
 - vérification de l'intégrité d'un message
 - signature électronique quand combinée à algorithme de chiffrement asymétrique
-- stockage d'une représentation sécurisée d'un mot de passe ([PBKDF2](https://fr.wikipedia.org/wiki/PBKDF2)) 
+- stockage d'une représentation sécurisée d'un mot de passe ([PBKDF2](https://fr.wikipedia.org/wiki/PBKDF2))
 
 #### Cryptographie quantique
 
@@ -173,7 +175,7 @@ Elle repose sur 3 facteurs :
 
 - La qualité des algorithmes
 
-La qualité d’un algorithme repose sur sa fiabilité mathématique et surtout pas sur le secret de sa réalisation 
+La qualité d’un algorithme repose sur sa fiabilité mathématique et surtout pas sur le secret de sa réalisation
 
 - Les implémentations des algorithmes
 
@@ -242,11 +244,13 @@ Standard actuel. Publié en 2001.
 - 100 à 1000 fois plus lent que le chiffrement symétrique
 
 Robustesse fondée sur :
+
 - non divulgation de la clef privée.
 - il est très difficile de décomposer en facteurs premiers un nombre (si le nombre est suffisamment grand).
 - absence de méthode mathématique pour déduire la clef privée à partir de la clef publique.
 
 Dangers :
+
 - augmentation puissance de calcul (résolu en augmentant la taille des clefs)
 - avancées théoriques éventuelles (recherche mathématique)
 - cryptographie quantique (inexploitable en l'état)
@@ -255,11 +259,11 @@ Dangers :
 
 #### Force brute
 
-Essayer toutes les clefs possibles. 
+Essayer toutes les clefs possibles.
 
-Principal danger : l’augmentation de la puissance des machines. 
+Principal danger : l’augmentation de la puissance des machines.
 
-Parades : augmenter la longueur des clefs, choisir des algorithmes coûteux 
+Parades : augmenter la longueur des clefs, choisir des algorithmes coûteux
 
 En 97, 3h pour casser une clef de 40 bits.
 
@@ -294,7 +298,7 @@ Le plus souvent les attaques exploitent le mode d’usage de l’algorithme de c
 
 Postulat de départ : Chaque utilisateur a une paire de clef.
 
-Questions : 
+Questions :
 
 - La clé est-elle bien celle appartenant à la personne avec qui les échanges sont envisagés ?
 - Le possesseur de cette clé est-il digne de confiance ?
@@ -349,7 +353,7 @@ Diffie Hellman is a lot faster and reliable then RSA to generate epheral keys so
 
 [Can my company see what HTTPS sites I went to?](https://security.stackexchange.com/questions/2914/can-my-company-see-what-https-sites-i-went-to)
 
-The idea is simple, the company : 
+The idea is simple, the company :
 
 - generate a self signed root certificate
 - install it on each browser employee
@@ -365,11 +369,12 @@ Cette empreinte (ou condensat, ou message digest) est ensuite chiffrée avec la 
 Le document est alors signé.
 
 N'importe quelle personne peut vérifier la signature, il lui suffit de :
+
 - hasher le document avec le même algorithme de hashage
 - déchiffrer la signature avec la clef publique de la personne prétendant avoir signé le document
 - comparer les deux empreintes numériques, si elles sont identiques, alors le signataire est considéré comme authentique.
 
-Vérifie également l'intégrité par ricochet. 
+Vérifie également l'intégrité par ricochet.
 
 #### SMIME
 

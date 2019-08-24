@@ -33,13 +33,13 @@ htmlHead:
 
 > Le tracking est l’action qui consiste à mettre en place des trackers. Le web tracking en tant que domaine de compétence est parfois assimilé au web analytics, ce qui n’est pourtant pas tout à fait la même chose : l’un collecte des infos, l’autre analyse les données.
 
-- web analytics ([src]())
+- web analytics
 
-> Selon la définition de [la web analytics association] (http://www.digitalanalyticsassociation.org/Files/PDF_standards/WebAnalyticsDefinitions.pdf), le domaine du web analytics couvre « la mesure, la collecte, l’analyse et le reporting des données Internet permettant de comprendre et d’optimiser les usages web. » Il faut donc voir le web analytics comme allant au delà des statistiques relatives à la fréquentation d’un site web « classique », ce qui inclut les réseaux sociaux et l’environnement du site (données hors-site).
+> Selon la définition de [la web analytics association](http://www.digitalanalyticsassociation.org/Files/PDF_standards/WebAnalyticsDefinitions.pdf), le domaine du web analytics couvre « la mesure, la collecte, l’analyse et le reporting des données Internet permettant de comprendre et d’optimiser les usages web. » Il faut donc voir le web analytics comme allant au delà des statistiques relatives à la fréquentation d’un site web « classique », ce qui inclut les réseaux sociaux et l’environnement du site (données hors-site).
 
 - web tracking ([src](http://www.webleads-tracker.fr/Definition-web-tracking_a665.html))
 
-> Le web tracking est une technique marketing B2B qui consiste à identifier les visiteurs d'un site à partir de leur adresse IP, puis à reconstituer leur parcours, à des fins d'analyse marketing et de relance commerciale. 
+> Le web tracking est une technique marketing B2B qui consiste à identifier les visiteurs d'un site à partir de leur adresse IP, puis à reconstituer leur parcours, à des fins d'analyse marketing et de relance commerciale.
 
 ## concepts
 

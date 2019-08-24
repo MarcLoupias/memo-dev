@@ -45,20 +45,20 @@
 <h3 id="title-périodes">Périodes</h3>
 <p><a href="https://www.ssi.gouv.fr/particulier/bonnes-pratiques/crypto-le-webdoc/cryptologie-art-ou-science-du-secret/">Cryptologie : art ou science du secret ? - Une histoire de codes: www.ssi.gouv.fr</a></p>
 <h4 id="title-cryptographie-mécanique">Cryptographie mécanique</h4>
-<p>Usage de moyens mécaniques pour chiffrer un message. </p>
+<p>Usage de moyens mécaniques pour chiffrer un message.</p>
 <p><strong>La sécurité repose sur le secret de fabrication</strong>.</p>
 <ul>
-<li>Nabuchodonosor (-600)<blockquote>
-<p>Aux alentours de -600, Nabuchodonosor, roi de Babylone, employait une méthode originale : il écrivait sur le crâne rasé de ses esclaves, attendait que leurs cheveux aient repoussé, et il les envoyait à ses généraux. Il suffisait ensuite de raser à nouveau le messager pour lire le texte. Il s’agit toutefois de stéganographie à proprement parler et non pas de cryptographie : l’information est cachée et non pas codée.</p>
-</blockquote>
-</li>
+<li>Nabuchodonosor (-600)</li>
 </ul>
 <blockquote>
+<p>Aux alentours de -600, Nabuchodonosor, roi de Babylone, employait une méthode originale : il écrivait sur le crâne rasé de ses esclaves, attendait que leurs cheveux aient repoussé, et il les envoyait à ses généraux. Il suffisait ensuite de raser à nouveau le messager pour lire le texte. Il s’agit toutefois de stéganographie à proprement parler et non pas de cryptographie : l’information est cachée et non pas codée.</p>
 <p>En utilisant cette technique, l’interception du message par un tiers est tout de suite remarquée.</p>
 </blockquote>
 <ul>
-<li><p>Le code de César (-50)<br>substitution monoalphabétique. A -&gt; D, B -&gt; E, etc …</p>
-</li>
+<li>Le code de César (-50)</li>
+</ul>
+<p>substitution monoalphabétique. A -&gt; D, B -&gt; E, etc …</p>
+<ul>
 <li><p>…</p>
 </li>
 <li><p>Enigma</p>
@@ -93,7 +93,7 @@
 <ul>
 <li>vérification de l’intégrité d’un message</li>
 <li>signature électronique quand combinée à algorithme de chiffrement asymétrique</li>
-<li>stockage d’une représentation sécurisée d’un mot de passe (<a href="https://fr.wikipedia.org/wiki/PBKDF2">PBKDF2</a>) </li>
+<li>stockage d’une représentation sécurisée d’un mot de passe (<a href="https://fr.wikipedia.org/wiki/PBKDF2">PBKDF2</a>)</li>
 </ul>
 <h4 id="title-cryptographie-quantique">Cryptographie quantique</h4>
 <p>Il s’agit de la cryptographie dont les bases reposent sur la physique quantique. Nous sommes en train de la voir émerger de nos jours et nul doute qu’elle ne remplace dans les années qui viennent la cryptographie basée sur les mathématiques.</p>
@@ -103,7 +103,7 @@
 <ul>
 <li>La qualité des algorithmes</li>
 </ul>
-<p>La qualité d’un algorithme repose sur sa fiabilité mathématique et surtout pas sur le secret de sa réalisation </p>
+<p>La qualité d’un algorithme repose sur sa fiabilité mathématique et surtout pas sur le secret de sa réalisation</p>
 <ul>
 <li>Les implémentations des algorithmes</li>
 </ul>
@@ -165,9 +165,9 @@
 </ul>
 <h3 id="title-attaques">Attaques</h3>
 <h4 id="title-force-brute">Force brute</h4>
-<p>Essayer toutes les clefs possibles. </p>
-<p>Principal danger : l’augmentation de la puissance des machines. </p>
-<p>Parades : augmenter la longueur des clefs, choisir des algorithmes coûteux </p>
+<p>Essayer toutes les clefs possibles.</p>
+<p>Principal danger : l’augmentation de la puissance des machines.</p>
+<p>Parades : augmenter la longueur des clefs, choisir des algorithmes coûteux</p>
 <p>En 97, 3h pour casser une clef de 40 bits.</p>
 <p><a href="https://www.nextinpact.com/news/87466-quand-chiffrement-donnees-est-mis-a-mal-par-mathematiciens.htm">Quand le chiffrement des données est mis à mal par des mathématiciens : nextinpact.com</a></p>
 <h4 id="title-analyse-statistique">Analyse statistique</h4>
@@ -192,7 +192,7 @@
 <h3 id="title-pki">PKI</h3>
 <h4 id="title-pourquoi-">Pourquoi ?</h4>
 <p>Postulat de départ : Chaque utilisateur a une paire de clef.</p>
-<p>Questions : </p>
+<p>Questions :</p>
 <ul>
 <li>La clé est-elle bien celle appartenant à la personne avec qui les échanges sont envisagés ?</li>
 <li>Le possesseur de cette clé est-il digne de confiance ?</li>
@@ -226,7 +226,7 @@
 <h5 id="title-corporate-proxy-man-in-the-middle">Corporate Proxy Man In The Middle</h5>
 <p><a href="https://security.stackexchange.com/a/101726">Is it possible for corporation to intercept and decrypt SSL/TLS traffic?</a></p>
 <p><a href="https://security.stackexchange.com/questions/2914/can-my-company-see-what-https-sites-i-went-to">Can my company see what HTTPS sites I went to?</a></p>
-<p>The idea is simple, the company : </p>
+<p>The idea is simple, the company :</p>
 <ul>
 <li>generate a self signed root certificate</li>
 <li>install it on each browser employee</li>
@@ -243,7 +243,7 @@
 <li>déchiffrer la signature avec la clef publique de la personne prétendant avoir signé le document</li>
 <li>comparer les deux empreintes numériques, si elles sont identiques, alors le signataire est considéré comme authentique.</li>
 </ul>
-<p>Vérifie également l’intégrité par ricochet. </p>
+<p>Vérifie également l’intégrité par ricochet.</p>
 <h4 id="title-smime">SMIME</h4>
 <h4 id="title-oauth">OAuth</h4>
 <h2 id="title-sources">sources</h2>

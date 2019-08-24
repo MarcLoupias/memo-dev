@@ -25,13 +25,13 @@ htmlHead:
 
 ## overview
 
-[vscode - github.com/Microsoft](https://github.com/Microsoft/vscode/)
+[vscode - `github.com/Microsoft`](https://github.com/Microsoft/vscode/)
 
-[downloads - code.visualstudio.com](https://code.visualstudio.com/download)
+[downloads - `code.visualstudio.com`](https://code.visualstudio.com/download)
 
-[docs - code.visualstudio.com](https://code.visualstudio.com/docs)
+[docs - `code.visualstudio.com`](https://code.visualstudio.com/docs)
 
-[vscode-tips-and-tricks - github.com/Microsoft](https://github.com/Microsoft/vscode-tips-and-tricks/blob/master/README.md)
+[vscode-tips-and-tricks - `github.com/Microsoft`](https://github.com/Microsoft/vscode-tips-and-tricks/blob/master/README.md)
 
 ## useful commands
 

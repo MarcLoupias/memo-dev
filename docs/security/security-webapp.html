@@ -4,15 +4,18 @@
 <p>SQL, LDAP, XPath, Parseur XML, …</p>
 <h4 id="title-exemple-avec-sql">Exemple avec SQL</h4>
 <p>Saisir dans un champ de saisie de mot de passe :</p>
-<pre><code>e&#39; or &#39;1&#39; = &#39;1</code></pre><h4 id="title-exemple-avec-xml">Exemple avec XML</h4>
-<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;
+<pre><code class="lang-text">e&#39; or &#39;1&#39; = &#39;1</code></pre>
+<h4 id="title-exemple-avec-xml">Exemple avec XML</h4>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;
     &lt;!DOCTYPE foo [
         &lt;!ELEMENT foo ANY &gt;
         &lt;!ELEMENT xxe SYSTEM &quot;file:///etc/passwd&quot; &gt;]&gt;
-    &lt;foo&gt;&lt;&amp;xxe;&lt;/foo&gt;</code></pre><h3 id="title-2---violation-de-gestion-dauthentification-et-de-session">2 - Violation de gestion d’authentification et de session</h3>
+    &lt;foo&gt;&lt;&amp;xxe;&lt;/foo&gt;</code></pre>
+<h3 id="title-2---violation-de-gestion-dauthentification-et-de-session">2 - Violation de gestion d’authentification et de session</h3>
 <p>L’authentification devrait être déléguée à un service tiers (Kerberos, OAuth, JWT, …)</p>
 <p>La session devrait être gérée via un cookie :</p>
-<pre><code>set-cookie:MonCookie=&quot;XXXX&quot;;Version=1;Secure;HttpOnly</code></pre><h3 id="title-3---exposition-de-données-sensibles">3 - Exposition de données sensibles</h3>
+<pre><code class="lang-text">set-cookie:MonCookie=&quot;XXXX&quot;;Version=1;Secure;HttpOnly</code></pre>
+<h3 id="title-3---exposition-de-données-sensibles">3 - Exposition de données sensibles</h3>
 <p>Protection par cryptographie.</p>
 <p>Analyse des données (stockées ou pas)</p>
 <p>Mot de passe : <code>bcrypt</code>, <code>PBKDF2</code>, <code>scrypt</code> (hash solo trop faible)</p>
@@ -20,13 +23,14 @@
 <p><a href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)">Cross-site Scripting (XSS) : owasp.org</a></p>
 <blockquote>
 <p>Cross-site scripting attacks may occur anywhere that possibly malicious users are allowed to post unregulated material to a trusted web site for the consumption of other valid users.</p>
-<p>The most common example can be found in bulletin-board web sites which provide web based mailing list-style functionality. </p>
+<p>The most common example can be found in bulletin-board web sites which provide web based mailing list-style functionality.</p>
 </blockquote>
 <p><a href="https://www.owasp.org/index.php/XSS_%28Cross_Site_Scripting%29_Prevention_Cheat_Sheet">XSS (Cross Site Scripting) Prevention Cheat Sheet : owasp.org</a></p>
 <p>AngularJS gère en natif ce problème (sanitize).</p>
 <p><a href="https://html5sec.org/">Vectors making use of HTML5 features</a></p>
 <h3 id="title-5---références-directes-non-sécurisées">5 - références directes non sécurisées</h3>
-<pre><code>http://example.com/app/accountInfo?acct=notmyacct</code></pre><p>Pour taper sur un autre compte par exemple.</p>
+<pre><code class="lang-text">http://example.com/app/accountInfo?acct=notmyacct</code></pre>
+<p>Pour taper sur un autre compte par exemple.</p>
 <p>Autre exemple, usage d’autoincrements SQL comme ID REST.</p>
 <p>Applicativement il faut s’assurer qu’un user ne reçoivent que les données auxquelles il a accès.</p>
 <p>Remplacer également les id SQL par des uuid.</p>
@@ -53,15 +57,14 @@
 <p><a href="http://stackoverflow.com/questions/12001269/what-are-the-security-risks-of-setting-access-control-allow-origin">What are the security risks of setting Access-Control-Allow-Origin? : stackoverflow.com</a></p>
 <blockquote>
 <p>By responding with <code>Access-Control-Allow-Origin: *</code>, the requested resource allows sharing with every origin. This basically means that any site can send an XHR request to your site and access the server’s response which would not be the case if you hadn’t implemented this CORS response.</p>
-</blockquote>
-<blockquote>
 <p>So any site can make a request to your site on behalf of their visitors and process its response. If you have something implemented like an authentication or authorization scheme that is based on something that is automatically provided by the browser (cookies, cookie-based sessions, etc.), the requests triggered by the third party sites will use them too.</p>
 </blockquote>
 <h3 id="title-9---utilisation-de-composants-avec-des-vulnérabilités-connues">9 - Utilisation de composants avec des vulnérabilités connues</h3>
 <p>OWASP publie un composant MAVEN nommé <a href="https://www.owasp.org/index.php/OWASP_Dependency_Check"><code>dependency-check-maven</code></a> pour check les vulnérabilités de son projet par ex.</p>
 <p><a href="https://techbeacon.com/13-tools-checking-security-risk-open-source-dependencies-0">13 tools for checking the security risk of open-source dependencies</a></p>
 <h3 id="title-10---redirections-et-renvois-non-validés">10 - redirections et renvois non validés</h3>
-<pre><code>http://www.example.com/redirect.jsp?url=evil.com</code></pre><p>Par exemple si on permet aux users la saisie de liens (forum par ex), difficile de valider le lien de redirection.</p>
+<pre><code class="lang-text">http://www.example.com/redirect.jsp?url=evil.com</code></pre>
+<p>Par exemple si on permet aux users la saisie de liens (forum par ex), difficile de valider le lien de redirection.</p>
 <h2 id="title-autres-attaques">autres attaques</h2>
 <h3 id="title-redos">ReDoS</h3>
 <p><a href="https://www.owasp.org/index.php/Regular_expression_Denial_of_Service_-_ReDoS">Regular expression Denial of Service - ReDoS</a></p>

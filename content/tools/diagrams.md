@@ -29,9 +29,9 @@ htmlHead:
 
 > Permet la construction rapide et facile de diagrammes de séquences
 
-- [JS Sequence Diagram Plugin : github.com](https://github.com/gmassanek/gitbook-plugin-js-sequence-diagram)
+- [JS Sequence Diagram Plugin : `github.com`](https://github.com/gmassanek/gitbook-plugin-js-sequence-diagram)
 
-[js-sequence-diagrams : bramp.github.io](https://bramp.github.io/js-sequence-diagrams/)
+[js-sequence-diagrams : `bramp.github.io`](https://bramp.github.io/js-sequence-diagrams/)
 
 > Intégration directe au markdown des diagrammes de séquence
 
@@ -41,17 +41,17 @@ htmlHead:
 
 ## charts
 
-- [echarts](https://ecomfe.github.io/echarts-examples/public/index.html#chart-type-scatter)
+[echarts](https://ecomfe.github.io/echarts-examples/public/index.html#chart-type-scatter)
 
 [echarts](https://github.com/ecomfe/echarts)
- 
+
 [gitbook-plugin-echarts](https://github.com/vowstar/gitbook-plugin-echarts)
 
 ## mermaid (lots of charts & diagrams)
 
-[mermaid : knsv.github.io](http://knsv.github.io/mermaid/)
+[mermaid : `knsv.github.io`](http://knsv.github.io/mermaid/)
 
-[mermaid : github.com](https://github.com/knsv/mermaid)
+[mermaid : `github.com`](https://github.com/knsv/mermaid)
 
 > Generation of diagram and flowchart from text in a similar manner as markdown
 
@@ -59,7 +59,7 @@ htmlHead:
 
 ## ascii art diagrams
 
-[asciiflow.com](http://asciiflow.com/) ([lewish/asciiflow2 - github.com](https://github.com/lewish/asciiflow2))
+[asciiflow.com](http://asciiflow.com/) ([lewish/asciiflow2 - `github.com`](https://github.com/lewish/asciiflow2))
 
 ## questions
 

@@ -32,7 +32,7 @@ htmlHead:
 - [flexbox](http://www.flexboxpatterns.com/home)
 - [understanding-flexbox](https://medium.freecodecamp.com/understanding-flexbox-everything-you-need-to-know-b4013d4dc9af)
 
-## CSS methdologies 
+## CSS methdologies
 
 - [SMACSS](https://smacss.com/) defines "modules"
 - [BEM](https://en.bem.info/) defines "blocks"
@@ -57,13 +57,13 @@ htmlHead:
 [CSS Image Sprites - Pros and Cons - getlevelten.com/blog/ahmad-kharbat - 20150911](https://getlevelten.com/blog/ahmad-kharbat/css-image-sprites-pros-and-cons)
 
 > **ProS**
-> 
+>
 > - Fewer HTTP requests, which means less server overhead.
 > - Fewer HTTP requests also means reduced page load time on browser.
 > - Images appear faster (Especially the hover state images) because the Image Sprite is loaded once and for all.
-> 
+>
 > **Cons**
-> 
+>
 > - More development time for slicing images, combining them, and programming background positions in the CSS.
 > - More maintenance time. Whenever a modification is needed, the whole sprite needs to be re-generated carefully
 > - Less SEO friendly. Some images are better be placed in the HTML rather than being backgrounds. HTML images can contain Titles and Alternative texts that are more beneficial to SEO, while CSS backgrounds cannot.

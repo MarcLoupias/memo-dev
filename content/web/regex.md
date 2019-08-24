@@ -27,7 +27,7 @@ htmlHead:
 
 [regex101 online tester](https://regex101.com/)
 
-[Enfin maîtriser les Expressions Rationnelles - Christophe Porteneuve - javascript.developpez.com -2014](https://javascript.developpez.com/tutoriels/maitriser-expressions-rationnelles/)
+[Enfin maîtriser les Expressions Rationnelles - Christophe Porteneuve - `javascript.developpez.com` - 2014](https://javascript.developpez.com/tutoriels/maitriser-expressions-rationnelles/)
 
 ## exemples
 

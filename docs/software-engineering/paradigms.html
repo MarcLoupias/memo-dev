@@ -3,24 +3,18 @@
 <p><a href="https://en.wikipedia.org/wiki/Imperative_programming">Imperative programming</a></p>
 <blockquote>
 <p>In computer science, imperative programming is a programming paradigm that uses statements that change a program’s state.</p>
-</blockquote>
-<blockquote>
 <p>Imperative programming focuses on describing how a program operates.</p>
 </blockquote>
 <h2 id="title-declarative-programming">declarative programming</h2>
 <p><a href="https://en.wikipedia.org/wiki/Declarative_programming">Declarative programming</a></p>
 <blockquote>
 <p>is a programming paradigm […] that expresses the logic of a computation without describing its control flow.</p>
-</blockquote>
-<blockquote>
 <p>Many languages that apply this style attempt to minimize or eliminate side effects by describing what the program must accomplish in terms of the problem domain, rather than describe how to accomplish it as a sequence of the programming language primitives (the how being left up to the language’s implementation). This is in contrast with imperative programming, which implements algorithms in explicit steps.</p>
 </blockquote>
 <h2 id="title-structured-programming">structured programming</h2>
 <p><a href="https://en.wikipedia.org/wiki/Structured_programming">Structured programming</a></p>
 <blockquote>
 <p>don’t use unrestrained GOTO (Robert C. Martin)</p>
-</blockquote>
-<blockquote>
 <p>aimed at improving the clarity, quality, and development time of a computer program by making extensive use of subroutines, block structures, for and while loops—in contrast to using simple tests and jumps such as the go to statement which could lead to “spaghetti code” causing difficulty to both follow and maintain.</p>
 </blockquote>
 <h2 id="title-functional-programming">functional programming</h2>
@@ -37,13 +31,14 @@
 <blockquote>
 <p>a style of building the structure and elements of computer programs—that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data. It is a declarative programming paradigm, which means programming is done with expressions or declarations instead of statements.</p>
 </blockquote>
-<p>N.B. : An <strong>expression</strong> is not a <strong>statement</strong> but a valid unit of code that <em>resolves to a value</em>. Not all <strong>statements</strong> resolve to a value. </p>
-<p>N.B.2. : </p>
+<p>N.B. : An <strong>expression</strong> is not a <strong>statement</strong> but a valid unit of code that <em>resolves to a value</em>. Not all <strong>statements</strong> resolve to a value.</p>
+<p>N.B.2. :</p>
 <ul>
-<li><em>An expression is a chunk of code that evaluates to a single value.</em> </li>
-<li><em>A statement is a chunk of code that may not evaluate to a value at all.</em><br>cf <a href="https://medium.com/javascript-scene/nested-ternaries-are-great-361bddd0f340">Nested Ternaries are Great - Eric Elliott - 20180126</a></li>
+<li><em>An expression is a chunk of code that evaluates to a single value.</em></li>
+<li><em>A statement is a chunk of code that may not evaluate to a value at all.</em></li>
 </ul>
-<p><a href="https://github.com/MostlyAdequate/mostly-adequate-guide">Mostly adequate guide to FP (in javascript)</a> <a href="https://drboolean.gitbooks.io/mostly-adequate-guide/content/">gitbook</a></p>
+<p>cf <a href="https://medium.com/javascript-scene/nested-ternaries-are-great-361bddd0f340">Nested Ternaries are Great - Eric Elliott - 20180126</a></p>
+<p><a href="https://github.com/MostlyAdequate/mostly-adequate-guide">Mostly adequate guide to FP (in JavaScript)</a> <a href="https://drboolean.gitbooks.io/mostly-adequate-guide/content/">gitbook</a></p>
 <p><a href="https://www.youtube.com/watch?v=e-5obm1G_FY">Learning Functional Programming with JavaScript - JSUnconf 2016 : Anjana Vakil</a> - <a href="https://slidr.io/vakila/learning-functional-programming-with-javascript#1">slides</a></p>
 <p><a href="https://2017.jsconf.eu/speakers/anjana-vakil-immutable-data-structures-for-functional-js.html">Immutable data structures for functional JS : Anjana Vakil</a></p>
 <p><a href="https://hughfdjackson.com/javascript/why-curry-helps/">Why Curry Helps - hughfdjackson.com (2015 ?)</a></p>
@@ -58,29 +53,29 @@
 <p>Functional programming (FP) helps you write robust, powerful, and maintainable programs well suited to multicore and cloud computing by focusing on controlling state and effects.</p>
 <p><strong>Functional Programming Principles</strong></p>
 <p><em>Own Your Context with Explicit State</em><br>Some people call it “stateless”, but I prefer “explicit state”. Instead of having data implicitly “somewhere over there” and reading that (implicit &amp; shared) data while in the body of a function, simply pass all data that the function needs explicitly as arguments.</p>
-<p><em>Limit Side Effects</em><br>This is the output side of explicit state. As much as possible, avoid talking to the world outside of the function, except for the final return of the function. </p>
+<p><em>Limit Side Effects</em><br>This is the output side of explicit state. As much as possible, avoid talking to the world outside of the function, except for the final return of the function.</p>
 <p><em>Referential Transparency</em><br>When you limit yourself to simple input/output for every function (with no changes to the world outside it), you can swap out a function for its return value.</p>
 <p><em>Composition</em><br>With (top-down) inheritance, you specialize a general class into more specific subsets. For example, a general Car class can be used to make more specific SportsCar and Minivan classes. This works well for a certain problems, but fails when you want to mix and match functionality. You can quickly end up with an endless regress of more and more general classes, and huge messaging interfaces between different parts of your application.<br>With (bottom-up) function composition, we take small, single responsibility functions, and combine them with other functions to build up larger, more complex behaviours. We do this either by passing the result of one function as the argument of another, or by calling them in sequence (if we’re side-effecting).</p>
 </blockquote>
 <p><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4">Robert C Martin - Functional Programming; What? Why? When?</a></p>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=247s">4:07</a> “Functional Programming: What? When? Why?” or “The Failure of State” </li>
-<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=310s">5:10</a> Rich Hickey is the author of Clojure. Listen to his talks. </li>
-<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=340s">5:40</a> What is state? Variables. </li>
-<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=675s">11:15</a> Structure and Interpretation of Computer Programs. This is a fascinating book. For the first 250 pages, the book uses no assignment statements. </li>
-<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=855s">14:15</a> Here’s how SICP’s model of computing worked before they introduced an assignment statement. Simply replace a function call with its implementation. </li>
-<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=958s">15:58</a> Once you introduce assignment. You can no longer replace a function call with its implementation. Why? Because the state of the system may have changed. An assignment statement introduces the concept of time. </li>
-<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=1084s">18:04</a> Side effect: an assignment statement. If there’s no assignment, there’s no side effect. </li>
-<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=1222s">20:22</a> What “hack” have we done to protect us from memory leaks? Garbage collection. </li>
-<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=1906s">31:46</a> Functional programming was invented in 1957 before OO and structured. But memory was too expensive to make it practical. But memory is cheap now. </li>
-<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=1973s">32:53</a> Should we change how we program? We should because:<br>1) Functional programs are simpler - which makes them easier to write and maintain<br>2) There’s no temporal coupling - no worrying if some function was called before another function.<br>3) Fewer concurrency issues. In a purely functional program, there’s no concurrency because there is no state.<br>4) No asking, “What’s the state?” </li>
-<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=2318s">38:38</a> We’re using multicore CPU’s now because we can’t increase clock rate anymore. And hardware makers are doing bizarre tradeoffs. They’re making individual processors slower but putting more processors in. So individual cores slow down but the chip throughput goes up if you can take advantage of all the cores. </li>
-<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=2520s">42:00</a> How are you going to work with an abundance of cores? Maybe we need to walk away from the assignment statement. </li>
+<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=247s">4:07</a> “Functional Programming: What? When? Why?” or “The Failure of State”</li>
+<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=310s">5:10</a> Rich Hickey is the author of Clojure. Listen to his talks.</li>
+<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=340s">5:40</a> What is state? Variables.</li>
+<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=675s">11:15</a> Structure and Interpretation of Computer Programs. This is a fascinating book. For the first 250 pages, the book uses no assignment statements.</li>
+<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=855s">14:15</a> Here’s how SICP’s model of computing worked before they introduced an assignment statement. Simply replace a function call with its implementation.</li>
+<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=958s">15:58</a> Once you introduce assignment. You can no longer replace a function call with its implementation. Why? Because the state of the system may have changed. An assignment statement introduces the concept of time.</li>
+<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=1084s">18:04</a> Side effect: an assignment statement. If there’s no assignment, there’s no side effect.</li>
+<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=1222s">20:22</a> What “hack” have we done to protect us from memory leaks? Garbage collection.</li>
+<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=1906s">31:46</a> Functional programming was invented in 1957 before OO and structured. But memory was too expensive to make it practical. But memory is cheap now.</li>
+<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=1973s">32:53</a> Should we change how we program? We should because:<br>1) Functional programs are simpler - which makes them easier to write and maintain<br>2) There’s no temporal coupling - no worrying if some function was called before another function.<br>3) Fewer concurrency issues. In a purely functional program, there’s no concurrency because there is no state.<br>4) No asking, “What’s the state?”</li>
+<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=2318s">38:38</a> We’re using multicore CPU’s now because we can’t increase clock rate anymore. And hardware makers are doing bizarre tradeoffs. They’re making individual processors slower but putting more processors in. So individual cores slow down but the chip throughput goes up if you can take advantage of all the cores.</li>
+<li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=2520s">42:00</a> How are you going to work with an abundance of cores? Maybe we need to walk away from the assignment statement.</li>
 <li><a href="https://www.youtube.com/watch?v=7Zlp9rKHGD4&t=2989s">49:49</a> OO = procedure + state. OO is exposed procedure but hidden state (encapsulation). It’s possible to write functional programs using an OO style. All of the objects become immutable.</li>
 </ul>
 <h3 id="title-functionnal-programming-concepts">functionnal programming concepts</h3>
 <p><a href="https://medium.com/making-internets/why-using-chain-is-a-mistake-9bc1f80d51ba">Why using <code>_.chain</code> is a mistake. - medium.com - Izaak Schroeder - 20160217</a></p>
-<p><strong>partial application</strong></p>
+<h4 id="title-partial-application">partial application</h4>
 <blockquote>
 <p>Partial application means taking a function with n arguments and returning a new function with n-i arguments (given i&lt;n), where the i arguments are bound to the new function.</p>
 </blockquote>
@@ -89,14 +84,14 @@ const add5 = _.partial(add, 5); // now `a` is bound (locked-in) to 5
 const add5 = (b) =&gt; 5 + b; // this is what it looks like inside
 
 add5(3); // equivalent to invoking add(5, 3);</code></pre>
-<p><strong>currying</strong></p>
+<h4 id="title-currying">currying</h4>
 <blockquote>
 <p>Function currying is the process of successive partial applications, until the last argument is given at which point the result of the function is returned.</p>
 </blockquote>
 <pre><code class="lang-javascript">const add = (a) =&gt; (b) =&gt; a + b;
 
 add(1)(2); // Repeated partial application.</code></pre>
-<p><strong>Composition</strong></p>
+<h4 id="title-composition">Composition</h4>
 <p>A composed version of:</p>
 <pre><code class="lang-javascript">const add8 = (x) =&gt; add5(add3(x));</code></pre>
 <p>Could be written with more visual clarity using composition:</p>
@@ -116,8 +111,6 @@ add(1)(2); // Repeated partial application.</code></pre>
 <p><a href="https://en.wikipedia.org/wiki/Object-oriented_programming">Object-oriented programming</a></p>
 <blockquote>
 <p>don’t use pointers to functions (Robert C. Martin) (He is talking about pointers in C++)</p>
-</blockquote>
-<blockquote>
 <p>based on the concept of “objects”, which may contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods. A feature of objects is that an object’s procedures can access and often modify the data fields of the object with which they are associated (objects have a notion of “this” or “self”). In OOP, computer programs are designed by making them out of objects that interact with one another.</p>
 </blockquote>
 <h2 id="title-imperative-programming-versus-functionnal-programming">imperative programming versus functionnal programming</h2>
@@ -134,7 +127,7 @@ add(1)(2); // Repeated partial application.</code></pre>
 <p>TDLR : If logic evolves more then the model : choose FP and if model evolves more then the logic : choose OOP</p>
 <p>OOP is good when you have a fixed set of <em>operations</em> on <em>things</em>.
 Your code evolves, you primarily add new <em>things</em>. Adding new classes which implement existing methods (<em>operations</em>).</p>
-<p>FP is good when you have a fixed set of <em>things</em><br>Your code evolves, you primarily add new <em>operations</em> (functions) on existing <em>things</em> (data types). </p>
+<p>FP is good when you have a fixed set of <em>things</em><br>Your code evolves, you primarily add new <em>operations</em> (functions) on existing <em>things</em> (data types).</p>
 <p>When evolution goes the wrong way, you have problems (<a href="http://www.daimi.au.dk/~madst/tool/papers/expression.txt">The Expression Problem : Philip Wadler 19981112</a>):</p>
 <p>Adding a new operation to an OOP program may require editing many class definitions to add a new method.</p>
 <p>Adding a new kind of thing to a FP program may require editing many function definitions to add a new case.</p>

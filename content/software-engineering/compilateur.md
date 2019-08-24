@@ -28,14 +28,14 @@ htmlHead:
 [Compilateur - fr.wikipedia.org](https://fr.wikipedia.org/wiki/Compilateur)
 
 > Un compilateur est un programme qui transforme un code source écrit dans un langage de programmation (le langage source) en un autre langage informatique (appelé langage cible)
-> 
+>
 > Pour qu'il puisse être exploité par une machine, le compilateur traduit le code source, écrit dans un langage de haut niveau d'abstraction, facilement compréhensible par l'humain, vers un langage de plus bas niveau, un langage d'assemblage ou langage machine.
-> 
-> Inversement, un programme qui traduit un langage de bas niveau vers un langage de plus haut niveau est un décompilateur. 
+>
+> Inversement, un programme qui traduit un langage de bas niveau vers un langage de plus haut niveau est un décompilateur.
 
 [Langage machine](https://fr.wikipedia.org/wiki/Langage_machine)
 
-> C'est le langage natif d'un processeur, c'est-à-dire le seul qu'il puisse traiter. Il est composé d'instructions et de données à traiter codées en binaire. 
+> C'est le langage natif d'un processeur, c'est-à-dire le seul qu'il puisse traiter. Il est composé d'instructions et de données à traiter codées en binaire.
 
 ## Présentation générale
 
@@ -65,20 +65,16 @@ Lexer synonyms : tokenizer, scanner, ...
 [What is the main difference between Compiler and Transpiler - stackoverflow.com](https://stackoverflow.com/questions/40605642/what-is-the-main-difference-between-compiler-and-transpiler)
 
 > **Compiler** - compiles code to a lower level code.
-> 
+>
 > Example:
-> 
+>
 > - "Developer code" -> "Machine code"
 > - PHP -> C
 > - Java -> bytecode
-> 
+>
 > **Transpiler** - compiles code to same level of code/abstraction.
-> 
+>
 > Example:
-> 
+>
 > - "Developer code" -> "Another developer code or version"
 > - JavaScript ES2015+ -> JavaScript ES5
-
-
-
-

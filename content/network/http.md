@@ -37,9 +37,9 @@ htmlHead:
 
 [What is HTTP Long Polling? - www.pubnub.com/blog - 20141201](https://www.pubnub.com/blog/2014-12-01-http-long-polling/)
 
-> - The client polls the server requesting new information.  
-> - The server holds the request open until new data is available. 
-> - Once available, the server responds and sends the new information. 
-> - When the client receives the new information, it immediately sends another request, and the operation is repeated. 
-> 
+> - The client polls the server requesting new information.
+> - The server holds the request open until new data is available.
+> - Once available, the server responds and sends the new information.
+> - When the client receives the new information, it immediately sends another request, and the operation is repeated.
+>
 > This effectively emulates a server push feature.

@@ -39,7 +39,7 @@ htmlHead:
 
 We design a game where we have
 
-```
+```javascript
 Dog
   .poop()
   .bark()
@@ -51,7 +51,7 @@ Cat
 
 Because of `poop` function duplication we create a mother `class`
 
-```
+```javascript
 Animal
   .poop()
 
@@ -66,7 +66,7 @@ Animal
 
 Now we add more classes on a different line of inheritance
 
-```
+```javascript
 MurderRobot
   .drive()
   .kill()
@@ -89,7 +89,7 @@ Animal
 
 Same problem as before, we need another mother class for robots
 
-```
+```javascript
 Robot
   .drive()
   
@@ -112,7 +112,7 @@ Animal
       .meow()
 ```
 
-After a while a new needs is coming : We need a murder robot dog who can kill, drive and bark. 
+After a while a new needs is coming : We need a murder robot dog who can kill, drive and bark.
 But it cannot poop (no digestive system)
 
 At this point, the class inheritance taxinomy is deeply wrong. We cannot put a MurderRobotDog class inside.
@@ -124,7 +124,7 @@ This problem is called the **Gorilla Banana Problem** (You request a Banana, you
 
 The solution is **composition** (design objects around what they **do**)
 
-```
+```text
 dog            = pooper + barker
 cat            = pooper + meower
 cleaningRobot  = driver + cleaner
@@ -154,8 +154,8 @@ Lots of devs just favors composition over inheritance and some never use inherit
 
 [Composition over Inheritance, the importance of context : Damien Lebreuilly 20160131](https://medium.com/@FennNaten/composition-over-inheritance-the-importance-of-context-d8916f041a7e)
 
-> In the rest of this article, I’ll explain what are those inheritance pitfalls that composition (in GoF sense) tries 
+> In the rest of this article, I’ll explain what are those inheritance pitfalls that composition (in GoF sense) tries
 > to avoid, and I’ll show that concatenative inheritance still carries them.
-
-> he is taking the @mpj `murderRobotDog` example adding more complexity to output this conclusion : 
+>
+> he is taking the @mpj `murderRobotDog` example adding more complexity to output this conclusion :
 > **Object composition is not object merging.**

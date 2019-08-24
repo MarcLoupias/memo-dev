@@ -31,7 +31,7 @@
 <h3 id="title-text">text</h3>
 <p>The first data structure for text is the <a href="https://fr.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange">ASCII (American Standard Code for Information Interchange)</a></p>
 <p>128 characters available (0 to 127) expressed in a table :</p>
-<pre><code>| Dec | Hexa | Oct | Html     | chr | binary  | description              |
+<pre><code class="lang-txt">| Dec | Hexa | Oct | Html     | chr | binary  | description              |
 | --- | ---- | --- | -------- | --- | ------- | ------------------------ |
 |   0 |    0 |   0 |          | NUL | 0000000 | (null)                   |
 |   1 |    1 | 001 |          | SOH | 0000001 | (start of heading)       |
@@ -43,8 +43,8 @@
 |   7 |    7 | 007 |          | BEL | 0000111 | (bell)                   |
 |   8 |    8 | 010 |          | BS  | 0001000 | (backspace)              |
 |   9 |    9 | 011 |          | TAB | 0001001 | (horizontal tab)         |
-|  10 |    A | 012 |          | LF  | 0001010 | (NL line feed, new line) | 
-|  11 |    B | 013 |          | VT  | 0001011 | (vertical tab)           | 
+|  10 |    A | 012 |          | LF  | 0001010 | (NL line feed, new line) |
+|  11 |    B | 013 |          | VT  | 0001011 | (vertical tab)           |
 |  12 |    C | 014 |          | FF  | 0001100 | (NP form feed, new page) |
 |  13 |    D | 015 |          | CR  | 0001101 | (carriage return)        |
 |  14 |    E | 016 |          | SO  | 0001110 | (shift out)              |
@@ -160,12 +160,13 @@
 | 124 |   7C | 174 | `&amp;#124;` | \|  | 1111100 |                          |
 | 125 |   7D | 175 | `&amp;#125;` | }   | 1111101 |                          |
 | 126 |   7E | 176 | `&amp;#126;` | ~   | 1111110 |                          |
-| 127 |   7F | 177 | `&amp;#127;` | DEL | 1111111 |                          |</code></pre><h3 id="title-image">image</h3>
+| 127 |   7F | 177 | `&amp;#127;` | DEL | 1111111 |                          |</code></pre>
+<h3 id="title-image">image</h3>
 <p>The very raw image format is an array of pixels.</p>
 <p>A pixel is a picture cell, a raw colored point.</p>
 <p>Each pixel is composed by 3 numbers representing the red value, the green value, and the blue value.</p>
 <p>It is named RGB (or Digital 8-bit per channel).</p>
-<p>It is a 24bits data structure (3 bytes because 3x8bits) : </p>
+<p>It is a 24bits data structure (3 bytes because 3x8bits) :</p>
 <ul>
 <li>represented with integers : <code>RGB(255, 255, 255)</code></li>
 <li>represented with hexadecimals : <code>#FFFFFF</code></li>

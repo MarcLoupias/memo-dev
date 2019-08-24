@@ -1,9 +1,12 @@
 {
     "default": true,
     "MD003": { "style": "atx" },
-    "MD007": { "indent": 4 },
+    "MD007": { "indent": 2 },
     "MD013": false,
+    "MD024": { "siblings_only": true },
+    "MD025": { "level": 1, "front_matter_title": "^\\s*doc-title:" },
     "MD026": { "punctuation": ".,;:!" },
+    "MD033": { "allowed_elements": ["kbd"]},
     "MD035": { "style": "---" },
     "MD044": {
         "names": ["Git", "GitHub", "GitLab", "Gitblit", "JavaScript", "SHA1"],

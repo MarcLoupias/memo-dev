@@ -29,7 +29,7 @@ htmlHead:
 
 Elasticsearch Store, Search, and Analyze
 
-Logstash: Collect, Enrich, and Transport 
+Logstash: Collect, Enrich, and Transport
 
 Kibana: Explore, Visualize, and Share
 
@@ -37,8 +37,8 @@ Kibana: Explore, Visualize, and Share
 
 [Mise en place d'une plateforme centralisée de gestion des logs avec elastic (D. Pilato, E. Demey)](https://www.youtube.com/watch?v=0J5Xt5CCQhQ&index=53&list=PLTbQvx84FrARa9pUtZYK7t_UfyGMCPOBn)
 
-> Le code est sur [Gillespie59/devoxx-universite-elastic](https://github.com/Gillespie59/devoxx-universite-elastic) sur github.
-> 
+> Le code est sur [Gillespie59/devoxx-universite-elastic](https://github.com/Gillespie59/devoxx-universite-elastic) sur GitHub.
+>
 > Stack front angular + back node.js, le tout dockérisé. Comment avoir des logs et des stats avec une stack ELK.
 
 ## install
@@ -54,13 +54,13 @@ Kibana: Explore, Visualize, and Share
 [What is an index in Elasticsearch](https://stackoverflow.com/questions/15025876/what-is-an-index-in-elasticsearch)
 
 >
-> Comparing with relationnal database (**5- only !**) : 
-> 
+> Comparing with relationnal database (**5- only !**) :
+>
 > - MySQL => Databases => Tables => Columns/Rows
 > - ElasticSearch => Indices => Types => Documents with Properties
-> 
+>
 > An ElasticSearch cluster can contain multiple `Indices` (databases), which in turn contain multiple `Types` (tables). These types hold multiple `Documents` (rows), and each document has `Properties` (columns).
-> 
+>
 > Searching and querying takes the format of: `http://localhost:9200/[index]/[type]/[operation]`
 >
 
@@ -68,7 +68,7 @@ Kibana: Explore, Visualize, and Share
 
 The type becomes deprecated, in v7 it will be removed.
 
-[Remove support for types? - the github issue in elastic/elasticsearch repo](https://github.com/elastic/elasticsearch/issues/15613)
+[Remove support for types? - the GitHub issue in elastic/elasticsearch repo](https://github.com/elastic/elasticsearch/issues/15613)
 
 [Here is why : Removal of mapping types - www.elastic.co/guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/removal-of-types.html)
 
@@ -94,7 +94,7 @@ This can lead to frustration when, for example, you want `deleted` to be a `date
 
 `GET /_cat/health?v`
 
-```
+```text
 epoch      timestamp cluster       status node.total node.data shards pri relo init unassign pending_tasks max_task_wait_time active_shards_percent
 1475247709 17:01:49  elasticsearch green           1         1      0   0    0    0        0             0                  -                100.0%
 ```
@@ -103,7 +103,7 @@ cf [cat APIs](https://www.elastic.co/guide/en/elasticsearch/reference/5.6/cat.ht
 
 `GET /_cat/nodes?v`
 
-```
+```text
 ip        heap.percent ram.percent cpu load_1m load_5m load_15m node.role master name
 127.0.0.1           10           5   5    4.46                        mdi      *      PB2SGZY
 ```
@@ -112,7 +112,7 @@ ip        heap.percent ram.percent cpu load_1m load_5m load_15m node.role master
 
 `GET /_cat/indices?v`
 
-```
+```text
 health status index uuid pri rep docs.count docs.deleted store.size pri.store.size
 green  open   index_boubou_1       OGxhmflXRKy4z_tHvlqf3w   5   0    5436288            0      6.9gb          6.9gb
 green  open   index_boubou_2       FL3x1kDhT1y1DA4bXy4kLQ   5   0    5436132       162456      7.1gb          7.1gb
@@ -120,13 +120,12 @@ green  open   index_boubou_2       FL3x1kDhT1y1DA4bXy4kLQ   5   0    5436132    
 
 #### create an index
 
-
-```
+```text
 PUT /customer?pretty
 GET /_cat/indices?v
 ```
 
-```
+```text
 health status index    uuid                   pri rep docs.count docs.deleted store.size pri.store.size
 yellow open   customer 95SQ4TSUT7mWBT7VNHH67A   5   1          0            0       260b           260b
 ```
@@ -137,7 +136,7 @@ without specifying the id, use a `POST` request
 
 in v5.6
 
-```
+```text
 POST /customer/external?pretty
 {
   "name": "Jane Doe"
@@ -146,7 +145,7 @@ POST /customer/external?pretty
 
 in v6.2
 
-```
+```text
 POST /customer/_doc?pretty
 {
   "name": "Jane Doe"
@@ -157,16 +156,16 @@ to specify the id use a `PUT` request
 
 in v5.6
 
-```
+```text
 PUT /customer/external/1?pretty
 {
   "name": "John Doe"
 }
 ```
 
-response 
+response
 
-```
+```json
 {
   "_index" : "customer",
   "_type" : "external",
@@ -184,16 +183,16 @@ response
 
 in v6.2
 
-```
+```text
 PUT /customer/_doc/1?pretty
 {
   "name": "John Doe"
 }
 ```
 
-response 
+response
 
-```
+```json
 {
   "_index" : "customer",
   "_type" : "_doc",
@@ -216,7 +215,7 @@ in v5.6
 
 `GET /customer/external/1?pretty`
 
-```
+```json
 {
   "_index" : "customer",
   "_type" : "external",
@@ -231,7 +230,7 @@ in v6.2
 
 `GET /customer/_doc/1?pretty`
 
-```
+```json
 {
   "_index" : "customer",
   "_type" : "_doc",
@@ -246,12 +245,12 @@ in v6.2
 
 in v5.6 and in v6.2
 
-```
+```text
 DELETE /customer?pretty
 GET /_cat/indices?v
 ```
 
-```
+```text
 health status index uuid pri rep docs.count docs.deleted store.size pri.store.size
 ```
 
@@ -259,7 +258,7 @@ health status index uuid pri rep docs.count docs.deleted store.size pri.store.si
 
 we have executed in v5.6
 
-```
+```text
 PUT /customer
 PUT /customer/external/1
 {
@@ -271,7 +270,7 @@ DELETE /customer
 
 and in v6.2
 
-```
+```text
 PUT /customer
 PUT /customer/_doc/1
 {
@@ -285,10 +284,9 @@ pattern to access data in elastic : `<REST Verb> /<Index>/<Type>/<ID>`
 
 In v6.2, `_doc` is the `<Type>` value by default.
 
-
 ## JavaScript
 
-[elastic/elasticsearch-js - github.com](https://github.com/elastic/elasticsearch-js)
+[elastic/elasticsearch-js - `github.com`](https://github.com/elastic/elasticsearch-js)
 
 Usable from Node or the browser
 

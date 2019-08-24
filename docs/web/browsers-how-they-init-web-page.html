@@ -11,7 +11,7 @@
 <p>Step 4 causes a bad user experience. Your website basically stops loading until you’ve downloaded all scripts. If there’s one thing that users hate it’s waiting for a website to load.</p>
 <h2 id="title-why-does-this-even-happen">Why does this even happen?</h2>
 <p>Any script can insert its own HTML via <code>document.write()</code> or other DOM manipulations. This implies that the parser has to wait until the script has been downloaded &amp; executed before it can safely parse the rest of the document. After all, the script could have inserted its own HTML in the document.</p>
-<p>However, most javascript developers no longer manipulate the DOM while the document is loading. Instead, they wait until the document has been loaded before modifying it. For example:</p>
+<p>However, most JavaScript developers no longer manipulate the DOM while the document is loading. Instead, they wait until the document has been loaded before modifying it. For example:</p>
 <pre><code class="lang-html">&lt;!-- index.html --&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -22,9 +22,9 @@
         &lt;div id=&quot;user-greeting&quot;&gt;Welcome back, user&lt;/div&gt;
     &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>Javascript:</p>
+<p>JavaScript:</p>
 <pre><code class="lang-javascript">// my-script.js
-document.addEventListener(&quot;DOMContentLoaded&quot;, function() { 
+document.addEventListener(&quot;DOMContentLoaded&quot;, function() {
     // this function runs when the DOM is ready, i.e. when the document has been parsed
     document.getElementById(&quot;user-greeting&quot;).textContent = &quot;Welcome back, Bart&quot;;
 });</code></pre>

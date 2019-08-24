@@ -26,7 +26,7 @@ htmlHead:
 `^` = `Ctrl` key
 `M` = `Alt` key
 
-```
+```text
 ^G      (F1)            Display this help text
 ^X      (F2)            Close the current file buffer / Exit from nano
 ^O      (F3)            Write the current file to disk

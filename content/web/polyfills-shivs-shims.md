@@ -30,5 +30,6 @@ Les shims sont un bout de code qui intercepte un appel API (en développement we
 ## [modernizr](http://modernizr.com/docs/)
 
 lib js qui sert à :
+
 - détecter si les features HTML5 & CSS3 sont implémentées dans les browsers.
 - proposer une impl basique de certaines fonctionnalités.

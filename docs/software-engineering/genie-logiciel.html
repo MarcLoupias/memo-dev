@@ -27,9 +27,7 @@
 </ul>
 <blockquote>
 <p>Ajouter des personnes à un projet en retard accroît son retard</p>
-</blockquote>
-<blockquote>
-<p>Adding manpower to a late software project makes it later </p>
+<p>Adding manpower to a late software project makes it later</p>
 </blockquote>
 <ul>
 <li><a href="https://fr.wikipedia.org/wiki/Le_Mythe_du_mois-homme">Le mythe du mois-homme</a></li>
@@ -51,11 +49,7 @@
 </ul>
 <blockquote>
 <p>Les organisations à l’origine des architectures doivent refléter le système en lui-même.</p>
-</blockquote>
-<blockquote>
 <p>organizations which design systems … are constrained to produce designs which are copies of the communication structures of these organizations</p>
-</blockquote>
-<blockquote>
 <p>“The structure of a problem reflects the structure of the organization that created it.” Bill Corcoran’s version of Conway’s Law</p>
 </blockquote>
 <ul>
@@ -146,7 +140,7 @@
 <li>investissement très lourd du tooling pour gérer les projets</li>
 <li>sécurité du code (tout le monde a tout le code)</li>
 </ul>
-<p>impact git :</p>
+<p>impact Git :</p>
 <ul>
 <li>généralement on fait du feature branching (rend difficile la collaboration)</li>
 <li>monorepo impose le <a href="https://trunkbaseddevelopment.com/">trunk based development</a> (commit quotidiens sur le trunk + feature toggle)</li>
@@ -284,7 +278,7 @@
 <h3 id="title-continuous-deployment">continuous deployment</h3>
 <p><a href="https://en.wikipedia.org/wiki/Continuous_delivery#Relationship_to_continuous_deployment">wikipedia</a></p>
 <blockquote>
-<p> Continuous deployment means that every change is automatically deployed to production.</p>
+<p>Continuous deployment means that every change is automatically deployed to production.</p>
 </blockquote>
 <h3 id="title-continuous-delivery-vs-continuous-deployment">continuous delivery vs continuous deployment</h3>
 <p><a href="https://puppet.com/blog/continuous-delivery-vs-continuous-deployment-what-s-diff">Continuous Delivery Vs. Continuous Deployment: What’s the Diff? - puppet.com/blog - 20130830</a></p>
@@ -295,36 +289,33 @@
 <h3 id="title-feature-flipping">feature flipping</h3>
 <p><a href="http://blog.octo.com/feature-flipping/">feature-flipping : blog.octo.com</a></p>
 <p><a href="http://featureflags.io/feature-flags/">feature flags explained : featureflags.io</a> (very good link, with lots of use case, eg : early access)</p>
-<p><strong>drawback</strong></p>
+<h4 id="title-drawback">drawback</h4>
 <p><a href="https://www.youtube.com/watch?v=glZ1C-Yu5tw">Settings are evil - MPJ’s Musings - FunFunFunction #62</a></p>
 <blockquote>
 <p>TLDR : Feature toggle generate combinatorial explosion of test cases -&gt; lower quality</p>
 </blockquote>
 <p>Martin Fowler deal with this question in <a href="https://martinfowler.com/bliki/FeatureToggle.html">his feature toggle article</a> :</p>
 <blockquote>
-<p>A common question we hear about feature toggles concerns testing - <strong>does using feature toggles mean a combinatorial<br>explosion of tests</strong>? In general there’s <strong>no need to test all combinations of features</strong>. For release toggles it’s usually sufficient to run two combinations :</p>
+<p>A common question we hear about feature toggles concerns testing - <strong>does using feature toggles mean a combinatorial<br>explosion of tests</strong>? In general there’s <strong>no need to test all combinations of features</strong>.
+For release toggles it’s usually sufficient to run two combinations :</p>
 <ul>
 <li>all the toggles on that are expected to be on in the next release</li>
 <li>all toggles on</li>
 </ul>
 <p>This is pretty much the same as what you need to do with feature branches if you want to find any integration bugs.</p>
-<p><strong>It’s very important to retire release toggles once the pending features have bedded down in production</strong>. This involves removing the definitions on the configuration file and all the code that uses them.<br><strong>Otherwise you will get a pile of toggles that nobody can remember how to use</strong>. In one memorable example I heard of,<br>it required making a special recompilation of the linux kernel to handle enough command line switches.</p>
+<p><strong>It’s very important to retire release toggles once the pending features have bedded down in production</strong>.
+This involves removing the definitions on the configuration file and all the code that uses them.<br><strong>Otherwise you will get a pile of toggles that nobody can remember how to use</strong>. In one memorable example I heard of,<br>it required making a special recompilation of the linux kernel to handle enough command line switches.</p>
 </blockquote>
+<h4 id="title-feature-branches-vs-feature-toggles">feature branches vs feature toggles</h4>
 <p><a href="https://fournines.wordpress.com/2011/11/20/feature-branches-vs-feature-toggles/">Feature branches vs. feature toggles : fournines.wordpress.com : 20111120</a></p>
 <blockquote>
 <p>The biggest mistake you can make when deciding on how to use branches is trying to define “one branching strategy to rule them all”.</p>
-</blockquote>
-<blockquote>
 <p>Feature toggle should not be systematicly used. It should be only if the team experience pain merges.</p>
-</blockquote>
-<blockquote>
 <p>Features branches cons :</p>
 <ul>
 <li>the feature branch is not merged in the mainline, so there is no CI on it</li>
-<li>concurrent feature branch works can lead to big conflicts when merging. The last team to merge will have to handle<br>all the issues.</li>
+<li>concurrent feature branch works can lead to big conflicts when merging. The last team to merge will have to handle all the issues.</li>
 </ul>
-</blockquote>
-<blockquote>
 <p>Conflicts could symptomatic of underlying problems :</p>
 <ul>
 <li>poor design</li>
@@ -332,11 +323,7 @@
 <li>or multiple logical views of the domain</li>
 <li>refactor-rage (a dev doing lot’s of cow boy refactoring)</li>
 </ul>
-</blockquote>
-<blockquote>
 <p>Feature toggle can be impl at build time or at runtime. Build time means you need several CI pipeline, run time increase<br>increase code complexity.</p>
-</blockquote>
-<blockquote>
 <p>Feature toggles are certainly an interesting concept, and seem to mesh well with the principle of building composable<br>applications. However, they are not without their pitfalls, so if you are thinking about trying them out, make sure<br>that they are the most appropriate solution to the actual problem that you’re trying to solve.</p>
 </blockquote>
 <h2 id="title-méthodes">méthodes</h2>
@@ -395,7 +382,7 @@
 </li>
 <li><p><a href="https://leanpub.com/u/ericelliott">Eric Elliott : “Programming JavaScript Applications” (O’Reilly)</a></p>
 <ul>
-<li><a href="https://github.com/ericelliott">github profile</a></li>
+<li><a href="https://github.com/ericelliott">GitHub profile</a></li>
 <li>massive article writer on <a href="https://medium.com/@_ericelliott">medium.com</a></li>
 </ul>
 </li>
@@ -414,12 +401,12 @@
 <li><a href="https://www.franceculture.fr/emissions/la-grande-table-2eme-partie/dominer-linformatique-avec-gerard-berry">Dominer l’informatique avec Gérard Berry - France Culture - 20171030</a></li>
 <li><a href="https://www.college-de-france.fr/site/gerard-berry/inaugural-lecture-2008-01-17-18h00.htm">Pourquoi et comment le monde devient numérique - Collèges de France - 20080117</a></li>
 <li><a href="https://www.franceculture.fr/emissions/la-methode-scientifique/gerard-berry-le-meilleur-des-mondes-informatiques">Le meilleur des mondes informatiques - 20180829</a><ul>
-<li>ordinateur est la plus souple des machines puisqu’on peut lui télécharger ce qu’elle peut faire </li>
+<li>ordinateur est la plus souple des machines puisqu’on peut lui télécharger ce qu’elle peut faire</li>
 <li>problème de sémantique avec l’informatique, on mélange tout (algo, numérique, IoT, …). Nous sommes absents de l’industrie (1 seule société dans les 100 premières mondiales) alors que nous sommes très en pointe en recherche.</li>
 <li>pourtant l’informatique est partout autour de nous</li>
 <li>absence de formation pour les gens qui utilisent sans rien comprendre</li>
 <li>cite <a href="https://fr.wikipedia.org/wiki/Jean-Marie_Hullot">Jean-Marie Hullot</a> créateur de <a href="http://www.graphmobile.com/dossier/2-iphone-histoire.htm">l’IPhone pour Steve Jobs</a>.</li>
-<li>histoire informatique, au début tout était dur. Bootstraping, on commence par faire des petites choses dures, qui permettent de faire plus facilement des choses plus dures, etc … </li>
+<li>histoire informatique, au début tout était dur. Bootstraping, on commence par faire des petites choses dures, qui permettent de faire plus facilement des choses plus dures, etc …</li>
 <li>langage <a href="https://fr.wikipedia.org/wiki/Esterel_(langage)">Esterel</a> servant dans l’aviation. Permet de gérer le temps et de fournir des preuves de programmes (par ex le programme de l’ascenseur n’autorise pas l’ascenseur à monter ou descendre avec la porte ouverte).</li>
 <li>3 formes de communications possible : <em>asynchrone</em> (internet par ex, on envoie un message on ne sait pas si il va arriver ni quand), <em>synchrone</em> (on envoie un message et on fait comme si il arrivait en temps zéro), <em>vibratoire</em> (envoie message qui arrive à une vitesse connue, par le GPS), c’est en étudiant comment programmer sur ces 3 paradigmes et en les faisant communiquer qu’ils ont développé Esterel.</li>
 <li>question de Manuel Serrano (chercheur INRIA dev de <a href="http://hop.inria.fr/home/index.html">Hop.js</a>) : Années 90 mise en réseau des ordis nous entraine dans l’ère de la prog distribuée. Web a spécificité, grosse diff entre machines serveurs qui font beaucoup de traitements et clients qui sont plus nombreux mais en font moins. On a eu la prog multi-tiers début 2000, question de savoir comment on peut parler de la prog asynchrone et de la temporalité des programmes. Ont pris le langage Esterel et ils l’ont adapté au web pour donner <a href="https://github.com/manuel-serrano/hiphop">hip-hop</a>. Quelles seront les grandes étapes à franchir pour améliorer la sureté et la sécurité notamment pour l’internet des objets où la communication est encore plus fréquente que sur le web ?</li>
@@ -429,25 +416,30 @@
 </ul>
 </li>
 <li><p><a href="https://www.eyrolles.com/Accueil/Auteur/jacques-printz-15337">Jacques Printz</a></p>
-<blockquote>
-<p>a été titulaire de la chaire de génie logiciel du Cnam. A dirigé les développements logiciels des ordinateurs Bull DPS7. Consultant en systèmes d’information auprès de grandes entreprises et administrations. Auteur de nombreux ouvrages sur le génie logiciel. </p>
-</blockquote>
 </li>
-<li><p><a href="https://fr.wikipedia.org/wiki/Louis_Pouzin">Louis Pouzin</a></p>
+</ul>
+<blockquote>
+<p>a été titulaire de la chaire de génie logiciel du Cnam. A dirigé les développements logiciels des ordinateurs Bull DPS7. Consultant en systèmes d’information auprès de grandes entreprises et administrations. Auteur de nombreux ouvrages sur le génie logiciel.</p>
+</blockquote>
+<ul>
+<li><a href="https://fr.wikipedia.org/wiki/Louis_Pouzin">Louis Pouzin</a></li>
+</ul>
 <blockquote>
 <p>inventeur du datagramme et concepteur du premier réseau à commutation de paquets, à la base de ce qui deviendra Internet. Lauréat du Queen Elizabeth Prize for Engineering en 2013. Militant du multilinguisme dans l’espace numérique et d’une nouvelle gouvernance d’Internet</p>
 </blockquote>
-</li>
-<li><p><a href="https://www.lip6.fr/actualite/personnes-fiche.php?ident=P242">François Anceau</a></p>
+<ul>
+<li><a href="https://www.lip6.fr/actualite/personnes-fiche.php?ident=P242">François Anceau</a></li>
+</ul>
 <blockquote>
 <p>a été titulaire de la chaire des techniques fondamentales de l’informatique du Cnam, responsable de recherche à l’Imag, Bull et l’Ecole Polytechnique. Pionnier en France des architectures de circuits intégrés, en particulier sur leur preuve formelle et leur synchronisation interne.</p>
 </blockquote>
-</li>
-<li><p><a href="https://fr.wikipedia.org/wiki/Najah_Naffah">Najah Naffah</a></p>
+<ul>
+<li><a href="https://fr.wikipedia.org/wiki/Najah_Naffah">Najah Naffah</a></li>
+</ul>
 <blockquote>
 <p>Précurseur à l’INRIA de la notion de routeur de réseau, puis du poste de travail intelligent, en dirigeant le projet Kayak. Il a ensuite exercé des responsabilités de direction dans l’Industrie (Bull, EDS, Sabre, Prologue), et maintenant de conseil en management.</p>
 </blockquote>
-</li>
+<ul>
 <li><p><a href="http://glazman.org/weblog/">Daniel Glazman</a> Former co-chairman of the W3C CSS Working Group</p>
 <ul>
 <li><a href="https://www.franceculture.fr/emissions/linvite-des-matins-2eme-partie/sommes-nous-a-la-merci-de-nos-systemes-informatiques">Sommes-nous à la merci de nos systèmes informatiques ? - France Culture - 20171205</a></li>
@@ -460,7 +452,7 @@
 <li>founder of Express, Koa, Commander, …</li>
 </ul>
 </li>
-<li><p>[<a href="http://tinyclouds.org]">http://tinyclouds.org]</a>(Ryan Dahl)</p>
+<li><p><a href="http://tinyclouds.org">Ryan Dahl</a></p>
 <ul>
 <li>founder of Node.js, denom, …</li>
 <li><a href="https://www.mappingthejourney.com/single-post/2017/08/31/episode-8-interview-with-ryan-dahl-creator-of-nodejs/">Interview with Ryan Dahl, Creator of Node.js - www.mappingthejourney.com - 20170831</a></li>
@@ -473,11 +465,11 @@
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Software_crisis">Software crisis</a><br>Fin des années 70, les ordinateurs sont montés en puissance, donc permettent le développement de programmes plus puissants et plus complexe. Dégradation massive de la qualité du à la complexité. C’est le début des recherches en génie logiciel pour définir les bonnes pratiques du développement logiciel (gestion qualité, méthodes, invention programmation procédurale puis objet).</li>
 <li><a href="https://en.wikipedia.org/wiki/Dot-com_bubble">bulle internet</a> Fin 90 début 2000 le crash boursier entraine de nombreux licenciements de développeurs suite aux réductions du couts et aux sociétés déposants le bilan. Les développeurs ont alors tendance à se transformer en oui:oui pour éviter de perdre leur emploi, entrainant une dégradation massive de la qualité des productions. Ce phénomène associé à l’arrivée de nombreux jeunes développeurs sur le marché du travail quelques années après sont les deux phénomènes responsables de l’immaturité de l’industrie du développement logiciel dénoncée par Robert C. Martin (cf Martin pour une explication plus détaillée dans <a href="https://www.youtube.com/watch?v=ecIWPzGEbFc">The Future of Programming</a>)</li>
-<li><a href="https://plus.google.com/+RipRowan/posts/eVeouesvaVX">Jeff Bezos API Mandate explained by Google employee</a><blockquote>
+<li><a href="https://plus.google.com/+RipRowan/posts/eVeouesvaVX">Jeff Bezos API Mandate explained by Google employee</a></li>
+</ul>
+<blockquote>
 <p>1) All teams will henceforth expose their data and functionality through service interfaces.<br>2) Teams must communicate with each other through these interfaces.<br>3) There will be no other form of interprocess communication allowed: no direct linking, no direct reads of another team’s data store, no shared-memory model, no back-doors whatsoever. The only communication allowed is via service interface calls over the network.<br>4) It doesn’t matter what technology they use. HTTP, Corba, Pubsub, custom protocols – doesn’t matter. Bezos doesn’t care.<br>5) All service interfaces, without exception, must be designed from the ground up to be externalizable. That is to say, the team must plan and design to be able to expose the interface to developers in the outside world. No exceptions.<br>6) Anyone who doesn’t do this will be fired.</p>
 </blockquote>
-</li>
-</ul>
 <h2 id="title-courants">courants</h2>
 <h3 id="title-software-craftmanship">Software Craftmanship</h3>
 <ul>
@@ -487,11 +479,7 @@
 </ul>
 <blockquote>
 <p>Agile : Are we building the right thing ?</p>
-</blockquote>
-<blockquote>
 <p>Craftsmanship : Are we building the thing right ?</p>
-</blockquote>
-<blockquote>
 <p>from Software Craftsmanship by Sandro Mancuso @ Devoxx France 20??</p>
 </blockquote>
 <ul>
@@ -499,12 +487,15 @@
 <li><a href="https://www.youtube.com/watch?v=0oGpWmS0aYQ">Agility and Architecture : Robert C. Martin (Uncle Bob)</a></li>
 <li><a href="https://www.youtube.com/watch?v=KtHQGs3zFAM">Jim Coplien and Bob Martin Debate TDD</a></li>
 </ul>
-<p><strong>Conférences</strong></p>
+<h4 id="title-conférences">Conférences</h4>
 <ul>
 <li><a href="https://craft-conf.com/">SOFTWARE DELIVERY CRAFTSMANSHIP MATTERS</a></li>
 </ul>
 <h2 id="title-exemples-concrets">exemples concrets</h2>
-<p><a href="https://www.youtube.com/watch?v=P9G7jBBwLjc&index=80&list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXAO">odyssée du Continuous Delivery Diego Lemos David Caramelo (Nicolas Bourgeois)</a><br>Présentation Devoxx2016 sur le passage du code legacy au continuous delivery à la Société Générale. Juste génial.</p>
+<p><a href="https://www.youtube.com/watch?v=P9G7jBBwLjc&index=80&list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXAO">odyssée du Continuous Delivery Diego Lemos David Caramelo (Nicolas Bourgeois)</a></p>
+<blockquote>
+<p>Présentation Devoxx2016 sur le passage du code legacy au continuous delivery à la Société Générale. Juste génial.</p>
+</blockquote>
 <p><a href="https://www.youtube.com/watch?v=vUTYKLEneuI">SOAT Agile Day - Keynote de Romain Niccoli - Etre agile dans un contexte de forte croissance</a></p>
 <h2 id="title-architecture">architecture</h2>
 <p><a href="http://www.dossier-andreas.net/software_architecture/">Architectural patterns - www.dossier-andreas.net</a></p>
@@ -530,7 +521,7 @@
 <li>Ports-And-Adapters a.k.a. Hexagonal Architecture</li>
 <li>Peer-to-peer</li>
 <li>Event sourcing</li>
-<li>CQRS </li>
+<li>CQRS</li>
 </ul>
 </blockquote>
 <h3 id="title-clean-architecture">clean architecture</h3>

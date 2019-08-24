@@ -1,5 +1,6 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.88a59dcb.js"></script></head><body><article class="markdown-body"><h1 id="title-css">CSS</h1>
-<p>Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any kind of XML document, including plain XML, SVG and XUL. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.<br>At its most basic level, CSS consists of two building blocks:</p>
+<p>Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any kind of XML document, including plain XML, SVG and XUL. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.</p>
+<p>At its most basic level, CSS consists of two building blocks:</p>
 <ul>
 <li>Properties: Human-readable identifiers that indicate which stylistic features (e.g. font, width, background color) you want to change.</li>
 <li>Values: Each specified property is given a value, which indicates how you want to change those stylistic features (e.g. what you want to change the font, width or background color to.)</li>
@@ -7,20 +8,20 @@
 <p>A property paired with a value is called a CSS declaration. CSS declarations are put within CSS Declaration Blocks. And finally, CSS declaration blocks are paired with selectors to produce CSS Rulesets (or CSS Rules).</p>
 <p>An element may be matched by several selectors, therefore several rules may set a given property multiple times. CSS defines which one has precedence over the others and must be applied: this is called the cascade algorithm.</p>
 <h2 id="title-css-statements">CSS statements</h2>
-<p>CSS Rules are the main building blocks of a style sheet — the most common block you’ll see in CSS. But there are other types of block that you’ll come across occasionally — CSS rules are one type of so-called CSS statements. An at-rule is a CSS statement beginning with an at sign, ‘@’ (U+0040 COMMERCIAL AT), followed by an identifier and includes everything up to the next semi-colon, ‘;’ (U+003B SEMICOLON), or the next CSS block, whichever comes first.</p>
+<p>CSS Rules are the main building blocks of a style sheet — the most common block you’ll see in CSS. But there are other types of block that you’ll come across occasionally — CSS rules are one type of so-called CSS statements. An at-rule is a CSS statement beginning with an at sign, <code>@</code> (<code>U+0040 COMMERCIAL AT</code>), followed by an identifier and includes everything up to the next semi-colon, <code>;</code> (<code>U+003B SEMICOLON</code>), or the next CSS block, whichever comes first.</p>
 <p>There are several at-rules, designated by their identifiers, each with a different syntax:</p>
 <ul>
-<li>@charset: Defines the character set used by the style sheet.</li>
-<li>@import: Tells the CSS engine to include an external style sheet.</li>
-<li>@namespace: Tells the CSS engine that all its content must be considered prefixed with an XML namespace.</li>
+<li><code>@charset</code>: Defines the character set used by the style sheet.</li>
+<li><code>@import</code>: Tells the CSS engine to include an external style sheet.</li>
+<li><code>@namespace</code>: Tells the CSS engine that all its content must be considered prefixed with an XML namespace.</li>
 <li>Nested at-rules: A subset of nested statements, which can be used as a statement of a style sheet as well as inside of conditional group rules:<ul>
-<li>@media: A conditional group rule which will apply its content if the device meets the criteria of the condition defined using a media query.</li>
-<li>@supports: A conditional group rule which will apply its content if the browser meets the criteria of the given condition.</li>
-<li>@document: A conditional group rule which will apply its content if the document in which the style sheet is applied meets the criteria of the given condition. (deferred to Level 4 of CSS Spec)</li>
-<li>@page: Describes the aspect of layout changes which will be applied when printing the document.</li>
-<li>@font-face: Describes the aspect of an external font to be downloaded.</li>
-<li>@keyframes: Describes the aspect of intermediate steps in a CSS animation sequence.</li>
-<li>@viewport: Describes the aspects of the viewport for small screen devices.</li>
+<li><code>@media</code>: A conditional group rule which will apply its content if the device meets the criteria of the condition defined using a media query.</li>
+<li><code>@supports</code>: A conditional group rule which will apply its content if the browser meets the criteria of the given condition.</li>
+<li><code>@document</code>: A conditional group rule which will apply its content if the document in which the style sheet is applied meets the criteria of the given condition. (deferred to Level 4 of CSS Spec)</li>
+<li><code>@page</code>: Describes the aspect of layout changes which will be applied when printing the document.</li>
+<li><code>@font-face</code>: Describes the aspect of an external font to be downloaded.</li>
+<li><code>@keyframes</code>: Describes the aspect of intermediate steps in a CSS animation sequence.</li>
+<li><code>@viewport</code>: Describes the aspects of the viewport for small screen devices.</li>
 </ul>
 </li>
 </ul>
@@ -32,14 +33,16 @@
   }
 }</code></pre>
 <h3 id="title-import">import</h3>
-<p>The @import CSS at-rule is used to import style rules from other style sheets. These rules must precede all other types of rules, except @charset rules; as it is not a nested statement, @import cannot be used inside conditional group at-rules.</p>
+<p>The <code>@import</code> CSS at-rule is used to import style rules from other style sheets. These rules must precede all other types of rules, except <code>@charset</code> rules; as it is not a nested statement, <code>@import</code> cannot be used inside conditional group at-rules.</p>
 <h3 id="title-charset">charset</h3>
-<p>The @charset CSS at-rule specifies the character encoding used in the style sheet. It must be the first element in the style sheet and not be preceded by any character; as it is not a nested statement, it cannot be used inside conditional group at-rules. If several @charset at-rules are defined, only the first one is used, and it cannot be used inside a style attribute on an HTML element or inside the <code>&lt;style&gt;</code> element where the character set of the HTML page is relevant.<br>This at-rule is useful when using non-ASCII characters in some CSS properties, like content.<br>As there are several ways to define the character encoding of a style sheet, the browser will try the following methods in the following order (and stop as soon as one yields a result) :</p>
+<p>The <code>@charset</code> CSS at-rule specifies the character encoding used in the style sheet. It must be the first element in the style sheet and not be preceded by any character; as it is not a nested statement, it cannot be used inside conditional group at-rules. If several <code>@charset</code> at-rules are defined, only the first one is used, and it cannot be used inside a style attribute on an HTML element or inside the <code>&lt;style&gt;</code> element where the character set of the HTML page is relevant.</p>
+<p>This at-rule is useful when using non-ASCII characters in some CSS properties, like content.</p>
+<p>As there are several ways to define the character encoding of a style sheet, the browser will try the following methods in the following order (and stop as soon as one yields a result) :</p>
 <ul>
 <li>The value of the Unicode byte-order character placed at the beginning of the file.</li>
-<li>The value given by the charset attribute of the Content-Type: HTTP header or the equivalent in the protocol used to serve the style sheet.</li>
-<li>The @charset CSS at-rule.</li>
-<li>Use the character encoding defined by the referring document: the charset attribute of the <link> element. This method is obsoleted in HTML5 and must not be used.</li>
+<li>The value given by the charset attribute of the <code>Content-Type</code>: HTTP header or the equivalent in the protocol used to serve the style sheet.</li>
+<li>The <code>@charset</code> CSS at-rule.</li>
+<li>Use the character encoding defined by the referring document: the charset attribute of the <code>&lt;link&gt;</code> element. This method is obsoleted in HTML5 and must not be used.</li>
 <li>Assume that the document is UTF-8</li>
 </ul>
 <h3 id="title-conditional-group-rules">Conditional Group Rules</h3>
@@ -70,7 +73,7 @@
 <li>The <em>border</em> of a CSS box sits between the outer edge of the padding and the inner edge of the margin. By default the border has a size of 0 — making it invisible — but you can set the thickness, style and color of the border to make it appear. The border shorthand property allows you to set all of these on all four sides at once, for example border: 1px solid black.</li>
 <li>The <em>margin</em> surrounds a CSS box, and pushes up against other CSS boxes in the layout. It behaves rather like padding; the shorthand property is margin and the individual properties are margin-top, margin-right, margin-bottom, and margin-left.</li>
 </ul>
-<p><img src="https://internetingishard.com/html-and-css/css-box-model/css-box-model-73a525.png" alt=""></p>
+<p><img src="https://internetingishard.com/html-and-css/css-box-model/css-box-model-73a525.png" alt="css box model"></p>
 <h3 id="title-changing-box-behavior">Changing box behavior</h3>
 <p>We can override the default box type of HTML elements with the CSS display property. For example, if we wanted to make our <code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code> elements blocks instead of inline elements, we could:</p>
 <pre><code class="lang-css">em, strong {
@@ -83,8 +86,9 @@
 <ul>
 <li>The padding of a box has a background, while margins are always transparent.</li>
 <li>Padding is included in the click area of an element, while margins aren’t.</li>
-<li>Margins collapse vertically, while padding doesn’t.<br>If none of these help you decide whether to use padding over margin, then don’t fret about it—just pick one. In CSS, there’s often more than one way to solve your problem.</li>
+<li>Margins collapse vertically, while padding doesn’t.</li>
 </ul>
+<p>If none of these help you decide whether to use padding over margin, then don’t fret about it—just pick one. In CSS, there’s often more than one way to solve your problem.</p>
 <h3 id="title-margin-of-inline-elements">Margin of inline elements</h3>
 <p>One of the starkest contrasts between block-level elements and inline ones is their handling of margins. Inline boxes completely ignore the top and bottom margins of an element.<br>The rationale behind this goes back to the fact that inline boxes format runs of text inside of a block, and thus have limited impact on the overall layout of a page. If you want to play with the vertical space of a page, you must be working with block-level elements.</p>
 <h3 id="title-vertical-margin-collapse">Vertical margin collapse</h3>
@@ -97,7 +101,7 @@
 <li>count the number of other attributes and pseudo-classes in the selector (= c)</li>
 <li>count the number of element names and pseudo-elements in the selector (= d)</li>
 <li>Concatenating the four numbers a-b-c-d (in a number system with a large base) gives the specificity.</li>
-<li>The number base you need to use is defined by the highest count you have in one of the categories. </li>
+<li>The number base you need to use is defined by the highest count you have in one of the categories.</li>
 <li>For example, if a=14 you can use hexadecimal base. In the unlikely case where a=17 you will need a 17 digits number base. The later situation can happen with a selector like this: html body div div p … (17 tags in your selector.. not very likely).</li>
 </ul>
 <p>Some examples:</p>
@@ -128,19 +132,19 @@
 <h1 id="title-flexbox">Flexbox</h1>
 <p>The “Flexible Box” or “Flexbox” layout mode offers an alternative to Floats for defining the overall appearance of a web page. Whereas floats only let us horizontally position our boxes, flexbox gives us complete control over the alignment, direction, order, and size of our boxes.</p>
 <p>Flexbox uses two types of boxes that we’ve never seen before: “flex containers” and “flex items”. The job of a flex container is to group a bunch of flex items together and define how they’re positioned.</p>
-<p><img src="https://internetingishard.com/html-and-css/flexbox/flex-container-and-flex-items-6234bb.png" alt=""></p>
+<p><img src="https://internetingishard.com/html-and-css/flexbox/flex-container-and-flex-items-6234bb.png" alt="flex container and flex items"></p>
 <p>Every HTML element that’s a direct child of a flex container is an “item”. Flex items can be manipulated individually, but for the most part, it’s up to the container to determine their layout. The main purpose of flex items are to let their container know how many things it needs to position.</p>
 <p>As with float-based layouts, defining complex web pages with flexbox is all about nesting boxes. You align a bunch of flex items inside a container, and, in turn, those items can serve as flex containers for their own items. As you work through the examples in this chapter, remember that the fundamental task of laying out a page hasn’t changed: we’re still just moving a bunch of nested boxes around.</p>
 <h2 id="title-flex-containers">Flex containers</h2>
 <p>By giving it a value of flex, we’re telling the browser that everything in the box should be rendered with flexbox instead of the default box model.<br>This enables the flexbox layout mode—without it, the browser would ignore all the flexbox properties that we’re about to introduce. Explicitly defining flex containers means that you can mix and match flexbox with other layout models.<br>Flex containers only know how to position elements that are one level deep (i.e., their child elements).</p>
-<p><img src="https://internetingishard.com/html-and-css/flexbox/enabling-flexbox-dd3b59.png" alt=""></p>
+<p><img src="https://internetingishard.com/html-and-css/flexbox/enabling-flexbox-dd3b59.png" alt="enabling flexbox"></p>
 <h2 id="title-aligning-a-flex-item">Aligning a flex item</h2>
 <p>After you’ve got a flex container, your next job is to define the horizontal alignment of its items. That’s what the justify-content property is for. The space-around value spreads its items out across its entire width. The space-between value is similar, but it only adds that extra space between items.</p>
-<p><img src="https://internetingishard.com/html-and-css/flexbox/flex-justify-content-alignment-ea129c.png" alt=""><br><img src="https://internetingishard.com/html-and-css/flexbox/flex-justify-content-distribution-b0ee9c.png" alt=""></p>
+<p><img src="https://internetingishard.com/html-and-css/flexbox/flex-justify-content-alignment-ea129c.png" alt="flex justify content alignment"><br><img src="https://internetingishard.com/html-and-css/flexbox/flex-justify-content-distribution-b0ee9c.png" alt="flex justify content distribution"></p>
 <h2 id="title-flex-container-direction">Flex container direction</h2>
 <p>“Direction” refers to whether a container renders its items horizontally or vertically. So far, all the containers we’ve seen use the default horizontal direction, which means items are drawn one after another in the same row before popping down to the next column when they run out of space. By default <code>flex-direction</code> is <code>column</code>, but it can be <code>row</code>.
 The <code>flex-direction</code> property also offers you control over the order in which items appear via the <code>row-reverse</code> and <code>column-reverse</code> properties.</p>
-<p><img src="https://internetingishard.com/html-and-css/flexbox/flex-direction-reverse-532d8f.png" alt=""></p>
+<p><img src="https://internetingishard.com/html-and-css/flexbox/flex-direction-reverse-532d8f.png" alt="flex direction reverse"></p>
 <h2 id="title-positioning-schema">Positioning schema</h2>
 <p>There are several schemas:</p>
 <ul>
@@ -165,6 +169,6 @@ The <code>flex-direction</code> property also offers you control over the order 
 </ul>
 <h2 id="title-z-index">Z-index</h2>
 <p>The z-index property lets you control the depth of elements on the page. If you think of your screen as 3D space, negative z-index values go farther into the page, and positive ones come out of the page.</p>
-<p><img src="https://internetingishard.com/html-and-css/advanced-positioning/css-z-index-c87ef0.png" alt=""></p>
+<p><img src="https://internetingishard.com/html-and-css/advanced-positioning/css-z-index-c87ef0.png" alt="css z-index"></p>
 <p>Say two DIVs with the same parent, higher z-index will be displayed. It will inherit the z-index property of the parent. Z-index only works on positioned elements (position:absolute, position:relative, or position:fixed). Value can be negative.</p>
 </article></body></html>

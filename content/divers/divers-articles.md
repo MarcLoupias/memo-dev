@@ -25,8 +25,6 @@ htmlHead:
 
 ## comparatif des frameworks / lib dispo pour Js
 
-[rich-javascript-applications-the-seven-frameworks-throne-of-js-2012](http://blog.stevensanderson.com/2012/08/01/rich-javascript-applications-the-seven-frameworks-throne-of-js-2012/)
-
 [framework_javascript.pdf](http://www.thecodingmachine.com/sites/default/files/framework_javascript.pdf)
 
 [angular vs backbone & ember](http://www.quora.com/JavaScript-Frameworks/What-are-the-advantages-of-using-AngularJS-compared-to-BackboneJS-and-EmberJS)
@@ -47,123 +45,125 @@ htmlHead:
 
 [evergreen-browsers](http://tomdale.net/2013/05/evergreen-browsers/)
 
-## guerre des navigateurs 
+## guerre des navigateurs
 
 [The third browser war is over and it's a bloodshed - Daniel Glazman - WEB2DAY 2016](https://www.youtube.com/watch?v=ceMLuRBn--M)
 
 > A été chairman au CSS working group, (sepcs HTML2, 4, CSS2 et 3). Connait bien le processus de standardisation de l'intérieur
-> 
+>
 > A bossé chez Netscape
-> 
+>
 > Au tout début (années 90), rien n'était standardisé (non cross device, non cross platform, non cross device)
-> 
+>
 > **Contexte**
-> 
+>
 > - HTML+, nov 1993
 > - HTML4, dec 1997 (1er vrai standard)
 > - CSS1, dec 1996 (idée de décoreller la présentation du contenu)
 > - CSS2, may 1998
-> - IE avait jscript et pas javascript
-> 
+> - IE avait jscript et pas JavaScript
+>
 > **1994**
-> 
+>
 > W3C consortium industriel (fondé 19941001 par MIT), chaque membre représente les intérêts industriels de son employeur
-> 
+>
 > **1995**
-> 
+>
 > beaucoup de conflits
-> 
+>
 > *processus de standardisation*
-> 
+>
 > - prime au premier arrivant, au premier standardisant, et surtout au premier shipant (le 1er à déployer)
 > - la pratique de Microsoft est de proposer un standard au moment où ils déploient pour forcer la direction
-> 
+>
 > **1997**
-> 
+>
 > la situation se calme quand la personne chargée de mener la politique de MS est changé de poste
-> 
+>
 > **2003**
-> 
+>
 > AOL qui possède Netscape licencie tout le monde.
-> 
+>
 > IE reste tout seul, et du coup sans concurrence ne fait plus rien. (MS se concentre également sur Longhorn / Vista pendant 8 ans)
-> 
+>
 > Rien de 2003 à 2008 sauf pour l'internationalisation.
-> 
+>
 > Mozilla démarre gentiment et surtout tout petit (5 personnes)
-> 
+>
 > Le W3C se focus sur le web sémantique et XHTML.
-> 
+>
 > Apple annonce webkit (fork de KHTML)
-> 
+>
 > Opéra a Presto
-> 
+>
 > Google bosse sur webkit
-> 
+>
 > **2010**
-> 
+>
 > *processus de standardisation*
-> 
+>
 > - la pratique des débuts (soumettre et déployer le même jour) est terminée
 > - on soumet et on discute pour avoir une solution la plus avantageuse possible
 > - on implémente en parallèle en espérant que ça dévie pas trop pour conserver le first mover advantage
 > - le web standard project pousse pour l'adoption des standards qui devient un argument commercial
 > - la standardisation devient un prérequis dans la loi fédérale pour les produits liés à l'état fédéral
-> 
+>
 > **2013**
-> 
+>
 > Blink est forké depuis Webkit par Google et Opera
-> 
+>
 > **2016**
-> 
+>
 > Chrome est un semi-monopole
-> 
+>
 > Deux nouveaux entrants :
+>
 > - LG (groupe coréen) pour des montres avec un screen circulaires (veulent y adapter les CSS)
 > - [Brave](https://www.brave.com/), un navigateur basé sur Blink écrit par [Brandon Eich](https://fr.wikipedia.org/wiki/Brendan_Eich) (inventeur de JavaScript)
-> 
+>
 > *moteurs de rendus*
-> 
-> | - | modern | standards | cross platform | speed | 
+>
+> | - | modern | standards | cross platform | speed |
 > | - | ------ | --------- | -------------- | ----- |
 > | Gecko | OK | OK | OK | OK |
 > | WebKit | OK | OK | OK | OK |
 > | Blink | OK | OK | OK | OK |
 > | Edge | OK | OK | KO | OK |
 > | Servo | OK | OK | OK | OK |
-> 
+>
 > Servo écrit en Rust est le petit nouveau. MultiThreadé et layout parallèle. Ultra performant. Va probablement beaucoup changer la donne sur mobile.
 > Meilleure vitesse mais surtout meilleure conso. (d'où la collaboration Mozilla / Samsung).
-> 
+>
 > Opera a abandonné Presto et est passé sur Blink
-> 
+>
 > Un process par tab, chaque process multithreadé + layout parallèle = gains x30 à x50.
-> 
+>
 > *part de marché des navigateurs*
-> 
+>
 > Tout device :
-> 
+>
 > - Chrome 58.7%
 > - Safari 12.7%
 > - IE + Edge 10.3%
 > - Firefox 10.0%
 > - Opera 3.2%
-> 
+>
 > La cause c'est les centaines de millions de portables low cost utilisés en Asie et en Afrique (tous Android)
-> 
+>
 > Crée un énorme avantage pour le process de standardisation pour Google.
-> 
+>
 > *processus de standardisation*
-> 
+>
 > - Les coréens de LG jouent le jeu
 > - MS est devenu l'élève modèle
 > - Google se met à se comporter comme MS en 95. Ils shipent et démerdez-vous. Tant que c'est "good enough" pour eux c'est ok.
-> - ex avec Web Components (Google en a besoin pour GMail qui est ultra complexe) qui est fait pour eux uniquement. 
+> - ex avec Web Components (Google en a besoin pour GMail qui est ultra complexe) qui est fait pour eux uniquement.
 > Ils se foutent de la standardisation. Fait très vite, très mal.
-> 
+>
 > *web OS*
-> 
+>
 > ne croit pas à leur réussite :
+>
 > - le principe de sandbox est vital pour des raisons de sécurité
 > - le lien direct des browsers aux drivers sans réelle couche OS marche très mal
 
@@ -191,15 +191,15 @@ htmlHead:
 > La firme Evans Data, pour sa part, révélait dans un rapport de 2016 sur l’étude de la population mondiale des développeurs et sa répartition géographique qu’il y avait 21 millions de développeurs sur la planète.
 >
 > 94 % des développeurs étaient des hommes et seulement 4 % des femmes ;
-> 
+>
 > 34 % des développeurs étaient localisés en Asie, 30 % en Europe, 25 % en Amérique du Nord, 5 % en Amérique du Sud, 4 % en Afrique et 2 % en Océanie.
-> 
+>
 > la majorité des développeurs étaient des professionnels (77 %), mais qu’une partie non négligeable d’entre eux était formée d’amateurs (23 %).
 >
 > (Mobile, IoT, Desktop et Cloud) 7 % travaillent dans les 4 domaines, 23 % dans 3 domaines, 36 % dans 2 domaines et 34 % dans 1 domaine
-> 
+>
 > 17 % de ces développeurs avaient moins d’un an d’expérience, 43 % d’entre eux avaient de 1 à 6 ans d’expérience et 47 % d’entre eux avaient plus de 6 années d’expérience.
-> 
+>
 
 [Évaluation du nombre annuel de jeunes diplômés en STIC - munci.org - 2012](https://munci.org/La-France-forme-suffisamment-d-etudiants-aux-metiers-de-l-informatique)
 
@@ -224,7 +224,7 @@ htmlHead:
 
 [Faut-il internaliser ou externaliser ses développements web ?](https://blog.capsens.eu/faut-il-internaliser-ou-externaliser-ses-d%C3%A9veloppements-web-d3d17c6b3246) (20170208) TLDR : Il vaut mieux internaliser. Contre-exemple : Slack, Skype
 
-[Vers une ré-internalisation de l'informatique ? ](http://cestpasmonidee.blogspot.fr/2016/06/vers-une-re-internalisation-de.html) (20160612)
+[Vers une ré-internalisation de l'informatique ?](http://cestpasmonidee.blogspot.fr/2016/06/vers-une-re-internalisation-de.html) (20160612)
 TLDR : Les enjeux ont changés, différenciation concurrentielle et agilité (réduction TTM) permettent d'avoir un edge sur la concurrence, ces enjeux nécessitent une internalisation des devs.
 
 [SAIP, l’appli d’alerte attentat qui n’a jamais fonctionné : www.franceculture.fr : 20171222](https://www.franceculture.fr/numerique/saip-lappli-dalerte-attentat-qui-na-jamais-fonctionne)
@@ -291,8 +291,9 @@ L'article [L113-9](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle
 [L'Étrange Défaite : Marc Bloch : 1940](https://fr.wikipedia.org/wiki/L%27%C3%89trange_D%C3%A9faite)
 
 > L'Étrange Défaite. Témoignage écrit en 1940 est un témoignage sur la bataille de France écrit en 1940 par Marc Bloch, officier et historien, qui a participé aux deux guerres mondiales. Dans ce livre, il ne raconte pas ses souvenirs personnels, mais il s'efforce, en témoin objectif, de comprendre les raisons de la défaite française lors de la bataille de France pendant la Seconde Guerre mondiale. Rédigé sur le moment, L'Étrange Défaite a marqué les esprits dès sa parution par la pertinence des constats qui y sont faits.
-
+>
 > L'analyse et les critiques formulées dans ce livre sont parfaitement appliquables dans nombre d'entreprises :
+>
 > - organisation ultra pyramidale (nécessité de validation de validation de validation des solutions)
 > - rétention d'information (entre personnels ou services)
 > - guerre de chefs (effective pour de mauvaises raisons ou bien crainte de faire la guerre quand elle est nécessaire)
@@ -304,21 +305,21 @@ L'article [L113-9](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle
 ### Ron Westrum - organizational culture models
 
 > [Ron Westrum](https://en.wikipedia.org/wiki/Ron_Westrum)
->  
+>
 > [What is your organizational culture: Pathological, Bureaucratic or Generative? - langerman.co.za](https://langerman.co.za/cultural-types/)
-> 
+>
 > Based on [Westrum, R., 2004. A typology of organisational cultures. Quality of Safe Health Care, Volume 13, pp. 22-27](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1765804/pdf/v013p0ii22.pdf).
-> 
+>
 > Define organizational cultures as "... *an organizational* culture is the organization’s pattern of response to the problems and opportunities it encounters".
-> 
+>
 > Each culture is driven by multiple factors including the priorities of the organizations leaders, which causes a response from the organizations workforce.
-> 
+>
 > Note that the culture created within an organization dictates how that organization will respond to any problems it may encounter.
-> 
+>
 > Negatively impacting cultures, such as pathological or bureaucratic cultures, hinder the flow and processing of information across the various areas of the organization.
-> 
+>
 > 3 models :
-> 
+>
 > - Pathological: negative, and power-oriented.
 >   - cooperation low
 >   - messengers shot
@@ -340,13 +341,13 @@ L'article [L113-9](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle
 >   - bridging encouraged
 >   - failure leads to inquiry
 >   - novelty enacted
-> 
+>
 > Factors that can facilitate this change in culture have been identified and are :
-> 
+>
 > - Splitting work into smaller batches to be processed and completed by teams.
 > - Ensuring that these teams have a good understanding of the flow of the information/work from the organisation to the customers and allowing them visibility to this flow.
 > - Organisations must actively and frequently request customer feedback with regards to their products and product design.
-> 
+>
 > Organizational culture is imperative for the success of an organization and the effective and efficient functioning of the teams within it. This shift in cultural types will improve the organization culture and, in the long-term, improve the functionality of the organization by optimizing information processing and efficiency.
 
 ### aristotle project (google)
@@ -364,9 +365,9 @@ L'article [L113-9](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle
 > - Metrics like personal friendships, strong management, team structure, personal interests, gender, longevity provided no clear insight.
 > - Group norms were found to be key to teams’ success. Group norms are unwritten and often unspoken rules guiding the behavior of the teams.
 > - Final determination was that a group of superior individuals was less important than the collective ability of the team.
-> 
+>
 > **Five Keys to Success**
-> 
+>
 > - Psychological safety
 > - Dependability : Dependability means that they can count on each other to do their job.
 > - Structure and clarity : Clear direction and goals is vital.
@@ -386,17 +387,18 @@ L'article [L113-9](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle
 > A thermocline is a distinct temperature barrier between a surface layer of warmer water and the colder, deeper water underneath.
 >
 > A thermocline can prevent dissolved oxygen from getting to the lower layer and vital nutrients from getting to the upper layer.
-> 
+>
 > In many large or even medium-sized IT projects, there exists a thermocline of truth, a line drawn across the organizational chart that represents a barrier to accurate information regarding the project’s progress.
-> 
+>
 > Several major (and mutually reinforcing) factors tend to create this thermocline :
+>
 > - the IT software development profession largely lacks automated, objective and repeatable metrics that can measure progress and predict project completion
 > - IT engineers by nature tend to be optimists, as reflected in the common acronym SMOP: "simple matter of programming."
 > - managers (including IT managers) like to look good and usually don’t like to give bad news, because their continued promotion depends upon things going well under their management
 > - upper management tends to reward good news and punish bad news, regardless of the actual truth content
-> 
+>
 > As the project delivery deadline draws near, the thermocline of truth starts moving up the levels of management because it is becoming harder and harder to deny or hide just where the project stands.
-> 
+>
 > Sometimes, even then management may not be willing to hear or acknowledge where things really are but instead insist on a "quick fix" to get things done.
 >
 
@@ -409,33 +411,33 @@ Extensible à tout sujet technique.
 ### projets publics
 
 [Logiciel unique à vocation interarmées de la solde - fr.wikipedia.org](https://fr.wikipedia.org/wiki/Logiciel_unique_%C3%A0_vocation_interarm%C3%A9es_de_la_solde)
- 
-> Le coût direct du projet (sous-traitance, ressources humaines et fonctionnement des structures de conduite de projet) est estimé à 80 millions d'euros par la Cour des comptes. 
-> 
-> Le lancement du logiciel a été émaillé de nombreux problèmes : moins-perçus, trop perçus, militaires non payés automatiquement. La Cour des comptes estime à 465 millions d'euros les erreurs de calculs de Louvois pour la seule année 2012. 
-> 
-> Le Figaro rapporte que la note actuelle est de 470 millions d’euros, entre le prix d’achat et le coût des dysfonctionnements de Louvois ; cette somme ne tenant pas compte de son remplacement ni du dédommagement de Steria et de ses sous-traitants. 
+
+> Le coût direct du projet (sous-traitance, ressources humaines et fonctionnement des structures de conduite de projet) est estimé à 80 millions d'euros par la Cour des comptes.
+>
+> Le lancement du logiciel a été émaillé de nombreux problèmes : moins-perçus, trop perçus, militaires non payés automatiquement. La Cour des comptes estime à 465 millions d'euros les erreurs de calculs de Louvois pour la seule année 2012.
+>
+> Le Figaro rapporte que la note actuelle est de 470 millions d’euros, entre le prix d’achat et le coût des dysfonctionnements de Louvois ; cette somme ne tenant pas compte de son remplacement ni du dédommagement de Steria et de ses sous-traitants.
 >
 > La catastrophe industrielle vient des 174 primes et indemnités - qui changent parfois chaque mois pour chaque militaire - que le logiciel doit gérer
-> 
+>
 > Outre ces explications liées au fonctionnement du domaine métier de la solde, il apparaît également que la conception fonctionnelle de ce système d'information ait été insuffisante à modéliser une telle complexité.
-> 
+>
 > En effet, les spécifications fonctionnelles générales n'étaient même pas rédigées avec suffisamment d'acuité alors même que la réalisation du logiciel était entamée.
-> 
+>
 > Enfin, la gouvernance de ce projet est restée à l'image de la conception embryonnaire et de la complexité du métier, à savoir difficilement efficace. Concrètement, trop de comités, mais surtout trop d'acteurs participent de près ou de loin à ce logiciel, sans qu'aucune véritable autorité ne les coordonne, ni ne formule de réelles orientations.
 
 [SIRHEN, ou savoir quand arrêter un projet - www.zdnet.fr - 20180722](https://www.zdnet.fr/blogs/green-si/sirhen-ou-savoir-quand-arreter-un-projet-39871527.htm)
 
 > SIRHEN, le projet de paye unifiée des 1,2 millions d'employés de l'Éducation Nationale, enseignants et non enseignants, est stoppé
-> 
+>
 > 321 millions d'euros d'investissements
-> 
+>
 > En 2007 les multiples systèmes RH, développés en spécifique, sont complexes, mal urbanisés puisqu'ils intègrent la gestion des agents avec le processus de gestion de la préparation de rentrée et des processus amont. Ils sont orientés gestion et non pilotage.
-> 
+>
 > SIRHEN c'est donc l'idée de n'avoir qu'une seule base de données pour gérer toutes les ressources humaines de l'Éducation Nationale et des applications mieux urbanisées autour.
-> 
-> Estimé à 60 millions d'euros au départ, la mise en place de cet ERP, toujours développé en spécifique, est vite devenue un gouffre financier. De 250 millions d'euros fin 2016 quand un premier signal d'alarme a été tiré on est passé à 320 millions d'euros quand le Ministre Jean Michel Blanquer l'a stoppé cette semaine, donc sans valider son budget prévisionnel qui devait monter à près de 500 millions d'euros. 
-> 
+>
+> Estimé à 60 millions d'euros au départ, la mise en place de cet ERP, toujours développé en spécifique, est vite devenue un gouffre financier. De 250 millions d'euros fin 2016 quand un premier signal d'alarme a été tiré on est passé à 320 millions d'euros quand le Ministre Jean Michel Blanquer l'a stoppé cette semaine, donc sans valider son budget prévisionnel qui devait monter à près de 500 millions d'euros.
+>
 > La Cours des comptes à remis fin 2016 un rapport sur la dérive de ce projet avec une note de synthèse qui met en avant une complexité sous-estimée au départ qui s'est traduite par une dérive budgétaire et un pilotage gravement défaillant, que ce soit du projet ou de la très nombreuse sous-traitance.
 
 [Rapport Cour des Comptes - 20161219](https://www.ccomptes.fr/fr/documents/34332)
@@ -443,21 +445,21 @@ Extensible à tout sujet technique.
 [L'Éducation nationale décide de débrancher SIRHEN, son logiciel visant à gérer son personnel - www.developpez.net - 20180723](https://www.developpez.net/forums/d1876546/club-professionnels-informatique/actualites/l-education-nationale-decide-debrancher-sirhen-logiciel-visant-gerer-personnel/)
 
 > Évalué initialement à 80 millions d’euros, son coût a été plusieurs fois réévalué pour atteindre 323,3 millions d’euros en 2017.
-> 
+>
 > le ministère avait [...] restreint son utilisation aux seuls 18 000 fonctionnaires de direction, soit 2 % des effectifs
-> 
+>
 > En clair, SIRHEN assure la gestion administrative de 18 000 fonctionnaires.
 
 [Bug des cartes grises : l'Etat condamné à indemniser des automobilistes - www.ledauphine.com - 20180507](https://www.ledauphine.com/france-monde/2018/05/07/bug-des-cartes-grises-l-etat-condamne-a-indemniser-les-automobilistes)
 
 > Dans le cadre de la modernisation du service public, depuis le 1er novembre 2017, les 101 préfectures et 233 sous-préfectures ne sont plus à même de délivrer des cartes grises.
-> 
+>
 > Les Français doivent obligatoirement effectuer trois démarches en ligne : le changement du titulaire du certificat, la déclaration de la vente d’un véhicule et la modification de l’adresse sur le certificat
-> 
+>
 > Mais là où le bât blesse, c'est que l'outil mis à disposition par le ministère de l'Intérieur, le site internet de l’Agence nationale des titres sécurisés (ANTS), n'en finit pas de connaître des bugs informatiques.
-> 
+>
 > Résultat : moins d'un mois après sa mise en service, 187 000 dossiers étaient déjà bloqués. Et les retards n'ont eu de cesse de s'accumuler. A la mi-mars, près de 300 000 dossiers étaient en souffrance. Fin mars, les médias évoquaient même le chiffre de 400 000 à 450 000 demandes non satisfaites !
-> 
+>
 > Une situation qui a conduit automobilistes furieux et concessionnaires à se retourner contre l'Etat.
 
 [Prélèvement de l'impôt à la source : "les bogues sont légion et pour certains pas de possibilité de s’en prémunir", d'après une note technique - www.developpez.net - 20180903](https://www.developpez.net/forums/d1889859/club-professionnels-informatique/actualites/prelevement-l-impot-source-bogues-legion-d-apres-note-technique/#post10450699)
@@ -474,34 +476,33 @@ Extensible à tout sujet technique.
 >
 > cout réel d'un salarié = salaire brut * 1,8 à 2,2
 >
-> exemple : 
+> exemple :
 > ptit jeune à 36KE cout en réalité 65KE
 > nb jours travaillés en syntec : 217j/an
 > seuil de rentabilité : 65K / 217 = 300e de TJM environ
 >
->
 
 [Etat des lieux métier de l'info en France 2016 - Web2day - Daniel Glazman](https://www.youtube.com/watch?v=GU7DbfmBjxE)
 
-> syntec convention collective inadaptée car branche tech capée trop vite, il faut passer manager pour évoluer. 
+> syntec convention collective inadaptée car branche tech capée trop vite, il faut passer manager pour évoluer.
 > Dans les autres pays on a 2 branches (manager et tech), les managers évoluent vers CEO les techs vers CTO, c'est logique
-
+>
 > 80% des devs sont en SS2I, or les SS2I ne développent rien, elles ne sont donc pas des boites de High Tech
 > les boites comme "le bon coin" ou "Tinder" ne le sont pas non plus
- 
+>
 > absence d'écosystème High Tech fait que les talents s'exilent (commutation de paquets et carte à puce sont des exemples
 > d'innovations par des français réalisées à l'étranger)
-
+>
 > axiome "nul n'est irremplaçable" est faux. Pour avoir de l'innovation il faut les meilleurs donc des gens irremplaçables.
-
+>
 > le cout pour démarrer une boite est très faible, un PC, une chaise, un bureau et un cerveau
-
+>
 > 50K étudiants dans le logiciel par an (1/3 de Bengalore en Inde)
 > On est tout petit, on est excellent dans l'imagerie depuis des décennies. Tous les diplômes s'expatrient par manque de débouchés.
 > Au point que certaines boites aux USA dans l'imagerie sont staffées à 40% de frenchies
-
+>
 > ... passage sur ce que l'etat pourrait faire pour aider à sortir des boites
-
+>
 > explique qu'il a créé le 2ème logiciel de messagerie à la fin des années 80
 
 ## salaires
@@ -513,15 +514,15 @@ Extensible à tout sujet technique.
 [À coût de la vie égal, le salaire d'un professionnel de l'IT à San Francisco est 67 % plus élevé que celui d'un Parisien](https://www.developpez.net/forums/d1812737/emploi-etudes-informatique/emploi/salaires/cout-vie-egal-salaire-d-professionnel-l-it-san-francisco-67-plus-eleve-celui-d/#post9990292)
 
 > étude Hired sur 2017 : 420 000 demandes d'entretien et offres d'emploi, 10 000 entreprises et 69 000 candidats
-> 
+>
 > Le salaire moyen global est de 135 000 dollars US
-> 
+>
 > Paris est la ville où le salaire est le plus faible avec 56 000 USD (48 000 euros)
 
 [commentaire yento sur developpez](https://www.developpez.net/forums/d1812737-7/emploi-etudes-informatique/emploi/salaires/cout-vie-egal-salaire-d-professionnel-l-it-san-francisco-67-plus-eleve/#post10178605)
 
 > 300k c'est la norme pour les big 4 en web ou les big 4 en finance
-> 
+>
 > Une fois enlevée 40% de taxe, ca fait que 15k par mois
 
 ### international
@@ -534,14 +535,14 @@ Extensible à tout sujet technique.
 
 [Node.js vs Ruby on Rails (Infographic)](https://vizteck.com/blog/node-js-vs-ruby-on-rails-infographic/)
 
-> Outsourcing javascript in Pakistan, India or Philippine : between 24K$ to 90K$ depending on experience
+> Outsourcing JavaScript in Pakistan, India or Philippine : between 24K$ to 90K$ depending on experience
 
 [How Much Do Freelance Developers Cost Around the World? (2017) - 20170707](https://www.codementor.io/blog/how-much-do-freelance-developers-cost-around-the-world-2626eu0rzy)
 
 > We surveyed 5,302 freelance developers from around the world
-> 
-> The least expensive regions showed average rates about 30% - 40% less than the most expensive regions. 
-> 
+>
+> The least expensive regions showed average rates about 30% - 40% less than the most expensive regions.
+>
 > USA is 70$/h, north africa is 41$/h while western european is 63$/h
 >
 > The 10 least expensive countries have, on average 28% lower hourly rates than the 10 most expensive.
@@ -556,15 +557,15 @@ Extensible à tout sujet technique.
 
 [Microsoft and GitHub Workers Take a Stand Against Grueling, Inhumane '996' Culture in China - gizmodo.com - 20190419](https://gizmodo.com/microsoft-and-github-workers-take-a-stand-against-gruel-1834210579)
 
-> For tech workers in China, a brutal work schedule of 9am to 9pm, 6 days a week (usually just called “996") is not only commonplace, it’s been hailed as “a huge blessing” by the likes of Alibaba’s eccentric and fantastically wealthy taskmaster, Jack Ma. 
-> 
-> Chinese workers took to Github, [...] to start a blacklist of sorts.
+> For tech workers in China, a brutal work schedule of 9am to 9pm, 6 days a week (usually just called “996") is not only commonplace, it’s been hailed as “a huge blessing” by the likes of Alibaba’s eccentric and fantastically wealthy taskmaster, Jack Ma.
+>
+> Chinese workers took to GitHub, [...] to start a blacklist of sorts.
 >
 > The repo itself was given the name 996.icu—as named because of this demanding schedule’s likeliness to send exhausted coders to the hospital’s intensive care unit.
 >
 > As a sign of wide support, 996.icu has been starred nearly 260,000 times since its creation, making it one of the most popular repositories in the site’s history.
-> 
-> Microsoft and Github workers today released an open letter, making plain their intention to “stand in solidarity with tech workers in China” and resist potential attempts by the Chinese government to pressure Microsoft into censoring 996.icu. “We must entertain the possibility that Microsoft and GitHub will be pressured to remove the repository,” the letter reads. “We encourage Microsoft and GitHub to keep the 996.ICU GitHub repository uncensored and available to everyone.”
+>
+> Microsoft and GitHub workers today released an open letter, making plain their intention to “stand in solidarity with tech workers in China” and resist potential attempts by the Chinese government to pressure Microsoft into censoring 996.icu. “We must entertain the possibility that Microsoft and GitHub will be pressured to remove the repository,” the letter reads. “We encourage Microsoft and GitHub to keep the 996.ICU GitHub repository uncensored and available to everyone.”
 
 [MSWorkers/support.996.ICU](https://github.com/MSWorkers/support.996.ICU)
 
@@ -573,6 +574,7 @@ Extensible à tout sujet technique.
 [Étude sur l’évolution des technologies backend par année de création des entreprises : hired.com](https://hired.com/blog/france/technologies-backend-les-plus-en-vogue/)
 
 > 2017
+>
 > - .net et PHP tombent en désuétude
 > - nodejs et ruby sont les plus dynamiques parmi les nouvelles entreprises
 > - java et python sont stables
@@ -586,7 +588,8 @@ Extensible à tout sujet technique.
 
 > 2017
 > L’échantillon concerne uniquement les postes de Software Engineer :
-> - Développeur Fullstack 
+>
+> - Développeur Fullstack
 > - Développeur Frontend
 > - Développeur Backend
 > - Développeur Mobile
@@ -618,6 +621,7 @@ Extensible à tout sujet technique.
 [100 outils pour lancer sa startup sans développeur ni graphiste (et presque sans argent) - www.maddyness.com - 20180404](https://www.maddyness.com/2018/04/04/100-outils-pour-lancer-sa-startup-sans-developpeur-ni-graphiste-et-presque-sans-argent/)
 
 > référentiel de liens sur :
+>
 > - Le graphisme (design, photos, vidéos...)
 > - Le prototypage
 > - Le site de présentation et la landing page
@@ -647,6 +651,7 @@ Extensible à tout sujet technique.
 [Programme d’informatique dès l’école primaire ? : framablog.org : 20140115](https://framablog.org/2014/01/15/informatique-ecole-primaire/?print=print)
 
 > **Proposition d’orientations générales pour un programme d’informatique à l’école primaire**
+>
 > - Des logiciels aux concepts
 > - Des langages simples
 > - Des langages moins simples
@@ -654,7 +659,7 @@ Extensible à tout sujet technique.
 > - La notion d’algorithme
 > - La notion de machine
 > - Un enseignement adapté à l’élève et à son rapport au monde
-> 
+>
 > Auteurs : Serge Abiteboul, Jean-Pierre Archambault, Gérard Berry, Colin de la Higuera, Gilles Dowek, Maurice Nivat
 >
 > Ce document a été envoyé au Conseil Supérieur des Programmes (CSP), le samedi 7 décembre 2013
@@ -691,7 +696,7 @@ Took from [Machine learning and tech debt: A publication from Google on www.funf
 
 ## Economie
 
-**Le graphique de l'éléphant (Branko Milanovic)**
+### Le graphique de l'éléphant (Branko Milanovic)
 
 > Les revenus augmentent partout sauf pour les classes populaires et moyennes des pays industrialisés où il stagne voire baisse.On constate également un accroissement massif des inégalités partout.
 
@@ -699,7 +704,7 @@ Took from [Machine learning and tech debt: A publication from Google on www.funf
 
 [Graphique de l'Eléphant, le retour : www.atlantico.fr - 20160715](http://www.atlantico.fr/decryptage/graphique-elephant-retour-quand-matraquage-classes-moyennes-occidentales-concurrence-chine-saute-aux-yeux-jean-marc-siroen-2764315.html)
 
-**cout des bugs**
+### cout des bugs
 
 A l'échelle mondiale chiffré à 100 milliards de dollars (chiffre 2008 ?) par le département du commerce US (cf [Gérard Berry : Pourquoi et comment le monde devient numérique : www.franceculture.fr redif du cours de 2008](https://www.franceculture.fr/emissions/les-cours-du-college-de-france/gerard-berry-pourquoi-et-comment-le-monde-devient-numerique))
 
@@ -729,7 +734,7 @@ A l'échelle mondiale chiffré à 100 milliards de dollars (chiffre 2008 ?) par 
 
 [Microsoft to acquire GitHub for $7.5 billion - news.microsoft.com - 20180604](https://news.microsoft.com/2018/06/04/microsoft-to-acquire-github-for-7-5-billion/)
 
-[A bright future for GitHub - blog.github.com - 20180604](https://blog.github.com/2018-06-04-github-microsoft/)
+[A bright future for GitHub - `blog.github.com` - 20180604](https://blog.github.com/2018-06-04-github-microsoft/)
 
 ## Médias
 

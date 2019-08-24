@@ -29,4 +29,4 @@ htmlHead:
 
 > TL;DR for developer documentation - a ridiculous collection of cheatsheets
 
-[github.com/rstacruz/cheatsheets](https://github.com/rstacruz/cheatsheets)
+[`github.com/rstacruz/cheatsheets`](https://github.com/rstacruz/cheatsheets)

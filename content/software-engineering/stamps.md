@@ -49,11 +49,11 @@ htmlHead:
 
 [rtype](https://github.com/ericelliott/rtype#rtype)
 
-> Intuitive structural type notation for JavaScript. 
+> Intuitive structural type notation for JavaScript.
+>
+> Used to describe the API function signatures in specs
 
-*Used to describe the API function signatures in specs* 
-
-[stamp-specification : github.com](https://github.com/stampit-org/stamp-specification)
+[stamp-specification : `github.com`](https://github.com/stampit-org/stamp-specification)
 
 > define stamps format
 

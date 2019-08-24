@@ -34,7 +34,7 @@
 <h3 id="title-minimizing-repaints-and-reflows">minimizing repaints and reflows</h3>
 <ul>
 <li>Don’t change individual styles, one by one.</li>
-<li>Batch DOM changes and perform them “offline”. Offline means not in the live DOM tree. <ul>
+<li>Batch DOM changes and perform them “offline”. Offline means not in the live DOM tree.<ul>
 <li>using (<a href="https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment"><code>documentFragment</code></a>)</li>
 <li>using <code>display: none</code> before making the changes then restore the display</li>
 </ul>

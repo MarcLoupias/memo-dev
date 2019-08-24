@@ -27,7 +27,7 @@ htmlHead:
 
 by Frederick P. Brooks, Jr.
 
-> ref: Brooks, Frederick P., "No Silver Bullet: Essence and Accidents of Software Engineering," Computer, Vol. 20, No. 4 (April 1987) pp. 10-19. 
+> ref: Brooks, Frederick P., "No Silver Bullet: Essence and Accidents of Software Engineering," Computer, Vol. 20, No. 4 (April 1987) pp. 10-19.
 
 ## synthesis
 
@@ -36,6 +36,7 @@ A project can be seen as innocent and straightforward but can become a monster o
 Need for a **silver bullet** to drop software costs.
 
 But there is no silver bullet ; the purpose of the article is to show why by examining :
+
 - the nature of the software problem
 - the properties of the bullets proposed in the past
 
@@ -43,8 +44,7 @@ There is no breakthrough, but there is things to do to improve software engineer
 
 > There is no royal road, but there is a road.
 
-Nice metaphor with medicine, from magical theories to modern medicine, the road is hard, long, step by step, require 
-discipline but it works better every day.
+Nice metaphor with medicine, from magical theories to modern medicine, the road is hard, long, step by step, require discipline but it works better every day.
 
 > So it is with software engineering today.
 
@@ -59,22 +59,23 @@ discipline but it works better every day.
 
 ## A - Does It Have to Be Hard?--Essential Difficulties
 
-In comparison to hardware productivity enhancement software engineering is slow. 
-But hardware enhancement is an exception against all others technologies. 
+In comparison to hardware productivity enhancement software engineering is slow.
+But hardware enhancement is an exception against all others technologies.
 
 Following Aristotle, Brooks divide software engineering difficulties in :
+
 - essence difficulties (inherent in the nature of software)
 - accidents difficulties (difficulties that today attend its production but are not inherent)
 
-The software essence is a construct of interlocking concepts: data sets, relationships among data items, algorithms, 
-and invocations of functions.
+The software essence is a construct of interlocking concepts: data sets, relationships among data items, algorithms, and invocations of functions.
 
-> I believe the hard part of building software to be the specification, design, and testing of this conceptual construct, 
+> I believe the hard part of building software to be the specification, design, and testing of this conceptual construct,
 > not the labor of representing it and testing the fidelity of the representation.
-
-> If this is true, building software will always be hard. There is inherently no silver bullet. 
+>
+> If this is true, building software will always be hard. There is inherently no silver bullet.
 
 The inherent properties of this irreducible essence of modern software systems are :
+
 - complexity
 - conformity
 - changeability
@@ -89,6 +90,7 @@ The inherent properties of this irreducible essence of modern software systems a
 - many of the classic problems of developing software products derive from this essential complexity and its nonlinear increases with size
 
 complexity is the source of the difficulty of :
+
 - communication among team members (leads to product flaws, cost overruns, schedule delays)
 - enumerating all the possible states of the program (leads to unreliability)
 - invoking function (makes programs hard to use)
@@ -108,7 +110,7 @@ complexity is the source of the difficulty of :
 - manufactured things are infrequently changed after manufacture
 - successful software have a long life
   - users pushes new behaviors
-  - they need to adapt to new hardware 
+  - they need to adapt to new hardware
 
 ### invisibility
 
@@ -122,7 +124,7 @@ complex for that
 ### High-level languages
 
 - it frees a program from much of its accidental complexity
-- language development approaches closer and closer to the sophistication of users 
+- language development approaches closer and closer to the sophistication of users
 
 so there is a maximum gain here
 
@@ -137,8 +139,7 @@ so beyond that threshold, no benefits are to be expected
 
 mostly Unix
 
-attack the accidental difficulties that result from using individual programs together, by providing integrated libraries, 
-unified file formats, and pipes and filters
+attack the accidental difficulties that result from using individual programs together, by providing integrated libraries, unified file formats, and pipes and filters
 
 ## C - Hopes for the Silver
 
@@ -164,12 +165,11 @@ potential silver bullets :
 
 - The hardest single part of building a software system is deciding precisely what to build.
 - For the truth is, the client does not know what he wants.
-- it is really impossible for a client to specify completely, precisely, and correctly the exact requirements of a 
-modern software product before trying some versions of the product
+- it is really impossible for a client to specify completely, precisely, and correctly the exact requirements of a modern software product before trying some versions of the product
 
-> Therefore, one of the most promising of the current technological efforts, and one that attacks the essence, 
-> not the accidents, of the software problem, is the development of approaches and tools for rapid prototyping of 
-> systems as prototyping is part of the iterative specification of requirements. 
+> Therefore, one of the most promising of the current technological efforts, and one that attacks the essence,
+> not the accidents, of the software problem, is the development of approaches and tools for rapid prototyping of
+> systems as prototyping is part of the iterative specification of requirements.
 
 **The secret is that it (ie : the software) is grown, not built.**
 
@@ -177,5 +177,4 @@ modern software product before trying some versions of the product
 
 The central question in how to improve the software art centers, as it always has, on people.
 
-Great designs come from great designers. Software construction is a creative process. Sound methodology can empower and 
-liberate the creative mind; it cannot inflame or inspire the drudge. 
+Great designs come from great designers. Software construction is a creative process. Sound methodology can empower and liberate the creative mind; it cannot inflame or inspire the drudge.

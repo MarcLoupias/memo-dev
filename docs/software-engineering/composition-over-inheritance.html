@@ -7,14 +7,15 @@
 <p><strong>composition</strong> is when you design objects around what they <strong>do</strong></p>
 <h2 id="title-example">example</h2>
 <p>We design a game where we have</p>
-<pre><code>Dog
+<pre><code class="lang-javascript">Dog
   .poop()
   .bark()
 
 Cat
   .poop()
-  .meow()</code></pre><p>Because of <code>poop</code> function duplication we create a mother <code>class</code></p>
-<pre><code>Animal
+  .meow()</code></pre>
+<p>Because of <code>poop</code> function duplication we create a mother <code>class</code></p>
+<pre><code class="lang-javascript">Animal
   .poop()
 
     Dog
@@ -23,8 +24,9 @@ Cat
 
     Cat
       .poop()
-      .meow()</code></pre><p>Now we add more classes on a different line of inheritance</p>
-<pre><code>MurderRobot
+      .meow()</code></pre>
+<p>Now we add more classes on a different line of inheritance</p>
+<pre><code class="lang-javascript">MurderRobot
   .drive()
   .kill()
 
@@ -41,8 +43,9 @@ Animal
 
     Cat
       .poop()
-      .meow()</code></pre><p>Same problem as before, we need another mother class for robots</p>
-<pre><code>Robot
+      .meow()</code></pre>
+<p>Same problem as before, we need another mother class for robots</p>
+<pre><code class="lang-javascript">Robot
   .drive()
 
   MurderRobot
@@ -61,16 +64,18 @@ Animal
 
     Cat
       .poop()
-      .meow()</code></pre><p>After a while a new needs is coming : We need a murder robot dog who can kill, drive and bark.<br>But it cannot poop (no digestive system)</p>
+      .meow()</code></pre>
+<p>After a while a new needs is coming : We need a murder robot dog who can kill, drive and bark.<br>But it cannot poop (no digestive system)</p>
 <p>At this point, the class inheritance taxinomy is deeply wrong. We cannot put a MurderRobotDog class inside.</p>
 <p>The only solution keeping inheritance is to set a super motherclass but children will have method they should not<br>have in attached to them. So it is bad.</p>
 <p>This problem is called the <strong>Gorilla Banana Problem</strong> (You request a Banana, you got a Gorilla and the entire Jungle with it).</p>
 <p>The solution is <strong>composition</strong> (design objects around what they <strong>do</strong>)</p>
-<pre><code>dog            = pooper + barker
+<pre><code class="lang-text">dog            = pooper + barker
 cat            = pooper + meower
 cleaningRobot  = driver + cleaner
 murderRobot    = driver + killer
-murderRobotDog = driver + killer + barker</code></pre><h2 id="title-when-to-use-compositioninheritance">when to use composition/inheritance</h2>
+murderRobotDog = driver + killer + barker</code></pre>
+<h2 id="title-when-to-use-compositioninheritance">when to use composition/inheritance</h2>
 <p>Lots of devs just favors composition over inheritance and some never use inheritance.</p>
 <p><a href="https://refactoring.com/catalog/replaceConstructorWithFactoryMethod.html">Replace Constructor with Factory Method : Martin Fowler 1999</a></p>
 <blockquote>
@@ -87,8 +92,6 @@ murderRobotDog = driver + killer + barker</code></pre><h2 id="title-when-to-use-
 <p><a href="https://medium.com/@FennNaten/composition-over-inheritance-the-importance-of-context-d8916f041a7e">Composition over Inheritance, the importance of context : Damien Lebreuilly 20160131</a></p>
 <blockquote>
 <p>In the rest of this article, I’ll explain what are those inheritance pitfalls that composition (in GoF sense) tries<br>to avoid, and I’ll show that concatenative inheritance still carries them.</p>
-</blockquote>
-<blockquote>
 <p>he is taking the @mpj <code>murderRobotDog</code> example adding more complexity to output this conclusion :<br><strong>Object composition is not object merging.</strong></p>
 </blockquote>
 </article></body></html>

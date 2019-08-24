@@ -23,5 +23,5 @@ htmlHead:
 
 # css - BEM
 
-- [blog kaelig.fr : fifty shades of BEM] (http://blog.kaelig.fr/post/48196348743/fifty-shades-of-bem)
-- [bouquin du même auteur] (http://www.css-maintenables.fr/)
+- [blog kaelig.fr : fifty shades of BEM](http://blog.kaelig.fr/post/48196348743/fifty-shades-of-bem)
+- [bouquin du même auteur](http://www.css-maintenables.fr/)

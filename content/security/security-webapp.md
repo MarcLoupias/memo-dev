@@ -33,13 +33,13 @@ SQL, LDAP, XPath, Parseur XML, ...
 
 Saisir dans un champ de saisie de mot de passe :
 
-```
+```text
 e' or '1' = '1
 ```
 
 #### Exemple avec XML
 
-```
+```xml
 <?xml version="1.0" encoding="ISO-8859-1"?>
     <!DOCTYPE foo [
         <!ELEMENT foo ANY >
@@ -53,7 +53,7 @@ L'authentification devrait être déléguée à un service tiers (Kerberos, OAut
 
 La session devrait être gérée via un cookie :
 
-```
+```text
 set-cookie:MonCookie="XXXX";Version=1;Secure;HttpOnly
 ```
 
@@ -70,8 +70,8 @@ Mot de passe : `bcrypt`, `PBKDF2`, `scrypt` (hash solo trop faible)
 [Cross-site Scripting (XSS) : owasp.org](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS))
 
 > Cross-site scripting attacks may occur anywhere that possibly malicious users are allowed to post unregulated material to a trusted web site for the consumption of other valid users.
-> 
-> The most common example can be found in bulletin-board web sites which provide web based mailing list-style functionality. 
+>
+> The most common example can be found in bulletin-board web sites which provide web based mailing list-style functionality.
 
 [XSS (Cross Site Scripting) Prevention Cheat Sheet : owasp.org](https://www.owasp.org/index.php/XSS_%28Cross_Site_Scripting%29_Prevention_Cheat_Sheet)
 
@@ -81,7 +81,7 @@ AngularJS gère en natif ce problème (sanitize).
 
 ### 5 - références directes non sécurisées
 
-```
+```text
 http://example.com/app/accountInfo?acct=notmyacct
 ```
 
@@ -126,7 +126,7 @@ A server using `"Access-Control-Allow-Origin: *"` allows all domains, it is **ve
 [What are the security risks of setting Access-Control-Allow-Origin? : stackoverflow.com](http://stackoverflow.com/questions/12001269/what-are-the-security-risks-of-setting-access-control-allow-origin)
 
 > By responding with `Access-Control-Allow-Origin: *`, the requested resource allows sharing with every origin. This basically means that any site can send an XHR request to your site and access the server’s response which would not be the case if you hadn’t implemented this CORS response.
-
+>
 > So any site can make a request to your site on behalf of their visitors and process its response. If you have something implemented like an authentication or authorization scheme that is based on something that is automatically provided by the browser (cookies, cookie-based sessions, etc.), the requests triggered by the third party sites will use them too.
 
 ### 9 - Utilisation de composants avec des vulnérabilités connues
@@ -137,7 +137,7 @@ OWASP publie un composant MAVEN nommé [`dependency-check-maven`](https://www.ow
 
 ### 10 - redirections et renvois non validés
 
-```
+```text
 http://www.example.com/redirect.jsp?url=evil.com
 ```
 
