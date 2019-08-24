@@ -45,6 +45,8 @@ htmlHead:
 
 ![](devops-pipeline.png)
 
+#### article "Construire un pipeline DevOps"
+
 [Contruire un pipeline DevOps - jch.blog4ever.com - Jean Chambard - 20180217](https://jch.blog4ever.com/contruire-un-pipeline-devops)
 
 > TLDR : Liste et explique les outils associés à chaque étape de la pipeline.
@@ -133,6 +135,18 @@ htmlHead:
 > - [ELK](https://www.elastic.co/fr/products) : acronyme pour 3 projets open source, Elasticsearch, Logstash, et Kibana. Ce triptyque est très répandu et utilisé notamment pour la supervision de la sécurité, mais pas que.
 > - [Splunk](https://www.splunk.com/fr_fr) : C'est une sorte de plate-forme d'Intelligence Opérationnelle (par opposition à la Business Intelligence) temps réel. On peut ainsi explorer, surveiller, analyser et visualiser les données machine via Splunk.
 > - [DataDog](https://www.datadoghq.com/) : DataDog est une excellente alternative à Splunk. La solution fonctionne aussi sur des environnements dans le Cloud.
+
+#### GitHub Actions
+
+[GitHub Actions now supports CI/CD, free for public repositories](https://github.blog/2019-08-08-github-actions-now-supports-ci-cd/)
+
+[GitHub Actions - Subscribe to beta (will until end 2019)](https://github.com/features/actions)
+
+[A curated list of awesome actions to use on GitHub](https://github.com/sdras/awesome-actions)
+
+[Official doc Automating your workflow with GitHub Actions - help.github.com](https://help.github.com/en/categories/automating-your-workflow-with-github-actions)
+
+[Official GitHub Actions collection - github.com/actions](https://github.com/actions)
 
 ### resources
 
