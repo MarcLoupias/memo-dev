@@ -156,6 +156,21 @@ htmlHead:
 - [GitHub Actions: Updates to GitHub Actions (limited public beta) - github.blog - 20190808](https://github.blog/changelog/2019-08-08-updates-to-github-actions-limited-public-beta/)
 - [GitHub Actions: Publishing packages from a GitHub Action to GitHub Package Registry - github.blog - 20190816](https://github.blog/changelog/2019-08-16-publishing-packages-from-a-github-action-to-github-package-registry/)
 
+#### GitHub Package Registry
+
+[GitHub publie GitHub Package Registry en beta ouverte - alm.developpez.com - 20190512](https://alm.developpez.com/actu/260693/GitHub-publie-GitHub-Package-Registry-en-beta-ouverte-un-nouveau-service-qui-permet-de-gerer-les-livrables-associes-aux-depots/)
+
+[Official doc About GitHub Package Registry - help.github.com](https://help.github.com/en/articles/about-github-package-registry)
+
+[Your packages, at home with their code - Subscribe to beta](https://github.com/features/package-registry)
+
+**GitHub Blog official announcement**
+
+- [Introducing GitHub Package Registry - github.blog - 20190510](https://github.blog/2019-05-10-introducing-github-package-registry/)
+- [Updated deletion policy for packages - github.blog - 20190613](https://github.blog/changelog/2019-06-13-updated-deletion-policy-for-packages/)
+- [GitHub Actions: Publishing packages from a GitHub Action to GitHub Package Registry - github.blog - 20190816](https://github.blog/changelog/2019-08-16-publishing-packages-from-a-github-action-to-github-package-registry/)
+
+
 ### resources
 
 [devops.com](https://devops.com/)
