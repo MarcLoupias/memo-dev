@@ -123,29 +123,29 @@
     int spec2 = r2.selector()-&gt;specificity();
     return (spec1 == spec2) : r1.position() &gt; r2.position() : spec1 &gt; spec2;
 }</code></pre>
-<h1 id="title-float">Float</h1>
+<h2 id="title-float">Float</h2>
 <p>Tere are <code>left</code>, <code>right</code> and <code>none</code> for <code>float</code>. Each value indicates how an element should float. When <code>float</code> is set, each element will get out of its normal flow and will be shifted to the specified direction, until it gets its container or another floated element. Float affects not only the target element, but also its children.</p>
-<h2 id="title-floating-an-element">Floating an element</h2>
+<h3 id="title-floating-an-element">Floating an element</h3>
 <p>The CSS float property gives us control over the horizontal position of an element. By “floating” the sidebar to the left, we’re telling the browser to align it to the left side of the page.<br>However, this doesn’t just align the sidebar—it also tells surrounding elements that they can flow around the sidebar instead of beginning underneath it.</p>
-<h2 id="title-clearing-floats">Clearing floats</h2>
+<h3 id="title-clearing-floats">Clearing floats</h3>
 <p>“Clearing” a float is when we tell a block to ignore any floats that appear before it. Instead of flowing around the floated box, a cleared element always appears after any floats. It’s like forcing a box back into the default vertical flow of the page.</p>
-<h1 id="title-flexbox">Flexbox</h1>
+<h2 id="title-flexbox">Flexbox</h2>
 <p>The “Flexible Box” or “Flexbox” layout mode offers an alternative to Floats for defining the overall appearance of a web page. Whereas floats only let us horizontally position our boxes, flexbox gives us complete control over the alignment, direction, order, and size of our boxes.</p>
 <p>Flexbox uses two types of boxes that we’ve never seen before: “flex containers” and “flex items”. The job of a flex container is to group a bunch of flex items together and define how they’re positioned.</p>
 <p><img src="https://internetingishard.com/html-and-css/flexbox/flex-container-and-flex-items-6234bb.png" alt="flex container and flex items"></p>
 <p>Every HTML element that’s a direct child of a flex container is an “item”. Flex items can be manipulated individually, but for the most part, it’s up to the container to determine their layout. The main purpose of flex items are to let their container know how many things it needs to position.</p>
 <p>As with float-based layouts, defining complex web pages with flexbox is all about nesting boxes. You align a bunch of flex items inside a container, and, in turn, those items can serve as flex containers for their own items. As you work through the examples in this chapter, remember that the fundamental task of laying out a page hasn’t changed: we’re still just moving a bunch of nested boxes around.</p>
-<h2 id="title-flex-containers">Flex containers</h2>
+<h3 id="title-flex-containers">Flex containers</h3>
 <p>By giving it a value of flex, we’re telling the browser that everything in the box should be rendered with flexbox instead of the default box model.<br>This enables the flexbox layout mode—without it, the browser would ignore all the flexbox properties that we’re about to introduce. Explicitly defining flex containers means that you can mix and match flexbox with other layout models.<br>Flex containers only know how to position elements that are one level deep (i.e., their child elements).</p>
 <p><img src="https://internetingishard.com/html-and-css/flexbox/enabling-flexbox-dd3b59.png" alt="enabling flexbox"></p>
-<h2 id="title-aligning-a-flex-item">Aligning a flex item</h2>
+<h3 id="title-aligning-a-flex-item">Aligning a flex item</h3>
 <p>After you’ve got a flex container, your next job is to define the horizontal alignment of its items. That’s what the justify-content property is for. The space-around value spreads its items out across its entire width. The space-between value is similar, but it only adds that extra space between items.</p>
 <p><img src="https://internetingishard.com/html-and-css/flexbox/flex-justify-content-alignment-ea129c.png" alt="flex justify content alignment"><br><img src="https://internetingishard.com/html-and-css/flexbox/flex-justify-content-distribution-b0ee9c.png" alt="flex justify content distribution"></p>
-<h2 id="title-flex-container-direction">Flex container direction</h2>
+<h3 id="title-flex-container-direction">Flex container direction</h3>
 <p>“Direction” refers to whether a container renders its items horizontally or vertically. So far, all the containers we’ve seen use the default horizontal direction, which means items are drawn one after another in the same row before popping down to the next column when they run out of space. By default <code>flex-direction</code> is <code>column</code>, but it can be <code>row</code>.
 The <code>flex-direction</code> property also offers you control over the order in which items appear via the <code>row-reverse</code> and <code>column-reverse</code> properties.</p>
 <p><img src="https://internetingishard.com/html-and-css/flexbox/flex-direction-reverse-532d8f.png" alt="flex direction reverse"></p>
-<h2 id="title-positioning-schema">Positioning schema</h2>
+<h3 id="title-positioning-schema">Positioning schema</h3>
 <p>There are several schemas:</p>
 <ul>
 <li>Normal: the object is positioned according to its place in the document. This means its place in the render tree is like its place in the DOM tree and laid out according to its box type and dimensions</li>
@@ -167,7 +167,7 @@ The <code>flex-direction</code> property also offers you control over the order 
 <li>Positioning scheme</li>
 <li>External information such as image size and the size of the screen</li>
 </ul>
-<h2 id="title-z-index">Z-index</h2>
+<h3 id="title-z-index">Z-index</h3>
 <p>The z-index property lets you control the depth of elements on the page. If you think of your screen as 3D space, negative z-index values go farther into the page, and positive ones come out of the page.</p>
 <p><img src="https://internetingishard.com/html-and-css/advanced-positioning/css-z-index-c87ef0.png" alt="css z-index"></p>
 <p>Say two DIVs with the same parent, higher z-index will be displayed. It will inherit the z-index property of the parent. Z-index only works on positioned elements (position:absolute, position:relative, or position:fixed). Value can be negative.</p>

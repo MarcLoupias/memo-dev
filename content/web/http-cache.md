@@ -64,7 +64,7 @@ An ETag is basically a random string that a server assigns to a resource, and re
     - Cachable by intermediate? Yes/no -> public/private
     - maximum cache lifetime? max_age and add etag
 
-# Pre-HTTP 1.1 headers (died)
+## Pre-HTTP 1.1 headers (died)
 
 - Expires
 - Last-Modified
