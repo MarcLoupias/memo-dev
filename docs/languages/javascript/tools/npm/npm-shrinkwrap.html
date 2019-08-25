@@ -36,9 +36,7 @@
 <h4 id="title-1-initialisation">1/ Initialisation</h4>
 <h5 id="title-première-installation">Première installation</h5>
 <p>Définir un fichier <code>package.json</code> et exécuter <code>npm install --save</code> pour installer les dépendances et modifier le <code>package.json</code> avec les dernières version disponibles. (<code>npm install --save-dev</code> pour les dépendances de développement)</p>
-<p><strong>Attention</strong> à la gestion de <a href="https://github.com/npm/node-semver">semver</a> par npm !!
-<code>&quot;browser-sync&quot;: &quot;2.7.13&quot;</code> entrainera l’installation de la version <code>2.7.13</code>.
-<code>&quot;browser-sync&quot;: &quot;^2.7.13&quot;</code> entrainera l’installation de la dernière version mineure disponible (2.9.10 par exemple) et si l’option <code>--save-dev</code> est active cela entrainera également la modification du <code>package.json</code> en <code>&quot;^2.9.10&quot;</code>.</p>
+<p><strong>Attention</strong> à la gestion de <a href="https://github.com/npm/node-semver">semver</a> par npm !!<br><code>&quot;browser-sync&quot;: &quot;2.7.13&quot;</code> entrainera l’installation de la version <code>2.7.13</code>.<br><code>&quot;browser-sync&quot;: &quot;^2.7.13&quot;</code> entrainera l’installation de la dernière version mineure disponible (2.9.10 par exemple) et si l’option <code>--save-dev</code> est active cela entrainera également la modification du <code>package.json</code> en <code>&quot;^2.9.10&quot;</code>.</p>
 <h5 id="title-figer-la-première-installation">Figer la première installation</h5>
 <p>Exécuter <code>npm shrinkwrap --dev</code> (génère le fichier <code>npm-shrinkwrap.json</code>, <code>--dev</code> permet d’inclure les <code>devDependencies</code>)</p>
 <p><strong>Important</strong> : </p>

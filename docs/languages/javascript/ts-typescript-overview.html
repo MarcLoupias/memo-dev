@@ -135,8 +135,7 @@ f(1, null); // error, &#39;null&#39; is not assignable to &#39;number | undefine
 <p><a href="https://basarat.gitbooks.io/typescript/docs/tips/defaultIsBad.html"><code>export default</code> considered harmful</a></p>
 <p><a href="https://basarat.gitbooks.io/typescript/docs/tips/barrel.html">Barrel</a></p>
 <blockquote>
-<p>practice of creating an <code>index.ts</code> file inside a directory to re-export files (imply to avoid <code>export default</code>)
-allows destructured import : <code>import { Foo, Bar, Baz } from &#39;../demo&#39;; // demo/index.ts is implied</code></p>
+<p>practice of creating an <code>index.ts</code> file inside a directory to re-export files (imply to avoid <code>export default</code>)<br>allows destructured import : <code>import { Foo, Bar, Baz } from &#39;../demo&#39;; // demo/index.ts is implied</code></p>
 </blockquote>
 <h2 id="title-tslint">TSLint</h2>
 <p><a href="https://palantir.github.io/tslint/">tslint - palantir.github.io</a></p>
@@ -343,8 +342,7 @@ example(&#39;hello world&#39;);</code></pre>
 <p>The purpose of the <code>unknown</code> type is to force the developper to check the structure with type guards or assert the type with type assertion.</p>
 <p><a href="http://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#new-unknown-top-type">See what’s new in TS@3.0 - www.typescriptlang.org</a></p>
 <blockquote>
-<p><code>unknown</code> is the type-safe counterpart of <code>any</code>.
-Anything is assignable to <code>unknown</code>, but <code>unknown</code> isn’t assignable to anything but itself and <code>any</code> without a type assertion or a control flow based narrowing.<br>Likewise, no operations are permitted on an <code>unknown</code> without first asserting or narrowing to a more specific type.</p>
+<p><code>unknown</code> is the type-safe counterpart of <code>any</code>.<br>Anything is assignable to <code>unknown</code>, but <code>unknown</code> isn’t assignable to anything but itself and <code>any</code> without a type assertion or a control flow based narrowing.<br>Likewise, no operations are permitted on an <code>unknown</code> without first asserting or narrowing to a more specific type.</p>
 </blockquote>
 <p><a href="https://auth0.com/blog/typescript-3-exploring-tuples-the-unknown-type/">TypeScript 3.0: Exploring Tuples and the Unknown Type - auth0.com/blog - 20180821</a></p>
 <blockquote>

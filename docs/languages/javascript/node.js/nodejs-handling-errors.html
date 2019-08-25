@@ -97,8 +97,7 @@
 <h5 id="title-the-most-common-case-is-an-operational-error-in-an-asynchronous-function">The most common case is an operational error in an asynchronous function</h5>
 <p>By far, the most common case is an operational error in an asynchronous function (see <code>fs</code> module for examples).</p>
 <h5 id="title-the-next-most-common-case-is-an-operational-error-in-a-synchronous">The next most common case is an operational error in a synchronous</h5>
-<p>The next most common case is an operational error in a synchronous function like <code>JSON.parse</code>.
-For these functions, if you encounter an operational error (like invalid user input), you have to deliver the error synchronously. You can either throw it (much more common) or return it.</p>
+<p>The next most common case is an operational error in a synchronous function like <code>JSON.parse</code>.<br>For these functions, if you encounter an operational error (like invalid user input), you have to deliver the error synchronously. You can either throw it (much more common) or return it.</p>
 <h5 id="title-the-general-rule">The general rule</h5>
 <p>For a given function, if any operational error can be delivered asynchronously, then <strong>all</strong> operational errors should be delivered asynchronously.</p>
 <p>The general rule is that <strong>a function may deliver operational errors synchronously (e.g., by <code>throw</code>ing) or asynchronously (by passing them to a callback or emitting <code>error</code> on an <code>EventEmitter</code>), but it should not do both.</strong></p>

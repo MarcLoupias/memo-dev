@@ -28,9 +28,7 @@
 <h3 id="title-repository">repository</h3>
 <p>Named also a <em>tree</em> by some git users.<br>It is the whole history of a project (a directory).<br>Composed by commits. Each node is a commit.<br>Created by <code>git init</code> command (or by <code>git clone</code> if you want to copy an existing repository).<br>Create a self-sufficient <code>.git</code> directory. It means that a simple zip on the repository root directory is enough to backup it.</p>
 <h3 id="title-bare-repository">bare repository</h3>
-<p>A repository created with <code>git init</code> command is for <strong>working</strong>.
-A repository created with <code>git init --bare</code> command is for <strong>sharing</strong>.
-A bare repository doesn’t contain a working directory nor a <code>.git</code> directory.<br>Github, gitlab, etc …, create a bare repository on their side.</p>
+<p>A repository created with <code>git init</code> command is for <strong>working</strong>.<br>A repository created with <code>git init --bare</code> command is for <strong>sharing</strong>.<br>A bare repository doesn’t contain a working directory nor a <code>.git</code> directory.<br>Github, gitlab, etc …, create a bare repository on their side.</p>
 <p><a href="http://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/">What is a bare git repository : www.saintsjd.com</a></p>
 <p>Notice that you can add to your remote list a <code>non-bare</code> repository but you will not be able to push in it if the branch where<br>you want to push is checked out in it, git will deny the push (cause possible inconsistency).</p>
 <p>It can be bypassed by setting the <code>receive.denyCurrentBranch</code> config variable in the receiver repo to <code>&#39;ignore&#39;</code> or <code>&#39;warn&#39;</code> but it is not recommended.</p>
@@ -45,8 +43,7 @@ nothing to commit, working directory clean</code></pre>
 <h3 id="title-remote">remote</h3>
 <p>A remote is a distant repository (a repo on another computer).</p>
 <h3 id="title-commit">commit</h3>
-<p>Also named <em>revision</em>.
-It is a state of a directory.<br>Each commit has one ore more parents commit.<br>Git stores only the difference between current commit state and parents. So a commit = current project state - parents.</p>
+<p>Also named <em>revision</em>.<br>It is a state of a directory.<br>Each commit has one ore more parents commit.<br>Git stores only the difference between current commit state and parents. So a commit = current project state - parents.</p>
 <p><a href="https://www.youtube.com/watch?v=Hd_UpJPDlik&index=88&list=PLTbQvx84FrAS5clN9i8_LFUQxcMY7qXAO">Comment faire un commit sans faire du Git (Alexandre Garnier) : Devoxx2016</a></p>
 <h3 id="title-branch">branch</h3>
 <p>A “branch” is an active line of development.<br>The most recent commit on a branch is referred to as the tip of that branch. The tip of the branch is referenced by a branch head, which moves forward as additional development is done on the branch.</p>

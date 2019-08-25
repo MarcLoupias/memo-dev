@@ -18,8 +18,7 @@ var app = express();
 app.use(express.logger(&#39;dev&#39;));
 app.use(gzippo.staticGzip(&quot;&quot; + __dirname));
 app.listen(process.env.PORT || 9000);</code></pre>
-<p>les fichiers à déployer sont dans la folder <code>/dist</code><br>Modifier <code>Gruntfile.js</code> pour lui faire copier le Procfile, le <code>web.js</code>.
-TODO : Lui faire copier une version déployable du <code>package.json</code> (nécessaire !)<br>TOFIX : problème avec certaines tasks (la minification notamment, lié à angular-ui (dep cyclic) et ng-grid)<br>Initialiser un repo git au niveau de <code>/dist</code></p>
+<p>les fichiers à déployer sont dans la folder <code>/dist</code><br>Modifier <code>Gruntfile.js</code> pour lui faire copier le Procfile, le <code>web.js</code>.<br>TODO : Lui faire copier une version déployable du <code>package.json</code> (nécessaire !)<br>TOFIX : problème avec certaines tasks (la minification notamment, lié à angular-ui (dep cyclic) et ng-grid)<br>Initialiser un repo git au niveau de <code>/dist</code></p>
 <p>puis en console au niveau de <code>/dist</code> :</p>
 <pre><code>$ heroku login
 $ heroku create</code></pre><p>créer le repo, commit</p>

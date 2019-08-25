@@ -296,15 +296,13 @@
 </blockquote>
 <p>Martin Fowler deal with this question in <a href="https://martinfowler.com/bliki/FeatureToggle.html">his feature toggle article</a> :</p>
 <blockquote>
-<p>A common question we hear about feature toggles concerns testing - <strong>does using feature toggles mean a combinatorial<br>explosion of tests</strong>? In general there’s <strong>no need to test all combinations of features</strong>.
-For release toggles it’s usually sufficient to run two combinations :</p>
+<p>A common question we hear about feature toggles concerns testing - <strong>does using feature toggles mean a combinatorial<br>explosion of tests</strong>? In general there’s <strong>no need to test all combinations of features</strong>.<br>For release toggles it’s usually sufficient to run two combinations :</p>
 <ul>
 <li>all the toggles on that are expected to be on in the next release</li>
 <li>all toggles on</li>
 </ul>
 <p>This is pretty much the same as what you need to do with feature branches if you want to find any integration bugs.</p>
-<p><strong>It’s very important to retire release toggles once the pending features have bedded down in production</strong>.
-This involves removing the definitions on the configuration file and all the code that uses them.<br><strong>Otherwise you will get a pile of toggles that nobody can remember how to use</strong>. In one memorable example I heard of,<br>it required making a special recompilation of the linux kernel to handle enough command line switches.</p>
+<p><strong>It’s very important to retire release toggles once the pending features have bedded down in production</strong>.<br>This involves removing the definitions on the configuration file and all the code that uses them.<br><strong>Otherwise you will get a pile of toggles that nobody can remember how to use</strong>. In one memorable example I heard of,<br>it required making a special recompilation of the linux kernel to handle enough command line switches.</p>
 </blockquote>
 <h4 id="title-feature-branches-vs-feature-toggles">feature branches vs feature toggles</h4>
 <p><a href="https://fournines.wordpress.com/2011/11/20/feature-branches-vs-feature-toggles/">Feature branches vs. feature toggles : fournines.wordpress.com : 20111120</a></p>
