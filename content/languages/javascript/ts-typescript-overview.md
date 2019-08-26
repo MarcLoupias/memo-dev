@@ -218,13 +218,29 @@ f(1, null); // error, 'null' is not assignable to 'number | undefined'
 > allows destructured import : `import { Foo, Bar, Baz } from '../demo'; // demo/index.ts is implied`
 >
 
-## TSLint
+## Linters
+
+### TSLint
 
 [tslint - palantir.github.io](https://palantir.github.io/tslint/)
 
 [TSLint command-line interface](https://palantir.github.io/tslint/usage/cli/)
 
 [TSLint rules list](https://palantir.github.io/tslint/rules/)
+
+#### TSLint deprecated soon
+
+[TSLint in 2019 - medium.com/palantir - 20190219](https://medium.com/palantir/tslint-in-2019-1a144c2317a9)
+
+TSLint will be deprecated asap in favor of **typescript-eslint**.
+
+### typescript-eslint
+
+[https://github.com/typescript-eslint](https://github.com/typescript-eslint)
+
+[typescript-eslint/typescript-eslint - github.com](https://github.com/typescript-eslint/typescript-eslint)
+
+> Monorepo for all the tooling which enables ESLint to support TypeScript [https://typescript-eslint.io/](https://typescript-eslint.io/)
 
 ## videos
 
