@@ -28,6 +28,7 @@ Développé par Microsoft
 
 - [site officiel : typescriptlang.org](http://www.typescriptlang.org/)
 - [TypeScript : fr.wikipedia.org](https://fr.wikipedia.org/wiki/TypeScript)
+- [TypeScript official roadmap](https://github.com/Microsoft/TypeScript/issues/29288)
 
 ## auteurs / contributeurs
 
