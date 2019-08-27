@@ -455,6 +455,11 @@ Martin Fowler deal with this question in [his feature toggle article](https://ma
   - founder of Node.js, denom, ...
   - [Interview with Ryan Dahl, Creator of Node.js - www.mappingthejourney.com - 20170831](https://www.mappingthejourney.com/single-post/2017/08/31/episode-8-interview-with-ryan-dahl-creator-of-nodejs/)
 
+- [Peter Van Roy](https://www.info.ucl.ac.be/~pvr/cvvanroy.html)
+  - [Programming Paradigms forDummies:  What EveryProgrammer Should Know](https://www.info.ucl.ac.be/~pvr/VanRoyChapter.pdf)
+  - [Une taxonomie des principaux paradigmes de programmation](https://www.info.ucl.ac.be/~pvr/paradigmes.html)
+  - [Les principaux paradigmes de programmation](https://www.info.ucl.ac.be/~pvr/paradigmsDIAGRAM.pdf)
+
 - [Top 10 Programming Books Every Software Developer Should Read](https://www.youtube.com/watch?v=UX4YijQ3zhc)
 
 ## histoire
