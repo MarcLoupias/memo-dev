@@ -672,3 +672,116 @@ See [decorators from www.typescriptlang.org/docs/handbook](http://www.typescript
 [InversifyJS - github.com/inversify](https://github.com/inversify/InversifyJS)
 
 > A powerful and lightweight inversion of control container for JavaScript & Node.js apps powered by TypeScript.
+
+## Tricks
+
+### Nominal typing
+
+[Nominal typing techniques in TypeScript - `michalzalecki.com` - 20171227 - Michal Zalecki](https://michalzalecki.com/nominal-typing-in-typescript/)
+
+- Approach #1: Class with a private property
+
+```typescript
+class USD {
+  private __nominal: void;
+  constructor(public value: number) {};
+}
+
+class EUR {
+  private __nominal: void;
+  constructor(public value: number) {};
+}
+
+const usd = new USD(10);
+const eur = new EUR(10);
+
+function gross(net: USD, tax: USD) {
+  return { value: net.value + tax.value } as USD;
+}
+
+gross(usd, usd); // ok
+gross(eur, usd); // Error: Types have separate declarations of a private property '__nominal'.
+```
+
+- Approach #2: Brands
+
+```typescript
+interface USD {
+  _usdBrand: void;
+  value: number;
+}
+
+interface EUR {
+  _eurBrand: void;
+  value: number;
+}
+
+let usd: USD = { value: 10 } as USD;
+let eur: EUR = { value: 10 } as EUR;
+
+function gross(net: USD, tax: USD) {
+  return { value: net.value + tax.value } as USD;
+}
+
+gross(usd, usd); // ok
+gross(eur, usd); // Error: Property '_usdBrand' is missing in type 'EUR'.
+```
+
+- Approach #3: Intersection types
+
+```typescript
+class Currency<T extends string> {
+  private as: T;
+}
+
+type USD = number & Currency<"USD">
+type EUR = number & Currency<"EUR">
+
+const usd = 10 as USD;
+const eur = 10 as EUR;
+
+function gross(net: USD, tax: USD) {
+  return (net + tax) as USD;
+}
+
+gross(usd, usd); // ok
+gross(eur, usd); // Error: Type '"EUR"' is not assignable to type '"USD"'.
+
+// ...
+
+function ofUSD(value: number) {
+  return value as USD;
+}
+
+function ofEUR(value: number) {
+  return value as EUR;
+}
+
+const usd = ofUSD(10);
+const eur = ofEUR(10);
+
+function gross(net: USD, tax: USD) {
+  return ofUSD(net + tax);
+}
+```
+
+- Approach #4: Intersection types and brands
+
+```typescript
+type Brand<K, T> = K & { __brand: T }
+
+type USD = Brand<number, "USD">
+type EUR = Brand<number, "EUR">
+
+const usd = 10 as USD;
+const eur = 10 as EUR;
+
+function gross(net: USD, tax: USD): USD {
+  return (net + tax) as USD;
+}
+
+gross(usd, usd); // ok
+gross(eur, usd); // Type '"EUR"' is not assignable to type '"USD"'.
+```
+
+[This PR in typescript repo](https://github.com/microsoft/TypeScript/pull/33038) will maybe land.
