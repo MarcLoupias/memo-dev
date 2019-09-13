@@ -155,6 +155,7 @@ htmlHead:
 - [GitHub Actions: built by you, run by us - `github.blog` - 20181017](https://github.blog/2018-10-17-action-demos/)
 - [GitHub Actions: Updates to GitHub Actions (limited public beta) - `github.blog` - 20190808](https://github.blog/changelog/2019-08-08-updates-to-github-actions-limited-public-beta/)
 - [GitHub Actions: Publishing packages from a GitHub Action to GitHub Package Registry - `github.blog` - 20190816](https://github.blog/changelog/2019-08-16-publishing-packages-from-a-github-action-to-github-package-registry/)
+- [GitHub Actions: Proxying packages with GitHub Package Registry and other updates - `github.blog` - 20190911](https://github.blog/2019-09-11-proxying-packages-with-github-package-registry-and-other-updates/)
 
 #### GitHub Package Registry
 
@@ -169,7 +170,6 @@ htmlHead:
 - [Introducing GitHub Package Registry - `github.blog` - 20190510](https://github.blog/2019-05-10-introducing-github-package-registry/)
 - [Updated deletion policy for packages - `github.blog` - 20190613](https://github.blog/changelog/2019-06-13-updated-deletion-policy-for-packages/)
 - [GitHub Actions: Publishing packages from a GitHub Action to GitHub Package Registry - `github.blog` - 20190816](https://github.blog/changelog/2019-08-16-publishing-packages-from-a-github-action-to-github-package-registry/)
-- [Proxying packages with GitHub Package Registry and other updates - `github.blog` - 20190816](https://github.blog/2019-09-11-proxying-packages-with-github-package-registry-and-other-updates/)
 
 ### resources
 
