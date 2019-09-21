@@ -106,6 +106,29 @@ Conclusions contested by [The rise and fall of the chaos report figures - IEEE S
 
 - [le-triangle-qualite-cout-delai : geek-directeur-technique.com](http://www.geek-directeur-technique.com/2009/07/10/le-triangle-qualite-cout-delai)
 
+```text
+          QUALITE
+             ^
+            / \
+           /   \
+          /     \
+         /       \
+        / PROJET  \
+       /           \
+COUT  /_____________\ DELAI
+
+Utiliser le triangle :
+
+- Rapide et pas cher : Mauvaise qualité
+- Rapide et de bonne qualité : Cher
+- Bonne qualité et pas cher : Lent
+
+Ce qu’il faut éviter (ou qui n'existe pas) :
+
+- Rapide, de bonne qualité et pas cher
+- Lent, de mauvaise qualité, et cher
+```
+
 - [Project management triangle](https://en.wikipedia.org/wiki/Project_management_triangle)
 
 ```text
@@ -117,11 +140,15 @@ Conclusions contested by [The rise and fall of the chaos report figures - IEEE S
          /       \
         / QUALITY \
        /           \
-SCOPE /_____________\ TIME
+COST  /_____________\ TIME
 
 1. The quality of work is constrained by the project's budget, deadlines and scope (features).
 2. The project manager can trade between constraints.
 3. Changes in one constraint necessitate changes in others to compensate or quality will suffer.
+
+For example, a project can be completed faster by increasing budget or cutting scope. Similarly, increasing scope may require equivalent increases in budget and schedule. Cutting budget without adjusting schedule or scope will lead to lower quality.
+
+In practice, however, trading between constraints is not always possible. For example, throwing money (and people) at a fully staffed project can slow it down. Moreover, in poorly run projects it is often impossible to improve budget, schedule or scope without adversely affecting quality.
 ```
 
 ## services
