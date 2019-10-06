@@ -58,3 +58,4 @@ htmlHead:
 
 - [Google Analytics](https://www.google.com/intl/fr_fr/analytics/)
 - [XiTi](http://www.xiti.com/)
+- [Ackee](https://ackee.electerious.com/) Self-hosted, Node.js based analytics tool - [server](https://github.com/electerious/Ackee) [https://github.com/electerious/ackee-tracker](client)
