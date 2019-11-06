@@ -210,6 +210,10 @@ htmlHead:
 
 [CDEFI (Conférence des Directeurs des Ecoles Françaises d'Ingénieurs) - Chiffres clés - Les écoles françaises d'ingénieurs](http://www.cdefi.fr/fr/la-cdefi/chiffres-cles)
 
+> Avec plus  de  19  000  créations  nettes  d’emplois  en  2016,  derniers  chiffres  officiels  connus,  le  secteur  logiciels  et  services  a  été  fortement  créateur  d’emplois   pour   la   septième   année   consécutive   et   les   chiffres   des   recrutements  réalisés  en  2017  seront  dans  la  droite  ligne  de  ces  excellents  résultats
+
+[Rapport d'activité 2017 SYNTEC numérique, page 5](https://syntec-numerique.fr/sites/default/files/Documents/Rapport_dactivites_2017_Syntec_Numerique_0.pdf)
+
 [Les développeurs nés dans les années 70 auraient commencé à écrire leurs premières lignes de code plus tôt](https://www.developpez.net/forums/d1806349/club-professionnels-informatique/actualites/developpeurs-nes-annees-70-auraient-commence-ecrire-leurs-premieres-lignes-code-plus-tot/#post9951654)
 
 ## compétences dev front, dev back, devops
