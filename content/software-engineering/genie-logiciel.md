@@ -460,6 +460,12 @@ Martin Fowler deal with this question in [his feature toggle article](https://ma
   - [Une taxonomie des principaux paradigmes de programmation](https://www.info.ucl.ac.be/~pvr/paradigmes.html)
   - [Les principaux paradigmes de programmation](https://www.info.ucl.ac.be/~pvr/paradigmsDIAGRAM.pdf)
 
+- [Arnaud Lemaire](https://medium.com/@Lilobase)
+  - [Entre industrialisation et artisanat, le métier de développeur. - Arnaud Lemaire - Agile Pays Basque 2018](https://www.youtube.com/watch?v=bQfumbBN6YQ) [slides](https://speakerdeck.com/lilobase/entre-industrialisation-et-artisanat-le-metier-de-developpeur-agilepaysbasque-2018)
+  - [Dette technique et entropie du logiciel - 20180208](https://www.youtube.com/watch?v=VKe9EE4MUxk)
+  - [Mettez en place des habitudes plutôt que des processus : l’amélioration continue pilotée par les KPI - 2015](https://lilobase.wordpress.com/2015/05/13/mettez-en-place-des-habitudes-plutot-que-des-processus-lamelioration-continue-pilotee-par-les-kpi/)
+  - [Pourquoi les jeux-concours pour développeurs m’exaspèrent-ils ? - 2017](https://medium.com/arpinum/pourquoi-les-jeux-concours-pour-d%C3%A9veloppeurs-mexasp%C3%A8rent-ils-e85fd87e7463)
+
 - [Top 10 Programming Books Every Software Developer Should Read](https://www.youtube.com/watch?v=UX4YijQ3zhc)
 
 ## histoire

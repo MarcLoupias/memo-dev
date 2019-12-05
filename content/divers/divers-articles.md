@@ -175,6 +175,110 @@ htmlHead:
 
 [putain de code](http://putaindecode.io/fr/articles/)
 
+## metier developpeur
+
+[Entre industrialisation et artisanat, le métier de développeur. - Arnaud Lemaire - Agile Pays Basque 2018](https://www.youtube.com/watch?v=bQfumbBN6YQ) [slides](https://speakerdeck.com/lilobase/entre-industrialisation-et-artisanat-le-metier-de-developpeur-agilepaysbasque-2018)
+
+> Définition ingénierie :
+>
+> "The engineering method is the use of heuristics to cause the best change in a poorly understood or uncertain situation within the available resources."
+>
+> Billy Vaughn Koen in [Definition of the Engineering Method](https://files.eric.ed.gov/fulltext/ED276572.pdf)
+>
+> Normalement le terrain (les practitioners) drivent les académiques qui prennent compte de leurs retours pour expliquer comment fonctionner.
+>
+> En dev logiciel depuis 40 ans on fait l'inverse, l'académique dit il faut faire comme ça, et le terrain dit que ça ne fonctionne pas.
+>
+> On passe du domaine du problème au domaine de solution via l'ingénierie.
+>
+> Pour transposer au dev il remplace le terme ingénierie par développement.
+>
+> "Essentially, all models are wrong, but some are useful."
+>
+> Box, George E.P.; Norman R. Draper in Empirical Model-Building and Response (1987)
+>
+> Pourquoi ? Parce que tous les modèles sont des simplifications de la réalité.
+>
+> Problème dans en mode client/fournisseur c'est que le client adore venir avec ses propres modèles obsolètes et inadaptés.
+>
+> Le problem space a une vitesse de changement beaucoup plus lente que le solution space qui a lui une vitesse de changement extrême.
+>
+> Le problème c'est que les gens cherchent à modéliser le solution space au lieu de modéliser le solution space.
+>
+> "Models are useless, modeling is everything"
+>
+> En tant que dev on doit discuter du problem space avec le business et pas du solution space entre nous.
+>
+> Normalement le client n'a pas à imposer une solution technique, c'est pas son métier c'est celui du dev.
+>
+> Il faut aller chercher la spécifité métier sur chaque projet. C'est le DDD (Domain Driver Dev).
+>
+> Ne s'étudie pas. Ne pas se restreindre à son espace de confort (qui est dans la solution zone).
+>
+> En logiciel on n'a pas d'humains dans la production. Qu'est-ce qu'il veut dire par là :
+>
+> - En ingénierie la finalité est de produire une documentation expliquant le design.
+> - Quand le design est ok, il est donné à l'équipe de production (aux skills différentes)
+> - L'équipe de prod construit le produit
+>
+> Image des ingénieurs qui pondent des specs filées aux grouillots qui produisent.
+>
+> Citation de What is Software Design ? Jack W. Reeves
+>
+> Qui dit que c'est le code qui est la spec. Le build est réalisé par le compilateur.
+>
+> Living Documentation (reconstruire le design à partir du code source) (ex: [asciidoctor](https://asciidoctor.org/))
+>
+> On prend le code source et on en tire une modélisation et surtout pas l'inverse.
+>
+> "Any tool that lets a non-programmer buld executable programs will eventually become sufficiently complicated that the user is effectively a programmer"
+>
+> The Verraes Hypothesis.
+>
+> C'est l'example de rational rose et UML où on pouvait soi-disant générer du soft utilisable sur la base de diagrammes UML.
+>
+> Ne fonctionne pas.
+>
+> Engineering is about feedback loop.
+>
+> De l'empirical au defined. Empirical on fait le prototype en premier et defined on fait les specs upfront.
+>
+> La différence entre les deux c'est le cout du prototypage qui est très faible en empirical et très cher en upfront.
+>
+> En logiciel notre cout est très faible (c'est le compilo qui produit) mais on fonctionne en specs upfront.
+>
+> Ce qui coute très cher c'est la longueur de la boucle de feedback, sauf lorsque le cout du prototype est énorme (avionnique)
+>
+> Le seul moyen de savoir que ça marche c'est de tester avant.
+>
+> Pratiques de l'extreme programming pour avoir plein de feedback loops.
+>
+> Quelque chose à de la valeur seulement lorsqu'il a été livré.
+>
+> Focus sur CI voire Continuous Delivery.
+>
+> Pas possible faire du CD sans tests.
+>
+> Constraint theory, dans un système séquentiel si une étape est un goulot d'étranglement il ralentit l'ensemble.
+>
+> "Adding human resources to a late software project makes it later", Fred Brooks (The Mythical Man-Month 1975)
+>
+> **"pull based approach" C'est à l'étape en contrainte de tirer le travail plutôt que ce soit les étapes précédentes essaient de bourrer l'étape en contrainte.**
+>
+> **"The quality of today is the productivity of tomorrow"**
+>
+> Jean-Baptiste Dusseaut @BodySplash
+>
+> La surqualité n'existe pas, soit on en a soit on en a pas.
+>
+> Knows your fundamentals not your tools.
+>
+> Engineering is about designing solution.
+>
+> Go beyond Clean code.
+>
+> Our job is to create application, not writing beautiful code.
+
 ## nb de développeurs
 
 [4,7 millions de développeurs en Europe, Londres et Paris en tête : blog.jobtic.fr](http://blog.jobtic.fr/47-millions-de-developpeurs-europe-londres-paris-tete/)
