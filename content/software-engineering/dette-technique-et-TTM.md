@@ -1,6 +1,6 @@
 ---
 htmlHead:
-    title: 'marlou knowledge base' 
+    title: 'marlou knowledge base'
     containerClass: 'markdown-body'
     metaTags:
         - name: viewport
@@ -44,6 +44,18 @@ htmlHead:
 La dette technique appliquée au développement logiciel, en particulier en web, c'est à peu près comme avancer sur un tapis roulant en sens inverse.
 Au début ce tapis roulant fonctionne très lentement. Il faut affecter une partie de son énergie pour s'assurer que le tapis continue de tourner lentement en effaçant la dette.
 Si on ne le fait pas, on va peut être avancer plus vite au début, mais plus le tapis ira vite plus on ralentira, et on finira par faire du sur-place puis par tomber.
+
+### rotten software
+
+Synonymes : Software rot, also known as code rot, software erosion, software decay or software entropy.
+
+Cf [Software rot - en.wikipedia.org](https://en.wikipedia.org/wiki/Software_rot)
+
+**Attention** Revoir la définition ci-dessus (surtout le tapis roulant) au regard de [la perception de Arnaud Lemaire](https://www.youtube.com/watch?v=VKe9EE4MUxk) basée sur la définition de Ward Cuningham :
+
+La dette est un choix à ne pas confondre avec le "rotten software".
+
+Dans quelle catégorie faire entrer l'évolution technique ?
 
 ## Time To Market
 
