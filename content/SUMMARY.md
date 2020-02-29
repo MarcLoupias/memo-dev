@@ -1,6 +1,6 @@
 ---
 htmlHead:
-    title: 'marlou knowledge base' 
+    title: 'marlou knowledge base'
     containerClass: 'markdown-body'
     metaTags:
         - name: viewport
@@ -120,10 +120,11 @@ htmlHead:
 * [javascript - tools - npm - shrinkwrap](languages/javascript/tools/npm/npm-shrinkwrap.md)
 * [javascript - testing - debug in webstorm](languages/javascript/testing/debug-js-in-webstorm.md)
 * [javascript - testing - jasmine](languages/javascript/testing/jasmine.md)
-* [javascript - testing - js TDD](languages/javascript/testing/js-TDD.md)
+* [javascript - testing - testing tools for javascript](languages/javascript/testing/testing-tools-for-javascript.md)
 * [javascript - testing - karma](languages/javascript/testing/karma.md)
 * [javascript - testing - qunit](languages/javascript/testing/qunit.md)
 * [javascript - testing - cypress](languages/javascript/testing/cypress.md)
+* [javascript - testing - jest](languages/javascript/testing/jest.md)
 * [javascript - ES6 overview](languages/javascript/ES6-overview.md)
 * [javascript - ES6 proxies](languages/javascript/ES6-proxies.md)
 * [javascript - ES6 promises](languages/javascript/ES6-promises.md)
