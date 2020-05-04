@@ -1,126 +1,144 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.82f7552b.js"></script></head><body><article class="markdown-body"><h1 id="title-linux---manipuler-les-fichiers">Linux - Manipuler les fichiers</h1>
-<h2 id="title-cat"><code>cat</code></h2>
-<p><code>cat book.json</code> affiche le contenu de <code>book.json</code> sur la sortie standard</p>
-<p><code>cat book.json .gitignore</code> affiche le contenu de <code>book.json</code> et de <code>.gitignore</code> à la suite sur la sortie standard</p>
-<p><code>cat book.json .gitignore &gt; content.log</code> enregistre le contenu de <code>book.json</code> et de <code>.gitignore</code> à la suite dans un fichier <code>content.log</code></p>
-<h2 id="title-tac"><code>tac</code></h2>
-<p>Fait tout pareil que cat mais en lisant les fichiers depuis la dernière ligne vers la première.</p>
-<h2 id="title-head"><code>head</code></h2>
-<p>Affiche les premières ligne d’un fichier (10 par défaut)</p>
-<h2 id="title-tail"><code>tail</code></h2>
-<p>Affiche les dernières ligne d’un fichier (10 par défaut)</p>
-<h2 id="title-nl"><code>nl</code></h2>
-<p>Affiche le contenu d’un fichier en numérotant les lignes</p>
-<h2 id="title-uniq"><code>uniq</code></h2>
-<p>Affiche le contenu d’un fichier sans les doublons de lignes</p>
-<h2 id="title-sort"><code>sort</code></h2>
-<p>Affiche le contenu d’un fichier en triant les lignes (par ordre alphabétique par défaut)</p>
-<h2 id="title-split"><code>split</code></h2>
-<p>Découpe un fichier par blocs en fonction d’une taille en octets ou d’un nombre de lignes.</p>
-<p>La commande <code>cat</code> permet de concaténer facilement un fichier découpé avec <code>split</code>.</p>
-<h2 id="title-diff"><code>diff</code></h2>
-<p>Permet d’afficher les différences entre 2 fichiers.</p>
-<p><code>diff &lt;options&gt; fichier-1 fichier-2</code></p>
-<h2 id="title-wc"><code>wc</code></h2>
-<p>Permet de compter le nombre de caractères, de mots et de lignes d’un fichier.</p>
-<pre><code class="lang-bash">
-$ wc book.json
- 3  9 56 book.json
-</code></pre>
-<p>Le fichier <code>book.json</code> comporte 3 lignes, 9 mots, et 56 caractères.</p>
-<h2 id="title-file"><code>file</code></h2>
-<p>Permet de connaitre le type d’un fichier.</p>
-<pre><code class="lang-bash">
-$ file book.json
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Linux - Manipuler les fichiers | marlou knowledge base</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="knowledge db tool">
+    <meta name="robots" content="none">
+    <link rel="preload" href="/assets/css/0.styles.e34db02d.css" as="style"><link rel="preload" href="/assets/js/app.637efe70.js" as="script"><link rel="preload" href="/assets/js/2.b10fadef.js" as="script"><link rel="preload" href="/assets/js/153.42bea07d.js" as="script"><link rel="prefetch" href="/assets/js/10.22935b49.js"><link rel="prefetch" href="/assets/js/100.7ca947ee.js"><link rel="prefetch" href="/assets/js/101.8ba2e31d.js"><link rel="prefetch" href="/assets/js/102.d8d8bd45.js"><link rel="prefetch" href="/assets/js/103.724d98a2.js"><link rel="prefetch" href="/assets/js/104.229a7daf.js"><link rel="prefetch" href="/assets/js/105.a8992225.js"><link rel="prefetch" href="/assets/js/106.262de88d.js"><link rel="prefetch" href="/assets/js/107.8efd7b04.js"><link rel="prefetch" href="/assets/js/108.272f61b3.js"><link rel="prefetch" href="/assets/js/109.24df76b6.js"><link rel="prefetch" href="/assets/js/11.d5b1d4cb.js"><link rel="prefetch" href="/assets/js/110.150d9241.js"><link rel="prefetch" href="/assets/js/111.7beccf9a.js"><link rel="prefetch" href="/assets/js/112.64abb596.js"><link rel="prefetch" href="/assets/js/113.21df8db0.js"><link rel="prefetch" href="/assets/js/114.d2ee704f.js"><link rel="prefetch" href="/assets/js/115.6f1faf52.js"><link rel="prefetch" href="/assets/js/116.bd0f13dd.js"><link rel="prefetch" href="/assets/js/117.fd51dc78.js"><link rel="prefetch" href="/assets/js/118.66e74dff.js"><link rel="prefetch" href="/assets/js/119.4337ee99.js"><link rel="prefetch" href="/assets/js/12.1d40092c.js"><link rel="prefetch" href="/assets/js/120.2fa8dabf.js"><link rel="prefetch" href="/assets/js/121.e8bc328e.js"><link rel="prefetch" href="/assets/js/122.61be7766.js"><link rel="prefetch" href="/assets/js/123.0987b380.js"><link rel="prefetch" href="/assets/js/124.a8228815.js"><link rel="prefetch" href="/assets/js/125.da5ddb5b.js"><link rel="prefetch" href="/assets/js/126.ef9294eb.js"><link rel="prefetch" href="/assets/js/127.6d454b88.js"><link rel="prefetch" href="/assets/js/128.391b2a2a.js"><link rel="prefetch" href="/assets/js/129.65f99f29.js"><link rel="prefetch" href="/assets/js/13.5ac00ad7.js"><link rel="prefetch" href="/assets/js/130.3ba7f5d7.js"><link rel="prefetch" href="/assets/js/131.c503b102.js"><link rel="prefetch" href="/assets/js/132.a9a24540.js"><link rel="prefetch" href="/assets/js/133.4123c476.js"><link rel="prefetch" href="/assets/js/134.274a3288.js"><link rel="prefetch" href="/assets/js/135.bb2c7d32.js"><link rel="prefetch" href="/assets/js/136.a465244f.js"><link rel="prefetch" href="/assets/js/137.fddb3a45.js"><link rel="prefetch" href="/assets/js/138.e234216b.js"><link rel="prefetch" href="/assets/js/139.b7e43724.js"><link rel="prefetch" href="/assets/js/14.21337ce4.js"><link rel="prefetch" href="/assets/js/140.91296b2b.js"><link rel="prefetch" href="/assets/js/141.be88b3fd.js"><link rel="prefetch" href="/assets/js/142.2ccd0078.js"><link rel="prefetch" href="/assets/js/143.6c82f67e.js"><link rel="prefetch" href="/assets/js/144.a8517fb5.js"><link rel="prefetch" href="/assets/js/145.95f3679d.js"><link rel="prefetch" href="/assets/js/146.c61db4d0.js"><link rel="prefetch" href="/assets/js/147.007b7310.js"><link rel="prefetch" href="/assets/js/148.946a7d6c.js"><link rel="prefetch" href="/assets/js/149.905e90c5.js"><link rel="prefetch" href="/assets/js/15.9bb06f3e.js"><link rel="prefetch" href="/assets/js/150.f5f1829f.js"><link rel="prefetch" href="/assets/js/151.b29c3c08.js"><link rel="prefetch" href="/assets/js/152.e003263b.js"><link rel="prefetch" href="/assets/js/154.99162c75.js"><link rel="prefetch" href="/assets/js/155.7e4aa547.js"><link rel="prefetch" href="/assets/js/156.4ffce4b5.js"><link rel="prefetch" href="/assets/js/157.7708b7d9.js"><link rel="prefetch" href="/assets/js/158.d6fdc49f.js"><link rel="prefetch" href="/assets/js/159.e4a37544.js"><link rel="prefetch" href="/assets/js/16.26987fe7.js"><link rel="prefetch" href="/assets/js/160.dc39d489.js"><link rel="prefetch" href="/assets/js/161.9f6938b4.js"><link rel="prefetch" href="/assets/js/162.b1ee186e.js"><link rel="prefetch" href="/assets/js/163.2f776a00.js"><link rel="prefetch" href="/assets/js/164.1a0c607f.js"><link rel="prefetch" href="/assets/js/165.b7c61ad8.js"><link rel="prefetch" href="/assets/js/166.4a25dfb9.js"><link rel="prefetch" href="/assets/js/167.a5ae9090.js"><link rel="prefetch" href="/assets/js/168.292c8760.js"><link rel="prefetch" href="/assets/js/169.a0ef8135.js"><link rel="prefetch" href="/assets/js/17.e34ddbab.js"><link rel="prefetch" href="/assets/js/170.3188efba.js"><link rel="prefetch" href="/assets/js/171.77cfab9d.js"><link rel="prefetch" href="/assets/js/172.5e4fec9c.js"><link rel="prefetch" href="/assets/js/173.11c242c5.js"><link rel="prefetch" href="/assets/js/174.2c0fb115.js"><link rel="prefetch" href="/assets/js/175.9a3247d5.js"><link rel="prefetch" href="/assets/js/176.2bee7add.js"><link rel="prefetch" href="/assets/js/177.f2f4c33c.js"><link rel="prefetch" href="/assets/js/178.0ad8c83c.js"><link rel="prefetch" href="/assets/js/179.d1b20721.js"><link rel="prefetch" href="/assets/js/18.4edca711.js"><link rel="prefetch" href="/assets/js/180.6560ab66.js"><link rel="prefetch" href="/assets/js/181.45668382.js"><link rel="prefetch" href="/assets/js/182.20c5cd51.js"><link rel="prefetch" href="/assets/js/183.78f61cd6.js"><link rel="prefetch" href="/assets/js/184.fefb8dfb.js"><link rel="prefetch" href="/assets/js/185.453d4b68.js"><link rel="prefetch" href="/assets/js/186.53ecdfb0.js"><link rel="prefetch" href="/assets/js/187.494a7e47.js"><link rel="prefetch" href="/assets/js/188.9787771f.js"><link rel="prefetch" href="/assets/js/189.513bff62.js"><link rel="prefetch" href="/assets/js/19.7e8c66bd.js"><link rel="prefetch" href="/assets/js/190.d79b46fa.js"><link rel="prefetch" href="/assets/js/191.5be1cfe3.js"><link rel="prefetch" href="/assets/js/192.c882396d.js"><link rel="prefetch" href="/assets/js/193.b59d1a50.js"><link rel="prefetch" href="/assets/js/194.c5188dbe.js"><link rel="prefetch" href="/assets/js/195.85606e4c.js"><link rel="prefetch" href="/assets/js/196.1e37d696.js"><link rel="prefetch" href="/assets/js/197.d2c25126.js"><link rel="prefetch" href="/assets/js/198.0bd70829.js"><link rel="prefetch" href="/assets/js/199.90750781.js"><link rel="prefetch" href="/assets/js/20.1c2bab36.js"><link rel="prefetch" href="/assets/js/200.fc3d19f2.js"><link rel="prefetch" href="/assets/js/201.c48d42c4.js"><link rel="prefetch" href="/assets/js/202.52dc433b.js"><link rel="prefetch" href="/assets/js/203.cf1eab7e.js"><link rel="prefetch" href="/assets/js/204.f7ab9ced.js"><link rel="prefetch" href="/assets/js/205.f8a5b9ce.js"><link rel="prefetch" href="/assets/js/206.bdfe94e3.js"><link rel="prefetch" href="/assets/js/207.1513e07c.js"><link rel="prefetch" href="/assets/js/208.53ebf798.js"><link rel="prefetch" href="/assets/js/209.cb760c7a.js"><link rel="prefetch" href="/assets/js/21.f6401f33.js"><link rel="prefetch" href="/assets/js/210.e394a8ee.js"><link rel="prefetch" href="/assets/js/211.e6dcf06e.js"><link rel="prefetch" href="/assets/js/212.ec7b6bbb.js"><link rel="prefetch" href="/assets/js/213.a8b9c331.js"><link rel="prefetch" href="/assets/js/214.80f58a60.js"><link rel="prefetch" href="/assets/js/215.1aafc0fc.js"><link rel="prefetch" href="/assets/js/216.bd966360.js"><link rel="prefetch" href="/assets/js/217.ba7c9f8b.js"><link rel="prefetch" href="/assets/js/218.f153a403.js"><link rel="prefetch" href="/assets/js/219.c27fc0b1.js"><link rel="prefetch" href="/assets/js/22.3c998aa8.js"><link rel="prefetch" href="/assets/js/220.1aefeac1.js"><link rel="prefetch" href="/assets/js/221.966df196.js"><link rel="prefetch" href="/assets/js/222.32c85ec7.js"><link rel="prefetch" href="/assets/js/223.d3cf088d.js"><link rel="prefetch" href="/assets/js/224.aacbceaf.js"><link rel="prefetch" href="/assets/js/225.54cd3b6a.js"><link rel="prefetch" href="/assets/js/226.313b725c.js"><link rel="prefetch" href="/assets/js/227.4c1d3f3d.js"><link rel="prefetch" href="/assets/js/228.9e4a4832.js"><link rel="prefetch" href="/assets/js/229.f7697a3d.js"><link rel="prefetch" href="/assets/js/23.c0f91738.js"><link rel="prefetch" href="/assets/js/230.6bc69b17.js"><link rel="prefetch" href="/assets/js/231.79805394.js"><link rel="prefetch" href="/assets/js/232.8acab379.js"><link rel="prefetch" href="/assets/js/233.31ff62c4.js"><link rel="prefetch" href="/assets/js/234.19a9a922.js"><link rel="prefetch" href="/assets/js/235.2f5e5e2c.js"><link rel="prefetch" href="/assets/js/236.62db3ffe.js"><link rel="prefetch" href="/assets/js/237.509d547e.js"><link rel="prefetch" href="/assets/js/238.8475cde0.js"><link rel="prefetch" href="/assets/js/239.9bd44b93.js"><link rel="prefetch" href="/assets/js/24.a3735d29.js"><link rel="prefetch" href="/assets/js/240.ad624c47.js"><link rel="prefetch" href="/assets/js/241.61ab0ed8.js"><link rel="prefetch" href="/assets/js/242.67a7e2f2.js"><link rel="prefetch" href="/assets/js/243.4979aaa3.js"><link rel="prefetch" href="/assets/js/244.47564eed.js"><link rel="prefetch" href="/assets/js/245.e4f54911.js"><link rel="prefetch" href="/assets/js/246.f6c3f80f.js"><link rel="prefetch" href="/assets/js/247.c72d22f2.js"><link rel="prefetch" href="/assets/js/248.861aee52.js"><link rel="prefetch" href="/assets/js/25.6c577ea7.js"><link rel="prefetch" href="/assets/js/26.23d30be7.js"><link rel="prefetch" href="/assets/js/27.a8c3c2fb.js"><link rel="prefetch" href="/assets/js/28.3964a549.js"><link rel="prefetch" href="/assets/js/29.8d84ed8f.js"><link rel="prefetch" href="/assets/js/3.407b1262.js"><link rel="prefetch" href="/assets/js/30.c47c033e.js"><link rel="prefetch" href="/assets/js/31.c76cd18c.js"><link rel="prefetch" href="/assets/js/32.4c176516.js"><link rel="prefetch" href="/assets/js/33.03614d45.js"><link rel="prefetch" href="/assets/js/34.8f016bfb.js"><link rel="prefetch" href="/assets/js/35.3e7ac883.js"><link rel="prefetch" href="/assets/js/36.3a81653e.js"><link rel="prefetch" href="/assets/js/37.0e02ab0d.js"><link rel="prefetch" href="/assets/js/38.389577c2.js"><link rel="prefetch" href="/assets/js/39.ec448a95.js"><link rel="prefetch" href="/assets/js/4.670e3e46.js"><link rel="prefetch" href="/assets/js/40.5872895f.js"><link rel="prefetch" href="/assets/js/41.0edbad11.js"><link rel="prefetch" href="/assets/js/42.ddf9efe1.js"><link rel="prefetch" href="/assets/js/43.fb844553.js"><link rel="prefetch" href="/assets/js/44.0d9766c2.js"><link rel="prefetch" href="/assets/js/45.855bc2d0.js"><link rel="prefetch" href="/assets/js/46.9e2bac87.js"><link rel="prefetch" href="/assets/js/47.d990bd89.js"><link rel="prefetch" href="/assets/js/48.e66af9df.js"><link rel="prefetch" href="/assets/js/49.9db08751.js"><link rel="prefetch" href="/assets/js/5.e5b2557f.js"><link rel="prefetch" href="/assets/js/50.f80c08ad.js"><link rel="prefetch" href="/assets/js/51.78cfa47e.js"><link rel="prefetch" href="/assets/js/52.7693c417.js"><link rel="prefetch" href="/assets/js/53.cdd88c0a.js"><link rel="prefetch" href="/assets/js/54.750058be.js"><link rel="prefetch" href="/assets/js/55.c9cf7c01.js"><link rel="prefetch" href="/assets/js/56.9ad92c71.js"><link rel="prefetch" href="/assets/js/57.6eedd395.js"><link rel="prefetch" href="/assets/js/58.3a9c94be.js"><link rel="prefetch" href="/assets/js/59.aac2506b.js"><link rel="prefetch" href="/assets/js/6.ff25a0d0.js"><link rel="prefetch" href="/assets/js/60.8dc8fb2d.js"><link rel="prefetch" href="/assets/js/61.ec95e76e.js"><link rel="prefetch" href="/assets/js/62.53bebb0b.js"><link rel="prefetch" href="/assets/js/63.baca2154.js"><link rel="prefetch" href="/assets/js/64.3b577191.js"><link rel="prefetch" href="/assets/js/65.2b4fcfe3.js"><link rel="prefetch" href="/assets/js/66.71a89744.js"><link rel="prefetch" href="/assets/js/67.ca3f6d0b.js"><link rel="prefetch" href="/assets/js/68.1c67dead.js"><link rel="prefetch" href="/assets/js/69.cd407fc4.js"><link rel="prefetch" href="/assets/js/7.d587d140.js"><link rel="prefetch" href="/assets/js/70.82c180fc.js"><link rel="prefetch" href="/assets/js/71.9d9a3f42.js"><link rel="prefetch" href="/assets/js/72.60ed8b2a.js"><link rel="prefetch" href="/assets/js/73.50a6b868.js"><link rel="prefetch" href="/assets/js/74.978f836e.js"><link rel="prefetch" href="/assets/js/75.94d44d96.js"><link rel="prefetch" href="/assets/js/76.44e13483.js"><link rel="prefetch" href="/assets/js/77.53c25b28.js"><link rel="prefetch" href="/assets/js/78.de06a106.js"><link rel="prefetch" href="/assets/js/79.984477ca.js"><link rel="prefetch" href="/assets/js/8.dd6f5e0b.js"><link rel="prefetch" href="/assets/js/80.776b120a.js"><link rel="prefetch" href="/assets/js/81.e592fad7.js"><link rel="prefetch" href="/assets/js/82.ac7d2ae9.js"><link rel="prefetch" href="/assets/js/83.456c2b24.js"><link rel="prefetch" href="/assets/js/84.dfb95f82.js"><link rel="prefetch" href="/assets/js/85.16d4fc84.js"><link rel="prefetch" href="/assets/js/86.40631864.js"><link rel="prefetch" href="/assets/js/87.394252cd.js"><link rel="prefetch" href="/assets/js/88.a5fb8258.js"><link rel="prefetch" href="/assets/js/89.631cb251.js"><link rel="prefetch" href="/assets/js/9.37f457df.js"><link rel="prefetch" href="/assets/js/90.6c273fb9.js"><link rel="prefetch" href="/assets/js/91.e7be43c7.js"><link rel="prefetch" href="/assets/js/92.6551645e.js"><link rel="prefetch" href="/assets/js/93.21633298.js"><link rel="prefetch" href="/assets/js/94.6588f8c4.js"><link rel="prefetch" href="/assets/js/95.fada5721.js"><link rel="prefetch" href="/assets/js/96.cda084cd.js"><link rel="prefetch" href="/assets/js/97.233e9461.js"><link rel="prefetch" href="/assets/js/98.d03f15b9.js"><link rel="prefetch" href="/assets/js/99.b6006dff.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e34db02d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">marlou knowledge base</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/data/" class="nav-link">
+  Data
+</a></div><div class="nav-item"><a href="/devops/" class="nav-link">
+  DevOps
+</a></div><div class="nav-item"><a href="/divers/" class="nav-link">
+  Divers
+</a></div><div class="nav-item"><a href="/network/" class="nav-link">
+  Network
+</a></div><div class="nav-item"><a href="/languages/" class="nav-link">
+  Languages
+</a></div><div class="nav-item"><a href="/platforms-frameworks-libs/" class="nav-link">
+  Platforms, frameworks and libs
+</a></div><div class="nav-item"><a href="/security/" class="nav-link">
+  Security
+</a></div><div class="nav-item"><a href="/software-engineering/" class="nav-link">
+  Software Engineering
+</a></div><div class="nav-item"><a href="/systems/" class="nav-link router-link-active">
+  Systems
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  Tools
+</a></div><div class="nav-item"><a href="/web/" class="nav-link">
+  Web
+</a></div><div class="nav-item"><a href="https://github.com/MarcLoupias/memo-dev" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/data/" class="nav-link">
+  Data
+</a></div><div class="nav-item"><a href="/devops/" class="nav-link">
+  DevOps
+</a></div><div class="nav-item"><a href="/divers/" class="nav-link">
+  Divers
+</a></div><div class="nav-item"><a href="/network/" class="nav-link">
+  Network
+</a></div><div class="nav-item"><a href="/languages/" class="nav-link">
+  Languages
+</a></div><div class="nav-item"><a href="/platforms-frameworks-libs/" class="nav-link">
+  Platforms, frameworks and libs
+</a></div><div class="nav-item"><a href="/security/" class="nav-link">
+  Security
+</a></div><div class="nav-item"><a href="/software-engineering/" class="nav-link">
+  Software Engineering
+</a></div><div class="nav-item"><a href="/systems/" class="nav-link router-link-active">
+  Systems
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  Tools
+</a></div><div class="nav-item"><a href="/web/" class="nav-link">
+  Web
+</a></div><div class="nav-item"><a href="https://github.com/MarcLoupias/memo-dev" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Linux</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/systems/linux/bash/bash-notes-whiptail.html" class="sidebar-link">whiptail</a></li><li><a href="/systems/linux/apt-cheatsheet.html" class="sidebar-link">apt cheatsheet</a></li><li><a href="/systems/linux/linux-fhs-description.html" class="sidebar-link">Linux - Description du FHS</a></li><li><a href="/systems/linux/linux-fhs-droits.html" class="sidebar-link">Linux - Gestion des droits du FHS</a></li><li><a href="/systems/linux/linux-logs.html" class="sidebar-link">Linux - logs</a></li><li><a href="/systems/linux/linux-manipulation-fichiers.html" class="active sidebar-link">Linux - Manipuler les fichiers</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/systems/linux/linux-manipulation-fichiers.html#cat" class="sidebar-link">cat</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-manipulation-fichiers.html#tac" class="sidebar-link">tac</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-manipulation-fichiers.html#head" class="sidebar-link">head</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-manipulation-fichiers.html#tail" class="sidebar-link">tail</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-manipulation-fichiers.html#nl" class="sidebar-link">nl</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-manipulation-fichiers.html#uniq" class="sidebar-link">uniq</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-manipulation-fichiers.html#sort" class="sidebar-link">sort</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-manipulation-fichiers.html#split" class="sidebar-link">split</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-manipulation-fichiers.html#diff" class="sidebar-link">diff</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-manipulation-fichiers.html#wc" class="sidebar-link">wc</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-manipulation-fichiers.html#file" class="sidebar-link">file</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-manipulation-fichiers.html#touch" class="sidebar-link">touch</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-manipulation-fichiers.html#find" class="sidebar-link">find</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/systems/linux/linux-manipulation-fichiers.html#recherche-sur-le-nom-de-fichier" class="sidebar-link">Recherche sur le nom de fichier</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-manipulation-fichiers.html#recherche-sur-la-date-du-fichier" class="sidebar-link">Recherche sur la date du fichier</a></li></ul></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-manipulation-fichiers.html#grep" class="sidebar-link">grep</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/systems/linux/linux-manipulation-fichiers.html#recherche-de-tous-les-fichiers-contenant-un-mot" class="sidebar-link">Recherche de tous les fichiers contenant un mot</a></li></ul></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-manipulation-fichiers.html#commande-pipe" class="sidebar-link">commande pipe |</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-manipulation-fichiers.html#du" class="sidebar-link">du</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-manipulation-fichiers.html#df" class="sidebar-link">df</a></li></ul></li><li><a href="/systems/linux/linux-manipulation-process.html" class="sidebar-link">manipulation des processus</a></li><li><a href="/systems/linux/ubuntu-cheatsheet.html" class="sidebar-link">Ubuntu cheatsheet</a></li><li><a href="/systems/linux/ubuntu-create-usb-boot.html" class="sidebar-link">create usb boot</a></li><li><a href="/systems/linux/ubuntu-pdf.html" class="sidebar-link">ubuntu - pdf</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Windows</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/systems/windows/windows-checksum.html" class="sidebar-link">check hash on windows</a></li><li><a href="/systems/windows/windows-ubuntu-on-windows10.html" class="sidebar-link">Windows - Ubuntu on windows10</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="linux-manipuler-les-fichiers"><a href="#linux-manipuler-les-fichiers" class="header-anchor">#</a> Linux - Manipuler les fichiers</h1> <h2 id="cat"><a href="#cat" class="header-anchor">#</a> <code>cat</code></h2> <p><code>cat book.json</code> affiche le contenu de <code>book.json</code> sur la sortie standard</p> <p><code>cat book.json .gitignore</code> affiche le contenu de <code>book.json</code> et de <code>.gitignore</code> à la suite sur la sortie standard</p> <p><code>cat book.json .gitignore &gt; content.log</code> enregistre le contenu de <code>book.json</code> et de <code>.gitignore</code> à la suite dans un fichier <code>content.log</code></p> <h2 id="tac"><a href="#tac" class="header-anchor">#</a> <code>tac</code></h2> <p>Fait tout pareil que cat mais en lisant les fichiers depuis la dernière ligne vers la première.</p> <h2 id="head"><a href="#head" class="header-anchor">#</a> <code>head</code></h2> <p>Affiche les premières ligne d'un fichier (10 par défaut)</p> <h2 id="tail"><a href="#tail" class="header-anchor">#</a> <code>tail</code></h2> <p>Affiche les dernières ligne d'un fichier (10 par défaut)</p> <h2 id="nl"><a href="#nl" class="header-anchor">#</a> <code>nl</code></h2> <p>Affiche le contenu d'un fichier en numérotant les lignes</p> <h2 id="uniq"><a href="#uniq" class="header-anchor">#</a> <code>uniq</code></h2> <p>Affiche le contenu d'un fichier sans les doublons de lignes</p> <h2 id="sort"><a href="#sort" class="header-anchor">#</a> <code>sort</code></h2> <p>Affiche le contenu d'un fichier en triant les lignes (par ordre alphabétique par défaut)</p> <h2 id="split"><a href="#split" class="header-anchor">#</a> <code>split</code></h2> <p>Découpe un fichier par blocs en fonction d'une taille en octets ou d'un nombre de lignes.</p> <p>La commande <code>cat</code> permet de concaténer facilement un fichier découpé avec <code>split</code>.</p> <h2 id="diff"><a href="#diff" class="header-anchor">#</a> <code>diff</code></h2> <p>Permet d'afficher les différences entre 2 fichiers.</p> <p><code>diff &lt;options&gt; fichier-1 fichier-2</code></p> <h2 id="wc"><a href="#wc" class="header-anchor">#</a> <code>wc</code></h2> <p>Permet de compter le nombre de caractères, de mots et de lignes d'un fichier.</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>
+$ <span class="token function">wc</span> book.json
+ <span class="token number">3</span>  <span class="token number">9</span> <span class="token number">56</span> book.json
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>Le fichier <code>book.json</code> comporte 3 lignes, 9 mots, et 56 caractères.</p> <h2 id="file"><a href="#file" class="header-anchor">#</a> <code>file</code></h2> <p>Permet de connaitre le type d'un fichier.</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>
+$ <span class="token function">file</span> book.json
 book.json: ASCII text
-</code></pre>
-<h2 id="title-touch"><code>touch</code></h2>
-<p>La commande <code>touch</code> permet de créer un nouveau fichier vide.</p>
-<h2 id="title-find"><code>find</code></h2>
-<p>Permet de faire une recherche sur le système de fichier et d’afficher le résultat sur la sortie standard.</p>
-<h3 id="title-recherche-sur-le-nom-de-fichier">Recherche sur <strong>le nom de fichier</strong></h3>
-<pre><code class="lang-bash">
-$ find . -name &quot;*.json&quot; -print
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="touch"><a href="#touch" class="header-anchor">#</a> <code>touch</code></h2> <p>La commande <code>touch</code> permet de créer un nouveau fichier vide.</p> <h2 id="find"><a href="#find" class="header-anchor">#</a> <code>find</code></h2> <p>Permet de faire une recherche sur le système de fichier et d'afficher le résultat sur la sortie standard.</p> <h3 id="recherche-sur-le-nom-de-fichier"><a href="#recherche-sur-le-nom-de-fichier" class="header-anchor">#</a> Recherche sur <strong>le nom de fichier</strong></h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>
+$ <span class="token function">find</span> <span class="token builtin class-name">.</span> -name <span class="token string">&quot;*.json&quot;</span> -print
 ./book.json
 ./node_modules/gitbook-plugin-theme-faq/package.json
 ./node_modules/gitbook-plugin-theme-faq/_i18n/en.json
-</code></pre>
-<p>On a recherché tous les fichiers ayant l’extension <code>.json</code> dans leur nom de fichier depuis le répertoire courant.</p>
-<h3 id="title-recherche-sur-la-date-du-fichier">Recherche sur <strong>la date du fichier</strong></h3>
-<pre><code class="lang-bash">
-$ find . -mtime 2 -print
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>On a recherché tous les fichiers ayant l'extension <code>.json</code> dans leur nom de fichier depuis le répertoire courant.</p> <h3 id="recherche-sur-la-date-du-fichier"><a href="#recherche-sur-la-date-du-fichier" class="header-anchor">#</a> Recherche sur <strong>la date du fichier</strong></h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>
+$ <span class="token function">find</span> <span class="token builtin class-name">.</span> -mtime <span class="token number">2</span> -print
 ./divers/divers-articles.md
 ./languages/javascript/angular-js/angular-js-components.md
 ./security/security-webapp.md
 ./software-engineering/genie-logiciel.md
 ./web/shadow-dom.md
-</code></pre>
-<p>On a recherché tous les fichiers ayant été modifiés il y a exactement 2 jours.<br>Les fichiers modifiés hier ne sont donc pas affichés, seulement ceux modifiés avant-hier. </p>
-<p>La commande <code>find</code> est très puissante et présente de nombreuses options. Se référer à <a href="http://www.linux-france.org/article/man-fr/man1/find-1.html">la man page correspondante</a>.</p>
-<h2 id="title-grep"><code>grep</code></h2>
-<p>Permet de rechercher un mot dans un fichier et d’afficher les lignes dans lesquelles ce mot a été trouvé.</p>
-<h3 id="title-recherche-de-tous-les-fichiers-contenant-un-mot">Recherche de tous les fichiers contenant un mot</h3>
-<pre><code class="lang-bash">
-$ grep -Ril &quot;optimiser&quot;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>On a recherché tous les fichiers ayant été modifiés il y a exactement 2 jours.
+Les fichiers modifiés hier ne sont donc pas affichés, seulement ceux modifiés avant-hier.</p> <p>La commande <code>find</code> est très puissante et présente de nombreuses options. Se référer à <a href="http://www.linux-france.org/article/man-fr/man1/find-1.html" target="_blank" rel="noopener noreferrer">la man page correspondante<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</p> <h2 id="grep"><a href="#grep" class="header-anchor">#</a> <code>grep</code></h2> <p>Permet de rechercher un mot dans un fichier et d'afficher les lignes dans lesquelles ce mot a été trouvé.</p> <h3 id="recherche-de-tous-les-fichiers-contenant-un-mot"><a href="#recherche-de-tous-les-fichiers-contenant-un-mot" class="header-anchor">#</a> Recherche de tous les fichiers contenant un mot</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>
+$ <span class="token function">grep</span> -Ril <span class="token string">&quot;optimiser&quot;</span>
 security/security-basics.md
 web/web-tracking.md
-</code></pre>
-<ul>
-<li><code>i</code> pour ignorer la casse</li>
-<li><code>R</code> pour récursif</li>
-<li><code>l</code> pour obtenir en sortie les noms des fichiers (avec chemin relatif depuis la working directory) et pas leur contenu</li>
-</ul>
-<p>On obtient donc la liste de tous les fichiers contenant le mot “optimiser” (sans la casse) depuis la working directory.</p>
-<h2 id="title-commande-pipe-">commande pipe <code>|</code></h2>
-<p>La commande <code>|</code> (pipe) permet de chainer les commandes unix. La 1ère commande donne à la seconde sa sortie en entrée, et etc …</p>
-<p>Par exemple pour concaténer 2 fichiers et numéroter les lignes du résultat final :</p>
-<pre><code class="lang-bash">
-$ cat book.json .gitignore | nl
-     1  {
-     2      &quot;plugins&quot;: [ &quot;theme-faq&quot; , &quot;-search&quot;, &quot;-lunr&quot; ]
-     3  }
-     4  # Node rules:
-     5  ## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-     6  .grunt
 
-     7  ## Dependency directory
-     8  ## Commenting this out is preferred by some people, see
-     9  ## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
-    10  node_modules
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li><code>i</code> pour ignorer la casse</li> <li><code>R</code> pour récursif</li> <li><code>l</code> pour obtenir en sortie les noms des fichiers (avec chemin relatif depuis la working directory) et pas leur contenu</li></ul> <p>On obtient donc la liste de tous les fichiers contenant le mot &quot;optimiser&quot; (sans la casse) depuis la working directory.</p> <h2 id="commande-pipe"><a href="#commande-pipe" class="header-anchor">#</a> commande pipe <code>|</code></h2> <p>La commande <code>|</code> (pipe) permet de chainer les commandes unix. La 1ère commande donne à la seconde sa sortie en entrée, et etc ...</p> <p>Par exemple pour concaténer 2 fichiers et numéroter les lignes du résultat final :</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>
+$ <span class="token function">cat</span> book.json .gitignore <span class="token operator">|</span> <span class="token function">nl</span>
+     <span class="token number">1</span>  <span class="token punctuation">{</span>
+     <span class="token number">2</span>      <span class="token string">&quot;plugins&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span> <span class="token string">&quot;theme-faq&quot;</span> , <span class="token string">&quot;-search&quot;</span>, <span class="token string">&quot;-lunr&quot;</span> <span class="token punctuation">]</span>
+     <span class="token number">3</span>  <span class="token punctuation">}</span>
+     <span class="token number">4</span>  <span class="token comment"># Node rules:</span>
+     <span class="token number">5</span>  <span class="token comment">## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)</span>
+     <span class="token number">6</span>  .grunt
 
-    11  # Book build output
-    12  _book
+     <span class="token number">7</span>  <span class="token comment">## Dependency directory</span>
+     <span class="token number">8</span>  <span class="token comment">## Commenting this out is preferred by some people, see</span>
+     <span class="token number">9</span>  <span class="token comment">## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git</span>
+    <span class="token number">10</span>  node_modules
 
-    13  # eBook build output
-    14  *.epub
-    15  *.mobi
-    16  *.pdf
+    <span class="token number">11</span>  <span class="token comment"># Book build output</span>
+    <span class="token number">12</span>  _book
 
-    17  # jetbrains
-    18  .idea/
-</code></pre>
-<p>Ajoutons à cette chaine la commande head qui va limiter à 10 lignes l’affichage :</p>
-<pre><code class="lang-bash">
-$ cat book.json .gitignore | nl | head
-     1  {
-     2      &quot;plugins&quot;: [ &quot;theme-faq&quot; , &quot;-search&quot;, &quot;-lunr&quot; ]
-     3  }
-     4  # Node rules:
-     5  ## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-     6  .grunt
+    <span class="token number">13</span>  <span class="token comment"># eBook build output</span>
+    <span class="token number">14</span>  *.epub
+    <span class="token number">15</span>  *.mobi
+    <span class="token number">16</span>  *.pdf
 
-     7  ## Dependency directory
-     8  ## Commenting this out is preferred by some people, see
-     9  ## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
-</code></pre>
-<p>On remarquera que la commande <code>nl</code> ne numérote pas les lignes vides mais que la commande <code>head</code> en tient compte pour limiter son affichage.</p>
-<p>Tout est question de paramétrage des commandes pour obtenir le résultat souhaité.</p>
-<h2 id="title-du"><code>du</code></h2>
-<p>Lister la size des fichiers du répertoire courant :</p>
-<pre><code class="lang-bash">$ du -sh * | sort -n</code></pre>
-<h2 id="title-df"><code>df</code></h2>
-<p>Afficher l’espace disque dispo pour le volume logique :</p>
-<pre><code class="lang-bash">$ df -h /home/robert/appli/
+    <span class="token number">17</span>  <span class="token comment"># jetbrains</span>
+    <span class="token number">18</span>  .idea/
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><p>Ajoutons à cette chaine la commande head qui va limiter à 10 lignes l'affichage :</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>
+$ <span class="token function">cat</span> book.json .gitignore <span class="token operator">|</span> <span class="token function">nl</span> <span class="token operator">|</span> <span class="token function">head</span>
+     <span class="token number">1</span>  <span class="token punctuation">{</span>
+     <span class="token number">2</span>      <span class="token string">&quot;plugins&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span> <span class="token string">&quot;theme-faq&quot;</span> , <span class="token string">&quot;-search&quot;</span>, <span class="token string">&quot;-lunr&quot;</span> <span class="token punctuation">]</span>
+     <span class="token number">3</span>  <span class="token punctuation">}</span>
+     <span class="token number">4</span>  <span class="token comment"># Node rules:</span>
+     <span class="token number">5</span>  <span class="token comment">## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)</span>
+     <span class="token number">6</span>  .grunt
+
+     <span class="token number">7</span>  <span class="token comment">## Dependency directory</span>
+     <span class="token number">8</span>  <span class="token comment">## Commenting this out is preferred by some people, see</span>
+     <span class="token number">9</span>  <span class="token comment">## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>On remarquera que la commande <code>nl</code> ne numérote pas les lignes vides mais que la commande <code>head</code> en tient compte pour limiter son affichage.</p> <p>Tout est question de paramétrage des commandes pour obtenir le résultat souhaité.</p> <h2 id="du"><a href="#du" class="header-anchor">#</a> <code>du</code></h2> <p>Lister la size des fichiers du répertoire courant :</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">du</span> -sh * <span class="token operator">|</span> <span class="token function">sort</span> -n
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="df"><a href="#df" class="header-anchor">#</a> <code>df</code></h2> <p>Afficher l'espace disque dispo pour le volume logique :</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">df</span> -h /home/robert/appli/
 Filesystem        Size  Used Avail Use% Mounted on
-/dev/boubou/bibi  100G   22G   79G  22% /home/robert/appli</code></pre>
-</article></body></html>
+/dev/boubou/bibi  100G   22G   79G  <span class="token number">22</span>% /home/robert/appli
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/systems/linux/linux-logs.html" class="prev">
+        Linux - logs
+      </a></span> <span class="next"><a href="/systems/linux/linux-manipulation-process.html">
+        manipulation des processus
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.637efe70.js" defer></script><script src="/assets/js/2.b10fadef.js" defer></script><script src="/assets/js/153.42bea07d.js" defer></script>
+  </body>
+</html>

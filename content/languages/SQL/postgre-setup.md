@@ -1,32 +1,9 @@
----
-htmlHead:
-    title: 'marlou knowledge base' 
-    containerClass: 'markdown-body'
-    metaTags:
-        - name: viewport
-          content: 'width=device-width, initial-scale=1, minimal-ui'
-        - name: robots
-          content: none
-    links:
-        - href: '../../github-markdown.css'
-          rel: stylesheet
-          media: all
-        - href: '../../main.css'
-          rel: stylesheet
-          media: all
-        - href: '../../github.css'
-          rel: stylesheet
-    scripts:
-        - src: '../../index.js'
-
----
-
 # PostGre setup
 
 ## setup
 
-- [manuals] (http://www.postgresql.org/docs/)
-- [the best one] (https://help.ubuntu.com/community/PostgreSQL)
+- [manuals](http://www.postgresql.org/docs/)
+- [the best one](https://help.ubuntu.com/community/PostgreSQL)
 
 ## Basic Server Setup
 
@@ -42,10 +19,11 @@ Set a password for the "postgres" database role using the command:
 
 and give your password when prompted. The password text will be hidden from the console for security purposes.
 
-Type Control+D to exit the posgreSQL prompt. 
+Type Control+D to exit the posgreSQL prompt.
 
 ## misc
+
 using User for a class with JPA need specific config coz user is a reserved words for postgreSQL
 
-- [postgres-table-column-name-restrictions] (http://stackoverflow.com/questions/10891368/postgres-table-column-name-restrictions)
-- [unable-to-use-table-named-user-in-postgresql-hibernate] (http://stackoverflow.com/questions/4350874/unable-to-use-table-named-user-in-postgresql-hibernate)
+- [postgres-table-column-name-restrictions](http://stackoverflow.com/questions/10891368/postgres-table-column-name-restrictions)
+- [unable-to-use-table-named-user-in-postgresql-hibernate](http://stackoverflow.com/questions/4350874/unable-to-use-table-named-user-in-postgresql-hibernate)

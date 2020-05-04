@@ -1,33 +1,10 @@
----
-htmlHead:
-    title: 'marlou knowledge base' 
-    containerClass: 'markdown-body'
-    metaTags:
-        - name: viewport
-          content: 'width=device-width, initial-scale=1, minimal-ui'
-        - name: robots
-          content: none
-    links:
-        - href: '../../github-markdown.css'
-          rel: stylesheet
-          media: all
-        - href: '../../main.css'
-          rel: stylesheet
-          media: all
-        - href: '../../github.css'
-          rel: stylesheet
-    scripts:
-        - src: '../../index.js'
-
----
-
 # Linux - Description du FHS
- 
+
 FHS = Filesystem Hierarchy Standard
 
 [FHS sur wikipedia](https://fr.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 
-**sources**
+sources :
 
 - [Système de fichiers sous Unix, Hugo ETIEVANT : developpez.com](http://cyberzoide.developpez.com/unix/sys.php3)
 - [Patrice KARATCHENTZEFF : p.karatchentzeff.free.fr](http://p.karatchentzeff.free.fr/freesoft/debian/debian-guide/html/ch9.html#s9.2)
@@ -45,8 +22,7 @@ L'architecture du système de fichiers est sous la forme d'un arbre dont le rép
 
 Cette arborescence peut légèrement varier en fonction des distributions.
 
-```
-
+```text
 /
 /bin/
 /boot/
@@ -66,12 +42,12 @@ Cette arborescence peut légèrement varier en fonction des distributions.
 /tmp/
 /usr/
 /var/
-
 ```
 
 ### `/bin/` binaries
 
 Contient :
+
 - les exécutables des commandes de bases pour tous les utilisateurs.
 - les fichiers exécutables indispensables au fonctionnement du système.
 
@@ -109,7 +85,7 @@ Contient de nombreux sous répertoires importants, par exemple :
 - `/etc/skel/` les fichiers à recopier automatiquement à la création d'un utilisateur
 
 Contient des sous répertoires pour des applications
- 
+
 - `/etc/samba/` qui contient les fichiers de config de samba (`samba.conf`)
 
 ### `/home/`
@@ -117,21 +93,19 @@ Contient des sous répertoires pour des applications
 (= `Documents And Settings` sous Windows)
 
 C'est l'endroit où l'on place le répertoire personnel de tous les utilisateurs normaux - c'est-à-dire tous sauf le `root`.
-Chaque répertoire personnel est appelé du nom de l'utilisateur; par exemple `/home/jane`. 
-Si vous utilisez un système de taille conséquente, comme pour une école ou une entreprise, 
-votre administrateur système a peut-être créé des répertoires supplémentaires pour contenir les répertoires personnels: 
-`/home1` et `/home2` par exemple. 
+Chaque répertoire personnel est appelé du nom de l'utilisateur; par exemple `/home/jane`.
+Si vous utilisez un système de taille conséquente, comme pour une école ou une entreprise,
+votre administrateur système a peut-être créé des répertoires supplémentaires pour contenir les répertoires personnels:
+`/home1` et `/home2` par exemple.
 Dans d'autres systèmes, on peut apercevoir un niveau supplémentaire de sous-répertoire :
 
-```
-
-/home/eleves/nomdutilisateur, 
+```text
+/home/eleves/nomdutilisateur,
 /home/equipe/nomdutilisateur, etc...
-
 ```
 
-Votre répertoire personnel est l'endroit où vous placez vos travaux personnels, votre courrier électronique et 
-tous les autres documents, ainsi que vos fichiers de configurations personnelles. 
+Votre répertoire personnel est l'endroit où vous placez vos travaux personnels, votre courrier électronique et
+tous les autres documents, ainsi que vos fichiers de configurations personnelles.
 C'est votre "chez vous" dans le système...
 
 Les fichiers de configuration sont généralement cachés.
@@ -166,7 +140,7 @@ Points de montage pour le système de fichiers.
 Logiciels optionnels.
 
 Répertoire cross-distribution.
- 
+
 Par exemple Chrome s'installe dans `/opt/chrome/`.
 
 ### `/proc/` process
@@ -178,6 +152,7 @@ Les fichiers `uptime`, `stat`, `meminfo`, `cpuinfo` contiennent des infos sur l'
 Pour chaque processus actif, un répertoire est créé du nom du `PID` du processus.
 
 Chacun de ces dossiers contient les fichiers suivants :
+
 - `cmdline` qui contient la ligne de commande utilisée pour lancer l'application
 - `status` qui contient des infos sur l'état du processus (attente, exec, etc …)
 - `exe` qui est un lien vers le fichier exécutable du processus
@@ -210,6 +185,7 @@ Contient toute une série de sous dossiers semblables à ceux de la racine (`/`)
 En d'autres termes, les fichiers y figurant ne sont pas considérés comme vitaux pour le système.
 
 Par exemple :
+
 - `/usr/bin/` exécutables en complément de `/bin/`
 - `/usr/include/` headers des librairies partagées
 - `/usr/lib/` librairies partagées
@@ -237,7 +213,7 @@ Fichiers variables, bases de données, sites web, …
 - Un fichier est identifié par son **chemin absolu** depuis la racine du filesystem `/repertoire-1/repertoire-2/fichier`
 - Le répertoire parent est identifié par `..`
 - Le répertoire courant est identifié par `.`
-- Un fichier peut être identifié par son chemin relatif par rapport au répertoire courant `./repertoire-2/fichier` si l'on est dans `/repertoire-1/` 
+- Un fichier peut être identifié par son chemin relatif par rapport au répertoire courant `./repertoire-2/fichier` si l'on est dans `/repertoire-1/`
 
 ## Types de fichiers
 
@@ -283,7 +259,7 @@ Ne sera pas affiché par les commandes de listage des fichiers sauf option parti
 
 ## Navigation
 
-`pwd` (print working directory) permet de connaitre le répertoire courant (working directory) 
+`pwd` (print working directory) permet de connaitre le répertoire courant (working directory)
 
 La commande `cd` (change directory) permet de naviguer dans le FHS en changeant le répertoire courant.
 
@@ -293,7 +269,7 @@ La commande `cd` (change directory) permet de naviguer dans le FHS en changeant 
 - `cd /home` change la working directory pour le répertoire `home` en partant de la racine (chemin absolu).
 - `cd home` change la working directory pour le répertoire `home` contenu dans la working directory courante.
 - `cd ../home` change la working directory pour le répertoire `home` contenu dans le parent de la working directory courante.
- 
+
 ## Commandes
 
 - `rm` Supprime un fichier ou un répertoire.
@@ -313,5 +289,5 @@ La commande `cd` (change directory) permet de naviguer dans le FHS en changeant 
 Par exemple : `ls -l *.json` liste tous les fichiers `.json` du répertoire courant.
 
 `?` remplace un seul caractère dans l'expression où il apparait.
- 
+
 Par exemple : `ls -l ??ok.json` liste tous les fichiers ayant deux caractères suivis de `ok.json` dans le répertoire courant.

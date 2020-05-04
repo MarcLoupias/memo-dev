@@ -1,179 +1,203 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.82f7552b.js"></script></head><body><article class="markdown-body"><h1 id="title-data---basics">data - basics</h1>
-<h2 id="title-difference-between-data-and-information">difference between data and information</h2>
-<p>Computers need data. Humans need information.</p>
-<p>Data is a building block. Information gives meaning and context.</p>
-<p>Example :</p>
-<p><code>20180101</code> is the raw data. It is a suite of 8 numbers.</p>
-<p>Interpreted as a date it is the 1st january 2018.</p>
-<p>It could be also a transaction amount of around 20 millions (euros ? dollars ?).</p>
-<p>It could be a (bad) password, it could be a lot of things.</p>
-<p>To become an information, the data need context.</p>
-<h2 id="title-anglicismes">anglicismes</h2>
-<p>Beaucoup de confusions terminologiques sont faites en français du fait de mauvaises traductions qui affectent le sens.</p>
-<h3 id="title-digital-et-numérique">digital et numérique</h3>
-<p>Par exemple <em>digit</em> en anglais signifie <em>chiffre</em>.</p>
-<p>Ce qui conduit certaines personnes à parler de <em>digital</em> au lieu de <em>numérique</em>.</p>
-<p>L’informatisation du monde est le processus de transformation de l’information en nombres, il s’agit donc de numérisation<br>et non de digital. En français digital se rapporte aux doigts.</p>
-<h3 id="title-chiffrement-et-cryptage">chiffrement et cryptage</h3>
-<p>Il en va de même pour <em>chiffrement</em> et <em>cryptage</em> (anglicisme de <em>encryption</em>).</p>
-<h3 id="title-bit-et-octet">bit et octet</h3>
-<p>En anglais <em>bit</em> se traduit <em>bit</em>. Pas de différence.</p>
-<p>En revanche <em>octet</em> se traduit <em>byte</em>.</p>
-<p>Un octet étant composé de 8 bits, parler de 10 megabits par seconde n’est pas du tout équivalent à 10 megabytes par seconde !</p>
-<h2 id="title-data">data</h2>
-<h3 id="title-bit">bit</h3>
-<p>The smallest piece of data. Short for binary digit (chiffre binaire).</p>
-<p>A bit has a single binary value, either <code>0</code> or <code>1</code>.</p>
-<h3 id="title-byte">byte</h3>
-<p>A byte is a unit of data that is eight binary digits long.</p>
-<p>Example, the number <code>73</code> in decimal base is <code>01001001</code> in binary base.</p>
-<h2 id="title-data-structure">data structure</h2>
-<h3 id="title-text">text</h3>
-<p>The first data structure for text is the <a href="https://fr.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange">ASCII (American Standard Code for Information Interchange)</a></p>
-<p>128 characters available (0 to 127) expressed in a table :</p>
-<pre><code class="lang-txt">| Dec | Hexa | Oct | Html     | chr | binary  | description              |
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>data - basics | marlou knowledge base</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="knowledge db tool">
+    <meta name="robots" content="none">
+    <link rel="preload" href="/assets/css/0.styles.e34db02d.css" as="style"><link rel="preload" href="/assets/js/app.637efe70.js" as="script"><link rel="preload" href="/assets/js/2.b10fadef.js" as="script"><link rel="preload" href="/assets/js/7.d587d140.js" as="script"><link rel="prefetch" href="/assets/js/10.22935b49.js"><link rel="prefetch" href="/assets/js/100.7ca947ee.js"><link rel="prefetch" href="/assets/js/101.8ba2e31d.js"><link rel="prefetch" href="/assets/js/102.d8d8bd45.js"><link rel="prefetch" href="/assets/js/103.724d98a2.js"><link rel="prefetch" href="/assets/js/104.229a7daf.js"><link rel="prefetch" href="/assets/js/105.a8992225.js"><link rel="prefetch" href="/assets/js/106.262de88d.js"><link rel="prefetch" href="/assets/js/107.8efd7b04.js"><link rel="prefetch" href="/assets/js/108.272f61b3.js"><link rel="prefetch" href="/assets/js/109.24df76b6.js"><link rel="prefetch" href="/assets/js/11.d5b1d4cb.js"><link rel="prefetch" href="/assets/js/110.150d9241.js"><link rel="prefetch" href="/assets/js/111.7beccf9a.js"><link rel="prefetch" href="/assets/js/112.64abb596.js"><link rel="prefetch" href="/assets/js/113.21df8db0.js"><link rel="prefetch" href="/assets/js/114.d2ee704f.js"><link rel="prefetch" href="/assets/js/115.6f1faf52.js"><link rel="prefetch" href="/assets/js/116.bd0f13dd.js"><link rel="prefetch" href="/assets/js/117.fd51dc78.js"><link rel="prefetch" href="/assets/js/118.66e74dff.js"><link rel="prefetch" href="/assets/js/119.4337ee99.js"><link rel="prefetch" href="/assets/js/12.1d40092c.js"><link rel="prefetch" href="/assets/js/120.2fa8dabf.js"><link rel="prefetch" href="/assets/js/121.e8bc328e.js"><link rel="prefetch" href="/assets/js/122.61be7766.js"><link rel="prefetch" href="/assets/js/123.0987b380.js"><link rel="prefetch" href="/assets/js/124.a8228815.js"><link rel="prefetch" href="/assets/js/125.da5ddb5b.js"><link rel="prefetch" href="/assets/js/126.ef9294eb.js"><link rel="prefetch" href="/assets/js/127.6d454b88.js"><link rel="prefetch" href="/assets/js/128.391b2a2a.js"><link rel="prefetch" href="/assets/js/129.65f99f29.js"><link rel="prefetch" href="/assets/js/13.5ac00ad7.js"><link rel="prefetch" href="/assets/js/130.3ba7f5d7.js"><link rel="prefetch" href="/assets/js/131.c503b102.js"><link rel="prefetch" href="/assets/js/132.a9a24540.js"><link rel="prefetch" href="/assets/js/133.4123c476.js"><link rel="prefetch" href="/assets/js/134.274a3288.js"><link rel="prefetch" href="/assets/js/135.bb2c7d32.js"><link rel="prefetch" href="/assets/js/136.a465244f.js"><link rel="prefetch" href="/assets/js/137.fddb3a45.js"><link rel="prefetch" href="/assets/js/138.e234216b.js"><link rel="prefetch" href="/assets/js/139.b7e43724.js"><link rel="prefetch" href="/assets/js/14.21337ce4.js"><link rel="prefetch" href="/assets/js/140.91296b2b.js"><link rel="prefetch" href="/assets/js/141.be88b3fd.js"><link rel="prefetch" href="/assets/js/142.2ccd0078.js"><link rel="prefetch" href="/assets/js/143.6c82f67e.js"><link rel="prefetch" href="/assets/js/144.a8517fb5.js"><link rel="prefetch" href="/assets/js/145.95f3679d.js"><link rel="prefetch" href="/assets/js/146.c61db4d0.js"><link rel="prefetch" href="/assets/js/147.007b7310.js"><link rel="prefetch" href="/assets/js/148.946a7d6c.js"><link rel="prefetch" href="/assets/js/149.905e90c5.js"><link rel="prefetch" href="/assets/js/15.9bb06f3e.js"><link rel="prefetch" href="/assets/js/150.f5f1829f.js"><link rel="prefetch" href="/assets/js/151.b29c3c08.js"><link rel="prefetch" href="/assets/js/152.e003263b.js"><link rel="prefetch" href="/assets/js/153.42bea07d.js"><link rel="prefetch" href="/assets/js/154.99162c75.js"><link rel="prefetch" href="/assets/js/155.7e4aa547.js"><link rel="prefetch" href="/assets/js/156.4ffce4b5.js"><link rel="prefetch" href="/assets/js/157.7708b7d9.js"><link rel="prefetch" href="/assets/js/158.d6fdc49f.js"><link rel="prefetch" href="/assets/js/159.e4a37544.js"><link rel="prefetch" href="/assets/js/16.26987fe7.js"><link rel="prefetch" href="/assets/js/160.dc39d489.js"><link rel="prefetch" href="/assets/js/161.9f6938b4.js"><link rel="prefetch" href="/assets/js/162.b1ee186e.js"><link rel="prefetch" href="/assets/js/163.2f776a00.js"><link rel="prefetch" href="/assets/js/164.1a0c607f.js"><link rel="prefetch" href="/assets/js/165.b7c61ad8.js"><link rel="prefetch" href="/assets/js/166.4a25dfb9.js"><link rel="prefetch" href="/assets/js/167.a5ae9090.js"><link rel="prefetch" href="/assets/js/168.292c8760.js"><link rel="prefetch" href="/assets/js/169.a0ef8135.js"><link rel="prefetch" href="/assets/js/17.e34ddbab.js"><link rel="prefetch" href="/assets/js/170.3188efba.js"><link rel="prefetch" href="/assets/js/171.77cfab9d.js"><link rel="prefetch" href="/assets/js/172.5e4fec9c.js"><link rel="prefetch" href="/assets/js/173.11c242c5.js"><link rel="prefetch" href="/assets/js/174.2c0fb115.js"><link rel="prefetch" href="/assets/js/175.9a3247d5.js"><link rel="prefetch" href="/assets/js/176.2bee7add.js"><link rel="prefetch" href="/assets/js/177.f2f4c33c.js"><link rel="prefetch" href="/assets/js/178.0ad8c83c.js"><link rel="prefetch" href="/assets/js/179.d1b20721.js"><link rel="prefetch" href="/assets/js/18.4edca711.js"><link rel="prefetch" href="/assets/js/180.6560ab66.js"><link rel="prefetch" href="/assets/js/181.45668382.js"><link rel="prefetch" href="/assets/js/182.20c5cd51.js"><link rel="prefetch" href="/assets/js/183.78f61cd6.js"><link rel="prefetch" href="/assets/js/184.fefb8dfb.js"><link rel="prefetch" href="/assets/js/185.453d4b68.js"><link rel="prefetch" href="/assets/js/186.53ecdfb0.js"><link rel="prefetch" href="/assets/js/187.494a7e47.js"><link rel="prefetch" href="/assets/js/188.9787771f.js"><link rel="prefetch" href="/assets/js/189.513bff62.js"><link rel="prefetch" href="/assets/js/19.7e8c66bd.js"><link rel="prefetch" href="/assets/js/190.d79b46fa.js"><link rel="prefetch" href="/assets/js/191.5be1cfe3.js"><link rel="prefetch" href="/assets/js/192.c882396d.js"><link rel="prefetch" href="/assets/js/193.b59d1a50.js"><link rel="prefetch" href="/assets/js/194.c5188dbe.js"><link rel="prefetch" href="/assets/js/195.85606e4c.js"><link rel="prefetch" href="/assets/js/196.1e37d696.js"><link rel="prefetch" href="/assets/js/197.d2c25126.js"><link rel="prefetch" href="/assets/js/198.0bd70829.js"><link rel="prefetch" href="/assets/js/199.90750781.js"><link rel="prefetch" href="/assets/js/20.1c2bab36.js"><link rel="prefetch" href="/assets/js/200.fc3d19f2.js"><link rel="prefetch" href="/assets/js/201.c48d42c4.js"><link rel="prefetch" href="/assets/js/202.52dc433b.js"><link rel="prefetch" href="/assets/js/203.cf1eab7e.js"><link rel="prefetch" href="/assets/js/204.f7ab9ced.js"><link rel="prefetch" href="/assets/js/205.f8a5b9ce.js"><link rel="prefetch" href="/assets/js/206.bdfe94e3.js"><link rel="prefetch" href="/assets/js/207.1513e07c.js"><link rel="prefetch" href="/assets/js/208.53ebf798.js"><link rel="prefetch" href="/assets/js/209.cb760c7a.js"><link rel="prefetch" href="/assets/js/21.f6401f33.js"><link rel="prefetch" href="/assets/js/210.e394a8ee.js"><link rel="prefetch" href="/assets/js/211.e6dcf06e.js"><link rel="prefetch" href="/assets/js/212.ec7b6bbb.js"><link rel="prefetch" href="/assets/js/213.a8b9c331.js"><link rel="prefetch" href="/assets/js/214.80f58a60.js"><link rel="prefetch" href="/assets/js/215.1aafc0fc.js"><link rel="prefetch" href="/assets/js/216.bd966360.js"><link rel="prefetch" href="/assets/js/217.ba7c9f8b.js"><link rel="prefetch" href="/assets/js/218.f153a403.js"><link rel="prefetch" href="/assets/js/219.c27fc0b1.js"><link rel="prefetch" href="/assets/js/22.3c998aa8.js"><link rel="prefetch" href="/assets/js/220.1aefeac1.js"><link rel="prefetch" href="/assets/js/221.966df196.js"><link rel="prefetch" href="/assets/js/222.32c85ec7.js"><link rel="prefetch" href="/assets/js/223.d3cf088d.js"><link rel="prefetch" href="/assets/js/224.aacbceaf.js"><link rel="prefetch" href="/assets/js/225.54cd3b6a.js"><link rel="prefetch" href="/assets/js/226.313b725c.js"><link rel="prefetch" href="/assets/js/227.4c1d3f3d.js"><link rel="prefetch" href="/assets/js/228.9e4a4832.js"><link rel="prefetch" href="/assets/js/229.f7697a3d.js"><link rel="prefetch" href="/assets/js/23.c0f91738.js"><link rel="prefetch" href="/assets/js/230.6bc69b17.js"><link rel="prefetch" href="/assets/js/231.79805394.js"><link rel="prefetch" href="/assets/js/232.8acab379.js"><link rel="prefetch" href="/assets/js/233.31ff62c4.js"><link rel="prefetch" href="/assets/js/234.19a9a922.js"><link rel="prefetch" href="/assets/js/235.2f5e5e2c.js"><link rel="prefetch" href="/assets/js/236.62db3ffe.js"><link rel="prefetch" href="/assets/js/237.509d547e.js"><link rel="prefetch" href="/assets/js/238.8475cde0.js"><link rel="prefetch" href="/assets/js/239.9bd44b93.js"><link rel="prefetch" href="/assets/js/24.a3735d29.js"><link rel="prefetch" href="/assets/js/240.ad624c47.js"><link rel="prefetch" href="/assets/js/241.61ab0ed8.js"><link rel="prefetch" href="/assets/js/242.67a7e2f2.js"><link rel="prefetch" href="/assets/js/243.4979aaa3.js"><link rel="prefetch" href="/assets/js/244.47564eed.js"><link rel="prefetch" href="/assets/js/245.e4f54911.js"><link rel="prefetch" href="/assets/js/246.f6c3f80f.js"><link rel="prefetch" href="/assets/js/247.c72d22f2.js"><link rel="prefetch" href="/assets/js/248.861aee52.js"><link rel="prefetch" href="/assets/js/25.6c577ea7.js"><link rel="prefetch" href="/assets/js/26.23d30be7.js"><link rel="prefetch" href="/assets/js/27.a8c3c2fb.js"><link rel="prefetch" href="/assets/js/28.3964a549.js"><link rel="prefetch" href="/assets/js/29.8d84ed8f.js"><link rel="prefetch" href="/assets/js/3.407b1262.js"><link rel="prefetch" href="/assets/js/30.c47c033e.js"><link rel="prefetch" href="/assets/js/31.c76cd18c.js"><link rel="prefetch" href="/assets/js/32.4c176516.js"><link rel="prefetch" href="/assets/js/33.03614d45.js"><link rel="prefetch" href="/assets/js/34.8f016bfb.js"><link rel="prefetch" href="/assets/js/35.3e7ac883.js"><link rel="prefetch" href="/assets/js/36.3a81653e.js"><link rel="prefetch" href="/assets/js/37.0e02ab0d.js"><link rel="prefetch" href="/assets/js/38.389577c2.js"><link rel="prefetch" href="/assets/js/39.ec448a95.js"><link rel="prefetch" href="/assets/js/4.670e3e46.js"><link rel="prefetch" href="/assets/js/40.5872895f.js"><link rel="prefetch" href="/assets/js/41.0edbad11.js"><link rel="prefetch" href="/assets/js/42.ddf9efe1.js"><link rel="prefetch" href="/assets/js/43.fb844553.js"><link rel="prefetch" href="/assets/js/44.0d9766c2.js"><link rel="prefetch" href="/assets/js/45.855bc2d0.js"><link rel="prefetch" href="/assets/js/46.9e2bac87.js"><link rel="prefetch" href="/assets/js/47.d990bd89.js"><link rel="prefetch" href="/assets/js/48.e66af9df.js"><link rel="prefetch" href="/assets/js/49.9db08751.js"><link rel="prefetch" href="/assets/js/5.e5b2557f.js"><link rel="prefetch" href="/assets/js/50.f80c08ad.js"><link rel="prefetch" href="/assets/js/51.78cfa47e.js"><link rel="prefetch" href="/assets/js/52.7693c417.js"><link rel="prefetch" href="/assets/js/53.cdd88c0a.js"><link rel="prefetch" href="/assets/js/54.750058be.js"><link rel="prefetch" href="/assets/js/55.c9cf7c01.js"><link rel="prefetch" href="/assets/js/56.9ad92c71.js"><link rel="prefetch" href="/assets/js/57.6eedd395.js"><link rel="prefetch" href="/assets/js/58.3a9c94be.js"><link rel="prefetch" href="/assets/js/59.aac2506b.js"><link rel="prefetch" href="/assets/js/6.ff25a0d0.js"><link rel="prefetch" href="/assets/js/60.8dc8fb2d.js"><link rel="prefetch" href="/assets/js/61.ec95e76e.js"><link rel="prefetch" href="/assets/js/62.53bebb0b.js"><link rel="prefetch" href="/assets/js/63.baca2154.js"><link rel="prefetch" href="/assets/js/64.3b577191.js"><link rel="prefetch" href="/assets/js/65.2b4fcfe3.js"><link rel="prefetch" href="/assets/js/66.71a89744.js"><link rel="prefetch" href="/assets/js/67.ca3f6d0b.js"><link rel="prefetch" href="/assets/js/68.1c67dead.js"><link rel="prefetch" href="/assets/js/69.cd407fc4.js"><link rel="prefetch" href="/assets/js/70.82c180fc.js"><link rel="prefetch" href="/assets/js/71.9d9a3f42.js"><link rel="prefetch" href="/assets/js/72.60ed8b2a.js"><link rel="prefetch" href="/assets/js/73.50a6b868.js"><link rel="prefetch" href="/assets/js/74.978f836e.js"><link rel="prefetch" href="/assets/js/75.94d44d96.js"><link rel="prefetch" href="/assets/js/76.44e13483.js"><link rel="prefetch" href="/assets/js/77.53c25b28.js"><link rel="prefetch" href="/assets/js/78.de06a106.js"><link rel="prefetch" href="/assets/js/79.984477ca.js"><link rel="prefetch" href="/assets/js/8.dd6f5e0b.js"><link rel="prefetch" href="/assets/js/80.776b120a.js"><link rel="prefetch" href="/assets/js/81.e592fad7.js"><link rel="prefetch" href="/assets/js/82.ac7d2ae9.js"><link rel="prefetch" href="/assets/js/83.456c2b24.js"><link rel="prefetch" href="/assets/js/84.dfb95f82.js"><link rel="prefetch" href="/assets/js/85.16d4fc84.js"><link rel="prefetch" href="/assets/js/86.40631864.js"><link rel="prefetch" href="/assets/js/87.394252cd.js"><link rel="prefetch" href="/assets/js/88.a5fb8258.js"><link rel="prefetch" href="/assets/js/89.631cb251.js"><link rel="prefetch" href="/assets/js/9.37f457df.js"><link rel="prefetch" href="/assets/js/90.6c273fb9.js"><link rel="prefetch" href="/assets/js/91.e7be43c7.js"><link rel="prefetch" href="/assets/js/92.6551645e.js"><link rel="prefetch" href="/assets/js/93.21633298.js"><link rel="prefetch" href="/assets/js/94.6588f8c4.js"><link rel="prefetch" href="/assets/js/95.fada5721.js"><link rel="prefetch" href="/assets/js/96.cda084cd.js"><link rel="prefetch" href="/assets/js/97.233e9461.js"><link rel="prefetch" href="/assets/js/98.d03f15b9.js"><link rel="prefetch" href="/assets/js/99.b6006dff.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e34db02d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">marlou knowledge base</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/data/" class="nav-link router-link-active">
+  Data
+</a></div><div class="nav-item"><a href="/devops/" class="nav-link">
+  DevOps
+</a></div><div class="nav-item"><a href="/divers/" class="nav-link">
+  Divers
+</a></div><div class="nav-item"><a href="/network/" class="nav-link">
+  Network
+</a></div><div class="nav-item"><a href="/languages/" class="nav-link">
+  Languages
+</a></div><div class="nav-item"><a href="/platforms-frameworks-libs/" class="nav-link">
+  Platforms, frameworks and libs
+</a></div><div class="nav-item"><a href="/security/" class="nav-link">
+  Security
+</a></div><div class="nav-item"><a href="/software-engineering/" class="nav-link">
+  Software Engineering
+</a></div><div class="nav-item"><a href="/systems/" class="nav-link">
+  Systems
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  Tools
+</a></div><div class="nav-item"><a href="/web/" class="nav-link">
+  Web
+</a></div><div class="nav-item"><a href="https://github.com/MarcLoupias/memo-dev" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/data/" class="nav-link router-link-active">
+  Data
+</a></div><div class="nav-item"><a href="/devops/" class="nav-link">
+  DevOps
+</a></div><div class="nav-item"><a href="/divers/" class="nav-link">
+  Divers
+</a></div><div class="nav-item"><a href="/network/" class="nav-link">
+  Network
+</a></div><div class="nav-item"><a href="/languages/" class="nav-link">
+  Languages
+</a></div><div class="nav-item"><a href="/platforms-frameworks-libs/" class="nav-link">
+  Platforms, frameworks and libs
+</a></div><div class="nav-item"><a href="/security/" class="nav-link">
+  Security
+</a></div><div class="nav-item"><a href="/software-engineering/" class="nav-link">
+  Software Engineering
+</a></div><div class="nav-item"><a href="/systems/" class="nav-link">
+  Systems
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  Tools
+</a></div><div class="nav-item"><a href="/web/" class="nav-link">
+  Web
+</a></div><div class="nav-item"><a href="https://github.com/MarcLoupias/memo-dev" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Data basics</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/data/data-basics.html" class="active sidebar-link">data - basics</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/data/data-basics.html#difference-between-data-and-information" class="sidebar-link">difference between data and information</a></li><li class="sidebar-sub-header"><a href="/data/data-basics.html#anglicismes" class="sidebar-link">anglicismes</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/data/data-basics.html#digital-et-numerique" class="sidebar-link">digital et numérique</a></li><li class="sidebar-sub-header"><a href="/data/data-basics.html#chiffrement-et-cryptage" class="sidebar-link">chiffrement et cryptage</a></li><li class="sidebar-sub-header"><a href="/data/data-basics.html#bit-et-octet" class="sidebar-link">bit et octet</a></li></ul></li><li class="sidebar-sub-header"><a href="/data/data-basics.html#data" class="sidebar-link">data</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/data/data-basics.html#bit" class="sidebar-link">bit</a></li><li class="sidebar-sub-header"><a href="/data/data-basics.html#byte" class="sidebar-link">byte</a></li><li class="sidebar-sub-header"><a href="/data/data-basics.html#image" class="sidebar-link">image</a></li></ul></li><li class="sidebar-sub-header"><a href="/data/data-basics.html#information" class="sidebar-link">information</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Files formats</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/data/files-formats/asciidoc-infos.html" class="sidebar-link">asciidoc infos</a></li><li><a href="/data/files-formats/json.html" class="sidebar-link">JSON</a></li><li><a href="/data/files-formats/markdown-from-gitlab.html" class="sidebar-link">Markdown</a></li><li><a href="/data/files-formats/markdown-infos.html" class="sidebar-link">Markdown infos</a></li><li><a href="/data/files-formats/xml.html" class="sidebar-link">XML</a></li><li><a href="/data/files-formats/yaml.html" class="sidebar-link">YAML</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="data-basics"><a href="#data-basics" class="header-anchor">#</a> data - basics</h1> <h2 id="difference-between-data-and-information"><a href="#difference-between-data-and-information" class="header-anchor">#</a> difference between data and information</h2> <p>Computers need data. Humans need information.</p> <p>Data is a building block. Information gives meaning and context.</p> <p>Example :</p> <p><code>20180101</code> is the raw data. It is a suite of 8 numbers.</p> <p>Interpreted as a date it is the 1st january 2018.</p> <p>It could be also a transaction amount of around 20 millions (euros ? dollars ?).</p> <p>It could be a (bad) password, it could be a lot of things.</p> <p>To become an information, the data need context.</p> <h2 id="anglicismes"><a href="#anglicismes" class="header-anchor">#</a> anglicismes</h2> <p>Beaucoup de confusions terminologiques sont faites en français du fait de mauvaises traductions qui affectent le sens.</p> <h3 id="digital-et-numerique"><a href="#digital-et-numerique" class="header-anchor">#</a> digital et numérique</h3> <p>Par exemple <em>digit</em> en anglais signifie <em>chiffre</em>.</p> <p>Ce qui conduit certaines personnes à parler de <em>digital</em> au lieu de <em>numérique</em>.</p> <p>L'informatisation du monde est le processus de transformation de l'information en nombres, il s'agit donc de numérisation
+et non de digital. En français digital se rapporte aux doigts.</p> <h3 id="chiffrement-et-cryptage"><a href="#chiffrement-et-cryptage" class="header-anchor">#</a> chiffrement et cryptage</h3> <p>Il en va de même pour <em>chiffrement</em> et <em>cryptage</em> (anglicisme de <em>encryption</em>).</p> <h3 id="bit-et-octet"><a href="#bit-et-octet" class="header-anchor">#</a> bit et octet</h3> <p>En anglais <em>bit</em> se traduit <em>bit</em>. Pas de différence.</p> <p>En revanche <em>octet</em> se traduit <em>byte</em>.</p> <p>Un octet étant composé de 8 bits, parler de 10 megabits par seconde n'est pas du tout équivalent à 10 megabytes par seconde !</p> <h2 id="data"><a href="#data" class="header-anchor">#</a> data</h2> <h3 id="bit"><a href="#bit" class="header-anchor">#</a> bit</h3> <p>The smallest piece of data. Short for binary digit (chiffre binaire).</p> <p>A bit has a single binary value, either <code>0</code> or <code>1</code>.</p> <h3 id="byte"><a href="#byte" class="header-anchor">#</a> byte</h3> <p>A byte is a unit of data that is eight binary digits long.</p> <p>Example, the number <code>73</code> in decimal base is <code>01001001</code> in binary base.</p> <p>## data structure</p> <p>### text</p> <p>The first data structure for text is the <a href="https://fr.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange" target="_blank" rel="noopener noreferrer">ASCII (American Standard Code for Information Interchange)<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>128 characters available (0 to 127) expressed in a table :</p> <div class="language-txt line-numbers-mode"><pre class="language-text"><code>| Dec | Hexa | Oct | Html     | chr | binary  | description              |
 | --- | ---- | --- | -------- | --- | ------- | ------------------------ |
-|   0 |    0 |   0 |          | NUL | 0000000 | (null)                   |
-|   1 |    1 | 001 |          | SOH | 0000001 | (start of heading)       |
-|   2 |    2 | 002 |          | STX | 0000010 | (start of text)          |
-|   3 |    3 | 003 |          | ETX | 0000011 | (end of text)            |
-|   4 |    4 | 004 |          | EOT | 0000100 | (end of transmission)    |
-|   5 |    5 | 005 |          | ENQ | 0000101 | (enquiry)                |
-|   6 |    6 | 006 |          | ACK | 0000110 | (acknowledge)            |
-|   7 |    7 | 007 |          | BEL | 0000111 | (bell)                   |
-|   8 |    8 | 010 |          | BS  | 0001000 | (backspace)              |
-|   9 |    9 | 011 |          | TAB | 0001001 | (horizontal tab)         |
-|  10 |    A | 012 |          | LF  | 0001010 | (NL line feed, new line) |
-|  11 |    B | 013 |          | VT  | 0001011 | (vertical tab)           |
-|  12 |    C | 014 |          | FF  | 0001100 | (NP form feed, new page) |
-|  13 |    D | 015 |          | CR  | 0001101 | (carriage return)        |
-|  14 |    E | 016 |          | SO  | 0001110 | (shift out)              |
-|  15 |    F | 017 |          | SI  | 0001111 | (shift in)               |
-|  16 |   10 | 020 |          | DLE | 0010000 | (data link escape)       |
-|  17 |   11 | 021 |          | DC1 | 0010001 | (device control 1)       |
+|   0 |    0 |   0 |          | NUL | 0000000 | (null)                   |
+|   1 |    1 | 001 |          | SOH | 0000001 | (start of heading)       |
+|   2 |    2 | 002 |          | STX | 0000010 | (start of text)          |
+|   3 |    3 | 003 |          | ETX | 0000011 | (end of text)            |
+|   4 |    4 | 004 |          | EOT | 0000100 | (end of transmission)    |
+|   5 |    5 | 005 |          | ENQ | 0000101 | (enquiry)                |
+|   6 |    6 | 006 |          | ACK | 0000110 | (acknowledge)            |
+|   7 |    7 | 007 |          | BEL | 0000111 | (bell)                   |
+|   8 |    8 | 010 |          | BS  | 0001000 | (backspace)              |
+|   9 |    9 | 011 |          | TAB | 0001001 | (horizontal tab)         |
+|  10 |    A | 012 |          | LF  | 0001010 | (NL line feed, new line) |
+|  11 |    B | 013 |          | VT  | 0001011 | (vertical tab)           |
+|  12 |    C | 014 |          | FF  | 0001100 | (NP form feed, new page) |
+|  13 |    D | 015 |          | CR  | 0001101 | (carriage return)        |
+|  14 |    E | 016 |          | SO  | 0001110 | (shift out)              |
+|  15 |    F | 017 |          | SI  | 0001111 | (shift in)               |
+|  16 |   10 | 020 |          | DLE | 0010000 | (data link escape)       |
+|  17 |   11 | 021 |          | DC1 | 0010001 | (device control 1)       |
 |  18 |   12 | 022 |          | DC2 | 0010010 | (device control 2)       |
-|  19 |   13 | 023 |          | DC3 | 0010011 | (device control 3)       |
-|  20 |   14 | 024 |          | DC4 | 0010100 | (device control 4)       |
-|  21 |   15 | 025 |          | NAK | 0010101 | (negative acknowledge)   |
-|  22 |   16 | 026 |          | SYN | 0010110 | (synchronous idle)       |
-|  23 |   17 | 027 |          | ETB | 0010111 | (end of trans. block)    |
-|  24 |   18 | 030 |          | CAN | 0011000 | (cancel)                 |
-|  25 |   19 | 031 |          | EM  | 0011001 | (end of medium)          |
-|  26 |   1A | 032 |          | SUB | 0011010 | (substitute)             |
-|  27 |   1B | 033 |          | ESC | 0011011 | (escape)                 |
-|  28 |   1C | 034 |          | FS  | 0011100 | (file separator)         |
-|  29 |   1D | 035 |          | GS  | 0011101 | (group separator)        |
-|  30 |   1E | 036 |          | RS  | 0011110 | (record separator)       |
-|  31 |   1F | 037 |          | US  | 0011111 | (unit separator)         |
-|  32 |   20 | 040 | `&amp;#32;`  | Spc | 0100000 | (space)                  |
-|  33 |   21 | 041 | `&amp;#33;`  | !   | 0100001 |                          |
-|  34 |   22 | 042 | `&amp;#34;`  | &quot;   | 0100010 |                          |
-|  35 |   23 | 043 | `&amp;#35;`  | #   | 0100011 |                          |
-|  36 |   24 | 044 | `&amp;#36;`  | $   | 0100100 |                          |
-|  37 |   25 | 045 | `&amp;#37;`  | %   | 0100101 |                          |
-|  38 |   26 | 046 | `&amp;#38;`  | &amp;   | 0100110 |                          |
-|  39 |   27 | 047 | `&amp;#39;`  | &#39;   | 0100111 |                          |
-|  40 |   28 | 050 | `&amp;#40;`  | (   | 0101000 |                          |
-|  41 |   29 | 051 | `&amp;#41;`  | )   | 0101001 |                          |
-|  42 |   2A | 052 | `&amp;#42;`  | *   | 0101010 |                          |
-|  43 |   2B | 053 | `&amp;#43;`  | +   | 0101011 |                          |
-|  44 |   2C | 054 | `&amp;#44;`  | ,   | 0101100 |                          |
-|  45 |   2D | 055 | `&amp;#45;`  | -   | 0101101 |                          |
-|  46 |   2E | 056 | `&amp;#46;`  | .   | 0101110 |                          |
-|  47 |   2F | 057 | `&amp;#47;`  | /   | 0101111 |                          |
-|  48 |   30 | 060 | `&amp;#48;`  | 0   | 0110000 |                          |
-|  49 |   31 | 061 | `&amp;#49;`  | 1   | 0110001 |                          |
-|  50 |   32 | 062 | `&amp;#50;`  | 2   | 0110010 |                          |
-|  51 |   33 | 063 | `&amp;#51;`  | 3   | 0110011 |                          |
-|  52 |   34 | 064 | `&amp;#52;`  | 4   | 0110100 |                          |
-|  53 |   35 | 065 | `&amp;#53;`  | 5   | 0110101 |                          |
-|  54 |   36 | 066 | `&amp;#54;`  | 6   | 0110110 |                          |
-|  55 |   37 | 067 | `&amp;#55;`  | 7   | 0110111 |                          |
-|  56 |   38 | 070 | `&amp;#56;`  | 8   | 0111000 |                          |
-|  57 |   39 | 071 | `&amp;#57;`  | 9   | 0111001 |                          |
-|  58 |   3A | 072 | `&amp;#58;`  | :   | 0111010 |                          |
-|  59 |   3B | 073 | `&amp;#59;`  | ;   | 0111011 |                          |
-|  60 |   3C | 074 | `&amp;#60;`  | &lt;   | 0111100 |                          |
-|  61 |   3D | 075 | `&amp;#61;`  | =   | 0111101 |                          |
-|  62 |   3E | 076 | `&amp;#62;`  | &gt;   | 0111110 |                          |
-|  63 |   3F | 077 | `&amp;#63;`  | ?   | 0111111 |                          |
-|  64 |   40 | 100 | `&amp;#64;`  | @   | 1000000 |                          |
-|  65 |   41 | 101 | `&amp;#65;`  | A   | 1000001 |                          |
-|  66 |   42 | 102 | `&amp;#66;`  | B   | 1000010 |                          |
-|  67 |   43 | 103 | `&amp;#67;`  | C   | 1000011 |                          |
-|  68 |   44 | 104 | `&amp;#68;`  | D   | 1000100 |                          |
-|  69 |   45 | 105 | `&amp;#69;`  | E   | 1000101 |                          |
-|  70 |   46 | 106 | `&amp;#70;`  | F   | 1000110 |                          |
-|  71 |   47 | 107 | `&amp;#71;`  | G   | 1000111 |                          |
-|  72 |   48 | 110 | `&amp;#72;`  | H   | 1001000 |                          |
-|  73 |   49 | 111 | `&amp;#73;`  | I   | 1001001 |                          |
-|  74 |   4A | 112 | `&amp;#74;`  | J   | 1001010 |                          |
-|  75 |   4B | 113 | `&amp;#75;`  | K   | 1001011 |                          |
-|  76 |   4C | 114 | `&amp;#76;`  | L   | 1001100 |                          |
-|  77 |   4D | 115 | `&amp;#77;`  | M   | 1001101 |                          |
-|  78 |   4E | 116 | `&amp;#78;`  | N   | 1001110 |                          |
-|  79 |   4F | 117 | `&amp;#79;`  | O   | 1001111 |                          |
-|  80 |   50 | 120 | `&amp;#80;`  | P   | 1010000 |                          |
-|  81 |   51 | 121 | `&amp;#81;`  | Q   | 1010001 |                          |
-|  82 |   52 | 122 | `&amp;#82;`  | R   | 1010010 |                          |
-|  83 |   53 | 123 | `&amp;#83;`  | S   | 1010011 |                          |
-|  84 |   54 | 124 | `&amp;#84;`  | T   | 1010100 |                          |
-|  85 |   55 | 125 | `&amp;#85;`  | U   | 1010101 |                          |
-|  86 |   56 | 126 | `&amp;#86;`  | V   | 1010110 |                          |
-|  87 |   57 | 127 | `&amp;#87;`  | W   | 1010111 |                          |
-|  88 |   58 | 130 | `&amp;#88;`  | X   | 1011000 |                          |
-|  89 |   59 | 131 | `&amp;#89;`  | Y   | 1011001 |                          |
-|  90 |   5A | 132 | `&amp;#90;`  | Z   | 1011010 |                          |
-|  91 |   5B | 133 | `&amp;#91;`  | [   | 1011011 |                          |
-|  92 |   5C | 134 | `&amp;#92;`  | \   | 1011100 |                          |
-|  93 |   5D | 135 | `&amp;#93;`  | ]   | 1011101 |                          |
-|  94 |   5E | 136 | `&amp;#94;`  | ^   | 1011110 |                          |
-|  95 |   5F | 137 | `&amp;#95;`  | _   | 1011111 |                          |
-|  96 |   60 | 140 | `&amp;#96;`  | `   | 1100000 |                          |
-|  97 |   61 | 141 | `&amp;#97;`  | a   | 1100001 |                          |
-|  98 |   62 | 142 | `&amp;#98;`  | b   | 1100010 |                          |
-|  99 |   63 | 143 | `&amp;#99;`  | c   | 1100011 |                          |
-| 100 |   64 | 144 | `&amp;#100;` | d   | 1100100 |                          |
-| 101 |   65 | 145 | `&amp;#101;` | e   | 1100101 |                          |
-| 102 |   66 | 146 | `&amp;#102;` | f   | 1100110 |                          |
-| 103 |   67 | 147 | `&amp;#103;` | g   | 1100111 |                          |
-| 104 |   68 | 150 | `&amp;#104;` | h   | 1101000 |                          |
-| 105 |   69 | 151 | `&amp;#105;` | i   | 1101001 |                          |
-| 106 |   6A | 152 | `&amp;#106;` | j   | 1101010 |                          |
-| 107 |   6B | 153 | `&amp;#107;` | k   | 1101011 |                          |
-| 108 |   6C | 154 | `&amp;#108;` | l   | 1101100 |                          |
-| 109 |   6D | 155 | `&amp;#109;` | m   | 1101101 |                          |
-| 110 |   6E | 156 | `&amp;#110;` | n   | 1101110 |                          |
-| 111 |   6F | 157 | `&amp;#111;` | o   | 1101111 |                          |
-| 112 |   70 | 160 | `&amp;#112;` | p   | 1110000 |                          |
-| 113 |   71 | 161 | `&amp;#113;` | q   | 1110001 |                          |
-| 114 |   72 | 162 | `&amp;#114;` | r   | 1110010 |                          |
-| 115 |   73 | 163 | `&amp;#115;` | s   | 1110011 |                          |
-| 116 |   74 | 164 | `&amp;#116;` | t   | 1110100 |                          |
-| 117 |   75 | 165 | `&amp;#117;` | u   | 1110101 |                          |
-| 118 |   76 | 166 | `&amp;#118;` | v   | 1110110 |                          |
-| 119 |   77 | 167 | `&amp;#119;` | w   | 1110111 |                          |
-| 120 |   78 | 170 | `&amp;#120;` | x   | 1111000 |                          |
-| 121 |   79 | 171 | `&amp;#121;` | y   | 1111001 |                          |
-| 122 |   7A | 172 | `&amp;#122;` | z   | 1111010 |                          |
-| 123 |   7B | 173 | `&amp;#123;` | {   | 1111011 |                          |
-| 124 |   7C | 174 | `&amp;#124;` | \|  | 1111100 |                          |
-| 125 |   7D | 175 | `&amp;#125;` | }   | 1111101 |                          |
-| 126 |   7E | 176 | `&amp;#126;` | ~   | 1111110 |                          |
-| 127 |   7F | 177 | `&amp;#127;` | DEL | 1111111 |                          |</code></pre>
-<h3 id="title-image">image</h3>
-<p>The very raw image format is an array of pixels.</p>
-<p>A pixel is a picture cell, a raw colored point.</p>
-<p>Each pixel is composed by 3 numbers representing the red value, the green value, and the blue value.</p>
-<p>It is named RGB (or Digital 8-bit per channel).</p>
-<p>It is a 24bits data structure (3 bytes because 3x8bits) :</p>
-<ul>
-<li>represented with integers : <code>RGB(255, 255, 255)</code></li>
-<li>represented with hexadecimals : <code>#FFFFFF</code></li>
-</ul>
-<p>It is named true color and allows 16,777,216 color variations. The human eye can discriminate up to 10 millions colors.</p>
-<h2 id="title-information">information</h2>
-<p>An information contained in a data rely on the interpretation context.</p>
-<p>For example, the number 20 stored in a data to represent 20 degree. Knowing that the number 20 is for degree (temperature)<br>is not enough to have the information. Is it Celcius or Fahrenheit ? 20°F equal -6.6°C. This is not the same thing in the<br>physical reality.</p>
-<p>Other example, a transaction amount. 20 euros is not the same value as 20 dollars.</p>
-</article></body></html>
+|  19 |   13 | 023 |          | DC3 | 0010011 | (device control 3)       |
+|  20 |   14 | 024 |          | DC4 | 0010100 | (device control 4)       |
+|  21 |   15 | 025 |          | NAK | 0010101 | (negative acknowledge)   |
+|  22 |   16 | 026 |          | SYN | 0010110 | (synchronous idle)       |
+|  23 |   17 | 027 |          | ETB | 0010111 | (end of trans. block)    |
+|  24 |   18 | 030 |          | CAN | 0011000 | (cancel)                 |
+|  25 |   19 | 031 |          | EM  | 0011001 | (end of medium)          |
+|  26 |   1A | 032 |          | SUB | 0011010 | (substitute)             |
+|  27 |   1B | 033 |          | ESC | 0011011 | (escape)                 |
+|  28 |   1C | 034 |          | FS  | 0011100 | (file separator)         |
+|  29 |   1D | 035 |          | GS  | 0011101 | (group separator)        |
+|  30 |   1E | 036 |          | RS  | 0011110 | (record separator)       |
+|  31 |   1F | 037 |          | US  | 0011111 | (unit separator)         |
+|  32 |   20 | 040 | `&amp;#32;`  | Spc | 0100000 | (space)                  |
+|  33 |   21 | 041 | `&amp;#33;`  | !   | 0100001 |                          |
+|  34 |   22 | 042 | `&amp;#34;`  | &quot;   | 0100010 |                          |
+|  35 |   23 | 043 | `&amp;#35;`  | #   | 0100011 |                          |
+|  36 |   24 | 044 | `&amp;#36;`  | $   | 0100100 |                          |
+|  37 |   25 | 045 | `&amp;#37;`  | %   | 0100101 |                          |
+|  38 |   26 | 046 | `&amp;#38;`  | &amp;   | 0100110 |                          |
+|  39 |   27 | 047 | `&amp;#39;`  | '   | 0100111 |                          |
+|  40 |   28 | 050 | `&amp;#40;`  | (   | 0101000 |                          |
+|  41 |   29 | 051 | `&amp;#41;`  | )   | 0101001 |                          |
+|  42 |   2A | 052 | `&amp;#42;`  | *   | 0101010 |                          |
+|  43 |   2B | 053 | `&amp;#43;`  | +   | 0101011 |                          |
+|  44 |   2C | 054 | `&amp;#44;`  | ,   | 0101100 |                          |
+|  45 |   2D | 055 | `&amp;#45;`  | -   | 0101101 |                          |
+|  46 |   2E | 056 | `&amp;#46;`  | .   | 0101110 |                          |
+|  47 |   2F | 057 | `&amp;#47;`  | /   | 0101111 |                          |
+|  48 |   30 | 060 | `&amp;#48;`  | 0   | 0110000 |                          |
+|  49 |   31 | 061 | `&amp;#49;`  | 1   | 0110001 |                          |
+|  50 |   32 | 062 | `&amp;#50;`  | 2   | 0110010 |                          |
+|  51 |   33 | 063 | `&amp;#51;`  | 3   | 0110011 |                          |
+|  52 |   34 | 064 | `&amp;#52;`  | 4   | 0110100 |                          |
+|  53 |   35 | 065 | `&amp;#53;`  | 5   | 0110101 |                          |
+|  54 |   36 | 066 | `&amp;#54;`  | 6   | 0110110 |                          |
+|  55 |   37 | 067 | `&amp;#55;`  | 7   | 0110111 |                          |
+|  56 |   38 | 070 | `&amp;#56;`  | 8   | 0111000 |                          |
+|  57 |   39 | 071 | `&amp;#57;`  | 9   | 0111001 |                          |
+|  58 |   3A | 072 | `&amp;#58;`  | :   | 0111010 |                          |
+|  59 |   3B | 073 | `&amp;#59;`  | ;   | 0111011 |                          |
+|  60 |   3C | 074 | `&amp;#60;`  | &lt;   | 0111100 |                          |
+|  61 |   3D | 075 | `&amp;#61;`  | =   | 0111101 |                          |
+|  62 |   3E | 076 | `&amp;#62;`  | &gt;   | 0111110 |                          |
+|  63 |   3F | 077 | `&amp;#63;`  | ?   | 0111111 |                          |
+|  64 |   40 | 100 | `&amp;#64;`  | @   | 1000000 |                          |
+|  65 |   41 | 101 | `&amp;#65;`  | A   | 1000001 |                          |
+|  66 |   42 | 102 | `&amp;#66;`  | B   | 1000010 |                          |
+|  67 |   43 | 103 | `&amp;#67;`  | C   | 1000011 |                          |
+|  68 |   44 | 104 | `&amp;#68;`  | D   | 1000100 |                          |
+|  69 |   45 | 105 | `&amp;#69;`  | E   | 1000101 |                          |
+|  70 |   46 | 106 | `&amp;#70;`  | F   | 1000110 |                          |
+|  71 |   47 | 107 | `&amp;#71;`  | G   | 1000111 |                          |
+|  72 |   48 | 110 | `&amp;#72;`  | H   | 1001000 |                          |
+|  73 |   49 | 111 | `&amp;#73;`  | I   | 1001001 |                          |
+|  74 |   4A | 112 | `&amp;#74;`  | J   | 1001010 |                          |
+|  75 |   4B | 113 | `&amp;#75;`  | K   | 1001011 |                          |
+|  76 |   4C | 114 | `&amp;#76;`  | L   | 1001100 |                          |
+|  77 |   4D | 115 | `&amp;#77;`  | M   | 1001101 |                          |
+|  78 |   4E | 116 | `&amp;#78;`  | N   | 1001110 |                          |
+|  79 |   4F | 117 | `&amp;#79;`  | O   | 1001111 |                          |
+|  80 |   50 | 120 | `&amp;#80;`  | P   | 1010000 |                          |
+|  81 |   51 | 121 | `&amp;#81;`  | Q   | 1010001 |                          |
+|  82 |   52 | 122 | `&amp;#82;`  | R   | 1010010 |                          |
+|  83 |   53 | 123 | `&amp;#83;`  | S   | 1010011 |                          |
+|  84 |   54 | 124 | `&amp;#84;`  | T   | 1010100 |                          |
+|  85 |   55 | 125 | `&amp;#85;`  | U   | 1010101 |                          |
+|  86 |   56 | 126 | `&amp;#86;`  | V   | 1010110 |                          |
+|  87 |   57 | 127 | `&amp;#87;`  | W   | 1010111 |                          |
+|  88 |   58 | 130 | `&amp;#88;`  | X   | 1011000 |                          |
+|  89 |   59 | 131 | `&amp;#89;`  | Y   | 1011001 |                          |
+|  90 |   5A | 132 | `&amp;#90;`  | Z   | 1011010 |                          |
+|  91 |   5B | 133 | `&amp;#91;`  | [   | 1011011 |                          |
+|  92 |   5C | 134 | `&amp;#92;`  | \   | 1011100 |                          |
+|  93 |   5D | 135 | `&amp;#93;`  | ]   | 1011101 |                          |
+|  94 |   5E | 136 | `&amp;#94;`  | ^   | 1011110 |                          |
+|  95 |   5F | 137 | `&amp;#95;`  | _   | 1011111 |                          |
+|  96 |   60 | 140 | `&amp;#96;`  | `   | 1100000 |                          |
+|  97 |   61 | 141 | `&amp;#97;`  | a   | 1100001 |                          |
+|  98 |   62 | 142 | `&amp;#98;`  | b   | 1100010 |                          |
+|  99 |   63 | 143 | `&amp;#99;`  | c   | 1100011 |                          |
+| 100 |   64 | 144 | `&amp;#100;` | d   | 1100100 |                          |
+| 101 |   65 | 145 | `&amp;#101;` | e   | 1100101 |                          |
+| 102 |   66 | 146 | `&amp;#102;` | f   | 1100110 |                          |
+| 103 |   67 | 147 | `&amp;#103;` | g   | 1100111 |                          |
+| 104 |   68 | 150 | `&amp;#104;` | h   | 1101000 |                          |
+| 105 |   69 | 151 | `&amp;#105;` | i   | 1101001 |                          |
+| 106 |   6A | 152 | `&amp;#106;` | j   | 1101010 |                          |
+| 107 |   6B | 153 | `&amp;#107;` | k   | 1101011 |                          |
+| 108 |   6C | 154 | `&amp;#108;` | l   | 1101100 |                          |
+| 109 |   6D | 155 | `&amp;#109;` | m   | 1101101 |                          |
+| 110 |   6E | 156 | `&amp;#110;` | n   | 1101110 |                          |
+| 111 |   6F | 157 | `&amp;#111;` | o   | 1101111 |                          |
+| 112 |   70 | 160 | `&amp;#112;` | p   | 1110000 |                          |
+| 113 |   71 | 161 | `&amp;#113;` | q   | 1110001 |                          |
+| 114 |   72 | 162 | `&amp;#114;` | r   | 1110010 |                          |
+| 115 |   73 | 163 | `&amp;#115;` | s   | 1110011 |                          |
+| 116 |   74 | 164 | `&amp;#116;` | t   | 1110100 |                          |
+| 117 |   75 | 165 | `&amp;#117;` | u   | 1110101 |                          |
+| 118 |   76 | 166 | `&amp;#118;` | v   | 1110110 |                          |
+| 119 |   77 | 167 | `&amp;#119;` | w   | 1110111 |                          |
+| 120 |   78 | 170 | `&amp;#120;` | x   | 1111000 |                          |
+| 121 |   79 | 171 | `&amp;#121;` | y   | 1111001 |                          |
+| 122 |   7A | 172 | `&amp;#122;` | z   | 1111010 |                          |
+| 123 |   7B | 173 | `&amp;#123;` | {   | 1111011 |                          |
+| 124 |   7C | 174 | `&amp;#124;` | \|  | 1111100 |                          |
+| 125 |   7D | 175 | `&amp;#125;` | }   | 1111101 |                          |
+| 126 |   7E | 176 | `&amp;#126;` | ~   | 1111110 |                          |
+| 127 |   7F | 177 | `&amp;#127;` | DEL | 1111111 |                          |
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br></div></div><h3 id="image"><a href="#image" class="header-anchor">#</a> image</h3> <p>The very raw image format is an array of pixels.</p> <p>A pixel is a picture cell, a raw colored point.</p> <p>Each pixel is composed by 3 numbers representing the red value, the green value, and the blue value.</p> <p>It is named RGB (or Digital 8-bit per channel).</p> <p>It is a 24bits data structure (3 bytes because 3x8bits) :</p> <ul><li>represented with integers : <code>RGB(255, 255, 255)</code></li> <li>represented with hexadecimals : <code>#FFFFFF</code></li></ul> <p>It is named true color and allows 16,777,216 color variations. The human eye can discriminate up to 10 millions colors.</p> <h2 id="information"><a href="#information" class="header-anchor">#</a> information</h2> <p>An information contained in a data rely on the interpretation context.</p> <p>For example, the number 20 stored in a data to represent 20 degree. Knowing that the number 20 is for degree (temperature)
+is not enough to have the information. Is it Celcius or Fahrenheit ? 20°F equal -6.6°C. This is not the same thing in the
+physical reality.</p> <p>Other example, a transaction amount. 20 euros is not the same value as 20 dollars.</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/data/files-formats/asciidoc-infos.html">
+        asciidoc infos
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.637efe70.js" defer></script><script src="/assets/js/2.b10fadef.js" defer></script><script src="/assets/js/7.d587d140.js" defer></script>
+  </body>
+</html>

@@ -1,26 +1,3 @@
----
-htmlHead:
-    title: 'marlou knowledge base' 
-    containerClass: 'markdown-body'
-    metaTags:
-        - name: viewport
-          content: 'width=device-width, initial-scale=1, minimal-ui'
-        - name: robots
-          content: none
-    links:
-        - href: '../../github-markdown.css'
-          rel: stylesheet
-          media: all
-        - href: '../../main.css'
-          rel: stylesheet
-          media: all
-        - href: '../../github.css'
-          rel: stylesheet
-    scripts:
-        - src: '../../index.js'
-
----
-
 # raspberry - overview
 
 ## links
@@ -56,7 +33,7 @@ htmlHead:
 [cozy.io](https://cozy.io/en/about/)
 
 > Cozy allow you to control your personal data (pictures, bank statements, bills, health reinbursements) in a secure and private space.
-> Welcome in your new digital home. 
+> Welcome in your new digital home.
 
 [Installer Cozy sur Raspberry Pi 3 - forum.cozy.io](https://forum.cozy.io/t/installer-cozy-sur-raspberry-pi-3/3825/14)
 

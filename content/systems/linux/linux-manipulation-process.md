@@ -1,26 +1,3 @@
----
-htmlHead:
-    title: 'marlou knowledge base' 
-    containerClass: 'markdown-body'
-    metaTags:
-        - name: viewport
-          content: 'width=device-width, initial-scale=1, minimal-ui'
-        - name: robots
-          content: none
-    links:
-        - href: '../../github-markdown.css'
-          rel: stylesheet
-          media: all
-        - href: '../../main.css'
-          rel: stylesheet
-          media: all
-        - href: '../../github.css'
-          rel: stylesheet
-    scripts:
-        - src: '../../index.js'
-
----
-
 # manipulation des processus
 
 ## `ps`
@@ -30,7 +7,7 @@ htmlHead:
 lister tous les processus actifs sur le système
 
 ```bash
-$ ps -ef
+ps -ef
 ```
 
 filtrer la liste précédente avec des mots clefs
@@ -42,9 +19,9 @@ $ ps -ef | grep jboss
 
 ## `htop`
 
-[htop official website](https://hisham.hm/htop/) [hishamhm/htop - github.com](https://github.com/hishamhm/htop)
+[htop official website](https://hisham.hm/htop/) [`hishamhm/htop` - `github.com`](https://github.com/hishamhm/htop)
 
-> htop is an interactive text-mode process viewer for Unix systems. It aims to be a better 'top'. 
+> htop is an interactive text-mode process viewer for Unix systems. It aims to be a better 'top'.
 
 [htop explained - peteris.rocks/blog - 20170102](https://peteris.rocks/blog/htop/)
 

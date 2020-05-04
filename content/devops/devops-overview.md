@@ -1,26 +1,3 @@
----
-htmlHead:
-    title: 'marlou knowledge base' 
-    containerClass: 'markdown-body'
-    metaTags:
-        - name: viewport
-          content: 'width=device-width, initial-scale=1, minimal-ui'
-        - name: robots
-          content: none
-    links:
-        - href: '../github-markdown.css'
-          rel: stylesheet
-          media: all
-        - href: '../main.css'
-          rel: stylesheet
-          media: all
-        - href: '../github.css'
-          rel: stylesheet
-    scripts:
-        - src: '../index.js'
-
----
-
 # devops - overview
 
 ## what is devops
@@ -43,7 +20,7 @@ htmlHead:
 
 ### DevOps pipeline
 
-![DevOps Pipeline](devops-pipeline.png)
+![DevOps Pipeline](/images/devops/devops-pipeline.png)
 
 #### article "Construire un pipeline DevOps"
 

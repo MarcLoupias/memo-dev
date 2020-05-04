@@ -2,7 +2,7 @@
 
 [memo-dev available here](http://memo-dev.marc-loupias.fr)
 
-This website is a personal reminder for work. Aka : memo, knowledge base, cheatsheets, til, ... 
+This website is a personal reminder for work. Aka : memo, knowledge base, cheatsheets, til, ...
 
 Sometimes in english, et parfois en français ...
 
@@ -18,48 +18,14 @@ Any comments welcome ...
 
 The markdown files belongs in the `content/` folder.
 
-Currently the `content/SUMMARY.md` in the index.
-
 They are linted with [DavidAnson/markdownlint](https://github.com/DavidAnson/markdownlint).
 
-Each markdown file contain a [front-matter](https://www.npmjs.com/package/front-matter) to define `<title>`, `<meta>`, `<style>` and `<script>` tags.
+### website generation
 
-### html generation
+With [VuePress](https://vuepress.vuejs.org/).
 
-The `content/*.md` files are converted into `.html` with [MarcLoupias/mdfc-map-to-html](https://github.com/MarcLoupias/mdfc-map-to-html).
-
-Then the `content/*.html` files are moved with their `.jpg` and `.png` into the `docs/` folder for deployment.
-
-Then `docs/SUMMARY.html` is renamed `docs/index.html`.
-
-Then `node_modules/github-markdown-css/github-markdown.css` is copied into `docs/` folder.
-
-Then `assets/*.*` are copied into `docs/` folder.
-
-Then the `docs/` folder is bundled with parcel.
-
-Then the `docs/` folder is ready to serve.
-
-### css
-
-#### general design
-
-[sindresorhus/github-markdown-css](https://github.com/sindresorhus/github-markdown-css)
-
-#### code highlight
-
-Using [highlight.js](https://highlightjs.org).
-
-### bundler
-
-[parcel](https://en.parceljs.org/) is used to bundle the files in the `docs/` folder.
+The generated files belongs in the `docs/` folder to follow GitHub pages conventions.
 
 ### host
 
 [GitHub pages](https://help.github.com/en/categories/github-pages-basics) with the `docs/` folder configuration is used to deploy.
-
-## TODO
-
-- A new `index.html` page in the form of a SPA to support a full text research with [fusejs](https://fusejs.io/).
-- Waiting [GitHub Actions](https://help.github.com/en/articles/about-github-actions) to lint the markdown and generate automatically the `docs/` folder when editing the `content/` folder from the GitHub UI.
-- Replace the `<title>` tag with the document main title for each page.
