@@ -1,26 +1,3 @@
----
-htmlHead:
-    title: 'marlou knowledge base' 
-    containerClass: 'markdown-body'
-    metaTags:
-        - name: viewport
-          content: 'width=device-width, initial-scale=1, minimal-ui'
-        - name: robots
-          content: none
-    links:
-        - href: '../../github-markdown.css'
-          rel: stylesheet
-          media: all
-        - href: '../../main.css'
-          rel: stylesheet
-          media: all
-        - href: '../../github.css'
-          rel: stylesheet
-    scripts:
-        - src: '../../index.js'
-
----
-
 # Linux - Gestion des droits du FHS
 
 ## Notion de droits
@@ -31,8 +8,7 @@ Ainsi les manipulations de fichiers sont restreintes selon les droits alloués �
 
 ## Affichage des droits
 
-```
-
+```bash
 $ ls -l
 
 drwxr-xr-x 1 marco 197121     0 mai    7 23:10 _book/
@@ -48,12 +24,11 @@ drwxr-xr-x 1 marco 197121     0 mai    7 22:49 software-engineering/
 -rw-r--r-- 1 marco 197121 13721 mai    7 23:10 SUMMARY.md
 drwxr-xr-x 1 marco 197121     0 mai    7 22:55 tools/
 drwxr-xr-x 1 marco 197121     0 mai    7 23:03 web/
-
 ```
 
 Liste les fichiers et leurs droits du répertoire `linux`.
 
-La 1ère colonne indique le type de fichier suivi de ses droits d'accès. 
+La 1ère colonne indique le type de fichier suivi de ses droits d'accès.
 `d` pour directory et `-` pour fichier suivi des 3 blocs de droits `rwx` ce qui donne par exemple `drwxr-xr-x` ou `-rwxr-xr-x`.
 
 La 3ème colonne indique le nom du compte propriétaire (UID).
@@ -65,6 +40,7 @@ La dernière colonne indique le nom du fichier (ou répertoire).
 ## Droits d'accès
 
 3 types de droits :
+
 - read
 - write
 - execute
@@ -99,43 +75,44 @@ Le `UID` désigne par un identificateur numérique unique le propriétaire d'un 
 
 ### Groupe
 
-Un groupe d'utilisateur est un ensemble d'utilisateurs privilégiés ayant en général des permissions moindre que le propriétaire 
+Un groupe d'utilisateur est un ensemble d'utilisateurs privilégiés ayant en général des permissions moindre que le propriétaire
 d'un fichier mais plus grandes que la catégorie qui suit. Cette catégorie est désignée par la lettre `g` (`group`).
 
 Le `GID` désigne par un identificateur numérique unique le groupe auquel appartient le propriétaire d'un fichier.
 
 ### Autres
 
-Cette catégorie regroupe tous les utilisateurs qui ne sont ni le propriétaire d'un fichier ni faisant partir du même 
+Cette catégorie regroupe tous les utilisateurs qui ne sont ni le propriétaire d'un fichier ni faisant partir du même
 groupe que le propriétaire. On les désignent par la lettre `a` (`other`).
 
 ## Identification des droits
 
-A chaque catégorie d'utilisateur on associe un triplet de droits : lecture, écriture et exécution. 
+A chaque catégorie d'utilisateur on associe un triplet de droits : lecture, écriture et exécution.
 Au total 9 droits (3*3) sont affectés à chaque fichier.
 
-Lorsqu'un droit est alloué, on voit la lettre correspondante (`r`, `w `ou `x`). 
+Lorsqu'un droit est alloué, on voit la lettre correspondante (`r`, `w` ou `x`).
 Si le droit est refusé, on voit un tiret (`-`).
 
 `-rwxr-xr-x` : Dans cet exemple on est sur un fichier dont :
+
 - le propriétaire a tous les droits
 - le groupe peut seulement lire
 - les autres peuvent seulement lire
 
 Combinaison des droits :
 
-`---` aucun
-`--x` exécution
-`-w-` écriture
-`-wx` écriture et exécution
-`r--` lecture
-`r-x` lecture et exécution
-`rw-` lecture et écriture
-`rwx` lecture, écriture et exécution
+- `---` aucun
+- `--x` exécution
+- `-w-` écriture
+- `-wx` écriture et exécution
+- `r--` lecture
+- `r-x` lecture et exécution
+- `rw-` lecture et écriture
+- `rwx` lecture, écriture et exécution
 
 ## Changement des droits (`chmod`)
 
-Il est offert au propriétaire d'un fichier (et seulement à lui seul) de modifier les droits du fichier. 
+Il est offert au propriétaire d'un fichier (et seulement à lui seul) de modifier les droits du fichier.
 C'est-à-dire qu'il peut supprimer des droits ou bien en rajouter de nouveaux à chacune des trois catégories d'utilisateur.
 
 Pour cela, on utilise la commande `chmod` (change mode) selon la syntaxe suivante :
@@ -174,14 +151,14 @@ Pour affecter à chaque catégorie les droits voulus, on peut utiliser une notat
 
 ### notation numérique
 
-L'avantage de la notation numérique sur la précédente est de permettre sur un fichier la définition absolue des 
+L'avantage de la notation numérique sur la précédente est de permettre sur un fichier la définition absolue des
 droits de toutes les catégories en même temps selon la syntaxe :
 
 `chmod serie-de-3-chiffres fichier`
 
-Ainsi on remplace chacun des triplets par un nombre compris entre 0 et 7. 
+Ainsi on remplace chacun des triplets par un nombre compris entre 0 et 7.
 Ce qui nous fait un nombre à trois chiffres en guise de notation numérique.
-Le tableau ci-après permet de faire la convertion entre les différentes triplets possibles et 
+Le tableau ci-après permet de faire la convertion entre les différentes triplets possibles et
 leur notation octale (nombre en base 8).
 
 | Triplet | Nombre binaire | Nombre octal

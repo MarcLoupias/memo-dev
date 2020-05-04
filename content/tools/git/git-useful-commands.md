@@ -1,27 +1,4 @@
----
-htmlHead:
-    title: 'marlou knowledge base' 
-    containerClass: 'markdown-body'
-    metaTags:
-        - name: viewport
-          content: 'width=device-width, initial-scale=1, minimal-ui'
-        - name: robots
-          content: none
-    links:
-        - href: '../../github-markdown.css'
-          rel: stylesheet
-          media: all
-        - href: '../../main.css'
-          rel: stylesheet
-          media: all
-        - href: '../../github.css'
-          rel: stylesheet
-    scripts:
-        - src: '../../index.js'
-
----
-
-# git - tips & tricks
+# Git - tips & tricks
 
 [Protips de Christophe Porteneuve : Devoxx2016](http://tdd.github.io/devoxx-git-protips/?utm_source=porteneuve&utm_medium=slides&utm_campaign=devoxxfr-2016#/)
 
@@ -98,7 +75,7 @@ $ git checkout <branch_name>
 ```
 
 ```bash
-# change working directory with last branch 
+# change working directory with last branch
 $ git checkout -
 ```
 
@@ -138,7 +115,7 @@ $ git commit --amend -m "New commit message"
 
 ```bash
 # rollback local repo after a git pull
-# use git log to find the hash of the desired commit then 
+# use git log to find the hash of the desired commit then
 $ git reset --hard 1234abcd where 1234abcd is the hash of the desired commit.
 ```
 
@@ -150,13 +127,13 @@ $ git reset --hard 1234abcd where 1234abcd is the hash of the desired commit.
 
 ```bash
 # checking difference between the current branch and the non-staged changes
-$ git diff 
+$ git diff
 ```
 
 ```bash
 # checking difference between the current branch and the staged changes
 $ git diff --staged
-# or 
+# or
 $ git diff --cached
 ```
 
@@ -200,7 +177,7 @@ $ git merge-base branch2 branch3
 ## cherry-pick
 
 ```bash
-# cherry-pick a specific commit from one branch to another 
+# cherry-pick a specific commit from one branch to another
 # (https://ariejan.net/2010/06/10/cherry-picking-specific-commits-from-another-branch/)
 # here master is the targeted branch (ie : where the commit will go)
 $ git checkout master
@@ -209,7 +186,7 @@ $ git cherry-pick 1234abcd
 
 ### cherry-pick from another repo
 
-[source : git-cherry-pick-from-another-repository : 20160913](https://coderwall.com/p/sgpksw/git-cherry-pick-from-another-repository)
+[source : `git-cherry-pick-from-another-repository` : 20160913](https://coderwall.com/p/sgpksw/git-cherry-pick-from-another-repository)
 
 ```bash
 # Cloning our fork
@@ -230,7 +207,7 @@ $ git cherry-pick 97fedac
 
 ## patch
 
-[creer-et-appliquer-un-patch-avec-git : renaudmathieu.fr : 201300820](http://renaudmathieu.fr/creer-et-appliquer-un-patch-avec-git/)
+[`creer-et-appliquer-un-patch-avec-git` : renaudmathieu.fr : 201300820](http://renaudmathieu.fr/creer-et-appliquer-un-patch-avec-git/)
 
 ```bash
 # listing the 10 alst commit, stdout only the complete sha1 then the commit title
@@ -249,13 +226,13 @@ $ git apply --check <name>.patch
 $ git am --signoff -k < <name>.patch
 ```
 
-[cherry-picking-range-of-git-commits : feeding.cloud.geek.nz : 20100720](https://feeding.cloud.geek.nz/posts/cherry-picking-range-of-git-commits/)
+[`cherry-picking-range-of-git-commits` : feeding.cloud.geek.nz : 20100720](https://feeding.cloud.geek.nz/posts/cherry-picking-range-of-git-commits/)
 
 ```bash
 # creating multiples patches from a range of commits
-$ git format-patch 7f545188^..a7785c10  
-0001-Add-third-file.patch  
-0002-Add-lines-to-3rd-file.patch  
+$ git format-patch 7f545188^..a7785c10
+0001-Add-third-file.patch
+0002-Add-lines-to-3rd-file.patch
 $ git am *.patch
 ```
 
@@ -314,12 +291,12 @@ $ git log --all
 ```
 
 ```bash
-# print a condensed log where each commit is one line 
+# print a condensed log where each commit is one line
 $ git log --oneline
 ```
 
 ```bash
-# print a graphic log in console 
+# print a graphic log in console
 $ git log --graph
 ```
 
@@ -360,7 +337,7 @@ $ git log --pretty=format"%cn <%ce> committed %h on %cd"
 ```
 
 ```bash
-# print the author name and email 
+# print the author name and email
 $ git log --pretty=format"%an <%ae> committed %h on %cd"
 # where %an = author name, %ae = author email, %h = abbreviated commit hash, %cd = committer date
 ```
@@ -386,7 +363,7 @@ f35a6d3b (Linus Torvalds  2007-04-09 21:20:29 -0700   16) #include "refs.h"
 
 ```bash
 # can be filtered to specific line range
-$ git blame -L 160,+10 sha1_file.c 
+$ git blame -L 160,+10 sha1_file.c
 ace1534d (Junio C Hamano 2005-05-07 00:38:04 -0700       160)}
 ace1534d (Junio C Hamano 2005-05-07 00:38:04 -0700       161)
 0fcfd160 (Linus Torvalds 2005-04-18 13:04:43 -0700       162)/*
@@ -395,13 +372,14 @@ ace1534d (Junio C Hamano 2005-05-07 00:38:04 -0700       161)
 0fcfd160 (Linus Torvalds 2005-04-18 13:04:43 -0700       165) * filename.
 ace1534d (Junio C Hamano 2005-05-07 00:38:04 -0700       166) *
 ace1534d (Junio C Hamano 2005-05-07 00:38:04 -0700       167) * Also note that this returns the location
-ace1534d (Junio C Hamano 2005-05-07 00:38:04 -0700       168) * SHA1 file can happen from any alternate 
+ace1534d (Junio C Hamano 2005-05-07 00:38:04 -0700       168) * SHA1 file can happen from any alternate
 d19938ab (Junio C Hamano 2005-05-09 17:57:56 -0700       169) * DB_ENVIRONMENT environment variable if i
 ```
 
 ## checking changes between 2 tags
 
 We want to know :
+
 - the commit list
 - the changed files list by commit
 - the full changed files list
@@ -426,7 +404,6 @@ $ git diff --stat <tag1>...<tag2>
 # print the content changed in <tag2> files that <tag1> files does not have
 $ git diff <tag1>...<tag2>
 ```
-
 
 ## reflog
 

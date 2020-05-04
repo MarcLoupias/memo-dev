@@ -1,26 +1,3 @@
----
-htmlHead:
-    title: 'marlou knowledge base' 
-    containerClass: 'markdown-body'
-    metaTags:
-        - name: viewport
-          content: 'width=device-width, initial-scale=1, minimal-ui'
-        - name: robots
-          content: none
-    links:
-        - href: '../../github-markdown.css'
-          rel: stylesheet
-          media: all
-        - href: '../../main.css'
-          rel: stylesheet
-          media: all
-        - href: '../../github.css'
-          rel: stylesheet
-    scripts:
-        - src: '../../index.js'
-
----
-
 # rust install
 
 [Install Rust - www.rust-lang.org](https://www.rust-lang.org/en-US/install.html)
@@ -36,10 +13,10 @@ info: downloading installer
 
 Welcome to Rust!
 
-This will download and install the official compiler for the Rust programming 
+This will download and install the official compiler for the Rust programming
 language, and its package manager, Cargo.
 
-It will add the cargo, rustc, rustup and other commands to Cargo's bin 
+It will add the cargo, rustc, rustup and other commands to Cargo's bin
 directory, located at:
 
   /home/marco/.cargo/bin
@@ -72,26 +49,25 @@ Typing `1` outputs
 info: syncing channel updates for 'stable-x86_64-unknown-linux-gnu'
 info: latest update on 2018-07-20, rust version 1.27.2 (58cc626de 2018-07-18)
 info: downloading component 'rustc'
- 72.0 MiB /  72.0 MiB (100 %)  11.2 MiB/s ETA:   0 s                
+ 72.0 MiB /  72.0 MiB (100 %)  11.2 MiB/s ETA:   0 s
 info: downloading component 'rust-std'
- 56.0 MiB /  56.0 MiB (100 %)  11.2 MiB/s ETA:   0 s                
+ 56.0 MiB /  56.0 MiB (100 %)  11.2 MiB/s ETA:   0 s
 info: downloading component 'cargo'
-info: downloading component 'rust-docs'                                                                                      
-info: installing component 'rustc'                                                                                           
-info: installing component 'rust-std'                                                                                        
-info: installing component 'cargo'                                                                                           
-info: installing component 'rust-docs'                                                                                       
-info: default toolchain set to 'stable'                                                                                      
-                                                                                                                             
-  stable installed - rustc 1.27.2 (58cc626de 2018-07-18)                                                                     
-                                                                                                                             
-                                                                                                                             
-Rust is installed now. Great!                                                                                                
-                                                                                                                             
-To get started you need Cargo's bin directory ($HOME/.cargo/bin) in your PATH                                                
-environment variable. Next time you log in this will be done automatically.                                                  
-                                                                                                                             
-To configure your current shell run source $HOME/.cargo/env                                                                  
+info: downloading component 'rust-docs'
+info: installing component 'rustc'
+info: installing component 'rust-std'
+info: installing component 'cargo'
+info: installing component 'rust-docs'
+info: default toolchain set to 'stable'
+
+  stable installed - rustc 1.27.2 (58cc626de 2018-07-18)
+
+
+Rust is installed now. Great!
+
+To get started you need Cargo's bin directory ($HOME/.cargo/bin) in your PATH
+environment variable. Next time you log in this will be done automatically.
+
+To configure your current shell run source $HOME/.cargo/env
 
 ```
-

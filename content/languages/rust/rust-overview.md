@@ -1,36 +1,13 @@
----
-htmlHead:
-    title: 'marlou knowledge base' 
-    containerClass: 'markdown-body'
-    metaTags:
-        - name: viewport
-          content: 'width=device-width, initial-scale=1, minimal-ui'
-        - name: robots
-          content: none
-    links:
-        - href: '../../github-markdown.css'
-          rel: stylesheet
-          media: all
-        - href: '../../main.css'
-          rel: stylesheet
-          media: all
-        - href: '../../github.css'
-          rel: stylesheet
-    scripts:
-        - src: '../../index.js'
-
----
-
 # rust overview
 
 [www.rust-lang.org](https://www.rust-lang.org/en-US/)
 
-[github.com/rust-lang](https://github.com/rust-lang/rust)
+[`github.com/rust-lang`](https://github.com/rust-lang/rust)
 
-> Rust is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety. 
-> 
+> Rust is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.
+>
 > Featuring
-> 
+>
 > - zero-cost abstractions
 > - move semantics
 > - guaranteed memory safety
@@ -55,7 +32,7 @@ htmlHead:
 
 [servo](https://servo.org/)
 
-> Servo is a modern, high-performance browser engine designed for both application and embedded use. 
+> Servo is a modern, high-performance browser engine designed for both application and embedded use.
 
 [deno](https://github.com/ry/deno)
 

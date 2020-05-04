@@ -1,26 +1,3 @@
----
-htmlHead:
-    title: 'marlou knowledge base' 
-    containerClass: 'markdown-body'
-    metaTags:
-        - name: viewport
-          content: 'width=device-width, initial-scale=1, minimal-ui'
-        - name: robots
-          content: none
-    links:
-        - href: '../../github-markdown.css'
-          rel: stylesheet
-          media: all
-        - href: '../../main.css'
-          rel: stylesheet
-          media: all
-        - href: '../../github.css'
-          rel: stylesheet
-    scripts:
-        - src: '../../index.js'
-
----
-
 # http code returned by API REST
 
 - **200 OK** - Response to a successful GET, PUT, PATCH or DELETE. Can also be used for a POST that doesn't result in a creation.
@@ -39,6 +16,6 @@ htmlHead:
 
 - [choosing-an-http-status-code](http://racksburg.com/choosing-an-http-status-code/)
 
-#### Complete http status code list
+## Complete http status code list
 
 - [http-status-codes : www.iana.org](http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml)

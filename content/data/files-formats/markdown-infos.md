@@ -1,26 +1,3 @@
----
-htmlHead:
-    title: 'marlou knowledge base' 
-    containerClass: 'markdown-body'
-    metaTags:
-        - name: viewport
-          content: 'width=device-width, initial-scale=1, minimal-ui'
-        - name: robots
-          content: none
-    links:
-        - href: '../../github-markdown.css'
-          rel: stylesheet
-          media: all
-        - href: '../../main.css'
-          rel: stylesheet
-          media: all
-        - href: '../../github.css'
-          rel: stylesheet
-    scripts:
-        - src: '../../index.js'
-
----
-
 # Markdown infos
 
 ## Auteurs
@@ -41,7 +18,7 @@ htmlHead:
 
 ### textlint
 
-[textlint - textlint.github.io](https://textlint.github.io/) ([textlint/textlint - github.com](https://github.com/textlint/textlint))
+[textlint - `textlint.github.io`](https://textlint.github.io/) ([textlint/textlint - `github.com`](https://github.com/textlint/textlint))
 
 > The pluggable natural language linter for text and markdown.
 
@@ -49,21 +26,21 @@ htmlHead:
 
 [igorshubovych/markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) with [DavidAnson/markdownlint](https://github.com/DavidAnson/markdownlint) ([online parser demo](https://dlaa.me/markdownlint/))
 
-> A Node.js style checker and lint tool for Markdown/CommonMark files. 
+> A Node.js style checker and lint tool for Markdown/CommonMark files.
 
 [No auto fix in markdownlint explanation issue](https://github.com/DavidAnson/markdownlint/issues/80).
 
 ### remarkjs
 
-[remarkjs/remark - github.com](https://github.com/remarkjs/remark) ([remarkjs/remark-lint - github.com](https://github.com/remarkjs/remark-lint))
+[remarkjs/remark - `github.com`](https://github.com/remarkjs/remark) ([remarkjs/remark-lint - `github.com`](https://github.com/remarkjs/remark-lint))
 
 > Markdown processor powered by plugins based on @unifiedjs (and @vfile, @syntax-tree)
 
 ## style-guide
 
-[Markdown Style Guide](http://www.cirosantilli.com/markdown-style-guide/) ([cirosantilli/markdown-style-guide - github.com](https://github.com/cirosantilli/markdown-style-guide/))
+[Markdown Style Guide](http://www.cirosantilli.com/markdown-style-guide/) ([cirosantilli/markdown-style-guide - `github.com`](https://github.com/cirosantilli/markdown-style-guide/))
 
-> Readable and portable Markdown style guide. 
+> Readable and portable Markdown style guide.
 
 ## tools
 
@@ -73,15 +50,15 @@ htmlHead:
 
 [Choosing the Right Markdown Parser - css-tricks.com - 20160201](https://css-tricks.com/choosing-right-markdown-parser/)
 
-[GitbookIO/markup-it - github.com](https://github.com/GitbookIO/markup-it)
+[GitbookIO/markup-it - `github.com`](https://github.com/GitbookIO/markup-it)
 
-> JavaScript library to parse and serialize markup content (Markdown and HTML) 
+> JavaScript library to parse and serialize markup content (Markdown and HTML)
 
-[markdown-it/markdown-it - github.com](https://github.com/markdown-it/markdown-it)
+[markdown-it/markdown-it - `github.com`](https://github.com/markdown-it/markdown-it)
 
 > Markdown parser, done right. 100% CommonMark support, extensions, syntax plugins & high speed
 
-[markedjs/marked - github.com](https://github.com/markedjs/marked/) [online demo](https://marked.js.org/demo)
+[markedjs/marked - `github.com`](https://github.com/markedjs/marked/) [online demo](https://marked.js.org/demo)
 
 > A markdown parser and compiler. Built for speed.
 
@@ -93,31 +70,31 @@ It can be used to [build export in another format](https://marked.js.org/#/USING
 
 > unified is an interface for processing text with syntax trees and transforming between them.
 
-[syntax-tree - github.com](https://github.com/syntax-tree)
+[syntax-tree - `github.com`](https://github.com/syntax-tree)
 
 The idea is to convert any text documents (markdown, html, natural language, ...) into a syntax-tree to easily achieve 2 ways transformation.
 
 Syntax-trees comes into 2 types :
     - Concrete Syntax Tree (CST) (contains everything to recreate the exact representation, tabs numbers, spaces, etc ...)
     - Abstract Syntax Tree (AST) (contains just what is needed to recreate exact syntactic representation)
-    
+
 They inherits from [unist](https://github.com/syntax-tree/unist), a **Uni**versal **S**yntax **T**ree.
- 
+
 Markdown :
     - AST : [mdast](https://github.com/syntax-tree/mdast)
-    - Parser/Compiler : [remark](https://github.com/remarkjs/remark) 
-    
+    - Parser/Compiler : [remark](https://github.com/remarkjs/remark)
+
 HTML :
     - AST : [hast](https://github.com/syntax-tree/hast)
     - Parser/Compiler : [rehype](https://github.com/rehypejs/rehype)
-    
+
 Natural language :
     - CST : [nlcst](https://github.com/syntax-tree/nlcst)
     - Parser/Compiler : [retext](https://github.com/retextjs/retext)
 
 A virtual file format called [vfile](https://github.com/vfile/vfile) is used to represent processed documents. It contains the file data, the path, the basename, etc ...
 
-```
+```text
 | ....................... process() ......................... |
 | ......... parse() ..... | run() | ..... stringify() ....... |
 
@@ -133,4 +110,4 @@ Input ->- | Parser | ->- Syntax Tree ->- | Compiler | ->- Output
 
 ## JavaScript lib
 
-[btford/angular-markdown-directive - github.com](https://github.com/btford/angular-markdown-directive)
+[btford/angular-markdown-directive - `github.com`](https://github.com/btford/angular-markdown-directive)

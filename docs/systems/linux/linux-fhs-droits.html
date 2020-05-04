@@ -1,208 +1,99 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.82f7552b.js"></script></head><body><article class="markdown-body"><h1 id="title-linux---gestion-des-droits-du-fhs">Linux - Gestion des droits du FHS</h1>
-<h2 id="title-notion-de-droits">Notion de droits</h2>
-<p>Les droits d’accès aux fichiers (appelés encore modes ou permissions) sont un point essentiel du système Unix. Ils permettent de définir des droits différents sur un même fichier selon la catégorie d’utilisateurs.</p>
-<p>Ainsi les manipulations de fichiers sont restreintes selon les droits alloués à chaque fichier. A chaque catégorie d’utilisateur correspond des droits spécifiques sur un fichier.</p>
-<h2 id="title-affichage-des-droits">Affichage des droits</h2>
-<pre><code>
-$ ls -l
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Linux - Gestion des droits du FHS | marlou knowledge base</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="knowledge db tool">
+    <meta name="robots" content="none">
+    <link rel="preload" href="/assets/css/0.styles.e34db02d.css" as="style"><link rel="preload" href="/assets/js/app.637efe70.js" as="script"><link rel="preload" href="/assets/js/2.b10fadef.js" as="script"><link rel="preload" href="/assets/js/151.b29c3c08.js" as="script"><link rel="prefetch" href="/assets/js/10.22935b49.js"><link rel="prefetch" href="/assets/js/100.7ca947ee.js"><link rel="prefetch" href="/assets/js/101.8ba2e31d.js"><link rel="prefetch" href="/assets/js/102.d8d8bd45.js"><link rel="prefetch" href="/assets/js/103.724d98a2.js"><link rel="prefetch" href="/assets/js/104.229a7daf.js"><link rel="prefetch" href="/assets/js/105.a8992225.js"><link rel="prefetch" href="/assets/js/106.262de88d.js"><link rel="prefetch" href="/assets/js/107.8efd7b04.js"><link rel="prefetch" href="/assets/js/108.272f61b3.js"><link rel="prefetch" href="/assets/js/109.24df76b6.js"><link rel="prefetch" href="/assets/js/11.d5b1d4cb.js"><link rel="prefetch" href="/assets/js/110.150d9241.js"><link rel="prefetch" href="/assets/js/111.7beccf9a.js"><link rel="prefetch" href="/assets/js/112.64abb596.js"><link rel="prefetch" href="/assets/js/113.21df8db0.js"><link rel="prefetch" href="/assets/js/114.d2ee704f.js"><link rel="prefetch" href="/assets/js/115.6f1faf52.js"><link rel="prefetch" href="/assets/js/116.bd0f13dd.js"><link rel="prefetch" href="/assets/js/117.fd51dc78.js"><link rel="prefetch" href="/assets/js/118.66e74dff.js"><link rel="prefetch" href="/assets/js/119.4337ee99.js"><link rel="prefetch" href="/assets/js/12.1d40092c.js"><link rel="prefetch" href="/assets/js/120.2fa8dabf.js"><link rel="prefetch" href="/assets/js/121.e8bc328e.js"><link rel="prefetch" href="/assets/js/122.61be7766.js"><link rel="prefetch" href="/assets/js/123.0987b380.js"><link rel="prefetch" href="/assets/js/124.a8228815.js"><link rel="prefetch" href="/assets/js/125.da5ddb5b.js"><link rel="prefetch" href="/assets/js/126.ef9294eb.js"><link rel="prefetch" href="/assets/js/127.6d454b88.js"><link rel="prefetch" href="/assets/js/128.391b2a2a.js"><link rel="prefetch" href="/assets/js/129.65f99f29.js"><link rel="prefetch" href="/assets/js/13.5ac00ad7.js"><link rel="prefetch" href="/assets/js/130.3ba7f5d7.js"><link rel="prefetch" href="/assets/js/131.c503b102.js"><link rel="prefetch" href="/assets/js/132.a9a24540.js"><link rel="prefetch" href="/assets/js/133.4123c476.js"><link rel="prefetch" href="/assets/js/134.274a3288.js"><link rel="prefetch" href="/assets/js/135.bb2c7d32.js"><link rel="prefetch" href="/assets/js/136.a465244f.js"><link rel="prefetch" href="/assets/js/137.fddb3a45.js"><link rel="prefetch" href="/assets/js/138.e234216b.js"><link rel="prefetch" href="/assets/js/139.b7e43724.js"><link rel="prefetch" href="/assets/js/14.21337ce4.js"><link rel="prefetch" href="/assets/js/140.91296b2b.js"><link rel="prefetch" href="/assets/js/141.be88b3fd.js"><link rel="prefetch" href="/assets/js/142.2ccd0078.js"><link rel="prefetch" href="/assets/js/143.6c82f67e.js"><link rel="prefetch" href="/assets/js/144.a8517fb5.js"><link rel="prefetch" href="/assets/js/145.95f3679d.js"><link rel="prefetch" href="/assets/js/146.c61db4d0.js"><link rel="prefetch" href="/assets/js/147.007b7310.js"><link rel="prefetch" href="/assets/js/148.946a7d6c.js"><link rel="prefetch" href="/assets/js/149.905e90c5.js"><link rel="prefetch" href="/assets/js/15.9bb06f3e.js"><link rel="prefetch" href="/assets/js/150.f5f1829f.js"><link rel="prefetch" href="/assets/js/152.e003263b.js"><link rel="prefetch" href="/assets/js/153.42bea07d.js"><link rel="prefetch" href="/assets/js/154.99162c75.js"><link rel="prefetch" href="/assets/js/155.7e4aa547.js"><link rel="prefetch" href="/assets/js/156.4ffce4b5.js"><link rel="prefetch" href="/assets/js/157.7708b7d9.js"><link rel="prefetch" href="/assets/js/158.d6fdc49f.js"><link rel="prefetch" href="/assets/js/159.e4a37544.js"><link rel="prefetch" href="/assets/js/16.26987fe7.js"><link rel="prefetch" href="/assets/js/160.dc39d489.js"><link rel="prefetch" href="/assets/js/161.9f6938b4.js"><link rel="prefetch" href="/assets/js/162.b1ee186e.js"><link rel="prefetch" href="/assets/js/163.2f776a00.js"><link rel="prefetch" href="/assets/js/164.1a0c607f.js"><link rel="prefetch" href="/assets/js/165.b7c61ad8.js"><link rel="prefetch" href="/assets/js/166.4a25dfb9.js"><link rel="prefetch" href="/assets/js/167.a5ae9090.js"><link rel="prefetch" href="/assets/js/168.292c8760.js"><link rel="prefetch" href="/assets/js/169.a0ef8135.js"><link rel="prefetch" href="/assets/js/17.e34ddbab.js"><link rel="prefetch" href="/assets/js/170.3188efba.js"><link rel="prefetch" href="/assets/js/171.77cfab9d.js"><link rel="prefetch" href="/assets/js/172.5e4fec9c.js"><link rel="prefetch" href="/assets/js/173.11c242c5.js"><link rel="prefetch" href="/assets/js/174.2c0fb115.js"><link rel="prefetch" href="/assets/js/175.9a3247d5.js"><link rel="prefetch" href="/assets/js/176.2bee7add.js"><link rel="prefetch" href="/assets/js/177.f2f4c33c.js"><link rel="prefetch" href="/assets/js/178.0ad8c83c.js"><link rel="prefetch" href="/assets/js/179.d1b20721.js"><link rel="prefetch" href="/assets/js/18.4edca711.js"><link rel="prefetch" href="/assets/js/180.6560ab66.js"><link rel="prefetch" href="/assets/js/181.45668382.js"><link rel="prefetch" href="/assets/js/182.20c5cd51.js"><link rel="prefetch" href="/assets/js/183.78f61cd6.js"><link rel="prefetch" href="/assets/js/184.fefb8dfb.js"><link rel="prefetch" href="/assets/js/185.453d4b68.js"><link rel="prefetch" href="/assets/js/186.53ecdfb0.js"><link rel="prefetch" href="/assets/js/187.494a7e47.js"><link rel="prefetch" href="/assets/js/188.9787771f.js"><link rel="prefetch" href="/assets/js/189.513bff62.js"><link rel="prefetch" href="/assets/js/19.7e8c66bd.js"><link rel="prefetch" href="/assets/js/190.d79b46fa.js"><link rel="prefetch" href="/assets/js/191.5be1cfe3.js"><link rel="prefetch" href="/assets/js/192.c882396d.js"><link rel="prefetch" href="/assets/js/193.b59d1a50.js"><link rel="prefetch" href="/assets/js/194.c5188dbe.js"><link rel="prefetch" href="/assets/js/195.85606e4c.js"><link rel="prefetch" href="/assets/js/196.1e37d696.js"><link rel="prefetch" href="/assets/js/197.d2c25126.js"><link rel="prefetch" href="/assets/js/198.0bd70829.js"><link rel="prefetch" href="/assets/js/199.90750781.js"><link rel="prefetch" href="/assets/js/20.1c2bab36.js"><link rel="prefetch" href="/assets/js/200.fc3d19f2.js"><link rel="prefetch" href="/assets/js/201.c48d42c4.js"><link rel="prefetch" href="/assets/js/202.52dc433b.js"><link rel="prefetch" href="/assets/js/203.cf1eab7e.js"><link rel="prefetch" href="/assets/js/204.f7ab9ced.js"><link rel="prefetch" href="/assets/js/205.f8a5b9ce.js"><link rel="prefetch" href="/assets/js/206.bdfe94e3.js"><link rel="prefetch" href="/assets/js/207.1513e07c.js"><link rel="prefetch" href="/assets/js/208.53ebf798.js"><link rel="prefetch" href="/assets/js/209.cb760c7a.js"><link rel="prefetch" href="/assets/js/21.f6401f33.js"><link rel="prefetch" href="/assets/js/210.e394a8ee.js"><link rel="prefetch" href="/assets/js/211.e6dcf06e.js"><link rel="prefetch" href="/assets/js/212.ec7b6bbb.js"><link rel="prefetch" href="/assets/js/213.a8b9c331.js"><link rel="prefetch" href="/assets/js/214.80f58a60.js"><link rel="prefetch" href="/assets/js/215.1aafc0fc.js"><link rel="prefetch" href="/assets/js/216.bd966360.js"><link rel="prefetch" href="/assets/js/217.ba7c9f8b.js"><link rel="prefetch" href="/assets/js/218.f153a403.js"><link rel="prefetch" href="/assets/js/219.c27fc0b1.js"><link rel="prefetch" href="/assets/js/22.3c998aa8.js"><link rel="prefetch" href="/assets/js/220.1aefeac1.js"><link rel="prefetch" href="/assets/js/221.966df196.js"><link rel="prefetch" href="/assets/js/222.32c85ec7.js"><link rel="prefetch" href="/assets/js/223.d3cf088d.js"><link rel="prefetch" href="/assets/js/224.aacbceaf.js"><link rel="prefetch" href="/assets/js/225.54cd3b6a.js"><link rel="prefetch" href="/assets/js/226.313b725c.js"><link rel="prefetch" href="/assets/js/227.4c1d3f3d.js"><link rel="prefetch" href="/assets/js/228.9e4a4832.js"><link rel="prefetch" href="/assets/js/229.f7697a3d.js"><link rel="prefetch" href="/assets/js/23.c0f91738.js"><link rel="prefetch" href="/assets/js/230.6bc69b17.js"><link rel="prefetch" href="/assets/js/231.79805394.js"><link rel="prefetch" href="/assets/js/232.8acab379.js"><link rel="prefetch" href="/assets/js/233.31ff62c4.js"><link rel="prefetch" href="/assets/js/234.19a9a922.js"><link rel="prefetch" href="/assets/js/235.2f5e5e2c.js"><link rel="prefetch" href="/assets/js/236.62db3ffe.js"><link rel="prefetch" href="/assets/js/237.509d547e.js"><link rel="prefetch" href="/assets/js/238.8475cde0.js"><link rel="prefetch" href="/assets/js/239.9bd44b93.js"><link rel="prefetch" href="/assets/js/24.a3735d29.js"><link rel="prefetch" href="/assets/js/240.ad624c47.js"><link rel="prefetch" href="/assets/js/241.61ab0ed8.js"><link rel="prefetch" href="/assets/js/242.67a7e2f2.js"><link rel="prefetch" href="/assets/js/243.4979aaa3.js"><link rel="prefetch" href="/assets/js/244.47564eed.js"><link rel="prefetch" href="/assets/js/245.e4f54911.js"><link rel="prefetch" href="/assets/js/246.f6c3f80f.js"><link rel="prefetch" href="/assets/js/247.c72d22f2.js"><link rel="prefetch" href="/assets/js/248.861aee52.js"><link rel="prefetch" href="/assets/js/25.6c577ea7.js"><link rel="prefetch" href="/assets/js/26.23d30be7.js"><link rel="prefetch" href="/assets/js/27.a8c3c2fb.js"><link rel="prefetch" href="/assets/js/28.3964a549.js"><link rel="prefetch" href="/assets/js/29.8d84ed8f.js"><link rel="prefetch" href="/assets/js/3.407b1262.js"><link rel="prefetch" href="/assets/js/30.c47c033e.js"><link rel="prefetch" href="/assets/js/31.c76cd18c.js"><link rel="prefetch" href="/assets/js/32.4c176516.js"><link rel="prefetch" href="/assets/js/33.03614d45.js"><link rel="prefetch" href="/assets/js/34.8f016bfb.js"><link rel="prefetch" href="/assets/js/35.3e7ac883.js"><link rel="prefetch" href="/assets/js/36.3a81653e.js"><link rel="prefetch" href="/assets/js/37.0e02ab0d.js"><link rel="prefetch" href="/assets/js/38.389577c2.js"><link rel="prefetch" href="/assets/js/39.ec448a95.js"><link rel="prefetch" href="/assets/js/4.670e3e46.js"><link rel="prefetch" href="/assets/js/40.5872895f.js"><link rel="prefetch" href="/assets/js/41.0edbad11.js"><link rel="prefetch" href="/assets/js/42.ddf9efe1.js"><link rel="prefetch" href="/assets/js/43.fb844553.js"><link rel="prefetch" href="/assets/js/44.0d9766c2.js"><link rel="prefetch" href="/assets/js/45.855bc2d0.js"><link rel="prefetch" href="/assets/js/46.9e2bac87.js"><link rel="prefetch" href="/assets/js/47.d990bd89.js"><link rel="prefetch" href="/assets/js/48.e66af9df.js"><link rel="prefetch" href="/assets/js/49.9db08751.js"><link rel="prefetch" href="/assets/js/5.e5b2557f.js"><link rel="prefetch" href="/assets/js/50.f80c08ad.js"><link rel="prefetch" href="/assets/js/51.78cfa47e.js"><link rel="prefetch" href="/assets/js/52.7693c417.js"><link rel="prefetch" href="/assets/js/53.cdd88c0a.js"><link rel="prefetch" href="/assets/js/54.750058be.js"><link rel="prefetch" href="/assets/js/55.c9cf7c01.js"><link rel="prefetch" href="/assets/js/56.9ad92c71.js"><link rel="prefetch" href="/assets/js/57.6eedd395.js"><link rel="prefetch" href="/assets/js/58.3a9c94be.js"><link rel="prefetch" href="/assets/js/59.aac2506b.js"><link rel="prefetch" href="/assets/js/6.ff25a0d0.js"><link rel="prefetch" href="/assets/js/60.8dc8fb2d.js"><link rel="prefetch" href="/assets/js/61.ec95e76e.js"><link rel="prefetch" href="/assets/js/62.53bebb0b.js"><link rel="prefetch" href="/assets/js/63.baca2154.js"><link rel="prefetch" href="/assets/js/64.3b577191.js"><link rel="prefetch" href="/assets/js/65.2b4fcfe3.js"><link rel="prefetch" href="/assets/js/66.71a89744.js"><link rel="prefetch" href="/assets/js/67.ca3f6d0b.js"><link rel="prefetch" href="/assets/js/68.1c67dead.js"><link rel="prefetch" href="/assets/js/69.cd407fc4.js"><link rel="prefetch" href="/assets/js/7.d587d140.js"><link rel="prefetch" href="/assets/js/70.82c180fc.js"><link rel="prefetch" href="/assets/js/71.9d9a3f42.js"><link rel="prefetch" href="/assets/js/72.60ed8b2a.js"><link rel="prefetch" href="/assets/js/73.50a6b868.js"><link rel="prefetch" href="/assets/js/74.978f836e.js"><link rel="prefetch" href="/assets/js/75.94d44d96.js"><link rel="prefetch" href="/assets/js/76.44e13483.js"><link rel="prefetch" href="/assets/js/77.53c25b28.js"><link rel="prefetch" href="/assets/js/78.de06a106.js"><link rel="prefetch" href="/assets/js/79.984477ca.js"><link rel="prefetch" href="/assets/js/8.dd6f5e0b.js"><link rel="prefetch" href="/assets/js/80.776b120a.js"><link rel="prefetch" href="/assets/js/81.e592fad7.js"><link rel="prefetch" href="/assets/js/82.ac7d2ae9.js"><link rel="prefetch" href="/assets/js/83.456c2b24.js"><link rel="prefetch" href="/assets/js/84.dfb95f82.js"><link rel="prefetch" href="/assets/js/85.16d4fc84.js"><link rel="prefetch" href="/assets/js/86.40631864.js"><link rel="prefetch" href="/assets/js/87.394252cd.js"><link rel="prefetch" href="/assets/js/88.a5fb8258.js"><link rel="prefetch" href="/assets/js/89.631cb251.js"><link rel="prefetch" href="/assets/js/9.37f457df.js"><link rel="prefetch" href="/assets/js/90.6c273fb9.js"><link rel="prefetch" href="/assets/js/91.e7be43c7.js"><link rel="prefetch" href="/assets/js/92.6551645e.js"><link rel="prefetch" href="/assets/js/93.21633298.js"><link rel="prefetch" href="/assets/js/94.6588f8c4.js"><link rel="prefetch" href="/assets/js/95.fada5721.js"><link rel="prefetch" href="/assets/js/96.cda084cd.js"><link rel="prefetch" href="/assets/js/97.233e9461.js"><link rel="prefetch" href="/assets/js/98.d03f15b9.js"><link rel="prefetch" href="/assets/js/99.b6006dff.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e34db02d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">marlou knowledge base</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/data/" class="nav-link">
+  Data
+</a></div><div class="nav-item"><a href="/devops/" class="nav-link">
+  DevOps
+</a></div><div class="nav-item"><a href="/divers/" class="nav-link">
+  Divers
+</a></div><div class="nav-item"><a href="/network/" class="nav-link">
+  Network
+</a></div><div class="nav-item"><a href="/languages/" class="nav-link">
+  Languages
+</a></div><div class="nav-item"><a href="/platforms-frameworks-libs/" class="nav-link">
+  Platforms, frameworks and libs
+</a></div><div class="nav-item"><a href="/security/" class="nav-link">
+  Security
+</a></div><div class="nav-item"><a href="/software-engineering/" class="nav-link">
+  Software Engineering
+</a></div><div class="nav-item"><a href="/systems/" class="nav-link router-link-active">
+  Systems
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  Tools
+</a></div><div class="nav-item"><a href="/web/" class="nav-link">
+  Web
+</a></div><div class="nav-item"><a href="https://github.com/MarcLoupias/memo-dev" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/data/" class="nav-link">
+  Data
+</a></div><div class="nav-item"><a href="/devops/" class="nav-link">
+  DevOps
+</a></div><div class="nav-item"><a href="/divers/" class="nav-link">
+  Divers
+</a></div><div class="nav-item"><a href="/network/" class="nav-link">
+  Network
+</a></div><div class="nav-item"><a href="/languages/" class="nav-link">
+  Languages
+</a></div><div class="nav-item"><a href="/platforms-frameworks-libs/" class="nav-link">
+  Platforms, frameworks and libs
+</a></div><div class="nav-item"><a href="/security/" class="nav-link">
+  Security
+</a></div><div class="nav-item"><a href="/software-engineering/" class="nav-link">
+  Software Engineering
+</a></div><div class="nav-item"><a href="/systems/" class="nav-link router-link-active">
+  Systems
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  Tools
+</a></div><div class="nav-item"><a href="/web/" class="nav-link">
+  Web
+</a></div><div class="nav-item"><a href="https://github.com/MarcLoupias/memo-dev" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Linux</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/systems/linux/bash/bash-notes-whiptail.html" class="sidebar-link">whiptail</a></li><li><a href="/systems/linux/apt-cheatsheet.html" class="sidebar-link">apt cheatsheet</a></li><li><a href="/systems/linux/linux-fhs-description.html" class="sidebar-link">Linux - Description du FHS</a></li><li><a href="/systems/linux/linux-fhs-droits.html" class="active sidebar-link">Linux - Gestion des droits du FHS</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/systems/linux/linux-fhs-droits.html#notion-de-droits" class="sidebar-link">Notion de droits</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-fhs-droits.html#affichage-des-droits" class="sidebar-link">Affichage des droits</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-fhs-droits.html#droits-d-acces" class="sidebar-link">Droits d'accès</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/systems/linux/linux-fhs-droits.html#read-r" class="sidebar-link">read (r)</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-fhs-droits.html#write-w" class="sidebar-link">write (w)</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-fhs-droits.html#execute-x" class="sidebar-link">execute (x)</a></li></ul></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-fhs-droits.html#categories-d-utilisateurs" class="sidebar-link">Catégories d'utilisateurs</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/systems/linux/linux-fhs-droits.html#proprietaire" class="sidebar-link">Propriétaire</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-fhs-droits.html#groupe" class="sidebar-link">Groupe</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-fhs-droits.html#autres" class="sidebar-link">Autres</a></li></ul></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-fhs-droits.html#identification-des-droits" class="sidebar-link">Identification des droits</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-fhs-droits.html#changement-des-droits-chmod" class="sidebar-link">Changement des droits (chmod)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/systems/linux/linux-fhs-droits.html#notation-symbolique" class="sidebar-link">notation symbolique</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-fhs-droits.html#notation-numerique" class="sidebar-link">notation numérique</a></li></ul></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-fhs-droits.html#umask" class="sidebar-link">umask</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-fhs-droits.html#droits-etendus" class="sidebar-link">Droits étendus</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/systems/linux/linux-fhs-droits.html#suid" class="sidebar-link">SUID</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-fhs-droits.html#sgid" class="sidebar-link">SGID</a></li><li class="sidebar-sub-header"><a href="/systems/linux/linux-fhs-droits.html#sticky-bit" class="sidebar-link">Sticky Bit</a></li></ul></li></ul></li><li><a href="/systems/linux/linux-logs.html" class="sidebar-link">Linux - logs</a></li><li><a href="/systems/linux/linux-manipulation-fichiers.html" class="sidebar-link">Linux - Manipuler les fichiers</a></li><li><a href="/systems/linux/linux-manipulation-process.html" class="sidebar-link">manipulation des processus</a></li><li><a href="/systems/linux/ubuntu-cheatsheet.html" class="sidebar-link">Ubuntu cheatsheet</a></li><li><a href="/systems/linux/ubuntu-create-usb-boot.html" class="sidebar-link">create usb boot</a></li><li><a href="/systems/linux/ubuntu-pdf.html" class="sidebar-link">ubuntu - pdf</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Windows</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/systems/windows/windows-checksum.html" class="sidebar-link">check hash on windows</a></li><li><a href="/systems/windows/windows-ubuntu-on-windows10.html" class="sidebar-link">Windows - Ubuntu on windows10</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="linux-gestion-des-droits-du-fhs"><a href="#linux-gestion-des-droits-du-fhs" class="header-anchor">#</a> Linux - Gestion des droits du FHS</h1> <h2 id="notion-de-droits"><a href="#notion-de-droits" class="header-anchor">#</a> Notion de droits</h2> <p>Les droits d'accès aux fichiers (appelés encore modes ou permissions) sont un point essentiel du système Unix. Ils permettent de définir des droits différents sur un même fichier selon la catégorie d'utilisateurs.</p> <p>Ainsi les manipulations de fichiers sont restreintes selon les droits alloués à chaque fichier. A chaque catégorie d'utilisateur correspond des droits spécifiques sur un fichier.</p> <h2 id="affichage-des-droits"><a href="#affichage-des-droits" class="header-anchor">#</a> Affichage des droits</h2> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">ls</span> -l
 
-drwxr-xr-x 1 marco 197121     0 mai    7 23:10 _book/
--rw-r--r-- 1 marco 197121    56 mai    7 20:52 book.json
-drwxr-xr-x 1 marco 197121     0 mai    7 21:19 divers/
-drwxr-xr-x 1 marco 197121     0 mai    7 21:42 files-formats/
-drwxr-xr-x 1 marco 197121     0 mai    7 22:33 languages/
-drwxr-xr-x 1 marco 197121     0 mai    8 19:21 linux/
-drwxr-xr-x 1 marco 197121     0 mai    7 19:33 node_modules/
--rw-r--r-- 1 marco 197121   193 mai    7 22:51 README.md
-drwxr-xr-x 1 marco 197121     0 mai    7 22:35 security/
-drwxr-xr-x 1 marco 197121     0 mai    7 22:49 software-engineering/
--rw-r--r-- 1 marco 197121 13721 mai    7 23:10 SUMMARY.md
-drwxr-xr-x 1 marco 197121     0 mai    7 22:55 tools/
-drwxr-xr-x 1 marco 197121     0 mai    7 23:03 web/
-</code></pre><p>Liste les fichiers et leurs droits du répertoire <code>linux</code>.</p>
-<p>La 1ère colonne indique le type de fichier suivi de ses droits d’accès.<br><code>d</code> pour directory et <code>-</code> pour fichier suivi des 3 blocs de droits <code>rwx</code> ce qui donne par exemple <code>drwxr-xr-x</code> ou <code>-rwxr-xr-x</code>.</p>
-<p>La 3ème colonne indique le nom du compte propriétaire (UID).</p>
-<p>La 4ème colonne indique le groupe de user (GID) auquel appartient le propriétaire.</p>
-<p>La dernière colonne indique le nom du fichier (ou répertoire).</p>
-<h2 id="title-droits-daccès">Droits d’accès</h2>
-<p>3 types de droits :</p>
-<ul>
-<li>read</li>
-<li>write</li>
-<li>execute</li>
-</ul>
-<h3 id="title-read-r">read (<code>r</code>)</h3>
-<p>Pour un fichier permet de lire le contenu. Pour un répertoire permet d’en lister le contenu.</p>
-<h3 id="title-write-w">write (<code>w</code>)</h3>
-<p>Pour un fichier permet la modification et la suppression du fichier.</p>
-<p>Pour un répertoire permet la modification et la suppression de tous les fichiers du répertoire indépendamment des droits sur ces fichiers.</p>
-<h3 id="title-execute-x">execute (<code>x</code>)</h3>
-<p>Sans effet si le fichier n’est pas un exécutable (pas forcément binaire, ça peut être un script).</p>
-<p>Pour un fichier permet l’exécution par le système (ou l’interprétation pour un script).</p>
-<p>Pour un répertoire permet d’accéder aux fichiers contenus dans ce répertoire.</p>
-<h2 id="title-catégories-dutilisateurs">Catégories d’utilisateurs</h2>
-<h3 id="title-propriétaire">Propriétaire</h3>
-<p>Le propriétaire d’un fichier est l’utilisateur qui le crée.</p>
-<p>Désigné par la lettre <code>u</code> (<code>owner</code>).</p>
-<p>Le <code>UID</code> désigne par un identificateur numérique unique le propriétaire d’un fichier.</p>
-<h3 id="title-groupe">Groupe</h3>
-<p>Un groupe d’utilisateur est un ensemble d’utilisateurs privilégiés ayant en général des permissions moindre que le propriétaire<br>d’un fichier mais plus grandes que la catégorie qui suit. Cette catégorie est désignée par la lettre <code>g</code> (<code>group</code>).</p>
-<p>Le <code>GID</code> désigne par un identificateur numérique unique le groupe auquel appartient le propriétaire d’un fichier.</p>
-<h3 id="title-autres">Autres</h3>
-<p>Cette catégorie regroupe tous les utilisateurs qui ne sont ni le propriétaire d’un fichier ni faisant partir du même<br>groupe que le propriétaire. On les désignent par la lettre <code>a</code> (<code>other</code>).</p>
-<h2 id="title-identification-des-droits">Identification des droits</h2>
-<p>A chaque catégorie d’utilisateur on associe un triplet de droits : lecture, écriture et exécution.<br>Au total 9 droits (3*3) sont affectés à chaque fichier.</p>
-<p>Lorsqu’un droit est alloué, on voit la lettre correspondante (<code>r</code>, <code>w</code>ou <code>x</code>).<br>Si le droit est refusé, on voit un tiret (<code>-</code>).</p>
-<p><code>-rwxr-xr-x</code> : Dans cet exemple on est sur un fichier dont :</p>
-<ul>
-<li>le propriétaire a tous les droits</li>
-<li>le groupe peut seulement lire</li>
-<li>les autres peuvent seulement lire</li>
-</ul>
-<p>Combinaison des droits :</p>
-<p><code>---</code> aucun<br><code>--x</code> exécution<br><code>-w-</code> écriture<br><code>-wx</code> écriture et exécution<br><code>r--</code> lecture<br><code>r-x</code> lecture et exécution<br><code>rw-</code> lecture et écriture<br><code>rwx</code> lecture, écriture et exécution</p>
-<h2 id="title-changement-des-droits-chmod">Changement des droits (<code>chmod</code>)</h2>
-<p>Il est offert au propriétaire d’un fichier (et seulement à lui seul) de modifier les droits du fichier.<br>C’est-à-dire qu’il peut supprimer des droits ou bien en rajouter de nouveaux à chacune des trois catégories d’utilisateur.</p>
-<p>Pour cela, on utilise la commande <code>chmod</code> (change mode) selon la syntaxe suivante :</p>
-<p><code>chmod droits fichier</code></p>
-<h3 id="title-notation-symbolique">notation symbolique</h3>
-<p>Pour affecter à chaque catégorie les droits voulus, on peut utiliser une notation symbolique selon la syntaxe :</p>
-<p><code>chmod catégorie+opération+liste-des-droits fichier</code></p>
-<table>
-<thead>
-<tr>
-<th>Catégorie</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>u</code></td>
-<td>propriétaire</td>
-</tr>
-<tr>
-<td><code>g</code></td>
-<td>groupe</td>
-</tr>
-<tr>
-<td><code>a</code></td>
-<td>autres</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th>Opération</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>+</code></td>
-<td>ajouter</td>
-</tr>
-<tr>
-<td><code>-</code></td>
-<td>retirer</td>
-</tr>
-<tr>
-<td><code>=</code></td>
-<td>définir</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th>Droit</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>r</code></td>
-<td>lecture</td>
-</tr>
-<tr>
-<td><code>w</code></td>
-<td>écriture</td>
-</tr>
-<tr>
-<td><code>x</code></td>
-<td>exécution</td>
-</tr>
-</tbody></table>
-<ul>
-<li><code>chmod g=rwx book.json</code> Alloue au groupe tous les droits.</li>
-<li><code>chmod g-w book.json</code> Retire au groupe le droit d’écriture.</li>
-<li><code>chmod a-rwx book.json</code> Retire aux autres tous les droits.</li>
-<li><code>chmod u=rw book.json</code> Alloue au propriétaire les droits en lecture et en écriture.</li>
-<li><code>chmod a+r book.json</code> Rajoute aux autres le droit en lecture.</li>
-</ul>
-<h3 id="title-notation-numérique">notation numérique</h3>
-<p>L’avantage de la notation numérique sur la précédente est de permettre sur un fichier la définition absolue des<br>droits de toutes les catégories en même temps selon la syntaxe :</p>
-<p><code>chmod serie-de-3-chiffres fichier</code></p>
-<p>Ainsi on remplace chacun des triplets par un nombre compris entre 0 et 7.<br>Ce qui nous fait un nombre à trois chiffres en guise de notation numérique.<br>Le tableau ci-après permet de faire la convertion entre les différentes triplets possibles et<br>leur notation octale (nombre en base 8).</p>
-<table>
-<thead>
-<tr>
-<th>Triplet</th>
-<th>Nombre binaire</th>
-<th>Nombre octal</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>---</code></td>
-<td><code>000</code></td>
-<td><code>0</code></td>
-</tr>
-<tr>
-<td><code>--x</code></td>
-<td><code>001</code></td>
-<td><code>1</code></td>
-</tr>
-<tr>
-<td><code>-w-</code></td>
-<td><code>010</code></td>
-<td><code>2</code></td>
-</tr>
-<tr>
-<td><code>-wx</code></td>
-<td><code>011</code></td>
-<td><code>3</code></td>
-</tr>
-<tr>
-<td><code>r--</code></td>
-<td><code>100</code></td>
-<td><code>4</code></td>
-</tr>
-<tr>
-<td><code>r-x</code></td>
-<td><code>101</code></td>
-<td><code>5</code></td>
-</tr>
-<tr>
-<td><code>rw-</code></td>
-<td><code>110</code></td>
-<td><code>6</code></td>
-</tr>
-<tr>
-<td><code>rwx</code></td>
-<td><code>111</code></td>
-<td><code>7</code></td>
-</tr>
-</tbody></table>
-<ul>
-<li><code>chmod 640 book.json</code> <code>rw-r-----</code></li>
-<li><code>chmod 700 book.json</code> <code>rwx------</code></li>
-<li><code>chmod 661 book.json</code> <code>rw-rw-r--</code></li>
-<li><code>chmod 761 book.json</code> <code>rwxrw-r--</code></li>
-<li><code>chmod 610 book.json</code> <code>rw-r-----</code></li>
-</ul>
-<h2 id="title-umask"><code>umask</code></h2>
-<p>TODO</p>
-<h2 id="title-droits-étendus">Droits étendus</h2>
-<p>TODO</p>
-<h3 id="title-suid">SUID</h3>
-<p>TODO</p>
-<h3 id="title-sgid">SGID</h3>
-<p>TODO</p>
-<h3 id="title-sticky-bit">Sticky Bit</h3>
-<p>TODO</p>
-</article></body></html>
+drwxr-xr-x <span class="token number">1</span> marco <span class="token number">197121</span>     <span class="token number">0</span> mai    <span class="token number">7</span> <span class="token number">23</span>:10 _book/
+-rw-r--r-- <span class="token number">1</span> marco <span class="token number">197121</span>    <span class="token number">56</span> mai    <span class="token number">7</span> <span class="token number">20</span>:52 book.json
+drwxr-xr-x <span class="token number">1</span> marco <span class="token number">197121</span>     <span class="token number">0</span> mai    <span class="token number">7</span> <span class="token number">21</span>:19 divers/
+drwxr-xr-x <span class="token number">1</span> marco <span class="token number">197121</span>     <span class="token number">0</span> mai    <span class="token number">7</span> <span class="token number">21</span>:42 files-formats/
+drwxr-xr-x <span class="token number">1</span> marco <span class="token number">197121</span>     <span class="token number">0</span> mai    <span class="token number">7</span> <span class="token number">22</span>:33 languages/
+drwxr-xr-x <span class="token number">1</span> marco <span class="token number">197121</span>     <span class="token number">0</span> mai    <span class="token number">8</span> <span class="token number">19</span>:21 linux/
+drwxr-xr-x <span class="token number">1</span> marco <span class="token number">197121</span>     <span class="token number">0</span> mai    <span class="token number">7</span> <span class="token number">19</span>:33 node_modules/
+-rw-r--r-- <span class="token number">1</span> marco <span class="token number">197121</span>   <span class="token number">193</span> mai    <span class="token number">7</span> <span class="token number">22</span>:51 README.md
+drwxr-xr-x <span class="token number">1</span> marco <span class="token number">197121</span>     <span class="token number">0</span> mai    <span class="token number">7</span> <span class="token number">22</span>:35 security/
+drwxr-xr-x <span class="token number">1</span> marco <span class="token number">197121</span>     <span class="token number">0</span> mai    <span class="token number">7</span> <span class="token number">22</span>:49 software-engineering/
+-rw-r--r-- <span class="token number">1</span> marco <span class="token number">197121</span> <span class="token number">13721</span> mai    <span class="token number">7</span> <span class="token number">23</span>:10 SUMMARY.md
+drwxr-xr-x <span class="token number">1</span> marco <span class="token number">197121</span>     <span class="token number">0</span> mai    <span class="token number">7</span> <span class="token number">22</span>:55 tools/
+drwxr-xr-x <span class="token number">1</span> marco <span class="token number">197121</span>     <span class="token number">0</span> mai    <span class="token number">7</span> <span class="token number">23</span>:03 web/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>Liste les fichiers et leurs droits du répertoire <code>linux</code>.</p> <p>La 1ère colonne indique le type de fichier suivi de ses droits d'accès.
+<code>d</code> pour directory et <code>-</code> pour fichier suivi des 3 blocs de droits <code>rwx</code> ce qui donne par exemple <code>drwxr-xr-x</code> ou <code>-rwxr-xr-x</code>.</p> <p>La 3ème colonne indique le nom du compte propriétaire (UID).</p> <p>La 4ème colonne indique le groupe de user (GID) auquel appartient le propriétaire.</p> <p>La dernière colonne indique le nom du fichier (ou répertoire).</p> <h2 id="droits-d-acces"><a href="#droits-d-acces" class="header-anchor">#</a> Droits d'accès</h2> <p>3 types de droits :</p> <ul><li>read</li> <li>write</li> <li>execute</li></ul> <h3 id="read-r"><a href="#read-r" class="header-anchor">#</a> read (<code>r</code>)</h3> <p>Pour un fichier permet de lire le contenu. Pour un répertoire permet d'en lister le contenu.</p> <h3 id="write-w"><a href="#write-w" class="header-anchor">#</a> write (<code>w</code>)</h3> <p>Pour un fichier permet la modification et la suppression du fichier.</p> <p>Pour un répertoire permet la modification et la suppression de tous les fichiers du répertoire indépendamment des droits sur ces fichiers.</p> <h3 id="execute-x"><a href="#execute-x" class="header-anchor">#</a> execute (<code>x</code>)</h3> <p>Sans effet si le fichier n'est pas un exécutable (pas forcément binaire, ça peut être un script).</p> <p>Pour un fichier permet l'exécution par le système (ou l'interprétation pour un script).</p> <p>Pour un répertoire permet d'accéder aux fichiers contenus dans ce répertoire.</p> <h2 id="categories-d-utilisateurs"><a href="#categories-d-utilisateurs" class="header-anchor">#</a> Catégories d'utilisateurs</h2> <h3 id="proprietaire"><a href="#proprietaire" class="header-anchor">#</a> Propriétaire</h3> <p>Le propriétaire d'un fichier est l'utilisateur qui le crée.</p> <p>Désigné par la lettre <code>u</code> (<code>owner</code>).</p> <p>Le <code>UID</code> désigne par un identificateur numérique unique le propriétaire d'un fichier.</p> <h3 id="groupe"><a href="#groupe" class="header-anchor">#</a> Groupe</h3> <p>Un groupe d'utilisateur est un ensemble d'utilisateurs privilégiés ayant en général des permissions moindre que le propriétaire
+d'un fichier mais plus grandes que la catégorie qui suit. Cette catégorie est désignée par la lettre <code>g</code> (<code>group</code>).</p> <p>Le <code>GID</code> désigne par un identificateur numérique unique le groupe auquel appartient le propriétaire d'un fichier.</p> <h3 id="autres"><a href="#autres" class="header-anchor">#</a> Autres</h3> <p>Cette catégorie regroupe tous les utilisateurs qui ne sont ni le propriétaire d'un fichier ni faisant partir du même
+groupe que le propriétaire. On les désignent par la lettre <code>a</code> (<code>other</code>).</p> <h2 id="identification-des-droits"><a href="#identification-des-droits" class="header-anchor">#</a> Identification des droits</h2> <p>A chaque catégorie d'utilisateur on associe un triplet de droits : lecture, écriture et exécution.
+Au total 9 droits (3*3) sont affectés à chaque fichier.</p> <p>Lorsqu'un droit est alloué, on voit la lettre correspondante (<code>r</code>, <code>w</code> ou <code>x</code>).
+Si le droit est refusé, on voit un tiret (<code>-</code>).</p> <p><code>-rwxr-xr-x</code> : Dans cet exemple on est sur un fichier dont :</p> <ul><li>le propriétaire a tous les droits</li> <li>le groupe peut seulement lire</li> <li>les autres peuvent seulement lire</li></ul> <p>Combinaison des droits :</p> <ul><li><code>---</code> aucun</li> <li><code>--x</code> exécution</li> <li><code>-w-</code> écriture</li> <li><code>-wx</code> écriture et exécution</li> <li><code>r--</code> lecture</li> <li><code>r-x</code> lecture et exécution</li> <li><code>rw-</code> lecture et écriture</li> <li><code>rwx</code> lecture, écriture et exécution</li></ul> <h2 id="changement-des-droits-chmod"><a href="#changement-des-droits-chmod" class="header-anchor">#</a> Changement des droits (<code>chmod</code>)</h2> <p>Il est offert au propriétaire d'un fichier (et seulement à lui seul) de modifier les droits du fichier.
+C'est-à-dire qu'il peut supprimer des droits ou bien en rajouter de nouveaux à chacune des trois catégories d'utilisateur.</p> <p>Pour cela, on utilise la commande <code>chmod</code> (change mode) selon la syntaxe suivante :</p> <p><code>chmod droits fichier</code></p> <h3 id="notation-symbolique"><a href="#notation-symbolique" class="header-anchor">#</a> notation symbolique</h3> <p>Pour affecter à chaque catégorie les droits voulus, on peut utiliser une notation symbolique selon la syntaxe :</p> <p><code>chmod catégorie+opération+liste-des-droits fichier</code></p> <table><thead><tr><th>Catégorie</th> <th>Description</th></tr></thead> <tbody><tr><td><code>u</code></td> <td>propriétaire</td></tr> <tr><td><code>g</code></td> <td>groupe</td></tr> <tr><td><code>a</code></td> <td>autres</td></tr></tbody></table> <table><thead><tr><th>Opération</th> <th>Description</th></tr></thead> <tbody><tr><td><code>+</code></td> <td>ajouter</td></tr> <tr><td><code>-</code></td> <td>retirer</td></tr> <tr><td><code>=</code></td> <td>définir</td></tr></tbody></table> <table><thead><tr><th>Droit</th> <th>Description</th></tr></thead> <tbody><tr><td><code>r</code></td> <td>lecture</td></tr> <tr><td><code>w</code></td> <td>écriture</td></tr> <tr><td><code>x</code></td> <td>exécution</td></tr></tbody></table> <ul><li><code>chmod g=rwx book.json</code> Alloue au groupe tous les droits.</li> <li><code>chmod g-w book.json</code> Retire au groupe le droit d'écriture.</li> <li><code>chmod a-rwx book.json</code> Retire aux autres tous les droits.</li> <li><code>chmod u=rw book.json</code> Alloue au propriétaire les droits en lecture et en écriture.</li> <li><code>chmod a+r book.json</code> Rajoute aux autres le droit en lecture.</li></ul> <h3 id="notation-numerique"><a href="#notation-numerique" class="header-anchor">#</a> notation numérique</h3> <p>L'avantage de la notation numérique sur la précédente est de permettre sur un fichier la définition absolue des
+droits de toutes les catégories en même temps selon la syntaxe :</p> <p><code>chmod serie-de-3-chiffres fichier</code></p> <p>Ainsi on remplace chacun des triplets par un nombre compris entre 0 et 7.
+Ce qui nous fait un nombre à trois chiffres en guise de notation numérique.
+Le tableau ci-après permet de faire la convertion entre les différentes triplets possibles et
+leur notation octale (nombre en base 8).</p> <table><thead><tr><th>Triplet</th> <th>Nombre binaire</th> <th>Nombre octal</th></tr></thead> <tbody><tr><td><code>---</code></td> <td><code>000</code></td> <td><code>0</code></td></tr> <tr><td><code>--x</code></td> <td><code>001</code></td> <td><code>1</code></td></tr> <tr><td><code>-w-</code></td> <td><code>010</code></td> <td><code>2</code></td></tr> <tr><td><code>-wx</code></td> <td><code>011</code></td> <td><code>3</code></td></tr> <tr><td><code>r--</code></td> <td><code>100</code></td> <td><code>4</code></td></tr> <tr><td><code>r-x</code></td> <td><code>101</code></td> <td><code>5</code></td></tr> <tr><td><code>rw-</code></td> <td><code>110</code></td> <td><code>6</code></td></tr> <tr><td><code>rwx</code></td> <td><code>111</code></td> <td><code>7</code></td></tr></tbody></table> <ul><li><code>chmod 640 book.json</code> <code>rw-r-----</code></li> <li><code>chmod 700 book.json</code> <code>rwx------</code></li> <li><code>chmod 661 book.json</code> <code>rw-rw-r--</code></li> <li><code>chmod 761 book.json</code> <code>rwxrw-r--</code></li> <li><code>chmod 610 book.json</code> <code>rw-r-----</code></li></ul> <h2 id="umask"><a href="#umask" class="header-anchor">#</a> <code>umask</code></h2> <p>TODO</p> <h2 id="droits-etendus"><a href="#droits-etendus" class="header-anchor">#</a> Droits étendus</h2> <p>TODO</p> <h3 id="suid"><a href="#suid" class="header-anchor">#</a> SUID</h3> <p>TODO</p> <h3 id="sgid"><a href="#sgid" class="header-anchor">#</a> SGID</h3> <p>TODO</p> <h3 id="sticky-bit"><a href="#sticky-bit" class="header-anchor">#</a> Sticky Bit</h3> <p>TODO</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/systems/linux/linux-fhs-description.html" class="prev">
+        Linux - Description du FHS
+      </a></span> <span class="next"><a href="/systems/linux/linux-logs.html">
+        Linux - logs
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.637efe70.js" defer></script><script src="/assets/js/2.b10fadef.js" defer></script><script src="/assets/js/151.b29c3c08.js" defer></script>
+  </body>
+</html>

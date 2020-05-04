@@ -1,26 +1,3 @@
----
-htmlHead:
-    title: 'marlou knowledge base' 
-    containerClass: 'markdown-body'
-    metaTags:
-        - name: viewport
-          content: 'width=device-width, initial-scale=1, minimal-ui'
-        - name: robots
-          content: none
-    links:
-        - href: '../../github-markdown.css'
-          rel: stylesheet
-          media: all
-        - href: '../../main.css'
-          rel: stylesheet
-          media: all
-        - href: '../../github.css'
-          rel: stylesheet
-    scripts:
-        - src: '../../index.js'
-
----
-
 # Linux - Manipuler les fichiers
 
 ## `cat`
@@ -125,8 +102,8 @@ $ find . -mtime 2 -print
 
 ```
 
-On a recherché tous les fichiers ayant été modifiés il y a exactement 2 jours. 
-Les fichiers modifiés hier ne sont donc pas affichés, seulement ceux modifiés avant-hier. 
+On a recherché tous les fichiers ayant été modifiés il y a exactement 2 jours.
+Les fichiers modifiés hier ne sont donc pas affichés, seulement ceux modifiés avant-hier.
 
 La commande `find` est très puissante et présente de nombreuses options. Se référer à [la man page correspondante](http://www.linux-france.org/article/man-fr/man1/find-1.html).
 
@@ -211,7 +188,7 @@ Tout est question de paramétrage des commandes pour obtenir le résultat souhai
 Lister la size des fichiers du répertoire courant :
 
 ```bash
-$ du -sh * | sort -n
+du -sh * | sort -n
 ```
 
 ## `df`

@@ -1,26 +1,3 @@
----
-htmlHead:
-    title: 'marlou knowledge base' 
-    containerClass: 'markdown-body'
-    metaTags:
-        - name: viewport
-          content: 'width=device-width, initial-scale=1, minimal-ui'
-        - name: robots
-          content: none
-    links:
-        - href: '../../github-markdown.css'
-          rel: stylesheet
-          media: all
-        - href: '../../main.css'
-          rel: stylesheet
-          media: all
-        - href: '../../github.css'
-          rel: stylesheet
-    scripts:
-        - src: '../../index.js'
-
----
-
 # Markdown
 
 ## Table of Contents
@@ -68,15 +45,15 @@ You can also use other rich text files in GitLab. You might have to install a de
 
 GFM honors the markdown specification in how [paragraphs and line breaks are handled](http://daringfireball.net/projects/markdown/syntax#p).
 
-A paragraph is simply one or more consecutive lines of text, separated by one or more blank lines.  
+A paragraph is simply one or more consecutive lines of text, separated by one or more blank lines.
 Line-breaks, or softreturns, are rendered if you end a line with two or more spaces
 
-    Roses are red [followed by two or more spaces]  
+    Roses are red [followed by two or more spaces]
     Violets are blue
 
     Sugar is sweet
 
-Roses are red  
+Roses are red
 Violets are blue
 
 Sugar is sweet
@@ -88,7 +65,7 @@ It is not reasonable to italicize just _part_ of a word, especially when you're 
     perform_complicated_task
     do_this_and_do_that_and_another_thing
 
-perform_complicated_task  
+perform_complicated_task
 do_this_and_do_that_and_another_thing
 
 ## URL auto-linking
@@ -551,7 +528,7 @@ This line is separated from the one above by two newlines, so it will be a *sepa
 This line is also a separate paragraph, but...
 This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
 
-This line is also a separate paragraph, and...  
+This line is also a separate paragraph, and...
 This line is on its own line, because the previous line ends with two
 spaces.
 ```
@@ -563,7 +540,7 @@ This line is separated from the one above by two newlines, so it will be a *sepa
 This line is also begins a separate paragraph, but...
 This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
 
-This line is also a separate paragraph, and...  
+This line is also a separate paragraph, and...
 This line is on its own line, because the previous line ends with two
 spaces.
 

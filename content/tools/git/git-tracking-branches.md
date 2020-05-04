@@ -1,36 +1,13 @@
----
-htmlHead:
-    title: 'marlou knowledge base' 
-    containerClass: 'markdown-body'
-    metaTags:
-        - name: viewport
-          content: 'width=device-width, initial-scale=1, minimal-ui'
-        - name: robots
-          content: none
-    links:
-        - href: '../../github-markdown.css'
-          rel: stylesheet
-          media: all
-        - href: '../../main.css'
-          rel: stylesheet
-          media: all
-        - href: '../../github.css'
-          rel: stylesheet
-    scripts:
-        - src: '../../index.js'
-
----
-
-# git - branch tracking
+# Git - branch tracking
 
 ## Understanding Tracking Branches in Git
 
 - [source](http://www.lornajane.net/posts/2014/understanding-tracking-branches-in-git)
-- [git-scm.com - Git-Branching-Remote-Branches **must read**](https://git-scm.com/book/it/v2/Git-Branching-Remote-Branches)
+- [`git-scm.com` - `Git-Branching-Remote-Branches` **must read**](https://git-scm.com/book/it/v2/Git-Branching-Remote-Branches)
 
 ## What is a tracking branch?
 
-This is a branch which knows which remote branch it is related to, and making this link allows us to take advantage of some neat git tricks. In particular:
+This is a branch which knows which remote branch it is related to, and making this link allows us to take advantage of some neat Git tricks. In particular:
 
 - You can `git push` or `git pull` without specifying remote or branch and it will use its tracking sister branch by default
 - The `git status` command will include information about how far behind your tracking branch you are - useful to remind you that you haven't pushed your changes yet! It looks like this:
@@ -114,4 +91,8 @@ git branch -u upstream/foo foo
 
 ## Which branches get pushed/pulled?
 
-This is an area of confusion because the defaults changed between versions of git. Take a look at your config (use `git config --list`) and find a setting called `push.default`. The usual default is `simple` which will only push/pull the branch to/from the branch you're currently on and the one it tracks. You can optionally set this to be `matching` (this was once the default) which will then push/pull all changes between all branches and their remote tracking sisters. Sometimes this second option is cumbersome if you have a branch that is not the one you're working on get into a state where it won't merge!
+This is an area of confusion because the defaults changed between versions of Git.
+Take a look at your config (use `git config --list`) and find a setting called `push.default`.
+The usual default is `simple` which will only push/pull the branch to/from the branch you're currently on and the one it tracks.
+You can optionally set this to be `matching` (this was once the default) which will then push/pull all changes between all branches and their remote tracking sisters.
+Sometimes this second option is cumbersome if you have a branch that is not the one you're working on get into a state where it won't merge!

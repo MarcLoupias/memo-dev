@@ -1,29 +1,7 @@
----
-htmlHead:
-    title: 'marlou knowledge base' 
-    containerClass: 'markdown-body'
-    metaTags:
-        - name: viewport
-          content: 'width=device-width, initial-scale=1, minimal-ui'
-        - name: robots
-          content: none
-    links:
-        - href: '../../../github-markdown.css'
-          rel: stylesheet
-          media: all
-        - href: '../../../main.css'
-          rel: stylesheet
-          media: all
-        - href: '../../../github.css'
-          rel: stylesheet
-    scripts:
-        - src: '../../../index.js'
-
----
-
 # heroku - angularjs
 
 ## Goal
+
 Running an Angular app as a Node.js app.
 
 ## deploy angular app on heroku
@@ -43,7 +21,7 @@ rajouter en dépendance du package.json du projet
 
 un Procfile contenant :
 
-```
+```text
 web: node web.js
 ```
 
@@ -63,20 +41,22 @@ les fichiers à déployer sont dans la folder `/dist`
 Modifier `Gruntfile.js` pour lui faire copier le Procfile, le `web.js`.
 TODO : Lui faire copier une version déployable du `package.json` (nécessaire !)
 TOFIX : problème avec certaines tasks (la minification notamment, lié à angular-ui (dep cyclic) et ng-grid)
-Initialiser un repo git au niveau de `/dist`
+Initialiser un repo Git au niveau de `/dist`
 
 puis en console au niveau de `/dist` :
 
-```
-$ heroku login
-$ heroku create
-```
-créer le repo, commit
-```
-$ git push heroku master
+```bash
+heroku login
+heroku create
 ```
 
-**l'app est dispo**
+créer le repo, commit
+
+```bash
+git push heroku master
+```
+
+L'app est dispo.
 
 ## divers
 

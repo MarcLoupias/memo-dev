@@ -1,29 +1,6 @@
----
-htmlHead:
-    title: 'marlou knowledge base' 
-    containerClass: 'markdown-body'
-    metaTags:
-        - name: viewport
-          content: 'width=device-width, initial-scale=1, minimal-ui'
-        - name: robots
-          content: none
-    links:
-        - href: '../../github-markdown.css'
-          rel: stylesheet
-          media: all
-        - href: '../../main.css'
-          rel: stylesheet
-          media: all
-        - href: '../../github.css'
-          rel: stylesheet
-    scripts:
-        - src: '../../index.js'
+# Git - config
 
----
-
-# git - config
-
-[git-config : git-scm.com](https://git-scm.com/docs/git-config)
+[`git-config` : `git-scm.com`](https://git-scm.com/docs/git-config)
 
 ## config files
 
@@ -38,10 +15,8 @@ the order in which Git for Windows sources configuration information is as follo
 
 ### list config via CLI
 
-`git config --list`
-
-Print all the config:
-```
+```bash
+$ git config --list
 core.symlinks=false
 core.autocrlf=true
 core.fscache=true
@@ -52,10 +27,8 @@ color.interactive=true
 help.format=html
 ```
 
-`git config --list --show-origin`
-
-Print all the config and shows config file origin for each property :
-```
+```bash
+$ git config --list --show-origin
 file:"C:\\ProgramData/Git/config"       core.symlinks=false
 file:"C:\\ProgramData/Git/config"       core.autocrlf=true
 file:"C:\\ProgramData/Git/config"       core.fscache=true
@@ -78,23 +51,20 @@ file:.git/config        core.bare=false
 
 ### list scoped config via CLI
 
-`git config --system --list --show-origin`
-
-```
+```bash
+$ git config --system --list --show-origin
 file:"C:\\Program Files\\Git\\mingw64/etc/gitconfig"    credential.helper=manager
 ```
 
-`git config --global --list --show-origin`
-
-```
+```bash
+$ git config --global --list --show-origin
 file:C:/Users/robert/.gitconfig  user.name=rob
 file:C:/Users/robert/.gitconfig  user.email=me@robert.tld
 file:C:/Users/robert/.gitconfig  core.autocrlf=false
 ```
 
-`git config --local --list --show-origin`
-
-```
+```bash
+$ git config --local --list --show-origin
 file:.git/config        core.repositoryformatversion=0
 file:.git/config        core.filemode=false
 file:.git/config        core.bare=false
@@ -102,7 +72,7 @@ file:.git/config        core.bare=false
 
 ### `.gitattributes` file
 
-[gitattributes : git-scm.com](https://git-scm.com/docs/gitattributes)
+[`gitattributes` : `git-scm.com`](https://git-scm.com/docs/gitattributes)
 
 For line endings management, check [text](https://git-scm.com/docs/gitattributes#_effects) option.
 
@@ -120,9 +90,9 @@ For line endings management, check [text](https://git-scm.com/docs/gitattributes
 
 [Three ways of excluding files](http://365git.tumblr.com/post/519016351/three-ways-of-excluding-files)
 
-- Per Project: .gitignore file in the repository
-- Per Repository: in .git/info/excludes
-- Per Computer: through settings in ~/.gitconfig
+- Per Project: `.gitignore` file in the repository
+- Per Repository: in `.git/info/excludes`
+- Per Computer: through settings in `~/.gitconfig`
 
 ### global `.gitignore`
 
@@ -132,7 +102,7 @@ Create a gitignore file in your home dir, for ex `~/.gitignore_global`.
 
 A possible content :
 
-```
+```text
 # Logs #
 ########
 *.log
@@ -164,13 +134,13 @@ Then add this file to the current config :
 
 - inside `~/.gitconfig` :
 
-```
+```text
 [core]
-	excludesfile = /home/user/.gitignore_global
+    excludesfile = /home/user/.gitignore_global
 ```
 
 - or with CLI :
 
 ```bash
-$ git config --global core.excludesfile ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
 ```

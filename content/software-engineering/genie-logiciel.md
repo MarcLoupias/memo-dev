@@ -1,26 +1,3 @@
----
-htmlHead:
-    title: 'marlou knowledge base' 
-    containerClass: 'markdown-body'
-    metaTags:
-        - name: viewport
-          content: 'width=device-width, initial-scale=1, minimal-ui'
-        - name: robots
-          content: none
-    links:
-        - href: '../github-markdown.css'
-          rel: stylesheet
-          media: all
-        - href: '../main.css'
-          rel: stylesheet
-          media: all
-        - href: '../github.css'
-          rel: stylesheet
-    scripts:
-        - src: '../index.js'
-
----
-
 # Génie Logiciel
 
 - [Définition wikipédia](https://fr.wikipedia.org/wiki/G%C3%A9nie_logiciel)
@@ -377,12 +354,12 @@ Martin Fowler deal with this question in [his feature toggle article](https://ma
   - [OS/360](https://fr.wikipedia.org/wiki/OS/360)
   - [Mythe du mois / homme](https://fr.wikipedia.org/wiki/Le_Mythe_du_mois-homme)
   - [No Silver Bullet — Essence and Accidents of Software Engineering](http://www.cs.nott.ac.uk/~pszcah/G51ISS/Documents/NoSilverBullet.html)
-  
+
 - [Grady Booch](https://en.wikipedia.org/wiki/Grady_Booch)
   - Booch Method
   - UML
   - Continuous Integration
-  
+
 - [Gilles Roustan : Artisan développeur](http://gb-prod.fr/2016/06/12/artisan-developpeur.html)
 
 - [William Durand : From STUPID to SOLID code](http://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/)
@@ -403,10 +380,10 @@ Martin Fowler deal with this question in [his feature toggle article](https://ma
 - [Eric Elliott : "Programming JavaScript Applications" (O’Reilly)](https://leanpub.com/u/ericelliott)
   - [GitHub profile](https://github.com/ericelliott)
   - massive article writer on [medium.com](https://medium.com/@_ericelliott)
-  
+
 - David Heinemeier Hansson (Creator of Ruby on Rails)
   - [The Majestic Monolith : medium.com 20160229](https://m.signalvnoise.com/the-majestic-monolith-29166d022228)
-  
+
 - [Gérard Berry](https://fr.wikipedia.org/wiki/G%C3%A9rard_Berry)
   - le lambda calcul et la programmation fonctionnelle ;
   - la programmation parallèle et temps réel ;
@@ -445,12 +422,12 @@ Martin Fowler deal with this question in [his feature toggle article](https://ma
 
 - [Daniel Glazman](http://glazman.org/weblog/) Former co-chairman of the W3C CSS Working Group
   - [Sommes-nous à la merci de nos systèmes informatiques ? - France Culture -  20171205](https://www.franceculture.fr/emissions/linvite-des-matins-2eme-partie/sommes-nous-a-la-merci-de-nos-systemes-informatiques)
-  
+
 - Rich Hickey [Clojure](https://clojure.org/) author, [The problems of programming](https://pbs.twimg.com/media/DL-3OUcUMAAaXID.jpg)
 
 - [TJ Holowaychuk](https://github.com/tj)
   - founder of Express, Koa, Commander, ...
-  
+
 - [Ryan Dahl](http://tinyclouds.org)
   - founder of Node.js, denom, ...
   - [Interview with Ryan Dahl, Creator of Node.js - www.mappingthejourney.com - 20170831](https://www.mappingthejourney.com/single-post/2017/08/31/episode-8-interview-with-ryan-dahl-creator-of-nodejs/)

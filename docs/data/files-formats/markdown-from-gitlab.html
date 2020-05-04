@@ -1,73 +1,82 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"><meta name="robots" content="none"><title>marlou knowledge base</title><link href="/github-markdown.7d1fca7c.css" rel="stylesheet" media="all"><link href="/main.4b9cca7f.css" rel="stylesheet" media="all"><link href="/github.8c766760.css" rel="stylesheet"><script src="/docs.82f7552b.js"></script></head><body><article class="markdown-body"><h1 id="title-markdown">Markdown</h1>
-<h2 id="title-table-of-contents">Table of Contents</h2>
-<p><strong><a href="#gitlab-flavored-markdown-gfm">GitLab Flavored Markdown</a></strong></p>
-<ul>
-<li><a href="#newlines">Newlines</a></li>
-<li><a href="#multiple-underscores-in-words">Multiple underscores in words</a></li>
-<li><a href="#url-auto-linking">URL auto-linking</a></li>
-<li><a href="#code-and-syntax-highlighting">Code and Syntax Highlighting</a></li>
-<li><a href="#emoji">Emoji</a></li>
-<li><a href="#special-gitlab-references">Special GitLab references</a></li>
-<li><a href="#task-lists">Task lists</a></li>
-</ul>
-<p><strong><a href="#standard-markdown">Standard Markdown</a></strong></p>
-<ul>
-<li><a href="#headers">Headers</a></li>
-<li><a href="#emphasis">Emphasis</a></li>
-<li><a href="#lists">Lists</a></li>
-<li><a href="#links">Links</a></li>
-<li><a href="#images">Images</a></li>
-<li><a href="#blockquotes">Blockquotes</a></li>
-<li><a href="#inline-html">Inline HTML</a></li>
-<li><a href="#horizontal-rule">Horizontal Rule</a></li>
-<li><a href="#line-breaks">Line Breaks</a></li>
-<li><a href="#tables">Tables</a></li>
-</ul>
-<p><strong><a href="#references">References</a></strong></p>
-<h2 id="title-gitlab-flavored-markdown-gfm">GitLab Flavored Markdown (GFM)</h2>
-<p>For GitLab we developed something we call “GitLab Flavored Markdown” (GFM). It extends the standard Markdown in a few significant ways to add some useful functionality.</p>
-<p>You can use GFM in</p>
-<ul>
-<li>comments</li>
-<li>issues</li>
-<li>merge requests</li>
-<li>milestones</li>
-<li>wiki pages</li>
-</ul>
-<p>You can also use other rich text files in GitLab. You might have to install a dependency to do so. Please see the <a href="https://github.com/gitlabhq/markup#markups">github-markup gem readme</a> for more information.</p>
-<h2 id="title-newlines">Newlines</h2>
-<p>GFM honors the markdown specification in how <a href="http://daringfireball.net/projects/markdown/syntax#p">paragraphs and line breaks are handled</a>.</p>
-<p>A paragraph is simply one or more consecutive lines of text, separated by one or more blank lines.<br>Line-breaks, or softreturns, are rendered if you end a line with two or more spaces</p>
-<pre><code>Roses are red [followed by two or more spaces]  
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Markdown | marlou knowledge base</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="knowledge db tool">
+    <meta name="robots" content="none">
+    <link rel="preload" href="/assets/css/0.styles.e34db02d.css" as="style"><link rel="preload" href="/assets/js/app.637efe70.js" as="script"><link rel="preload" href="/assets/js/2.b10fadef.js" as="script"><link rel="preload" href="/assets/js/10.22935b49.js" as="script"><link rel="prefetch" href="/assets/js/100.7ca947ee.js"><link rel="prefetch" href="/assets/js/101.8ba2e31d.js"><link rel="prefetch" href="/assets/js/102.d8d8bd45.js"><link rel="prefetch" href="/assets/js/103.724d98a2.js"><link rel="prefetch" href="/assets/js/104.229a7daf.js"><link rel="prefetch" href="/assets/js/105.a8992225.js"><link rel="prefetch" href="/assets/js/106.262de88d.js"><link rel="prefetch" href="/assets/js/107.8efd7b04.js"><link rel="prefetch" href="/assets/js/108.272f61b3.js"><link rel="prefetch" href="/assets/js/109.24df76b6.js"><link rel="prefetch" href="/assets/js/11.d5b1d4cb.js"><link rel="prefetch" href="/assets/js/110.150d9241.js"><link rel="prefetch" href="/assets/js/111.7beccf9a.js"><link rel="prefetch" href="/assets/js/112.64abb596.js"><link rel="prefetch" href="/assets/js/113.21df8db0.js"><link rel="prefetch" href="/assets/js/114.d2ee704f.js"><link rel="prefetch" href="/assets/js/115.6f1faf52.js"><link rel="prefetch" href="/assets/js/116.bd0f13dd.js"><link rel="prefetch" href="/assets/js/117.fd51dc78.js"><link rel="prefetch" href="/assets/js/118.66e74dff.js"><link rel="prefetch" href="/assets/js/119.4337ee99.js"><link rel="prefetch" href="/assets/js/12.1d40092c.js"><link rel="prefetch" href="/assets/js/120.2fa8dabf.js"><link rel="prefetch" href="/assets/js/121.e8bc328e.js"><link rel="prefetch" href="/assets/js/122.61be7766.js"><link rel="prefetch" href="/assets/js/123.0987b380.js"><link rel="prefetch" href="/assets/js/124.a8228815.js"><link rel="prefetch" href="/assets/js/125.da5ddb5b.js"><link rel="prefetch" href="/assets/js/126.ef9294eb.js"><link rel="prefetch" href="/assets/js/127.6d454b88.js"><link rel="prefetch" href="/assets/js/128.391b2a2a.js"><link rel="prefetch" href="/assets/js/129.65f99f29.js"><link rel="prefetch" href="/assets/js/13.5ac00ad7.js"><link rel="prefetch" href="/assets/js/130.3ba7f5d7.js"><link rel="prefetch" href="/assets/js/131.c503b102.js"><link rel="prefetch" href="/assets/js/132.a9a24540.js"><link rel="prefetch" href="/assets/js/133.4123c476.js"><link rel="prefetch" href="/assets/js/134.274a3288.js"><link rel="prefetch" href="/assets/js/135.bb2c7d32.js"><link rel="prefetch" href="/assets/js/136.a465244f.js"><link rel="prefetch" href="/assets/js/137.fddb3a45.js"><link rel="prefetch" href="/assets/js/138.e234216b.js"><link rel="prefetch" href="/assets/js/139.b7e43724.js"><link rel="prefetch" href="/assets/js/14.21337ce4.js"><link rel="prefetch" href="/assets/js/140.91296b2b.js"><link rel="prefetch" href="/assets/js/141.be88b3fd.js"><link rel="prefetch" href="/assets/js/142.2ccd0078.js"><link rel="prefetch" href="/assets/js/143.6c82f67e.js"><link rel="prefetch" href="/assets/js/144.a8517fb5.js"><link rel="prefetch" href="/assets/js/145.95f3679d.js"><link rel="prefetch" href="/assets/js/146.c61db4d0.js"><link rel="prefetch" href="/assets/js/147.007b7310.js"><link rel="prefetch" href="/assets/js/148.946a7d6c.js"><link rel="prefetch" href="/assets/js/149.905e90c5.js"><link rel="prefetch" href="/assets/js/15.9bb06f3e.js"><link rel="prefetch" href="/assets/js/150.f5f1829f.js"><link rel="prefetch" href="/assets/js/151.b29c3c08.js"><link rel="prefetch" href="/assets/js/152.e003263b.js"><link rel="prefetch" href="/assets/js/153.42bea07d.js"><link rel="prefetch" href="/assets/js/154.99162c75.js"><link rel="prefetch" href="/assets/js/155.7e4aa547.js"><link rel="prefetch" href="/assets/js/156.4ffce4b5.js"><link rel="prefetch" href="/assets/js/157.7708b7d9.js"><link rel="prefetch" href="/assets/js/158.d6fdc49f.js"><link rel="prefetch" href="/assets/js/159.e4a37544.js"><link rel="prefetch" href="/assets/js/16.26987fe7.js"><link rel="prefetch" href="/assets/js/160.dc39d489.js"><link rel="prefetch" href="/assets/js/161.9f6938b4.js"><link rel="prefetch" href="/assets/js/162.b1ee186e.js"><link rel="prefetch" href="/assets/js/163.2f776a00.js"><link rel="prefetch" href="/assets/js/164.1a0c607f.js"><link rel="prefetch" href="/assets/js/165.b7c61ad8.js"><link rel="prefetch" href="/assets/js/166.4a25dfb9.js"><link rel="prefetch" href="/assets/js/167.a5ae9090.js"><link rel="prefetch" href="/assets/js/168.292c8760.js"><link rel="prefetch" href="/assets/js/169.a0ef8135.js"><link rel="prefetch" href="/assets/js/17.e34ddbab.js"><link rel="prefetch" href="/assets/js/170.3188efba.js"><link rel="prefetch" href="/assets/js/171.77cfab9d.js"><link rel="prefetch" href="/assets/js/172.5e4fec9c.js"><link rel="prefetch" href="/assets/js/173.11c242c5.js"><link rel="prefetch" href="/assets/js/174.2c0fb115.js"><link rel="prefetch" href="/assets/js/175.9a3247d5.js"><link rel="prefetch" href="/assets/js/176.2bee7add.js"><link rel="prefetch" href="/assets/js/177.f2f4c33c.js"><link rel="prefetch" href="/assets/js/178.0ad8c83c.js"><link rel="prefetch" href="/assets/js/179.d1b20721.js"><link rel="prefetch" href="/assets/js/18.4edca711.js"><link rel="prefetch" href="/assets/js/180.6560ab66.js"><link rel="prefetch" href="/assets/js/181.45668382.js"><link rel="prefetch" href="/assets/js/182.20c5cd51.js"><link rel="prefetch" href="/assets/js/183.78f61cd6.js"><link rel="prefetch" href="/assets/js/184.fefb8dfb.js"><link rel="prefetch" href="/assets/js/185.453d4b68.js"><link rel="prefetch" href="/assets/js/186.53ecdfb0.js"><link rel="prefetch" href="/assets/js/187.494a7e47.js"><link rel="prefetch" href="/assets/js/188.9787771f.js"><link rel="prefetch" href="/assets/js/189.513bff62.js"><link rel="prefetch" href="/assets/js/19.7e8c66bd.js"><link rel="prefetch" href="/assets/js/190.d79b46fa.js"><link rel="prefetch" href="/assets/js/191.5be1cfe3.js"><link rel="prefetch" href="/assets/js/192.c882396d.js"><link rel="prefetch" href="/assets/js/193.b59d1a50.js"><link rel="prefetch" href="/assets/js/194.c5188dbe.js"><link rel="prefetch" href="/assets/js/195.85606e4c.js"><link rel="prefetch" href="/assets/js/196.1e37d696.js"><link rel="prefetch" href="/assets/js/197.d2c25126.js"><link rel="prefetch" href="/assets/js/198.0bd70829.js"><link rel="prefetch" href="/assets/js/199.90750781.js"><link rel="prefetch" href="/assets/js/20.1c2bab36.js"><link rel="prefetch" href="/assets/js/200.fc3d19f2.js"><link rel="prefetch" href="/assets/js/201.c48d42c4.js"><link rel="prefetch" href="/assets/js/202.52dc433b.js"><link rel="prefetch" href="/assets/js/203.cf1eab7e.js"><link rel="prefetch" href="/assets/js/204.f7ab9ced.js"><link rel="prefetch" href="/assets/js/205.f8a5b9ce.js"><link rel="prefetch" href="/assets/js/206.bdfe94e3.js"><link rel="prefetch" href="/assets/js/207.1513e07c.js"><link rel="prefetch" href="/assets/js/208.53ebf798.js"><link rel="prefetch" href="/assets/js/209.cb760c7a.js"><link rel="prefetch" href="/assets/js/21.f6401f33.js"><link rel="prefetch" href="/assets/js/210.e394a8ee.js"><link rel="prefetch" href="/assets/js/211.e6dcf06e.js"><link rel="prefetch" href="/assets/js/212.ec7b6bbb.js"><link rel="prefetch" href="/assets/js/213.a8b9c331.js"><link rel="prefetch" href="/assets/js/214.80f58a60.js"><link rel="prefetch" href="/assets/js/215.1aafc0fc.js"><link rel="prefetch" href="/assets/js/216.bd966360.js"><link rel="prefetch" href="/assets/js/217.ba7c9f8b.js"><link rel="prefetch" href="/assets/js/218.f153a403.js"><link rel="prefetch" href="/assets/js/219.c27fc0b1.js"><link rel="prefetch" href="/assets/js/22.3c998aa8.js"><link rel="prefetch" href="/assets/js/220.1aefeac1.js"><link rel="prefetch" href="/assets/js/221.966df196.js"><link rel="prefetch" href="/assets/js/222.32c85ec7.js"><link rel="prefetch" href="/assets/js/223.d3cf088d.js"><link rel="prefetch" href="/assets/js/224.aacbceaf.js"><link rel="prefetch" href="/assets/js/225.54cd3b6a.js"><link rel="prefetch" href="/assets/js/226.313b725c.js"><link rel="prefetch" href="/assets/js/227.4c1d3f3d.js"><link rel="prefetch" href="/assets/js/228.9e4a4832.js"><link rel="prefetch" href="/assets/js/229.f7697a3d.js"><link rel="prefetch" href="/assets/js/23.c0f91738.js"><link rel="prefetch" href="/assets/js/230.6bc69b17.js"><link rel="prefetch" href="/assets/js/231.79805394.js"><link rel="prefetch" href="/assets/js/232.8acab379.js"><link rel="prefetch" href="/assets/js/233.31ff62c4.js"><link rel="prefetch" href="/assets/js/234.19a9a922.js"><link rel="prefetch" href="/assets/js/235.2f5e5e2c.js"><link rel="prefetch" href="/assets/js/236.62db3ffe.js"><link rel="prefetch" href="/assets/js/237.509d547e.js"><link rel="prefetch" href="/assets/js/238.8475cde0.js"><link rel="prefetch" href="/assets/js/239.9bd44b93.js"><link rel="prefetch" href="/assets/js/24.a3735d29.js"><link rel="prefetch" href="/assets/js/240.ad624c47.js"><link rel="prefetch" href="/assets/js/241.61ab0ed8.js"><link rel="prefetch" href="/assets/js/242.67a7e2f2.js"><link rel="prefetch" href="/assets/js/243.4979aaa3.js"><link rel="prefetch" href="/assets/js/244.47564eed.js"><link rel="prefetch" href="/assets/js/245.e4f54911.js"><link rel="prefetch" href="/assets/js/246.f6c3f80f.js"><link rel="prefetch" href="/assets/js/247.c72d22f2.js"><link rel="prefetch" href="/assets/js/248.861aee52.js"><link rel="prefetch" href="/assets/js/25.6c577ea7.js"><link rel="prefetch" href="/assets/js/26.23d30be7.js"><link rel="prefetch" href="/assets/js/27.a8c3c2fb.js"><link rel="prefetch" href="/assets/js/28.3964a549.js"><link rel="prefetch" href="/assets/js/29.8d84ed8f.js"><link rel="prefetch" href="/assets/js/3.407b1262.js"><link rel="prefetch" href="/assets/js/30.c47c033e.js"><link rel="prefetch" href="/assets/js/31.c76cd18c.js"><link rel="prefetch" href="/assets/js/32.4c176516.js"><link rel="prefetch" href="/assets/js/33.03614d45.js"><link rel="prefetch" href="/assets/js/34.8f016bfb.js"><link rel="prefetch" href="/assets/js/35.3e7ac883.js"><link rel="prefetch" href="/assets/js/36.3a81653e.js"><link rel="prefetch" href="/assets/js/37.0e02ab0d.js"><link rel="prefetch" href="/assets/js/38.389577c2.js"><link rel="prefetch" href="/assets/js/39.ec448a95.js"><link rel="prefetch" href="/assets/js/4.670e3e46.js"><link rel="prefetch" href="/assets/js/40.5872895f.js"><link rel="prefetch" href="/assets/js/41.0edbad11.js"><link rel="prefetch" href="/assets/js/42.ddf9efe1.js"><link rel="prefetch" href="/assets/js/43.fb844553.js"><link rel="prefetch" href="/assets/js/44.0d9766c2.js"><link rel="prefetch" href="/assets/js/45.855bc2d0.js"><link rel="prefetch" href="/assets/js/46.9e2bac87.js"><link rel="prefetch" href="/assets/js/47.d990bd89.js"><link rel="prefetch" href="/assets/js/48.e66af9df.js"><link rel="prefetch" href="/assets/js/49.9db08751.js"><link rel="prefetch" href="/assets/js/5.e5b2557f.js"><link rel="prefetch" href="/assets/js/50.f80c08ad.js"><link rel="prefetch" href="/assets/js/51.78cfa47e.js"><link rel="prefetch" href="/assets/js/52.7693c417.js"><link rel="prefetch" href="/assets/js/53.cdd88c0a.js"><link rel="prefetch" href="/assets/js/54.750058be.js"><link rel="prefetch" href="/assets/js/55.c9cf7c01.js"><link rel="prefetch" href="/assets/js/56.9ad92c71.js"><link rel="prefetch" href="/assets/js/57.6eedd395.js"><link rel="prefetch" href="/assets/js/58.3a9c94be.js"><link rel="prefetch" href="/assets/js/59.aac2506b.js"><link rel="prefetch" href="/assets/js/6.ff25a0d0.js"><link rel="prefetch" href="/assets/js/60.8dc8fb2d.js"><link rel="prefetch" href="/assets/js/61.ec95e76e.js"><link rel="prefetch" href="/assets/js/62.53bebb0b.js"><link rel="prefetch" href="/assets/js/63.baca2154.js"><link rel="prefetch" href="/assets/js/64.3b577191.js"><link rel="prefetch" href="/assets/js/65.2b4fcfe3.js"><link rel="prefetch" href="/assets/js/66.71a89744.js"><link rel="prefetch" href="/assets/js/67.ca3f6d0b.js"><link rel="prefetch" href="/assets/js/68.1c67dead.js"><link rel="prefetch" href="/assets/js/69.cd407fc4.js"><link rel="prefetch" href="/assets/js/7.d587d140.js"><link rel="prefetch" href="/assets/js/70.82c180fc.js"><link rel="prefetch" href="/assets/js/71.9d9a3f42.js"><link rel="prefetch" href="/assets/js/72.60ed8b2a.js"><link rel="prefetch" href="/assets/js/73.50a6b868.js"><link rel="prefetch" href="/assets/js/74.978f836e.js"><link rel="prefetch" href="/assets/js/75.94d44d96.js"><link rel="prefetch" href="/assets/js/76.44e13483.js"><link rel="prefetch" href="/assets/js/77.53c25b28.js"><link rel="prefetch" href="/assets/js/78.de06a106.js"><link rel="prefetch" href="/assets/js/79.984477ca.js"><link rel="prefetch" href="/assets/js/8.dd6f5e0b.js"><link rel="prefetch" href="/assets/js/80.776b120a.js"><link rel="prefetch" href="/assets/js/81.e592fad7.js"><link rel="prefetch" href="/assets/js/82.ac7d2ae9.js"><link rel="prefetch" href="/assets/js/83.456c2b24.js"><link rel="prefetch" href="/assets/js/84.dfb95f82.js"><link rel="prefetch" href="/assets/js/85.16d4fc84.js"><link rel="prefetch" href="/assets/js/86.40631864.js"><link rel="prefetch" href="/assets/js/87.394252cd.js"><link rel="prefetch" href="/assets/js/88.a5fb8258.js"><link rel="prefetch" href="/assets/js/89.631cb251.js"><link rel="prefetch" href="/assets/js/9.37f457df.js"><link rel="prefetch" href="/assets/js/90.6c273fb9.js"><link rel="prefetch" href="/assets/js/91.e7be43c7.js"><link rel="prefetch" href="/assets/js/92.6551645e.js"><link rel="prefetch" href="/assets/js/93.21633298.js"><link rel="prefetch" href="/assets/js/94.6588f8c4.js"><link rel="prefetch" href="/assets/js/95.fada5721.js"><link rel="prefetch" href="/assets/js/96.cda084cd.js"><link rel="prefetch" href="/assets/js/97.233e9461.js"><link rel="prefetch" href="/assets/js/98.d03f15b9.js"><link rel="prefetch" href="/assets/js/99.b6006dff.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e34db02d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">marlou knowledge base</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/data/" class="nav-link router-link-active">
+  Data
+</a></div><div class="nav-item"><a href="/devops/" class="nav-link">
+  DevOps
+</a></div><div class="nav-item"><a href="/divers/" class="nav-link">
+  Divers
+</a></div><div class="nav-item"><a href="/network/" class="nav-link">
+  Network
+</a></div><div class="nav-item"><a href="/languages/" class="nav-link">
+  Languages
+</a></div><div class="nav-item"><a href="/platforms-frameworks-libs/" class="nav-link">
+  Platforms, frameworks and libs
+</a></div><div class="nav-item"><a href="/security/" class="nav-link">
+  Security
+</a></div><div class="nav-item"><a href="/software-engineering/" class="nav-link">
+  Software Engineering
+</a></div><div class="nav-item"><a href="/systems/" class="nav-link">
+  Systems
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  Tools
+</a></div><div class="nav-item"><a href="/web/" class="nav-link">
+  Web
+</a></div><div class="nav-item"><a href="https://github.com/MarcLoupias/memo-dev" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/data/" class="nav-link router-link-active">
+  Data
+</a></div><div class="nav-item"><a href="/devops/" class="nav-link">
+  DevOps
+</a></div><div class="nav-item"><a href="/divers/" class="nav-link">
+  Divers
+</a></div><div class="nav-item"><a href="/network/" class="nav-link">
+  Network
+</a></div><div class="nav-item"><a href="/languages/" class="nav-link">
+  Languages
+</a></div><div class="nav-item"><a href="/platforms-frameworks-libs/" class="nav-link">
+  Platforms, frameworks and libs
+</a></div><div class="nav-item"><a href="/security/" class="nav-link">
+  Security
+</a></div><div class="nav-item"><a href="/software-engineering/" class="nav-link">
+  Software Engineering
+</a></div><div class="nav-item"><a href="/systems/" class="nav-link">
+  Systems
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  Tools
+</a></div><div class="nav-item"><a href="/web/" class="nav-link">
+  Web
+</a></div><div class="nav-item"><a href="https://github.com/MarcLoupias/memo-dev" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Data basics</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/data/data-basics.html" class="sidebar-link">data - basics</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Files formats</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/data/files-formats/asciidoc-infos.html" class="sidebar-link">asciidoc infos</a></li><li><a href="/data/files-formats/json.html" class="sidebar-link">JSON</a></li><li><a href="/data/files-formats/markdown-from-gitlab.html" class="active sidebar-link">Markdown</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#table-of-contents" class="sidebar-link">Table of Contents</a></li><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#gitlab-flavored-markdown-gfm" class="sidebar-link">GitLab Flavored Markdown (GFM)</a></li><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#newlines" class="sidebar-link">Newlines</a></li><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#multiple-underscores-in-words" class="sidebar-link">Multiple underscores in words</a></li><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#url-auto-linking" class="sidebar-link">URL auto-linking</a></li><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#code-and-syntax-highlighting" class="sidebar-link">Code and Syntax Highlighting</a></li><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#emoji" class="sidebar-link">Emoji</a></li><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#special-gitlab-references" class="sidebar-link">Special GitLab References</a></li><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#task-lists" class="sidebar-link">Task Lists</a></li><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#headers" class="sidebar-link">Headers</a></li><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#h2" class="sidebar-link">H2</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#h3" class="sidebar-link">H3</a></li></ul></li><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#alt-h2" class="sidebar-link">Alt-H2</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#header-ids-and-links" class="sidebar-link">Header IDs and links</a></li></ul></li><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#emphasis" class="sidebar-link">Emphasis</a></li><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#lists" class="sidebar-link">Lists</a></li><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#links" class="sidebar-link">Links</a></li><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#images" class="sidebar-link">Images</a></li><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#blockquotes" class="sidebar-link">Blockquotes</a></li><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#inline-html" class="sidebar-link">Inline HTML</a></li><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#horizontal-rule" class="sidebar-link">Horizontal Rule</a></li><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#line-breaks" class="sidebar-link">Line Breaks</a></li><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#tables" class="sidebar-link">Tables</a></li><li class="sidebar-sub-header"><a href="/data/files-formats/markdown-from-gitlab.html#references" class="sidebar-link">References</a></li></ul></li><li><a href="/data/files-formats/markdown-infos.html" class="sidebar-link">Markdown infos</a></li><li><a href="/data/files-formats/xml.html" class="sidebar-link">XML</a></li><li><a href="/data/files-formats/yaml.html" class="sidebar-link">YAML</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="markdown"><a href="#markdown" class="header-anchor">#</a> Markdown</h1> <h2 id="table-of-contents"><a href="#table-of-contents" class="header-anchor">#</a> Table of Contents</h2> <p><strong><a href="#gitlab-flavored-markdown-gfm">GitLab Flavored Markdown</a></strong></p> <ul><li><a href="#newlines">Newlines</a></li> <li><a href="#multiple-underscores-in-words">Multiple underscores in words</a></li> <li><a href="#url-auto-linking">URL auto-linking</a></li> <li><a href="#code-and-syntax-highlighting">Code and Syntax Highlighting</a></li> <li><a href="#emoji">Emoji</a></li> <li><a href="#special-gitlab-references">Special GitLab references</a></li> <li><a href="#task-lists">Task lists</a></li></ul> <p><strong><a href="#standard-markdown">Standard Markdown</a></strong></p> <ul><li><a href="#headers">Headers</a></li> <li><a href="#emphasis">Emphasis</a></li> <li><a href="#lists">Lists</a></li> <li><a href="#links">Links</a></li> <li><a href="#images">Images</a></li> <li><a href="#blockquotes">Blockquotes</a></li> <li><a href="#inline-html">Inline HTML</a></li> <li><a href="#horizontal-rule">Horizontal Rule</a></li> <li><a href="#line-breaks">Line Breaks</a></li> <li><a href="#tables">Tables</a></li></ul> <p><strong><a href="#references">References</a></strong></p> <h2 id="gitlab-flavored-markdown-gfm"><a href="#gitlab-flavored-markdown-gfm" class="header-anchor">#</a> GitLab Flavored Markdown (GFM)</h2> <p>For GitLab we developed something we call &quot;GitLab Flavored Markdown&quot; (GFM). It extends the standard Markdown in a few significant ways to add some useful functionality.</p> <p>You can use GFM in</p> <ul><li>comments</li> <li>issues</li> <li>merge requests</li> <li>milestones</li> <li>wiki pages</li></ul> <p>You can also use other rich text files in GitLab. You might have to install a dependency to do so. Please see the <a href="https://github.com/gitlabhq/markup#markups" target="_blank" rel="noopener noreferrer">github-markup gem readme<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> for more information.</p> <h2 id="newlines"><a href="#newlines" class="header-anchor">#</a> Newlines</h2> <p>GFM honors the markdown specification in how <a href="http://daringfireball.net/projects/markdown/syntax#p" target="_blank" rel="noopener noreferrer">paragraphs and line breaks are handled<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</p> <p>A paragraph is simply one or more consecutive lines of text, separated by one or more blank lines.
+Line-breaks, or softreturns, are rendered if you end a line with two or more spaces</p> <div class="language- extra-class"><pre><code>Roses are red [followed by two or more spaces]
 Violets are blue
 
-Sugar is sweet</code></pre><p>Roses are red<br>Violets are blue</p>
-<p>Sugar is sweet</p>
-<h2 id="title-multiple-underscores-in-words">Multiple underscores in words</h2>
-<p>It is not reasonable to italicize just <em>part</em> of a word, especially when you’re dealing with code and names that often appear with multiple underscores. Therefore, GFM ignores multiple underscores in words.</p>
-<pre><code>perform_complicated_task
-do_this_and_do_that_and_another_thing</code></pre><p>perform_complicated_task<br>do_this_and_do_that_and_another_thing</p>
-<h2 id="title-url-auto-linking">URL auto-linking</h2>
-<p>GFM will autolink almost any URL you copy and paste into your text.</p>
-<pre><code>* http://www.google.com
+Sugar is sweet
+</code></pre></div><p>Roses are red
+Violets are blue</p> <p>Sugar is sweet</p> <h2 id="multiple-underscores-in-words"><a href="#multiple-underscores-in-words" class="header-anchor">#</a> Multiple underscores in words</h2> <p>It is not reasonable to italicize just <em>part</em> of a word, especially when you're dealing with code and names that often appear with multiple underscores. Therefore, GFM ignores multiple underscores in words.</p> <div class="language- extra-class"><pre><code>perform_complicated_task
+do_this_and_do_that_and_another_thing
+</code></pre></div><p>perform_complicated_task
+do_this_and_do_that_and_another_thing</p> <h2 id="url-auto-linking"><a href="#url-auto-linking" class="header-anchor">#</a> URL auto-linking</h2> <p>GFM will autolink almost any URL you copy and paste into your text.</p> <div class="language- extra-class"><pre><code>* http://www.google.com
 * https://google.com/
 * ftp://ftp.us.debian.org/debian/
 * smb://foo/bar/baz
 * irc://irc.freenode.net/gitlab
-* http://localhost:3000</code></pre><ul>
-<li><a href="http://www.google.com">http://www.google.com</a></li>
-<li><a href="https://google.com/">https://google.com/</a></li>
-<li><a href="ftp://ftp.us.debian.org/debian/">ftp://ftp.us.debian.org/debian/</a></li>
-<li>smb://foo/bar/baz</li>
-<li>irc://irc.freenode.net/gitlab</li>
-<li><a href="http://localhost:3000">http://localhost:3000</a></li>
-</ul>
-<h2 id="title-code-and-syntax-highlighting">Code and Syntax Highlighting</h2>
-<p>Blocks of code are either fenced by lines with three back-ticks <code>```</code>, or are indented with four spaces. Only the fenced code blocks support syntax highlighting.</p>
-<pre><code class="lang-no-highlight">Inline `code` has `back-ticks around` it.</code></pre>
-<p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
-<p>Example:</p>
-<pre><code>```javascript
+* http://localhost:3000
+</code></pre></div><ul><li>http://www.google.com</li> <li>https://google.com/</li> <li>ftp://ftp.us.debian.org/debian/</li> <li>smb://foo/bar/baz</li> <li>irc://irc.freenode.net/gitlab</li> <li>http://localhost:3000</li></ul> <h2 id="code-and-syntax-highlighting"><a href="#code-and-syntax-highlighting" class="header-anchor">#</a> Code and Syntax Highlighting</h2> <p>Blocks of code are either fenced by lines with three back-ticks <code>```</code>, or are indented with four spaces. Only the fenced code blocks support syntax highlighting.</p> <div class="language-no-highlight line-numbers-mode"><pre class="language-text"><code>Inline `code` has `back-ticks around` it.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>Inline <code>code</code> has <code>back-ticks around</code> it.</p> <p>Example:</p> <div class="language- extra-class"><pre><code>```javascript
 var s = &quot;JavaScript syntax highlighting&quot;;
 alert(s);
 ```
@@ -80,7 +89,7 @@ def function():
 ```
 
 ```ruby
-require &#39;redcarpet&#39;
+require 'redcarpet'
 markdown = Redcarpet.new(&quot;Hello World!&quot;)
 puts markdown.to_html
 ```
@@ -88,143 +97,36 @@ puts markdown.to_html
 ```
 No language indicated, so no syntax highlighting.
 s = &quot;There is no highlighting for this.&quot;
-But let&#39;s throw in a &lt;b&gt;tag&lt;/b&gt;.
-```</code></pre><p>becomes:</p>
-<pre><code class="lang-javascript">var s = &quot;JavaScript syntax highlighting&quot;;
-alert(s);</code></pre>
-<pre><code class="lang-python">def function():
-    #indenting works just fine in the fenced code block
-    s = &quot;Python syntax highlighting&quot;
-    print s</code></pre>
-<pre><code class="lang-ruby">require &#39;redcarpet&#39;
-markdown = Redcarpet.new(&quot;Hello World!&quot;)
-puts markdown.to_html</code></pre>
-<pre><code>No language indicated, so no syntax highlighting.
+But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
+```
+</code></pre></div><p>becomes:</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">var</span> s <span class="token operator">=</span> <span class="token string">&quot;JavaScript syntax highlighting&quot;</span><span class="token punctuation">;</span>
+<span class="token function">alert</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment">#indenting works just fine in the fenced code block</span>
+    s <span class="token operator">=</span> <span class="token string">&quot;Python syntax highlighting&quot;</span>
+    <span class="token keyword">print</span> s
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><div class="language-ruby line-numbers-mode"><pre class="language-ruby"><code><span class="token keyword">require</span> <span class="token string">'redcarpet'</span>
+markdown <span class="token operator">=</span> <span class="token constant">Redcarpet</span><span class="token punctuation">.</span><span class="token keyword">new</span><span class="token punctuation">(</span><span class="token string">&quot;Hello World!&quot;</span><span class="token punctuation">)</span>
+puts markdown<span class="token punctuation">.</span>to_html
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>No language indicated, so no syntax highlighting.
 s = &quot;There is no highlighting for this.&quot;
-But let&#39;s throw in a &lt;b&gt;tag&lt;/b&gt;.</code></pre><h2 id="title-emoji">Emoji</h2>
-<pre><code>Sometimes you want to :monkey: around a bit and add some :star2: to your :speech_balloon:. Well we have a gift for you:
+But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="emoji"><a href="#emoji" class="header-anchor">#</a> Emoji</h2> <div class="language- extra-class"><pre><code>Sometimes you want to :monkey: around a bit and add some :star2: to your :speech_balloon:. Well we have a gift for you:
 
 :zap: You can use emoji anywhere GFM is supported. :v:
 
 You can use it to point out a :bug: or warn about :speak_no_evil: patches. And if someone improves your really :snail: code, send them some :birthday:. People will :heart: you for that.
 
-If you are new to this, don&#39;t be :fearful:. You can easily join the emoji :family:. All you need to do is to look up on the supported codes.
+If you are new to this, don't be :fearful:. You can easily join the emoji :family:. All you need to do is to look up on the supported codes.
 
-Consult the [Emoji Cheat Sheet](http://emoji.codes) for a list of all supported emoji codes. :thumbsup:</code></pre><p>Sometimes you want to :monkey: around a bit and add some :star2: to your :speech_balloon:. Well we have a gift for you:</p>
-<p>:zap: You can use emoji anywhere GFM is supported. :v:</p>
-<p>You can use it to point out a :bug: or warn about :speak_no_evil: patches. And if someone improves your really :snail: code, send them some :birthday:. People will :heart: you for that.</p>
-<p>If you are new to this, don’t be :fearful:. You can easily join the emoji :family:. All you need to do is to look up on the supported codes.</p>
-<p>Consult the <a href="http://emoji.codes">Emoji Cheat Sheet</a> for a list of all supported emoji codes. :thumbsup:</p>
-<h2 id="title-special-gitlab-references">Special GitLab References</h2>
-<p>GFM recognizes special references.</p>
-<p>You can easily reference e.g. an issue, a commit, a team member or even the whole team within a project.</p>
-<p>GFM will turn that reference into a link so you can navigate between them easily.</p>
-<p>GFM will recognize the following:</p>
-<table>
-<thead>
-<tr>
-<th align="left">input</th>
-<th align="left">references</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>@user_name</code></td>
-<td align="left">specific user</td>
-</tr>
-<tr>
-<td align="left"><code>@group_name</code></td>
-<td align="left">specific group</td>
-</tr>
-<tr>
-<td align="left"><code>@all</code></td>
-<td align="left">entire team</td>
-</tr>
-<tr>
-<td align="left"><code>#123</code></td>
-<td align="left">issue</td>
-</tr>
-<tr>
-<td align="left"><code>!123</code></td>
-<td align="left">merge request</td>
-</tr>
-<tr>
-<td align="left"><code>$123</code></td>
-<td align="left">snippet</td>
-</tr>
-<tr>
-<td align="left"><code>~123</code></td>
-<td align="left">label by ID</td>
-</tr>
-<tr>
-<td align="left"><code>~bug</code></td>
-<td align="left">one-word label by name</td>
-</tr>
-<tr>
-<td align="left"><code>~&quot;feature request&quot;</code></td>
-<td align="left">multi-word label by name</td>
-</tr>
-<tr>
-<td align="left"><code>9ba12248</code></td>
-<td align="left">specific commit</td>
-</tr>
-<tr>
-<td align="left"><code>9ba12248...b19a04f5</code></td>
-<td align="left">commit range comparison</td>
-</tr>
-<tr>
-<td align="left"><code>[README](doc/README)</code></td>
-<td align="left">repository file references</td>
-</tr>
-</tbody></table>
-<p>GFM also recognizes certain cross-project references:</p>
-<table>
-<thead>
-<tr>
-<th align="left">input</th>
-<th align="left">references</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>namespace/project#123</code></td>
-<td align="left">issue</td>
-</tr>
-<tr>
-<td align="left"><code>namespace/project!123</code></td>
-<td align="left">merge request</td>
-</tr>
-<tr>
-<td align="left"><code>namespace/project$123</code></td>
-<td align="left">snippet</td>
-</tr>
-<tr>
-<td align="left"><code>namespace/project@9ba12248</code></td>
-<td align="left">specific commit</td>
-</tr>
-<tr>
-<td align="left"><code>namespace/project@9ba12248...b19a04f5</code></td>
-<td align="left">commit range comparison</td>
-</tr>
-</tbody></table>
-<h2 id="title-task-lists">Task Lists</h2>
-<p>You can add task lists to issues, merge requests and comments. To create a task list, add a specially-formatted Markdown list, like so:</p>
-<pre><code class="lang-no-highlight">- [x] Completed task
+Consult the [Emoji Cheat Sheet](http://emoji.codes) for a list of all supported emoji codes. :thumbsup:
+</code></pre></div><p>Sometimes you want to 🐒 around a bit and add some 🌟 to your 💬. Well we have a gift for you:</p> <p>⚡️ You can use emoji anywhere GFM is supported. ✌️</p> <p>You can use it to point out a 🐛 or warn about 🙊 patches. And if someone improves your really 🐌 code, send them some 🎂. People will ❤️ you for that.</p> <p>If you are new to this, don't be 😨. You can easily join the emoji 👪. All you need to do is to look up on the supported codes.</p> <p>Consult the <a href="http://emoji.codes" target="_blank" rel="noopener noreferrer">Emoji Cheat Sheet<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> for a list of all supported emoji codes. 👍</p> <h2 id="special-gitlab-references"><a href="#special-gitlab-references" class="header-anchor">#</a> Special GitLab References</h2> <p>GFM recognizes special references.</p> <p>You can easily reference e.g. an issue, a commit, a team member or even the whole team within a project.</p> <p>GFM will turn that reference into a link so you can navigate between them easily.</p> <p>GFM will recognize the following:</p> <table><thead><tr><th style="text-align:left;">input</th> <th style="text-align:left;">references</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>@user_name</code></td> <td style="text-align:left;">specific user</td></tr> <tr><td style="text-align:left;"><code>@group_name</code></td> <td style="text-align:left;">specific group</td></tr> <tr><td style="text-align:left;"><code>@all</code></td> <td style="text-align:left;">entire team</td></tr> <tr><td style="text-align:left;"><code>#123</code></td> <td style="text-align:left;">issue</td></tr> <tr><td style="text-align:left;"><code>!123</code></td> <td style="text-align:left;">merge request</td></tr> <tr><td style="text-align:left;"><code>$123</code></td> <td style="text-align:left;">snippet</td></tr> <tr><td style="text-align:left;"><code>~123</code></td> <td style="text-align:left;">label by ID</td></tr> <tr><td style="text-align:left;"><code>~bug</code></td> <td style="text-align:left;">one-word label by name</td></tr> <tr><td style="text-align:left;"><code>~&quot;feature request&quot;</code></td> <td style="text-align:left;">multi-word label by name</td></tr> <tr><td style="text-align:left;"><code>9ba12248</code></td> <td style="text-align:left;">specific commit</td></tr> <tr><td style="text-align:left;"><code>9ba12248...b19a04f5</code></td> <td style="text-align:left;">commit range comparison</td></tr> <tr><td style="text-align:left;"><code>[README](doc/README)</code></td> <td style="text-align:left;">repository file references</td></tr></tbody></table> <p>GFM also recognizes certain cross-project references:</p> <table><thead><tr><th style="text-align:left;">input</th> <th style="text-align:left;">references</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>namespace/project#123</code></td> <td style="text-align:left;">issue</td></tr> <tr><td style="text-align:left;"><code>namespace/project!123</code></td> <td style="text-align:left;">merge request</td></tr> <tr><td style="text-align:left;"><code>namespace/project$123</code></td> <td style="text-align:left;">snippet</td></tr> <tr><td style="text-align:left;"><code>namespace/project@9ba12248</code></td> <td style="text-align:left;">specific commit</td></tr> <tr><td style="text-align:left;"><code>namespace/project@9ba12248...b19a04f5</code></td> <td style="text-align:left;">commit range comparison</td></tr></tbody></table> <h2 id="task-lists"><a href="#task-lists" class="header-anchor">#</a> Task Lists</h2> <p>You can add task lists to issues, merge requests and comments. To create a task list, add a specially-formatted Markdown list, like so:</p> <div class="language-no-highlight line-numbers-mode"><pre class="language-text"><code>- [x] Completed task
 - [ ] Incomplete task
     - [ ] Sub-task 1
     - [x] Sub-task 2
-    - [ ] Sub-task 3</code></pre>
-<ul>
-<li><input checked disabled type="checkbox"> Completed task</li>
-<li><input disabled type="checkbox"> Incomplete task<ul>
-<li><input disabled type="checkbox"> Sub-task 1</li>
-<li><input checked disabled type="checkbox"> Sub-task 2</li>
-<li><input disabled type="checkbox"> Sub-task 3</li>
-</ul>
-</li>
-</ul>
-<p>Task lists can only be created in descriptions, not in titles. Task item state can be managed by editing the description’s Markdown or by toggling the rendered check boxes.</p>
-<h1 id="title-standard-markdown">Standard Markdown</h1>
-<h2 id="title-headers">Headers</h2>
-<pre><code class="lang-no-highlight"># H1
+    - [ ] Sub-task 3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>[x] Completed task</li> <li>[ ] Incomplete task
+<ul><li>[ ] Sub-task 1</li> <li>[x] Sub-task 2</li> <li>[ ] Sub-task 3</li></ul></li></ul> <p>Task lists can only be created in descriptions, not in titles. Task item state can be managed by editing the description's Markdown or by toggling the rendered check boxes.</p> <h1 id="standard-markdown"><a href="#standard-markdown" class="header-anchor">#</a> Standard Markdown</h1> <h2 id="headers"><a href="#headers" class="header-anchor">#</a> Headers</h2> <div class="language-no-highlight line-numbers-mode"><pre class="language-text"><code># H1
 ## H2
 ### H3
 #### H4
@@ -237,112 +139,45 @@ Alt-H1
 ======
 
 Alt-H2
-------</code></pre>
-<h1 id="title-h1">H1</h1>
-<h2 id="title-h2">H2</h2>
-<h3 id="title-h3">H3</h3>
-<h4 id="title-h4">H4</h4>
-<h5 id="title-h5">H5</h5>
-<h6 id="title-h6">H6</h6>
-<p>Alternatively, for H1 and H2, an underline-ish style:</p>
-<h1 id="title-alt-h1">Alt-H1</h1>
-<h2 id="title-alt-h2">Alt-H2</h2>
-<h3 id="title-header-ids-and-links">Header IDs and links</h3>
-<p>All Markdown-rendered headers automatically get IDs, except in comments.</p>
-<p>On hover a link to those IDs becomes visible to make it easier to copy the link to the header to give it to someone else.</p>
-<p>The IDs are generated from the content of the header according to the following rules:</p>
-<ol>
-<li>All text is converted to lowercase</li>
-<li>All non-word text (e.g., punctuation, HTML) is removed</li>
-<li>All spaces are converted to hyphens</li>
-<li>Two or more hyphens in a row are converted to one</li>
-<li>If a header with the same ID has already been generated, a unique<br>incrementing number is appended, starting at 1.</li>
-</ol>
-<p>For example:</p>
-<pre><code># This header has spaces in it
+------
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h1 id="h1"><a href="#h1" class="header-anchor">#</a> H1</h1> <h2 id="h2"><a href="#h2" class="header-anchor">#</a> H2</h2> <h3 id="h3"><a href="#h3" class="header-anchor">#</a> H3</h3> <h4 id="h4"><a href="#h4" class="header-anchor">#</a> H4</h4> <h5 id="h5"><a href="#h5" class="header-anchor">#</a> H5</h5> <h6 id="h6"><a href="#h6" class="header-anchor">#</a> H6</h6> <p>Alternatively, for H1 and H2, an underline-ish style:</p> <h1 id="alt-h1"><a href="#alt-h1" class="header-anchor">#</a> Alt-H1</h1> <h2 id="alt-h2"><a href="#alt-h2" class="header-anchor">#</a> Alt-H2</h2> <h3 id="header-ids-and-links"><a href="#header-ids-and-links" class="header-anchor">#</a> Header IDs and links</h3> <p>All Markdown-rendered headers automatically get IDs, except in comments.</p> <p>On hover a link to those IDs becomes visible to make it easier to copy the link to the header to give it to someone else.</p> <p>The IDs are generated from the content of the header according to the following rules:</p> <ol><li>All text is converted to lowercase</li> <li>All non-word text (e.g., punctuation, HTML) is removed</li> <li>All spaces are converted to hyphens</li> <li>Two or more hyphens in a row are converted to one</li> <li>If a header with the same ID has already been generated, a unique
+incrementing number is appended, starting at 1.</li></ol> <p>For example:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># This header has spaces in it
 ## This header has a :thumbsup: in it
 # This header has Unicode in it: 한글
 ## This header has spaces in it
-### This header has spaces in it</code></pre><p>Would generate the following link IDs:</p>
-<ol>
-<li><code>this-header-has-spaces-in-it</code></li>
-<li><code>this-header-has-a-in-it</code></li>
-<li><code>this-header-has-unicode-in-it-한글</code></li>
-<li><code>this-header-has-spaces-in-it</code></li>
-<li><code>this-header-has-spaces-in-it-1</code></li>
-</ol>
-<p>Note that the Emoji processing happens before the header IDs are generated, so the Emoji is converted to an image which then gets removed from the ID.</p>
-<h2 id="title-emphasis">Emphasis</h2>
-<pre><code class="lang-no-highlight">Emphasis, aka italics, with *asterisks* or _underscores_.
+### This header has spaces in it
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>Would generate the following link IDs:</p> <ol><li><code>this-header-has-spaces-in-it</code></li> <li><code>this-header-has-a-in-it</code></li> <li><code>this-header-has-unicode-in-it-한글</code></li> <li><code>this-header-has-spaces-in-it</code></li> <li><code>this-header-has-spaces-in-it-1</code></li></ol> <p>Note that the Emoji processing happens before the header IDs are generated, so the Emoji is converted to an image which then gets removed from the ID.</p> <h2 id="emphasis"><a href="#emphasis" class="header-anchor">#</a> Emphasis</h2> <div class="language-no-highlight line-numbers-mode"><pre class="language-text"><code>Emphasis, aka italics, with *asterisks* or _underscores_.
 
 Strong emphasis, aka bold, with **asterisks** or __underscores__.
 
 Combined emphasis with **asterisks and _underscores_**.
 
-Strikethrough uses two tildes. ~~Scratch this.~~</code></pre>
-<p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
-<p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
-<p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
-<p>Strikethrough uses two tildes. <del>Scratch this.</del></p>
-<h2 id="title-lists">Lists</h2>
-<pre><code class="lang-no-highlight">1. First ordered list item
+Strikethrough uses two tildes. ~~Scratch this.~~
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p> <p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p> <p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p> <p>Strikethrough uses two tildes. <s>Scratch this.</s></p> <h2 id="lists"><a href="#lists" class="header-anchor">#</a> Lists</h2> <div class="language-no-highlight line-numbers-mode"><pre class="language-text"><code>1. First ordered list item
 2. Another item
   * Unordered sub-list.
-1. Actual numbers don&#39;t matter, just that it&#39;s a number
+1. Actual numbers don't matter, just that it's a number
   1. Ordered sub-list
 4. And another item.
 
 * Unordered list can use asterisks
 - Or minuses
-+ Or pluses</code></pre>
-<ol>
-<li>First ordered list item</li>
-<li>Another item<ul>
-<li>Unordered sub-list.</li>
-</ul>
-</li>
-<li>Actual numbers don’t matter, just that it’s a number<ol>
-<li>Ordered sub-list</li>
-</ol>
-</li>
-<li>And another item.</li>
-</ol>
-<ul>
-<li>Unordered list can use asterisks</li>
-<li>Or minuses</li>
-<li>Or pluses</li>
-</ul>
-<p>If a list item contains multiple paragraphs,<br>each subsequent paragraph should be indented with four spaces.</p>
-<pre><code class="lang-no-highlight">1.  First ordered list item
++ Or pluses
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ol><li>First ordered list item</li> <li>Another item</li></ol> <ul><li>Unordered sub-list.</li></ul> <ol><li>Actual numbers don't matter, just that it's a number</li> <li>Ordered sub-list</li> <li>And another item.</li></ol> <ul><li>Unordered list can use asterisks</li></ul> <ul><li>Or minuses</li></ul> <ul><li>Or pluses</li></ul> <p>If a list item contains multiple paragraphs,
+each subsequent paragraph should be indented with four spaces.</p> <div class="language-no-highlight line-numbers-mode"><pre class="language-text"><code>1.  First ordered list item
 
     Second paragraph of first item.
-2.  Another item</code></pre>
-<ol>
-<li><p>First ordered list item</p>
-<p>Second paragraph of first item.</p>
-</li>
-<li><p>Another item</p>
-</li>
-</ol>
-<p>If the second paragraph isn’t indented with four spaces,<br>the second list item will be incorrectly labeled as <code>1</code>.</p>
-<pre><code class="lang-no-highlight">1. First ordered list item
+2.  Another item
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ol><li><p>First ordered list item</p> <p>Second paragraph of first item.</p></li> <li><p>Another item</p></li></ol> <p>If the second paragraph isn't indented with four spaces,
+the second list item will be incorrectly labeled as <code>1</code>.</p> <div class="language-no-highlight line-numbers-mode"><pre class="language-text"><code>1. First ordered list item
 
    Second paragraph of first item.
-2. Another item</code></pre>
-<ol>
-<li><p>First ordered list item</p>
-<p>Second paragraph of first item.</p>
-</li>
-<li><p>Another item</p>
-</li>
-</ol>
-<h2 id="title-links">Links</h2>
-<p>There are two ways to create links, inline-style and reference-style.</p>
-<pre><code>[I&#39;m an inline-style link](https://www.google.com)
+2. Another item
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ol><li><p>First ordered list item</p> <p>Second paragraph of first item.</p></li> <li><p>Another item</p></li></ol> <h2 id="links"><a href="#links" class="header-anchor">#</a> Links</h2> <p>There are two ways to create links, inline-style and reference-style.</p> <div class="language- extra-class"><pre><code>[I'm an inline-style link](https://www.google.com)
 
-[I&#39;m a reference-style link][Arbitrary case-insensitive reference text]
+[I'm a reference-style link][Arbitrary case-insensitive reference text]
 
-[I&#39;m a relative reference to a repository file](LICENSE)
+[I'm a relative reference to a repository file](LICENSE)
 
 [You can use numbers for reference-style link definitions][1]
 
@@ -352,18 +187,8 @@ Some text to show that the reference links can follow later.
 
 [arbitrary case-insensitive reference text]: https://www.mozilla.org
 [1]: http://slashdot.org
-[link text itself]: http://www.reddit.com</code></pre><p><a href="https://www.google.com">I’m an inline-style link</a></p>
-<p><a href="https://www.mozilla.org">I’m a reference-style link</a></p>
-<p><a href="LICENSE">I’m a relative reference to a repository file</a></p>
-<p><a href="http://slashdot.org">You can use numbers for reference-style link definitions</a></p>
-<p>Or leave it empty and use the <a href="http://www.reddit.com">link text itself</a></p>
-<p>Some text to show that the reference links can follow later.</p>
-<p><strong>Note</strong></p>
-<p>Relative links do not allow referencing project files in a wiki page or wiki page in a project file. The reason for this is that, in GitLab, wiki is always a separate git repository. For example:</p>
-<p><code>[I&#39;m a reference-style link](style)</code></p>
-<p>will point the link to <code>wikis/style</code> when the link is inside of a wiki markdown file.</p>
-<h2 id="title-images">Images</h2>
-<pre><code>Here&#39;s our logo (hover to see the title text):
+[link text itself]: http://www.reddit.com
+</code></pre></div><p><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">I'm an inline-style link<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="https://www.mozilla.org" target="_blank" rel="noopener noreferrer">I'm a reference-style link<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="LICENSE">I'm a relative reference to a repository file</a></p> <p><a href="http://slashdot.org" target="_blank" rel="noopener noreferrer">You can use numbers for reference-style link definitions<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>Or leave it empty and use the <a href="http://www.reddit.com" target="_blank" rel="noopener noreferrer">link text itself<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>Some text to show that the reference links can follow later.</p> <p><strong>Note</strong></p> <p>Relative links do not allow referencing project files in a wiki page or wiki page in a project file. The reason for this is that, in GitLab, wiki is always a separate git repository. For example:</p> <p><code>[I'm a reference-style link](style)</code></p> <p>will point the link to <code>wikis/style</code> when the link is inside of a wiki markdown file.</p> <h2 id="images"><a href="#images" class="header-anchor">#</a> Images</h2> <div class="language- extra-class"><pre><code>Here's our logo (hover to see the title text):
 
 Inline-style:
 ![alt text](assets/logo-white.png)
@@ -371,39 +196,22 @@ Inline-style:
 Reference-style:
 ![alt text1][logo]
 
-[logo]: assets/logo-white.png</code></pre><p>Here’s our logo:</p>
-<p>Inline-style:</p>
-<p><code>![alt text](/assets/logo-white.png)</code></p>
-<p>Reference-style:</p>
-<p><code>![alt text][logo]</code></p>
-<p><code>[logo]: /assets/logo-white.png</code></p>
-<h2 id="title-blockquotes">Blockquotes</h2>
-<pre><code class="lang-no-highlight">&gt; Blockquotes are very handy in email to emulate reply text.
+[logo]: assets/logo-white.png
+</code></pre></div><p>Here's our logo:</p> <p>Inline-style:</p> <p><code>![alt text](/assets/logo-white.png)</code></p> <p>Reference-style:</p> <p><code>![alt text][logo]</code></p> <p><code>[logo]: /assets/logo-white.png</code></p> <h2 id="blockquotes"><a href="#blockquotes" class="header-anchor">#</a> Blockquotes</h2> <div class="language-no-highlight line-numbers-mode"><pre class="language-text"><code>&gt; Blockquotes are very handy in email to emulate reply text.
 &gt; This line is part of the same quote.
 
 Quote break.
 
-&gt; This is a very long line that will still be quoted properly when it wraps. Oh boy let&#39;s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.</code></pre>
-<blockquote>
-<p>Blockquotes are very handy in email to emulate reply text.<br>This line is part of the same quote.</p>
-</blockquote>
-<p>Quote break.</p>
-<blockquote>
-<p>This is a very long line that will still be quoted properly when it wraps. Oh boy let’s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.</p>
-</blockquote>
-<h2 id="title-inline-html">Inline HTML</h2>
-<p>You can also use raw HTML in your Markdown, and it’ll mostly work pretty well.</p>
-<p>See the documentation for HTML::Pipeline’s <a href="http://www.rubydoc.info/gems/html-pipeline/HTML/Pipeline/SanitizationFilter#WHITELIST-constant">SanitizationFilter</a> class for the list of allowed HTML tags and attributes. In addition to the default <code>SanitizationFilter</code> whitelist, GitLab allows <code>span</code> elements.</p>
-<pre><code class="lang-no-highlight">&lt;dl&gt;
+&gt; This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><blockquote><p>Blockquotes are very handy in email to emulate reply text.
+This line is part of the same quote.</p></blockquote> <p>Quote break.</p> <blockquote><p>This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.</p></blockquote> <h2 id="inline-html"><a href="#inline-html" class="header-anchor">#</a> Inline HTML</h2> <p>You can also use raw HTML in your Markdown, and it'll mostly work pretty well.</p> <p>See the documentation for HTML::Pipeline's <a href="http://www.rubydoc.info/gems/html-pipeline/HTML/Pipeline/SanitizationFilter#WHITELIST-constant" target="_blank" rel="noopener noreferrer">SanitizationFilter<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> class for the list of allowed HTML tags and attributes.  In addition to the default <code>SanitizationFilter</code> whitelist, GitLab allows <code>span</code> elements.</p> <div class="language-no-highlight line-numbers-mode"><pre class="language-text"><code>&lt;dl&gt;
   &lt;dt&gt;Definition list&lt;/dt&gt;
   &lt;dd&gt;Is something people use sometimes.&lt;/dd&gt;
 
   &lt;dt&gt;Markdown in HTML&lt;/dt&gt;
   &lt;dd&gt;Does *not* work **very** well. Use HTML &lt;em&gt;tags&lt;/em&gt;.&lt;/dd&gt;
-&lt;/dl&gt;</code></pre>
-<dl> <dt>Definition list</dt> <dd>Is something people use sometimes.</dd> <dt>Markdown in HTML</dt> <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl> <h2 id="title-horizontal-rule">Horizontal Rule</h2>
-<pre><code>Three or more...
+&lt;/dl&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><dl><dt>Definition list</dt> <dd>Is something people use sometimes.</dd> <dt>Markdown in HTML</dt> <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd></dl> <h2 id="horizontal-rule"><a href="#horizontal-rule" class="header-anchor">#</a> Horizontal Rule</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>Three or more...
 
 ---
 
@@ -415,89 +223,37 @@ Asterisks
 
 ___
 
-Underscores</code></pre><p>Three or more…</p>
-<hr>
-<p>Hyphens</p>
-<hr>
-<p>Asterisks</p>
-<hr>
-<p>Underscores</p>
-<h2 id="title-line-breaks">Line Breaks</h2>
-<p>My basic recommendation for learning how line breaks work is to experiment and discover – hit &lt;Enter&gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You’ll soon learn to get what you want. “Markdown Toggle” is your friend.</p>
-<p>Here are some things to try out:</p>
-<pre><code>Here&#39;s a line for us to start with.
+Underscores
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>Three or more...</p> <hr> <p>Hyphens</p> <hr> <p>Asterisks</p> <hr> <p>Underscores</p> <h2 id="line-breaks"><a href="#line-breaks" class="header-anchor">#</a> Line Breaks</h2> <p>My basic recommendation for learning how line breaks work is to experiment and discover -- hit &lt;Enter&gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You'll soon learn to get what you want. &quot;Markdown Toggle&quot; is your friend.</p> <p>Here are some things to try out:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Here's a line for us to start with.
 
 This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
 
 This line is also a separate paragraph, but...
-This line is only separated by a single newline, so it&#39;s a separate line in the *same paragraph*.
+This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
 
-This line is also a separate paragraph, and...  
+This line is also a separate paragraph, and...
 This line is on its own line, because the previous line ends with two
-spaces.</code></pre><p>Here’s a line for us to start with.</p>
-<p>This line is separated from the one above by two newlines, so it will be a <em>separate paragraph</em>.</p>
-<p>This line is also begins a separate paragraph, but…<br>This line is only separated by a single newline, so it’s a separate line in the <em>same paragraph</em>.</p>
-<p>This line is also a separate paragraph, and…<br>This line is on its own line, because the previous line ends with two<br>spaces.</p>
-<h2 id="title-tables">Tables</h2>
-<p>Tables aren’t part of the core Markdown spec, but they are part of GFM and Markdown Here supports them.</p>
-<pre><code>| header 1 | header 2 |
+spaces.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>Here's a line for us to start with.</p> <p>This line is separated from the one above by two newlines, so it will be a <em>separate paragraph</em>.</p> <p>This line is also begins a separate paragraph, but...
+This line is only separated by a single newline, so it's a separate line in the <em>same paragraph</em>.</p> <p>This line is also a separate paragraph, and...
+This line is on its own line, because the previous line ends with two
+spaces.</p> <h2 id="tables"><a href="#tables" class="header-anchor">#</a> Tables</h2> <p>Tables aren't part of the core Markdown spec, but they are part of GFM and Markdown Here supports them.</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>| header 1 | header 2 |
 | -------- | -------- |
 | cell 1   | cell 2   |
-| cell 3   | cell 4   |</code></pre><p>Code above produces next output:</p>
-<table>
-<thead>
-<tr>
-<th>header 1</th>
-<th>header 2</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>cell 1</td>
-<td>cell 2</td>
-</tr>
-<tr>
-<td>cell 3</td>
-<td>cell 4</td>
-</tr>
-</tbody></table>
-<p><strong>Note</strong></p>
-<p>The row of dashes between the table header and body must have at least three dashes in each column.</p>
-<p>By including colons in the header row, you can align the text within that column:</p>
-<pre><code>| Left Aligned | Centered | Right Aligned | Left Aligned | Centered | Right Aligned |
+| cell 3   | cell 4   |
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>Code above produces next output:</p> <table><thead><tr><th>header 1</th> <th>header 2</th></tr></thead> <tbody><tr><td>cell 1</td> <td>cell 2</td></tr> <tr><td>cell 3</td> <td>cell 4</td></tr></tbody></table> <p><strong>Note</strong></p> <p>The row of dashes between the table header and body must have at least three dashes in each column.</p> <p>By including colons in the header row, you can align the text within that column:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>| Left Aligned | Centered | Right Aligned | Left Aligned | Centered | Right Aligned |
 | :----------- | :------: | ------------: | :----------- | :------: | ------------: |
 | Cell 1       | Cell 2   | Cell 3        | Cell 4       | Cell 5   | Cell 6        |
-| Cell 7       | Cell 8   | Cell 9        | Cell 10      | Cell 11  | Cell 12       |</code></pre><table>
-<thead>
-<tr>
-<th align="left">Left Aligned</th>
-<th align="center">Centered</th>
-<th align="right">Right Aligned</th>
-<th align="left">Left Aligned</th>
-<th align="center">Centered</th>
-<th align="right">Right Aligned</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">Cell 1</td>
-<td align="center">Cell 2</td>
-<td align="right">Cell 3</td>
-<td align="left">Cell 4</td>
-<td align="center">Cell 5</td>
-<td align="right">Cell 6</td>
-</tr>
-<tr>
-<td align="left">Cell 7</td>
-<td align="center">Cell 8</td>
-<td align="right">Cell 9</td>
-<td align="left">Cell 10</td>
-<td align="center">Cell 11</td>
-<td align="right">Cell 12</td>
-</tr>
-</tbody></table>
-<h2 id="title-references">References</h2>
-<ul>
-<li>This document leveraged heavily from the <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown-Cheatsheet</a>.</li>
-<li>The <a href="http://daringfireball.net/projects/markdown/syntax">Markdown Syntax Guide</a> at Daring Fireball is an excellent resource for a detailed explanation of standard markdown.</li>
-<li><a href="http://dillinger.io">Dillinger.io</a> is a handy tool for testing standard markdown.</li>
-</ul>
-</article></body></html>
+| Cell 7       | Cell 8   | Cell 9        | Cell 10      | Cell 11  | Cell 12       |
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><table><thead><tr><th style="text-align:left;">Left Aligned</th> <th style="text-align:center;">Centered</th> <th style="text-align:right;">Right Aligned</th> <th style="text-align:left;">Left Aligned</th> <th style="text-align:center;">Centered</th> <th style="text-align:right;">Right Aligned</th></tr></thead> <tbody><tr><td style="text-align:left;">Cell 1</td> <td style="text-align:center;">Cell 2</td> <td style="text-align:right;">Cell 3</td> <td style="text-align:left;">Cell 4</td> <td style="text-align:center;">Cell 5</td> <td style="text-align:right;">Cell 6</td></tr> <tr><td style="text-align:left;">Cell 7</td> <td style="text-align:center;">Cell 8</td> <td style="text-align:right;">Cell 9</td> <td style="text-align:left;">Cell 10</td> <td style="text-align:center;">Cell 11</td> <td style="text-align:right;">Cell 12</td></tr></tbody></table> <h2 id="references"><a href="#references" class="header-anchor">#</a> References</h2> <ul><li>This document leveraged heavily from the <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank" rel="noopener noreferrer">Markdown-Cheatsheet<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</li> <li>The <a href="http://daringfireball.net/projects/markdown/syntax" target="_blank" rel="noopener noreferrer">Markdown Syntax Guide<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> at Daring Fireball is an excellent resource for a detailed explanation of standard markdown.</li> <li><a href="http://dillinger.io" target="_blank" rel="noopener noreferrer">Dillinger.io<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> is a handy tool for testing standard markdown.</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/data/files-formats/json.html" class="prev">
+        JSON
+      </a></span> <span class="next"><a href="/data/files-formats/markdown-infos.html">
+        Markdown infos
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.637efe70.js" defer></script><script src="/assets/js/2.b10fadef.js" defer></script><script src="/assets/js/10.22935b49.js" defer></script>
+  </body>
+</html>

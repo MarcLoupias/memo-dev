@@ -1,26 +1,3 @@
----
-htmlHead:
-    title: 'marlou knowledge base' 
-    containerClass: 'markdown-body'
-    metaTags:
-        - name: viewport
-          content: 'width=device-width, initial-scale=1, minimal-ui'
-        - name: robots
-          content: none
-    links:
-        - href: '../../github-markdown.css'
-          rel: stylesheet
-          media: all
-        - href: '../../main.css'
-          rel: stylesheet
-          media: all
-        - href: '../../github.css'
-          rel: stylesheet
-    scripts:
-        - src: '../../index.js'
-
----
-
 # REST best practices
 
 ## links
@@ -150,7 +127,7 @@ Both ways work fine. I agree that, strictly speaking, one of the ideas of REST i
 
 At this point (**August, 2015**) *I do recommend that you use the HTTP Status code as part of your API*. It is now much easier to see the return code when using frameworks than it was in the past. In particular, it is now easier to see the non-200 return case and the body of non-200 responses than it was in the past.
 
-**The HTTP Status code is part of your api**
+### The HTTP Status code is part of your api
 
 - You will need to carefully pick 4xx codes that fit your error conditions. You can include a rest, xml, or plaintext message as the payload that includes a sub-code and a descriptive comment.
 
@@ -158,28 +135,28 @@ At this point (**August, 2015**) *I do recommend that you use the HTTP Status co
 
 - The clients will have to distinguish between HTTP status codes that indicate a communications error and your own status codes that indicate an application-level issue.
 
-**The HTTP Status code is NOT part of your api**
+### The HTTP Status code is NOT part of your api
 
 - The HTTP status code will always be 200 if your app received the request and then responded (both success and error cases)
 
 - ALL of your responses should include "envelope" or "header" information. Typically something like:
-```
+
+```text
 envelope_ver: 1.0
-status:  # use any codes you like. Reserve a code for success. 
+status:  # use any codes you like. Reserve a code for success.
 msg: "ok" # A human string that reflects the code. Useful for debugging.
 data: ...  # The data of the response, if any.
 ```
+
 - This method can be easier for clients since the status for the response is always in the same place (no sub-codes needed), no limits on the codes, no need to fetch the HTTP-level status-code.
 
-Here's a post with a similar idea: http://yuiblog.com/blog/2008/10/15/datatable-260-part-one/
+Here's [a post](http://yuiblog.com/blog/2008/10/15/datatable-260-part-one/) with a similar idea.
 
 Main issues:
 
 - Be sure to include version numbers so you can later change the semantics of the api if needed.
-
 - Document...
-
 
 About option 2 :
 
-> No, tunneling everything through a 200 is not restful at all. It prevents intermediaries from understanding the result of an operation, which will kill any form of caching, it hides the semantics of the operation, and it imposes understanding the content of the message to process an error, breaching the self-contained messages constraint. 
+> No, tunneling everything through a 200 is not restful at all. It prevents intermediaries from understanding the result of an operation, which will kill any form of caching, it hides the semantics of the operation, and it imposes understanding the content of the message to process an error, breaching the self-contained messages constraint.
