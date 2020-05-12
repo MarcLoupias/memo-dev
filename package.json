@@ -29,7 +29,7 @@
         }
     },
     "scripts": {
-        "test": "markdownlint content/**/*.md --ignore content/data/files-formats/markdown-from-gitlab.md",
+        "test": "markdownlint 'content/**/*.md' --ignore content/data/files-formats/markdown-from-gitlab.md",
         "dev": "vuepress dev content",
         "build": "vuepress build content && echo memo-dev.marc-loupias.fr > docs/CNAME",
         "build::serve": "http-server -c-1 docs/"

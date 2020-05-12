@@ -93,6 +93,86 @@ lots of npx fixes
 - better error msg for `JSON parse error` and `EPERM/EACCES`
 - `npm ci` fix and perf work
 
+## npm 6
+
+- [npm 6.0.0, le gestionnaire de paquets officiel de Node.js. passe en @latest, et se concentre désormais sur la sécurité](https://www.developpez.com/actu/200282/npm-6-0-0-le-gestionnaire-de-paquets-officiel-de-Node-js-passe-en-latest-et-se-concentre-desormais-sur-la-securite/)
+  - npm inc s'offre Lift Security et sa plateforme NSP
+  - support natif des hooks npm (port de wombat)
+  - intégration des packages `create-x` dans la commande `npm init`. Les `create-x` sont des packages dédiés à la génération d'applications. Par exemple le très connu `create-react-app` permet de générer un projet de démarrage pour react. En intégrant l'exécution de ce type de package à `npm init`, cela permet au développeur de partir de la création d'un nouveau projet via npm, donc de configurer son propre `package.json` tout en déclarant quel package `create-x` il souhaite utiliser, lequel sera exécuté dans la foulée. Par exemple `npm init react-app` abouti à la génération de votre `package.json` puis à l'exécution de `create-react-app`
+  - ajout de la commande `npm audit` qui comme expliqué dans le paragraphe précédent fournit un audit de sécurité des dépendances de votre projet. Cette fonctionnalité sera pleinement fonctionnelle d'ici quelques semaines, l'application gérant le registre n'ayant pas encore été mise à jour pour supporter cette fonctionnalité. L'exécution de cette commande aboutit pour l'heure à ce message d'erreur : `Your configured registry (https://registry.npmjs.org/) does not support audit requests.`
+  - les versions taguées `deprecated` des packages ne sont plus installées lorsque c'est possible
+  - les commandes `npm update` et `npm outdated` tiennent désormais compte du tag `latest`
+  - abandon du support de Node.js 4 et 7
+  - diverses corrections de bogues
+  - des mises à jour de dépendances
+
+### npm 6.0.1
+
+- [npm : la version 6.0.1 du gestionnaire de paquets officiel de Node.js. passe en @latest, la commande npm audit est désormais fonctionnelle](https://www.developpez.com/actu/203081/npm-la-version-6-0-1-du-gestionnaire-de-paquets-officiel-de-Node-js-passe-en-latest-la-commande-npm-audit-est-desormais-fonctionnelle/)
+  - un meilleur support des vieux fichiers `npm-shrinkwrap.json` publiés sur le registre
+  - une correction sur la gestion de l'interruption de l'installation via `CTRL+C`
+  - des améliorations de la commande `npm audit`
+
+### npm 6.2.0
+
+- [npm : la version 6.2.0 du gestionnaire de paquets officiel de Node.js passe en @latest, avec quatre nouveautés d'importance autour](https://www.developpez.com/actu/215024/npm-la-version-6-2-0-du-gestionnaire-de-paquets-officiel-de-Node-js-passe-en-latest-avec-quatre-nouveautes-d-importance-autour/)
+  - La principale nouvelle fonctionnalité est la commande `npm audit fix`
+  - Ajout d'une option `--parseable` sur la commande `npm audit` pour permettre de chainer facilement des commandes `grep` ou `awk`
+  - Ajout du support de la signature des commits Git lors de l'exécution de `npm version` via l'option de configuration npm `sign-git-commit`
+  - npm rejoins ECMA International et donc le TC39
+
+### npm 6.3.0
+
+- [v6.3.0](https://github.com/npm/cli/releases/tag/v6.3.0-next.0)
+  - `npm version` now supports a `--preid` option to specify the preid for prereleases. For example, `npm version premajor --preid rc` will tag a version like `2.0.0-rc.0`
+
+### npm 6.4.0
+
+- [v6.4.0](https://github.com/npm/cli/releases/tag/v6.4.0)
+  - configurable audit level for non-zero exit `npm audit` currently exits with exit code 1 if any vulnerabilities are found of any level. Add a flag of `--audit-level` to `npm audit` to allow it to pass if only vulnerabilities below a certain level are found. Example: `npm audit --audit-level=high` will exit with 0 if only low or moderate level vulns are detected
+  - `npm audit` now shows no vulnerabilities for npm itself!
+
+### npm 6.5.0
+
+- [v6.5.0](https://github.com/npm/cli/releases/tag/v6.5.0)
+  - Backronym `npm ci` to `npm clean-install`
+
+### npm 6.9.0
+
+- [v6.9.0](https://github.com/npm/cli/releases/tag/v6.9.0)
+  - Add support for package aliases. [see RFC 0001-package-aliases.md](https://github.com/npm/rfcs/blob/latest/implemented/0001-package-aliases.md)
+  - Make empty-string run-scripts run successfully as a no-op
+
+### npm 6.10.0
+
+- [v6.10.0](https://github.com/npm/cli/releases/tag/v6.10.0)
+  - enable production flag for `npm audit` : enables using the existing `--production` flag when running `npm audit`. Using this flag will ignore dev dependencies when running an audit ([see PR](https://github.com/npm/cli/pull/202))
+
+### npm 6.11.0
+
+- [v6.11.0](https://github.com/npm/cli/releases/tag/v6.11.0)
+  - Implements `peerDependenciesMeta`(means optional peer deps). See [RFC](https://github.com/yarnpkg/rfcs/blob/master/accepted/0000-optional-peer-dependencies.md) and [PR](https://github.com/npm/cli/pull/224).
+  - add new forbidden 403 error code (when requesting a package)
+
+### npm 6.13.0
+
+- [v6.13.0](https://github.com/npm/cli/releases/tag/v6.13.0)
+  - add `npm fund` command ([See PR](https://github.com/npm/cli/pull/273))
+
+### npm 6.14.0
+
+- [v6.14.0](https://github.com/npm/cli/releases/tag/v6.14.0)
+  - `npm fund` - add support for multiple funding sources [See RFC](https://github.com/npm/rfcs/blob/latest/accepted/0018-multiple-funding-sources.md)
+
+## npm 7
+
+- [npm v7 Series - Introduction](https://blog.npmjs.org/post/617484925547986944/npm-v7-series-introduction?utm_campaign=CLI%20Roadmap&utm_source=hs_email&utm_medium=email&utm_content=87696853&_hsenc=p2ANqtz--yK2YT8Kc1DB4UdzJLkeLXIWagxV4XLCH-dDQGbS5yX_6fwXG6FOA8UOJe1KjsDvhhKVKlPboVaeSj2qFh1oA4KBEV4g&_hsmi=87735566)
+  - Reduce noise that is not actionable
+  - Manage your packages for you
+  - Strict separation of concerns (refacto)
+  - Be as fast as possible while behaving correctly (perfs improv)
+- [The JavaScript coders guide to getting more from GitHub and NPM - GitHub Satellite 2020](https://www.youtube.com/watch?v=468tirG434E)
+
 ## semver
 
 [semver to manage scopes in package.json](https://docs.npmjs.com/misc/semver)
