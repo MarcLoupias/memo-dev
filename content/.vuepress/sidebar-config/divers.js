@@ -10,7 +10,8 @@ function getDivers() {
                 'divers-articles',
                 'divers-dev-ethics',
                 'divers-outil-veille-techno',
-                'divers-pdf'
+                'divers-pdf',
+                'divers-videos'
             ]
         },
         {
