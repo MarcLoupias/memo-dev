@@ -3,6 +3,14 @@
 function getSystems() {
     return [
         {
+            title: 'Systems',
+            collapsable: false,
+            sidebarDepth: 2,
+            children: [
+                'filesystem'
+            ]
+        },
+        {
             title: 'Linux',
             collapsable: false,
             sidebarDepth: 2,
