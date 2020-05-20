@@ -387,6 +387,14 @@ L'article [L113-9](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle
 
 [Why can't big companies figure out that recruiting 3 really great senior developers often leads to better results than 10 average junior developers? - www.quora.com - 201702xx](https://www.quora.com/Why-cant-big-companies-figure-out-that-recruiting-3-really-great-senior-developers-often-leads-to-better-results-than-10-average-junior-developers)
 
+### productivity
+
+[Be Productive, Not Busy. - brainprick.com - 20150615](http://brainprick.com/be-productive-not-busy/)
+
+![less-work](http://brainprick.com/wp-content/uploads/2015/06/less-work.jpeg)
+
+[Calculating Loss of Productivity Due to Overtime Using Published Charts — Fact or Fiction - 2001](https://fr.scribd.com/document/75599238/Calculating-Loss-of-Productivity-Due-to-OT-Using-Charts-Nov-2001)
+
 ### Ron Westrum - organizational culture models
 
 > [Ron Westrum](https://en.wikipedia.org/wiki/Ron_Westrum)
