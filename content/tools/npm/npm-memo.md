@@ -171,7 +171,27 @@ lots of npx fixes
   - Manage your packages for you
   - Strict separation of concerns (refacto)
   - Be as fast as possible while behaving correctly (perfs improv)
-- [The JavaScript coders guide to getting more from GitHub and NPM - GitHub Satellite 2020](https://www.youtube.com/watch?v=468tirG434E)
+  - [The JavaScript coders guide to getting more from GitHub and NPM - GitHub Satellite 2020](https://www.youtube.com/watch?v=468tirG434E)
+- [npm v7 Series - Arborist Deep Dive](https://blog.npmjs.org/post/618653678433435649/npm-v7-series-arborist-deep-dive?utm_content=buffer68a35&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
+  - [`@npmcli/arborist`](https://www.npmjs.com/package/@npmcli/arborist) is the dependency tree manager for npm, new in npm v7. It provides facilities for doing nearly everything that npm does with package trees, and fully replaces large parts of the npm CLI codebase.
+  - Many of the features and changes in npm v7 are related to the refactor to use Arborist for all of npm’s tree management work.
+  - better performance, more predictability, faster feature delivery, and fewer bugs.
+  - the core problem, which has led to a lot of excess work and bugfixing in the npm CLI codebase, is that `read-package-tree` did not properly differentiate between symlinked dependencies and regular installed dependencies, when creating the logical tree of nodes.
+  - this new dependencies tree manager opens several new features for npm v7 :
+    - a new `--prefer-dedupe` option is added to tell the tree building algorithm to prefer deduplication over getting the latest version of a dependency.
+    - automatic install of `peerDependencies` (was dropped in npm v4 because of several not resolvable issues).
+    - better staging folders management for rollback when npm install fails on Windows platform because of Windows folder locking behaviors.
+    - implementation of **workspaces**.
+
+### workspaces
+
+Attempt by npm team to have multi-package monorepo built-in support like what is provided by [lerna](https://github.com/lerna/lerna).
+
+[See RFC npm workspaces](https://github.com/npm/rfcs/blob/latest/accepted/0026-workspaces.md)
+
+> Add a set of features to the **npm cli** that provide support to managing multiple packages from within a singular top-level, root package.
+
+[See Workspaces in Yarn - classic.yarnpkg.com/blog](https://classic.yarnpkg.com/blog/2017/08/02/introducing-workspaces/)
 
 ## semver
 
