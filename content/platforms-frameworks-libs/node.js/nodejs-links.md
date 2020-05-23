@@ -283,6 +283,12 @@ Powered by [libuv/libuv](http://libuv.org/)
 
 [Node JS workers - any need for them? - stackoverflow.com - 2013](https://stackoverflow.com/questions/14981154/node-js-workers-any-need-for-them)
 
+[Adding Socket.io to multi-threaded Node.js - 20180910](https://www.freecodecamp.org/news/how-to-add-socket-io-to-multi-threaded-node-js-df404b424276/)
+
+[A complete guide to threads in Node.js - blog.logrocket.com - 20190320](https://blog.logrocket.com/a-complete-guide-to-threads-in-node-js-4fa3898fe74f/)
+
+> **very good** Explore `worker_threads` module introduced in node v10.5 to support multi threading in node.js apps.
+
 ### https in node
 
 [How to Use SSL/TLS with Node.js - www.sitepoint.com - 20180125](https://www.sitepoint.com/how-to-use-ssltls-with-node-js/)
