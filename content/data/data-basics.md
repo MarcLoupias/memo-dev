@@ -57,9 +57,9 @@ A byte is a unit of data that is eight binary digits long.
 
 Example, the number `73` in decimal base is `01001001` in binary base.
 
-## data structure
+## data structures
 
-### text
+### text
 
 The first data structure for text is the [ASCII (American Standard Code for Information Interchange)](https://fr.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange)
 
@@ -214,6 +214,22 @@ It is a 24bits data structure (3 bytes because 3x8bits) :
 - represented with hexadecimals : `#FFFFFF`
 
 It is named true color and allows 16,777,216 color variations. The human eye can discriminate up to 10 millions colors.
+
+### tree vs graph
+
+[Difference Between Tree and Graph](https://techdifferences.com/difference-between-tree-and-graph.html)
+
+![tree vs graph](https://techdifferences.com/wp-content/uploads/2018/03/Untitled-1.jpg)
+
+| Basis for comparison | Tree                                 | Graph                                        |
+| -------------------- | ------------------------------------ | -------------------------------------------- |
+| Path                 | Only one between two vertices.       | More than one path is allowed.               |
+| Root node            | It has exactly one root node.        | Graph doesn't have a root node.              |
+| Loops                | No loops are permitted.              | Graph can have loops.                        |
+| Complexity           | Less complex                         | More complex comparatively                   |
+| Traversal techniques | Pre-order, In-order and Post-order.  | Breadth-first search and depth-first search. |
+| Number of edges      | n-1 (where n is the number of nodes) | Not defined                                  |
+| Model type           | Hierarchical                         | Network                                      |
 
 ## information
 
