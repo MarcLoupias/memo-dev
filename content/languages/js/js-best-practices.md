@@ -78,6 +78,105 @@ Le mode strict apporte quelques changements à la sémantique « normale » de J
 
 - [js-variables name validator](https://mothereff.in/js-variables)
 
+## when to avoid `if` and `switch`
+
+[Avoiding If Statements in Our JavaScript Code - medium.com - John Au-Yeung - 20200504](https://medium.com/javascript-in-plain-english/avoiding-if-statements-in-our-javascript-code-29406677268e)
+
+### ternary operator
+
+```js
+const bar = foo ? 'foo' : 'bar';
+```
+
+instead of
+
+```js
+const bar = ((foo) => {
+  if (foo) {
+    return 'foo'
+  }
+  return 'bar'
+})(foo);
+```
+
+### short circuit
+
+#### with `&&`
+
+```js
+const isOnline = true;
+const makeRequest = () => {
+  //...
+}
+
+isOnline && makeRequest();
+```
+
+instead of
+
+```js
+const isOnline = true;
+const makeRequest = () => {
+  //...
+}
+
+if (isOnline) {
+  makeRequest();
+}
+```
+
+#### with `||`
+
+```js
+const bar = foo || 'abc';
+```
+
+instead of
+
+```js
+const bar = ((foo) => {
+  if (!foo) {
+    return 'abc'
+  }
+  return foo;
+})(foo)
+```
+
+### avoid `switch`
+
+```js
+const descs = {
+  'border': 'kind dog',
+  'pitbull': 'angry dog',
+  'german': 'smart dog',
+}
+
+const desc = descs['border'];
+```
+
+instead of
+
+```js
+const getDescription = (breed) => {
+  switch (breed) {
+    case 'border':
+      return 'kind dog';
+    case 'pitbull':
+      return 'angry dog';
+    case 'german':
+      return 'smart dog';
+    default:
+      return ''
+  }
+}const desc = getDescription('border');
+```
+
+even with the default value
+
+```js
+const desc = descs['foo'] || '';
+```
+
 ## array iteration
 
 [Loop through an array in JavaScript : stackoverflow.com](http://stackoverflow.com/questions/3010840/loop-through-an-array-in-javascript)
