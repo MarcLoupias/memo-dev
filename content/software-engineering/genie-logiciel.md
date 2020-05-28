@@ -515,38 +515,6 @@ Fin des années 70, les ordinateurs sont montés en puissance, donc permettent l
 > - Event sourcing
 > - CQRS
 
-### clean architecture
-
-[La Clean Architecture : catalyseur de productivité - medium.com/@mickalwegerich - 20180507](https://medium.com/@mickalwegerich/la-clean-architecture-catalyseur-de-productivit%C3%A9-68ff61aa38ff)
-
-[Pérennisez votre métier avec l’architecture hexagonale ! - blog.xebia.fr - 20160316](http://blog.xebia.fr/2016/03/16/perennisez-votre-metier-avec-larchitecture-hexagonale/)
-
-[Robert C Martin - Clean Architecture and Design - www.youtube.com - 2013](https://www.youtube.com/watch?v=Nsjsiz2A9mg)
-
-[Robert C Martin - A Little Architecture - blog.cleancoder.com - 20160104](http://blog.cleancoder.com/uncle-bob/2016/01/04/ALittleArchitecture.html)
-
-[Ports-And-Adapters / Hexagonal Architecture - www.dossier-andreas.net](http://www.dossier-andreas.net/software_architecture/ports_and_adapters.html)
-
-[Architecture hexagonale pour les nuls (Y. Chéné) - DevoxxFrance 2018](https://www.youtube.com/watch?v=Hi5aDfRe-aE)
-
-> a substituer à l'architecture en couche connue de tous
->
-> tackling complexity in the heart of software (Eric Evans 2003)
->
-> "ports and adapters architecture" ou "Object Structural" ou "Hexagonal Architecture" (cf Alistair Cockburn)
->
-> Archi similaires : Clean Architecture, Onion Architecture
->
-> Règle 1 : Pas de framework ou de dépendances sur le domaine, on écrit tout en vanilla (on peut avoir éventuellement des dépendances sur des libs générales, par ex en js ça serait lodash)
->
-> Règle 2 : Le domaine est le central, c'est l'extérieur qui appelle le domaine. Le domaine n'appelle jamais l'extérieur. Il ne doit donc jamais y avoir de code d'infra dans le domaine, en d'autres termes toutes les I/O sont à l'extérieur.
->
-> le reste de la prez il commente un exemple avec Spring Boot
-
-[Podcast Les vices de l'agilité - Choisir les technos avant de commencer à coder - Mickael Azerhad - 20180725](https://soundcloud.com/michael-az-948266686/les-vices-de-lagilite-choisir-les-technos-avant-de-commencer-a-coder)
-
-[Software Architecture & Design Tutorial - www.tutorialspoint.com](https://www.tutorialspoint.com/software_architecture_design/index.htm)
-
 ## divers
 
 [The worst mistake of computer science - www.lucidchart.com/techblog - 20150831](https://www.lucidchart.com/techblog/2015/08/31/the-worst-mistake-of-computer-science/)

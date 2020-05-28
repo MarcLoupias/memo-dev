@@ -8,6 +8,7 @@ function getSoftwareEngineering() {
             sidebarDepth: 2,
             children: [
                 'genie-logiciel',
+                'architecture',
                 'archi-micro-services',
                 'brooks-no-silver-bullet-notes',
                 'code-complexity',
