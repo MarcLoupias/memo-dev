@@ -129,6 +129,79 @@ A **secondary adapter** is an implementation of the secondary port (which is an 
 
 [Pérennisez votre métier avec l’architecture hexagonale ! - blog.xebia.fr - 20160316](http://blog.xebia.fr/2016/03/16/perennisez-votre-metier-avec-larchitecture-hexagonale/)
 
+### examples
+
+- [Clean Architecture Part. 1 - Pas à Pas - Mise en place et mode Standalone -  Mickael Wegerich - 20180527](https://www.youtube.com/watch?v=G5zPWmLfkkA&feature=youtu.be)
+- [Clean Architecture Part. 2 - Pas à Pas - Connexion à une source de données (API REST) -  Mickael Wegerich - 20180708](https://www.youtube.com/watch?v=LaC0RN4Z6-8)
+- [Clean Architecture Part. 3 - Pas à Pas - Il n'y a qu'un pas de Angular à React -  Mickael Wegerich - 20180930](https://www.youtube.com/watch?v=B1lwucKhDcc)
+
+Exemple de dev avec une archi hexagonale (que l'auteur nomme clean archi) pour un front Angular.
+
+Le but est d'afficher une liste de pokemons et une fiche détails.
+
+Son schéma d'architecture est le suivant :
+
+![our clean architecture](/images/software-engineering/architecture/real-life-clean-architecture.jpg)
+
+Pour son module métier `pokemon`, l'auteur crée l'arborescence suivante dans `src/app/pokemon/` :
+
+```text
+adapters/
+adapters/primaries/
+adapters/primaries/pokemondetails/
+adapters/primaries/pokemondetails/<composant-angular>
+adapters/primaries/pokemonlisting/
+adapters/primaries/pokemonlisting/<composant-angular>
+adapters/secondaries/inmemory/
+adapters/secondaries/inmemory/inMemoryPokemon.loader.ts
+adapters/secondaries/real/DTO/PokemonDTO.ts
+adapters/secondaries/real/mapper/pokemon.mapper.ts
+adapters/secondaries/real/RESTPokemon.loader.ts
+domain/
+domain/entities/
+domain/entities/pokemon.ts
+domain/loaders/
+domain/loaders/PokemonLoader.ts
+usecases/
+usecases/pokemon.builder.ts
+usecases/pokemon.handler.ts
+```
+
+On retrouve la séparation en adapters primaires et secondaire de l'archi ports and adapters :
+
+- Dans `adapters/primaries/` on a l'implémentation de l'IHM Angular.
+- Dans `adapters/secondaries/` on a l'implémentation du mock in-memory et du call à l'API REST.
+
+Pour l'implementation du `RESTPokemon.loader.ts`, l'auteur utilise :
+
+- des DTO (Data Transfer Object) comme `DTO/PokemonDTO.ts` qui sont des interfaces décrivant le format de retour de l'API.
+- des mappers comme `mapper/pokemon.mapper.ts` qui implémentent la conversion (mapping) du format DTO vers l'entité du domaine.
+
+Pour compléter lire aussi :
+
+- [sur les interfaces en TypeScript](https://www.typescriptlang.org/docs/handbook/interfaces.html) ([autre doc](https://www.tutorialsteacher.com/typescript/typescript-interface)
+- [sur les DTO](https://khalilstemmler.com/articles/typescript-domain-driven-design/repository-dto-mapper/) ([Data transfer object - en.wikipedia.org](https://en.wikipedia.org/wiki/Data_transfer_object))
+
+La partie *Domain* de l'article du blog Octo est nommée *core* ici, et n'est pas visible dans son arborescence qui est :
+
+```text
+domain/
+domain/entities/
+domain/loaders/
+usecases/
+```
+
+La partie `domain/loaders/` contient en fait les ports à destination de la partie *Infra* (`PokemonLoader.ts` est une interface).
+
+Il n'y a pas de ports à destination de la partie *App*, donc pas d'interface dans la partie `usecases` à implémenter côté *App*.
+La partie `adapters/primaries/` (la webapp Angular) utilise directement le `usecases/pokemon.handler.ts` en lui passant l'infra souhaitée (`adapters/secondaries/inmemory/inMemoryPokemon.loader.ts` dans l'exemple, on est sur un front stubé).
+
+Outre le nommage, la grosse différence avec le blog Octo c'est l'absence de ports (interfaces) à destination de la partie *App* (`adapters/primaries/`).
+L'article Octo précise bien que la présence de ports exposés à la partie *App* ne sert pas à inverser la dépendance (puisque l'app dépend déjà du core),
+mais simplement de limiter ce que la partie App voit du core.
+
+Ces ports là ne sont donc pas obligatoires.
+
 ## clean architecture
 
 [La Clean Architecture : catalyseur de productivité - medium.com/@mickalwegerich - 20180507](https://medium.com/@mickalwegerich/la-clean-architecture-catalyseur-de-productivit%C3%A9-68ff61aa38ff)
