@@ -105,6 +105,10 @@ A TDD cycle is composed of three, iterative phases :
 > | Integration | A test that relies on something else being there | A test that crosses over a port |
 > | Isolation | Replacing every dependency a class has with a test-double | Replacing dependencies at the port |
 
+[Démonstration la plus connue de TDD avec Java et en français - wealcomecompany.com/blog - Michaël AZERHAD - 20161201](https://wealcomecompany.com/blog/tdd-d%C3%A9monstration-video-fizzbuzz-michael-azerhad-wealcome) ([video youtube](https://www.youtube.com/watch?v=nbSaq_ykOl4&feature=emb_title))
+
+> exemple de fizzbuzz en TDD
+
 ### Test Last Development (TLD)
 
 Unit tests are written only after some production code (e.g., the code necessary for a feature of the task) was present.
