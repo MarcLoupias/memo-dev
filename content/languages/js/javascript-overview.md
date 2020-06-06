@@ -1,5 +1,60 @@
 # JavaScript - overview
 
+## history
+
+[JavaScript: The First 20 Years by Wirfs-Brock, Allen and Eich, Brendan](https://zenodo.org/record/3707008#.XttLBpY695s)
+
+> This paper tells the story of the creation, design, evolution, and standardization of the JavaScript language over the period of 1995–2015.
+
+[Brendan Eich, JavaScript initial author, founder of Brave browser, co-founder of Mozilla and Firefox](https://github.com/BrendanEich)
+
+[The Third Age of JavaScript](https://www.swyx.io/writing/js-third-age/)
+
+> ![JavaScript ages](/images/js/js-ages.jpeg)
+>
+---
+>
+> **The first age**, from 1997-2007
+>
+> ![ECMAscript first age](/images/js/ecmascript-history.png)
+>
+> See [the book](https://zenodo.org/record/3707008#.XttLBpY695s).
+>
+---
+>
+> **The second age**, from 2009-2019
+>
+> - Born of node/npm and ES5 in 2009.
+> - many new tools written in JS (grunt, gulp, bundlers, linters, etc ...)
+> - many new libs (Backbone, Ember, AngularJS, React, Vue, Angular)
+> - new architectures (SPA, PWA, SSR)
+> - JS is not limited to browsers anymore reaches new devices (desktop, IoT, etc ...)
+>
+> At the end we are seeing emergence of specialized runtimes (Hermes for Android) and compiler framework (Svelte).
+>
+---
+>
+> **The third age**, from 2020-?
+>
+> 2020 feels like the start of a new Age.
+>
+> If the First Age was about building out a language, and the Second Age was about users exploring and expanding the language, the Third Age is about clearing away legacy assumptions and collapsing layers of tooling.
+>
+> - The main legacy assumption being cleared away is the JS ecosystem's reliance on CommonJS
+> - The other assumption going away is that JavaScript tools must be built in JavaScript.
+> - Layers are also collapsing in interesting ways. Deno takes a radical approach of writing a whole new runtime, collapsing a bunch of common tools doing tasks like testing, formatting, linting and bundling into one binary, speaking TypeScript, and even including a standard lib.
+>
+> In summary: Third Age JS tools will be
+>
+> - Faster
+> - ESM first
+> - Collapsed Layers (One thing doing many things well instead of many things doing one thing well)
+> - Typesafe-er (built with a strongly typed language at core, and supporting TS in user code with zero config)
+> - Secure-er (from dependency attacks, or lax permissions)
+> - Polyglot
+> - Neo-Isomorphic (recognizing that much, if not most, JS should run first at buildtime or on server-side before ever reaching the client)
+>
+
 ## organizations
 
 ### TC39
@@ -89,6 +144,7 @@ Theses Engines are used in browsers or server side.
 | Chakra | MS Edge |
 | Carakan | Opera still 2013 |
 | [QuickJS](https://bellard.org/quickjs/) [(news)](https://www.developpez.net/forums/d1989575/javascript/bibliotheques-frameworks/quickjs-moteur-javascript-leger-prenant-charge-specification-es2019/#post11040803) | none |
+| [Hermes](https://github.com/facebook/hermes) | ReactNative on Android by Facebook |
 
 ### JIT
 
@@ -120,7 +176,7 @@ Just In Time. An engine like V8 compile JavaScript code into machine code on the
 - [ES6 Features list over ES5](http://es6-features.org)
 - [The Complete JavaScript Handbook - medium.freecodecamp.org - 20181030](https://medium.freecodecamp.org/the-complete-javascript-handbook-f26b2c71719c)
 
-### tooling lists - states of js
+### tooling lists - states of js
 
 - [The state of js](https://stateofjs.com/)
 

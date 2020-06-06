@@ -44,6 +44,23 @@ Développé par Microsoft
 
 > "I'm using TypeScript so I have to write OOP code with classes" :: "I got a paintbrush from Home Depot so I have to paint my house orange"
 
+## adoption
+
+[@swyx tweet about TS migration](https://twitter.com/swyx/status/1260888049958838272)
+
+React ecosystem libraries that have rewritten their core to @TypeScript (not just offering TypeScript support):
+
+- `Next.js`
+- `@ReactNative CLI`
+- `React Router`
+- `@expo`
+- `Redux`
+- `@Yarnpkg`
+- `@fbjest`
+- `@storybookjs`
+- `@apollographql`
+- `@Gatsbyjs`
+
 ## documentation
 
 - [Documentation - www.typescriptlang.org](http://www.typescriptlang.org/docs/home.html)
