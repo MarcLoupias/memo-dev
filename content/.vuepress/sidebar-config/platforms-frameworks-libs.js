@@ -3,6 +3,14 @@
 function getPlatformsFrameworksLibs() {
     return [
         {
+            title: 'Svelte',
+            collapsable: false,
+            sidebarDepth: 2,
+            children: [
+                'svelte/svelte-overview'
+            ]
+        },
+        {
             title: 'Vue.js',
             collapsable: false,
             sidebarDepth: 2,
