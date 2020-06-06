@@ -54,6 +54,10 @@ Surveille les registry pour check les packages déposés.
 
 [`/r/javascript/`](https://www.reddit.com/r/javascript/)
 
+[Sébastien Lorber newsletter (React and general stuff)](https://www.getrevue.co/profile/sebastien-lorber)
+
+[swyx blog (React dev, lots of general culture)](https://www.swyx.io/writing)
+
 ## online books
 
 [2016 frontend handbook](https://www.frontendhandbook.com/)

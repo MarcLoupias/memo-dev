@@ -131,6 +131,8 @@ See [the roadmap](https://github.com/ry/deno/blob/master/Roadmap.md), at that ti
 
 [deno.land/manual](https://deno.land/manual.html)
 
+[deno standard library](https://deno.land/manual/standard_library)
+
 [deno TypeScript API](https://deno.land/typedoc/)
 
 [deno/milestones](https://github.com/denoland/deno/milestones)
