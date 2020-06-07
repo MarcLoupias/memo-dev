@@ -304,7 +304,7 @@ Martin Fowler deal with this question in [his feature toggle article](https://ma
 > **Otherwise you will get a pile of toggles that nobody can remember how to use**. In one memorable example I heard of,
 > it required making a special recompilation of the linux kernel to handle enough command line switches.
 
-#### feature branches vs feature toggles
+#### feature branches vs feature toggles
 
 [Feature branches vs. feature toggles : fournines.wordpress.com : 20111120](https://fournines.wordpress.com/2011/11/20/feature-branches-vs-feature-toggles/)
 
@@ -442,6 +442,14 @@ Martin Fowler deal with this question in [his feature toggle article](https://ma
   - [Dette technique et entropie du logiciel - 20180208](https://www.youtube.com/watch?v=VKe9EE4MUxk)
   - [Mettez en place des habitudes plutôt que des processus : l’amélioration continue pilotée par les KPI - 2015](https://lilobase.wordpress.com/2015/05/13/mettez-en-place-des-habitudes-plutot-que-des-processus-lamelioration-continue-pilotee-par-les-kpi/)
   - [Pourquoi les jeux-concours pour développeurs m’exaspèrent-ils ? - 2017](https://medium.com/arpinum/pourquoi-les-jeux-concours-pour-d%C3%A9veloppeurs-mexasp%C3%A8rent-ils-e85fd87e7463)
+  - [newletter Code, Architecture Logicielle & Agilité](https://www.lilobase.me/)
+
+- [Rich Harris](https://twitter.com/Rich_Harris)
+  - [rollup.js](https://rollupjs.org/guide/en/)
+  - [ractive](https://ractive.js.org/)
+  - [bublé](https://github.com/bublejs/buble)
+  - [Svelte official](https://svelte.dev/)
+  - [Svelte 3: Rethinking reactivity - svelte.dev/blog - Rich Harris - 20190422](https://svelte.dev/blog/svelte-3-rethinking-reactivity)
 
 - [Top 10 Programming Books Every Software Developer Should Read](https://www.youtube.com/watch?v=UX4YijQ3zhc)
 
@@ -458,6 +466,55 @@ Fin des années 70, les ordinateurs sont montés en puissance, donc permettent l
 > 4) It doesn't matter what technology they use.  HTTP, Corba, Pubsub, custom protocols -- doesn't matter.  Bezos doesn't care.
 > 5) All service interfaces, without exception, must be designed from the ground up to be externalizable.  That is to say, the team must plan and design to be able to expose the interface to developers in the outside world.  No exceptions.
 > 6) Anyone who doesn't do this will be fired.
+
+- [Bret Victor The Future of Programming - 20130709](https://www.youtube.com/watch?v=8pTEmbeENF4) ([slides](http://worrydream.com/dbx/))
+
+> Bret Victor give a presentation as we were in late sixties and imagine the future (our present)
+>
+> - 1953 : IBM 650, we were all programming in binary
+> - 1955 : [Stan Poley create SOAP](http://www.columbia.edu/cu/computinghistory/650.html) (Symbolic Optimal Assembly Program)
+>   - when assembly was released, current programmers did not want it.
+> - 1957 : [John Backus release FORTRAN](https://en.wikipedia.org/wiki/Fortran)
+>   - same resistances
+>
+> There is always massive resistance to change.
+>
+> - The 4 ideas the author wants to talk about (about recent researchs) :
+>   - coding (telling the computer what to do) `->` direct manipulation of data (manipulation of data structure implicitly build the program)
+>   - procedures (list of things to do) `->` goals and constraints (telling the computer what you want, not what to do)
+>   - text dump (we use text file as source code) `->` spatial representations (hooking videos displays to computers)
+>   - sequential (the control flow) `->` concurrent (soon there will be material really adapted to concurrency)
+>
+> - coding `->` direct manipulation of data
+>   - sketchpad in 1962. Creating a rectangle not by programming it in source code but by manipulating the data and applying constraints to them.
+> - procedures `->` goals and constraints
+>   - planner in 1969, prolog in 1972
+>   - pattern matching : snobol in 1962, regular expressions in 1967
+>   - joke about internet : programs in a shared network should figure out by themselves how to talk to each others (the goal). They should not rely on API (imperatively programmed by humans and subject to breaking changes).
+> - text dump `->` spatial representations
+>   - NLS in 1968 (presenting data in different views, a list then a graph)
+>   - Grail in 1968 (programming with flow charts)
+>   - smalltalk in 1972 (text source code but organized spatially)
+> - sequential `->` concurrent
+>   - today program are sequence of instruction. The future should be parallel programming.
+>   - the reason we write sequential programs is because of the hardware
+>   - hardware is built upon the Von Neumann architecture : The CPU is fetching words from the memory.
+>   - the sequential programming model makes sense when you have only one CPU, a CPU can process only one thing at a time.
+>   - one characteristic of Von Neumann architecture is that most of the memory is idle most of the time.
+>   - it makes sense with old hardware architecture (tubes, mecanisms, etc ...)
+>   - 1971, 4004 microprocessor from Intel. CPU and memory are only be made by transistors on silicon.
+>   - if you want to maximize the usage, you should start looking to massively parallel processors array
+>   - it scales
+>   - this is the architecture of the future instead Intel stranghold the market by pushing his architecture ;)
+>   - how do we program on that architecture ?
+>   - today we program with threads and locks and this is really hard when working with the same shared memory
+>   - 1973 : The actor model, inspired by physics
+>
+> - it would be a shame if in 40 years we will still programming in procedures with text files in sequential model
+> - the worst would be if that ideas from 60/70 have been forgotten
+> - the worst would be if the next programmers generations grows up without being exposed to theses ideas
+> - they will think that programming model is solved and they grow up with dogma
+> - The most dangerous thought you can have as a creative person is to think you know what you're doing.
 
 ## courants
 
