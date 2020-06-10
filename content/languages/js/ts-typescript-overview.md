@@ -35,6 +35,7 @@ Développé par Microsoft
 - [definitive guide to typescript](https://www.sitepen.com/blog/2013/12/31/definitive-guide-to-typescript/)
 - [Top 10 Things to Know about TypeScript - www.developer.com - 20130227](https://www.developer.com/lang/top-10-things-to-know-about-typescript.html)
 - [The TypeScript Tax, A Cost vs Benefit Analysis - Eric Elliott - 20190123](https://medium.com/javascript-scene/the-typescript-tax-132ff4cb175b)
+- [TypeScript: validating external data - Rauschmayer - 20200609](https://2ality.com/2020/06/validating-data-typescript.html)
 
 [TypeScript Evolution - Marius Schulz](https://mariusschulz.com/blog/series/typescript-evolution)
 
