@@ -36,3 +36,25 @@
 - [Google Analytics](https://www.google.com/intl/fr_fr/analytics/)
 - [XiTi](http://www.xiti.com/)
 - [Ackee](https://ackee.electerious.com/) Self-hosted, Node.js based analytics tool - [server](https://github.com/electerious/Ackee) [https://github.com/electerious/ackee-tracker](client)
+- [plausible.io](https://plausible.io/) Plausible is a lightweight and open-source website analytics tool. It doesn’t use cookies and is fully compliant with GDPR, CCPA and PECR.
+
+## articles
+
+[Why you should stop using Google Analytics on your website - plausible.io/blog - Marko Saric - 20200408](https://plausible.io/blog/remove-google-analytics)
+
+> - It’s owned by Google, the largest ad-tech company in the world
+> - It’s a bloated script that affects your site speed
+> - It’s overkill for the majority of site owners
+> - It’s a liability considering GDPR, CCPA and other privacy regulations
+> - It uses cookies so you must obtain consent to store cookies
+> - It’s blocked by many plugins and browsers so the data is not very accurate
+> - It requires an extensive privacy policy
+> - It’s abused by referral spam that skews the data
+> - It’s a proprietary product so you need to put your trust in Google
+> - It worsens the user experience due to the necessity for the annoying prompts
+> - What are the alternatives to Google Analytics?
+>   - No analytics or server logs
+>   - Full-blown but more ethical alternatives
+>   - Search Console for data on search engine visibility
+>   - Privacy-friendly and simple to understand alternatives
+> - Give Plausible Analytics a try
