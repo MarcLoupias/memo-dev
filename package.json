@@ -38,8 +38,8 @@
     "devDependencies": {
         "http-server": "0.12.3",
         "husky": "4.2.5",
-        "markdownlint-cli": "0.22.0",
+        "markdownlint-cli": "^0.23.2",
         "rimraf": "3.0.2",
-        "vuepress": "1.4.1"
+        "vuepress": "^1.5.4"
     }
 }

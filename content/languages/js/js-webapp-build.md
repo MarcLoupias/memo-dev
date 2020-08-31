@@ -75,7 +75,7 @@ Extracted from the unreadable [webpack website](https://webpack.js.org/compariso
 | Multi pages build with common bundle | with manual configuration | **yes** | with manual configuration | with bundle arithmetic | no | no|
 | Multiple bundles | **yes** | with manual configuration | with manual configuration | yes | no | yes |
 | Node.js built-in libs `require("path")` | **yes** | no | **yes** | **yes** | [node-resolve-plugin](https://github.com/rollup/rollup-plugin-node-resolve) | |
-| Other Node.js stuff | process, __dir/filename, global | - | process, __dir/filename, global | process, __dir/filename, global for cjs | global ([commonjs-plugin](https://github.com/rollup/rollup-plugin-commonjs)) | |
+| Other Node.js stuff | `process`, `__dir/filename`, `global` | - | `process`, `__dir/filename`, `global` | `process`, `__dir/filename`, `global` for cjs | global ([commonjs-plugin](https://github.com/rollup/rollup-plugin-commonjs)) | |
 | Plugins | **yes** | yes | **yes** | yes | yes | yes |
 
 | Feature | webpack/webpack | jrburke/requirejs | substack/node-browserify | jspm/jspm-cli | rollup/rollup | brunch/brunch |
