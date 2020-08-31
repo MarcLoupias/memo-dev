@@ -10,7 +10,7 @@ cf [définition wikipedia](https://fr.wikipedia.org/wiki/Nombre_cyclomatique)
 
 cf [developpez.net](http://www.developpez.net/forums/d961599/general-developpement/alm/usine-logicielle/qualimetrie/npath-complexity/#post7472939)
 
-> La complexité NPath tente de répondre à la question « combien y-a-t-il de possibilités de chemins différents ? », en parcourant le code et en multipliant par le nombre de possibilités à l'entrée de chaque boucle (par exemple *2 pour un if, *7 pour un switch de 6 cas et un cas par défaut).
+> La complexité NPath tente de répondre à la question « combien y-a-t-il de possibilités de chemins différents ? », en parcourant le code et en multipliant par le nombre de possibilités à l'entrée de chaque boucle (par exemple `*2` pour un if, `*7` pour un switch de 6 cas et un cas par défaut).
 
 ## TLDR nombre cyclomatique vs comlexité NPath
 
