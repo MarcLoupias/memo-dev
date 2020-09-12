@@ -182,6 +182,12 @@ lots of npx fixes
     - automatic install of `peerDependencies` (was dropped in npm v4 because of several not resolvable issues).
     - better staging folders management for rollback when npm install fails on Windows platform because of Windows folder locking behaviors.
     - implementation of **workspaces**.
+- [npm v7 Series - Why Keep `package-lock.json`?](https://blog.npmjs.org/post/621733939456933888/npm-v7-series-why-keep-package-lockjson)
+  - if a nutshell, `yarn.lock` is not fitted for npm.
+- [npm v7 Series - Beta Release! And: SemVer-Major Changes in npm v7](https://blog.npmjs.org/post/626173315965468672/npm-v7-series-beta-release-and-semver-major)
+  - list all the breaking changes introduced.
+  - the bigger is the installation of `peerDependencies` when running CLI installation commands (`npm install`, `npm ci`, etc ...).
+  - [workspace](https://github.com/npm/rfcs/blob/latest/accepted/0026-workspaces.md) support added.
 
 ### workspaces
 
