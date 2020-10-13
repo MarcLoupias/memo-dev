@@ -443,6 +443,7 @@ Martin Fowler deal with this question in [his feature toggle article](https://ma
   - [Mettez en place des habitudes plutôt que des processus : l’amélioration continue pilotée par les KPI - 2015](https://lilobase.wordpress.com/2015/05/13/mettez-en-place-des-habitudes-plutot-que-des-processus-lamelioration-continue-pilotee-par-les-kpi/)
   - [Pourquoi les jeux-concours pour développeurs m’exaspèrent-ils ? - 2017](https://medium.com/arpinum/pourquoi-les-jeux-concours-pour-d%C3%A9veloppeurs-mexasp%C3%A8rent-ils-e85fd87e7463)
   - [newletter Code, Architecture Logicielle & Agilité](https://www.lilobase.me/)
+  - [Let's reset Agile - 20190308](https://www.youtube.com/watch?v=pLISFJM22ro)
 
 - [Rich Harris](https://twitter.com/Rich_Harris)
   - [rollup.js](https://rollupjs.org/guide/en/)
