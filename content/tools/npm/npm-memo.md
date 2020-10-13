@@ -166,6 +166,7 @@ lots of npx fixes
 
 ## npm 7
 
+- [Release v7.0.0 - 20201013](https://blog.npmjs.org/post/631877012766785536/release-v700)
 - [npm v7 Series - Introduction](https://blog.npmjs.org/post/617484925547986944/npm-v7-series-introduction?utm_campaign=CLI%20Roadmap&utm_source=hs_email&utm_medium=email&utm_content=87696853&_hsenc=p2ANqtz--yK2YT8Kc1DB4UdzJLkeLXIWagxV4XLCH-dDQGbS5yX_6fwXG6FOA8UOJe1KjsDvhhKVKlPboVaeSj2qFh1oA4KBEV4g&_hsmi=87735566)
   - Reduce noise that is not actionable
   - Manage your packages for you
