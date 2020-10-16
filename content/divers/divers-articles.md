@@ -815,6 +815,8 @@ A l'échelle mondiale chiffré à 100 milliards de dollars (chiffre 2008 ?) par 
 
 [Le rapport final “Lean ICT : Pour une sobriété numérique” est disponible - 20180329](https://theshiftproject.org/wp-content/uploads/2018/11/Rapport-final-v8-WEB.pdf) ([Résumé aux décideurs](https://theshiftproject.org/wp-content/uploads/2018/10/R%C3%A9sum%C3%A9-aux-d%C3%A9cideurs_Pour-une-sobri%C3%A9t%C3%A9-num%C3%A9rique_Rapport_The-Shift-Project.pdf))
 
+[Déployer la sobriété numérique : le nouveau rapport du Shift sur l’impact environnemental du numérique - theshiftproject.org - 20201014](https://theshiftproject.org/article/deployer-la-sobriete-numerique-rapport-shift/)
+
 ## FAI
 
 [Forfait Fist First - Made in Groland](https://www.youtube.com/watch?v=y4fCg0tfVfU)
