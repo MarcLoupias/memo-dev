@@ -15,6 +15,7 @@ function getSoftwareEngineering() {
                 'code-reviews',
                 'compilateur',
                 'composition-over-inheritance',
+                'ddd',
                 'dette-technique-et-TTM',
                 'paradigms',
                 'reeves-what-is-software-design-notes',
