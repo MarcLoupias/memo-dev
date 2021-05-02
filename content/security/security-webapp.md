@@ -1,5 +1,15 @@
 # security webapp
 
+## ANSSI guides
+
+[Sécuriser un site web](https://www.ssi.gouv.fr/guide/recommandations-pour-la-securisation-des-sites-web/)
+
+> Les recommandations de ce guide concernent la sécurité des contenus présentés par un navigateur web aux utilisateurs. Les sujets abordés se concentrent autour des standards du Web, dont les implémentations côté navigateur requièrent des paramètres à spécifier lors du développement et de l'intégration d'un site ou d'une application web, de façon à en garantir la sécurité.
+>
+> Après avoir exposé les menaces et classes d’attaque récurrentes, puis rappelé les règles d’hygiène en matière de sécurité Web, le guide « Recommandations pour la mise en œuvre d’un site web : maîtriser les standards de sécurité côté navigateur » décrit et détaille la mise en œuvre des mécanismes de sécurité mis à disposition par la plateforme web. Est notamment rappelée la contrainte de Same Origin Policy (SOP) et son mécanisme de relâchement Cross Origin Resource Sharing (CORS). Le guide aborde ensuite certaines pratiques de protection contre le Cross Site Scripting (XSS) telles que SubResource Integrity (SRI) puis la communication inter-contextes en général, en détaillant notamment les standards Content Security Policy (CSP), Referrer-Policy, et les pratiques relatives au cloisonnement telles que le choix et le paramétrage des moyens de stockage côté client (ex. : cookies, Web Storage) et des moyens d’isolation des ressources actives (ex. : iframes, Web Workers).
+
+[Guide ANSSI - Recommandations pour la mise en œuvre d’un site web : maîtriser les standards de sécurité côté navigateur](https://www.ssi.gouv.fr/uploads/2013/05/anssi-guide-recommandations_mise_en_oeuvre_site_web_maitriser_standards_securite_cote_navigateur-v2.0.pdf)
+
 ## Top 10 OWASP (10 risques de sécurité les plus critiques)
 
 ### 1 - Injection
