@@ -340,7 +340,7 @@ L'article [L113-9](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle
 >
 > Les dispositions du premier alinéa du présent article sont également applicables aux agents de l'Etat, des collectivités publiques et des établissements publics à caractère administratif.
 
-## lois données
+## lois données
 
 [RGPD : comment la CNIL vous accompagne dans cette période transitoire ? - www.cnil.fr - 20180219](https://www.cnil.fr/fr/rgpd-comment-la-cnil-vous-accompagne-dans-cette-periode-transitoire)
 
@@ -359,7 +359,7 @@ L'article [L113-9](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle
 
 > télécharger des documents depuis un site non-sécurisé mais qui devrait l'être, jurisprudence
 
-### articles
+### articles
 
 [RGPD : la version européenne de USA Today pèse 500 Ko contre 5,2 Mo pour la version originale, D'après les mesures d'un webmaster - www.developpez.com - 20180523](https://www.developpez.com/actu/206032/RGPD-la-version-europeenne-de-USA-Today-pese-500-Ko-contre-5-2-Mo-pour-la-version-originale-d-apres-les-mesures-d-un-webmaster/)
 
@@ -386,6 +386,28 @@ L'article [L113-9](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle
 > - ...
 
 [Why can't big companies figure out that recruiting 3 really great senior developers often leads to better results than 10 average junior developers? - www.quora.com - 201702xx](https://www.quora.com/Why-cant-big-companies-figure-out-that-recruiting-3-really-great-senior-developers-often-leads-to-better-results-than-10-average-junior-developers)
+
+### recruitment
+
+[What is a good software engineer? And why core skills matters even more than technical ones. - medium.com - Arnaud Lemaire - 20210526](https://medium.com/sundaytech/what-is-a-good-software-engineer-252b3b874bc6)
+
+- core skills instead of soft skills
+- degrees doesnt matter
+- avoid expert beginner
+- do i want to work with this person
+- is he/she aware when being in its unknow/unknowns zone
+- can he leveirage his experience
+- no asshole policy
+
+[How Developers Stop Learning: Rise of the Expert Beginner - daedtech.com - Erik Dietrich - 2012](https://daedtech.com/how-developers-stop-learning-rise-of-the-expert-beginner/)
+
+[Effet Dunning-Kruger - fr.wikipedia.org](https://fr.wikipedia.org/wiki/Effet_Dunning-Kruger)
+
+Etapes :
+
+- montagnes de la stupidité (sur évalulation de ses propres compétences)
+- vallée de l'humilité
+- plateau de la consolidation (auto-évaluation réaliste de ses propres compétences)
 
 ### productivity
 
