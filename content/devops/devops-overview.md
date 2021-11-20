@@ -160,6 +160,56 @@
 >
 > Martin Fowler preface
 
+[The state of devops 2021 - `puppet.com`](https://puppet.com/resources/report/2021-state-of-devops-report)
+
+> DevOps is not just automation ... and DevOps is not the cloud
+>
+> - Team identities and clear interaction paradigms matter.
+> - Cultural blockers are keeping mid-evolution firms stuck in the middle.
+> - Platform teams are key to success at scale.
+>
+> DevOps success requires support from every level of the organization : The most highly evolved firms benefit from top-down enablement of bottom‐up transformation.
+>
+> Automating repetitive tasks may not be sufficient for DevOps, but it is absolutely necessary.
+>
+> Stuck in the middle :
+>
+> - organizational resistance to change
+> - legacy architecture
+> - shortage of skills
+> - limited or lack of automation
+> - unclear goals or objectives
+>
+> Stop talking about culture, start doing stuff
+>
+> The role of platforms and self-service
+>
+> Risk aversion impedes progress
+>
+> How can leaders change their culture? Practical ideas for change
+>
+> - One of the most important interventions a leader can make is making the team understand why the status quo is no longer good enough.
+> - take a long hard look at who you are hiring and how you’re hiring them.
+> - think about how you can constantly, every day, “nudge” behavior in the right direction via praise, reward and recognition and directly, overtly, challenge those behaviors that do not align with the direction you are trying to go
+>
+
+[The state of devops 2020 - `puppet.com`](https://puppet.com/resources/report/2020-state-of-devops-report)
+
+> 1/ Scaling DevOps practices with internal platform teams
+> Platform as product not as project
+>
+> 2/ Change management in the DevOps era
+> engineering‐driven companies have the greatest implementation success and highest levels of efficiency.
+> Top challenges reported by all groups :
+>
+> - Incomplete test coverage.
+> - Organizational mindset.
+> - Tightly coupled application architecture.
+
+[The state of devops 2019 - `puppet.com`](https://puppet.com/resources/report/2019-state-of-devops-report)
+
+> Highly focused on security subjects
+
 [The state of devops 2018 - `puppet.com`](https://puppet.com/resources/whitepaper/state-of-devops-report)
 
 [The state of devops 2017 - `puppet.com`](https://puppet.com/blog/2017-state-devops-report-here)
