@@ -24,6 +24,7 @@ function getSystems() {
                 'linux/linux-manipulation-process',
                 'linux/ubuntu-cheatsheet',
                 'linux/ubuntu-create-usb-boot',
+                'linux/ubuntu-nvidia',
                 'linux/ubuntu-pdf'
             ]
         },
