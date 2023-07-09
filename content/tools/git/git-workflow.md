@@ -104,15 +104,15 @@ Goals : I want clean history, but that really means (a) clean and (b) history.
 
 ##### clean
 
-- People can (and probably should) rebase their _private_ trees (their own work). That's a _cleanup_.
+- People can (and probably should) rebase their *private* trees (their own work). That's a *cleanup*.
 - But never other peoples code. That's a "destroy history".
 
 ##### history
 
 - Keep your own history readable
 - Don't expose your crap.
-- Don't merge _upstream_ (ie : pull) code at random points.
-- Don't merge _downstream_ (ie : push) code at random points either.
+- Don't merge *upstream* (ie : pull) code at random points.
+- Don't merge *downstream* (ie : push) code at random points either.
 
 ### Continuous Integration strategy
 

@@ -84,7 +84,7 @@ Build tools like Webpack or Browserify are mandatory to transform theses `.vue` 
 
 > the official router, not embedded in the core vuejs package
 
-## widget and design
+## widget and design
 
 [vue-material](http://vuematerial.io/#/) ([GitHub](https://github.com/vuematerial/vue-material))
 
@@ -134,6 +134,6 @@ linked as :
 
 > axios is heavily inspired by the `$http` service provided in [AngularJS](https://angularjs.org/). Ultimately axios is an effort to provide a standalone `$http`-like service for use outside of AngularJS.
 
-## examples
+## examples
 
 [GitLab CE uses vue.js](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/package.json#L90)

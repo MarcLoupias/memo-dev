@@ -66,7 +66,7 @@ tools for generating changelog from Git data
 
 > Tool for visualizing GitHub profiles [https://github-profile-summary.com/](https://github-profile-summary.com/)
 
-### watching GitHub repo releases
+### watching GitHub repo releases
 
 [coderelease.io](https://coderelease.io/) (can't find who is behind the service)
 

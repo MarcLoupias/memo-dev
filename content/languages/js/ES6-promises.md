@@ -30,7 +30,7 @@ Releases [on GitHub repo](https://github.com/promises-aplus/promises-spec/releas
 
 [Promise error handling in-depth - 20170924](https://codeburst.io/promise-error-handling-in-depth-90b0965149c0)
 
-## online tools
+## online tools
 
 [Promise visualization playground for the adventurous](https://bevacqua.github.io/promisees/#)
 

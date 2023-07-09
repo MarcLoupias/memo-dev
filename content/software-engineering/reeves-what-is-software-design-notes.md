@@ -6,13 +6,13 @@ by Jack W. Reeves.
 
 > published in 1992 C++ Journal
 
-## context
+## context
 
 Written by a software engineer in a period where C++ have been extended with Object Oriented support.
 
 This support makes abstracting concept and so software design easier.
 
-## TLDR
+## TLDR
 
 - Real software runs on computers. It is a sequence of ones and zeros that is stored on some magnetic media. It is not a program listing in C++ (or any other programming language).
 - A program listing is a document that represents a software design. Compilers and linkers actually build software designs.

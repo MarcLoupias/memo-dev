@@ -19,7 +19,7 @@
 >
 > Utiliser les applis qui gèrent les comptes de cryptomonnaies pour authentifier les utilisateurs.
 
-## Cookies vs Tokens
+## Cookies vs Tokens
 
 [Cookies vs Tokens: The Definitive Guide - auth0.com - 20160531](https://auth0.com/blog/cookies-vs-tokens-definitive-guide/)
 

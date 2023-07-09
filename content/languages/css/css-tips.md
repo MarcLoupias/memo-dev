@@ -25,7 +25,7 @@
 
 [icons8.com](https://icons8.com/)
 
-## sprites
+## sprites
 
 [Tout sur les sprites CSS - la-cascade.io - 20150324](https://la-cascade.io/tout-sur-les-sprites-css/)
 

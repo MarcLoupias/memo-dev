@@ -25,7 +25,7 @@ Nice metaphor with medicine, from magical theories to modern medicine, the road 
 
 > So it is with software engineering today.
 
-## TLDR
+## TLDR
 
 - Essential difficulties are the conception parts
 - Accidental difficulties are the writing parts

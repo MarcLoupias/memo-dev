@@ -216,7 +216,7 @@ f(1, null); // error, 'null' is not assignable to 'number | undefined'
 > allows destructured import : `import { Foo, Bar, Baz } from '../demo'; // demo/index.ts is implied`
 >
 
-## Linters
+## Linters
 
 ### TSLint
 

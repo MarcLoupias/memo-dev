@@ -32,7 +32,7 @@
 
 > See node.js errors with less clutter
 
-## Cores concepts
+## Cores concepts
 
 ### sources
 
@@ -77,7 +77,7 @@ Similarly, failure to handle an operational error is itself a programmer error.
 
 The distinction between operational errors and programmer errors is the foundation for figuring out how to deliver errors and how to handle them.
 
-### Handling errors
+### Handling errors
 
 #### Handling operational errors
 

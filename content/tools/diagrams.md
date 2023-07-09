@@ -12,7 +12,7 @@
 
 > Intégration directe au markdown des diagrammes de séquence
 
-## flowcharts
+## flowcharts
 
 [GitBook plugins "flowchart"](https://plugins.gitbook.com/browse?q=flowchart)
 
@@ -24,7 +24,7 @@
 
 [gitbook-plugin-echarts](https://github.com/vowstar/gitbook-plugin-echarts)
 
-## mermaid (lots of charts & diagrams)
+## mermaid (lots of charts & diagrams)
 
 [mermaid : `knsv.github.io`](http://knsv.github.io/mermaid/)
 
