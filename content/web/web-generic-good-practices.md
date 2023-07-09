@@ -10,7 +10,7 @@
 
 > tl;dr: less code = less parse/compile + less transfer + less to decompress
 
-## websites perfs KPIs
+## websites perfs KPIs
 
 - online tools
 

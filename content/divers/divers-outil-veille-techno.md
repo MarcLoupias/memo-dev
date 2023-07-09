@@ -20,7 +20,7 @@ Peut [rater des updates](https://github.com/sibbell/support/issues/77) si les ma
 
 Surveille les registry pour check les packages déposés.
 
-## liens outils online
+## liens outils online
 
 [www.thoughtworks.com/radar](https://www.thoughtworks.com/radar) : site proposant un radar des technos pour la veille techno (maj annuelle)
 

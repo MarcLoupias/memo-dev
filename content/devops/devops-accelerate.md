@@ -4,7 +4,7 @@
 
 Scientific study giving results and methodology about the puppet.com states of Devops from 2014 to 2017 (the books authors contributed to theses studies)
 
-## Book content
+## Book content
 
 Forewords by Martin Fowler then Courtney Kissler.
 
@@ -24,7 +24,7 @@ This part explain how the research have been built and processed.
 
 This part focus on the leadership needed to change the behavior of organizations to align with devops practices.
 
-## 24 keys capabilities driving improvements in software delivery performances
+## 24 keys capabilities driving improvements in software delivery performances
 
 ```txt
 ### Continuous Delivery

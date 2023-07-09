@@ -17,7 +17,7 @@
 
 [Cypress Trade Offs](https://github.com/cypress-io/cypress-documentation/issues/162)
 
-## environment and browser support
+## environment and browser support
 
 [Proposal: Support for Cross Browser Testing](https://github.com/cypress-io/cypress/issues/310)
 
@@ -122,7 +122,7 @@ See [core concepts documentation > Chains of Commands > Commands Are Asynchronou
 
 > good e2e history prez
 
-## videos
+## videos
 
 [Brian Mann, Testing the way it should be : ReactiveConf 2016](https://www.youtube.com/watch?v=lK_ihqnQQEM)
 

@@ -183,8 +183,8 @@ Recommendations available for the tag and push tasks.
 `standard-version` does the following:
 
 1. bumps the version in metadata files (package.json, composer.json, etc).
-2. uses [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog) to update _CHANGELOG.md_
-3. commits _package.json (et al.)_ and _CHANGELOG.md_
+2. uses [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog) to update *CHANGELOG.md*
+3. commits *package.json (et al.)* and *CHANGELOG.md*
 4. tags a new release
 
 #### Others tools

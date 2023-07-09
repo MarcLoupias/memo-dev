@@ -8,7 +8,7 @@
 
 [facebook/jest - `github.com`](https://github.com/facebook/jest)
 
-## features and objectives
+## features and objectives
 
 - Zero config *Jest aims to work out of the box, config free, on most JavaScript projects.*
 - Snapshots *Make tests which keep track of large objects with ease. Snapshots live either alongside your tests, or embedded inline.*

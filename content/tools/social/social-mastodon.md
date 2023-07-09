@@ -19,6 +19,6 @@
 
 [mastodon : `github.com`](https://github.com/tootsuite/mastodon)
 
-## instances
+## instances
 
 [La Quadrature du Net - Mastodon - Media Fédéré](https://mamot.fr/about)

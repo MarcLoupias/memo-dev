@@ -69,5 +69,5 @@ Yarn is developed by some Google and Facebook devs.
 Diff w/ npm CLI (see [npm-vs-yarn : blog.zenika.com 20170313](https://blog.zenika.com/2017/03/13/npm-vs-yarn/) :
 
 - parallelized downloads (so yarn is faster)
-- deterministic with `yarn.lock` file (it is npm shrinkwrap autoexec, it is same as package.lock from npm@5.y.z)
+- deterministic with `yarn.lock` file (it is npm shrinkwrap autoexec, it is same as `package.lock` from `npm@5.y.z`)
 - ...

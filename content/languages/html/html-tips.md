@@ -17,7 +17,7 @@
                      width="98" height="66" alt="Toto"/>
 ```
 
-## Link prefetching
+## Link prefetching
 
 [Link prefetching - developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ)
 

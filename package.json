@@ -1,6 +1,6 @@
 {
     "name": "memo-dev",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "description": "knowledge db tool",
     "author": "marlou <pro@marc-loupias.fr>",
     "contributors": [
@@ -19,27 +19,22 @@
     },
     "homepage": "http://memo-dev.marc-loupias.fr",
     "engines": {
-        "node": ">=10.13.0",
-        "npm": ">=6.4.1"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm test",
-            "pre-push": "npm test"
-        }
+        "node": ">=16.20.1",
+        "npm": ">=8.19.4"
     },
     "scripts": {
         "test": "markdownlint 'content/**/*.md' --ignore content/data/files-formats/markdown-from-gitlab.md",
         "dev": "vuepress dev content",
         "build": "vuepress build content && echo memo-dev.marc-loupias.fr > docs/CNAME",
-        "build::serve": "http-server -c-1 docs/"
+        "build::serve": "http-server -c-1 docs/",
+        "prepare": "husky install"
     },
     "license": "ISC",
     "devDependencies": {
-        "http-server": "0.12.3",
-        "husky": "4.2.5",
-        "markdownlint-cli": "^0.23.2",
-        "rimraf": "3.0.2",
-        "vuepress": "^1.8.2"
+        "http-server": "^14.1.1",
+        "husky": "^8.0.3",
+        "markdownlint-cli": "^0.35.0",
+        "rimraf": "^5.0.1",
+        "vuepress": "^0.14.11"
     }
 }

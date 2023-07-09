@@ -14,7 +14,7 @@
 
 > C'est le langage natif d'un processeur, c'est-à-dire le seul qu'il puisse traiter. Il est composé d'instructions et de données à traiter codées en binaire.
 
-## Présentation générale
+## Présentation générale
 
 Les étapes de la compilation incluent :
 
@@ -37,7 +37,7 @@ Same at [An Overview of Lexing and Parsing - www.perl.com](https://www.perl.com/
 
 Lexer synonyms : tokenizer, scanner, ...
 
-## Compiler vs Transpiler
+## Compiler vs Transpiler
 
 [What is the main difference between Compiler and Transpiler - stackoverflow.com](https://stackoverflow.com/questions/40605642/what-is-the-main-difference-between-compiler-and-transpiler)
 

@@ -15,7 +15,7 @@ En terme d'achi, le controller n'est plus vraiment un controlleur mais prend sa 
 
 [le why](http://blog.thoughtram.io/angularjs/2015/01/02/exploring-angular-1.3-bindToController.html)
 
-## `$scope`
+## `$scope`
 
 ### `$scope` must read
 

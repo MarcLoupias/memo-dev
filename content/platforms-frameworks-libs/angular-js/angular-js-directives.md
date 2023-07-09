@@ -95,7 +95,7 @@ var unbindWatcher = $scope.$watch(
 );
 ```
 
-## existing directives
+## existing directives
 
 ### ng-grid
 
