@@ -463,6 +463,7 @@ Once the new image is built, it can be listed with `docker images` command.
 ## docker compose
 
 When you need several services to run your solution, instead of :
+
 - creating a `docker network` where the services can talk to each other
 - `docker run` each service manually
 
@@ -470,6 +471,7 @@ You can write a yaml file specifying all these commands.
 Notice that the `docker network` is automatically created by `docker-compose -f <file-name.yaml> up -d`.
 
 See:
+
 - [Use Docker Compose - docs.docker.com](https://docs.docker.com/get-started/08_using_compose/).
 - [The Compose file](https://docs.docker.com/compose/compose-file/03-compose-file/).
 
