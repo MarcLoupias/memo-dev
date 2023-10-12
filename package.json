@@ -35,6 +35,6 @@
         "husky": "^8.0.3",
         "markdownlint-cli": "^0.35.0",
         "rimraf": "^5.0.1",
-        "vuepress": "^0.14.11"
+        "vuepress": "^1.9.10"
     }
 }
