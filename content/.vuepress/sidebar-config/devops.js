@@ -11,6 +11,7 @@ function getDevOps() {
                 'devops-metrics',
                 'devops-accelerate',
                 'docker',
+                'github-actions',
                 'kubernetes'
             ]
         },
