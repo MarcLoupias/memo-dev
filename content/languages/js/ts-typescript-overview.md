@@ -784,3 +784,39 @@ gross(eur, usd); // Type '"EUR"' is not assignable to type '"USD"'.
 ```
 
 [This PR in typescript repo](https://github.com/microsoft/TypeScript/pull/33038) will maybe land.
+
+### error typing
+
+[Get a catch block error message with TypeScript](https://kentcdodds.com/blog/get-a-catch-block-error-message-with-typescript)
+
+The default type for the variable exposed by a `catch` clause is `unknown` because in JavaScript we can throw anything.
+
+So the TS compiler emit this error :
+
+```text
+Catch clause variable type annotation must be 'any' or 'unknown' if specified. ts(1196)
+```
+
+When we try to type a catch clause like this :
+
+```ts
+try {
+  throw new Error('Oh no!')
+} catch (error: Error) {
+  // we'll proceed, but let's report it
+  reportError({message: error.message})
+}
+```
+
+So, we cannot type a variable in a `catch` clause. We need to check type variable type manually :
+
+```ts
+try {
+  throw new Error('Oh no!')
+} catch (error) {
+  let message = 'Unknown Error'
+  if (error instanceof Error) message = error.message
+  // we'll proceed, but let's report it
+  reportError({message})
+}
+```
