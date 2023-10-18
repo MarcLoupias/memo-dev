@@ -17,6 +17,7 @@ function getWeb() {
                 'web-comparatifs-frameworks',
                 'web-components',
                 'web-generic-good-practices',
+                'web-login-forms-good-practices',
                 'web-scraping',
                 'web-semantic-web',
                 'web-test-selenium',
