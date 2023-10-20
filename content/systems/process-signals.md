@@ -43,3 +43,13 @@ The SIGKILL signal is sent to a process to cause it to terminate immediately (ki
 >     image: alpine:latest
 >     init: true
 > ```
+
+### program exit code to use
+
+[What should my program's exit code be if I caught a signal?](https://stackoverflow.com/questions/39269536/what-should-my-programs-exit-code-be-if-i-caught-a-signal)
+
+> If your program receives a signal then **successfully** exits, this is considered a successful termination, so your program should return `EXIT_SUCCESS`.
+
+[What are Exit Codes in Linux?](https://itsfoss.com/linux-exit-codes/)
+
+> The basic ideology is that programs return the exit code `0` to indicate that it executed successfully without issues. Code `1` or anything other than `0` is considered unsuccessful.
