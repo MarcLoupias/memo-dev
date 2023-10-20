@@ -7,7 +7,8 @@ function getSystems() {
             collapsable: false,
             sidebarDepth: 2,
             children: [
-                'filesystem'
+                'filesystem',
+                'process-signals'
             ]
         },
         {
