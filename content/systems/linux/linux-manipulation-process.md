@@ -17,6 +17,22 @@ filtrer la liste précédente avec des mots clefs
 $ ps -ef | grep jboss
 ```
 
+## `kill`
+
+[The `kill` man page](https://man7.org/linux/man-pages/man2/kill.2.html)
+
+`int kill(pid_t pid, int sig);`
+
+[Availables signals](https://manpages.ubuntu.com/manpages/focal/en/man7/signal.7.html)
+
+| signal    | id   | comment | meaning                                                                                                                                                                                                                                |
+| --------- |------| ------- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `SIGINT`  | `2`  | Interrupt from keyboard | It politely tells the program to terminate. Performs the same function as Ctrl+C. It’s up to the process whether it will listen to it or not.                                                                                          |
+| `SIGTERM` | `15` | Termination signal | This is the default signal of the kill command.                                                                                                                                                                                        |
+| `SIGKILL` | `9`  | Kill signal | Unlike other signals, the SIGKILL signal is never sent to the process. Instead, the terminal immediately kills the program and the program doesn’t get the time to save its data or clean up its work. Only use this as a last resort. |
+
+And many more ...
+
 ## `htop`
 
 [htop official website](https://hisham.hm/htop/) [`hishamhm/htop` - `github.com`](https://github.com/hishamhm/htop)
