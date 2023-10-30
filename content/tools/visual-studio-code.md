@@ -25,6 +25,6 @@
 - a file will stay open once it's been edited
 - Double-click your files instead of single-clicking.
 - Right click your tab and select "Keep Open"
-- Use the (Ctrl + K Enter) keyboard shortcut.
+- Use the <kbd>ctrl+K</kbd> then <kbd>Enter</kbd> keyboard shortcut.
 - Double-click the tab you want to keep open
-- If it's an "ephemeral" tab, VS Code will show the file name in an italicized text.
+- If it's an "ephemeral" tab, VS Code will show the file name in an *italicized text*.
