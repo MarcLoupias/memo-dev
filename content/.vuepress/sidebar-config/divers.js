@@ -23,6 +23,14 @@ function getDivers() {
             ]
         },
         {
+            title: 'IA',
+            collapsable: false,
+            sidebarDepth: 2,
+            children: [
+                'ia/ia'
+            ]
+        },
+        {
             title: 'Licences',
             collapsable: false,
             sidebarDepth: 2,
