@@ -783,32 +783,6 @@ Extensible à tout sujet technique.
 
 [Who contributed the most to open source in 2017? : medium.freecodecamp.org](https://medium.freecodecamp.org/the-top-contributors-to-github-2017-be98ab854e87)
 
-## IA
-
-[vocabulaire : www.frenchweb.fr](https://www.frenchweb.fr/vocabulaire-de-lintelligence-artificielle-12-termes-a-connaitre/307870)
-
-[Aux origines de l'intelligence artificielle - www.franceculture.fr - 20180331](https://www.franceculture.fr/numerique/aux-origines-de-lintelligence-artificielle)
-
-[Machine Learning: The High Interest Credit Card of Technical Debt - 2014](https://ai.google/research/pubs/pub43146)
-
-> Machine learning offers a fantastically powerful toolkit for building complex systems quickly. This paper argues that it is dangerous to think of these quick wins as coming for free. Using the framework of technical debt, we note that it is remarkably easy to incur massive ongoing maintenance costs at the system level when applying machine learning. The goal of this paper is highlight several machine learning specific risk factors and design patterns to be avoided or refactored where possible. These include boundary erosion, entanglement, hidden feedback loops, undeclared consumers, data dependencies, changes in the external world, and a variety of system-level anti-patterns.
-
-Took from [Machine learning and tech debt: A publication from Google on www.funfunforum.com](https://www.funfunforum.com/t/machine-learning-and-tech-debt-a-publication-from-google/5221) :
-
-> Another worry for real-world systems lies in hidden feedback loops. Systems that learn from world behavior are clearly intended to be part of a feedback loop. For example, a system for predicting the click through rate (CTR) of news headlines on a website likely relies on user clicks as training labels, which in turn depend on previous predictions from the model. This leads to issues in analyzing system performance, but these are the obvious kinds of statistical challenges that machine learning researchers may find natural to investigate [2].
-
-[Exponential growth of supercomputing power, 1995-2060 (logarithmic scale)](https://www.futuretimeline.net/21stcentury/images/future-timeline-technology-singularity.jpg)
-
-[Human-level artificial intelligence could be achieved "within five to ten years", say experts - www.futuretimeline.net - 20180925](https://www.futuretimeline.net/blog/2018/09/25.htm)
-
-[Santé : nos données personnelles peuvent-elles sauver des vies ?](https://www.franceculture.fr/emissions/dimanche-et-apres/sante-nos-donnees-personnelles-peuvent-elles-sauver-des-vies)
-
-> 38:20 Les dossiers patients se vendent entre 100 et 150 euros l'unité sur le darkweb (pour feed les IA du domaine médical)
-
-[Éric Sadin : l'asservissement par l'Intelligence Artificielle ? - Thinkerview - 20181108](https://www.youtube.com/watch?v=VzeOnBRzDik)
-
-> objectif du dev de l'IA par les GAFA est de supprimer le libre arbitre par l'analyse des états successifs de l'individu pour lui proposer des choix
-
 ## Economie
 
 ### Le graphique de l'éléphant (Branko Milanovic)
