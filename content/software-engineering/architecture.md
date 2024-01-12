@@ -131,9 +131,16 @@ A **secondary adapter** is an implementation of the secondary port (which is an 
 
 ### examples
 
+- [Rebâtir son code frontend au travers de la Clean Architecture - Mickael Wegerich - 20230831](https://www.youtube.com/watch?v=6piCrcXHmFQ)
 - [Clean Architecture Part. 1 - Pas à Pas - Mise en place et mode Standalone -  Mickael Wegerich - 20180527](https://www.youtube.com/watch?v=G5zPWmLfkkA&feature=youtu.be)
 - [Clean Architecture Part. 2 - Pas à Pas - Connexion à une source de données (API REST) -  Mickael Wegerich - 20180708](https://www.youtube.com/watch?v=LaC0RN4Z6-8)
 - [Clean Architecture Part. 3 - Pas à Pas - Il n'y a qu'un pas de Angular à React -  Mickael Wegerich - 20180930](https://www.youtube.com/watch?v=B1lwucKhDcc)
+
+Repos :
+
+- [`projets-test-3lights-technology/galytix/world-weather-front`](https://gitlab.com/projets-test-3lights-technology/galytix/world-weather-front)
+- [`projets-3lights-technology/demo-clean-architecture/demo-clean-architecture-front`](https://gitlab.com/projets-3lights-technology/demo-clean-architecture/demo-clean-architecture-front)
+- [`projets-test-3lights-technology/free2move/free2move-front`](https://gitlab.com/projets-test-3lights-technology/free2move/free2move-front)
 
 Exemple de dev avec une archi hexagonale (que l'auteur nomme clean archi) pour un front Angular.
 
