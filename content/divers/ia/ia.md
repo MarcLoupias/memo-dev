@@ -81,3 +81,27 @@ Took from [Machine learning and tech debt: A publication from Google on www.funf
 ["Ce n'est pas possible d'éviter les erreurs de l'IA", affirme Luc Julia - 20231220](https://www.youtube.com/watch?v=3GGEKRS4KMo)
 
 > Eric Julia, co-créateur de SIRI, interview France Inter
+
+## ia self-hosting
+
+### articles
+
+[Get Started with Mistral 7B Locally in 6 Minutes](https://www.youtube.com/watch?v=5mmjig68d40)
+
+### solutions
+
+#### `jan.ai`
+
+[`https://jan.ai/`](https://jan.ai/) [`janhq/jan` - `github.com`](https://github.com/janhq/jan)
+
+[L'IA enfin libérée ! Un ChatGPT gratuit, local et open source](https://www.youtube.com/watch?v=iVYP2lyreAA)
+
+### mistral
+
+[`github.com/mistralai`](https://github.com/mistralai)
+
+[`docs.mistral.ai`](https://docs.mistral.ai/) [doc source code](https://github.com/mistralai/platform-docs-public)
+
+[`mistralai/client-js` - `github.com`](https://github.com/mistralai/client-js)
+
+> You can use the Mistral JavaScript client to interact with the Mistral AI API.
