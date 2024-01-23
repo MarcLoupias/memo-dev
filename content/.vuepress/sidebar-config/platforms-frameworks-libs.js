@@ -19,6 +19,14 @@ function getPlatformsFrameworksLibs() {
             ]
         },
         {
+            title: 'htmx',
+            collapsable: false,
+            sidebarDepth: 2,
+            children: [
+                'htmx/htmx-overview'
+            ]
+        },
+        {
             title: 'Node.js',
             collapsable: false,
             sidebarDepth: 2,
