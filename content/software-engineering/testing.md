@@ -1,5 +1,13 @@
 # Testing
 
+## sources
+
+[`testing.googleblog.com`](https://testing.googleblog.com/)
+
+[Software Engineering at Google - 2020](https://abseil.io/resources/swe-book/html/toc.html)
+
+> The Software Engineering at Google book (“SWE Book”) is not about programming, per se, but about the engineering practices utilized at Google to make their codebase sustainable and healthy.
+
 ## glossary
 
 [TestDouble : martinfowler.com](http://martinfowler.com/bliki/TestDouble.html) :
