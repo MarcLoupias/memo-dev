@@ -1,5 +1,9 @@
 # IA
 
+## usage
+
+[Comprendre et utiliser les modèles de langage d'IA (Sébastien COLLET) - Devoxx 2023](https://www.youtube.com/watch?v=ZbWL2W53BXY)
+
 ## training
 
 [Yann LeCun about IA training on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7133567569684238336/)
@@ -81,6 +85,16 @@ Took from [Machine learning and tech debt: A publication from Google on www.funf
 ["Ce n'est pas possible d'éviter les erreurs de l'IA", affirme Luc Julia - 20231220](https://www.youtube.com/watch?v=3GGEKRS4KMo)
 
 > Eric Julia, co-créateur de SIRI, interview France Inter
+
+## tools
+
+[TensorFlow](https://www.tensorflow.org/?hl=fr)
+
+[PyTorch](https://pytorch.org/)
+
+[Hugging Face](https://huggingface.co/)
+
+> outils liés au ML + hub d'outils et de modèles
 
 ## ia self-hosting
 
