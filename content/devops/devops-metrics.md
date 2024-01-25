@@ -27,6 +27,14 @@ Jez Humble definition is :
 
 Time needed to restore the service of the application when an incident occurs.
 
+### Mean Time To Detection
+
+MTTD is a key performance indicator in incident management and indicates the average amount of time required for an organization to discover an incident.
+
 ### change fail rate
 
 The percentage of changes to production leading to a failure.
+
+### Real User Monitoring
+
+Understand application performance from the perspective of an actual user.

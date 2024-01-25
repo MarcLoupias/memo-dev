@@ -10,6 +10,7 @@ function getDevOps() {
                 'devops-overview',
                 'devops-metrics',
                 'devops-accelerate',
+                'devops-observability',
                 'docker',
                 'github-actions',
                 'kubernetes'
