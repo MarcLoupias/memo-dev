@@ -4,6 +4,10 @@
 
 [Comprendre et utiliser les modèles de langage d'IA (Sébastien COLLET) - Devoxx 2023](https://www.youtube.com/watch?v=ZbWL2W53BXY)
 
+## articles
+
+[Exploring AI - Kent Beck - 20240125](https://tidyfirst.substack.com/p/exploring-ai)
+
 ## training
 
 [Yann LeCun about IA training on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7133567569684238336/)
