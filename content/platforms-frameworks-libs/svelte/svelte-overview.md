@@ -50,6 +50,13 @@ Is also the author of several libs & tools :
 >
 > See [Rich Harris - Rethinking reactivity - 20190422](https://www.youtube.com/watch?v=AdNJ3fydeao&feature=emb_title)
 
+`v4.0.0` 20230622
+
+> is mainly a maintenance release, bumping minimum version requirements and tightening up the design in specific areas.
+> It sets the stage for the next generation of Svelte to be released as Svelte 5.
+>
+> [Announcing Svelte 4 - svelte.dev/blog - Rich Harris - 20230622](https://svelte.dev/blog/svelte-4)
+
 ## design concept
 
 Svelte is another JS front framework but it is also a compiler.
@@ -151,8 +158,20 @@ Svelte is currently incompatible with TypeScript.
 
 ## tools
 
+[`awesome-svelte`](https://github.com/TheComputerM/awesome-svelte)
+
 [Svelte Events, Site Showcase, Packages, Resources, Recipes](https://svelte-community.netlify.app/)
 
 [REPL hello world](https://svelte.dev/repl/hello-world)
 
 [app template with snowpack](https://github.com/pikapkg/create-snowpack-app/tree/master/templates/app-template-svelte)
+
+## forms validation
+
+[Form Validation in Svelte - `blog.openreplay.com` - 20230216](https://blog.openreplay.com/form-validation-in-svelte/)
+
+[superforms official doc](https://superforms.rocks/) / [repo](https://github.com/ciscoheat/sveltekit-superforms)
+
+[felte offical doc](https://felte.dev/) / [repo](https://github.com/pablo-abc/felte)
+
+[vest official doc](https://vestjs.dev/) / [repo](https://github.com/ealush/vest)
