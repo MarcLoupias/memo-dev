@@ -410,6 +410,15 @@ Warning Signs :
 >
 > Both are valid and important tests.
 
+## e2e
+
+### `data-testid` convention
+
+- [Why Your Development Team Should Use `data-testid` Attributes](https://medium.com/@automationTest/why-your-development-team-should-use-data-testid-attributes-a83f1ca27ebb)
+- [How I Add Test Ids To Front-End Components - `glebbahmutov.com/blog` - 20231024](https://glebbahmutov.com/blog/how-i-add-test-ids/)
+- [Using Test Ids To Pick Cypress Specs To Run - `glebbahmutov.com/blog` - 20230919](https://glebbahmutov.com/blog/using-test-ids-to-pick-specs-to-run/)
+- [Pick Tests Using Test Ids From Another Source Repo - `glebbahmutov.com/blog` - 20231002](https://glebbahmutov.com/blog/pick-tests-in-another-repo/)
+
 ## videos
 
 [cleancoders.com/videos](https://cleancoders.com/videos/clean-code/advanced-tdd) payantes
